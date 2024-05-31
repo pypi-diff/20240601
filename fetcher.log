@@ -1950,3 +1950,33 @@
 [2024-06-01 01:48:58] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.4.tar.gz]
 [2024-06-01 01:48:58] INFO root fetch - main [MainThread]: End processing [platypush]: success
 [2024-06-01 01:48:58] INFO root fetch - main [MainThread]: Store serial: [23473772]
+[2024-06-01 01:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473772]
+[2024-06-01 01:51:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 01:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyspedas
+[2024-06-01 01:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docstub
+[2024-06-01 01:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-pydantic-form
+[2024-06-01 01:51:07] INFO root fetch - processPackages [dash-pydantic-form]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 01:51:07] INFO root fetch - processPackages [dash-pydantic-form]: Downloading https://files.pythonhosted.org/packages/5d/79/f2446a74a0647d97f1ed631fb51aac1114a2235ba75271a8e7912a8c0ae8/dash_pydantic_form-0.1.8.tar.gz
+[2024-06-01 01:51:07] INFO root fetch - processPackages [docstub]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-06-01 01:51:07] INFO root fetch - processPackages [pyspedas]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-06-01 01:51:07] INFO root fetch - processPackages [docstub]: Downloading https://files.pythonhosted.org/packages/e5/23/8c3d7c978e45b933f3b63b6cac146e51795731ad3541efc2dd4880c07148/docstub-0.1.0.tar.gz
+[2024-06-01 01:51:07] INFO root fetch - processPackages [dash-pydantic-form]: Downloading https://files.pythonhosted.org/packages/27/6d/ebcc7cd94582252583d5ed56864691c7d23afa009ca5100c21ab9f8bb15d/dash_pydantic_form-0.1.9.tar.gz
+[2024-06-01 01:51:07] INFO root fetch - processPackages [pyspedas]: Downloading https://files.pythonhosted.org/packages/f7/71/126b10f68c3b471dee01f3ae6432869af3b7a2b9e04df9fa791cdfe4015a/pyspedas-1.5.8.tar.gz
+[2024-06-01 01:51:07] INFO root fetch - processPackages [dash-pydantic-form]: executing diffoscope
+[2024-06-01 01:51:07] INFO root fetch - processPackages [dash-pydantic-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_pydantic_form-0.1.8.tar.gz tmp/dash_pydantic_form-0.1.9.tar.gz --markdown 20240601/d/dash-pydantic-form/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 01:51:07] INFO root fetch - processPackages [docstub]: Downloading https://files.pythonhosted.org/packages/47/73/9a6b825924f92f5f67ec481bd120cdd38d36b2dfde44ed457fa2500ff7d1/docstub-0.2.1.tar.gz
+[2024-06-01 01:51:07] INFO root fetch - processPackages [pyspedas]: Downloading https://files.pythonhosted.org/packages/a7/c3/f005711a33f6b1f49781d7d10af4e3a10f7113f3a8b2b2e4cca1cae9bf9c/pyspedas-1.5.9.tar.gz
+[2024-06-01 01:51:07] INFO root fetch - processPackages [docstub]: executing diffoscope
+[2024-06-01 01:51:07] INFO root fetch - processPackages [docstub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docstub-0.1.0.tar.gz tmp/docstub-0.2.1.tar.gz --markdown 20240601/d/docstub/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-06-01 01:51:07] INFO root fetch - processPackages [pyspedas]: executing diffoscope
+[2024-06-01 01:51:07] INFO root fetch - processPackages [pyspedas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspedas-1.5.8.tar.gz tmp/pyspedas-1.5.9.tar.gz --markdown 20240601/p/pyspedas/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-06-01 01:51:08] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.8.tar.gz]
+[2024-06-01 01:51:08] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.9.tar.gz]
+[2024-06-01 01:51:08] INFO root fetch - main [MainThread]: End processing [dash-pydantic-form]: success
+[2024-06-01 01:51:08] INFO root fetch - processPackages [docstub]: Remove: archive file [/home/abi/fetcher/tmp/docstub-0.1.0.tar.gz]
+[2024-06-01 01:51:08] INFO root fetch - processPackages [docstub]: Remove: archive file [/home/abi/fetcher/tmp/docstub-0.2.1.tar.gz]
+[2024-06-01 01:51:08] INFO root fetch - main [MainThread]: End processing [docstub]: success
+[2024-06-01 01:51:12] INFO root fetch - processPackages [pyspedas]: Remove: archive file [/home/abi/fetcher/tmp/pyspedas-1.5.8.tar.gz]
+[2024-06-01 01:51:12] INFO root fetch - processPackages [pyspedas]: Remove: archive file [/home/abi/fetcher/tmp/pyspedas-1.5.9.tar.gz]
+[2024-06-01 01:51:12] INFO root fetch - main [MainThread]: End processing [pyspedas]: success
+[2024-06-01 01:51:12] INFO root fetch - main [MainThread]: Store serial: [23473781]
