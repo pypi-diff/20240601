@@ -248,3 +248,33 @@
 [2024-06-01 00:17:39] INFO root fetch - processPackages [switchboard-hw]: Remove: archive file [/home/abi/fetcher/tmp/switchboard_hw-0.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-06-01 00:17:39] INFO root fetch - main [MainThread]: End processing [switchboard-hw]: success
 [2024-06-01 00:17:39] INFO root fetch - main [MainThread]: Store serial: [23472960]
+[2024-06-01 00:19:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472960]
+[2024-06-01 00:19:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 00:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checksec-py
+[2024-06-01 00:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linearized-musicxml
+[2024-06-01 00:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OctoBot-Trading
+[2024-06-01 00:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dash-discord
+[2024-06-01 00:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cgo-mkto-api-aastudillocgo
+[2024-06-01 00:19:49] WARNING root fetch - processPackages [linearized-musicxml]: Skipping, unable to determine old version
+[2024-06-01 00:19:49] INFO root fetch - main [MainThread]: End processing [linearized-musicxml] error
+[2024-06-01 00:19:49] WARNING root fetch - processPackages [dash-discord]: Skipping, unable to determine old version
+[2024-06-01 00:19:49] INFO root fetch - main [MainThread]: End processing [dash-discord] error
+[2024-06-01 00:19:49] WARNING root fetch - processPackages [cgo-mkto-api-aastudillocgo]: Skipping, unable to determine old version
+[2024-06-01 00:19:49] INFO root fetch - main [MainThread]: End processing [cgo-mkto-api-aastudillocgo] error
+[2024-06-01 00:19:49] INFO root fetch - processPackages [checksec-py]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-06-01 00:19:49] INFO root fetch - processPackages [OctoBot-Trading]: New version: [2.4.9] Old Version: [2.4.85]
+[2024-06-01 00:19:49] INFO root fetch - processPackages [checksec-py]: Downloading https://files.pythonhosted.org/packages/7a/37/07955c868ca109a270610eafbbbd1bbef5588cc5e35ceb3108bbacc06ac1/checksec_py-0.7.2.tar.gz
+[2024-06-01 00:19:49] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/a7/bc/14536a86407f882519f398964fed5660b665c6e6cc74480496e0806bc787/OctoBot-Trading-2.4.85.tar.gz
+[2024-06-01 00:19:50] INFO root fetch - processPackages [checksec-py]: Downloading https://files.pythonhosted.org/packages/94/4b/2ffc21e32f8fc34f18abb6e0193f01733bcffa944d6127b9fc7f6d4e8a3c/checksec_py-0.7.3.tar.gz
+[2024-06-01 00:19:50] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/77/bc/ecdb68086de1f382830bf4a54be7e64fdcf11183cbc9e6485fe1c829615e/OctoBot-Trading-2.4.9.tar.gz
+[2024-06-01 00:19:50] INFO root fetch - processPackages [checksec-py]: executing diffoscope
+[2024-06-01 00:19:50] INFO root fetch - processPackages [checksec-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checksec_py-0.7.2.tar.gz tmp/checksec_py-0.7.3.tar.gz --markdown 20240601/c/checksec-py/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-06-01 00:19:50] INFO root fetch - processPackages [OctoBot-Trading]: executing diffoscope
+[2024-06-01 00:19:50] INFO root fetch - processPackages [OctoBot-Trading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Trading-2.4.85.tar.gz tmp/OctoBot-Trading-2.4.9.tar.gz --markdown 20240601/O/OctoBot-Trading/2.4.85-2.4.9/README.md --exclude *.pyd
+[2024-06-01 00:19:50] INFO root fetch - processPackages [checksec-py]: Remove: archive file [/home/abi/fetcher/tmp/checksec_py-0.7.2.tar.gz]
+[2024-06-01 00:19:50] INFO root fetch - processPackages [checksec-py]: Remove: archive file [/home/abi/fetcher/tmp/checksec_py-0.7.3.tar.gz]
+[2024-06-01 00:19:50] INFO root fetch - main [MainThread]: End processing [checksec-py]: success
+[2024-06-01 00:19:53] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.85.tar.gz]
+[2024-06-01 00:19:53] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
+[2024-06-01 00:19:53] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
+[2024-06-01 00:19:53] INFO root fetch - main [MainThread]: Store serial: [23472989]
