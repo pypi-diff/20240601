@@ -685,3 +685,54 @@
 [2024-06-01 00:44:57] INFO root fetch - processPackages [dataconf]: Remove: archive file [/home/abi/fetcher/tmp/dataconf-3.2.0.tar.gz]
 [2024-06-01 00:44:57] INFO root fetch - main [MainThread]: End processing [dataconf]: success
 [2024-06-01 00:44:57] INFO root fetch - main [MainThread]: Store serial: [23473209]
+[2024-06-01 00:47:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473209]
+[2024-06-01 00:47:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 00:47:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eatb
+[2024-06-01 00:47:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: socialdataanalysis
+[2024-06-01 00:47:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myfunctions-NazymSmagulova
+[2024-06-01 00:47:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rattail-fabric2
+[2024-06-01 00:47:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wwpdb.apps.releasemodule
+[2024-06-01 00:47:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: emailcompat32crlf
+[2024-06-01 00:47:06] INFO root fetch - processPackages [emailcompat32crlf]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 00:47:06] INFO root fetch - processPackages [socialdataanalysis]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 00:47:06] INFO root fetch - processPackages [emailcompat32crlf]: Downloading https://files.pythonhosted.org/packages/a8/dd/57b4be269ec27a3818c5c25d9b833e8740bed22f9ac8c69710b8d6088287/emailcompat32crlf-1.0.0.tar.gz
+[2024-06-01 00:47:06] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/eb/47/cc4f8924b0e418534cd231584b512aec4cac0d4d54fcc7bb835b538d4127/socialdataanalysis-0.9.8.tar.gz
+[2024-06-01 00:47:06] WARNING root fetch - processPackages [myfunctions-NazymSmagulova]: Skipping, unable to determine old version
+[2024-06-01 00:47:06] INFO root fetch - main [MainThread]: End processing [myfunctions-NazymSmagulova] error
+[2024-06-01 00:47:06] INFO root fetch - processPackages [eatb]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-01 00:47:06] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: New version: [0.31.5] Old Version: [0.31.4]
+[2024-06-01 00:47:06] INFO root fetch - processPackages [rattail-fabric2]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 00:47:06] INFO root fetch - processPackages [emailcompat32crlf]: Downloading https://files.pythonhosted.org/packages/36/ba/8516c7157e03f0d4649987a557df6fd2b75389f72e9b68f27c4d747f0bf1/emailcompat32crlf-1.0.1.tar.gz
+[2024-06-01 00:47:06] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Downloading https://files.pythonhosted.org/packages/f3/a9/89ad6fac2e4bbe90e1802ff97e111ee328114f7fce77087c7fec135cfa8e/wwpdb_apps_releasemodule-0.31.4.tar.gz
+[2024-06-01 00:47:06] INFO root fetch - processPackages [eatb]: Downloading https://files.pythonhosted.org/packages/0d/53/d00137f695574e3ddc739f6182bdcee34793983e7f459721fab2a98ee8ae/eatb-0.2.1.tar.gz
+[2024-06-01 00:47:06] INFO root fetch - processPackages [rattail-fabric2]: Downloading https://files.pythonhosted.org/packages/5b/f2/08b43a71befe2cada29c6b68aec3fac968c858151e598572c098bbcf97d0/rattail-fabric2-0.3.4.tar.gz
+[2024-06-01 00:47:06] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/d9/4b/54fdab9dfc08dfaa30b65dec24c14246f2efb44604af761b5a72bbef0087/socialdataanalysis-0.9.9.tar.gz
+[2024-06-01 00:47:06] INFO root fetch - processPackages [emailcompat32crlf]: executing diffoscope
+[2024-06-01 00:47:06] INFO root fetch - processPackages [emailcompat32crlf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emailcompat32crlf-1.0.0.tar.gz tmp/emailcompat32crlf-1.0.1.tar.gz --markdown 20240601/e/emailcompat32crlf/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 00:47:07] INFO root fetch - processPackages [socialdataanalysis]: executing diffoscope
+[2024-06-01 00:47:07] INFO root fetch - processPackages [socialdataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialdataanalysis-0.9.8.tar.gz tmp/socialdataanalysis-0.9.9.tar.gz --markdown 20240601/s/socialdataanalysis/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 00:47:07] INFO root fetch - processPackages [rattail-fabric2]: Downloading https://files.pythonhosted.org/packages/4e/d1/7a28e4ff4b9f611de62ce97ab6494270416cb47f60be76c8809f1da1c241/rattail_fabric2-0.3.5.tar.gz
+[2024-06-01 00:47:07] INFO root fetch - processPackages [eatb]: Downloading https://files.pythonhosted.org/packages/42/43/dbf593185b219bac2594d78b3421dbeca507a55b102b0301dc0da6112012/eatb-0.2.2.tar.gz
+[2024-06-01 00:47:07] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Downloading https://files.pythonhosted.org/packages/59/f4/366aa9b9eafe74ab9b564ca1fb4d81f5b11351a9749ab0c37b486aeb7c60/wwpdb_apps_releasemodule-0.31.5.tar.gz
+[2024-06-01 00:47:07] INFO root fetch - processPackages [eatb]: executing diffoscope
+[2024-06-01 00:47:07] INFO root fetch - processPackages [eatb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eatb-0.2.1.tar.gz tmp/eatb-0.2.2.tar.gz --markdown 20240601/e/eatb/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-01 00:47:07] INFO root fetch - processPackages [rattail-fabric2]: executing diffoscope
+[2024-06-01 00:47:07] INFO root fetch - processPackages [rattail-fabric2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-fabric2-0.3.4.tar.gz tmp/rattail_fabric2-0.3.5.tar.gz --markdown 20240601/r/rattail-fabric2/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 00:47:07] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: executing diffoscope
+[2024-06-01 00:47:07] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb_apps_releasemodule-0.31.4.tar.gz tmp/wwpdb_apps_releasemodule-0.31.5.tar.gz --markdown 20240601/w/wwpdb.apps.releasemodule/0.31.4-0.31.5/README.md --exclude *.pyd
+[2024-06-01 00:47:07] INFO root fetch - processPackages [emailcompat32crlf]: Remove: archive file [/home/abi/fetcher/tmp/emailcompat32crlf-1.0.0.tar.gz]
+[2024-06-01 00:47:07] INFO root fetch - processPackages [emailcompat32crlf]: Remove: archive file [/home/abi/fetcher/tmp/emailcompat32crlf-1.0.1.tar.gz]
+[2024-06-01 00:47:07] INFO root fetch - main [MainThread]: End processing [emailcompat32crlf]: success
+[2024-06-01 00:47:07] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.8.tar.gz]
+[2024-06-01 00:47:07] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.9.tar.gz]
+[2024-06-01 00:47:07] INFO root fetch - main [MainThread]: End processing [socialdataanalysis]: success
+[2024-06-01 00:47:08] INFO root fetch - processPackages [rattail-fabric2]: Remove: archive file [/home/abi/fetcher/tmp/rattail-fabric2-0.3.4.tar.gz]
+[2024-06-01 00:47:08] INFO root fetch - processPackages [rattail-fabric2]: Remove: archive file [/home/abi/fetcher/tmp/rattail_fabric2-0.3.5.tar.gz]
+[2024-06-01 00:47:08] INFO root fetch - main [MainThread]: End processing [rattail-fabric2]: success
+[2024-06-01 00:47:08] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_releasemodule-0.31.4.tar.gz]
+[2024-06-01 00:47:08] INFO root fetch - processPackages [wwpdb.apps.releasemodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_releasemodule-0.31.5.tar.gz]
+[2024-06-01 00:47:08] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.releasemodule]: success
+[2024-06-01 00:47:08] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.1.tar.gz]
+[2024-06-01 00:47:08] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.2.tar.gz]
+[2024-06-01 00:47:08] INFO root fetch - main [MainThread]: End processing [eatb]: success
+[2024-06-01 00:47:08] INFO root fetch - main [MainThread]: Store serial: [23473227]
