@@ -1706,3 +1706,42 @@
 [2024-06-01 01:33:39] INFO root fetch - processPackages [pyhamtools]: Remove: archive file [/home/abi/fetcher/tmp/pyhamtools-0.9.1.tar.gz]
 [2024-06-01 01:33:39] INFO root fetch - main [MainThread]: End processing [pyhamtools]: success
 [2024-06-01 01:33:39] INFO root fetch - main [MainThread]: Store serial: [23473663]
+[2024-06-01 01:35:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473663]
+[2024-06-01 01:35:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 01:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalk-harness
+[2024-06-01 01:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codac4matlab
+[2024-06-01 01:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biosimulator-processes
+[2024-06-01 01:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:35:47] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 01:35:47] INFO root fetch - processPackages [codac4matlab]: New version: [2.0.0.dev4] Old Version: [2.0.0.dev3]
+[2024-06-01 01:35:48] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/68/60/62d3ece44b41e4977dd85d503b7a50a4529257550c15708c7cda44c70488/myfunctions_khikmatillo1-0.0.3.tar.gz
+[2024-06-01 01:35:48] INFO root fetch - processPackages [chalk-harness]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-06-01 01:35:48] INFO root fetch - processPackages [codac4matlab]: Downloading https://files.pythonhosted.org/packages/a3/46/0eede18eda38b0f7c629a4662aff5170476777cc8ad99213646554fcaa06/codac4matlab-2.0.0.dev3-cp39-cp39-win_amd64.whl
+[2024-06-01 01:35:48] INFO root fetch - processPackages [biosimulator-processes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 01:35:48] INFO root fetch - processPackages [chalk-harness]: Downloading https://files.pythonhosted.org/packages/04/cf/7b5f46fcb7ff618c41cba126b21c03047ab357635bab1cb1fa76c6c31081/chalk-harness-1.9.8.tar.gz
+[2024-06-01 01:35:48] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/a1/34/52dd57fea607f7a37ae1cfb2ff818e4cd8cd7f987b3ad20d909ee2a0b235/myfunctions_khikmatillo1-0.0.4.tar.gz
+[2024-06-01 01:35:48] INFO root fetch - processPackages [biosimulator-processes]: Downloading https://files.pythonhosted.org/packages/7d/51/1b73552fade705186ccd81446180148070dc1a2faacb60c3b6ff368aac74/biosimulator-processes-0.0.8.tar.gz
+[2024-06-01 01:35:48] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:35:48] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.3.tar.gz tmp/myfunctions_khikmatillo1-0.0.4.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 01:35:48] INFO root fetch - processPackages [codac4matlab]: Downloading https://files.pythonhosted.org/packages/31/d7/86f7e8632f7a54be555770fcfea202530949036ff91659190a2b28ae420d/codac4matlab-2.0.0.dev4-cp39-cp39-win_amd64.whl
+[2024-06-01 01:35:48] INFO root fetch - processPackages [chalk-harness]: Downloading https://files.pythonhosted.org/packages/71/ea/d40dc649c4c8238582eeede1c8cfae5807f94913301efa0c34aff4e959f8/chalk-harness-1.9.9.tar.gz
+[2024-06-01 01:35:48] INFO root fetch - processPackages [chalk-harness]: executing diffoscope
+[2024-06-01 01:35:48] INFO root fetch - processPackages [chalk-harness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalk-harness-1.9.8.tar.gz tmp/chalk-harness-1.9.9.tar.gz --markdown 20240601/c/chalk-harness/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-06-01 01:35:48] INFO root fetch - processPackages [biosimulator-processes]: Downloading https://files.pythonhosted.org/packages/20/bd/b4740713cca94bc52ac50d53ce3cdc2881f202d3d02b517851617ad668f7/biosimulator-processes-0.0.9.tar.gz
+[2024-06-01 01:35:48] INFO root fetch - processPackages [codac4matlab]: executing diffoscope
+[2024-06-01 01:35:48] INFO root fetch - processPackages [codac4matlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codac4matlab-2.0.0.dev3-cp39-cp39-win_amd64.whl.zip tmp/codac4matlab-2.0.0.dev4-cp39-cp39-win_amd64.whl.zip --markdown 20240601/c/codac4matlab/2.0.0.dev3-2.0.0.dev4/README.md --exclude *.pyd
+[2024-06-01 01:35:48] INFO root fetch - processPackages [biosimulator-processes]: executing diffoscope
+[2024-06-01 01:35:48] INFO root fetch - processPackages [biosimulator-processes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biosimulator-processes-0.0.8.tar.gz tmp/biosimulator-processes-0.0.9.tar.gz --markdown 20240601/b/biosimulator-processes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 01:35:48] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.3.tar.gz]
+[2024-06-01 01:35:48] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.4.tar.gz]
+[2024-06-01 01:35:48] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:35:49] INFO root fetch - processPackages [chalk-harness]: Remove: archive file [/home/abi/fetcher/tmp/chalk-harness-1.9.8.tar.gz]
+[2024-06-01 01:35:49] INFO root fetch - processPackages [chalk-harness]: Remove: archive file [/home/abi/fetcher/tmp/chalk-harness-1.9.9.tar.gz]
+[2024-06-01 01:35:49] INFO root fetch - main [MainThread]: End processing [chalk-harness]: success
+[2024-06-01 01:35:49] INFO root fetch - processPackages [codac4matlab]: Remove: archive file [/home/abi/fetcher/tmp/codac4matlab-2.0.0.dev3-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 01:35:49] INFO root fetch - processPackages [codac4matlab]: Remove: archive file [/home/abi/fetcher/tmp/codac4matlab-2.0.0.dev4-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 01:35:49] INFO root fetch - main [MainThread]: End processing [codac4matlab]: success
+[2024-06-01 01:35:49] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.8.tar.gz]
+[2024-06-01 01:35:49] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.9.tar.gz]
+[2024-06-01 01:35:49] INFO root fetch - main [MainThread]: End processing [biosimulator-processes]: success
+[2024-06-01 01:35:49] INFO root fetch - main [MainThread]: Store serial: [23473696]
