@@ -28,3 +28,27 @@
 [2024-06-01 00:00:36] INFO root fetch - processPackages [myeia]: Remove: archive file [/home/abi/fetcher/tmp/myeia-0.3.6.tar.gz]
 [2024-06-01 00:00:36] INFO root fetch - main [MainThread]: End processing [myeia]: success
 [2024-06-01 00:00:36] INFO root fetch - main [MainThread]: Store serial: [23472856]
+[2024-06-01 00:02:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472856]
+[2024-06-01 00:02:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 00:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsonparse
+[2024-06-01 00:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PQAnalysis
+[2024-06-01 00:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hierarchical-state-machine
+[2024-06-01 00:02:44] WARNING root fetch - processPackages [hierarchical-state-machine]: Skipping, unable to determine old version
+[2024-06-01 00:02:44] INFO root fetch - main [MainThread]: End processing [hierarchical-state-machine] error
+[2024-06-01 00:02:44] INFO root fetch - processPackages [PQAnalysis]: New version: [1.0.8.1] Old Version: [1.0.7]
+[2024-06-01 00:02:44] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/dc/28/c84f06796d506987ea6b94439f987db1c0fb2bcff8d2b3bdba0064929b46/pqanalysis-1.0.7.tar.gz
+[2024-06-01 00:02:44] INFO root fetch - processPackages [jsonparse]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-01 00:02:45] INFO root fetch - processPackages [jsonparse]: Downloading https://files.pythonhosted.org/packages/32/21/0ce9f17b547b81f37350fab887ff5a67b08c110e50fd9a8070d1e909b8d8/jsonparse-0.9.0.tar.gz
+[2024-06-01 00:02:45] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/83/2f/4ccd1518d7be2929aebe1ed681017d830a629896a187b19e7e65f816acb1/pqanalysis-1.0.8.1.tar.gz
+[2024-06-01 00:02:45] INFO root fetch - processPackages [jsonparse]: Downloading https://files.pythonhosted.org/packages/06/d1/58fc4e2fb027a86e5c593e012066f45d4c37175851f669af3f1541874fd6/jsonparse-0.9.1.tar.gz
+[2024-06-01 00:02:45] INFO root fetch - processPackages [jsonparse]: executing diffoscope
+[2024-06-01 00:02:45] INFO root fetch - processPackages [jsonparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonparse-0.9.0.tar.gz tmp/jsonparse-0.9.1.tar.gz --markdown 20240601/j/jsonparse/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-01 00:02:45] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-06-01 00:02:45] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqanalysis-1.0.7.tar.gz tmp/pqanalysis-1.0.8.1.tar.gz --markdown 20240601/P/PQAnalysis/1.0.7-1.0.8.1/README.md --exclude *.pyd
+[2024-06-01 00:02:46] INFO root fetch - processPackages [jsonparse]: Remove: archive file [/home/abi/fetcher/tmp/jsonparse-0.9.0.tar.gz]
+[2024-06-01 00:02:46] INFO root fetch - processPackages [jsonparse]: Remove: archive file [/home/abi/fetcher/tmp/jsonparse-0.9.1.tar.gz]
+[2024-06-01 00:02:46] INFO root fetch - main [MainThread]: End processing [jsonparse]: success
+[2024-06-01 00:02:47] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.7.tar.gz]
+[2024-06-01 00:02:47] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.8.1.tar.gz]
+[2024-06-01 00:02:47] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-06-01 00:02:47] INFO root fetch - main [MainThread]: Store serial: [23472864]
