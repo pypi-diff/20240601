@@ -2021,3 +2021,51 @@
 [2024-06-01 01:55:33] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.0.tar.gz]
 [2024-06-01 01:55:33] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
 [2024-06-01 01:55:33] INFO root fetch - main [MainThread]: Store serial: [23473795]
+[2024-06-01 01:57:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473795]
+[2024-06-01 01:57:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 01:57:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pr-pilot-cli
+[2024-06-01 01:57:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snowflake.core
+[2024-06-01 01:57:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snowflake
+[2024-06-01 01:57:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snowflake._legacy
+[2024-06-01 01:57:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: damply
+[2024-06-01 01:57:42] INFO root fetch - processPackages [damply]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-06-01 01:57:42] INFO root fetch - processPackages [pr-pilot-cli]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake.core]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-06-01 01:57:42] INFO root fetch - processPackages [damply]: Downloading https://files.pythonhosted.org/packages/5e/e9/6174be0866f10ee767da7c0d3e37e80b0302e4a74d1eecf66805a1561008/damply-0.4.1.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [pr-pilot-cli]: Downloading https://files.pythonhosted.org/packages/21/9d/bb483305f6edf1ede2bd3c485c0390f5470d778a5e5f75974b6f957081ab/pr_pilot_cli-1.3.3.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake._legacy]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake]: Downloading https://files.pythonhosted.org/packages/ad/0c/dd0a3eb54e087631f393ca12583fbba6a0a41bc672eecf962715a53ffd59/snowflake-0.7.0.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake.core]: Downloading https://files.pythonhosted.org/packages/9d/74/43d9da3a3c53863c627bf74fd42ab43335ba1bd8a03ee8e69f99f4031e67/snowflake_core-0.8.0.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake._legacy]: Downloading https://files.pythonhosted.org/packages/16/cc/d3b5eb6d14c02b99bfeca54a2f8df6f5ad617359bcfe23c9a7d04ef25560/snowflake_legacy-0.8.0.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [pr-pilot-cli]: Downloading https://files.pythonhosted.org/packages/3a/0d/a10f16388a5d2186567dfe5f5caf8937b053854d0f826c26c242a384b1d3/pr_pilot_cli-1.3.4.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake]: Downloading https://files.pythonhosted.org/packages/04/c1/d28e7305f6fbcce08db16a8241ae1318eb2fd9a66bdec4e4a0093feb90c8/snowflake-0.8.0.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [damply]: Downloading https://files.pythonhosted.org/packages/65/e6/c20de1bb688b6f6309dd69482034ccad10c9dfaac13aedb41bd22170fccf/damply-0.5.0.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [pr-pilot-cli]: executing diffoscope
+[2024-06-01 01:57:42] INFO root fetch - processPackages [pr-pilot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pr_pilot_cli-1.3.3.tar.gz tmp/pr_pilot_cli-1.3.4.tar.gz --markdown 20240601/p/pr-pilot-cli/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake._legacy]: Downloading https://files.pythonhosted.org/packages/00/20/c589328c73f085e7557fd698239515bcba0aeda2d8e389c0b88eb3e8af37/snowflake_legacy-0.8.1.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake]: executing diffoscope
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-0.7.0.tar.gz tmp/snowflake-0.8.0.tar.gz --markdown 20240601/s/snowflake/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-06-01 01:57:42] INFO root fetch - processPackages [snowflake.core]: Downloading https://files.pythonhosted.org/packages/8c/71/ae64ab9863b43e9b53562c256d2fe1102a4bacd8e16f2e9edd1fb3178931/snowflake_core-0.8.1.tar.gz
+[2024-06-01 01:57:42] INFO root fetch - processPackages [damply]: executing diffoscope
+[2024-06-01 01:57:42] INFO root fetch - processPackages [damply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/damply-0.4.1.tar.gz tmp/damply-0.5.0.tar.gz --markdown 20240601/d/damply/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake._legacy]: executing diffoscope
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake._legacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake_legacy-0.8.0.tar.gz tmp/snowflake_legacy-0.8.1.tar.gz --markdown 20240601/s/snowflake._legacy/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake.core]: executing diffoscope
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake_core-0.8.0.tar.gz tmp/snowflake_core-0.8.1.tar.gz --markdown 20240601/s/snowflake.core/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-06-01 01:57:43] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.3.3.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.3.4.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - main [MainThread]: End processing [pr-pilot-cli]: success
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-0.7.0.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-0.8.0.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - main [MainThread]: End processing [snowflake]: success
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake._legacy]: Remove: archive file [/home/abi/fetcher/tmp/snowflake_legacy-0.8.0.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - processPackages [snowflake._legacy]: Remove: archive file [/home/abi/fetcher/tmp/snowflake_legacy-0.8.1.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - main [MainThread]: End processing [snowflake._legacy]: success
+[2024-06-01 01:57:43] INFO root fetch - processPackages [damply]: Remove: archive file [/home/abi/fetcher/tmp/damply-0.4.1.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - processPackages [damply]: Remove: archive file [/home/abi/fetcher/tmp/damply-0.5.0.tar.gz]
+[2024-06-01 01:57:43] INFO root fetch - main [MainThread]: End processing [damply]: success
+[2024-06-01 01:57:45] INFO root fetch - processPackages [snowflake.core]: Remove: archive file [/home/abi/fetcher/tmp/snowflake_core-0.8.0.tar.gz]
+[2024-06-01 01:57:45] INFO root fetch - processPackages [snowflake.core]: Remove: archive file [/home/abi/fetcher/tmp/snowflake_core-0.8.1.tar.gz]
+[2024-06-01 01:57:45] INFO root fetch - main [MainThread]: End processing [snowflake.core]: success
+[2024-06-01 01:57:45] INFO root fetch - main [MainThread]: Store serial: [23473811]
