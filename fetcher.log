@@ -356,3 +356,42 @@
 [2024-06-01 00:24:12] INFO root fetch - processPackages [cog]: Remove: archive file [/home/abi/fetcher/tmp/cog-0.9.9a2-py3-none-any.whl.zip]
 [2024-06-01 00:24:12] INFO root fetch - main [MainThread]: End processing [cog]: success
 [2024-06-01 00:24:12] INFO root fetch - main [MainThread]: Store serial: [23473023]
+[2024-06-01 00:26:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473023]
+[2024-06-01 00:26:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 00:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-rki-covid
+[2024-06-01 00:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bencode2
+[2024-06-01 00:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: escape-game-lw
+[2024-06-01 00:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: holidata
+[2024-06-01 00:26:21] INFO root fetch - processPackages [escape-game-lw]: New version: [0.9] Old Version: [0.8]
+[2024-06-01 00:26:21] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 00:26:21] INFO root fetch - processPackages [escape-game-lw]: Downloading https://files.pythonhosted.org/packages/93/39/c1e18a5136a68621383f44fd28ac4a8d5e156bd4c6de597cbcd0a6008f8d/escape_game_lw-0.8.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [airbyte-source-rki-covid]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-01 00:26:21] INFO root fetch - processPackages [holidata]: New version: [2024.6.0] Old Version: [2023.4.0]
+[2024-06-01 00:26:21] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/23/f4/a28e8c52b18fc023e1b81784bbf2d9b9a8238d10dbf675853b69f64f6f8d/bencode2-0.0.8.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [airbyte-source-rki-covid]: Downloading https://files.pythonhosted.org/packages/9d/05/6c9471a2f7b62221ce12fa79786e50acbccc0e8bd3404a4403a1abad0605/airbyte-source-rki-covid-0.1.2.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [escape-game-lw]: Downloading https://files.pythonhosted.org/packages/50/ea/f5c7046107bf4dffb60570bd49e5bce36f20f4d90e26e58c752dbe34ce7a/escape_game_lw-0.9.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [holidata]: Downloading https://files.pythonhosted.org/packages/06/4f/65415507c5db8610cf55b24bdc9ee3c327fffd6bd6a3ea5de37f9fab5693/holidata-2023.4.0.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/0f/06/7fedfc22787eec56cd4d7da016a9d7a7aa43a4ab7e1a41b7443bdc8bf981/bencode2-0.0.9.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [escape-game-lw]: executing diffoscope
+[2024-06-01 00:26:21] INFO root fetch - processPackages [escape-game-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/escape_game_lw-0.8.tar.gz tmp/escape_game_lw-0.9.tar.gz --markdown 20240601/e/escape-game-lw/0.8-0.9/README.md --exclude *.pyd
+[2024-06-01 00:26:21] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-06-01 00:26:21] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8.tar.gz tmp/bencode2-0.0.9.tar.gz --markdown 20240601/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 00:26:21] INFO root fetch - processPackages [airbyte-source-rki-covid]: Downloading https://files.pythonhosted.org/packages/5c/52/d8fff302600dc0a687fe08998c6993d7af517e6356f880f1bb127773a9b0/airbyte_source_rki_covid-0.1.3.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [holidata]: Downloading https://files.pythonhosted.org/packages/82/56/b6bcd79ccd41bf6a88a13f0a919ab45d9a90f27f86bc6161aa887a38dc3f/holidata-2024.6.0.tar.gz
+[2024-06-01 00:26:21] INFO root fetch - processPackages [airbyte-source-rki-covid]: executing diffoscope
+[2024-06-01 00:26:21] INFO root fetch - processPackages [airbyte-source-rki-covid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-source-rki-covid-0.1.2.tar.gz tmp/airbyte_source_rki_covid-0.1.3.tar.gz --markdown 20240601/a/airbyte-source-rki-covid/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-01 00:26:21] INFO root fetch - processPackages [holidata]: executing diffoscope
+[2024-06-01 00:26:21] INFO root fetch - processPackages [holidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/holidata-2023.4.0.tar.gz tmp/holidata-2024.6.0.tar.gz --markdown 20240601/h/holidata/2023.4.0-2024.6.0/README.md --exclude *.pyd
+[2024-06-01 00:26:22] INFO root fetch - processPackages [escape-game-lw]: Remove: archive file [/home/abi/fetcher/tmp/escape_game_lw-0.8.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - processPackages [escape-game-lw]: Remove: archive file [/home/abi/fetcher/tmp/escape_game_lw-0.9.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - main [MainThread]: End processing [escape-game-lw]: success
+[2024-06-01 00:26:22] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-06-01 00:26:22] INFO root fetch - processPackages [airbyte-source-rki-covid]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-source-rki-covid-0.1.2.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - processPackages [airbyte-source-rki-covid]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_rki_covid-0.1.3.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - main [MainThread]: End processing [airbyte-source-rki-covid]: success
+[2024-06-01 00:26:22] INFO root fetch - processPackages [holidata]: Remove: archive file [/home/abi/fetcher/tmp/holidata-2023.4.0.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - processPackages [holidata]: Remove: archive file [/home/abi/fetcher/tmp/holidata-2024.6.0.tar.gz]
+[2024-06-01 00:26:22] INFO root fetch - main [MainThread]: End processing [holidata]: success
+[2024-06-01 00:26:22] INFO root fetch - main [MainThread]: Store serial: [23473069]
