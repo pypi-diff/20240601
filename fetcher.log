@@ -1851,3 +1851,42 @@
 [2024-06-01 01:42:19] INFO root fetch - processPackages [synapseclient]: Remove: archive file [/home/abi/fetcher/tmp/synapseclient-4.3.0.tar.gz]
 [2024-06-01 01:42:19] INFO root fetch - main [MainThread]: End processing [synapseclient]: success
 [2024-06-01 01:42:19] INFO root fetch - main [MainThread]: Store serial: [23473743]
+[2024-06-01 01:44:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473743]
+[2024-06-01 01:44:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 01:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nomad-media-pip
+[2024-06-01 01:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlaskFarm
+[2024-06-01 01:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MkNxGn-Essentials
+[2024-06-01 01:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beets-autogenre
+[2024-06-01 01:44:27] INFO root fetch - processPackages [FlaskFarm]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-06-01 01:44:27] INFO root fetch - processPackages [nomad-media-pip]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 01:44:27] INFO root fetch - processPackages [FlaskFarm]: Downloading https://files.pythonhosted.org/packages/6f/14/16a95fb8bce724e7ea33beaf0945e34d10d6801779e591a4c60a7419839b/FlaskFarm-4.1.1.tar.gz
+[2024-06-01 01:44:27] INFO root fetch - processPackages [nomad-media-pip]: Downloading https://files.pythonhosted.org/packages/89/17/9542f18838ecc3189b9eaaec4a7ccfe38f999660bb42c8092050b37835fd/nomad_media_pip-0.0.98.tar.gz
+[2024-06-01 01:44:27] INFO root fetch - processPackages [beets-autogenre]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-01 01:44:28] INFO root fetch - processPackages [MkNxGn-Essentials]: New version: [0.1.40.5] Old Version: [0.1.40.4]
+[2024-06-01 01:44:28] INFO root fetch - processPackages [nomad-media-pip]: Downloading https://files.pythonhosted.org/packages/2b/93/9572cd6061f7b751abb490b170eb8add5795cf245ede93c0b7d20b885a13/nomad_media_pip-0.0.99.tar.gz
+[2024-06-01 01:44:28] INFO root fetch - processPackages [beets-autogenre]: Downloading https://files.pythonhosted.org/packages/12/c9/4d5be32efa734f9d1016c52f4d4a20ebfc66d3c778613379b20aa9ffb474/beets_autogenre-0.4.0-py3-none-any.whl
+[2024-06-01 01:44:28] INFO root fetch - processPackages [MkNxGn-Essentials]: Downloading https://files.pythonhosted.org/packages/f7/e5/ca51e5e824a9fcbb7da5c32215fc8de70697ea011a3b7c4769ab9611951c/MkNxGn_Essentials-0.1.40.4.tar.gz
+[2024-06-01 01:44:28] INFO root fetch - processPackages [nomad-media-pip]: executing diffoscope
+[2024-06-01 01:44:28] INFO root fetch - processPackages [nomad-media-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomad_media_pip-0.0.98.tar.gz tmp/nomad_media_pip-0.0.99.tar.gz --markdown 20240601/n/nomad-media-pip/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 01:44:28] INFO root fetch - processPackages [FlaskFarm]: Downloading https://files.pythonhosted.org/packages/ce/5f/1b067deed8ac25b429a34b66a0d2559f7b7e4edc321a2c053d4aeda66649/FlaskFarm-4.1.2.tar.gz
+[2024-06-01 01:44:28] INFO root fetch - processPackages [beets-autogenre]: Downloading https://files.pythonhosted.org/packages/51/4b/b7e5cd9e38ac60065ecc121cc33b2644cc6c9781e982efad20091b79128b/beets_autogenre-0.5.0-py3-none-any.whl
+[2024-06-01 01:44:28] INFO root fetch - processPackages [MkNxGn-Essentials]: Downloading https://files.pythonhosted.org/packages/4f/4d/cee4167d19ae03a10196fa1f1a608962ce1de262323180d1f4574fd3ef1e/MkNxGn_Essentials-0.1.40.5.tar.gz
+[2024-06-01 01:44:28] INFO root fetch - processPackages [FlaskFarm]: executing diffoscope
+[2024-06-01 01:44:28] INFO root fetch - processPackages [FlaskFarm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlaskFarm-4.1.1.tar.gz tmp/FlaskFarm-4.1.2.tar.gz --markdown 20240601/F/FlaskFarm/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-06-01 01:44:28] INFO root fetch - processPackages [beets-autogenre]: executing diffoscope
+[2024-06-01 01:44:28] INFO root fetch - processPackages [beets-autogenre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets_autogenre-0.4.0-py3-none-any.whl.zip tmp/beets_autogenre-0.5.0-py3-none-any.whl.zip --markdown 20240601/b/beets-autogenre/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 01:44:28] INFO root fetch - processPackages [MkNxGn-Essentials]: executing diffoscope
+[2024-06-01 01:44:28] INFO root fetch - processPackages [MkNxGn-Essentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MkNxGn_Essentials-0.1.40.4.tar.gz tmp/MkNxGn_Essentials-0.1.40.5.tar.gz --markdown 20240601/M/MkNxGn-Essentials/0.1.40.4-0.1.40.5/README.md --exclude *.pyd
+[2024-06-01 01:44:29] INFO root fetch - processPackages [beets-autogenre]: Remove: archive file [/home/abi/fetcher/tmp/beets_autogenre-0.4.0-py3-none-any.whl.zip]
+[2024-06-01 01:44:29] INFO root fetch - processPackages [beets-autogenre]: Remove: archive file [/home/abi/fetcher/tmp/beets_autogenre-0.5.0-py3-none-any.whl.zip]
+[2024-06-01 01:44:29] INFO root fetch - main [MainThread]: End processing [beets-autogenre]: success
+[2024-06-01 01:44:29] INFO root fetch - processPackages [MkNxGn-Essentials]: Remove: archive file [/home/abi/fetcher/tmp/MkNxGn_Essentials-0.1.40.4.tar.gz]
+[2024-06-01 01:44:29] INFO root fetch - processPackages [MkNxGn-Essentials]: Remove: archive file [/home/abi/fetcher/tmp/MkNxGn_Essentials-0.1.40.5.tar.gz]
+[2024-06-01 01:44:29] INFO root fetch - main [MainThread]: End processing [MkNxGn-Essentials]: success
+[2024-06-01 01:44:29] INFO root fetch - processPackages [FlaskFarm]: Remove: archive file [/home/abi/fetcher/tmp/FlaskFarm-4.1.1.tar.gz]
+[2024-06-01 01:44:29] INFO root fetch - processPackages [FlaskFarm]: Remove: archive file [/home/abi/fetcher/tmp/FlaskFarm-4.1.2.tar.gz]
+[2024-06-01 01:44:29] INFO root fetch - main [MainThread]: End processing [FlaskFarm]: success
+[2024-06-01 01:44:31] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.98.tar.gz]
+[2024-06-01 01:44:31] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.99.tar.gz]
+[2024-06-01 01:44:31] INFO root fetch - main [MainThread]: End processing [nomad-media-pip]: success
+[2024-06-01 01:44:31] INFO root fetch - main [MainThread]: Store serial: [23473756]
