@@ -1791,3 +1791,33 @@
 [2024-06-01 01:37:59] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.9.tar.gz]
 [2024-06-01 01:37:59] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
 [2024-06-01 01:37:59] INFO root fetch - main [MainThread]: Store serial: [23473723]
+[2024-06-01 01:40:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473723]
+[2024-06-01 01:40:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 01:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgedb-pydantic-codegen
+[2024-06-01 01:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myfunction-ilonaserg
+[2024-06-01 01:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: replete
+[2024-06-01 01:40:07] INFO root fetch - processPackages [myfunction-ilonaserg]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 01:40:08] INFO root fetch - processPackages [myfunction-ilonaserg]: Downloading https://files.pythonhosted.org/packages/4e/a4/229be49de1c28ec2112d8f0dd3db9e81c71113f7c4d99b1d912c28791ffe/myfunction_ilonaserg-0.0.4.tar.gz
+[2024-06-01 01:40:08] INFO root fetch - processPackages [replete]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-06-01 01:40:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-06-01 01:40:08] INFO root fetch - processPackages [replete]: Downloading https://files.pythonhosted.org/packages/50/7a/f3d9953a0fcbcb91386ca84967cf7f0d688ac53cf3c7ea15ffb902aff9ee/replete-2.3.0.tar.gz
+[2024-06-01 01:40:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/87/38/4e6d95d4916b595ab33846c85b213e6148ae34688e9c447c9d5b488e0f91/edgedb_pydantic_codegen-2024.5.3.tar.gz
+[2024-06-01 01:40:08] INFO root fetch - processPackages [myfunction-ilonaserg]: Downloading https://files.pythonhosted.org/packages/a9/29/aaebe8e2f3f62ea3cb3bc8b5a2e5bed2d7e4e746d4b5bd0921d9e75c7b4a/myfunction_ilonaserg-0.0.5.tar.gz
+[2024-06-01 01:40:08] INFO root fetch - processPackages [myfunction-ilonaserg]: executing diffoscope
+[2024-06-01 01:40:08] INFO root fetch - processPackages [myfunction-ilonaserg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunction_ilonaserg-0.0.4.tar.gz tmp/myfunction_ilonaserg-0.0.5.tar.gz --markdown 20240601/m/myfunction-ilonaserg/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 01:40:08] INFO root fetch - processPackages [replete]: Downloading https://files.pythonhosted.org/packages/bf/4a/2afd0140c39f78e0203a337a394306f092586846accbfb8e2f08be19a10e/replete-2.3.1.tar.gz
+[2024-06-01 01:40:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/65/df/a0dc53f4afbc0451bc23e662dfb695fe9725b13c3f1480aba0b947c76a8d/edgedb_pydantic_codegen-2024.5.4.tar.gz
+[2024-06-01 01:40:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-06-01 01:40:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.5.3.tar.gz tmp/edgedb_pydantic_codegen-2024.5.4.tar.gz --markdown 20240601/e/edgedb-pydantic-codegen/2024.5.3-2024.5.4/README.md --exclude *.pyd
+[2024-06-01 01:40:08] INFO root fetch - processPackages [replete]: executing diffoscope
+[2024-06-01 01:40:08] INFO root fetch - processPackages [replete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replete-2.3.0.tar.gz tmp/replete-2.3.1.tar.gz --markdown 20240601/r/replete/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-06-01 01:40:08] INFO root fetch - processPackages [myfunction-ilonaserg]: Remove: archive file [/home/abi/fetcher/tmp/myfunction_ilonaserg-0.0.4.tar.gz]
+[2024-06-01 01:40:08] INFO root fetch - processPackages [myfunction-ilonaserg]: Remove: archive file [/home/abi/fetcher/tmp/myfunction_ilonaserg-0.0.5.tar.gz]
+[2024-06-01 01:40:08] INFO root fetch - main [MainThread]: End processing [myfunction-ilonaserg]: success
+[2024-06-01 01:40:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.3.tar.gz]
+[2024-06-01 01:40:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.4.tar.gz]
+[2024-06-01 01:40:09] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-06-01 01:40:09] INFO root fetch - processPackages [replete]: Remove: archive file [/home/abi/fetcher/tmp/replete-2.3.0.tar.gz]
+[2024-06-01 01:40:09] INFO root fetch - processPackages [replete]: Remove: archive file [/home/abi/fetcher/tmp/replete-2.3.1.tar.gz]
+[2024-06-01 01:40:09] INFO root fetch - main [MainThread]: End processing [replete]: success
+[2024-06-01 01:40:09] INFO root fetch - main [MainThread]: Store serial: [23473733]
