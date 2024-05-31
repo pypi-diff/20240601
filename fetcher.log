@@ -930,3 +930,45 @@
 [2024-06-01 01:02:39] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-06-01 01:02:39] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-06-01 01:02:39] INFO root fetch - main [MainThread]: Store serial: [23473305]
+[2024-06-01 01:04:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473305]
+[2024-06-01 01:04:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 01:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: madblog
+[2024-06-01 01:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bauplan
+[2024-06-01 01:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myfunction-ilonaserg
+[2024-06-01 01:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fudstop
+[2024-06-01 01:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myfunctions-nadiaconeaev89
+[2024-06-01 01:04:48] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 01:04:48] INFO root fetch - processPackages [fudstop]: New version: [2.8.3] Old Version: [2.8.2]
+[2024-06-01 01:04:48] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: Downloading https://files.pythonhosted.org/packages/87/54/ff72864205656b57a1e71f6bd6193d6b802a3b98bb58f2c4a4a01ac062f5/myfunctions_nadiaconeaev89-0.0.8.tar.gz
+[2024-06-01 01:04:48] WARNING root fetch - processPackages [myfunction-ilonaserg]: Skipping, unable to determine old version
+[2024-06-01 01:04:48] INFO root fetch - main [MainThread]: End processing [myfunction-ilonaserg] error
+[2024-06-01 01:04:48] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/10/71/7366af0b78e43d02e04f8934e9fd335ae8d734970c85b8a682f73cd91a61/fudstop-2.8.2.tar.gz
+[2024-06-01 01:04:48] INFO root fetch - processPackages [madblog]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 01:04:48] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a99] Old Version: [0.0.3a98]
+[2024-06-01 01:04:48] INFO root fetch - processPackages [madblog]: Downloading https://files.pythonhosted.org/packages/ed/b3/2c5a42942bc6ea230ecddff4c9ebdb21887926eab799eac2ae2f7a4a9a6b/madblog-0.2.8.tar.gz
+[2024-06-01 01:04:48] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/85/15/20d89c1bcd5e00733e248397ee4046f32827c24be330deed927e9fc323ad/bauplan-0.0.3a98-py3-none-win_amd64.whl
+[2024-06-01 01:04:48] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: Downloading https://files.pythonhosted.org/packages/af/a8/e190f42341fc8023b9bd39120dcf7422af3c33527a72931d972cddddb5bd/myfunctions_nadiaconeaev89-0.0.9.tar.gz
+[2024-06-01 01:04:48] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/f7/83/cc41f021b98f57700d38bdc19ef5da670b8660170889769627bf9b18e0b2/fudstop-2.8.3.tar.gz
+[2024-06-01 01:04:48] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: executing diffoscope
+[2024-06-01 01:04:48] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_nadiaconeaev89-0.0.8.tar.gz tmp/myfunctions_nadiaconeaev89-0.0.9.tar.gz --markdown 20240601/m/myfunctions-nadiaconeaev89/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 01:04:48] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-06-01 01:04:48] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.8.2.tar.gz tmp/fudstop-2.8.3.tar.gz --markdown 20240601/f/fudstop/2.8.2-2.8.3/README.md --exclude *.pyd
+[2024-06-01 01:04:49] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_nadiaconeaev89-0.0.8.tar.gz]
+[2024-06-01 01:04:49] INFO root fetch - processPackages [myfunctions-nadiaconeaev89]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_nadiaconeaev89-0.0.9.tar.gz]
+[2024-06-01 01:04:49] INFO root fetch - main [MainThread]: End processing [myfunctions-nadiaconeaev89]: success
+[2024-06-01 01:04:49] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/23/8b/70ca9196e9ab95cc954089482ad31add486cddb9566cd3de6f70ff677781/bauplan-0.0.3a99-py3-none-win_amd64.whl
+[2024-06-01 01:04:50] INFO root fetch - processPackages [madblog]: Downloading https://files.pythonhosted.org/packages/04/1d/afedf727ff86588e120b14288d3e4d4b69c63b58c662ea13511f25738baa/madblog-0.2.9.tar.gz
+[2024-06-01 01:04:50] INFO root fetch - processPackages [madblog]: executing diffoscope
+[2024-06-01 01:04:50] INFO root fetch - processPackages [madblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madblog-0.2.8.tar.gz tmp/madblog-0.2.9.tar.gz --markdown 20240601/m/madblog/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 01:04:50] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.2.tar.gz]
+[2024-06-01 01:04:50] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.3.tar.gz]
+[2024-06-01 01:04:50] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-06-01 01:04:50] INFO root fetch - processPackages [madblog]: Remove: archive file [/home/abi/fetcher/tmp/madblog-0.2.8.tar.gz]
+[2024-06-01 01:04:50] INFO root fetch - processPackages [madblog]: Remove: archive file [/home/abi/fetcher/tmp/madblog-0.2.9.tar.gz]
+[2024-06-01 01:04:50] INFO root fetch - main [MainThread]: End processing [madblog]: success
+[2024-06-01 01:04:52] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-06-01 01:04:52] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a98-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a99-py3-none-win_amd64.whl.zip --markdown 20240601/b/bauplan/0.0.3a98-0.0.3a99/README.md --exclude *.pyd
+[2024-06-01 01:05:44] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a98-py3-none-win_amd64.whl.zip]
+[2024-06-01 01:05:44] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a99-py3-none-win_amd64.whl.zip]
+[2024-06-01 01:05:44] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-06-01 01:05:44] INFO root fetch - main [MainThread]: Store serial: [23473338]
