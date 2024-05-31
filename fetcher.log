@@ -1929,3 +1929,24 @@
 [2024-06-01 01:46:41] INFO root fetch - processPackages [rcpchgrowth]: Remove: archive file [/home/abi/fetcher/tmp/rcpchgrowth-4.0.1.tar.gz]
 [2024-06-01 01:46:41] INFO root fetch - main [MainThread]: End processing [rcpchgrowth]: success
 [2024-06-01 01:46:41] INFO root fetch - main [MainThread]: Store serial: [23473767]
+[2024-06-01 01:48:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473767]
+[2024-06-01 01:48:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 01:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: platypush
+[2024-06-01 01:48:50] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 01:48:50] INFO root fetch - processPackages [platypush]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 01:48:50] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/6b/51/029c387bb238fc58c4c10d9383cde03fe6751260fa6e9812a368ed3fa962/platypush-1.0.3.tar.gz
+[2024-06-01 01:48:50] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/ee/ce/a0fcbf9517ca263ea492785dd95ae9c691833bdab344d0494d8b873f8fd5/myfunctions_khikmatillo1-0.0.8.tar.gz
+[2024-06-01 01:48:50] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/9e/2d/2c545f38b3134dde59e2676bf95267c8f90a730f5a1d702cb8e4b327c258/myfunctions_khikmatillo1-0.0.9.tar.gz
+[2024-06-01 01:48:50] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:48:50] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.8.tar.gz tmp/myfunctions_khikmatillo1-0.0.9.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 01:48:50] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/60/47/d46ade9fd40d0c0bfd456f4a0e6d327a71901489b4768b39944e9cf06401/platypush-1.0.4.tar.gz
+[2024-06-01 01:48:51] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.8.tar.gz]
+[2024-06-01 01:48:51] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.9.tar.gz]
+[2024-06-01 01:48:51] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:48:51] INFO root fetch - processPackages [platypush]: executing diffoscope
+[2024-06-01 01:48:51] INFO root fetch - processPackages [platypush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platypush-1.0.3.tar.gz tmp/platypush-1.0.4.tar.gz --markdown 20240601/p/platypush/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 01:48:58] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.3.tar.gz]
+[2024-06-01 01:48:58] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.4.tar.gz]
+[2024-06-01 01:48:58] INFO root fetch - main [MainThread]: End processing [platypush]: success
+[2024-06-01 01:48:58] INFO root fetch - main [MainThread]: Store serial: [23473772]
