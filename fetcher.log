@@ -1890,3 +1890,42 @@
 [2024-06-01 01:44:31] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.99.tar.gz]
 [2024-06-01 01:44:31] INFO root fetch - main [MainThread]: End processing [nomad-media-pip]: success
 [2024-06-01 01:44:31] INFO root fetch - main [MainThread]: Store serial: [23473756]
+[2024-06-01 01:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473756]
+[2024-06-01 01:46:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 01:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numalogic
+[2024-06-01 01:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rcpchgrowth
+[2024-06-01 01:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nnops
+[2024-06-01 01:46:39] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-01 01:46:39] INFO root fetch - processPackages [numalogic]: New version: [0.9.2] Old Version: [0.9.1a9]
+[2024-06-01 01:46:39] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/de/6a/7cb52e5b1468d17385fa3b492b7d912ddc57c2a591caa1455ddc79da0f1b/myfunctions_khikmatillo1-0.0.7.tar.gz
+[2024-06-01 01:46:39] INFO root fetch - processPackages [nnops]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-06-01 01:46:39] INFO root fetch - processPackages [numalogic]: Downloading https://files.pythonhosted.org/packages/b2/6d/f7c13948f98dba24ec80224a278d64a91d4f322402a10712c57a6ff5bfad/numalogic-0.9.1a9.tar.gz
+[2024-06-01 01:46:39] INFO root fetch - processPackages [rcpchgrowth]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-06-01 01:46:39] INFO root fetch - processPackages [nnops]: Downloading https://files.pythonhosted.org/packages/ad/d4/136463c806558c6e8ec872e9f79de2deb66a47d70f5ed2eb5539f020fe28/nnops-0.0.0.tar.gz
+[2024-06-01 01:46:39] INFO root fetch - processPackages [numalogic]: Downloading https://files.pythonhosted.org/packages/1a/92/49fbbfca4bf2e8a6ba9b7245aa47216d19ecfe6e93cf5d9a987d79e19f89/numalogic-0.9.2.tar.gz
+[2024-06-01 01:46:39] INFO root fetch - processPackages [rcpchgrowth]: Downloading https://files.pythonhosted.org/packages/17/57/0617803a389ed760093604e9139715c8e78ac45f8b8fc78c8336260b7e98/rcpchgrowth-4.0.0.tar.gz
+[2024-06-01 01:46:40] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/ee/ce/a0fcbf9517ca263ea492785dd95ae9c691833bdab344d0494d8b873f8fd5/myfunctions_khikmatillo1-0.0.8.tar.gz
+[2024-06-01 01:46:40] INFO root fetch - processPackages [numalogic]: executing diffoscope
+[2024-06-01 01:46:40] INFO root fetch - processPackages [numalogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numalogic-0.9.1a9.tar.gz tmp/numalogic-0.9.2.tar.gz --markdown 20240601/n/numalogic/0.9.1a9-0.9.2/README.md --exclude *.pyd
+[2024-06-01 01:46:40] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:46:40] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.7.tar.gz tmp/myfunctions_khikmatillo1-0.0.8.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-01 01:46:40] INFO root fetch - processPackages [nnops]: Downloading https://files.pythonhosted.org/packages/d0/75/8b3f98f15eea839bb92a83c1471be18cba1cb8e750860290d634a38beb10/nnops-0.0.1.tar.gz
+[2024-06-01 01:46:40] INFO root fetch - processPackages [nnops]: executing diffoscope
+[2024-06-01 01:46:40] INFO root fetch - processPackages [nnops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnops-0.0.0.tar.gz tmp/nnops-0.0.1.tar.gz --markdown 20240601/n/nnops/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-06-01 01:46:40] INFO root fetch - processPackages [rcpchgrowth]: Downloading https://files.pythonhosted.org/packages/c4/43/fde26732faef3532ba99007378f289ecb2e961a5b7683a5795a457f1cc32/rcpchgrowth-4.0.1.tar.gz
+[2024-06-01 01:46:40] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.7.tar.gz]
+[2024-06-01 01:46:40] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.8.tar.gz]
+[2024-06-01 01:46:40] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:46:40] INFO root fetch - processPackages [rcpchgrowth]: executing diffoscope
+[2024-06-01 01:46:40] INFO root fetch - processPackages [rcpchgrowth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcpchgrowth-4.0.0.tar.gz tmp/rcpchgrowth-4.0.1.tar.gz --markdown 20240601/r/rcpchgrowth/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-06-01 01:46:40] INFO root fetch - processPackages [nnops]: Remove: archive file [/home/abi/fetcher/tmp/nnops-0.0.0.tar.gz]
+[2024-06-01 01:46:40] INFO root fetch - processPackages [nnops]: Remove: archive file [/home/abi/fetcher/tmp/nnops-0.0.1.tar.gz]
+[2024-06-01 01:46:40] INFO root fetch - main [MainThread]: End processing [nnops]: success
+[2024-06-01 01:46:41] INFO root fetch - processPackages [numalogic]: Remove: archive file [/home/abi/fetcher/tmp/numalogic-0.9.1a9.tar.gz]
+[2024-06-01 01:46:41] INFO root fetch - processPackages [numalogic]: Remove: archive file [/home/abi/fetcher/tmp/numalogic-0.9.2.tar.gz]
+[2024-06-01 01:46:41] INFO root fetch - main [MainThread]: End processing [numalogic]: success
+[2024-06-01 01:46:41] INFO root fetch - processPackages [rcpchgrowth]: Remove: archive file [/home/abi/fetcher/tmp/rcpchgrowth-4.0.0.tar.gz]
+[2024-06-01 01:46:41] INFO root fetch - processPackages [rcpchgrowth]: Remove: archive file [/home/abi/fetcher/tmp/rcpchgrowth-4.0.1.tar.gz]
+[2024-06-01 01:46:41] INFO root fetch - main [MainThread]: End processing [rcpchgrowth]: success
+[2024-06-01 01:46:41] INFO root fetch - main [MainThread]: Store serial: [23473767]
