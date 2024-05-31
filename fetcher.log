@@ -1662,3 +1662,17 @@
 [2024-06-01 01:27:14] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240531201659.tar.gz]
 [2024-06-01 01:27:14] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2024-06-01 01:27:14] INFO root fetch - main [MainThread]: Store serial: [23473651]
+[2024-06-01 01:29:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473651]
+[2024-06-01 01:29:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 01:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473652]
+[2024-06-01 01:31:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 01:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-datapack
+[2024-06-01 01:31:28] INFO root fetch - processPackages [python-datapack]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-06-01 01:31:28] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/be/8c/e7a5710de6e9622bfbc5207fc3f223ec6113056bb0bba089d1a596816851/python_datapack-0.1.7.tar.gz
+[2024-06-01 01:31:28] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/1a/60/2b8d065372b9267d4ef97544f4f073f5e2f018bfb4248b6725ec722d61d7/python_datapack-0.2.0.tar.gz
+[2024-06-01 01:31:29] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-06-01 01:31:29] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.1.7.tar.gz tmp/python_datapack-0.2.0.tar.gz --markdown 20240601/p/python-datapack/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-06-01 01:31:29] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.1.7.tar.gz]
+[2024-06-01 01:31:29] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.0.tar.gz]
+[2024-06-01 01:31:29] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-06-01 01:31:29] INFO root fetch - main [MainThread]: Store serial: [23473655]
