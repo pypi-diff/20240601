@@ -1980,3 +1980,24 @@
 [2024-06-01 01:51:12] INFO root fetch - processPackages [pyspedas]: Remove: archive file [/home/abi/fetcher/tmp/pyspedas-1.5.9.tar.gz]
 [2024-06-01 01:51:12] INFO root fetch - main [MainThread]: End processing [pyspedas]: success
 [2024-06-01 01:51:12] INFO root fetch - main [MainThread]: Store serial: [23473781]
+[2024-06-01 01:53:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473781]
+[2024-06-01 01:53:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 01:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nomad-media-pip
+[2024-06-01 01:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkrcomponents
+[2024-06-01 01:53:21] INFO root fetch - processPackages [pkrcomponents]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-06-01 01:53:21] INFO root fetch - processPackages [nomad-media-pip]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 01:53:21] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/d4/4c/9e0386bf6de2daceaa76ae54b306668e0fc879d9609277fa292fa13c3164/pkrcomponents-2.0.0.tar.gz
+[2024-06-01 01:53:21] INFO root fetch - processPackages [nomad-media-pip]: Downloading https://files.pythonhosted.org/packages/89/17/9542f18838ecc3189b9eaaec4a7ccfe38f999660bb42c8092050b37835fd/nomad_media_pip-0.0.98.tar.gz
+[2024-06-01 01:53:21] INFO root fetch - processPackages [nomad-media-pip]: Downloading https://files.pythonhosted.org/packages/2b/93/9572cd6061f7b751abb490b170eb8add5795cf245ede93c0b7d20b885a13/nomad_media_pip-0.0.99.tar.gz
+[2024-06-01 01:53:21] INFO root fetch - processPackages [pkrcomponents]: Downloading https://files.pythonhosted.org/packages/e4/4b/d8c2c7d3f3b448e85127fafec195633b528597e42456d5cc1d6c76d1da99/pkrcomponents-2.0.1.tar.gz
+[2024-06-01 01:53:21] INFO root fetch - processPackages [nomad-media-pip]: executing diffoscope
+[2024-06-01 01:53:21] INFO root fetch - processPackages [nomad-media-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomad_media_pip-0.0.98.tar.gz tmp/nomad_media_pip-0.0.99.tar.gz --markdown 20240601/n/nomad-media-pip/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 01:53:21] INFO root fetch - processPackages [pkrcomponents]: executing diffoscope
+[2024-06-01 01:53:21] INFO root fetch - processPackages [pkrcomponents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkrcomponents-2.0.0.tar.gz tmp/pkrcomponents-2.0.1.tar.gz --markdown 20240601/p/pkrcomponents/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-06-01 01:53:22] INFO root fetch - processPackages [pkrcomponents]: Remove: archive file [/home/abi/fetcher/tmp/pkrcomponents-2.0.0.tar.gz]
+[2024-06-01 01:53:22] INFO root fetch - processPackages [pkrcomponents]: Remove: archive file [/home/abi/fetcher/tmp/pkrcomponents-2.0.1.tar.gz]
+[2024-06-01 01:53:22] INFO root fetch - main [MainThread]: End processing [pkrcomponents]: success
+[2024-06-01 01:53:24] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.98.tar.gz]
+[2024-06-01 01:53:24] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.99.tar.gz]
+[2024-06-01 01:53:24] INFO root fetch - main [MainThread]: End processing [nomad-media-pip]: success
+[2024-06-01 01:53:24] INFO root fetch - main [MainThread]: Store serial: [23473787]
