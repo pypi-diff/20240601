@@ -407,3 +407,63 @@
 [2024-06-01 00:31:27] INFO root fetch - processPackages [tfra-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfra_nightly-0.6.1.dev20240530032437-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-06-01 00:31:27] INFO root fetch - main [MainThread]: End processing [tfra-nightly]: success
 [2024-06-01 00:31:27] INFO root fetch - main [MainThread]: Store serial: [23473073]
+[2024-06-01 00:33:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473073]
+[2024-06-01 00:34:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zprp-ffmpeg
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: color-mapper
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: damply
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codac4matlab
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: socialdataanalysis
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ape-alchemy
+[2024-06-01 00:34:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: redbacktechpy
+[2024-06-01 00:34:01] INFO root fetch - processPackages [damply]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-06-01 00:34:01] INFO root fetch - processPackages [redbacktechpy]: New version: [2024.5.0b2] Old Version: [2024.5.0b1]
+[2024-06-01 00:34:01] INFO root fetch - processPackages [socialdataanalysis]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 00:34:01] WARNING root fetch - processPackages [color-mapper]: Skipping, unable to determine old version
+[2024-06-01 00:34:01] INFO root fetch - main [MainThread]: End processing [color-mapper] error
+[2024-06-01 00:34:02] INFO root fetch - processPackages [codac4matlab]: New version: [2.0.0.dev3] Old Version: [2.0.0.dev2]
+[2024-06-01 00:34:02] INFO root fetch - processPackages [zprp-ffmpeg]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-06-01 00:34:02] INFO root fetch - processPackages [damply]: Downloading https://files.pythonhosted.org/packages/02/5e/815f5bdc3a2153e1285e62bfabb20ad7f8634f63e9d4478dc87b83df5bbc/damply-0.4.0.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/66/5a/efc357e434c594975672b0821496915dee1a4900582ad1be28e9c24e9dcd/redbacktechpy-2024.5.0b1.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [ape-alchemy]: New version: [0.8.0] Old Version: [0.7.3]
+[2024-06-01 00:34:02] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/eb/47/cc4f8924b0e418534cd231584b512aec4cac0d4d54fcc7bb835b538d4127/socialdataanalysis-0.9.8.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/78/f6/914177491fd930b4b2044174f95de3ef1bec9204c7025a6e355c3f763556/zprp_ffmpeg-1.2.0.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [codac4matlab]: Downloading https://files.pythonhosted.org/packages/38/3d/5fb62fca6bf7adaf245d5451beab7f2161c4db6f186d285fae01dafcb9dc/codac4matlab-2.0.0.dev2-cp39-cp39-win_amd64.whl
+[2024-06-01 00:34:02] INFO root fetch - processPackages [ape-alchemy]: Downloading https://files.pythonhosted.org/packages/a7/64/74c9b20d44c1a8c2a28fd823c78e129de53c0032a02fe11e56e6cdb7f7b1/ape-alchemy-0.7.3.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/d9/4b/54fdab9dfc08dfaa30b65dec24c14246f2efb44604af761b5a72bbef0087/socialdataanalysis-0.9.9.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/ec/f5/c6f0c4dbabea181980becb71a763954ef5c0811b69f5fac0cb086b571891/redbacktechpy-2024.5.0b2.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [damply]: Downloading https://files.pythonhosted.org/packages/5e/e9/6174be0866f10ee767da7c0d3e37e80b0302e4a74d1eecf66805a1561008/damply-0.4.1.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [socialdataanalysis]: executing diffoscope
+[2024-06-01 00:34:02] INFO root fetch - processPackages [socialdataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialdataanalysis-0.9.8.tar.gz tmp/socialdataanalysis-0.9.9.tar.gz --markdown 20240601/s/socialdataanalysis/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 00:34:02] INFO root fetch - processPackages [redbacktechpy]: executing diffoscope
+[2024-06-01 00:34:02] INFO root fetch - processPackages [redbacktechpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbacktechpy-2024.5.0b1.tar.gz tmp/redbacktechpy-2024.5.0b2.tar.gz --markdown 20240601/r/redbacktechpy/2024.5.0b1-2024.5.0b2/README.md --exclude *.pyd
+[2024-06-01 00:34:02] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/c1/5a/124ad625fb7ab5feec088bcd449dabb61c4c0ac3688dfc2d282bdcb57906/zprp_ffmpeg-2.0.0.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [damply]: executing diffoscope
+[2024-06-01 00:34:02] INFO root fetch - processPackages [damply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/damply-0.4.0.tar.gz tmp/damply-0.4.1.tar.gz --markdown 20240601/d/damply/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-06-01 00:34:02] INFO root fetch - processPackages [ape-alchemy]: Downloading https://files.pythonhosted.org/packages/93/cc/601b0e966c1211b79742a1d79e9dc8c193faa84b2aa489a5bdb737e9fa48/ape-alchemy-0.8.0.tar.gz
+[2024-06-01 00:34:02] INFO root fetch - processPackages [zprp-ffmpeg]: executing diffoscope
+[2024-06-01 00:34:02] INFO root fetch - processPackages [zprp-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zprp_ffmpeg-1.2.0.tar.gz tmp/zprp_ffmpeg-2.0.0.tar.gz --markdown 20240601/z/zprp-ffmpeg/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-06-01 00:34:02] INFO root fetch - processPackages [codac4matlab]: Downloading https://files.pythonhosted.org/packages/a3/46/0eede18eda38b0f7c629a4662aff5170476777cc8ad99213646554fcaa06/codac4matlab-2.0.0.dev3-cp39-cp39-win_amd64.whl
+[2024-06-01 00:34:02] INFO root fetch - processPackages [ape-alchemy]: executing diffoscope
+[2024-06-01 00:34:02] INFO root fetch - processPackages [ape-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-alchemy-0.7.3.tar.gz tmp/ape-alchemy-0.8.0.tar.gz --markdown 20240601/a/ape-alchemy/0.7.3-0.8.0/README.md --exclude *.pyd
+[2024-06-01 00:34:02] INFO root fetch - processPackages [codac4matlab]: executing diffoscope
+[2024-06-01 00:34:02] INFO root fetch - processPackages [codac4matlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codac4matlab-2.0.0.dev2-cp39-cp39-win_amd64.whl.zip tmp/codac4matlab-2.0.0.dev3-cp39-cp39-win_amd64.whl.zip --markdown 20240601/c/codac4matlab/2.0.0.dev2-2.0.0.dev3/README.md --exclude *.pyd
+[2024-06-01 00:34:03] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.0b1.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.0b2.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [redbacktechpy]: success
+[2024-06-01 00:34:03] INFO root fetch - processPackages [damply]: Remove: archive file [/home/abi/fetcher/tmp/damply-0.4.0.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - processPackages [damply]: Remove: archive file [/home/abi/fetcher/tmp/damply-0.4.1.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [damply]: success
+[2024-06-01 00:34:03] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.8.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.9.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [socialdataanalysis]: success
+[2024-06-01 00:34:03] INFO root fetch - processPackages [ape-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ape-alchemy-0.7.3.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - processPackages [ape-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/ape-alchemy-0.8.0.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [ape-alchemy]: success
+[2024-06-01 00:34:03] INFO root fetch - processPackages [codac4matlab]: Remove: archive file [/home/abi/fetcher/tmp/codac4matlab-2.0.0.dev2-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 00:34:03] INFO root fetch - processPackages [codac4matlab]: Remove: archive file [/home/abi/fetcher/tmp/codac4matlab-2.0.0.dev3-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [codac4matlab]: success
+[2024-06-01 00:34:03] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-1.2.0.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.0.0.tar.gz]
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
+[2024-06-01 00:34:03] INFO root fetch - main [MainThread]: Store serial: [23473137]
