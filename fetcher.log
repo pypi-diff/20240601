@@ -165,3 +165,56 @@
 [2024-06-01 00:13:15] INFO root fetch - processPackages [abstra]: Remove: archive file [/home/abi/fetcher/tmp/abstra-2.9.0.tar.gz]
 [2024-06-01 00:13:15] INFO root fetch - main [MainThread]: End processing [abstra]: success
 [2024-06-01 00:13:15] INFO root fetch - main [MainThread]: Store serial: [23472921]
+[2024-06-01 00:15:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472921]
+[2024-06-01 00:15:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 00:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opengamedata-api-utils
+[2024-06-01 00:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cicdpoetrytest1
+[2024-06-01 00:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monisha
+[2024-06-01 00:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: celltraj
+[2024-06-01 00:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: echowarp
+[2024-06-01 00:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libretro.py
+[2024-06-01 00:15:24] INFO root fetch - processPackages [libretro.py]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-06-01 00:15:24] INFO root fetch - processPackages [opengamedata-api-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 00:15:24] INFO root fetch - processPackages [monisha]: New version: [0.0.79] Old Version: [0.0.78]
+[2024-06-01 00:15:24] INFO root fetch - processPackages [cicdpoetrytest1]: New version: [0.1.1.dev1] Old Version: [0.0.2]
+[2024-06-01 00:15:24] INFO root fetch - processPackages [opengamedata-api-utils]: Downloading https://files.pythonhosted.org/packages/cd/94/ef5117d5e5e32508091f9fd613f42ce07024d6a239bdc16be902eafe4c0d/opengamedata_api_utils-1.0.8.tar.gz
+[2024-06-01 00:15:24] INFO root fetch - processPackages [celltraj]: New version: [0.1.53] Old Version: [0.1.52]
+[2024-06-01 00:15:24] INFO root fetch - processPackages [libretro.py]: Downloading https://files.pythonhosted.org/packages/dc/a4/6cdd4ed0082cdc5b24f3fe5ef3acb21b8a104e29e6894b373a9af83e7a0c/libretro_py-0.0.1.tar.gz
+[2024-06-01 00:15:24] INFO root fetch - processPackages [echowarp]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-06-01 00:15:24] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/1c/bc/73c85f7884fb6186c4af925769896a5950875127794678c181fdd2364548/monisha-0.0.78.tar.gz
+[2024-06-01 00:15:24] INFO root fetch - processPackages [cicdpoetrytest1]: Downloading https://files.pythonhosted.org/packages/bf/e0/25ab12422dd5cc6def07ff06e02e51ab2e727b476647b6df6cd37725cbc7/cicdpoetrytest1-0.0.2.tar.gz
+[2024-06-01 00:15:24] INFO root fetch - processPackages [celltraj]: Downloading https://files.pythonhosted.org/packages/1a/1f/53cb1800b9a8a5894615444b6dc9a426ea06a0c9b3a9f3f4a5ead0a4a1ae/celltraj-0.1.52.tar.gz
+[2024-06-01 00:15:25] INFO root fetch - processPackages [echowarp]: Downloading https://files.pythonhosted.org/packages/19/4b/ad6567ce913fff1c9f9fc6b429f5305acebcd573bfe2031f972e4d71baba/echowarp-0.2.9-py3-none-any.whl
+[2024-06-01 00:15:25] INFO root fetch - processPackages [opengamedata-api-utils]: Downloading https://files.pythonhosted.org/packages/17/31/2e37a6e4d9ecfb3ea6dad171814df9734ff7ce462f257c2104465d4aba14/opengamedata_api_utils-1.0.9.tar.gz
+[2024-06-01 00:15:25] WARNING root fetch - processPackages [celltraj]: Skipping package: exceeds size limit 67946324>=10485760
+[2024-06-01 00:15:25] INFO root fetch - main [MainThread]: End processing [celltraj] error
+[2024-06-01 00:15:25] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/3c/2a/fe0869123b88e7c7682c5a0d9de39c7e07329aab6ec2956b838e230594c7/monisha-0.0.79.tar.gz
+[2024-06-01 00:15:25] INFO root fetch - processPackages [libretro.py]: Downloading https://files.pythonhosted.org/packages/fb/86/90f277fe724351434329904befa3fb12237a6b20e87e01e3c1ace3509ee6/libretro_py-0.1.0.tar.gz
+[2024-06-01 00:15:25] INFO root fetch - processPackages [opengamedata-api-utils]: executing diffoscope
+[2024-06-01 00:15:25] INFO root fetch - processPackages [opengamedata-api-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengamedata_api_utils-1.0.8.tar.gz tmp/opengamedata_api_utils-1.0.9.tar.gz --markdown 20240601/o/opengamedata-api-utils/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 00:15:25] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-06-01 00:15:25] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.78.tar.gz tmp/monisha-0.0.79.tar.gz --markdown 20240601/m/monisha/0.0.78-0.0.79/README.md --exclude *.pyd
+[2024-06-01 00:15:25] INFO root fetch - processPackages [cicdpoetrytest1]: Downloading https://files.pythonhosted.org/packages/e0/a1/3c98b05bb7794a81d05f0b33f61af2278856ca4f9dba6a13b599abfb48d9/cicdpoetrytest1-0.1.1.dev1.tar.gz
+[2024-06-01 00:15:25] INFO root fetch - processPackages [libretro.py]: executing diffoscope
+[2024-06-01 00:15:25] INFO root fetch - processPackages [libretro.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretro_py-0.0.1.tar.gz tmp/libretro_py-0.1.0.tar.gz --markdown 20240601/l/libretro.py/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-06-01 00:15:25] INFO root fetch - processPackages [echowarp]: Downloading https://files.pythonhosted.org/packages/ee/41/69a0337176192d4753104d2091f521174bc15c5bf220fcb6e756ccd0070e/echowarp-0.3.0-py3-none-any.whl
+[2024-06-01 00:15:25] INFO root fetch - processPackages [cicdpoetrytest1]: executing diffoscope
+[2024-06-01 00:15:25] INFO root fetch - processPackages [cicdpoetrytest1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cicdpoetrytest1-0.0.2.tar.gz tmp/cicdpoetrytest1-0.1.1.dev1.tar.gz --markdown 20240601/c/cicdpoetrytest1/0.0.2-0.1.1.dev1/README.md --exclude *.pyd
+[2024-06-01 00:15:25] INFO root fetch - processPackages [echowarp]: executing diffoscope
+[2024-06-01 00:15:25] INFO root fetch - processPackages [echowarp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echowarp-0.2.9-py3-none-any.whl.zip tmp/echowarp-0.3.0-py3-none-any.whl.zip --markdown 20240601/e/echowarp/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-06-01 00:15:25] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.78.tar.gz]
+[2024-06-01 00:15:25] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.79.tar.gz]
+[2024-06-01 00:15:25] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-06-01 00:15:25] INFO root fetch - processPackages [cicdpoetrytest1]: Remove: archive file [/home/abi/fetcher/tmp/cicdpoetrytest1-0.0.2.tar.gz]
+[2024-06-01 00:15:25] INFO root fetch - processPackages [cicdpoetrytest1]: Remove: archive file [/home/abi/fetcher/tmp/cicdpoetrytest1-0.1.1.dev1.tar.gz]
+[2024-06-01 00:15:25] INFO root fetch - main [MainThread]: End processing [cicdpoetrytest1]: success
+[2024-06-01 00:15:25] INFO root fetch - processPackages [opengamedata-api-utils]: Remove: archive file [/home/abi/fetcher/tmp/opengamedata_api_utils-1.0.8.tar.gz]
+[2024-06-01 00:15:25] INFO root fetch - processPackages [opengamedata-api-utils]: Remove: archive file [/home/abi/fetcher/tmp/opengamedata_api_utils-1.0.9.tar.gz]
+[2024-06-01 00:15:25] INFO root fetch - main [MainThread]: End processing [opengamedata-api-utils]: success
+[2024-06-01 00:15:26] INFO root fetch - processPackages [echowarp]: Remove: archive file [/home/abi/fetcher/tmp/echowarp-0.2.9-py3-none-any.whl.zip]
+[2024-06-01 00:15:26] INFO root fetch - processPackages [echowarp]: Remove: archive file [/home/abi/fetcher/tmp/echowarp-0.3.0-py3-none-any.whl.zip]
+[2024-06-01 00:15:26] INFO root fetch - main [MainThread]: End processing [echowarp]: success
+[2024-06-01 00:15:26] INFO root fetch - processPackages [libretro.py]: Remove: archive file [/home/abi/fetcher/tmp/libretro_py-0.0.1.tar.gz]
+[2024-06-01 00:15:26] INFO root fetch - processPackages [libretro.py]: Remove: archive file [/home/abi/fetcher/tmp/libretro_py-0.1.0.tar.gz]
+[2024-06-01 00:15:26] INFO root fetch - main [MainThread]: End processing [libretro.py]: success
+[2024-06-01 00:15:26] INFO root fetch - main [MainThread]: Store serial: [23472943]
