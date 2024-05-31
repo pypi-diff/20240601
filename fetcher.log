@@ -1676,3 +1676,33 @@
 [2024-06-01 01:31:29] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.0.tar.gz]
 [2024-06-01 01:31:29] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
 [2024-06-01 01:31:29] INFO root fetch - main [MainThread]: Store serial: [23473655]
+[2024-06-01 01:33:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473655]
+[2024-06-01 01:33:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 01:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhamtools
+[2024-06-01 01:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myfunction-ilonaserg
+[2024-06-01 01:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: VRE-Repository-Connector
+[2024-06-01 01:33:38] INFO root fetch - processPackages [myfunction-ilonaserg]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 01:33:38] INFO root fetch - processPackages [VRE-Repository-Connector]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-06-01 01:33:38] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/c3/7c/1b5131ce0fc7e4536493b2d3e71c5efec1d4b9e352d008ef784938ca8a18/vre_repository_connector-0.1.1.tar.gz
+[2024-06-01 01:33:38] INFO root fetch - processPackages [myfunction-ilonaserg]: Downloading https://files.pythonhosted.org/packages/92/25/1859759829f15c7e740237acc9a711f29e3603f64cbf69d41eb6e8a11bf9/myfunction_ilonaserg-0.0.2.tar.gz
+[2024-06-01 01:33:38] INFO root fetch - processPackages [pyhamtools]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-01 01:33:38] INFO root fetch - processPackages [pyhamtools]: Downloading https://files.pythonhosted.org/packages/92/82/adb77866d1d6411e1298e2e157cc7f16e5830152cbd648f1912ca3d450a9/pyhamtools-0.9.0.tar.gz
+[2024-06-01 01:33:38] INFO root fetch - processPackages [myfunction-ilonaserg]: Downloading https://files.pythonhosted.org/packages/82/b8/47529d9aad29be91f31edb0c861b0129f868fc2c1a89aa5932e31e7513e3/myfunction_ilonaserg-0.0.3.tar.gz
+[2024-06-01 01:33:38] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/6c/c8/18784200c275d894137f19975be16b0f194b977c7b2a4e985331135d2634/vre_repository_connector-0.2.0.tar.gz
+[2024-06-01 01:33:38] INFO root fetch - processPackages [myfunction-ilonaserg]: executing diffoscope
+[2024-06-01 01:33:38] INFO root fetch - processPackages [myfunction-ilonaserg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunction_ilonaserg-0.0.2.tar.gz tmp/myfunction_ilonaserg-0.0.3.tar.gz --markdown 20240601/m/myfunction-ilonaserg/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 01:33:38] INFO root fetch - processPackages [VRE-Repository-Connector]: executing diffoscope
+[2024-06-01 01:33:38] INFO root fetch - processPackages [VRE-Repository-Connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vre_repository_connector-0.1.1.tar.gz tmp/vre_repository_connector-0.2.0.tar.gz --markdown 20240601/V/VRE-Repository-Connector/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-06-01 01:33:38] INFO root fetch - processPackages [pyhamtools]: Downloading https://files.pythonhosted.org/packages/6c/25/6b8cb6e6f641b0be2118dfeff7fe2fbbc188aeddee4818128a77c96ac596/pyhamtools-0.9.1.tar.gz
+[2024-06-01 01:33:38] INFO root fetch - processPackages [pyhamtools]: executing diffoscope
+[2024-06-01 01:33:38] INFO root fetch - processPackages [pyhamtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhamtools-0.9.0.tar.gz tmp/pyhamtools-0.9.1.tar.gz --markdown 20240601/p/pyhamtools/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-01 01:33:39] INFO root fetch - processPackages [myfunction-ilonaserg]: Remove: archive file [/home/abi/fetcher/tmp/myfunction_ilonaserg-0.0.2.tar.gz]
+[2024-06-01 01:33:39] INFO root fetch - processPackages [myfunction-ilonaserg]: Remove: archive file [/home/abi/fetcher/tmp/myfunction_ilonaserg-0.0.3.tar.gz]
+[2024-06-01 01:33:39] INFO root fetch - main [MainThread]: End processing [myfunction-ilonaserg]: success
+[2024-06-01 01:33:39] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.1.1.tar.gz]
+[2024-06-01 01:33:39] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.2.0.tar.gz]
+[2024-06-01 01:33:39] INFO root fetch - main [MainThread]: End processing [VRE-Repository-Connector]: success
+[2024-06-01 01:33:39] INFO root fetch - processPackages [pyhamtools]: Remove: archive file [/home/abi/fetcher/tmp/pyhamtools-0.9.0.tar.gz]
+[2024-06-01 01:33:39] INFO root fetch - processPackages [pyhamtools]: Remove: archive file [/home/abi/fetcher/tmp/pyhamtools-0.9.1.tar.gz]
+[2024-06-01 01:33:39] INFO root fetch - main [MainThread]: End processing [pyhamtools]: success
+[2024-06-01 01:33:39] INFO root fetch - main [MainThread]: Store serial: [23473663]
