@@ -2001,3 +2001,23 @@
 [2024-06-01 01:53:24] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.99.tar.gz]
 [2024-06-01 01:53:24] INFO root fetch - main [MainThread]: End processing [nomad-media-pip]: success
 [2024-06-01 01:53:24] INFO root fetch - main [MainThread]: Store serial: [23473787]
+[2024-06-01 01:55:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473787]
+[2024-06-01 01:55:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 01:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipecat-ai
+[2024-06-01 01:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-datapack
+[2024-06-01 01:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: awan-llm-api
+[2024-06-01 01:55:32] INFO root fetch - processPackages [python-datapack]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-06-01 01:55:32] WARNING root fetch - processPackages [awan-llm-api]: Skipping, unable to determine old version
+[2024-06-01 01:55:32] INFO root fetch - main [MainThread]: End processing [awan-llm-api] error
+[2024-06-01 01:55:32] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/be/8c/e7a5710de6e9622bfbc5207fc3f223ec6113056bb0bba089d1a596816851/python_datapack-0.1.7.tar.gz
+[2024-06-01 01:55:32] INFO root fetch - processPackages [pipecat-ai]: New version: [0.0.9] Old Version: [0.0.25]
+[2024-06-01 01:55:33] INFO root fetch - processPackages [pipecat-ai]: Downloading https://files.pythonhosted.org/packages/07/90/f4570cb74c4badae1ad66d88c38fb37c0e9ca743dfcc5a8c3e20ae5fda70/pipecat_ai-0.0.25.tar.gz
+[2024-06-01 01:55:33] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/1a/60/2b8d065372b9267d4ef97544f4f073f5e2f018bfb4248b6725ec722d61d7/python_datapack-0.2.0.tar.gz
+[2024-06-01 01:55:33] WARNING root fetch - processPackages [pipecat-ai]: Skipping package: exceeds size limit 64309931>=10485760
+[2024-06-01 01:55:33] INFO root fetch - main [MainThread]: End processing [pipecat-ai] error
+[2024-06-01 01:55:33] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-06-01 01:55:33] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.1.7.tar.gz tmp/python_datapack-0.2.0.tar.gz --markdown 20240601/p/python-datapack/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-06-01 01:55:33] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.1.7.tar.gz]
+[2024-06-01 01:55:33] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.0.tar.gz]
+[2024-06-01 01:55:33] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-06-01 01:55:33] INFO root fetch - main [MainThread]: Store serial: [23473795]
