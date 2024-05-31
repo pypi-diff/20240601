@@ -88,3 +88,35 @@
 [2024-06-01 00:04:57] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-workflow-sdk-preview-0.1.996.tar.gz]
 [2024-06-01 00:04:57] INFO root fetch - main [MainThread]: End processing [lusid-workflow-sdk-preview]: success
 [2024-06-01 00:04:57] INFO root fetch - main [MainThread]: Store serial: [23472885]
+[2024-06-01 00:07:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472885]
+[2024-06-01 00:07:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 00:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhasura
+[2024-06-01 00:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shifts
+[2024-06-01 00:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cicdpoetrytest1
+[2024-06-01 00:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fk-util-tools
+[2024-06-01 00:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NikGapps
+[2024-06-01 00:07:06] WARNING root fetch - processPackages [cicdpoetrytest1]: Skipping, unable to determine old version
+[2024-06-01 00:07:06] INFO root fetch - main [MainThread]: End processing [cicdpoetrytest1] error
+[2024-06-01 00:07:06] INFO root fetch - processPackages [fk-util-tools]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 00:07:06] WARNING root fetch - processPackages [shifts]: Skipping, unable to determine old version
+[2024-06-01 00:07:06] INFO root fetch - main [MainThread]: End processing [shifts] error
+[2024-06-01 00:07:06] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 00:07:06] INFO root fetch - processPackages [fk-util-tools]: Downloading https://files.pythonhosted.org/packages/c7/00/8cdfbf0e066a74b0ad7e85df694b206e39fe11218af24c7db9e804652efd/fk_util_tools-0.1.5.tar.gz
+[2024-06-01 00:07:06] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-06-01 00:07:06] INFO root fetch - processPackages [NikGapps]: New version: [2.65] Old Version: [2.64]
+[2024-06-01 00:07:06] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-06-01 00:07:06] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/bf/c0/6ec642337d51819e2df23d16a59ee700507bef843f4688c69c013d0f1e2a/nikgapps-2.64.tar.gz
+[2024-06-01 00:07:06] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-06-01 00:07:06] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240601/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 00:07:06] INFO root fetch - processPackages [fk-util-tools]: Downloading https://files.pythonhosted.org/packages/2f/42/931ba02813d2e391dab3178343ce71bb7103c303c43e9368c6b5f3a4fd54/fk_util_tools-0.1.6.tar.gz
+[2024-06-01 00:07:06] INFO root fetch - processPackages [fk-util-tools]: executing diffoscope
+[2024-06-01 00:07:06] INFO root fetch - processPackages [fk-util-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fk_util_tools-0.1.5.tar.gz tmp/fk_util_tools-0.1.6.tar.gz --markdown 20240601/f/fk-util-tools/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 00:07:06] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 44662415>=10485760
+[2024-06-01 00:07:06] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2024-06-01 00:07:07] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-06-01 00:07:07] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-06-01 00:07:07] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-06-01 00:07:07] INFO root fetch - processPackages [fk-util-tools]: Remove: archive file [/home/abi/fetcher/tmp/fk_util_tools-0.1.5.tar.gz]
+[2024-06-01 00:07:07] INFO root fetch - processPackages [fk-util-tools]: Remove: archive file [/home/abi/fetcher/tmp/fk_util_tools-0.1.6.tar.gz]
+[2024-06-01 00:07:07] INFO root fetch - main [MainThread]: End processing [fk-util-tools]: success
+[2024-06-01 00:07:07] INFO root fetch - main [MainThread]: Store serial: [23472901]
