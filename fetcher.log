@@ -120,3 +120,18 @@
 [2024-06-01 00:07:07] INFO root fetch - processPackages [fk-util-tools]: Remove: archive file [/home/abi/fetcher/tmp/fk_util_tools-0.1.6.tar.gz]
 [2024-06-01 00:07:07] INFO root fetch - main [MainThread]: End processing [fk-util-tools]: success
 [2024-06-01 00:07:07] INFO root fetch - main [MainThread]: Store serial: [23472901]
+[2024-06-01 00:09:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472901]
+[2024-06-01 00:09:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 00:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fiftyone-db
+[2024-06-01 00:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coSMicQC
+[2024-06-01 00:09:15] WARNING root fetch - processPackages [coSMicQC]: Skipping, unable to determine old version
+[2024-06-01 00:09:15] INFO root fetch - main [MainThread]: End processing [coSMicQC] error
+[2024-06-01 00:09:15] INFO root fetch - processPackages [fiftyone-db]: New version: [1.1.3rc2] Old Version: [1.1.3rc1]
+[2024-06-01 00:09:15] INFO root fetch - processPackages [fiftyone-db]: Downloading https://files.pythonhosted.org/packages/54/bd/1c850ffe6f7c281c91b216f38f81283327bfb5f69bb8bda411f603103a56/fiftyone_db-1.1.3rc1.tar.gz
+[2024-06-01 00:09:15] INFO root fetch - processPackages [fiftyone-db]: Downloading https://files.pythonhosted.org/packages/32/e6/b09e5857e64694786b6d13737387278ec8404dbf5250840c9af3c48b456e/fiftyone_db-1.1.3rc2.tar.gz
+[2024-06-01 00:09:15] INFO root fetch - processPackages [fiftyone-db]: executing diffoscope
+[2024-06-01 00:09:15] INFO root fetch - processPackages [fiftyone-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_db-1.1.3rc1.tar.gz tmp/fiftyone_db-1.1.3rc2.tar.gz --markdown 20240601/f/fiftyone-db/1.1.3rc1-1.1.3rc2/README.md --exclude *.pyd
+[2024-06-01 00:09:16] INFO root fetch - processPackages [fiftyone-db]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_db-1.1.3rc1.tar.gz]
+[2024-06-01 00:09:16] INFO root fetch - processPackages [fiftyone-db]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_db-1.1.3rc2.tar.gz]
+[2024-06-01 00:09:16] INFO root fetch - main [MainThread]: End processing [fiftyone-db]: success
+[2024-06-01 00:09:16] INFO root fetch - main [MainThread]: Store serial: [23472912]
