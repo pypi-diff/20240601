@@ -760,3 +760,42 @@
 [2024-06-01 00:49:24] INFO root fetch - processPackages [yangsuite]: Remove: archive file [/home/abi/fetcher/tmp/yangsuite-3.0.3.post0.dev1-py3-none-any.whl.zip]
 [2024-06-01 00:49:24] INFO root fetch - main [MainThread]: End processing [yangsuite]: success
 [2024-06-01 00:49:24] INFO root fetch - main [MainThread]: Store serial: [23473236]
+[2024-06-01 00:51:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473236]
+[2024-06-01 00:51:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 00:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lpath-md
+[2024-06-01 00:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sofapal
+[2024-06-01 00:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ape-infura
+[2024-06-01 00:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcrutils
+[2024-06-01 00:51:36] INFO root fetch - processPackages [sofapal]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 00:51:36] INFO root fetch - processPackages [lpath-md]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-01 00:51:36] INFO root fetch - processPackages [ape-infura]: New version: [0.8.0] Old Version: [0.7.3]
+[2024-06-01 00:51:36] INFO root fetch - processPackages [tcrutils]: New version: [12.0.178] Old Version: [12.0.177]
+[2024-06-01 00:51:36] INFO root fetch - processPackages [sofapal]: Downloading https://files.pythonhosted.org/packages/3b/b8/5f177cc675f2fea98cc3494377f823876e75489f70d7f2047f6c19d123b5/sofapal-0.0.1.tar.gz
+[2024-06-01 00:51:36] INFO root fetch - processPackages [lpath-md]: Downloading https://files.pythonhosted.org/packages/4c/90/f5adbab1407662c5e6ab222886eb5feadb52abca757a58c0b9221f580f0f/lpath_md-1.0.2.tar.gz
+[2024-06-01 00:51:36] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/5a/d4/ddb801478e72fb19e08bbaa7130848276aad471832806e459990c835562d/tcrutils-12.0.177.tar.gz
+[2024-06-01 00:51:36] INFO root fetch - processPackages [ape-infura]: Downloading https://files.pythonhosted.org/packages/51/1d/7540c85c53b128bdf4f13b6ce1ae52aad91d5cc95d40b485a7a650ee1e03/ape-infura-0.7.3.tar.gz
+[2024-06-01 00:51:36] INFO root fetch - processPackages [lpath-md]: Downloading https://files.pythonhosted.org/packages/31/19/4c168c0d01e0373c09a3b732f92c53860fa3e7b72ab3e75c66de7801637c/lpath_md-1.0.3.tar.gz
+[2024-06-01 00:51:36] INFO root fetch - processPackages [sofapal]: Downloading https://files.pythonhosted.org/packages/93/49/53b970d804836bb23a66b43beedd1e78cd3c8dec68b19b96f2f2f4f1ee3b/sofapal-0.0.2.tar.gz
+[2024-06-01 00:51:36] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/ee/f2/badaa679e6052320f0454f41d59e98b09ddb2471a176c341806fb0ba22ad/tcrutils-12.0.178.tar.gz
+[2024-06-01 00:51:37] INFO root fetch - processPackages [sofapal]: executing diffoscope
+[2024-06-01 00:51:37] INFO root fetch - processPackages [sofapal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sofapal-0.0.1.tar.gz tmp/sofapal-0.0.2.tar.gz --markdown 20240601/s/sofapal/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 00:51:37] INFO root fetch - processPackages [ape-infura]: Downloading https://files.pythonhosted.org/packages/bf/bc/b9ef9cf580d899ebe17f6a565f56b078546d65c547b15c8fc053158ee15c/ape-infura-0.8.0.tar.gz
+[2024-06-01 00:51:37] INFO root fetch - processPackages [lpath-md]: executing diffoscope
+[2024-06-01 00:51:37] INFO root fetch - processPackages [lpath-md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpath_md-1.0.2.tar.gz tmp/lpath_md-1.0.3.tar.gz --markdown 20240601/l/lpath-md/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-01 00:51:37] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-06-01 00:51:37] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.177.tar.gz tmp/tcrutils-12.0.178.tar.gz --markdown 20240601/t/tcrutils/12.0.177-12.0.178/README.md --exclude *.pyd
+[2024-06-01 00:51:37] INFO root fetch - processPackages [ape-infura]: executing diffoscope
+[2024-06-01 00:51:37] INFO root fetch - processPackages [ape-infura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-infura-0.7.3.tar.gz tmp/ape-infura-0.8.0.tar.gz --markdown 20240601/a/ape-infura/0.7.3-0.8.0/README.md --exclude *.pyd
+[2024-06-01 00:51:37] INFO root fetch - processPackages [sofapal]: Remove: archive file [/home/abi/fetcher/tmp/sofapal-0.0.1.tar.gz]
+[2024-06-01 00:51:37] INFO root fetch - processPackages [sofapal]: Remove: archive file [/home/abi/fetcher/tmp/sofapal-0.0.2.tar.gz]
+[2024-06-01 00:51:37] INFO root fetch - main [MainThread]: End processing [sofapal]: success
+[2024-06-01 00:51:37] INFO root fetch - processPackages [lpath-md]: Remove: archive file [/home/abi/fetcher/tmp/lpath_md-1.0.2.tar.gz]
+[2024-06-01 00:51:37] INFO root fetch - processPackages [lpath-md]: Remove: archive file [/home/abi/fetcher/tmp/lpath_md-1.0.3.tar.gz]
+[2024-06-01 00:51:37] INFO root fetch - main [MainThread]: End processing [lpath-md]: success
+[2024-06-01 00:51:37] INFO root fetch - processPackages [ape-infura]: Remove: archive file [/home/abi/fetcher/tmp/ape-infura-0.7.3.tar.gz]
+[2024-06-01 00:51:37] INFO root fetch - processPackages [ape-infura]: Remove: archive file [/home/abi/fetcher/tmp/ape-infura-0.8.0.tar.gz]
+[2024-06-01 00:51:37] INFO root fetch - main [MainThread]: End processing [ape-infura]: success
+[2024-06-01 00:51:38] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.177.tar.gz]
+[2024-06-01 00:51:38] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.178.tar.gz]
+[2024-06-01 00:51:38] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-06-01 00:51:38] INFO root fetch - main [MainThread]: Store serial: [23473248]
