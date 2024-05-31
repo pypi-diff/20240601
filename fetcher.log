@@ -1821,3 +1821,33 @@
 [2024-06-01 01:40:09] INFO root fetch - processPackages [replete]: Remove: archive file [/home/abi/fetcher/tmp/replete-2.3.1.tar.gz]
 [2024-06-01 01:40:09] INFO root fetch - main [MainThread]: End processing [replete]: success
 [2024-06-01 01:40:09] INFO root fetch - main [MainThread]: Store serial: [23473733]
+[2024-06-01 01:42:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473733]
+[2024-06-01 01:42:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 01:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synapseclient
+[2024-06-01 01:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tcrutils
+[2024-06-01 01:42:17] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 01:42:17] INFO root fetch - processPackages [tcrutils]: New version: [12.0.178] Old Version: [12.0.177]
+[2024-06-01 01:42:17] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/5a/d4/ddb801478e72fb19e08bbaa7130848276aad471832806e459990c835562d/tcrutils-12.0.177.tar.gz
+[2024-06-01 01:42:17] INFO root fetch - processPackages [synapseclient]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-06-01 01:42:17] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/25/1f/daa2f288dfcf9ff0cc4bcf2d974adc717a0390174df733706c5a4a518a69/myfunctions_khikmatillo1-0.0.6.tar.gz
+[2024-06-01 01:42:17] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/ee/f2/badaa679e6052320f0454f41d59e98b09ddb2471a176c341806fb0ba22ad/tcrutils-12.0.178.tar.gz
+[2024-06-01 01:42:17] INFO root fetch - processPackages [synapseclient]: Downloading https://files.pythonhosted.org/packages/48/c8/9f01d4fc1aaf1c0f2f1b3cf7e11ef57fe3ac9aa83f1994dba8c4e5f7c54a/synapseclient-4.2.0.tar.gz
+[2024-06-01 01:42:17] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-06-01 01:42:17] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.177.tar.gz tmp/tcrutils-12.0.178.tar.gz --markdown 20240601/t/tcrutils/12.0.177-12.0.178/README.md --exclude *.pyd
+[2024-06-01 01:42:17] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/de/6a/7cb52e5b1468d17385fa3b492b7d912ddc57c2a591caa1455ddc79da0f1b/myfunctions_khikmatillo1-0.0.7.tar.gz
+[2024-06-01 01:42:17] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:42:17] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.6.tar.gz tmp/myfunctions_khikmatillo1-0.0.7.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 01:42:17] INFO root fetch - processPackages [synapseclient]: Downloading https://files.pythonhosted.org/packages/29/e8/87bea30bf8353431ca160acb71d5bed0ef770546d71a80591ee5a3a54bbf/synapseclient-4.3.0.tar.gz
+[2024-06-01 01:42:18] INFO root fetch - processPackages [synapseclient]: executing diffoscope
+[2024-06-01 01:42:18] INFO root fetch - processPackages [synapseclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapseclient-4.2.0.tar.gz tmp/synapseclient-4.3.0.tar.gz --markdown 20240601/s/synapseclient/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-06-01 01:42:18] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.6.tar.gz]
+[2024-06-01 01:42:18] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.7.tar.gz]
+[2024-06-01 01:42:18] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:42:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.177.tar.gz]
+[2024-06-01 01:42:18] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.178.tar.gz]
+[2024-06-01 01:42:18] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-06-01 01:42:19] INFO root fetch - processPackages [synapseclient]: Remove: archive file [/home/abi/fetcher/tmp/synapseclient-4.2.0.tar.gz]
+[2024-06-01 01:42:19] INFO root fetch - processPackages [synapseclient]: Remove: archive file [/home/abi/fetcher/tmp/synapseclient-4.3.0.tar.gz]
+[2024-06-01 01:42:19] INFO root fetch - main [MainThread]: End processing [synapseclient]: success
+[2024-06-01 01:42:19] INFO root fetch - main [MainThread]: Store serial: [23473743]
