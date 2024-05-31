@@ -646,3 +646,42 @@
 [2024-06-01 00:42:47] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.7.tar.gz]
 [2024-06-01 00:42:47] INFO root fetch - main [MainThread]: End processing [nadl]: success
 [2024-06-01 00:42:47] INFO root fetch - main [MainThread]: Store serial: [23473197]
+[2024-06-01 00:44:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473197]
+[2024-06-01 00:44:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 00:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataconf
+[2024-06-01 00:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: praetorian-cli
+[2024-06-01 00:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nftpy
+[2024-06-01 00:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nadl
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nadl]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/cd/94/f64de9e241444b83dfabef41b97e55467fe20740a811d504dc7bce9f8c6b/nadl-1.5.6.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nftpy]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-06-01 00:44:56] INFO root fetch - processPackages [praetorian-cli]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 00:44:56] INFO root fetch - processPackages [dataconf]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-06-01 00:44:56] INFO root fetch - processPackages [praetorian-cli]: Downloading https://files.pythonhosted.org/packages/c9/e3/941a6c40c40eede3936e7031f1fd4a53143ce8e7cc7a8ed9e5ff4346e968/praetorian_cli-0.8.1.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nftpy]: Downloading https://files.pythonhosted.org/packages/d9/e3/811598fc96980878794e5205824fb6bf372050186e01d8e7224d37371741/nftpy-1.1.3.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [dataconf]: Downloading https://files.pythonhosted.org/packages/e6/4d/511bf2ed9808863d337f29dde0fef7dfb9098fe8b4cb0cd787480a39adda/dataconf-3.1.0.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/50/2d/dd2101491e054a4e9581e4d60913858d189a36e7814283c22fa4b4bbf074/nadl-1.5.7.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nadl]: executing diffoscope
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nadl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadl-1.5.6.tar.gz tmp/nadl-1.5.7.tar.gz --markdown 20240601/n/nadl/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-01 00:44:56] INFO root fetch - processPackages [praetorian-cli]: Downloading https://files.pythonhosted.org/packages/ed/93/29fb2451874e4b51aa9da51167c2c325b5757ab2cc7623ef1e13629f5845/praetorian_cli-0.9.0.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [nftpy]: Downloading https://files.pythonhosted.org/packages/6c/71/5113f857178f183ea7f7a13b308f531d453bc7ffb93da6b62ed8d94ece88/nftpy-1.1.4.tar.gz
+[2024-06-01 00:44:56] INFO root fetch - processPackages [dataconf]: Downloading https://files.pythonhosted.org/packages/4a/f1/32fd797d99c9f1d7a621b2a09179b251da2f2f12c3af51fc3d0721a2b9aa/dataconf-3.2.0.tar.gz
+[2024-06-01 00:44:57] INFO root fetch - processPackages [praetorian-cli]: executing diffoscope
+[2024-06-01 00:44:57] INFO root fetch - processPackages [praetorian-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praetorian_cli-0.8.1.tar.gz tmp/praetorian_cli-0.9.0.tar.gz --markdown 20240601/p/praetorian-cli/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 00:44:57] INFO root fetch - processPackages [nftpy]: executing diffoscope
+[2024-06-01 00:44:57] INFO root fetch - processPackages [nftpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nftpy-1.1.3.tar.gz tmp/nftpy-1.1.4.tar.gz --markdown 20240601/n/nftpy/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-06-01 00:44:57] INFO root fetch - processPackages [dataconf]: executing diffoscope
+[2024-06-01 00:44:57] INFO root fetch - processPackages [dataconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataconf-3.1.0.tar.gz tmp/dataconf-3.2.0.tar.gz --markdown 20240601/d/dataconf/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-06-01 00:44:57] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.6.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.7.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - main [MainThread]: End processing [nadl]: success
+[2024-06-01 00:44:57] INFO root fetch - processPackages [praetorian-cli]: Remove: archive file [/home/abi/fetcher/tmp/praetorian_cli-0.8.1.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - processPackages [praetorian-cli]: Remove: archive file [/home/abi/fetcher/tmp/praetorian_cli-0.9.0.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - main [MainThread]: End processing [praetorian-cli]: success
+[2024-06-01 00:44:57] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.3.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.4.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - main [MainThread]: End processing [nftpy]: success
+[2024-06-01 00:44:57] INFO root fetch - processPackages [dataconf]: Remove: archive file [/home/abi/fetcher/tmp/dataconf-3.1.0.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - processPackages [dataconf]: Remove: archive file [/home/abi/fetcher/tmp/dataconf-3.2.0.tar.gz]
+[2024-06-01 00:44:57] INFO root fetch - main [MainThread]: End processing [dataconf]: success
+[2024-06-01 00:44:57] INFO root fetch - main [MainThread]: Store serial: [23473209]
