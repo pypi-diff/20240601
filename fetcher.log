@@ -811,3 +811,22 @@
 [2024-06-01 00:53:47] INFO root fetch - processPackages [langgraph-cli]: Remove: archive file [/home/abi/fetcher/tmp/langgraph_cli-0.1.9.tar.gz]
 [2024-06-01 00:53:47] INFO root fetch - main [MainThread]: End processing [langgraph-cli]: success
 [2024-06-01 00:53:47] INFO root fetch - main [MainThread]: Store serial: [23473251]
+[2024-06-01 00:55:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473251]
+[2024-06-01 00:55:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 00:57:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473252]
+[2024-06-01 00:58:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 00:58:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dpdata-qdpi
+[2024-06-01 00:58:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fvgp
+[2024-06-01 00:58:01] INFO root fetch - processPackages [dpdata-qdpi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 00:58:01] INFO root fetch - processPackages [fvgp]: New version: [7.4.9] Old Version: [7.4.8]
+[2024-06-01 00:58:01] INFO root fetch - processPackages [dpdata-qdpi]: Downloading https://files.pythonhosted.org/packages/76/53/4e64359281d9d16a456634c77f4731eb1a583e84be7f7c2b126c1c40695d/dpdata_qdpi-0.0.1.tar.gz
+[2024-06-01 00:58:01] WARNING root fetch - processPackages [dpdata-qdpi]: Skipping package: exceeds size limit 18828256>=10485760
+[2024-06-01 00:58:01] INFO root fetch - main [MainThread]: End processing [dpdata-qdpi] error
+[2024-06-01 00:58:01] INFO root fetch - processPackages [fvgp]: Downloading https://files.pythonhosted.org/packages/39/c0/554add3ca10aae6cab61e747c470aeccd4a9701260fbb59da15e78d86619/fvgp-7.4.8.tar.gz
+[2024-06-01 00:58:01] INFO root fetch - processPackages [fvgp]: Downloading https://files.pythonhosted.org/packages/2b/de/4b60834956798413d1b330a52dd1a3db38d41d64da62669f9e8825473d9b/fvgp-7.4.9.tar.gz
+[2024-06-01 00:58:02] INFO root fetch - processPackages [fvgp]: executing diffoscope
+[2024-06-01 00:58:02] INFO root fetch - processPackages [fvgp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fvgp-7.4.8.tar.gz tmp/fvgp-7.4.9.tar.gz --markdown 20240601/f/fvgp/7.4.8-7.4.9/README.md --exclude *.pyd
+[2024-06-01 00:58:02] INFO root fetch - processPackages [fvgp]: Remove: archive file [/home/abi/fetcher/tmp/fvgp-7.4.8.tar.gz]
+[2024-06-01 00:58:02] INFO root fetch - processPackages [fvgp]: Remove: archive file [/home/abi/fetcher/tmp/fvgp-7.4.9.tar.gz]
+[2024-06-01 00:58:02] INFO root fetch - main [MainThread]: End processing [fvgp]: success
+[2024-06-01 00:58:02] INFO root fetch - main [MainThread]: Store serial: [23473258]
