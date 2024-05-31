@@ -1745,3 +1745,49 @@
 [2024-06-01 01:35:49] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.9.tar.gz]
 [2024-06-01 01:35:49] INFO root fetch - main [MainThread]: End processing [biosimulator-processes]: success
 [2024-06-01 01:35:49] INFO root fetch - main [MainThread]: Store serial: [23473696]
+[2024-06-01 01:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473696]
+[2024-06-01 01:37:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 01:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: programlib
+[2024-06-01 01:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytplot-mpl-temp
+[2024-06-01 01:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: myfunction-ilonaserg
+[2024-06-01 01:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunction-ilonaserg]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 01:37:57] INFO root fetch - processPackages [programlib]: New version: [9.0.3] Old Version: [9.0.2]
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/a1/34/52dd57fea607f7a37ae1cfb2ff818e4cd8cd7f987b3ad20d909ee2a0b235/myfunctions_khikmatillo1-0.0.4.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/a1/34/52dd57fea607f7a37ae1cfb2ff818e4cd8cd7f987b3ad20d909ee2a0b235/myfunctions_khikmatillo1-0.0.4.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunction-ilonaserg]: Downloading https://files.pythonhosted.org/packages/82/b8/47529d9aad29be91f31edb0c861b0129f868fc2c1a89aa5932e31e7513e3/myfunction_ilonaserg-0.0.3.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [pytplot-mpl-temp]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-06-01 01:37:57] INFO root fetch - processPackages [programlib]: Downloading https://files.pythonhosted.org/packages/37/5c/d71cd3dca0dc15fe517c72e8aa04a028091522e40f76866fa1caab72eb6d/programlib-9.0.2.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/4a/3e/a5a5f1bb38b468da3d376ee81f842f2f8433d02dd89bf1e410d1a15a98e0/pytplot-mpl-temp-2.2.8.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/40/e3/26e7638b24411c532096ca52fe99f7cea347c63c4d86162ad3e2d7903943/myfunctions_khikmatillo1-0.0.5.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/40/e3/26e7638b24411c532096ca52fe99f7cea347c63c4d86162ad3e2d7903943/myfunctions_khikmatillo1-0.0.5.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunction-ilonaserg]: Downloading https://files.pythonhosted.org/packages/4e/a4/229be49de1c28ec2112d8f0dd3db9e81c71113f7c4d99b1d912c28791ffe/myfunction_ilonaserg-0.0.4.tar.gz
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunction-ilonaserg]: executing diffoscope
+[2024-06-01 01:37:57] INFO root fetch - processPackages [myfunction-ilonaserg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunction_ilonaserg-0.0.3.tar.gz tmp/myfunction_ilonaserg-0.0.4.tar.gz --markdown 20240601/m/myfunction-ilonaserg/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 01:37:57] INFO root fetch - processPackages [programlib]: Downloading https://files.pythonhosted.org/packages/87/68/8bde1bac9605e7ec884f688d17bf45a1206b163949faba2d6255bffe7932/programlib-9.0.3.tar.gz
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.4.tar.gz tmp/myfunctions_khikmatillo1-0.0.5.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.4.tar.gz tmp/myfunctions_khikmatillo1-0.0.5.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 01:37:58] INFO root fetch - processPackages [programlib]: executing diffoscope
+[2024-06-01 01:37:58] INFO root fetch - processPackages [programlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/programlib-9.0.2.tar.gz tmp/programlib-9.0.3.tar.gz --markdown 20240601/p/programlib/9.0.2-9.0.3/README.md --exclude *.pyd
+[2024-06-01 01:37:58] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/21/aa/38c2164a03950b9adf6f62c59343823fefd067961a6402ad1c2311ef1a3a/pytplot-mpl-temp-2.2.9.tar.gz
+[2024-06-01 01:37:58] INFO root fetch - processPackages [pytplot-mpl-temp]: executing diffoscope
+[2024-06-01 01:37:58] INFO root fetch - processPackages [pytplot-mpl-temp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytplot-mpl-temp-2.2.8.tar.gz tmp/pytplot-mpl-temp-2.2.9.tar.gz --markdown 20240601/p/pytplot-mpl-temp/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunction-ilonaserg]: Remove: archive file [/home/abi/fetcher/tmp/myfunction_ilonaserg-0.0.3.tar.gz]
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunction-ilonaserg]: Remove: archive file [/home/abi/fetcher/tmp/myfunction_ilonaserg-0.0.4.tar.gz]
+[2024-06-01 01:37:58] INFO root fetch - main [MainThread]: End processing [myfunction-ilonaserg]: success
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.4.tar.gz]
+[2024-06-01 01:37:58] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.5.tar.gz]
+[2024-06-01 01:37:58] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:37:58] INFO root fetch - processPackages [programlib]: Remove: archive file [/home/abi/fetcher/tmp/programlib-9.0.2.tar.gz]
+[2024-06-01 01:37:58] INFO root fetch - processPackages [programlib]: Remove: archive file [/home/abi/fetcher/tmp/programlib-9.0.3.tar.gz]
+[2024-06-01 01:37:58] INFO root fetch - main [MainThread]: End processing [programlib]: success
+[2024-06-01 01:37:58] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:37:59] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.8.tar.gz]
+[2024-06-01 01:37:59] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.9.tar.gz]
+[2024-06-01 01:37:59] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
+[2024-06-01 01:37:59] INFO root fetch - main [MainThread]: Store serial: [23473723]
