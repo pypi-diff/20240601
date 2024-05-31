@@ -1029,3 +1029,57 @@
 [2024-06-01 01:08:04] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240531.tar.gz]
 [2024-06-01 01:08:04] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-06-01 01:08:04] INFO root fetch - main [MainThread]: Store serial: [23473389]
+[2024-06-01 01:10:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473389]
+[2024-06-01 01:10:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emmet-core
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: madblog
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: awan-llm-api
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: emmet-builders
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pointer-brakes
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: emmet-api
+[2024-06-01 01:10:12] WARNING root fetch - processPackages [pointer-brakes]: Skipping, unable to determine old version
+[2024-06-01 01:10:12] INFO root fetch - main [MainThread]: End processing [pointer-brakes] error
+[2024-06-01 01:10:12] INFO root fetch - processPackages [madblog]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 01:10:12] INFO root fetch - processPackages [myfunctions-khikmatillo1]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 01:10:12] WARNING root fetch - processPackages [awan-llm-api]: Skipping, unable to determine old version
+[2024-06-01 01:10:12] INFO root fetch - main [MainThread]: End processing [awan-llm-api] error
+[2024-06-01 01:10:12] INFO root fetch - processPackages [madblog]: Downloading https://files.pythonhosted.org/packages/ed/b3/2c5a42942bc6ea230ecddff4c9ebdb21887926eab799eac2ae2f7a4a9a6b/madblog-0.2.8.tar.gz
+[2024-06-01 01:10:12] INFO root fetch - processPackages [emmet-core]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-01 01:10:12] INFO root fetch - processPackages [emmet-api]: New version: [0.83.7] Old Version: [0.83.6rc3]
+[2024-06-01 01:10:12] INFO root fetch - processPackages [emmet-builders]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-01 01:10:12] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/57/13/acdd5ac243fa0954ce9d5abee71a8c3d5f7770c08b09f7d298a367946968/myfunctions_khikmatillo1-0.0.1.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-core]: Downloading https://files.pythonhosted.org/packages/79/85/be17b500afc3d15c1ca6b73b0cf8b7564ecc06d89b27d59ca86581efa254/emmet-core-0.9.2.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [madblog]: Downloading https://files.pythonhosted.org/packages/04/1d/afedf727ff86588e120b14288d3e4d4b69c63b58c662ea13511f25738baa/madblog-0.2.9.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-builders]: Downloading https://files.pythonhosted.org/packages/b3/9f/ec08c5daefc1dab5587b18b933f8845a69362d5e4f4cd605e3028250efa8/emmet-builders-0.9.2.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-api]: Downloading https://files.pythonhosted.org/packages/b7/31/0c6be370ae4be658507dba1f82421c710ac1af1bc9ec2c0d08ac2b5546f9/emmet-api-0.83.6rc3.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [madblog]: executing diffoscope
+[2024-06-01 01:10:13] INFO root fetch - processPackages [madblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madblog-0.2.8.tar.gz tmp/madblog-0.2.9.tar.gz --markdown 20240601/m/madblog/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 01:10:13] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Downloading https://files.pythonhosted.org/packages/2a/c6/22e4c1ec471ba42cf0ea70351695f84b6891b7ea957ed75d1d83f6f67e5e/myfunctions_khikmatillo1-0.0.2.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-core]: Downloading https://files.pythonhosted.org/packages/a8/71/fb3a5816288c941fd4a8039c02a612bdb6b1e002843cb9c029f1a4210aaa/emmet-core-0.9.3.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [myfunctions-khikmatillo1]: executing diffoscope
+[2024-06-01 01:10:13] INFO root fetch - processPackages [myfunctions-khikmatillo1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_khikmatillo1-0.0.1.tar.gz tmp/myfunctions_khikmatillo1-0.0.2.tar.gz --markdown 20240601/m/myfunctions-khikmatillo1/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-api]: Downloading https://files.pythonhosted.org/packages/eb/41/8ddc908e67f03bef679019e3d6a54b1b6849c1067d153422b6dc9cf73d36/emmet-api-0.83.7.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-core]: executing diffoscope
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-core-0.9.2.tar.gz tmp/emmet-core-0.9.3.tar.gz --markdown 20240601/e/emmet-core/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-builders]: Downloading https://files.pythonhosted.org/packages/d3/8a/c73672eb055bc5323b006090ad1112b6027d2d5cbbe46b35eaa33b3924be/emmet-builders-0.9.3.tar.gz
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-builders]: executing diffoscope
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-builders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-builders-0.9.2.tar.gz tmp/emmet-builders-0.9.3.tar.gz --markdown 20240601/e/emmet-builders/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-api]: executing diffoscope
+[2024-06-01 01:10:13] INFO root fetch - processPackages [emmet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-api-0.83.6rc3.tar.gz tmp/emmet-api-0.83.7.tar.gz --markdown 20240601/e/emmet-api/0.83.6rc3-0.83.7/README.md --exclude *.pyd
+[2024-06-01 01:10:13] INFO root fetch - processPackages [madblog]: Remove: archive file [/home/abi/fetcher/tmp/madblog-0.2.8.tar.gz]
+[2024-06-01 01:10:13] INFO root fetch - processPackages [madblog]: Remove: archive file [/home/abi/fetcher/tmp/madblog-0.2.9.tar.gz]
+[2024-06-01 01:10:13] INFO root fetch - main [MainThread]: End processing [madblog]: success
+[2024-06-01 01:10:14] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.1.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - processPackages [myfunctions-khikmatillo1]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_khikmatillo1-0.0.2.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1]: success
+[2024-06-01 01:10:14] INFO root fetch - processPackages [emmet-core]: Remove: archive file [/home/abi/fetcher/tmp/emmet-core-0.9.2.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - processPackages [emmet-core]: Remove: archive file [/home/abi/fetcher/tmp/emmet-core-0.9.3.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - main [MainThread]: End processing [emmet-core]: success
+[2024-06-01 01:10:14] INFO root fetch - processPackages [emmet-builders]: Remove: archive file [/home/abi/fetcher/tmp/emmet-builders-0.9.2.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - processPackages [emmet-builders]: Remove: archive file [/home/abi/fetcher/tmp/emmet-builders-0.9.3.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - main [MainThread]: End processing [emmet-builders]: success
+[2024-06-01 01:10:14] INFO root fetch - processPackages [emmet-api]: Remove: archive file [/home/abi/fetcher/tmp/emmet-api-0.83.6rc3.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - processPackages [emmet-api]: Remove: archive file [/home/abi/fetcher/tmp/emmet-api-0.83.7.tar.gz]
+[2024-06-01 01:10:14] INFO root fetch - main [MainThread]: End processing [emmet-api]: success
+[2024-06-01 01:10:14] INFO root fetch - main [MainThread]: Store serial: [23473411]
