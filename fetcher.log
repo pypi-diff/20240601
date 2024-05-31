@@ -467,3 +467,48 @@
 [2024-06-01 00:34:03] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.0.0.tar.gz]
 [2024-06-01 00:34:03] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
 [2024-06-01 00:34:03] INFO root fetch - main [MainThread]: Store serial: [23473137]
+[2024-06-01 00:36:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473137]
+[2024-06-01 00:36:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 00:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ape-ledger
+[2024-06-01 00:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teleping
+[2024-06-01 00:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multiworld
+[2024-06-01 00:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-semantic-interfaces
+[2024-06-01 00:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emailcompat32crlf
+[2024-06-01 00:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libretro.py
+[2024-06-01 00:36:12] INFO root fetch - processPackages [libretro.py]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 00:36:13] INFO root fetch - processPackages [emailcompat32crlf]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 00:36:13] INFO root fetch - processPackages [dbt-semantic-interfaces]: New version: [0.6.0.dev0] Old Version: [0.5.1]
+[2024-06-01 00:36:13] INFO root fetch - processPackages [libretro.py]: Downloading https://files.pythonhosted.org/packages/fb/86/90f277fe724351434329904befa3fb12237a6b20e87e01e3c1ace3509ee6/libretro_py-0.1.0.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [ape-ledger]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-06-01 00:36:13] WARNING root fetch - processPackages [teleping]: Skipping, unable to determine old version
+[2024-06-01 00:36:13] INFO root fetch - main [MainThread]: End processing [teleping] error
+[2024-06-01 00:36:13] WARNING root fetch - processPackages [multiworld]: Skipping, unable to determine old version
+[2024-06-01 00:36:13] INFO root fetch - main [MainThread]: End processing [multiworld] error
+[2024-06-01 00:36:13] INFO root fetch - processPackages [dbt-semantic-interfaces]: Downloading https://files.pythonhosted.org/packages/ba/1b/c7516c333db7a287fded9083209063731d9095e4958c9cda7c73b17178c7/dbt_semantic_interfaces-0.5.1.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [ape-ledger]: Downloading https://files.pythonhosted.org/packages/0f/68/f7ce34be4f792c302501a324cc0bf91a54e37557cd912cdbc1bc408cd868/ape-ledger-0.7.0.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [emailcompat32crlf]: Downloading https://files.pythonhosted.org/packages/a8/dd/57b4be269ec27a3818c5c25d9b833e8740bed22f9ac8c69710b8d6088287/emailcompat32crlf-1.0.0.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [libretro.py]: Downloading https://files.pythonhosted.org/packages/23/cc/c31917b820584567d5c1e11072e2d068eb6510eb41625aae377da1683801/libretro_py-0.1.1.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [dbt-semantic-interfaces]: Downloading https://files.pythonhosted.org/packages/c0/44/2206ee1a25ca6e4af5b63982279d3e9b15db1b2b0151a2b85bc585515656/dbt_semantic_interfaces-0.6.0.dev0.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [ape-ledger]: Downloading https://files.pythonhosted.org/packages/83/9d/0e84a27e1cb544b84376a3a37efd5fde5f93348e1337330b8ae7b241f33e/ape-ledger-0.8.0.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [libretro.py]: executing diffoscope
+[2024-06-01 00:36:13] INFO root fetch - processPackages [libretro.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretro_py-0.1.0.tar.gz tmp/libretro_py-0.1.1.tar.gz --markdown 20240601/l/libretro.py/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 00:36:13] INFO root fetch - processPackages [emailcompat32crlf]: Downloading https://files.pythonhosted.org/packages/36/ba/8516c7157e03f0d4649987a557df6fd2b75389f72e9b68f27c4d747f0bf1/emailcompat32crlf-1.0.1.tar.gz
+[2024-06-01 00:36:13] INFO root fetch - processPackages [dbt-semantic-interfaces]: executing diffoscope
+[2024-06-01 00:36:13] INFO root fetch - processPackages [dbt-semantic-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_semantic_interfaces-0.5.1.tar.gz tmp/dbt_semantic_interfaces-0.6.0.dev0.tar.gz --markdown 20240601/d/dbt-semantic-interfaces/0.5.1-0.6.0.dev0/README.md --exclude *.pyd
+[2024-06-01 00:36:13] INFO root fetch - processPackages [ape-ledger]: executing diffoscope
+[2024-06-01 00:36:13] INFO root fetch - processPackages [ape-ledger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-ledger-0.7.0.tar.gz tmp/ape-ledger-0.8.0.tar.gz --markdown 20240601/a/ape-ledger/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-06-01 00:36:13] INFO root fetch - processPackages [emailcompat32crlf]: executing diffoscope
+[2024-06-01 00:36:13] INFO root fetch - processPackages [emailcompat32crlf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emailcompat32crlf-1.0.0.tar.gz tmp/emailcompat32crlf-1.0.1.tar.gz --markdown 20240601/e/emailcompat32crlf/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 00:36:14] INFO root fetch - processPackages [emailcompat32crlf]: Remove: archive file [/home/abi/fetcher/tmp/emailcompat32crlf-1.0.0.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - processPackages [emailcompat32crlf]: Remove: archive file [/home/abi/fetcher/tmp/emailcompat32crlf-1.0.1.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - main [MainThread]: End processing [emailcompat32crlf]: success
+[2024-06-01 00:36:14] INFO root fetch - processPackages [libretro.py]: Remove: archive file [/home/abi/fetcher/tmp/libretro_py-0.1.0.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - processPackages [libretro.py]: Remove: archive file [/home/abi/fetcher/tmp/libretro_py-0.1.1.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - main [MainThread]: End processing [libretro.py]: success
+[2024-06-01 00:36:14] INFO root fetch - processPackages [dbt-semantic-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/dbt_semantic_interfaces-0.5.1.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - processPackages [dbt-semantic-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/dbt_semantic_interfaces-0.6.0.dev0.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - main [MainThread]: End processing [dbt-semantic-interfaces]: success
+[2024-06-01 00:36:14] INFO root fetch - processPackages [ape-ledger]: Remove: archive file [/home/abi/fetcher/tmp/ape-ledger-0.7.0.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - processPackages [ape-ledger]: Remove: archive file [/home/abi/fetcher/tmp/ape-ledger-0.8.0.tar.gz]
+[2024-06-01 00:36:14] INFO root fetch - main [MainThread]: End processing [ape-ledger]: success
+[2024-06-01 00:36:14] INFO root fetch - main [MainThread]: Store serial: [23473159]
