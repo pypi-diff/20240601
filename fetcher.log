@@ -736,3 +736,27 @@
 [2024-06-01 00:47:08] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.2.tar.gz]
 [2024-06-01 00:47:08] INFO root fetch - main [MainThread]: End processing [eatb]: success
 [2024-06-01 00:47:08] INFO root fetch - main [MainThread]: Store serial: [23473227]
+[2024-06-01 00:49:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473227]
+[2024-06-01 00:49:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 00:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rattail-fabric2
+[2024-06-01 00:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibis-bench
+[2024-06-01 00:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yangsuite
+[2024-06-01 00:49:16] INFO root fetch - processPackages [rattail-fabric2]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 00:49:16] INFO root fetch - processPackages [rattail-fabric2]: Downloading https://files.pythonhosted.org/packages/5b/f2/08b43a71befe2cada29c6b68aec3fac968c858151e598572c098bbcf97d0/rattail-fabric2-0.3.4.tar.gz
+[2024-06-01 00:49:16] INFO root fetch - processPackages [yangsuite]: New version: [3.0.3.post0.dev1] Old Version: [3.0.3]
+[2024-06-01 00:49:16] WARNING root fetch - processPackages [ibis-bench]: Skipping, unable to determine old version
+[2024-06-01 00:49:16] INFO root fetch - main [MainThread]: End processing [ibis-bench] error
+[2024-06-01 00:49:17] INFO root fetch - processPackages [yangsuite]: Downloading https://files.pythonhosted.org/packages/f8/b3/cf504640a5ddc57bdf754f37b284ef157d42195c2f5043c1374ae8301372/yangsuite-3.0.3-py3-none-any.whl
+[2024-06-01 00:49:17] INFO root fetch - processPackages [rattail-fabric2]: Downloading https://files.pythonhosted.org/packages/4e/d1/7a28e4ff4b9f611de62ce97ab6494270416cb47f60be76c8809f1da1c241/rattail_fabric2-0.3.5.tar.gz
+[2024-06-01 00:49:17] INFO root fetch - processPackages [rattail-fabric2]: executing diffoscope
+[2024-06-01 00:49:17] INFO root fetch - processPackages [rattail-fabric2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-fabric2-0.3.4.tar.gz tmp/rattail_fabric2-0.3.5.tar.gz --markdown 20240601/r/rattail-fabric2/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 00:49:17] INFO root fetch - processPackages [rattail-fabric2]: Remove: archive file [/home/abi/fetcher/tmp/rattail-fabric2-0.3.4.tar.gz]
+[2024-06-01 00:49:17] INFO root fetch - processPackages [rattail-fabric2]: Remove: archive file [/home/abi/fetcher/tmp/rattail_fabric2-0.3.5.tar.gz]
+[2024-06-01 00:49:17] INFO root fetch - main [MainThread]: End processing [rattail-fabric2]: success
+[2024-06-01 00:49:17] INFO root fetch - processPackages [yangsuite]: Downloading https://files.pythonhosted.org/packages/ec/46/27a99fdb566dd1fc5334e47dc78a7191b9ba73473133823f701b5730d199/yangsuite-3.0.3.post0.dev1-py3-none-any.whl
+[2024-06-01 00:49:20] INFO root fetch - processPackages [yangsuite]: executing diffoscope
+[2024-06-01 00:49:20] INFO root fetch - processPackages [yangsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite-3.0.3-py3-none-any.whl.zip tmp/yangsuite-3.0.3.post0.dev1-py3-none-any.whl.zip --markdown 20240601/y/yangsuite/3.0.3-3.0.3.post0.dev1/README.md --exclude *.pyd
+[2024-06-01 00:49:24] INFO root fetch - processPackages [yangsuite]: Remove: archive file [/home/abi/fetcher/tmp/yangsuite-3.0.3-py3-none-any.whl.zip]
+[2024-06-01 00:49:24] INFO root fetch - processPackages [yangsuite]: Remove: archive file [/home/abi/fetcher/tmp/yangsuite-3.0.3.post0.dev1-py3-none-any.whl.zip]
+[2024-06-01 00:49:24] INFO root fetch - main [MainThread]: End processing [yangsuite]: success
+[2024-06-01 00:49:24] INFO root fetch - main [MainThread]: Store serial: [23473236]
