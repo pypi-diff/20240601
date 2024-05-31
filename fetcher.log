@@ -879,3 +879,54 @@
 [2024-06-01 01:00:13] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.2.tar.gz]
 [2024-06-01 01:00:13] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-06-01 01:00:13] INFO root fetch - main [MainThread]: Store serial: [23473275]
+[2024-06-01 01:02:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473275]
+[2024-06-01 01:02:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 01:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lexset
+[2024-06-01 01:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BayesBoom
+[2024-06-01 01:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-aws
+[2024-06-01 01:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strawberry-graphql
+[2024-06-01 01:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PQAnalysis
+[2024-06-01 01:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myfunctions-khikmatillo1
+[2024-06-01 01:02:21] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-06-01 01:02:21] WARNING root fetch - processPackages [myfunctions-khikmatillo1]: Skipping, unable to determine old version
+[2024-06-01 01:02:21] INFO root fetch - main [MainThread]: End processing [myfunctions-khikmatillo1] error
+[2024-06-01 01:02:21] INFO root fetch - processPackages [PQAnalysis]: New version: [1.0.9] Old Version: [1.0.8.1]
+[2024-06-01 01:02:22] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-06-01 01:02:22] INFO root fetch - processPackages [lexset]: New version: [4.2.9] Old Version: [4.2.8]
+[2024-06-01 01:02:22] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [BayesBoom]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 01:02:22] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/83/2f/4ccd1518d7be2929aebe1ed681017d830a629896a187b19e7e65f816acb1/pqanalysis-1.0.8.1.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [lexset]: Downloading https://files.pythonhosted.org/packages/2b/48/8e4f0dc7504feca277563ce718c52293e34bffaf882ad635e2d3fcd5fbdf/lexset-4.2.8.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [BayesBoom]: Downloading https://files.pythonhosted.org/packages/d7/43/f9488de886dd11f40125fbe9abcd2c156007521eda090587c88c3756d520/BayesBoom-0.1.8.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-06-01 01:02:22] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240601/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-06-01 01:02:22] INFO root fetch - processPackages [lexset]: Downloading https://files.pythonhosted.org/packages/e5/bc/43bdca37ddd0520064371e6fd62635d35255fbb585c930265597a6596cb7/lexset-4.2.9.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [lexset]: executing diffoscope
+[2024-06-01 01:02:22] INFO root fetch - processPackages [lexset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexset-4.2.8.tar.gz tmp/lexset-4.2.9.tar.gz --markdown 20240601/l/lexset/4.2.8-4.2.9/README.md --exclude *.pyd
+[2024-06-01 01:02:22] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/0d/d7/e839d99d88637ec141477f283ed6cbe60db1184aa811529035b9d75f4ef8/pqanalysis-1.0.9.tar.gz
+[2024-06-01 01:02:22] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-06-01 01:02:22] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqanalysis-1.0.8.1.tar.gz tmp/pqanalysis-1.0.9.tar.gz --markdown 20240601/P/PQAnalysis/1.0.8.1-1.0.9/README.md --exclude *.pyd
+[2024-06-01 01:02:23] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-06-01 01:02:23] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240601/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/README.md --exclude *.pyd
+[2024-06-01 01:02:23] INFO root fetch - processPackages [BayesBoom]: Downloading https://files.pythonhosted.org/packages/75/c5/df2292137107ec3545524bcf8df92a13e22b03748fc4a2b3c524298a5841/BayesBoom-0.1.9.tar.gz
+[2024-06-01 01:02:23] INFO root fetch - processPackages [lexset]: Remove: archive file [/home/abi/fetcher/tmp/lexset-4.2.8.tar.gz]
+[2024-06-01 01:02:23] INFO root fetch - processPackages [lexset]: Remove: archive file [/home/abi/fetcher/tmp/lexset-4.2.9.tar.gz]
+[2024-06-01 01:02:23] INFO root fetch - main [MainThread]: End processing [lexset]: success
+[2024-06-01 01:02:23] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-06-01 01:02:23] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-06-01 01:02:23] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-06-01 01:02:24] INFO root fetch - processPackages [BayesBoom]: executing diffoscope
+[2024-06-01 01:02:24] INFO root fetch - processPackages [BayesBoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BayesBoom-0.1.8.tar.gz tmp/BayesBoom-0.1.9.tar.gz --markdown 20240601/B/BayesBoom/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 01:02:24] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.8.1.tar.gz]
+[2024-06-01 01:02:24] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.9.tar.gz]
+[2024-06-01 01:02:24] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-06-01 01:02:30] INFO root fetch - processPackages [BayesBoom]: Remove: archive file [/home/abi/fetcher/tmp/BayesBoom-0.1.8.tar.gz]
+[2024-06-01 01:02:30] INFO root fetch - processPackages [BayesBoom]: Remove: archive file [/home/abi/fetcher/tmp/BayesBoom-0.1.9.tar.gz]
+[2024-06-01 01:02:30] INFO root fetch - main [MainThread]: End processing [BayesBoom]: success
+[2024-06-01 01:02:39] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-06-01 01:02:39] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-06-01 01:02:39] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-06-01 01:02:39] INFO root fetch - main [MainThread]: Store serial: [23473305]
