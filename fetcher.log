@@ -620,3 +620,29 @@
 [2024-06-01 00:40:38] INFO root fetch - processPackages [cirq-core]: Remove: archive file [/home/abi/fetcher/tmp/cirq_core-1.5.0.dev20240531204201-py3-none-any.whl.zip]
 [2024-06-01 00:40:38] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
 [2024-06-01 00:40:38] INFO root fetch - main [MainThread]: Store serial: [23473188]
+[2024-06-01 00:42:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473188]
+[2024-06-01 00:42:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 00:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: socialdataanalysis
+[2024-06-01 00:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NikGapps
+[2024-06-01 00:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nadl
+[2024-06-01 00:42:46] INFO root fetch - processPackages [socialdataanalysis]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 00:42:46] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/eb/47/cc4f8924b0e418534cd231584b512aec4cac0d4d54fcc7bb835b538d4127/socialdataanalysis-0.9.8.tar.gz
+[2024-06-01 00:42:46] INFO root fetch - processPackages [NikGapps]: New version: [2.66] Old Version: [2.65]
+[2024-06-01 00:42:46] INFO root fetch - processPackages [nadl]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-01 00:42:46] INFO root fetch - processPackages [socialdataanalysis]: Downloading https://files.pythonhosted.org/packages/d9/4b/54fdab9dfc08dfaa30b65dec24c14246f2efb44604af761b5a72bbef0087/socialdataanalysis-0.9.9.tar.gz
+[2024-06-01 00:42:46] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/bf/7e/c4f22e4a9494e383592ebbec307bd39030d7474be98efdf590d093fbe83d/nikgapps-2.65.tar.gz
+[2024-06-01 00:42:46] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/cd/94/f64de9e241444b83dfabef41b97e55467fe20740a811d504dc7bce9f8c6b/nadl-1.5.6.tar.gz
+[2024-06-01 00:42:46] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 44666371>=10485760
+[2024-06-01 00:42:46] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2024-06-01 00:42:46] INFO root fetch - processPackages [socialdataanalysis]: executing diffoscope
+[2024-06-01 00:42:46] INFO root fetch - processPackages [socialdataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialdataanalysis-0.9.8.tar.gz tmp/socialdataanalysis-0.9.9.tar.gz --markdown 20240601/s/socialdataanalysis/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 00:42:47] INFO root fetch - processPackages [nadl]: Downloading https://files.pythonhosted.org/packages/50/2d/dd2101491e054a4e9581e4d60913858d189a36e7814283c22fa4b4bbf074/nadl-1.5.7.tar.gz
+[2024-06-01 00:42:47] INFO root fetch - processPackages [nadl]: executing diffoscope
+[2024-06-01 00:42:47] INFO root fetch - processPackages [nadl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nadl-1.5.6.tar.gz tmp/nadl-1.5.7.tar.gz --markdown 20240601/n/nadl/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-01 00:42:47] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.8.tar.gz]
+[2024-06-01 00:42:47] INFO root fetch - processPackages [socialdataanalysis]: Remove: archive file [/home/abi/fetcher/tmp/socialdataanalysis-0.9.9.tar.gz]
+[2024-06-01 00:42:47] INFO root fetch - main [MainThread]: End processing [socialdataanalysis]: success
+[2024-06-01 00:42:47] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.6.tar.gz]
+[2024-06-01 00:42:47] INFO root fetch - processPackages [nadl]: Remove: archive file [/home/abi/fetcher/tmp/nadl-1.5.7.tar.gz]
+[2024-06-01 00:42:47] INFO root fetch - main [MainThread]: End processing [nadl]: success
+[2024-06-01 00:42:47] INFO root fetch - main [MainThread]: Store serial: [23473197]
