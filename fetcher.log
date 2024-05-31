@@ -52,3 +52,39 @@
 [2024-06-01 00:02:47] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.8.1.tar.gz]
 [2024-06-01 00:02:47] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
 [2024-06-01 00:02:47] INFO root fetch - main [MainThread]: Store serial: [23472864]
+[2024-06-01 00:04:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472864]
+[2024-06-01 00:04:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 00:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-workflow-sdk-preview
+[2024-06-01 00:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Model-Trainer
+[2024-06-01 00:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shifts
+[2024-06-01 00:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lusid-workflow-sdk
+[2024-06-01 00:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: display-colors
+[2024-06-01 00:04:55] INFO root fetch - processPackages [lusid-workflow-sdk]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-06-01 00:04:55] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: New version: [0.1.996] Old Version: [0.1.995]
+[2024-06-01 00:04:56] WARNING root fetch - processPackages [Model-Trainer]: Skipping, unable to determine old version
+[2024-06-01 00:04:56] INFO root fetch - main [MainThread]: End processing [Model-Trainer] error
+[2024-06-01 00:04:56] WARNING root fetch - processPackages [shifts]: Skipping, unable to determine old version
+[2024-06-01 00:04:56] INFO root fetch - main [MainThread]: End processing [shifts] error
+[2024-06-01 00:04:56] INFO root fetch - processPackages [display-colors]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Downloading https://files.pythonhosted.org/packages/56/ac/c34b1b8edd4a745ceacc5a310a38b3dcca685fe17507cacc1cd57db81fdd/lusid-workflow-sdk-preview-0.1.995.tar.gz
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk]: Downloading https://files.pythonhosted.org/packages/d5/b7/0c32c08fe0b3327878c0d7b7006b46298b3dca469a326a75a439bfd0f0f1/lusid_workflow_sdk-2.1.8.tar.gz
+[2024-06-01 00:04:56] INFO root fetch - processPackages [display-colors]: Downloading https://files.pythonhosted.org/packages/d5/66/895fef822202391993eeb2b94ec4b60eaaf856906bd8127a35239a82efbe/display_colors-1.0.3.tar.gz
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk]: Downloading https://files.pythonhosted.org/packages/23/c0/5f5908f038983f29f46a445ed5ff331d6086d5c6cb128e4502bf223fd90b/lusid_workflow_sdk-2.1.9.tar.gz
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Downloading https://files.pythonhosted.org/packages/ad/65/93d0e7790f005c1bba7ae75a47e2b35b3d8a514713f549fccca0619a2df9/lusid-workflow-sdk-preview-0.1.996.tar.gz
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk]: executing diffoscope
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_workflow_sdk-2.1.8.tar.gz tmp/lusid_workflow_sdk-2.1.9.tar.gz --markdown 20240601/l/lusid-workflow-sdk/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: executing diffoscope
+[2024-06-01 00:04:56] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-workflow-sdk-preview-0.1.995.tar.gz tmp/lusid-workflow-sdk-preview-0.1.996.tar.gz --markdown 20240601/l/lusid-workflow-sdk-preview/0.1.995-0.1.996/README.md --exclude *.pyd
+[2024-06-01 00:04:56] INFO root fetch - processPackages [display-colors]: Downloading https://files.pythonhosted.org/packages/1a/72/054f87ee6259fbb182f1a961d13e23543a67cb9004e1473e1b6cacdc976a/display_colors-1.0.4.tar.gz
+[2024-06-01 00:04:56] INFO root fetch - processPackages [display-colors]: executing diffoscope
+[2024-06-01 00:04:56] INFO root fetch - processPackages [display-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/display_colors-1.0.3.tar.gz tmp/display_colors-1.0.4.tar.gz --markdown 20240601/d/display-colors/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 00:04:57] INFO root fetch - processPackages [lusid-workflow-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_workflow_sdk-2.1.8.tar.gz]
+[2024-06-01 00:04:57] INFO root fetch - processPackages [lusid-workflow-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_workflow_sdk-2.1.9.tar.gz]
+[2024-06-01 00:04:57] INFO root fetch - main [MainThread]: End processing [lusid-workflow-sdk]: success
+[2024-06-01 00:04:57] INFO root fetch - processPackages [display-colors]: Remove: archive file [/home/abi/fetcher/tmp/display_colors-1.0.3.tar.gz]
+[2024-06-01 00:04:57] INFO root fetch - processPackages [display-colors]: Remove: archive file [/home/abi/fetcher/tmp/display_colors-1.0.4.tar.gz]
+[2024-06-01 00:04:57] INFO root fetch - main [MainThread]: End processing [display-colors]: success
+[2024-06-01 00:04:57] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-workflow-sdk-preview-0.1.995.tar.gz]
+[2024-06-01 00:04:57] INFO root fetch - processPackages [lusid-workflow-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-workflow-sdk-preview-0.1.996.tar.gz]
+[2024-06-01 00:04:57] INFO root fetch - main [MainThread]: End processing [lusid-workflow-sdk-preview]: success
+[2024-06-01 00:04:57] INFO root fetch - main [MainThread]: Store serial: [23472885]
