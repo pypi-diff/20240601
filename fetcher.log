@@ -278,3 +278,18 @@
 [2024-06-01 00:19:53] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
 [2024-06-01 00:19:53] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2024-06-01 00:19:53] INFO root fetch - main [MainThread]: Store serial: [23472989]
+[2024-06-01 00:21:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23472989]
+[2024-06-01 00:22:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 00:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superblocks-agent
+[2024-06-01 00:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easyvpn
+[2024-06-01 00:22:02] INFO root fetch - processPackages [superblocks-agent]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 00:22:02] INFO root fetch - processPackages [superblocks-agent]: Downloading https://files.pythonhosted.org/packages/84/3b/6802ee2a76e5e0104b60f43df911e4711182d98a5f66a7993730f0d45959/superblocks-agent-0.0.8.tar.gz
+[2024-06-01 00:22:02] WARNING root fetch - processPackages [easyvpn]: Skipping, unable to determine old version
+[2024-06-01 00:22:02] INFO root fetch - main [MainThread]: End processing [easyvpn] error
+[2024-06-01 00:22:02] INFO root fetch - processPackages [superblocks-agent]: Downloading https://files.pythonhosted.org/packages/c7/b1/71b275379fdc2106748d0c22e5c803b23ddb9e4f4957fdacecf924a05c68/superblocks-agent-0.0.9.tar.gz
+[2024-06-01 00:22:02] INFO root fetch - processPackages [superblocks-agent]: executing diffoscope
+[2024-06-01 00:22:02] INFO root fetch - processPackages [superblocks-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superblocks-agent-0.0.8.tar.gz tmp/superblocks-agent-0.0.9.tar.gz --markdown 20240601/s/superblocks-agent/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 00:22:03] INFO root fetch - processPackages [superblocks-agent]: Remove: archive file [/home/abi/fetcher/tmp/superblocks-agent-0.0.8.tar.gz]
+[2024-06-01 00:22:03] INFO root fetch - processPackages [superblocks-agent]: Remove: archive file [/home/abi/fetcher/tmp/superblocks-agent-0.0.9.tar.gz]
+[2024-06-01 00:22:03] INFO root fetch - main [MainThread]: End processing [superblocks-agent]: success
+[2024-06-01 00:22:03] INFO root fetch - main [MainThread]: Store serial: [23472998]
