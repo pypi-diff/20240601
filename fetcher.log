@@ -9843,3 +9843,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:43:37] INFO root fetch - processPackages [kyutils]: Remove: archive file [/home/abi/fetcher/tmp/kyutils-0.1.9.tar.gz]
 [2024-06-01 05:43:37] INFO root fetch - main [MainThread]: End processing [kyutils]: success
 [2024-06-01 05:43:37] INFO root fetch - main [MainThread]: Store serial: [23477029]
+[2024-06-01 05:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477029]
+[2024-06-01 05:45:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rag-assistant
+[2024-06-01 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ScrapyJD
+[2024-06-01 05:45:46] WARNING root fetch - processPackages [ScrapyJD]: Skipping, unable to determine old version
+[2024-06-01 05:45:46] INFO root fetch - main [MainThread]: End processing [ScrapyJD] error
+[2024-06-01 05:45:46] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 05:45:46] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 05:45:46] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 05:45:46] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 05:45:46] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 05:45:47] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 05:45:47] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 05:45:47] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 05:45:47] INFO root fetch - main [MainThread]: Store serial: [23477099]
