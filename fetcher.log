@@ -18286,3 +18286,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:18:06] WARNING root fetch - processPackages [HeaderUtils]: Skipping, unable to determine old version
 [2024-06-01 17:18:06] INFO root fetch - main [MainThread]: End processing [HeaderUtils] error
 [2024-06-01 17:18:06] INFO root fetch - main [MainThread]: Store serial: [23481215]
+[2024-06-01 17:20:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481215]
+[2024-06-01 17:20:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meshgpt-pytorch
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTkKeyboard
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mobase-stubs
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: omicsdata
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdps
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SJRSdetects
+[2024-06-01 17:20:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pgn-clis
+[2024-06-01 17:20:15] INFO root fetch - processPackages [cdps]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-06-01 17:20:15] INFO root fetch - processPackages [omicsdata]: New version: [1.1] Old Version: [1.0]
+[2024-06-01 17:20:15] WARNING root fetch - processPackages [CTkKeyboard]: Skipping, unable to determine old version
+[2024-06-01 17:20:15] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 17:20:15] INFO root fetch - processPackages [pgn-clis]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-01 17:20:15] INFO root fetch - processPackages [meshgpt-pytorch]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-06-01 17:20:15] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/14/45/029ac69b41a35dbf5c98bd5f0f6396ba4539fa8d02e6c519c515d5822d3b/cdps-1.0.2.tar.gz
+[2024-06-01 17:20:15] WARNING root fetch - processPackages [SJRSdetects]: Skipping, unable to determine old version
+[2024-06-01 17:20:15] INFO root fetch - main [MainThread]: End processing [SJRSdetects] error
+[2024-06-01 17:20:15] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/44/3c/e19eb232037dd98c9146865a34e22ea5333d8ca0b0f7d7f1bd6b13566f18/pgn_clis-0.1.7.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [mobase-stubs]: New version: [2.5.0.dev9] Old Version: [2.5.0.dev8]
+[2024-06-01 17:20:15] INFO root fetch - processPackages [omicsdata]: Downloading https://files.pythonhosted.org/packages/c3/72/a9b862ec427cd33442ff7e9ff81d065a7cc0145bb70c827a016eaf0774dc/omicsdata-1.0.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/e6/e6/5e104eec1eb21f489c52779fc74d03a0626188dd5caa15c8753c4231f182/meshgpt_pytorch-1.2.8.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [mobase-stubs]: Downloading https://files.pythonhosted.org/packages/e9/77/1d8137167d161bc57c4dc5a12071c5a572209b2bd43f81021bed894326a2/mobase-stubs-2.5.0.dev8.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/89/d5/1ab48ea4e65547bf52f440d5509e10c877616541956047cb21790eb9ccd8/pgn_clis-0.1.9.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [omicsdata]: Downloading https://files.pythonhosted.org/packages/99/78/2910d71e420ef1a8c6db06b90fab85bc4dafad1baa28477e2cdddbeebffe/omicsdata-1.1.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/b7/42/de3c528397bdf2a685f41788fac33822fa61c5a82896e8cebca0aa55d17d/meshgpt_pytorch-1.2.9.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/05/27/7a75f4971a7f09fc0f4e12043bf3e547c765adca95a2a14faa3334ebeb21/cdps-1.0.3.tar.gz
+[2024-06-01 17:20:15] INFO root fetch - processPackages [pgn-clis]: executing diffoscope
+[2024-06-01 17:20:15] INFO root fetch - processPackages [pgn-clis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgn_clis-0.1.7.tar.gz tmp/pgn_clis-0.1.9.tar.gz --markdown 20240601/p/pgn-clis/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-01 17:20:15] INFO root fetch - processPackages [omicsdata]: executing diffoscope
+[2024-06-01 17:20:15] INFO root fetch - processPackages [omicsdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omicsdata-1.0.tar.gz tmp/omicsdata-1.1.tar.gz --markdown 20240601/o/omicsdata/1.0-1.1/README.md --exclude *.pyd
+[2024-06-01 17:20:15] INFO root fetch - processPackages [meshgpt-pytorch]: executing diffoscope
+[2024-06-01 17:20:15] INFO root fetch - processPackages [meshgpt-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshgpt_pytorch-1.2.8.tar.gz tmp/meshgpt_pytorch-1.2.9.tar.gz --markdown 20240601/m/meshgpt-pytorch/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-06-01 17:20:15] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:20:15] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.2.tar.gz tmp/cdps-1.0.3.tar.gz --markdown 20240601/c/cdps/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-06-01 17:20:15] INFO root fetch - processPackages [mobase-stubs]: Downloading https://files.pythonhosted.org/packages/18/f8/9a8e13b0a39262f956af7e800b79a0660f9492a7ee3e2b39af2ca856bb35/mobase-stubs-2.5.0.dev9.tar.gz
+[2024-06-01 17:20:16] INFO root fetch - processPackages [mobase-stubs]: executing diffoscope
+[2024-06-01 17:20:16] INFO root fetch - processPackages [mobase-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobase-stubs-2.5.0.dev8.tar.gz tmp/mobase-stubs-2.5.0.dev9.tar.gz --markdown 20240601/m/mobase-stubs/2.5.0.dev8-2.5.0.dev9/README.md --exclude *.pyd
+[2024-06-01 17:20:16] INFO root fetch - processPackages [omicsdata]: Remove: archive file [/home/abi/fetcher/tmp/omicsdata-1.0.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - processPackages [omicsdata]: Remove: archive file [/home/abi/fetcher/tmp/omicsdata-1.1.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - main [MainThread]: End processing [omicsdata]: success
+[2024-06-01 17:20:16] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.8.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.9.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - main [MainThread]: End processing [meshgpt-pytorch]: success
+[2024-06-01 17:20:16] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.7.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.9.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - main [MainThread]: End processing [pgn-clis]: success
+[2024-06-01 17:20:16] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.2.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.3.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:20:16] INFO root fetch - processPackages [mobase-stubs]: Remove: archive file [/home/abi/fetcher/tmp/mobase-stubs-2.5.0.dev8.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - processPackages [mobase-stubs]: Remove: archive file [/home/abi/fetcher/tmp/mobase-stubs-2.5.0.dev9.tar.gz]
+[2024-06-01 17:20:16] INFO root fetch - main [MainThread]: End processing [mobase-stubs]: success
+[2024-06-01 17:20:16] INFO root fetch - main [MainThread]: Store serial: [23481240]
