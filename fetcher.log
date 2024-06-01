@@ -21154,3 +21154,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:22:42] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.8.tar.gz]
 [2024-06-01 20:22:42] INFO root fetch - main [MainThread]: End processing [pydantic-mongo-document]: success
 [2024-06-01 20:22:42] INFO root fetch - main [MainThread]: Store serial: [23482479]
+[2024-06-01 20:24:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482479]
+[2024-06-01 20:24:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moroccan-prayer-times
+[2024-06-01 20:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidstats
+[2024-06-01 20:24:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-models-package
+[2024-06-01 20:24:52] INFO root fetch - processPackages [moroccan-prayer-times]: New version: [0.0.9] Old Version: [0.0.10]
+[2024-06-01 20:24:53] WARNING root fetch - processPackages [django-models-package]: Skipping, unable to determine old version
+[2024-06-01 20:24:53] INFO root fetch - main [MainThread]: End processing [django-models-package] error
+[2024-06-01 20:24:53] INFO root fetch - processPackages [rapidstats]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 20:24:53] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/46/3a/8bb818e8080964208b05ce96b0a931f312a12c61e5283a9fc61e51ef61b2/moroccan_prayer_times-0.0.10-py3-none-any.whl
+[2024-06-01 20:24:53] INFO root fetch - processPackages [rapidstats]: Downloading https://files.pythonhosted.org/packages/1e/ab/804d980b94a4434cbccbd02474c06abf2e95d85d421503d5843aaa406ecd/rapidstats-0.0.4.tar.gz
+[2024-06-01 20:24:53] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/6f/b6/974e7dd7973732bb57010d61ea7a49703337769a92389d6d635aa04aa355/moroccan_prayer_times-0.0.9-py3-none-any.whl
+[2024-06-01 20:24:53] INFO root fetch - processPackages [moroccan-prayer-times]: executing diffoscope
+[2024-06-01 20:24:53] INFO root fetch - processPackages [moroccan-prayer-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moroccan_prayer_times-0.0.10-py3-none-any.whl.zip tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip --markdown 20240601/m/moroccan-prayer-times/0.0.10-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:24:53] INFO root fetch - processPackages [rapidstats]: Downloading https://files.pythonhosted.org/packages/93/93/62f3af7764e72f541f88a72dadad2fd72d258c6b1145f214f0d6f759c3f7/rapidstats-0.0.5-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-06-01 20:24:54] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.10-py3-none-any.whl.zip]
+[2024-06-01 20:24:54] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip]
+[2024-06-01 20:24:54] INFO root fetch - main [MainThread]: End processing [moroccan-prayer-times]: success
+[2024-06-01 20:24:54] WARNING root fetch - processPackages [rapidstats]: Skipping package: exceeds size limit 12362398>=10485760
+[2024-06-01 20:24:54] INFO root fetch - main [MainThread]: End processing [rapidstats] error
+[2024-06-01 20:24:54] INFO root fetch - main [MainThread]: Store serial: [23482494]
