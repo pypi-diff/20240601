@@ -12725,3 +12725,54 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a9.tar.gz]
 [2024-06-01 10:11:19] INFO root fetch - main [MainThread]: End processing [lckytools]: success
 [2024-06-01 10:11:19] INFO root fetch - main [MainThread]: Store serial: [23478457]
+[2024-06-01 10:13:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478457]
+[2024-06-01 10:13:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-eth-airdrop
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAlgoTradePro
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kozmoai
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ziginstall
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nftpy
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PKDevTools
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Python-JiYanPingtu
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eventum-studio
+[2024-06-01 10:13:28] INFO root fetch - processPackages [nftpy]: New version: [1.1.5b0] Old Version: [1.1.5]
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ziginstall]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 10:13:28] INFO root fetch - processPackages [eventum-studio]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-06-01 10:13:28] WARNING root fetch - processPackages [kozmoai]: Skipping, unable to determine old version
+[2024-06-01 10:13:28] INFO root fetch - main [MainThread]: End processing [kozmoai] error
+[2024-06-01 10:13:28] WARNING root fetch - processPackages [PyAlgoTradePro]: Skipping, unable to determine old version
+[2024-06-01 10:13:28] INFO root fetch - main [MainThread]: End processing [PyAlgoTradePro] error
+[2024-06-01 10:13:28] INFO root fetch - processPackages [nftpy]: Downloading https://files.pythonhosted.org/packages/ad/33/3c93f8a6d0c715fc002cfc10e22827c9404db618199332c7dcabfb5fa9a3/nftpy-1.1.5.tar.gz
+[2024-06-01 10:13:28] WARNING root fetch - processPackages [Python-JiYanPingtu]: Skipping, unable to determine old version
+[2024-06-01 10:13:28] INFO root fetch - main [MainThread]: End processing [Python-JiYanPingtu] error
+[2024-06-01 10:13:28] WARNING root fetch - processPackages [py-eth-airdrop]: Skipping, unable to determine old version
+[2024-06-01 10:13:28] INFO root fetch - main [MainThread]: End processing [py-eth-airdrop] error
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ziginstall]: Downloading https://files.pythonhosted.org/packages/21/8f/48f02f39610c5cd7096cf22d28606d1c4f096298022705174a7590b3b347/ziginstall-0.1.1.tar.gz
+[2024-06-01 10:13:28] INFO root fetch - processPackages [eventum-studio]: Downloading https://files.pythonhosted.org/packages/ca/47/886fdf695e34e2e02acb607a2369ae44a387b6f6980411e4e33a84242400/eventum_studio-1.0.5.tar.gz
+[2024-06-01 10:13:28] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240601.129] Old Version: [0.13.20240527.128]
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ziginstall]: Downloading https://files.pythonhosted.org/packages/d3/8c/9643d31134b5b7db547210bf408b1cd322573e299d78110c0274ebfb7fca/ziginstall-0.1.2.tar.gz
+[2024-06-01 10:13:28] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/70/e4/40ed9034d2291781a3ebffc0a3895cd32c9c1ee763cbc74b7877c8f79125/PKDevTools-0.13.20240527.128.tar.gz
+[2024-06-01 10:13:28] INFO root fetch - processPackages [nftpy]: Downloading https://files.pythonhosted.org/packages/ed/a1/f14ec5b6e3d69948e38b385add51b8ab78a3213ae6bb85fd4d3026487f2d/nftpy-1.1.5b0.tar.gz
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ziginstall]: executing diffoscope
+[2024-06-01 10:13:28] INFO root fetch - processPackages [ziginstall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziginstall-0.1.1.tar.gz tmp/ziginstall-0.1.2.tar.gz --markdown 20240601/z/ziginstall/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 10:13:29] INFO root fetch - processPackages [eventum-studio]: Downloading https://files.pythonhosted.org/packages/27/de/199c1a1746dc8d4dc464124d185214ccf01aa246bbb2fc4fdb035e79025e/eventum_studio-1.0.6.tar.gz
+[2024-06-01 10:13:29] INFO root fetch - processPackages [nftpy]: executing diffoscope
+[2024-06-01 10:13:29] INFO root fetch - processPackages [nftpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nftpy-1.1.5.tar.gz tmp/nftpy-1.1.5b0.tar.gz --markdown 20240601/n/nftpy/1.1.5-1.1.5b0/README.md --exclude *.pyd
+[2024-06-01 10:13:29] INFO root fetch - processPackages [eventum-studio]: executing diffoscope
+[2024-06-01 10:13:29] INFO root fetch - processPackages [eventum-studio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventum_studio-1.0.5.tar.gz tmp/eventum_studio-1.0.6.tar.gz --markdown 20240601/e/eventum-studio/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-06-01 10:13:29] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/d0/40/a61e4896accd89bcea97efc1e1df80fe920a52be672813908ba9a72405c8/PKDevTools-0.13.20240601.129.tar.gz
+[2024-06-01 10:13:29] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-06-01 10:13:29] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240527.128.tar.gz tmp/PKDevTools-0.13.20240601.129.tar.gz --markdown 20240601/P/PKDevTools/0.13.20240527.128-0.13.20240601.129/README.md --exclude *.pyd
+[2024-06-01 10:13:29] INFO root fetch - processPackages [ziginstall]: Remove: archive file [/home/abi/fetcher/tmp/ziginstall-0.1.1.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - processPackages [ziginstall]: Remove: archive file [/home/abi/fetcher/tmp/ziginstall-0.1.2.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - main [MainThread]: End processing [ziginstall]: success
+[2024-06-01 10:13:29] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.5.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.5b0.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - main [MainThread]: End processing [nftpy]: success
+[2024-06-01 10:13:29] INFO root fetch - processPackages [eventum-studio]: Remove: archive file [/home/abi/fetcher/tmp/eventum_studio-1.0.5.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - processPackages [eventum-studio]: Remove: archive file [/home/abi/fetcher/tmp/eventum_studio-1.0.6.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - main [MainThread]: End processing [eventum-studio]: success
+[2024-06-01 10:13:29] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240527.128.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240601.129.tar.gz]
+[2024-06-01 10:13:29] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-06-01 10:13:29] INFO root fetch - main [MainThread]: Store serial: [23478489]
