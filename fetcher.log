@@ -10453,3 +10453,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:46:52] WARNING root fetch - processPackages [datajunction-server]: Skipping package: exceeds size limit 25698763>=10485760
 [2024-06-01 06:46:52] INFO root fetch - main [MainThread]: End processing [datajunction-server] error
 [2024-06-01 06:46:52] INFO root fetch - main [MainThread]: Store serial: [23477376]
+[2024-06-01 06:48:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477376]
+[2024-06-01 06:49:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 06:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adbutils-async
+[2024-06-01 06:49:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maestro-compose
+[2024-06-01 06:49:01] INFO root fetch - processPackages [adbutils-async]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 06:49:01] INFO root fetch - processPackages [maestro-compose]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 06:49:01] INFO root fetch - processPackages [adbutils-async]: Downloading https://files.pythonhosted.org/packages/f6/53/678a5f69387e32673de216ac64949064ca66f465d75306793adea2dc0b69/adbutils_async-0.0.4.tar.gz
+[2024-06-01 06:49:01] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/ff/82/9c2d2868fdf7cac9871fe5f958c18f09261a8989f6a2d70d386e317d8010/maestro_compose-0.1.8.tar.gz
+[2024-06-01 06:49:01] INFO root fetch - processPackages [adbutils-async]: Downloading https://files.pythonhosted.org/packages/b3/13/bba45ba0de402a37d859dd545a4770e8d1f883a733ed070455deed3d5642/adbutils_async-0.0.5.tar.gz
+[2024-06-01 06:49:01] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/bd/07/4c9771472363808886d8ed353209df09d1e70e1e71484f308bf4fa225c88/maestro_compose-0.1.9.tar.gz
+[2024-06-01 06:49:02] INFO root fetch - processPackages [adbutils-async]: executing diffoscope
+[2024-06-01 06:49:02] INFO root fetch - processPackages [adbutils-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbutils_async-0.0.4.tar.gz tmp/adbutils_async-0.0.5.tar.gz --markdown 20240601/a/adbutils-async/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 06:49:02] INFO root fetch - processPackages [maestro-compose]: executing diffoscope
+[2024-06-01 06:49:02] INFO root fetch - processPackages [maestro-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestro_compose-0.1.8.tar.gz tmp/maestro_compose-0.1.9.tar.gz --markdown 20240601/m/maestro-compose/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 06:49:02] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.8.tar.gz]
+[2024-06-01 06:49:02] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.9.tar.gz]
+[2024-06-01 06:49:02] INFO root fetch - main [MainThread]: End processing [maestro-compose]: success
+[2024-06-01 06:49:02] INFO root fetch - processPackages [adbutils-async]: Remove: archive file [/home/abi/fetcher/tmp/adbutils_async-0.0.4.tar.gz]
+[2024-06-01 06:49:02] INFO root fetch - processPackages [adbutils-async]: Remove: archive file [/home/abi/fetcher/tmp/adbutils_async-0.0.5.tar.gz]
+[2024-06-01 06:49:02] INFO root fetch - main [MainThread]: End processing [adbutils-async]: success
+[2024-06-01 06:49:02] INFO root fetch - main [MainThread]: Store serial: [23477382]
