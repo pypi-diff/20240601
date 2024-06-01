@@ -23131,3 +23131,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:56:07] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.9.tar.gz]
 [2024-06-01 22:56:07] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
 [2024-06-01 22:56:07] INFO root fetch - main [MainThread]: Store serial: [23483533]
+[2024-06-01 22:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483533]
+[2024-06-01 22:58:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 22:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gspread-delimited-export
+[2024-06-01 22:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blockchain-data-subnet-shared-libs
+[2024-06-01 22:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: civitdl
+[2024-06-01 22:58:16] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: New version: [1.0.0] Old Version: [0.0.7]
+[2024-06-01 22:58:16] WARNING root fetch - processPackages [gspread-delimited-export]: Skipping, unable to determine old version
+[2024-06-01 22:58:16] INFO root fetch - main [MainThread]: End processing [gspread-delimited-export] error
+[2024-06-01 22:58:16] INFO root fetch - processPackages [civitdl]: New version: [2.1.0.dev3] Old Version: [2.1.0.dev2]
+[2024-06-01 22:58:16] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/c9/0f/40ca3c5c885979bf1c077b208cde08d21f9806864cb4cdaa5a60ea3c4947/blockchain_data_subnet_shared_libs-0.0.7.tar.gz
+[2024-06-01 22:58:16] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/03/c9/86bc6e13af1d5f56a5bfb1e36182ee3e6fd4a0caae01abf35f710817c2ff/blockchain_data_subnet_shared_libs-1.0.0.tar.gz
+[2024-06-01 22:58:16] INFO root fetch - processPackages [civitdl]: Downloading https://files.pythonhosted.org/packages/4f/dc/9b2615763346a0b6a85c13f805d7bc79a50c5d439e3ca621dbd71e303f3f/civitdl-2.1.0.dev2.tar.gz
+[2024-06-01 22:58:16] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: executing diffoscope
+[2024-06-01 22:58:16] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockchain_data_subnet_shared_libs-0.0.7.tar.gz tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz --markdown 20240601/b/blockchain-data-subnet-shared-libs/0.0.7-1.0.0/README.md --exclude *.pyd
+[2024-06-01 22:58:16] INFO root fetch - processPackages [civitdl]: Downloading https://files.pythonhosted.org/packages/44/3d/89d3e64f9805e34971d1fccc36d81f857ee68da872586260a8a055892a49/civitdl-2.1.0.dev3.tar.gz
+[2024-06-01 22:58:16] INFO root fetch - processPackages [civitdl]: executing diffoscope
+[2024-06-01 22:58:16] INFO root fetch - processPackages [civitdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/civitdl-2.1.0.dev2.tar.gz tmp/civitdl-2.1.0.dev3.tar.gz --markdown 20240601/c/civitdl/2.1.0.dev2-2.1.0.dev3/README.md --exclude *.pyd
+[2024-06-01 22:58:17] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-0.0.7.tar.gz]
+[2024-06-01 22:58:17] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz]
+[2024-06-01 22:58:17] INFO root fetch - main [MainThread]: End processing [blockchain-data-subnet-shared-libs]: success
+[2024-06-01 22:58:17] INFO root fetch - processPackages [civitdl]: Remove: archive file [/home/abi/fetcher/tmp/civitdl-2.1.0.dev2.tar.gz]
+[2024-06-01 22:58:17] INFO root fetch - processPackages [civitdl]: Remove: archive file [/home/abi/fetcher/tmp/civitdl-2.1.0.dev3.tar.gz]
+[2024-06-01 22:58:17] INFO root fetch - main [MainThread]: End processing [civitdl]: success
+[2024-06-01 22:58:17] INFO root fetch - main [MainThread]: Store serial: [23483544]
