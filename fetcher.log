@@ -22050,3 +22050,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:28:45] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.96.tar.gz]
 [2024-06-01 21:28:45] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
 [2024-06-01 21:28:45] INFO root fetch - main [MainThread]: Store serial: [23483003]
+[2024-06-01 21:30:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483003]
+[2024-06-01 21:30:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slumpy
+[2024-06-01 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: weather-chatbot-phi3
+[2024-06-01 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: playwright-html-renderer
+[2024-06-01 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redbacktechpy
+[2024-06-01 21:30:55] WARNING root fetch - processPackages [weather-chatbot-phi3]: Skipping, unable to determine old version
+[2024-06-01 21:30:55] INFO root fetch - main [MainThread]: End processing [weather-chatbot-phi3] error
+[2024-06-01 21:30:55] INFO root fetch - processPackages [redbacktechpy]: New version: [2024.5.0b4] Old Version: [2024.5.0b3]
+[2024-06-01 21:30:55] WARNING root fetch - processPackages [playwright-html-renderer]: Skipping, unable to determine old version
+[2024-06-01 21:30:55] INFO root fetch - main [MainThread]: End processing [playwright-html-renderer] error
+[2024-06-01 21:30:55] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/61/22/8fe1362a1fc7d79845a44eb45282045b62f1d2d73dd6d45246fe8faa23d1/redbacktechpy-2024.5.0b3.tar.gz
+[2024-06-01 21:30:55] INFO root fetch - processPackages [slumpy]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-06-01 21:30:55] INFO root fetch - processPackages [slumpy]: Downloading https://files.pythonhosted.org/packages/33/97/d07395deb434fea2e5095f9040ca57a3ff612193b56a7e9c0601f7b4525c/slumpy-0.0.1.tar.gz
+[2024-06-01 21:30:55] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/36/3a/ec5581bf8c297b84b189c7358cb0ab3c9ab14e834b3d2bb4ad19e092043a/redbacktechpy-2024.5.0b4.tar.gz
+[2024-06-01 21:30:56] INFO root fetch - processPackages [slumpy]: Downloading https://files.pythonhosted.org/packages/d7/a1/ca794d80fbb7e7971ad51c4729a8136ef0b01b9a7b3e4b5e4054b1dcb904/slumpy-0.1.0.tar.gz
+[2024-06-01 21:30:56] INFO root fetch - processPackages [redbacktechpy]: executing diffoscope
+[2024-06-01 21:30:56] INFO root fetch - processPackages [redbacktechpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbacktechpy-2024.5.0b3.tar.gz tmp/redbacktechpy-2024.5.0b4.tar.gz --markdown 20240601/r/redbacktechpy/2024.5.0b3-2024.5.0b4/README.md --exclude *.pyd
+[2024-06-01 21:30:56] INFO root fetch - processPackages [slumpy]: executing diffoscope
+[2024-06-01 21:30:56] INFO root fetch - processPackages [slumpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slumpy-0.0.1.tar.gz tmp/slumpy-0.1.0.tar.gz --markdown 20240601/s/slumpy/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-06-01 21:30:56] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.0b3.tar.gz]
+[2024-06-01 21:30:56] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.0b4.tar.gz]
+[2024-06-01 21:30:56] INFO root fetch - main [MainThread]: End processing [redbacktechpy]: success
+[2024-06-01 21:30:56] INFO root fetch - processPackages [slumpy]: Remove: archive file [/home/abi/fetcher/tmp/slumpy-0.0.1.tar.gz]
+[2024-06-01 21:30:56] INFO root fetch - processPackages [slumpy]: Remove: archive file [/home/abi/fetcher/tmp/slumpy-0.1.0.tar.gz]
+[2024-06-01 21:30:56] INFO root fetch - main [MainThread]: End processing [slumpy]: success
+[2024-06-01 21:30:56] INFO root fetch - main [MainThread]: Store serial: [23483016]
