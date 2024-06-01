@@ -13744,3 +13744,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:30:15] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.6.tar.gz]
 [2024-06-01 11:30:15] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-01 11:30:15] INFO root fetch - main [MainThread]: Store serial: [23479058]
+[2024-06-01 11:32:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479058]
+[2024-06-01 11:32:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 11:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nwon_django_toolbox
+[2024-06-01 11:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kozmo-ai
+[2024-06-01 11:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rencrypt
+[2024-06-01 11:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mds-cashbook
+[2024-06-01 11:32:24] WARNING root fetch - processPackages [kozmo-ai]: Skipping, unable to determine old version
+[2024-06-01 11:32:24] INFO root fetch - main [MainThread]: End processing [kozmo-ai] error
+[2024-06-01 11:32:24] INFO root fetch - processPackages [rencrypt]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-01 11:32:24] INFO root fetch - processPackages [mds-cashbook]: New version: [7.0.35] Old Version: [7.0.34]
+[2024-06-01 11:32:24] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/68/6a/f8ae25160b9423e2c18c284d7e2c590ba27568f1de5bbadf9bdcf6314352/REncrypt-0.1.6.tar.gz
+[2024-06-01 11:32:24] INFO root fetch - processPackages [mds-cashbook]: Downloading https://files.pythonhosted.org/packages/ff/3e/e5b34c535645f51daa9238cc2d499d380641d391a621df230374a9664460/mds_cashbook-7.0.34.tar.gz
+[2024-06-01 11:32:24] INFO root fetch - processPackages [nwon_django_toolbox]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-06-01 11:32:25] INFO root fetch - processPackages [mds-cashbook]: Downloading https://files.pythonhosted.org/packages/af/ef/df718b4af9913335d01ac89527ec9e4f13557c2f8a114294b5c9538f20e1/mds_cashbook-7.0.35.tar.gz
+[2024-06-01 11:32:25] INFO root fetch - processPackages [nwon_django_toolbox]: Downloading https://files.pythonhosted.org/packages/84/59/c47a9997d7ce916bd64bb1ff47d341b34964cdd7ea91c6df2e135dc2b824/nwon_django_toolbox-0.6.6.tar.gz
+[2024-06-01 11:32:25] INFO root fetch - processPackages [mds-cashbook]: executing diffoscope
+[2024-06-01 11:32:25] INFO root fetch - processPackages [mds-cashbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mds_cashbook-7.0.34.tar.gz tmp/mds_cashbook-7.0.35.tar.gz --markdown 20240601/m/mds-cashbook/7.0.34-7.0.35/README.md --exclude *.pyd
+[2024-06-01 11:32:25] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/d1/86/1957a25e034b99ca0fa99613494bd23b836518e2b8edd8284542ab00a20a/REncrypt-0.1.7.tar.gz
+[2024-06-01 11:32:25] INFO root fetch - processPackages [nwon_django_toolbox]: Downloading https://files.pythonhosted.org/packages/7d/2a/cafaa1bba21a315387447f961477c880a472887abfb90db0b0fdff0fce60/nwon_django_toolbox-0.6.7.tar.gz
+[2024-06-01 11:32:25] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-01 11:32:25] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.6.tar.gz tmp/REncrypt-0.1.7.tar.gz --markdown 20240601/r/rencrypt/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-01 11:32:25] INFO root fetch - processPackages [nwon_django_toolbox]: executing diffoscope
+[2024-06-01 11:32:25] INFO root fetch - processPackages [nwon_django_toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwon_django_toolbox-0.6.6.tar.gz tmp/nwon_django_toolbox-0.6.7.tar.gz --markdown 20240601/n/nwon_django_toolbox/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-06-01 11:32:26] INFO root fetch - processPackages [mds-cashbook]: Remove: archive file [/home/abi/fetcher/tmp/mds_cashbook-7.0.34.tar.gz]
+[2024-06-01 11:32:26] INFO root fetch - processPackages [mds-cashbook]: Remove: archive file [/home/abi/fetcher/tmp/mds_cashbook-7.0.35.tar.gz]
+[2024-06-01 11:32:26] INFO root fetch - main [MainThread]: End processing [mds-cashbook]: success
+[2024-06-01 11:32:28] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.6.tar.gz]
+[2024-06-01 11:32:28] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.7.tar.gz]
+[2024-06-01 11:32:28] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-01 11:32:31] INFO root fetch - processPackages [nwon_django_toolbox]: Remove: archive file [/home/abi/fetcher/tmp/nwon_django_toolbox-0.6.6.tar.gz]
+[2024-06-01 11:32:31] INFO root fetch - processPackages [nwon_django_toolbox]: Remove: archive file [/home/abi/fetcher/tmp/nwon_django_toolbox-0.6.7.tar.gz]
+[2024-06-01 11:32:31] INFO root fetch - main [MainThread]: End processing [nwon_django_toolbox]: success
+[2024-06-01 11:32:31] INFO root fetch - main [MainThread]: Store serial: [23479070]
