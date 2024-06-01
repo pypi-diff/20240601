@@ -12441,3 +12441,20 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:51:46] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.4.tar.gz]
 [2024-06-01 09:51:46] INFO root fetch - main [MainThread]: End processing [batch-framework]: success
 [2024-06-01 09:51:46] INFO root fetch - main [MainThread]: Store serial: [23478300]
+[2024-06-01 09:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478300]
+[2024-06-01 09:53:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycrate
+[2024-06-01 09:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: narwhals
+[2024-06-01 09:53:55] INFO root fetch - processPackages [pycrate]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-06-01 09:53:55] INFO root fetch - processPackages [narwhals]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-06-01 09:53:55] INFO root fetch - processPackages [pycrate]: Downloading https://files.pythonhosted.org/packages/46/08/364b2a34fe9361dd106c71aabf15364a1a75294656bb5b67f68c34df2fe0/pycrate-0.7.4.tar.gz
+[2024-06-01 09:53:55] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/99/36/0f3088813b6d212058ea6dd92fc930c913ec6d5c01f08a24de71755552f5/narwhals-0.8.8.tar.gz
+[2024-06-01 09:53:55] WARNING root fetch - processPackages [pycrate]: Skipping package: exceeds size limit 12088890>=10485760
+[2024-06-01 09:53:55] INFO root fetch - main [MainThread]: End processing [pycrate] error
+[2024-06-01 09:53:56] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/46/f0/986c81bda5e2f1c1e4caf23f199c81fe58077e01a7d513474c90bc191876/narwhals-0.8.9.tar.gz
+[2024-06-01 09:53:56] INFO root fetch - processPackages [narwhals]: executing diffoscope
+[2024-06-01 09:53:56] INFO root fetch - processPackages [narwhals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narwhals-0.8.8.tar.gz tmp/narwhals-0.8.9.tar.gz --markdown 20240601/n/narwhals/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-06-01 09:53:57] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.8.tar.gz]
+[2024-06-01 09:53:57] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
+[2024-06-01 09:53:57] INFO root fetch - main [MainThread]: End processing [narwhals]: success
+[2024-06-01 09:53:57] INFO root fetch - main [MainThread]: Store serial: [23478306]
