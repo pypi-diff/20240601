@@ -8426,3 +8426,51 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:33:04] INFO root fetch - processPackages [ros-glint]: Remove: archive file [/home/abi/fetcher/tmp/ros_glint-0.2.0.tar.gz]
 [2024-06-01 04:33:04] INFO root fetch - main [MainThread]: End processing [ros-glint]: success
 [2024-06-01 04:33:04] INFO root fetch - main [MainThread]: Store serial: [23476456]
+[2024-06-01 04:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476456]
+[2024-06-01 04:35:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 04:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mutt-html-reply
+[2024-06-01 04:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdmty-django-users
+[2024-06-01 04:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rockai-cli-app
+[2024-06-01 04:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gink
+[2024-06-01 04:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygwalker
+[2024-06-01 04:35:12] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 04:35:12] INFO root fetch - processPackages [mutt-html-reply]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gdmty-django-users]: New version: [24.5.3] Old Version: [24.5.2]
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gink]: New version: [0.20240601.1717206271] Old Version: [0.20240523.1716450705]
+[2024-06-01 04:35:12] INFO root fetch - processPackages [pygwalker]: New version: [0.4.9a3] Old Version: [0.4.9a2]
+[2024-06-01 04:35:12] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [mutt-html-reply]: Downloading https://files.pythonhosted.org/packages/73/a9/bb929b1971b31de5da5becd3d6140917e05a2adaf347bb29d31289700932/mutt_html_reply-0.4.0.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/16/d0/e6805ca12dba24b7a6f91f53a5e813c918782e2946b709fc6a79717b9dbc/gink-0.20240523.1716450705.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/82/e5/9c0d43db55f894717c52d914ccee9febfccf54befce7a4e566ee756f9c8e/pygwalker-0.4.9a2.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gdmty-django-users]: Downloading https://files.pythonhosted.org/packages/8d/bd/ac41af7ddb4bf98a9aa4ff35956bbc2b47dd248349ff7ab9395841decb0c/gdmty_django_users-24.5.2.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/b8/65/2fd0786404bdcce0a4e7a6ca0ff8a71be076349d376eb8179ff36d17d129/gink-0.20240601.1717206271.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 04:35:12] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 04:35:12] INFO root fetch - processPackages [mutt-html-reply]: Downloading https://files.pythonhosted.org/packages/2d/41/c16e4a4f92fdf7c2286d52b1fe99466cd10fc2b0db7248115e990aa6a7e7/mutt_html_reply-0.4.1.tar.gz
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-06-01 04:35:12] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240523.1716450705.tar.gz tmp/gink-0.20240601.1717206271.tar.gz --markdown 20240601/g/gink/0.20240523.1716450705-0.20240601.1717206271/README.md --exclude *.pyd
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gdmty-django-users]: Downloading https://files.pythonhosted.org/packages/ce/b6/13866c74b115566ab6569c2bc6e98f14d8b2a893f2cc03291c207b4706ad/gdmty_django_users-24.5.3.tar.gz
+[2024-06-01 04:35:13] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/f4/83/e04a8a041152e4eb155910dbf4cb2ce4f19db2fa28b18c71600e1146bd79/pygwalker-0.4.9a3.tar.gz
+[2024-06-01 04:35:13] INFO root fetch - processPackages [mutt-html-reply]: executing diffoscope
+[2024-06-01 04:35:13] INFO root fetch - processPackages [mutt-html-reply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutt_html_reply-0.4.0.tar.gz tmp/mutt_html_reply-0.4.1.tar.gz --markdown 20240601/m/mutt-html-reply/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gdmty-django-users]: executing diffoscope
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gdmty-django-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdmty_django_users-24.5.2.tar.gz tmp/gdmty_django_users-24.5.3.tar.gz --markdown 20240601/g/gdmty-django-users/24.5.2-24.5.3/README.md --exclude *.pyd
+[2024-06-01 04:35:13] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2024-06-01 04:35:13] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.4.9a2.tar.gz tmp/pygwalker-0.4.9a3.tar.gz --markdown 20240601/p/pygwalker/0.4.9a2-0.4.9a3/README.md --exclude *.pyd
+[2024-06-01 04:35:13] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 04:35:13] INFO root fetch - processPackages [mutt-html-reply]: Remove: archive file [/home/abi/fetcher/tmp/mutt_html_reply-0.4.0.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - processPackages [mutt-html-reply]: Remove: archive file [/home/abi/fetcher/tmp/mutt_html_reply-0.4.1.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - main [MainThread]: End processing [mutt-html-reply]: success
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240523.1716450705.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240601.1717206271.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gdmty-django-users]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_django_users-24.5.2.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - processPackages [gdmty-django-users]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_django_users-24.5.3.tar.gz]
+[2024-06-01 04:35:13] INFO root fetch - main [MainThread]: End processing [gdmty-django-users]: success
+[2024-06-01 04:35:44] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a2.tar.gz]
+[2024-06-01 04:35:44] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a3.tar.gz]
+[2024-06-01 04:35:44] INFO root fetch - main [MainThread]: End processing [pygwalker]: success
+[2024-06-01 04:35:44] INFO root fetch - main [MainThread]: Store serial: [23476472]
