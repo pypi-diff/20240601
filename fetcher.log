@@ -12458,3 +12458,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:53:57] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
 [2024-06-01 09:53:57] INFO root fetch - main [MainThread]: End processing [narwhals]: success
 [2024-06-01 09:53:57] INFO root fetch - main [MainThread]: Store serial: [23478306]
+[2024-06-01 09:56:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478306]
+[2024-06-01 09:56:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 09:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blockmango
+[2024-06-01 09:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-moltrack
+[2024-06-01 09:56:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnijp
+[2024-06-01 09:56:05] INFO root fetch - processPackages [omnijp]: New version: [2.6.0] Old Version: [2.5.0]
+[2024-06-01 09:56:05] INFO root fetch - processPackages [napari-moltrack]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:56:05] INFO root fetch - processPackages [blockmango]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-06-01 09:56:05] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/09/9c/bd6d1228971ae39528a1917b2b80a1f21d8d92505cc0d2c704f0c2ea44f4/omnijp-2.5.0.tar.gz
+[2024-06-01 09:56:05] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/3e/66/69b21211c36fe9877d6b6aca0f9e74298ff59d664b31f46928ec680c1fe1/napari_moltrack-0.0.8.tar.gz
+[2024-06-01 09:56:05] INFO root fetch - processPackages [blockmango]: Downloading https://files.pythonhosted.org/packages/1c/2c/a0d437302df18000e161e9e4e6c88641f2dca20d1dff7353819ed452718f/blockmango-1.4.8.tar.gz
+[2024-06-01 09:56:06] INFO root fetch - processPackages [blockmango]: Downloading https://files.pythonhosted.org/packages/f7/8b/5bd8f5b97f058282474836c3ede827156a0de35901a3bedbdcbc0c56fe08/blockmango-1.4.9.tar.gz
+[2024-06-01 09:56:06] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/c6/16/8f74bc6989fffc38bfa81cfb4efe5e76c721be4b8cdeaf3e6c458a6f37ef/omnijp-2.6.0.tar.gz
+[2024-06-01 09:56:06] INFO root fetch - processPackages [blockmango]: executing diffoscope
+[2024-06-01 09:56:06] INFO root fetch - processPackages [blockmango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockmango-1.4.8.tar.gz tmp/blockmango-1.4.9.tar.gz --markdown 20240601/b/blockmango/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-06-01 09:56:06] INFO root fetch - processPackages [omnijp]: executing diffoscope
+[2024-06-01 09:56:06] INFO root fetch - processPackages [omnijp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnijp-2.5.0.tar.gz tmp/omnijp-2.6.0.tar.gz --markdown 20240601/o/omnijp/2.5.0-2.6.0/README.md --exclude *.pyd
+[2024-06-01 09:56:06] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/1b/cf/ba2a6f1ecc68e0d9a3ac986a3a9572bcf125a5b3390c40370ab9af954072/napari_moltrack-0.0.9.tar.gz
+[2024-06-01 09:56:06] INFO root fetch - processPackages [napari-moltrack]: executing diffoscope
+[2024-06-01 09:56:06] INFO root fetch - processPackages [napari-moltrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_moltrack-0.0.8.tar.gz tmp/napari_moltrack-0.0.9.tar.gz --markdown 20240601/n/napari-moltrack/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:56:06] INFO root fetch - processPackages [blockmango]: Remove: archive file [/home/abi/fetcher/tmp/blockmango-1.4.8.tar.gz]
+[2024-06-01 09:56:06] INFO root fetch - processPackages [blockmango]: Remove: archive file [/home/abi/fetcher/tmp/blockmango-1.4.9.tar.gz]
+[2024-06-01 09:56:06] INFO root fetch - main [MainThread]: End processing [blockmango]: success
+[2024-06-01 09:56:06] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.5.0.tar.gz]
+[2024-06-01 09:56:06] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.6.0.tar.gz]
+[2024-06-01 09:56:06] INFO root fetch - main [MainThread]: End processing [omnijp]: success
+[2024-06-01 09:56:07] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.8.tar.gz]
+[2024-06-01 09:56:07] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.9.tar.gz]
+[2024-06-01 09:56:07] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
+[2024-06-01 09:56:07] INFO root fetch - main [MainThread]: Store serial: [23478313]
