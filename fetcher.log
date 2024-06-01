@@ -19963,3 +19963,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:01:21] INFO root fetch - processPackages [clarabel]: Remove: archive file [/home/abi/fetcher/tmp/clarabel-0.9.0.tar.gz]
 [2024-06-01 19:01:21] INFO root fetch - main [MainThread]: End processing [clarabel]: success
 [2024-06-01 19:01:21] INFO root fetch - main [MainThread]: Store serial: [23481990]
+[2024-06-01 19:03:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481990]
+[2024-06-01 19:03:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 19:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 19:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anglerr
+[2024-06-01 19:03:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wujing
+[2024-06-01 19:03:30] INFO root fetch - processPackages [wujing]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 19:03:30] WARNING root fetch - processPackages [anglerr]: Skipping, unable to determine old version
+[2024-06-01 19:03:30] INFO root fetch - main [MainThread]: End processing [anglerr] error
+[2024-06-01 19:03:30] INFO root fetch - processPackages [wujing]: Downloading https://files.pythonhosted.org/packages/e9/cf/dc3b347d2933eedf433a19cfecfd49a429f58196fdbb19b2e6db167b87ee/wujing-0.1.1.tar.gz
+[2024-06-01 19:03:30] INFO root fetch - processPackages [almax-common]: New version: [1.0.2.dev20240601170049] Old Version: [1.0.1.dev20240601164303]
+[2024-06-01 19:03:30] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/5c/e3/0f77c25418c199a841f9483f7448fffcf2ad7531402d33e94d21e805642e/almax_common-1.0.1.dev20240601164303.tar.gz
+[2024-06-01 19:03:30] INFO root fetch - processPackages [wujing]: Downloading https://files.pythonhosted.org/packages/64/1c/37376178b5fa767ad025ecc8deb3bbf794124e2083a548932859934ecfff/wujing-0.1.2.tar.gz
+[2024-06-01 19:03:30] INFO root fetch - processPackages [wujing]: executing diffoscope
+[2024-06-01 19:03:30] INFO root fetch - processPackages [wujing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wujing-0.1.1.tar.gz tmp/wujing-0.1.2.tar.gz --markdown 20240601/w/wujing/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 19:03:30] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/ec/a7/ffc16df7d52006bf46a6d6f2d40faf0a75e158fa23c81bf15af175a4d164/almax_common-1.0.2.dev20240601170049.tar.gz
+[2024-06-01 19:03:30] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 19:03:30] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.1.dev20240601164303.tar.gz tmp/almax_common-1.0.2.dev20240601170049.tar.gz --markdown 20240601/a/almax-common/1.0.1.dev20240601164303-1.0.2.dev20240601170049/README.md --exclude *.pyd
+[2024-06-01 19:03:31] INFO root fetch - processPackages [wujing]: Remove: archive file [/home/abi/fetcher/tmp/wujing-0.1.1.tar.gz]
+[2024-06-01 19:03:31] INFO root fetch - processPackages [wujing]: Remove: archive file [/home/abi/fetcher/tmp/wujing-0.1.2.tar.gz]
+[2024-06-01 19:03:31] INFO root fetch - main [MainThread]: End processing [wujing]: success
+[2024-06-01 19:03:31] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.1.dev20240601164303.tar.gz]
+[2024-06-01 19:03:31] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.2.dev20240601170049.tar.gz]
+[2024-06-01 19:03:31] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 19:03:31] INFO root fetch - main [MainThread]: Store serial: [23482004]
