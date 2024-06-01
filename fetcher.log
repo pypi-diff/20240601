@@ -22991,3 +22991,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:45:13] INFO root fetch - processPackages [vmstate]: Remove: archive file [/home/abi/fetcher/tmp/vmstate-1.1.tar.gz]
 [2024-06-01 22:45:13] INFO root fetch - main [MainThread]: End processing [vmstate]: success
 [2024-06-01 22:45:13] INFO root fetch - main [MainThread]: Store serial: [23483424]
+[2024-06-01 22:47:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483424]
+[2024-06-01 22:47:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 22:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: barcode-decoder
+[2024-06-01 22:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dalpha
+[2024-06-01 22:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpflash
+[2024-06-01 22:47:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: advanced-automapper
+[2024-06-01 22:47:23] INFO root fetch - processPackages [mpflash]: New version: [0.8.0] Old Version: [0.7.7]
+[2024-06-01 22:47:23] WARNING root fetch - processPackages [advanced-automapper]: Skipping, unable to determine old version
+[2024-06-01 22:47:23] INFO root fetch - main [MainThread]: End processing [advanced-automapper] error
+[2024-06-01 22:47:23] INFO root fetch - processPackages [barcode-decoder]: New version: [0.1.3a0] Old Version: [0.1.2a0]
+[2024-06-01 22:47:23] INFO root fetch - processPackages [dalpha]: New version: [0.5.5rc0] Old Version: [0.5.5]
+[2024-06-01 22:47:23] INFO root fetch - processPackages [mpflash]: Downloading https://files.pythonhosted.org/packages/49/d2/7d3df7be7c7d6ba384e8cc11f1223ef0fe9b9f106ca8ae082cc4a58ac4d2/mpflash-0.7.7.tar.gz
+[2024-06-01 22:47:23] INFO root fetch - processPackages [barcode-decoder]: Downloading https://files.pythonhosted.org/packages/69/2c/c86f6b27d7f5e4a0942306b904c6b9e35cc847050c53dafa8d422aa76a47/barcode_decoder-0.1.2a0.tar.gz
+[2024-06-01 22:47:23] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/f8/9c/13d3ff9eeba14223cb13f09ca0853650f479e3388605a39bbf44dba0c9e0/dalpha-0.5.5.tar.gz
+[2024-06-01 22:47:24] INFO root fetch - processPackages [mpflash]: Downloading https://files.pythonhosted.org/packages/52/7e/52f6297037f800ea3e66b26b7ee2e6f2d401c8d9f65a91864baac781e792/mpflash-0.8.0.tar.gz
+[2024-06-01 22:47:24] INFO root fetch - processPackages [barcode-decoder]: Downloading https://files.pythonhosted.org/packages/02/b2/192bf1dc9e58b0630056a9e09e135b91b4a047f3841043153cad6a1bc7a9/barcode_decoder-0.1.3a0.tar.gz
+[2024-06-01 22:47:24] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/37/d8/b218c27a2e7591c77a9c6f3969c4b2c03240c8153fbe134b2e63f50a90b9/dalpha-0.5.5rc0.tar.gz
+[2024-06-01 22:47:24] INFO root fetch - processPackages [dalpha]: executing diffoscope
+[2024-06-01 22:47:24] INFO root fetch - processPackages [dalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalpha-0.5.5.tar.gz tmp/dalpha-0.5.5rc0.tar.gz --markdown 20240601/d/dalpha/0.5.5-0.5.5rc0/README.md --exclude *.pyd
+[2024-06-01 22:47:24] INFO root fetch - processPackages [barcode-decoder]: executing diffoscope
+[2024-06-01 22:47:24] INFO root fetch - processPackages [barcode-decoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barcode_decoder-0.1.2a0.tar.gz tmp/barcode_decoder-0.1.3a0.tar.gz --markdown 20240601/b/barcode-decoder/0.1.2a0-0.1.3a0/README.md --exclude *.pyd
+[2024-06-01 22:47:24] INFO root fetch - processPackages [mpflash]: executing diffoscope
+[2024-06-01 22:47:24] INFO root fetch - processPackages [mpflash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpflash-0.7.7.tar.gz tmp/mpflash-0.8.0.tar.gz --markdown 20240601/m/mpflash/0.7.7-0.8.0/README.md --exclude *.pyd
+[2024-06-01 22:47:24] INFO root fetch - processPackages [barcode-decoder]: Remove: archive file [/home/abi/fetcher/tmp/barcode_decoder-0.1.2a0.tar.gz]
+[2024-06-01 22:47:24] INFO root fetch - processPackages [barcode-decoder]: Remove: archive file [/home/abi/fetcher/tmp/barcode_decoder-0.1.3a0.tar.gz]
+[2024-06-01 22:47:24] INFO root fetch - main [MainThread]: End processing [barcode-decoder]: success
+[2024-06-01 22:47:24] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.5.tar.gz]
+[2024-06-01 22:47:24] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.5rc0.tar.gz]
+[2024-06-01 22:47:24] INFO root fetch - main [MainThread]: End processing [dalpha]: success
+[2024-06-01 22:47:25] INFO root fetch - processPackages [mpflash]: Remove: archive file [/home/abi/fetcher/tmp/mpflash-0.7.7.tar.gz]
+[2024-06-01 22:47:25] INFO root fetch - processPackages [mpflash]: Remove: archive file [/home/abi/fetcher/tmp/mpflash-0.8.0.tar.gz]
+[2024-06-01 22:47:25] INFO root fetch - main [MainThread]: End processing [mpflash]: success
+[2024-06-01 22:47:25] INFO root fetch - main [MainThread]: Store serial: [23483436]
