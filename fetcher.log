@@ -13432,3 +13432,68 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:05:59] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.5.tar.gz]
 [2024-06-01 11:05:59] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-01 11:05:59] INFO root fetch - main [MainThread]: Store serial: [23478909]
+[2024-06-01 11:08:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478909]
+[2024-06-01 11:08:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.timeseries
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.cloud
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anne
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wasmpy-build
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nettigo-air-monitor
+[2024-06-01 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: json-repair
+[2024-06-01 11:08:08] INFO root fetch - processPackages [anne]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 11:08:08] INFO root fetch - processPackages [wasmpy-build]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-06-01 11:08:08] INFO root fetch - processPackages [autogluon.cloud]: New version: [0.4.0b20240531] Old Version: [0.4.0b20240530]
+[2024-06-01 11:08:09] INFO root fetch - processPackages [wasmpy-build]: Downloading https://files.pythonhosted.org/packages/40/21/4a37f477cc8547b30f578afb17189705aad8e19750cf57adc74d5bd9f3e7/wasmpy-build-0.5.1.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [nettigo-air-monitor]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.cloud]: Downloading https://files.pythonhosted.org/packages/11/c8/78a5542368a933b16f8bbad15da31d255c65e05155a5467307b70f03c6b2/autogluon.cloud-0.4.0b20240530.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:08:09] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 11:08:09] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/00/84/111edc147df2b374dfa2af17c6599712f9c953d85c95fefe4949dc42dee8/anne-1.0.9.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/96/fe/79e87456d8caf155c19d0932eb0b4797cc6efc6c641968ddc88a4482a4f0/autogluon-1.1.1b20240530.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [nettigo-air-monitor]: Downloading https://files.pythonhosted.org/packages/39/1f/bd69fdb59387bfa4eed283f3ded2f007c1422e13bc2f22f24d92cae2ba0a/nettigo_air_monitor-3.1.0.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/67/c7/2e6ffb1dd26fa83c92408aaefa5be3b7df29f8f7d6279da76e587ac7b508/autogluon.timeseries-1.1.1b20240530.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [anne]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [anne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anne-1.0.8.tar.gz tmp/anne-1.0.9.tar.gz --markdown 20240601/a/anne/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 11:08:09] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.cloud]: Downloading https://files.pythonhosted.org/packages/5d/9b/a1f49892f52b30bb1a7b1f9552e980306da2e3ffd3e8ecd67ce0f199584c/autogluon.cloud-0.4.0b20240531.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [wasmpy-build]: Downloading https://files.pythonhosted.org/packages/e3/e8/462c929ad0c941a9b8f22dddb6c46a90e9a087587556c47dc53829d38b78/wasmpy_build-0.5.2.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/45/07/3fd386b4de3c9efe63862ea2d72aa452d8c3aec141e931e233305046d719/autogluon-1.1.1b20240601.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [nettigo-air-monitor]: Downloading https://files.pythonhosted.org/packages/e0/bf/04af5f390a9da0079b4e2836c95df247ee7f2cb0f8982ec83cb1d323a699/nettigo_air_monitor-3.2.0.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.cloud]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.cloud-0.4.0b20240530.tar.gz tmp/autogluon.cloud-0.4.0b20240531.tar.gz --markdown 20240601/a/autogluon.cloud/0.4.0b20240530-0.4.0b20240531/README.md --exclude *.pyd
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240530.tar.gz tmp/autogluon-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/d6/26/2a8938819594276a3a531a062b8b8b7e2923d7903533650d4a6d34ef16ad/autogluon.timeseries-1.1.1b20240601.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [wasmpy-build]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [wasmpy-build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasmpy-build-0.5.1.tar.gz tmp/wasmpy_build-0.5.2.tar.gz --markdown 20240601/w/wasmpy-build/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-06-01 11:08:09] INFO root fetch - processPackages [nettigo-air-monitor]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [nettigo-air-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nettigo_air_monitor-3.1.0.tar.gz tmp/nettigo_air_monitor-3.2.0.tar.gz --markdown 20240601/n/nettigo-air-monitor/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-06-01 11:08:09] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240530.tar.gz tmp/autogluon.timeseries-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon.timeseries/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:08:09] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-06-01 11:08:09] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240601/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 11:08:10] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.0.8.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.0.9.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - main [MainThread]: End processing [anne]: success
+[2024-06-01 11:08:10] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240530.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240601.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-06-01 11:08:10] INFO root fetch - processPackages [autogluon.cloud]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.cloud-0.4.0b20240530.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - processPackages [autogluon.cloud]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.cloud-0.4.0b20240531.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - main [MainThread]: End processing [autogluon.cloud]: success
+[2024-06-01 11:08:10] INFO root fetch - processPackages [nettigo-air-monitor]: Remove: archive file [/home/abi/fetcher/tmp/nettigo_air_monitor-3.1.0.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - processPackages [nettigo-air-monitor]: Remove: archive file [/home/abi/fetcher/tmp/nettigo_air_monitor-3.2.0.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - main [MainThread]: End processing [nettigo-air-monitor]: success
+[2024-06-01 11:08:10] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-06-01 11:08:10] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240530.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240601.tar.gz]
+[2024-06-01 11:08:10] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-06-01 11:08:14] INFO root fetch - processPackages [wasmpy-build]: Remove: archive file [/home/abi/fetcher/tmp/wasmpy-build-0.5.1.tar.gz]
+[2024-06-01 11:08:14] INFO root fetch - processPackages [wasmpy-build]: Remove: archive file [/home/abi/fetcher/tmp/wasmpy_build-0.5.2.tar.gz]
+[2024-06-01 11:08:14] INFO root fetch - main [MainThread]: End processing [wasmpy-build]: success
+[2024-06-01 11:08:14] INFO root fetch - main [MainThread]: Store serial: [23478930]
