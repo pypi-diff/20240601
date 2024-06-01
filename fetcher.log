@@ -22726,3 +22726,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:23:19] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.4.tar.gz]
 [2024-06-01 22:23:19] INFO root fetch - main [MainThread]: End processing [EasyFileOps]: success
 [2024-06-01 22:23:19] INFO root fetch - main [MainThread]: Store serial: [23483320]
+[2024-06-01 22:25:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483320]
+[2024-06-01 22:25:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 22:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phase-puml
+[2024-06-01 22:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-fck-nat
+[2024-06-01 22:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: developergpt
+[2024-06-01 22:25:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiocloudweather
+[2024-06-01 22:25:28] INFO root fetch - processPackages [developergpt]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-06-01 22:25:28] INFO root fetch - processPackages [aiocloudweather]: New version: [2024.6.0] Old Version: [2024.5.1]
+[2024-06-01 22:25:28] WARNING root fetch - processPackages [phase-puml]: Skipping, unable to determine old version
+[2024-06-01 22:25:28] INFO root fetch - main [MainThread]: End processing [phase-puml] error
+[2024-06-01 22:25:28] INFO root fetch - processPackages [cdk-fck-nat]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-06-01 22:25:28] INFO root fetch - processPackages [cdk-fck-nat]: Downloading https://files.pythonhosted.org/packages/48/6e/70c3f6ca5096817d57126a9dd7746efc8f253379ce0f8030fee5e171182a/cdk-fck-nat-1.4.5.tar.gz
+[2024-06-01 22:25:28] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/37/6e/51732adde3517f92700c56aa8da204b52dd7bad9af66b60ea80fcb69bcbf/developergpt-0.7.4.tar.gz
+[2024-06-01 22:25:28] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/83/b7/b755e5e8082a294398c07ecac5545d1dd1fc53a5777e3215824332979566/aiocloudweather-2024.5.1.tar.gz
+[2024-06-01 22:25:29] INFO root fetch - processPackages [cdk-fck-nat]: Downloading https://files.pythonhosted.org/packages/c8/bd/a44f0a2da35d3b7e3f700724cfd9964c646499bf2562b6735d9a4a0d246b/cdk-fck-nat-1.4.6.tar.gz
+[2024-06-01 22:25:29] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/2d/e6/a38e878635f9c7f9e245b56514d3397ffb7fdb0078e06d12e55e9d1c2894/aiocloudweather-2024.6.0.tar.gz
+[2024-06-01 22:25:29] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/e7/e9/ebbba09398d1b583dac722bc917efaaf8eaa18901a7b3e84d6d95201f29b/developergpt-0.7.5.tar.gz
+[2024-06-01 22:25:29] INFO root fetch - processPackages [aiocloudweather]: executing diffoscope
+[2024-06-01 22:25:29] INFO root fetch - processPackages [aiocloudweather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocloudweather-2024.5.1.tar.gz tmp/aiocloudweather-2024.6.0.tar.gz --markdown 20240601/a/aiocloudweather/2024.5.1-2024.6.0/README.md --exclude *.pyd
+[2024-06-01 22:25:29] INFO root fetch - processPackages [developergpt]: executing diffoscope
+[2024-06-01 22:25:29] INFO root fetch - processPackages [developergpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/developergpt-0.7.4.tar.gz tmp/developergpt-0.7.5.tar.gz --markdown 20240601/d/developergpt/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-06-01 22:25:29] INFO root fetch - processPackages [cdk-fck-nat]: executing diffoscope
+[2024-06-01 22:25:29] INFO root fetch - processPackages [cdk-fck-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-fck-nat-1.4.5.tar.gz tmp/cdk-fck-nat-1.4.6.tar.gz --markdown 20240601/c/cdk-fck-nat/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-06-01 22:25:29] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.5.1.tar.gz]
+[2024-06-01 22:25:29] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.6.0.tar.gz]
+[2024-06-01 22:25:29] INFO root fetch - main [MainThread]: End processing [aiocloudweather]: success
+[2024-06-01 22:25:29] INFO root fetch - processPackages [developergpt]: Remove: archive file [/home/abi/fetcher/tmp/developergpt-0.7.4.tar.gz]
+[2024-06-01 22:25:29] INFO root fetch - processPackages [developergpt]: Remove: archive file [/home/abi/fetcher/tmp/developergpt-0.7.5.tar.gz]
+[2024-06-01 22:25:29] INFO root fetch - main [MainThread]: End processing [developergpt]: success
+[2024-06-01 22:25:30] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.5.tar.gz]
+[2024-06-01 22:25:30] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.6.tar.gz]
+[2024-06-01 22:25:30] INFO root fetch - main [MainThread]: End processing [cdk-fck-nat]: success
+[2024-06-01 22:25:30] INFO root fetch - main [MainThread]: Store serial: [23483336]
