@@ -22759,3 +22759,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:25:30] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.6.tar.gz]
 [2024-06-01 22:25:30] INFO root fetch - main [MainThread]: End processing [cdk-fck-nat]: success
 [2024-06-01 22:25:30] INFO root fetch - main [MainThread]: Store serial: [23483336]
+[2024-06-01 22:27:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483336]
+[2024-06-01 22:27:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 22:27:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-fck-nat
+[2024-06-01 22:27:40] INFO root fetch - processPackages [cdk-fck-nat]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-06-01 22:27:40] INFO root fetch - processPackages [cdk-fck-nat]: Downloading https://files.pythonhosted.org/packages/48/6e/70c3f6ca5096817d57126a9dd7746efc8f253379ce0f8030fee5e171182a/cdk-fck-nat-1.4.5.tar.gz
+[2024-06-01 22:27:41] INFO root fetch - processPackages [cdk-fck-nat]: Downloading https://files.pythonhosted.org/packages/c8/bd/a44f0a2da35d3b7e3f700724cfd9964c646499bf2562b6735d9a4a0d246b/cdk-fck-nat-1.4.6.tar.gz
+[2024-06-01 22:27:41] INFO root fetch - processPackages [cdk-fck-nat]: executing diffoscope
+[2024-06-01 22:27:41] INFO root fetch - processPackages [cdk-fck-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-fck-nat-1.4.5.tar.gz tmp/cdk-fck-nat-1.4.6.tar.gz --markdown 20240601/c/cdk-fck-nat/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-06-01 22:27:41] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.5.tar.gz]
+[2024-06-01 22:27:41] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.6.tar.gz]
+[2024-06-01 22:27:41] INFO root fetch - main [MainThread]: End processing [cdk-fck-nat]: success
+[2024-06-01 22:27:41] INFO root fetch - main [MainThread]: Store serial: [23483336]
