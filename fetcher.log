@@ -17861,3 +17861,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:44:43] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.9.0.tar.gz]
 [2024-06-01 16:44:43] INFO root fetch - main [MainThread]: End processing [burr]: success
 [2024-06-01 16:44:43] INFO root fetch - main [MainThread]: Store serial: [23481014]
+[2024-06-01 16:46:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481014]
+[2024-06-01 16:46:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CTkKeyboard
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almax-common
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: httpx_request
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: almax-common
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webscout
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yomitandic
+[2024-06-01 16:46:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: requests_request
+[2024-06-01 16:46:52] INFO root fetch - processPackages [yomitandic]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 16:46:52] INFO root fetch - processPackages [httpx_request]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 16:46:52] INFO root fetch - processPackages [webscout]: New version: [3.0b0] Old Version: [3.0]
+[2024-06-01 16:46:52] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 16:46:52] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 16:46:52] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/8d/66/7d79ebdfc01acda5e0f9df79aeb1bf7d14d57921a4ea90ac80b5f8a62875/webscout-3.0.tar.gz
+[2024-06-01 16:46:52] WARNING root fetch - processPackages [CTkKeyboard]: Skipping, unable to determine old version
+[2024-06-01 16:46:52] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 16:46:52] INFO root fetch - processPackages [requests_request]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 16:46:52] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 16:46:52] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 16:46:52] INFO root fetch - processPackages [yomitandic]: Downloading https://files.pythonhosted.org/packages/6e/0b/c46210430d475a2aa01fe1c714cebb73052a2cc156c856cf26469ed1bf64/yomitandic-0.1.7.tar.gz
+[2024-06-01 16:46:52] INFO root fetch - processPackages [httpx_request]: Downloading https://files.pythonhosted.org/packages/52/6e/33f6a4cfe7c7aa956be6033e6d43aba7fe255677ddd67e127546d9c2c6ee/httpx_request-0.0.2.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [requests_request]: Downloading https://files.pythonhosted.org/packages/d3/d1/336e1b63afb3b07d0351620d5056b41597885f6bc77c9f410355c6fe5a89/requests_request-0.0.1.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/45/7b/a5c2a6fe792cb28df9e90bdc50bd0bb8c6176019a567272daa3f4f832586/webscout-3.0b0.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 16:46:53] INFO root fetch - processPackages [webscout]: executing diffoscope
+[2024-06-01 16:46:53] INFO root fetch - processPackages [webscout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscout-3.0.tar.gz tmp/webscout-3.0b0.tar.gz --markdown 20240601/w/webscout/3.0-3.0b0/README.md --exclude *.pyd
+[2024-06-01 16:46:53] INFO root fetch - processPackages [yomitandic]: Downloading https://files.pythonhosted.org/packages/e9/cf/dada1d48249aad3068d08bc6f07d7f2c294f6b56d9a8a27cb4fe107357d0/yomitandic-0.1.8.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [httpx_request]: Downloading https://files.pythonhosted.org/packages/30/b4/9d17ea0ffbffde5fa6a8988873311fcee60584f25ba1808bfab9e388fdbf/httpx_request-0.0.3.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 16:46:53] INFO root fetch - processPackages [httpx_request]: executing diffoscope
+[2024-06-01 16:46:53] INFO root fetch - processPackages [httpx_request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpx_request-0.0.2.tar.gz tmp/httpx_request-0.0.3.tar.gz --markdown 20240601/h/httpx_request/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 16:46:53] INFO root fetch - processPackages [yomitandic]: executing diffoscope
+[2024-06-01 16:46:53] INFO root fetch - processPackages [requests_request]: Downloading https://files.pythonhosted.org/packages/a8/44/de4c8cfcca0381c0342ed59016b8b359a53712c749e2856761161c0d7992/requests_request-0.0.2.tar.gz
+[2024-06-01 16:46:53] INFO root fetch - processPackages [yomitandic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yomitandic-0.1.7.tar.gz tmp/yomitandic-0.1.8.tar.gz --markdown 20240601/y/yomitandic/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 16:46:53] INFO root fetch - processPackages [requests_request]: executing diffoscope
+[2024-06-01 16:46:53] INFO root fetch - processPackages [requests_request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests_request-0.0.1.tar.gz tmp/requests_request-0.0.2.tar.gz --markdown 20240601/r/requests_request/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 16:46:53] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 16:46:53] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 16:46:53] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 16:46:54] INFO root fetch - processPackages [yomitandic]: Remove: archive file [/home/abi/fetcher/tmp/yomitandic-0.1.7.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - processPackages [yomitandic]: Remove: archive file [/home/abi/fetcher/tmp/yomitandic-0.1.8.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - main [MainThread]: End processing [yomitandic]: success
+[2024-06-01 16:46:54] INFO root fetch - processPackages [httpx_request]: Remove: archive file [/home/abi/fetcher/tmp/httpx_request-0.0.2.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - processPackages [httpx_request]: Remove: archive file [/home/abi/fetcher/tmp/httpx_request-0.0.3.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - main [MainThread]: End processing [httpx_request]: success
+[2024-06-01 16:46:54] INFO root fetch - processPackages [requests_request]: Remove: archive file [/home/abi/fetcher/tmp/requests_request-0.0.1.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - processPackages [requests_request]: Remove: archive file [/home/abi/fetcher/tmp/requests_request-0.0.2.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - main [MainThread]: End processing [requests_request]: success
+[2024-06-01 16:46:54] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-3.0.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-3.0b0.tar.gz]
+[2024-06-01 16:46:54] INFO root fetch - main [MainThread]: End processing [webscout]: success
+[2024-06-01 16:46:54] INFO root fetch - main [MainThread]: Store serial: [23481033]
