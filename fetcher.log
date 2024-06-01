@@ -12037,3 +12037,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_image_thumbnail-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-image-thumbnail]: success
 [2024-06-01 09:23:31] INFO root fetch - main [MainThread]: Store serial: [23478086]
+[2024-06-01 09:25:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478086]
+[2024-06-01 09:25:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alt-pytest-asyncio
+[2024-06-01 09:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redcoffee
+[2024-06-01 09:25:41] INFO root fetch - processPackages [alt-pytest-asyncio]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-06-01 09:25:41] INFO root fetch - processPackages [redcoffee]: New version: [0.5] Old Version: [0.3]
+[2024-06-01 09:25:41] INFO root fetch - processPackages [alt-pytest-asyncio]: Downloading https://files.pythonhosted.org/packages/5f/3b/075ba5e413363907dc9a5f45a2e7195bde9cd458b78997451b41730d52ae/alt_pytest_asyncio-0.7.2.tar.gz
+[2024-06-01 09:25:41] INFO root fetch - processPackages [redcoffee]: Downloading https://files.pythonhosted.org/packages/3b/d7/7e31610284f655070d3cdd0d695c545d15a1bc16214a4cbf64f3bd204fc3/redcoffee-0.3.tar.gz
+[2024-06-01 09:25:42] INFO root fetch - processPackages [alt-pytest-asyncio]: Downloading https://files.pythonhosted.org/packages/44/69/91f6bd39ece97b73692fda53cc8449f306e332d8399cc504abad1100c065/alt_pytest_asyncio-0.8.0.tar.gz
+[2024-06-01 09:25:42] INFO root fetch - processPackages [redcoffee]: Downloading https://files.pythonhosted.org/packages/45/5a/f8ef878606b1f372299dc2882251fd359d214c4bb3f19604466a86758b3d/redcoffee-0.5.tar.gz
+[2024-06-01 09:25:42] INFO root fetch - processPackages [alt-pytest-asyncio]: executing diffoscope
+[2024-06-01 09:25:42] INFO root fetch - processPackages [alt-pytest-asyncio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alt_pytest_asyncio-0.7.2.tar.gz tmp/alt_pytest_asyncio-0.8.0.tar.gz --markdown 20240601/a/alt-pytest-asyncio/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-06-01 09:25:42] INFO root fetch - processPackages [redcoffee]: executing diffoscope
+[2024-06-01 09:25:42] INFO root fetch - processPackages [redcoffee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redcoffee-0.3.tar.gz tmp/redcoffee-0.5.tar.gz --markdown 20240601/r/redcoffee/0.3-0.5/README.md --exclude *.pyd
+[2024-06-01 09:25:42] INFO root fetch - processPackages [alt-pytest-asyncio]: Remove: archive file [/home/abi/fetcher/tmp/alt_pytest_asyncio-0.7.2.tar.gz]
+[2024-06-01 09:25:42] INFO root fetch - processPackages [alt-pytest-asyncio]: Remove: archive file [/home/abi/fetcher/tmp/alt_pytest_asyncio-0.8.0.tar.gz]
+[2024-06-01 09:25:42] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.3.tar.gz]
+[2024-06-01 09:25:42] INFO root fetch - main [MainThread]: End processing [alt-pytest-asyncio]: success
+[2024-06-01 09:25:42] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.5.tar.gz]
+[2024-06-01 09:25:42] INFO root fetch - main [MainThread]: End processing [redcoffee]: success
+[2024-06-01 09:25:42] INFO root fetch - main [MainThread]: Store serial: [23478092]
