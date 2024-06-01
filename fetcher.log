@@ -10082,3 +10082,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:07:47] INFO root fetch - processPackages [posuto]: Remove: archive file [/home/abi/fetcher/tmp/posuto-2024.5.0.tar.gz]
 [2024-06-01 06:07:47] INFO root fetch - main [MainThread]: End processing [posuto]: success
 [2024-06-01 06:07:47] INFO root fetch - main [MainThread]: Store serial: [23477173]
+[2024-06-01 06:09:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477173]
+[2024-06-01 06:09:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 06:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inventoryManagementFinalExam
+[2024-06-01 06:09:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litellm
+[2024-06-01 06:09:56] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-06-01 06:09:56] WARNING root fetch - processPackages [inventoryManagementFinalExam]: Skipping, unable to determine old version
+[2024-06-01 06:09:56] INFO root fetch - main [MainThread]: End processing [inventoryManagementFinalExam] error
+[2024-06-01 06:09:56] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-06-01 06:09:56] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-06-01 06:09:57] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-06-01 06:09:57] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240601/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-06-01 06:09:58] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-06-01 06:09:58] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-06-01 06:09:58] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-06-01 06:09:58] INFO root fetch - main [MainThread]: Store serial: [23477181]
