@@ -20559,3 +20559,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:42:43] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011619.tar.gz]
 [2024-06-01 19:42:43] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
 [2024-06-01 19:42:43] INFO root fetch - main [MainThread]: Store serial: [23482217]
+[2024-06-01 19:44:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482217]
+[2024-06-01 19:44:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 19:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clickplc
+[2024-06-01 19:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-postman
+[2024-06-01 19:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: etm-dgraham
+[2024-06-01 19:44:52] INFO root fetch - processPackages [clickplc]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-06-01 19:44:52] INFO root fetch - processPackages [django-postman]: New version: [4.4] Old Version: [4.3.2]
+[2024-06-01 19:44:52] INFO root fetch - processPackages [etm-dgraham]: New version: [6.3.1] Old Version: [6.3.0]
+[2024-06-01 19:44:52] INFO root fetch - processPackages [clickplc]: Downloading https://files.pythonhosted.org/packages/06/20/61ce15fc556bdbb5fc7a67a09f578fd7a8620dcb292885849467a021dfcc/clickplc-0.8.3.tar.gz
+[2024-06-01 19:44:52] INFO root fetch - processPackages [django-postman]: Downloading https://files.pythonhosted.org/packages/22/b5/6567984b28336e6facd35043486acfffc53e158ce1071739e97d7b8b0fce/django-postman-4.3.2.tar.gz
+[2024-06-01 19:44:52] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/10/27/ebe86e1e439381151d2f14557e06fba4e65279c8ac36c347521f4f7105f2/etm-dgraham-6.3.0.tar.gz
+[2024-06-01 19:44:52] INFO root fetch - processPackages [clickplc]: Downloading https://files.pythonhosted.org/packages/67/58/4a20531e7ffcb85ab1539b4bf0d8347fa261d79b1d7640e4d948931cf001/clickplc-0.9.0-py3-none-any.whl
+[2024-06-01 19:44:53] INFO root fetch - processPackages [django-postman]: Downloading https://files.pythonhosted.org/packages/ec/cb/5fb38f43959e361322dc3fed3525f5f427caa37996b1269a2575aab13f82/django_postman-4.4.tar.gz
+[2024-06-01 19:44:53] INFO root fetch - processPackages [clickplc]: executing diffoscope
+[2024-06-01 19:44:53] INFO root fetch - processPackages [clickplc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickplc-0.8.3.tar.gz tmp/clickplc-0.9.0-py3-none-any.whl.zip --markdown 20240601/c/clickplc/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-06-01 19:44:53] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/43/26/73dda0d62ef0823a21e380d822ba86a52c17333a934f20bb3f7f30f00299/etm-dgraham-6.3.1.tar.gz
+[2024-06-01 19:44:53] INFO root fetch - processPackages [django-postman]: executing diffoscope
+[2024-06-01 19:44:53] INFO root fetch - processPackages [django-postman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-postman-4.3.2.tar.gz tmp/django_postman-4.4.tar.gz --markdown 20240601/d/django-postman/4.3.2-4.4/README.md --exclude *.pyd
+[2024-06-01 19:44:53] INFO root fetch - processPackages [clickplc]: Remove: archive file [/home/abi/fetcher/tmp/clickplc-0.8.3.tar.gz]
+[2024-06-01 19:44:53] INFO root fetch - processPackages [clickplc]: Remove: archive file [/home/abi/fetcher/tmp/clickplc-0.9.0-py3-none-any.whl.zip]
+[2024-06-01 19:44:53] INFO root fetch - main [MainThread]: End processing [clickplc]: success
+[2024-06-01 19:44:53] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2024-06-01 19:44:53] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-6.3.0.tar.gz tmp/etm-dgraham-6.3.1.tar.gz --markdown 20240601/e/etm-dgraham/6.3.0-6.3.1/README.md --exclude *.pyd
+[2024-06-01 19:44:54] INFO root fetch - processPackages [django-postman]: Remove: archive file [/home/abi/fetcher/tmp/django-postman-4.3.2.tar.gz]
+[2024-06-01 19:44:54] INFO root fetch - processPackages [django-postman]: Remove: archive file [/home/abi/fetcher/tmp/django_postman-4.4.tar.gz]
+[2024-06-01 19:44:54] INFO root fetch - main [MainThread]: End processing [django-postman]: success
+[2024-06-01 19:44:54] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.3.0.tar.gz]
+[2024-06-01 19:44:54] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.3.1.tar.gz]
+[2024-06-01 19:44:54] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2024-06-01 19:44:54] INFO root fetch - main [MainThread]: Store serial: [23482224]
