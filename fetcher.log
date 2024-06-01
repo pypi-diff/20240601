@@ -11337,3 +11337,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:14:49] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.99.tar.gz]
 [2024-06-01 08:14:49] INFO root fetch - main [MainThread]: End processing [cdk8s-awscdk-resolver]: success
 [2024-06-01 08:14:49] INFO root fetch - main [MainThread]: Store serial: [23477839]
+[2024-06-01 08:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477839]
+[2024-06-01 08:16:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 08:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rockai-cli-app
+[2024-06-01 08:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hal9
+[2024-06-01 08:16:57] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 08:16:57] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 08:16:57] INFO root fetch - processPackages [hal9]: New version: [2.1.7] Old Version: [2.1.6]
+[2024-06-01 08:16:57] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 08:16:57] INFO root fetch - processPackages [hal9]: Downloading https://files.pythonhosted.org/packages/f7/a6/e0e03f992d9f78866ac3b3813d8e6212499bd688d3dacfba1197905be699/hal9-2.1.6.tar.gz
+[2024-06-01 08:16:57] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 08:16:57] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 08:16:58] INFO root fetch - processPackages [hal9]: Downloading https://files.pythonhosted.org/packages/d2/b1/bc7207fa48ef27a1fa0dbd76d7054b6308ea101c55127399920e34b614b2/hal9-2.1.7.tar.gz
+[2024-06-01 08:16:58] INFO root fetch - processPackages [hal9]: executing diffoscope
+[2024-06-01 08:16:58] INFO root fetch - processPackages [hal9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hal9-2.1.6.tar.gz tmp/hal9-2.1.7.tar.gz --markdown 20240601/h/hal9/2.1.6-2.1.7/README.md --exclude *.pyd
+[2024-06-01 08:16:58] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 08:16:58] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 08:16:58] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 08:16:58] INFO root fetch - processPackages [hal9]: Remove: archive file [/home/abi/fetcher/tmp/hal9-2.1.6.tar.gz]
+[2024-06-01 08:16:58] INFO root fetch - processPackages [hal9]: Remove: archive file [/home/abi/fetcher/tmp/hal9-2.1.7.tar.gz]
+[2024-06-01 08:16:58] INFO root fetch - main [MainThread]: End processing [hal9]: success
+[2024-06-01 08:16:58] INFO root fetch - main [MainThread]: Store serial: [23477846]
