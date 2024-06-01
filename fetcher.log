@@ -16375,3 +16375,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:54:13] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.2.2.tar.gz]
 [2024-06-01 14:54:13] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
 [2024-06-01 14:54:13] INFO root fetch - main [MainThread]: Store serial: [23480218]
+[2024-06-01 14:56:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480218]
+[2024-06-01 14:56:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 14:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sunholo
+[2024-06-01 14:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: optimized-utility-library
+[2024-06-01 14:56:22] WARNING root fetch - processPackages [optimized-utility-library]: Skipping, unable to determine old version
+[2024-06-01 14:56:22] INFO root fetch - main [MainThread]: End processing [optimized-utility-library] error
+[2024-06-01 14:56:22] INFO root fetch - processPackages [sunholo]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-06-01 14:56:22] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/cc/35/0cc2a83f59b1ddd740a568e10894833a89bedfc91b8ebd172a427676694a/sunholo-0.8.8.tar.gz
+[2024-06-01 14:56:23] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/f4/84/78248df3236e593119b75003e77cf5b5bd0761e53dc91c6a148cb0571cf9/sunholo-0.8.9.tar.gz
+[2024-06-01 14:56:23] INFO root fetch - processPackages [sunholo]: executing diffoscope
+[2024-06-01 14:56:23] INFO root fetch - processPackages [sunholo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunholo-0.8.8.tar.gz tmp/sunholo-0.8.9.tar.gz --markdown 20240601/s/sunholo/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-06-01 14:56:23] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.8.tar.gz]
+[2024-06-01 14:56:23] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.9.tar.gz]
+[2024-06-01 14:56:23] INFO root fetch - main [MainThread]: End processing [sunholo]: success
+[2024-06-01 14:56:23] INFO root fetch - main [MainThread]: Store serial: [23480226]
