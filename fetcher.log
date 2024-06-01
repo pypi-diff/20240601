@@ -11690,3 +11690,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:54:06] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a9.tar.gz]
 [2024-06-01 08:54:06] INFO root fetch - main [MainThread]: End processing [lckytools]: success
 [2024-06-01 08:54:06] INFO root fetch - main [MainThread]: Store serial: [23477943]
+[2024-06-01 08:56:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477943]
+[2024-06-01 08:56:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 08:56:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bpy-helper
+[2024-06-01 08:56:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: internal
+[2024-06-01 08:56:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-nightly
+[2024-06-01 08:56:15] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.35.1.dev20240530] Old Version: [1.35.1.dev20240529]
+[2024-06-01 08:56:15] INFO root fetch - processPackages [bpy-helper]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-06-01 08:56:15] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/98/45/c70d3de8ca9b4245bfce311ca76b5e10f0cda6e2e3d58b715ad219df7e7c/streamlit_nightly-1.35.1.dev20240529.tar.gz
+[2024-06-01 08:56:15] INFO root fetch - processPackages [internal]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 08:56:15] INFO root fetch - processPackages [bpy-helper]: Downloading https://files.pythonhosted.org/packages/78/e2/855cec26094e906bc4b0d8ce192a9747e30e15ba30e9d6c754b506387fb6/bpy_helper-0.0.0.tar.gz
+[2024-06-01 08:56:15] INFO root fetch - processPackages [internal]: Downloading https://files.pythonhosted.org/packages/e7/62/f729e2f746eb52acc2016ea7df473391b17335f69465919554514e604ef6/internal-1.0.3.tar.gz
+[2024-06-01 08:56:16] INFO root fetch - processPackages [internal]: Downloading https://files.pythonhosted.org/packages/df/a1/94585b03319adf81dfc43d9782007d50eb12574a33175c6c6c473f328b54/internal-1.0.4.tar.gz
+[2024-06-01 08:56:16] INFO root fetch - processPackages [bpy-helper]: Downloading https://files.pythonhosted.org/packages/ec/67/29a86ee568fe87ae34870b2b12f4fb38bbeb6344bf9d6308622dcd97bbc1/bpy_helper-0.0.1.tar.gz
+[2024-06-01 08:56:16] INFO root fetch - processPackages [internal]: executing diffoscope
+[2024-06-01 08:56:16] INFO root fetch - processPackages [internal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internal-1.0.3.tar.gz tmp/internal-1.0.4.tar.gz --markdown 20240601/i/internal/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 08:56:16] INFO root fetch - processPackages [bpy-helper]: executing diffoscope
+[2024-06-01 08:56:16] INFO root fetch - processPackages [bpy-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpy_helper-0.0.0.tar.gz tmp/bpy_helper-0.0.1.tar.gz --markdown 20240601/b/bpy-helper/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-06-01 08:56:16] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/9b/f5/df9c9d9aee87478a548bb6f2af1b3af769d087f71961a65b0f1dddf80289/streamlit_nightly-1.35.1.dev20240530.tar.gz
+[2024-06-01 08:56:16] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-06-01 08:56:16] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_nightly-1.35.1.dev20240529.tar.gz tmp/streamlit_nightly-1.35.1.dev20240530.tar.gz --markdown 20240601/s/streamlit-nightly/1.35.1.dev20240529-1.35.1.dev20240530/README.md --exclude *.pyd
+[2024-06-01 08:56:16] INFO root fetch - processPackages [internal]: Remove: archive file [/home/abi/fetcher/tmp/internal-1.0.3.tar.gz]
+[2024-06-01 08:56:16] INFO root fetch - processPackages [internal]: Remove: archive file [/home/abi/fetcher/tmp/internal-1.0.4.tar.gz]
+[2024-06-01 08:56:16] INFO root fetch - main [MainThread]: End processing [internal]: success
+[2024-06-01 08:56:16] INFO root fetch - processPackages [bpy-helper]: Remove: archive file [/home/abi/fetcher/tmp/bpy_helper-0.0.0.tar.gz]
+[2024-06-01 08:56:16] INFO root fetch - processPackages [bpy-helper]: Remove: archive file [/home/abi/fetcher/tmp/bpy_helper-0.0.1.tar.gz]
+[2024-06-01 08:56:16] INFO root fetch - main [MainThread]: End processing [bpy-helper]: success
+[2024-06-01 08:56:45] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240529.tar.gz]
+[2024-06-01 08:56:45] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240530.tar.gz]
+[2024-06-01 08:56:45] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-06-01 08:56:45] INFO root fetch - main [MainThread]: Store serial: [23477953]
