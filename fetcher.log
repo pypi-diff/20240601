@@ -17281,3 +17281,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:04:45] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-06-01 16:04:45] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-06-01 16:04:45] INFO root fetch - main [MainThread]: Store serial: [23480621]
+[2024-06-01 16:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480621]
+[2024-06-01 16:06:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 16:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salve-ipc
+[2024-06-01 16:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monstr
+[2024-06-01 16:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nautc
+[2024-06-01 16:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: personalDatabase
+[2024-06-01 16:06:55] INFO root fetch - processPackages [salve-ipc]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-01 16:06:55] WARNING root fetch - processPackages [personalDatabase]: Skipping, unable to determine old version
+[2024-06-01 16:06:55] INFO root fetch - main [MainThread]: End processing [personalDatabase] error
+[2024-06-01 16:06:55] INFO root fetch - processPackages [salve-ipc]: Downloading https://files.pythonhosted.org/packages/71/81/8cf457fd1dbb909ad4d986fe1f84cb2aba15e687464ad0a88f8ab72293e3/salve_ipc-0.3.0.tar.gz
+[2024-06-01 16:06:55] INFO root fetch - processPackages [monstr]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 16:06:55] INFO root fetch - processPackages [nautc]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-06-01 16:06:55] INFO root fetch - processPackages [nautc]: Downloading https://files.pythonhosted.org/packages/5b/4e/01103e7c261a0cbefe81582f7a69148dc45e044b06d8b0706799241581f8/nautc-1.1.1.tar.gz
+[2024-06-01 16:06:55] INFO root fetch - processPackages [monstr]: Downloading https://files.pythonhosted.org/packages/b3/0e/fa4fe762cd0a5b5fd70dbc6db6c1f0d36a1abc110ca84b889c62b25c0aa3/monstr-0.1.5.tar.gz
+[2024-06-01 16:06:55] INFO root fetch - processPackages [salve-ipc]: Downloading https://files.pythonhosted.org/packages/5e/0f/a119a658b484756636cf8995e9608ea89ab9535ee38ad94ed23da3ee24bc/salve_ipc-0.3.1.tar.gz
+[2024-06-01 16:06:55] INFO root fetch - processPackages [salve-ipc]: executing diffoscope
+[2024-06-01 16:06:55] INFO root fetch - processPackages [salve-ipc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salve_ipc-0.3.0.tar.gz tmp/salve_ipc-0.3.1.tar.gz --markdown 20240601/s/salve-ipc/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-01 16:06:55] INFO root fetch - processPackages [nautc]: Downloading https://files.pythonhosted.org/packages/ce/f3/de0666f7ac277e77925fddbc8e18b6db7f1a064e19bed7c2c1a01811808d/nautc-1.1.2.tar.gz
+[2024-06-01 16:06:55] INFO root fetch - processPackages [monstr]: Downloading https://files.pythonhosted.org/packages/21/64/cea5d7df445a3f4d46f61ab631457b81f412e4e54cb700df29b1d764fd30/monstr-0.1.6.tar.gz
+[2024-06-01 16:06:56] INFO root fetch - processPackages [nautc]: executing diffoscope
+[2024-06-01 16:06:56] INFO root fetch - processPackages [nautc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautc-1.1.1.tar.gz tmp/nautc-1.1.2.tar.gz --markdown 20240601/n/nautc/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-06-01 16:06:56] INFO root fetch - processPackages [monstr]: executing diffoscope
+[2024-06-01 16:06:56] INFO root fetch - processPackages [monstr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monstr-0.1.5.tar.gz tmp/monstr-0.1.6.tar.gz --markdown 20240601/m/monstr/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 16:06:56] INFO root fetch - processPackages [salve-ipc]: Remove: archive file [/home/abi/fetcher/tmp/salve_ipc-0.3.0.tar.gz]
+[2024-06-01 16:06:56] INFO root fetch - processPackages [salve-ipc]: Remove: archive file [/home/abi/fetcher/tmp/salve_ipc-0.3.1.tar.gz]
+[2024-06-01 16:06:56] INFO root fetch - main [MainThread]: End processing [salve-ipc]: success
+[2024-06-01 16:06:56] INFO root fetch - processPackages [nautc]: Remove: archive file [/home/abi/fetcher/tmp/nautc-1.1.1.tar.gz]
+[2024-06-01 16:06:56] INFO root fetch - processPackages [nautc]: Remove: archive file [/home/abi/fetcher/tmp/nautc-1.1.2.tar.gz]
+[2024-06-01 16:06:56] INFO root fetch - main [MainThread]: End processing [nautc]: success
+[2024-06-01 16:06:56] INFO root fetch - processPackages [monstr]: Remove: archive file [/home/abi/fetcher/tmp/monstr-0.1.5.tar.gz]
+[2024-06-01 16:06:56] INFO root fetch - processPackages [monstr]: Remove: archive file [/home/abi/fetcher/tmp/monstr-0.1.6.tar.gz]
+[2024-06-01 16:06:56] INFO root fetch - main [MainThread]: End processing [monstr]: success
+[2024-06-01 16:06:56] INFO root fetch - main [MainThread]: Store serial: [23480631]
