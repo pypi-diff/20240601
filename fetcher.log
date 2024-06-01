@@ -11604,3 +11604,54 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:45:10] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
 [2024-06-01 08:45:10] INFO root fetch - main [MainThread]: End processing [toyai]: success
 [2024-06-01 08:45:10] INFO root fetch - main [MainThread]: Store serial: [23477916]
+[2024-06-01 08:47:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477916]
+[2024-06-01 08:47:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 08:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-json-diff
+[2024-06-01 08:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PQAnalysis
+[2024-06-01 08:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mbbank-lib
+[2024-06-01 08:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: featree
+[2024-06-01 08:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: toyai
+[2024-06-01 08:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swanlab
+[2024-06-01 08:47:19] INFO root fetch - processPackages [PQAnalysis]: New version: [1.0.9] Old Version: [1.0.8.1]
+[2024-06-01 08:47:19] INFO root fetch - processPackages [toyai]: New version: [0.2] Old Version: [0.1]
+[2024-06-01 08:47:19] INFO root fetch - processPackages [custom-json-diff]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-01 08:47:19] INFO root fetch - processPackages [mbbank-lib]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-01 08:47:19] WARNING root fetch - processPackages [featree]: Skipping, unable to determine old version
+[2024-06-01 08:47:19] INFO root fetch - main [MainThread]: End processing [featree] error
+[2024-06-01 08:47:19] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/83/2f/4ccd1518d7be2929aebe1ed681017d830a629896a187b19e7e65f816acb1/pqanalysis-1.0.8.1.tar.gz
+[2024-06-01 08:47:19] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/66/c7/db427e0eb2eb1acf04a420f2a085cd4d203a847b70fde32d57b3b460c659/toyai-0.1.tar.gz
+[2024-06-01 08:47:19] INFO root fetch - processPackages [swanlab]: New version: [0.3.8] Old Version: [0.3.6]
+[2024-06-01 08:47:19] INFO root fetch - processPackages [custom-json-diff]: Downloading https://files.pythonhosted.org/packages/7a/ad/89a857d669237ab7979fd45fe1c6243c3ef9f6fbcdbe54cdd3cdd651d2f6/custom_json_diff-0.4.0.tar.gz
+[2024-06-01 08:47:19] INFO root fetch - processPackages [mbbank-lib]: Downloading https://files.pythonhosted.org/packages/8a/b3/c472c4586a4c3b260b6ee26dff1ef5eaf88aedab564f51b633b020bf83f7/mbbank-lib-0.1.2.tar.gz
+[2024-06-01 08:47:19] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/d8/76/14ea5a41222e4908226cf7603c97b8b57ef0ce6364586e0488f93a7e62e3/toyai-0.2.tar.gz
+[2024-06-01 08:47:19] INFO root fetch - processPackages [swanlab]: Downloading https://files.pythonhosted.org/packages/91/ad/52b8ef62fb897d7b5b55ff51882498bc3fe4b70422ce81e4615a5a499fd7/swanlab-0.3.6.tar.gz
+[2024-06-01 08:47:19] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/0d/d7/e839d99d88637ec141477f283ed6cbe60db1184aa811529035b9d75f4ef8/pqanalysis-1.0.9.tar.gz
+[2024-06-01 08:47:20] INFO root fetch - processPackages [toyai]: executing diffoscope
+[2024-06-01 08:47:20] INFO root fetch - processPackages [toyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyai-0.1.tar.gz tmp/toyai-0.2.tar.gz --markdown 20240601/t/toyai/0.1-0.2/README.md --exclude *.pyd
+[2024-06-01 08:47:20] INFO root fetch - processPackages [mbbank-lib]: Downloading https://files.pythonhosted.org/packages/2d/be/74e395fcfc856dca9239f875935cbdd0bcca3d90e7487712a28ce5fec890/mbbank_lib-0.1.3.tar.gz
+[2024-06-01 08:47:20] INFO root fetch - processPackages [custom-json-diff]: Downloading https://files.pythonhosted.org/packages/2a/78/e05bbaf25d465ae4545a95180755e437f42c320ec20253ef78da075331fb/custom_json_diff-0.5.0.tar.gz
+[2024-06-01 08:47:20] INFO root fetch - processPackages [mbbank-lib]: executing diffoscope
+[2024-06-01 08:47:20] INFO root fetch - processPackages [mbbank-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbbank-lib-0.1.2.tar.gz tmp/mbbank_lib-0.1.3.tar.gz --markdown 20240601/m/mbbank-lib/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-01 08:47:20] INFO root fetch - processPackages [custom-json-diff]: executing diffoscope
+[2024-06-01 08:47:20] INFO root fetch - processPackages [custom-json-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_json_diff-0.4.0.tar.gz tmp/custom_json_diff-0.5.0.tar.gz --markdown 20240601/c/custom-json-diff/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 08:47:20] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-06-01 08:47:20] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqanalysis-1.0.8.1.tar.gz tmp/pqanalysis-1.0.9.tar.gz --markdown 20240601/P/PQAnalysis/1.0.8.1-1.0.9/README.md --exclude *.pyd
+[2024-06-01 08:47:20] INFO root fetch - processPackages [swanlab]: Downloading https://files.pythonhosted.org/packages/98/4b/1690c9ac9ae2f080377f683fc4c4ad71711b4400171669b2d0faf9caf886/swanlab-0.3.8.tar.gz
+[2024-06-01 08:47:20] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.1.tar.gz]
+[2024-06-01 08:47:20] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
+[2024-06-01 08:47:20] INFO root fetch - main [MainThread]: End processing [toyai]: success
+[2024-06-01 08:47:20] INFO root fetch - processPackages [swanlab]: executing diffoscope
+[2024-06-01 08:47:20] INFO root fetch - processPackages [swanlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swanlab-0.3.6.tar.gz tmp/swanlab-0.3.8.tar.gz --markdown 20240601/s/swanlab/0.3.6-0.3.8/README.md --exclude *.pyd
+[2024-06-01 08:47:20] INFO root fetch - processPackages [mbbank-lib]: Remove: archive file [/home/abi/fetcher/tmp/mbbank-lib-0.1.2.tar.gz]
+[2024-06-01 08:47:20] INFO root fetch - processPackages [mbbank-lib]: Remove: archive file [/home/abi/fetcher/tmp/mbbank_lib-0.1.3.tar.gz]
+[2024-06-01 08:47:20] INFO root fetch - main [MainThread]: End processing [mbbank-lib]: success
+[2024-06-01 08:47:21] INFO root fetch - processPackages [custom-json-diff]: Remove: archive file [/home/abi/fetcher/tmp/custom_json_diff-0.4.0.tar.gz]
+[2024-06-01 08:47:21] INFO root fetch - processPackages [custom-json-diff]: Remove: archive file [/home/abi/fetcher/tmp/custom_json_diff-0.5.0.tar.gz]
+[2024-06-01 08:47:21] INFO root fetch - main [MainThread]: End processing [custom-json-diff]: success
+[2024-06-01 08:47:22] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.8.1.tar.gz]
+[2024-06-01 08:47:22] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.9.tar.gz]
+[2024-06-01 08:47:22] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-06-01 08:47:38] INFO root fetch - processPackages [swanlab]: Remove: archive file [/home/abi/fetcher/tmp/swanlab-0.3.6.tar.gz]
+[2024-06-01 08:47:38] INFO root fetch - processPackages [swanlab]: Remove: archive file [/home/abi/fetcher/tmp/swanlab-0.3.8.tar.gz]
+[2024-06-01 08:47:38] INFO root fetch - main [MainThread]: End processing [swanlab]: success
+[2024-06-01 08:47:38] INFO root fetch - main [MainThread]: Store serial: [23477935]
