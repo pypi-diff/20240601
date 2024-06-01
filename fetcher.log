@@ -13012,3 +13012,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:33:00] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.9.4.tar.gz]
 [2024-06-01 10:33:00] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2024-06-01 10:33:00] INFO root fetch - main [MainThread]: Store serial: [23478658]
+[2024-06-01 10:35:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478658]
+[2024-06-01 10:35:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 10:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chiecthuyenngoaixa
+[2024-06-01 10:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telegram-bot-pro
+[2024-06-01 10:35:09] INFO root fetch - processPackages [chiecthuyenngoaixa]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-01 10:35:09] WARNING root fetch - processPackages [telegram-bot-pro]: Skipping, unable to determine old version
+[2024-06-01 10:35:09] INFO root fetch - main [MainThread]: End processing [telegram-bot-pro] error
+[2024-06-01 10:35:09] INFO root fetch - processPackages [chiecthuyenngoaixa]: Downloading https://files.pythonhosted.org/packages/3d/62/8a0fb4a28cf9cd36a0fe395fd14eeac532d50b8837f215e813075d6457ea/chiecthuyenngoaixa-0.2.0.tar.gz
+[2024-06-01 10:35:09] INFO root fetch - processPackages [chiecthuyenngoaixa]: Downloading https://files.pythonhosted.org/packages/a6/cf/ffcad9def27dd6dd83b272332afe33ed71a78fc1d6b35cf69e4a919265f9/chiecthuyenngoaixa-0.2.1.tar.gz
+[2024-06-01 10:35:09] INFO root fetch - processPackages [chiecthuyenngoaixa]: executing diffoscope
+[2024-06-01 10:35:09] INFO root fetch - processPackages [chiecthuyenngoaixa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiecthuyenngoaixa-0.2.0.tar.gz tmp/chiecthuyenngoaixa-0.2.1.tar.gz --markdown 20240601/c/chiecthuyenngoaixa/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-01 10:35:10] INFO root fetch - processPackages [chiecthuyenngoaixa]: Remove: archive file [/home/abi/fetcher/tmp/chiecthuyenngoaixa-0.2.0.tar.gz]
+[2024-06-01 10:35:10] INFO root fetch - processPackages [chiecthuyenngoaixa]: Remove: archive file [/home/abi/fetcher/tmp/chiecthuyenngoaixa-0.2.1.tar.gz]
+[2024-06-01 10:35:10] INFO root fetch - main [MainThread]: End processing [chiecthuyenngoaixa]: success
+[2024-06-01 10:35:10] INFO root fetch - main [MainThread]: Store serial: [23478666]
