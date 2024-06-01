@@ -10474,3 +10474,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:49:02] INFO root fetch - processPackages [adbutils-async]: Remove: archive file [/home/abi/fetcher/tmp/adbutils_async-0.0.5.tar.gz]
 [2024-06-01 06:49:02] INFO root fetch - main [MainThread]: End processing [adbutils-async]: success
 [2024-06-01 06:49:02] INFO root fetch - main [MainThread]: Store serial: [23477382]
+[2024-06-01 06:51:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477382]
+[2024-06-01 06:51:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 06:51:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestro-compose
+[2024-06-01 06:51:11] INFO root fetch - processPackages [maestro-compose]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 06:51:11] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/ff/82/9c2d2868fdf7cac9871fe5f958c18f09261a8989f6a2d70d386e317d8010/maestro_compose-0.1.8.tar.gz
+[2024-06-01 06:51:11] INFO root fetch - processPackages [maestro-compose]: Downloading https://files.pythonhosted.org/packages/bd/07/4c9771472363808886d8ed353209df09d1e70e1e71484f308bf4fa225c88/maestro_compose-0.1.9.tar.gz
+[2024-06-01 06:51:11] INFO root fetch - processPackages [maestro-compose]: executing diffoscope
+[2024-06-01 06:51:11] INFO root fetch - processPackages [maestro-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestro_compose-0.1.8.tar.gz tmp/maestro_compose-0.1.9.tar.gz --markdown 20240601/m/maestro-compose/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 06:51:12] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.8.tar.gz]
+[2024-06-01 06:51:12] INFO root fetch - processPackages [maestro-compose]: Remove: archive file [/home/abi/fetcher/tmp/maestro_compose-0.1.9.tar.gz]
+[2024-06-01 06:51:12] INFO root fetch - main [MainThread]: End processing [maestro-compose]: success
+[2024-06-01 06:51:12] INFO root fetch - main [MainThread]: Store serial: [23477385]
