@@ -22310,3 +22310,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:54:55] INFO root fetch - processPackages [SFlock2]: Remove: archive file [/home/abi/fetcher/tmp/SFlock2-0.3.58.tar.gz]
 [2024-06-01 21:54:55] INFO root fetch - main [MainThread]: End processing [SFlock2]: success
 [2024-06-01 21:54:55] INFO root fetch - main [MainThread]: Store serial: [23483115]
+[2024-06-01 21:56:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483115]
+[2024-06-01 21:57:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 21:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infisical-api
+[2024-06-01 21:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libstc-geck
+[2024-06-01 21:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fromager
+[2024-06-01 21:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stefutils
+[2024-06-01 21:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gitlab-projects-issues
+[2024-06-01 21:57:04] WARNING root fetch - processPackages [fromager]: Skipping, unable to determine old version
+[2024-06-01 21:57:04] INFO root fetch - main [MainThread]: End processing [fromager] error
+[2024-06-01 21:57:04] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-06-01 21:57:04] WARNING root fetch - processPackages [libstc-geck]: Skipping, unable to determine old version
+[2024-06-01 21:57:04] INFO root fetch - main [MainThread]: End processing [libstc-geck] error
+[2024-06-01 21:57:04] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-06-01 21:57:04] WARNING root fetch - processPackages [gitlab-projects-issues]: Skipping, unable to determine old version
+[2024-06-01 21:57:04] INFO root fetch - main [MainThread]: End processing [gitlab-projects-issues] error
+[2024-06-01 21:57:04] INFO root fetch - processPackages [infisical-api]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 21:57:04] INFO root fetch - processPackages [infisical-api]: Downloading https://files.pythonhosted.org/packages/2f/65/6190c1ee6b63d3367a605ab941e7c90f3a3a147eca845c63d5131369d8d2/infisical_api-1.0.0.tar.gz
+[2024-06-01 21:57:04] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-06-01 21:57:04] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-06-01 21:57:04] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240601/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-06-01 21:57:04] INFO root fetch - processPackages [infisical-api]: Downloading https://files.pythonhosted.org/packages/95/ec/c2d5861f64b3b909de75dd011a4b3585a57f684b9d9a9cfd422f043ea998/infisical_api-1.0.1.tar.gz
+[2024-06-01 21:57:05] INFO root fetch - processPackages [infisical-api]: executing diffoscope
+[2024-06-01 21:57:05] INFO root fetch - processPackages [infisical-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infisical_api-1.0.0.tar.gz tmp/infisical_api-1.0.1.tar.gz --markdown 20240601/i/infisical-api/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 21:57:05] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-06-01 21:57:05] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-06-01 21:57:05] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-06-01 21:57:05] INFO root fetch - processPackages [infisical-api]: Remove: archive file [/home/abi/fetcher/tmp/infisical_api-1.0.0.tar.gz]
+[2024-06-01 21:57:05] INFO root fetch - processPackages [infisical-api]: Remove: archive file [/home/abi/fetcher/tmp/infisical_api-1.0.1.tar.gz]
+[2024-06-01 21:57:05] INFO root fetch - main [MainThread]: End processing [infisical-api]: success
+[2024-06-01 21:57:05] INFO root fetch - main [MainThread]: Store serial: [23483131]
