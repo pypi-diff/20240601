@@ -16348,3 +16348,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:52:03] WARNING root fetch - processPackages [aggfly]: Skipping, unable to determine old version
 [2024-06-01 14:52:03] INFO root fetch - main [MainThread]: End processing [aggfly] error
 [2024-06-01 14:52:03] INFO root fetch - main [MainThread]: Store serial: [23480205]
+[2024-06-01 14:54:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480205]
+[2024-06-01 14:54:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 14:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsoniq-jupyter-lsp
+[2024-06-01 14:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: id-card-recognition
+[2024-06-01 14:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipv4v6
+[2024-06-01 14:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: browserxt
+[2024-06-01 14:54:12] WARNING root fetch - processPackages [ipv4v6]: Skipping, unable to determine old version
+[2024-06-01 14:54:12] INFO root fetch - main [MainThread]: End processing [ipv4v6] error
+[2024-06-01 14:54:12] INFO root fetch - processPackages [id-card-recognition]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-01 14:54:12] INFO root fetch - processPackages [browserxt]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-06-01 14:54:12] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/53/c7/fceef8666dd60fa8dd9b03f263c9121fa5c3e6cf332134cc5c44e97ccf99/id_card_recognition-0.2.1.tar.gz
+[2024-06-01 14:54:12] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/9c/1d/83d57873e8afa710b5f9a89fe17e2f3ce903ea31d96b6736106245f141b9/browserxt-0.1.0.tar.gz
+[2024-06-01 14:54:12] WARNING root fetch - processPackages [jsoniq-jupyter-lsp]: Skipping, unable to determine old version
+[2024-06-01 14:54:12] INFO root fetch - main [MainThread]: End processing [jsoniq-jupyter-lsp] error
+[2024-06-01 14:54:13] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/75/9b/387f2601505bc2abc795218c90af0b147d9793bbdfac57cbfbbe03caa081/browserxt-0.1.2.tar.gz
+[2024-06-01 14:54:13] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/19/cb/9920bcabe91d7d9dac64b66aed908552e9c2c0bdfccc88ca576d933fb4e8/id_card_recognition-0.2.2.tar.gz
+[2024-06-01 14:54:13] INFO root fetch - processPackages [browserxt]: executing diffoscope
+[2024-06-01 14:54:13] INFO root fetch - processPackages [browserxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserxt-0.1.0.tar.gz tmp/browserxt-0.1.2.tar.gz --markdown 20240601/b/browserxt/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-06-01 14:54:13] INFO root fetch - processPackages [id-card-recognition]: executing diffoscope
+[2024-06-01 14:54:13] INFO root fetch - processPackages [id-card-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/id_card_recognition-0.2.1.tar.gz tmp/id_card_recognition-0.2.2.tar.gz --markdown 20240601/i/id-card-recognition/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-01 14:54:13] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.0.tar.gz]
+[2024-06-01 14:54:13] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.2.tar.gz]
+[2024-06-01 14:54:13] INFO root fetch - main [MainThread]: End processing [browserxt]: success
+[2024-06-01 14:54:13] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.2.1.tar.gz]
+[2024-06-01 14:54:13] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.2.2.tar.gz]
+[2024-06-01 14:54:13] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
+[2024-06-01 14:54:13] INFO root fetch - main [MainThread]: Store serial: [23480218]
