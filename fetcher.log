@@ -10538,3 +10538,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:01:52] INFO root fetch - processPackages [airbyte-source-faker]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_faker-6.1.2.tar.gz]
 [2024-06-01 07:01:52] INFO root fetch - main [MainThread]: End processing [airbyte-source-faker]: success
 [2024-06-01 07:01:52] INFO root fetch - main [MainThread]: Store serial: [23477405]
+[2024-06-01 07:03:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477405]
+[2024-06-01 07:04:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 07:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IntelliMaint
+[2024-06-01 07:04:00] WARNING root fetch - processPackages [IntelliMaint]: Skipping, unable to determine old version
+[2024-06-01 07:04:00] INFO root fetch - main [MainThread]: End processing [IntelliMaint] error
+[2024-06-01 07:04:00] INFO root fetch - main [MainThread]: Store serial: [23477409]
