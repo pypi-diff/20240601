@@ -12881,3 +12881,38 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:24:18] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
 [2024-06-01 10:24:18] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
 [2024-06-01 10:24:18] INFO root fetch - main [MainThread]: Store serial: [23478567]
+[2024-06-01 10:26:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478567]
+[2024-06-01 10:26:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 10:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: somnium
+[2024-06-01 10:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shadowProxy-pro
+[2024-06-01 10:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nnops
+[2024-06-01 10:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sinalv2
+[2024-06-01 10:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anne
+[2024-06-01 10:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SmartProxyPool
+[2024-06-01 10:26:27] INFO root fetch - processPackages [nnops]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-06-01 10:26:27] INFO root fetch - processPackages [nnops]: Downloading https://files.pythonhosted.org/packages/ad/d4/136463c806558c6e8ec872e9f79de2deb66a47d70f5ed2eb5539f020fe28/nnops-0.0.0.tar.gz
+[2024-06-01 10:26:27] WARNING root fetch - processPackages [shadowProxy-pro]: Skipping, unable to determine old version
+[2024-06-01 10:26:27] INFO root fetch - main [MainThread]: End processing [shadowProxy-pro] error
+[2024-06-01 10:26:27] INFO root fetch - processPackages [somnium]: New version: [9.9.3] Old Version: [9.9.2]
+[2024-06-01 10:26:27] WARNING root fetch - processPackages [SmartProxyPool]: Skipping, unable to determine old version
+[2024-06-01 10:26:27] INFO root fetch - main [MainThread]: End processing [SmartProxyPool] error
+[2024-06-01 10:26:27] WARNING root fetch - processPackages [sinalv2]: Skipping, unable to determine old version
+[2024-06-01 10:26:27] INFO root fetch - main [MainThread]: End processing [sinalv2] error
+[2024-06-01 10:26:27] INFO root fetch - processPackages [anne]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 10:26:27] INFO root fetch - processPackages [somnium]: Downloading https://files.pythonhosted.org/packages/b1/5d/cee0f77eaa523758149eb49beccae25871128cadf608d5fd8f67e7744f7c/somnium-9.9.2.tar.gz
+[2024-06-01 10:26:27] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/52/84/df465187bd8d0bb550e366b18560b057ea956f42a57a697dc22f86cbae45/anne-1.0.8.tar.gz
+[2024-06-01 10:26:27] INFO root fetch - processPackages [nnops]: Downloading https://files.pythonhosted.org/packages/d0/75/8b3f98f15eea839bb92a83c1471be18cba1cb8e750860290d634a38beb10/nnops-0.0.1.tar.gz
+[2024-06-01 10:26:27] INFO root fetch - processPackages [nnops]: executing diffoscope
+[2024-06-01 10:26:27] INFO root fetch - processPackages [nnops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnops-0.0.0.tar.gz tmp/nnops-0.0.1.tar.gz --markdown 20240601/n/nnops/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-06-01 10:26:27] ERROR root fetch - processPackages [anne]: Unable to fetch info: No such project/version 'anne' 1.0.9
+[2024-06-01 10:26:27] INFO root fetch - main [MainThread]: End processing [anne] error
+[2024-06-01 10:26:27] INFO root fetch - processPackages [somnium]: Downloading https://files.pythonhosted.org/packages/ff/9c/6f9b98065313aab38f5ab2edb3cd6d51c5784740f3bcc690454ebfdc6b1e/somnium-9.9.3.tar.gz
+[2024-06-01 10:26:27] INFO root fetch - processPackages [somnium]: executing diffoscope
+[2024-06-01 10:26:27] INFO root fetch - processPackages [somnium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/somnium-9.9.2.tar.gz tmp/somnium-9.9.3.tar.gz --markdown 20240601/s/somnium/9.9.2-9.9.3/README.md --exclude *.pyd
+[2024-06-01 10:26:28] INFO root fetch - processPackages [nnops]: Remove: archive file [/home/abi/fetcher/tmp/nnops-0.0.0.tar.gz]
+[2024-06-01 10:26:28] INFO root fetch - processPackages [nnops]: Remove: archive file [/home/abi/fetcher/tmp/nnops-0.0.1.tar.gz]
+[2024-06-01 10:26:28] INFO root fetch - main [MainThread]: End processing [nnops]: success
+[2024-06-01 10:26:28] INFO root fetch - processPackages [somnium]: Remove: archive file [/home/abi/fetcher/tmp/somnium-9.9.2.tar.gz]
+[2024-06-01 10:26:28] INFO root fetch - processPackages [somnium]: Remove: archive file [/home/abi/fetcher/tmp/somnium-9.9.3.tar.gz]
+[2024-06-01 10:26:28] INFO root fetch - main [MainThread]: End processing [somnium]: success
+[2024-06-01 10:26:28] INFO root fetch - main [MainThread]: Store serial: [23478591]
