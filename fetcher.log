@@ -10687,3 +10687,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:21:17] INFO root fetch - processPackages [homeharvest]: Remove: archive file [/home/abi/fetcher/tmp/homeharvest-0.3.9.tar.gz]
 [2024-06-01 07:21:17] INFO root fetch - main [MainThread]: End processing [homeharvest]: success
 [2024-06-01 07:21:17] INFO root fetch - main [MainThread]: Store serial: [23477475]
+[2024-06-01 07:23:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477475]
+[2024-06-01 07:23:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 07:23:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-ch-adr-report
+[2024-06-01 07:23:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addons-oca-l10n-switzerland
+[2024-06-01 07:23:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphene-django-query-optimizer
+[2024-06-01 07:23:25] INFO root fetch - processPackages [graphene-django-query-optimizer]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-06-01 07:23:25] INFO root fetch - processPackages [graphene-django-query-optimizer]: Downloading https://files.pythonhosted.org/packages/1c/38/cf6daad6d1db063548d2cb835c1ce0c86c80a1a00c8ec7f94fd345bdb40b/graphene_django_query_optimizer-0.7.1.tar.gz
+[2024-06-01 07:23:25] WARNING root fetch - processPackages [odoo14-addon-l10n-ch-adr-report]: Skipping, unable to determine old version
+[2024-06-01 07:23:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-ch-adr-report] error
+[2024-06-01 07:23:25] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: New version: [14.0.20240531.0] Old Version: [14.0.20231215.0]
+[2024-06-01 07:23:26] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: Downloading https://files.pythonhosted.org/packages/0c/d3/f8040ffad1e50c9198d922f907c4a03bc9b0607e1639034278a743d65d3f/odoo14_addons_oca_l10n_switzerland-14.0.20231215.0-py3-none-any.whl
+[2024-06-01 07:23:26] INFO root fetch - processPackages [graphene-django-query-optimizer]: Downloading https://files.pythonhosted.org/packages/e9/d6/468898e0033980e5502d236ba523c54a0910f9e58470e9e6799f54cd7235/graphene_django_query_optimizer-0.7.2.tar.gz
+[2024-06-01 07:23:26] INFO root fetch - processPackages [graphene-django-query-optimizer]: executing diffoscope
+[2024-06-01 07:23:26] INFO root fetch - processPackages [graphene-django-query-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphene_django_query_optimizer-0.7.1.tar.gz tmp/graphene_django_query_optimizer-0.7.2.tar.gz --markdown 20240601/g/graphene-django-query-optimizer/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-06-01 07:23:26] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: Downloading https://files.pythonhosted.org/packages/f5/0b/9d6fa2bde5b51c29985572c9a6fd4700df2c3aede7c4b0cd335ad19bd371/odoo14_addons_oca_l10n_switzerland-14.0.20240531.0-py3-none-any.whl
+[2024-06-01 07:23:26] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: executing diffoscope
+[2024-06-01 07:23:26] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_l10n_switzerland-14.0.20231215.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_l10n_switzerland-14.0.20240531.0-py3-none-any.whl.zip --markdown 20240601/o/odoo14-addons-oca-l10n-switzerland/14.0.20231215.0-14.0.20240531.0/README.md --exclude *.pyd
+[2024-06-01 07:23:26] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_l10n_switzerland-14.0.20231215.0-py3-none-any.whl.zip]
+[2024-06-01 07:23:26] INFO root fetch - processPackages [odoo14-addons-oca-l10n-switzerland]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_l10n_switzerland-14.0.20240531.0-py3-none-any.whl.zip]
+[2024-06-01 07:23:26] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-l10n-switzerland]: success
+[2024-06-01 07:23:26] INFO root fetch - processPackages [graphene-django-query-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_query_optimizer-0.7.1.tar.gz]
+[2024-06-01 07:23:26] INFO root fetch - processPackages [graphene-django-query-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_query_optimizer-0.7.2.tar.gz]
+[2024-06-01 07:23:26] INFO root fetch - main [MainThread]: End processing [graphene-django-query-optimizer]: success
+[2024-06-01 07:23:26] INFO root fetch - main [MainThread]: Store serial: [23477485]
