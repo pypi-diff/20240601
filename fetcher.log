@@ -11655,3 +11655,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:47:38] INFO root fetch - processPackages [swanlab]: Remove: archive file [/home/abi/fetcher/tmp/swanlab-0.3.8.tar.gz]
 [2024-06-01 08:47:38] INFO root fetch - main [MainThread]: End processing [swanlab]: success
 [2024-06-01 08:47:38] INFO root fetch - main [MainThread]: Store serial: [23477935]
+[2024-06-01 08:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477935]
+[2024-06-01 08:49:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 08:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redcoffee
+[2024-06-01 08:49:47] INFO root fetch - processPackages [redcoffee]: New version: [0.2] Old Version: [0.1]
+[2024-06-01 08:49:47] INFO root fetch - processPackages [redcoffee]: Downloading https://files.pythonhosted.org/packages/31/90/6841c49eec61041c993ee2883ef9baf875ab74a7c41427742b50c1321e3b/redcoffee-0.1.tar.gz
+[2024-06-01 08:49:48] INFO root fetch - processPackages [redcoffee]: Downloading https://files.pythonhosted.org/packages/72/a0/2f190705c986369755e832fa65e6142402df7a9327885206d957329ebe86/redcoffee-0.2.tar.gz
+[2024-06-01 08:49:48] INFO root fetch - processPackages [redcoffee]: executing diffoscope
+[2024-06-01 08:49:48] INFO root fetch - processPackages [redcoffee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redcoffee-0.1.tar.gz tmp/redcoffee-0.2.tar.gz --markdown 20240601/r/redcoffee/0.1-0.2/README.md --exclude *.pyd
+[2024-06-01 08:49:48] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.1.tar.gz]
+[2024-06-01 08:49:48] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.2.tar.gz]
+[2024-06-01 08:49:48] INFO root fetch - main [MainThread]: End processing [redcoffee]: success
+[2024-06-01 08:49:48] INFO root fetch - main [MainThread]: Store serial: [23477938]
