@@ -21800,3 +21800,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:09:00] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
 [2024-06-01 21:09:00] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-01 21:09:00] INFO root fetch - main [MainThread]: Store serial: [23482862]
+[2024-06-01 21:11:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482862]
+[2024-06-01 21:11:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 21:11:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pucoti
+[2024-06-01 21:11:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contourplots
+[2024-06-01 21:11:09] INFO root fetch - processPackages [pucoti]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-01 21:11:09] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/89/eb/eb2714cdadf39f4d15ebbe15775b3438440fa0b553fb6de48a0c200f91ae/pucoti-0.4.0.tar.gz
+[2024-06-01 21:11:09] INFO root fetch - processPackages [contourplots]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-01 21:11:09] INFO root fetch - processPackages [contourplots]: Downloading https://files.pythonhosted.org/packages/c2/de/39ffc79bedd993a61058ee8f42b39d726232b465280390278e6a0fb62dcc/contourplots-0.3.3.tar.gz
+[2024-06-01 21:11:10] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/ac/12/5313d89deaa04cdb7bf39c6ad444467807443a80907669e54232e88bd0ca/pucoti-0.5.0.tar.gz
+[2024-06-01 21:11:10] INFO root fetch - processPackages [contourplots]: Downloading https://files.pythonhosted.org/packages/f8/01/53fbcd8946b8ade9b1d376dd5f081d86713e453db9f5d320d3e974c168bb/contourplots-0.3.4.tar.gz
+[2024-06-01 21:11:10] INFO root fetch - processPackages [pucoti]: executing diffoscope
+[2024-06-01 21:11:10] INFO root fetch - processPackages [pucoti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pucoti-0.4.0.tar.gz tmp/pucoti-0.5.0.tar.gz --markdown 20240601/p/pucoti/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 21:11:10] INFO root fetch - processPackages [contourplots]: executing diffoscope
+[2024-06-01 21:11:10] INFO root fetch - processPackages [contourplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contourplots-0.3.3.tar.gz tmp/contourplots-0.3.4.tar.gz --markdown 20240601/c/contourplots/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-01 21:11:10] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.4.0.tar.gz]
+[2024-06-01 21:11:10] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.5.0.tar.gz]
+[2024-06-01 21:11:10] INFO root fetch - main [MainThread]: End processing [pucoti]: success
+[2024-06-01 21:11:10] INFO root fetch - processPackages [contourplots]: Remove: archive file [/home/abi/fetcher/tmp/contourplots-0.3.3.tar.gz]
+[2024-06-01 21:11:10] INFO root fetch - processPackages [contourplots]: Remove: archive file [/home/abi/fetcher/tmp/contourplots-0.3.4.tar.gz]
+[2024-06-01 21:11:10] INFO root fetch - main [MainThread]: End processing [contourplots]: success
+[2024-06-01 21:11:10] INFO root fetch - main [MainThread]: Store serial: [23482900]
