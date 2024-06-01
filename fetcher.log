@@ -22501,3 +22501,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:07:56] INFO root fetch - processPackages [scrapy-playwright]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-0.0.9.tar.gz]
 [2024-06-01 22:07:56] INFO root fetch - main [MainThread]: End processing [scrapy-playwright]: success
 [2024-06-01 22:07:56] INFO root fetch - main [MainThread]: Store serial: [23483225]
+[2024-06-01 22:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483225]
+[2024-06-01 22:10:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 22:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gotrue
+[2024-06-01 22:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mepylome
+[2024-06-01 22:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EasyFileOps
+[2024-06-01 22:10:06] INFO root fetch - processPackages [EasyFileOps]: New version: [0.1.1] Old Version: [0.1]
+[2024-06-01 22:10:06] INFO root fetch - processPackages [gotrue]: New version: [2.4.3] Old Version: [2.4.2]
+[2024-06-01 22:10:06] WARNING root fetch - processPackages [mepylome]: Skipping, unable to determine old version
+[2024-06-01 22:10:06] INFO root fetch - main [MainThread]: End processing [mepylome] error
+[2024-06-01 22:10:06] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/63/67/a21cfac51487cf54b637d22f5803af4f4ac14a453651a94d06bc06133b73/easyfileops-0.1.tar.gz
+[2024-06-01 22:10:06] INFO root fetch - processPackages [gotrue]: Downloading https://files.pythonhosted.org/packages/b4/1c/0d273f61e0d3c9416fdb9c30f24bfe321ca0956b12bcbd48f74c5c4ffd24/gotrue-2.4.2.tar.gz
+[2024-06-01 22:10:06] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/df/6b/6b315b8d4252c7dea5a759e412104e862147cc40fff49823957797ad6930/easyfileops-0.1.1.tar.gz
+[2024-06-01 22:10:06] INFO root fetch - processPackages [EasyFileOps]: executing diffoscope
+[2024-06-01 22:10:06] INFO root fetch - processPackages [EasyFileOps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyfileops-0.1.tar.gz tmp/easyfileops-0.1.1.tar.gz --markdown 20240601/E/EasyFileOps/0.1-0.1.1/README.md --exclude *.pyd
+[2024-06-01 22:10:06] INFO root fetch - processPackages [gotrue]: Downloading https://files.pythonhosted.org/packages/11/2c/294158161a50a7ddf4d52a93c7dc00ff871be0b97a24ef4ea8c80e595f9e/gotrue-2.4.3.tar.gz
+[2024-06-01 22:10:06] INFO root fetch - processPackages [gotrue]: executing diffoscope
+[2024-06-01 22:10:06] INFO root fetch - processPackages [gotrue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotrue-2.4.2.tar.gz tmp/gotrue-2.4.3.tar.gz --markdown 20240601/g/gotrue/2.4.2-2.4.3/README.md --exclude *.pyd
+[2024-06-01 22:10:07] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.tar.gz]
+[2024-06-01 22:10:07] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.1.tar.gz]
+[2024-06-01 22:10:07] INFO root fetch - main [MainThread]: End processing [EasyFileOps]: success
+[2024-06-01 22:10:07] INFO root fetch - processPackages [gotrue]: Remove: archive file [/home/abi/fetcher/tmp/gotrue-2.4.2.tar.gz]
+[2024-06-01 22:10:07] INFO root fetch - processPackages [gotrue]: Remove: archive file [/home/abi/fetcher/tmp/gotrue-2.4.3.tar.gz]
+[2024-06-01 22:10:07] INFO root fetch - main [MainThread]: End processing [gotrue]: success
+[2024-06-01 22:10:07] INFO root fetch - main [MainThread]: Store serial: [23483238]
