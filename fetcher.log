@@ -20143,3 +20143,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:12:18] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.1.tar.gz]
 [2024-06-01 19:12:18] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
 [2024-06-01 19:12:18] INFO root fetch - main [MainThread]: Store serial: [23482062]
+[2024-06-01 19:14:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482062]
+[2024-06-01 19:14:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 19:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phys2cvr
+[2024-06-01 19:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: WaveWhisper
+[2024-06-01 19:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-06-01 19:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qfpy
+[2024-06-01 19:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: carbon-registry-indexer
+[2024-06-01 19:14:27] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 19:14:27] INFO root fetch - processPackages [qfpy]: New version: [9.0.0] Old Version: [8.2.1]
+[2024-06-01 19:14:27] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/6a/ea/27f744d6e0e724c6e0575edb2c67737c6a70147e7ebcd97674a2959d66dd/carbon-registry-indexer-0.1.8.tar.gz
+[2024-06-01 19:14:27] WARNING root fetch - processPackages [WaveWhisper]: Skipping, unable to determine old version
+[2024-06-01 19:14:27] INFO root fetch - main [MainThread]: End processing [WaveWhisper] error
+[2024-06-01 19:14:27] INFO root fetch - processPackages [phys2cvr]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 19:14:27] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/52/37/a71aafd1bda0239111abc2852dc1e73bbbf4043fcb9115b75dd305de995a/qfpy-8.2.1.tar.gz
+[2024-06-01 19:14:27] INFO root fetch - processPackages [phys2cvr]: Downloading https://files.pythonhosted.org/packages/0a/59/6a3e29d2a133536d86ea73f7f80dce43ce8df41d1d7de80d32657a753735/phys2cvr-0.8.0.tar.gz
+[2024-06-01 19:14:27] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/94/b7/c7361f4a53aeb04bd76bcadef0071d93e9fce3479221259433c5528aa846/qfpy-9.0.0.tar.gz
+[2024-06-01 19:14:27] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/e5/cd/1e1e95e6852f521936093508bcf7bbf278df34c6892a3bcd86aa33caf947/carbon-registry-indexer-0.1.9.tar.gz
+[2024-06-01 19:14:27] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-01 19:14:27] INFO root fetch - processPackages [qfpy]: executing diffoscope
+[2024-06-01 19:14:27] INFO root fetch - processPackages [qfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qfpy-8.2.1.tar.gz tmp/qfpy-9.0.0.tar.gz --markdown 20240601/q/qfpy/8.2.1-9.0.0/README.md --exclude *.pyd
+[2024-06-01 19:14:27] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-06-01 19:14:27] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.8.tar.gz tmp/carbon-registry-indexer-0.1.9.tar.gz --markdown 20240601/c/carbon-registry-indexer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 19:14:28] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-01 19:14:28] INFO root fetch - processPackages [phys2cvr]: Downloading https://files.pythonhosted.org/packages/cc/c4/c7fc1fddcdf7e782b08593f33a302ea13b5b8b63a5fd8992d645205ee061/phys2cvr-0.9.0.tar.gz
+[2024-06-01 19:14:28] INFO root fetch - processPackages [phys2cvr]: executing diffoscope
+[2024-06-01 19:14:28] INFO root fetch - processPackages [phys2cvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phys2cvr-0.8.0.tar.gz tmp/phys2cvr-0.9.0.tar.gz --markdown 20240601/p/phys2cvr/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 19:14:28] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-01 19:14:28] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.8.tar.gz]
+[2024-06-01 19:14:28] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
+[2024-06-01 19:14:28] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-06-01 19:14:28] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-01 19:14:28] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240601/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-01 19:14:28] INFO root fetch - processPackages [qfpy]: Remove: archive file [/home/abi/fetcher/tmp/qfpy-8.2.1.tar.gz]
+[2024-06-01 19:14:28] INFO root fetch - processPackages [qfpy]: Remove: archive file [/home/abi/fetcher/tmp/qfpy-9.0.0.tar.gz]
+[2024-06-01 19:14:28] INFO root fetch - main [MainThread]: End processing [qfpy]: success
+[2024-06-01 19:14:28] INFO root fetch - processPackages [phys2cvr]: Remove: archive file [/home/abi/fetcher/tmp/phys2cvr-0.8.0.tar.gz]
+[2024-06-01 19:14:28] INFO root fetch - processPackages [phys2cvr]: Remove: archive file [/home/abi/fetcher/tmp/phys2cvr-0.9.0.tar.gz]
+[2024-06-01 19:14:28] INFO root fetch - main [MainThread]: End processing [phys2cvr]: success
+[2024-06-01 19:14:29] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-01 19:14:29] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-06-01 19:14:29] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-01 19:14:29] INFO root fetch - main [MainThread]: Store serial: [23482076]
