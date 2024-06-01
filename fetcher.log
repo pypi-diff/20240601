@@ -12420,3 +12420,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:49:36] INFO root fetch - processPackages [tikos]: Remove: archive file [/home/abi/fetcher/tmp/tikos-0.0.3.tar.gz]
 [2024-06-01 09:49:36] INFO root fetch - main [MainThread]: End processing [tikos]: success
 [2024-06-01 09:49:36] INFO root fetch - main [MainThread]: Store serial: [23478295]
+[2024-06-01 09:51:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478295]
+[2024-06-01 09:51:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:51:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lapa-authentication
+[2024-06-01 09:51:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batch-framework
+[2024-06-01 09:51:45] INFO root fetch - processPackages [lapa-authentication]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:51:45] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/e4/81/0147afd631665625024e3fd8d46c8583702b5670db8ba001ee02e08e5bdd/lapa_authentication-0.0.8.tar.gz
+[2024-06-01 09:51:45] INFO root fetch - processPackages [batch-framework]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-01 09:51:45] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/55/5e/b565d0a788b36c59dd7c50069e852ba495eab2d8133a8a0eb9362447bb46/batch-framework-0.2.3.tar.gz
+[2024-06-01 09:51:45] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/93/c0/03721c8dad872ab6d551fde61c36e0304a43fb6afe00c5037f5e7e16a865/lapa_authentication-0.0.9.tar.gz
+[2024-06-01 09:51:45] INFO root fetch - processPackages [lapa-authentication]: executing diffoscope
+[2024-06-01 09:51:45] INFO root fetch - processPackages [lapa-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_authentication-0.0.8.tar.gz tmp/lapa_authentication-0.0.9.tar.gz --markdown 20240601/l/lapa-authentication/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:51:45] INFO root fetch - processPackages [batch-framework]: Downloading https://files.pythonhosted.org/packages/9e/56/88c69a25655f3f12d0587199659396097d4a864bbefa6d3781af25c626ea/batch-framework-0.2.4.tar.gz
+[2024-06-01 09:51:46] INFO root fetch - processPackages [batch-framework]: executing diffoscope
+[2024-06-01 09:51:46] INFO root fetch - processPackages [batch-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batch-framework-0.2.3.tar.gz tmp/batch-framework-0.2.4.tar.gz --markdown 20240601/b/batch-framework/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-01 09:51:46] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.8.tar.gz]
+[2024-06-01 09:51:46] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.9.tar.gz]
+[2024-06-01 09:51:46] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
+[2024-06-01 09:51:46] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.3.tar.gz]
+[2024-06-01 09:51:46] INFO root fetch - processPackages [batch-framework]: Remove: archive file [/home/abi/fetcher/tmp/batch-framework-0.2.4.tar.gz]
+[2024-06-01 09:51:46] INFO root fetch - main [MainThread]: End processing [batch-framework]: success
+[2024-06-01 09:51:46] INFO root fetch - main [MainThread]: Store serial: [23478300]
