@@ -19274,3 +19274,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:19:20] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.6.1.tar.gz]
 [2024-06-01 18:19:20] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
 [2024-06-01 18:19:20] INFO root fetch - main [MainThread]: Store serial: [23481644]
+[2024-06-01 18:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481644]
+[2024-06-01 18:21:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bd_to_avp
+[2024-06-01 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wujing
+[2024-06-01 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gersemi
+[2024-06-01 18:21:29] INFO root fetch - processPackages [bd_to_avp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 18:21:29] INFO root fetch - processPackages [bd_to_avp]: Downloading https://files.pythonhosted.org/packages/00/db/7e18af63153f16cb6b9d0cd019ae969bcff7057bcdaa43a5b82e8224ed2d/bd_to_avp-0.1.8.tar.gz
+[2024-06-01 18:21:29] WARNING root fetch - processPackages [wujing]: Skipping, unable to determine old version
+[2024-06-01 18:21:29] INFO root fetch - main [MainThread]: End processing [wujing] error
+[2024-06-01 18:21:29] INFO root fetch - processPackages [gersemi]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-06-01 18:21:29] WARNING root fetch - processPackages [bd_to_avp]: Skipping package: exceeds size limit 16498870>=10485760
+[2024-06-01 18:21:29] INFO root fetch - main [MainThread]: End processing [bd_to_avp] error
+[2024-06-01 18:21:29] INFO root fetch - processPackages [gersemi]: Downloading https://files.pythonhosted.org/packages/38/96/8a1b8ae83fb9041b7194544beec2ab3791548fdef6ddfb12893238ef1294/gersemi-0.9.3.tar.gz
+[2024-06-01 18:21:30] INFO root fetch - processPackages [gersemi]: Downloading https://files.pythonhosted.org/packages/41/b4/2cecb2d2e6d90f93fd73e6d743c4a7d1403d83a4d9317dda6efe5dc7095c/gersemi-0.9.4.tar.gz
+[2024-06-01 18:21:30] INFO root fetch - processPackages [gersemi]: executing diffoscope
+[2024-06-01 18:21:30] INFO root fetch - processPackages [gersemi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gersemi-0.9.3.tar.gz tmp/gersemi-0.9.4.tar.gz --markdown 20240601/g/gersemi/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-06-01 18:21:30] INFO root fetch - processPackages [gersemi]: Remove: archive file [/home/abi/fetcher/tmp/gersemi-0.9.3.tar.gz]
+[2024-06-01 18:21:30] INFO root fetch - processPackages [gersemi]: Remove: archive file [/home/abi/fetcher/tmp/gersemi-0.9.4.tar.gz]
+[2024-06-01 18:21:30] INFO root fetch - main [MainThread]: End processing [gersemi]: success
+[2024-06-01 18:21:30] INFO root fetch - main [MainThread]: Store serial: [23481655]
