@@ -13651,3 +13651,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:21:24] INFO root fetch - processPackages [wakepy]: Remove: archive file [/home/abi/fetcher/tmp/wakepy-0.9.0.post1.tar.gz]
 [2024-06-01 11:21:24] INFO root fetch - main [MainThread]: End processing [wakepy]: success
 [2024-06-01 11:21:24] INFO root fetch - main [MainThread]: Store serial: [23478989]
+[2024-06-01 11:23:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478989]
+[2024-06-01 11:23:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 11:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-conestack-theme
+[2024-06-01 11:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mylocale
+[2024-06-01 11:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: warskald
+[2024-06-01 11:23:33] INFO root fetch - processPackages [warskald]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 11:23:33] INFO root fetch - processPackages [warskald]: Downloading https://files.pythonhosted.org/packages/86/a7/fdf44f966fab4cbd9c675ff351f1f7baced1f13edd727ccf76bd7ed99d57/warskald-0.0.8-py3-none-any.whl
+[2024-06-01 11:23:33] INFO root fetch - processPackages [mylocale]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 11:23:33] INFO root fetch - processPackages [sphinx-conestack-theme]: New version: [1.0b3] Old Version: [1.0b2]
+[2024-06-01 11:23:33] INFO root fetch - processPackages [warskald]: Downloading https://files.pythonhosted.org/packages/d7/10/c13e2047f69a69094aea1d1d44f31f8401de9e536c7a3a530050194a958e/warskald-0.0.9-py3-none-any.whl
+[2024-06-01 11:23:33] INFO root fetch - processPackages [mylocale]: Downloading https://files.pythonhosted.org/packages/2f/5b/5f942678cf7b6312828c8c42d0ad634e3a78f330e639d0aec633281923a9/mylocale-0.8.0.tar.gz
+[2024-06-01 11:23:33] INFO root fetch - processPackages [sphinx-conestack-theme]: Downloading https://files.pythonhosted.org/packages/60/99/4d7bbed5404708490e29941da75bace71d96555cc801f321b0c59ae0e1cf/sphinx-conestack-theme-1.0b2.tar.gz
+[2024-06-01 11:23:34] INFO root fetch - processPackages [warskald]: executing diffoscope
+[2024-06-01 11:23:34] INFO root fetch - processPackages [warskald]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warskald-0.0.8-py3-none-any.whl.zip tmp/warskald-0.0.9-py3-none-any.whl.zip --markdown 20240601/w/warskald/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 11:23:34] INFO root fetch - processPackages [mylocale]: Downloading https://files.pythonhosted.org/packages/cf/31/7eaef23f3354fae298c96e7453c8c73b0605787b351c7010185d89124bb0/mylocale-0.9.0.tar.gz
+[2024-06-01 11:23:34] INFO root fetch - processPackages [sphinx-conestack-theme]: Downloading https://files.pythonhosted.org/packages/73/a2/12a58e560ea4b1bd62ced34044bc43fdec983168f942d843eca47e020b27/sphinx-conestack-theme-1.0b3.tar.gz
+[2024-06-01 11:23:34] INFO root fetch - processPackages [mylocale]: executing diffoscope
+[2024-06-01 11:23:34] INFO root fetch - processPackages [mylocale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mylocale-0.8.0.tar.gz tmp/mylocale-0.9.0.tar.gz --markdown 20240601/m/mylocale/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 11:23:34] INFO root fetch - processPackages [sphinx-conestack-theme]: executing diffoscope
+[2024-06-01 11:23:34] INFO root fetch - processPackages [sphinx-conestack-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-conestack-theme-1.0b2.tar.gz tmp/sphinx-conestack-theme-1.0b3.tar.gz --markdown 20240601/s/sphinx-conestack-theme/1.0b2-1.0b3/README.md --exclude *.pyd
+[2024-06-01 11:23:34] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.8-py3-none-any.whl.zip]
+[2024-06-01 11:23:34] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.9-py3-none-any.whl.zip]
+[2024-06-01 11:23:34] INFO root fetch - main [MainThread]: End processing [warskald]: success
+[2024-06-01 11:23:34] INFO root fetch - processPackages [mylocale]: Remove: archive file [/home/abi/fetcher/tmp/mylocale-0.8.0.tar.gz]
+[2024-06-01 11:23:34] INFO root fetch - processPackages [mylocale]: Remove: archive file [/home/abi/fetcher/tmp/mylocale-0.9.0.tar.gz]
+[2024-06-01 11:23:34] INFO root fetch - main [MainThread]: End processing [mylocale]: success
+[2024-06-01 11:23:35] INFO root fetch - processPackages [sphinx-conestack-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-conestack-theme-1.0b2.tar.gz]
+[2024-06-01 11:23:35] INFO root fetch - processPackages [sphinx-conestack-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-conestack-theme-1.0b3.tar.gz]
+[2024-06-01 11:23:35] INFO root fetch - main [MainThread]: End processing [sphinx-conestack-theme]: success
+[2024-06-01 11:23:35] INFO root fetch - main [MainThread]: Store serial: [23478997]
