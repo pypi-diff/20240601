@@ -9905,3 +9905,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:52:13] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6-Fluent-Widgets-1.5.7.tar.gz]
 [2024-06-01 05:52:13] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
 [2024-06-01 05:52:13] INFO root fetch - main [MainThread]: Store serial: [23477115]
+[2024-06-01 05:54:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477115]
+[2024-06-01 05:54:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 05:54:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ape-solidity
+[2024-06-01 05:54:22] INFO root fetch - processPackages [ape-solidity]: New version: [0.8.0] Old Version: [0.7.3]
+[2024-06-01 05:54:22] INFO root fetch - processPackages [ape-solidity]: Downloading https://files.pythonhosted.org/packages/05/08/a6eae2b56942e3aa17127afc28cb8e5d42c69e555eae053ea8f267d485f9/ape-solidity-0.7.3.tar.gz
+[2024-06-01 05:54:23] INFO root fetch - processPackages [ape-solidity]: Downloading https://files.pythonhosted.org/packages/3b/9c/f91f8a952f49beea9f0ac12a8c11d95e694b7e32960a0cfb1b22c27ec5a0/ape-solidity-0.8.0.tar.gz
+[2024-06-01 05:54:23] INFO root fetch - processPackages [ape-solidity]: executing diffoscope
+[2024-06-01 05:54:23] INFO root fetch - processPackages [ape-solidity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-solidity-0.7.3.tar.gz tmp/ape-solidity-0.8.0.tar.gz --markdown 20240601/a/ape-solidity/0.7.3-0.8.0/README.md --exclude *.pyd
+[2024-06-01 05:54:24] INFO root fetch - processPackages [ape-solidity]: Remove: archive file [/home/abi/fetcher/tmp/ape-solidity-0.7.3.tar.gz]
+[2024-06-01 05:54:24] INFO root fetch - processPackages [ape-solidity]: Remove: archive file [/home/abi/fetcher/tmp/ape-solidity-0.8.0.tar.gz]
+[2024-06-01 05:54:24] INFO root fetch - main [MainThread]: End processing [ape-solidity]: success
+[2024-06-01 05:54:24] INFO root fetch - main [MainThread]: Store serial: [23477119]
