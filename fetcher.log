@@ -12157,3 +12157,45 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:30:03] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-06-01 09:30:03] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-06-01 09:30:03] INFO root fetch - main [MainThread]: Store serial: [23478150]
+[2024-06-01 09:32:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478150]
+[2024-06-01 09:32:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comment-retriever-etherscan
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VulnHeist
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: applyx
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cryptobot-pro
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oahspe
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ctrip-spider
+[2024-06-01 09:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: napari-moltrack
+[2024-06-01 09:32:12] INFO root fetch - processPackages [napari-moltrack]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 09:32:12] INFO root fetch - processPackages [oahspe]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:32:12] WARNING root fetch - processPackages [comment-retriever-etherscan]: Skipping, unable to determine old version
+[2024-06-01 09:32:12] INFO root fetch - main [MainThread]: End processing [comment-retriever-etherscan] error
+[2024-06-01 09:32:12] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/a4/0c/d446ed8bca79d2f22f29e7068a6279e0a0c799a73a64b937486dd50ae80e/napari_moltrack-0.0.6.tar.gz
+[2024-06-01 09:32:12] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/4b/74/d4e56352cf9c4bcbdb9def76baacfa0f8f561d2056675a7966bca54343aa/oahspe-0.0.8.tar.gz
+[2024-06-01 09:32:12] WARNING root fetch - processPackages [VulnHeist]: Skipping, unable to determine old version
+[2024-06-01 09:32:12] INFO root fetch - main [MainThread]: End processing [VulnHeist] error
+[2024-06-01 09:32:12] WARNING root fetch - processPackages [cryptobot-pro]: Skipping, unable to determine old version
+[2024-06-01 09:32:12] INFO root fetch - main [MainThread]: End processing [cryptobot-pro] error
+[2024-06-01 09:32:13] INFO root fetch - processPackages [applyx]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-06-01 09:32:13] WARNING root fetch - processPackages [ctrip-spider]: Skipping, unable to determine old version
+[2024-06-01 09:32:13] INFO root fetch - main [MainThread]: End processing [ctrip-spider] error
+[2024-06-01 09:32:13] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/30/96/bf00ea1d25d2d488fbefc1ff443a118a6c42de1422b84c2c517bf582d16c/applyx-0.2.7-py3-none-any.whl
+[2024-06-01 09:32:13] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/de/d5/1e822b9aa967a7cbfc30d1e9b77cb573842f5536e41ade896d0df136f0ee/oahspe-0.0.9.tar.gz
+[2024-06-01 09:32:13] INFO root fetch - processPackages [oahspe]: executing diffoscope
+[2024-06-01 09:32:13] INFO root fetch - processPackages [oahspe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oahspe-0.0.8.tar.gz tmp/oahspe-0.0.9.tar.gz --markdown 20240601/o/oahspe/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:32:13] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/e5/c8/e036efe3d60b82e7aa282028070a16c8b19cb6953dd8308cfffa7a8fea56/napari_moltrack-0.0.7.tar.gz
+[2024-06-01 09:32:13] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/55/82/e3be3f202f0a3163a1550c0b5b78be1aea8301a9ac6459c4ad6c5d2f7499/applyx-0.2.9-py3-none-any.whl
+[2024-06-01 09:32:13] INFO root fetch - processPackages [napari-moltrack]: executing diffoscope
+[2024-06-01 09:32:13] INFO root fetch - processPackages [napari-moltrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_moltrack-0.0.6.tar.gz tmp/napari_moltrack-0.0.7.tar.gz --markdown 20240601/n/napari-moltrack/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 09:32:13] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2024-06-01 09:32:13] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.7-py3-none-any.whl.zip tmp/applyx-0.2.9-py3-none-any.whl.zip --markdown 20240601/a/applyx/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-06-01 09:32:14] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.8.tar.gz]
+[2024-06-01 09:32:14] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.9.tar.gz]
+[2024-06-01 09:32:14] INFO root fetch - main [MainThread]: End processing [oahspe]: success
+[2024-06-01 09:32:14] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.6.tar.gz]
+[2024-06-01 09:32:14] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.7.tar.gz]
+[2024-06-01 09:32:14] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
+[2024-06-01 09:32:14] INFO root fetch - processPackages [applyx]: Remove: archive file [/home/abi/fetcher/tmp/applyx-0.2.7-py3-none-any.whl.zip]
+[2024-06-01 09:32:14] INFO root fetch - processPackages [applyx]: Remove: archive file [/home/abi/fetcher/tmp/applyx-0.2.9-py3-none-any.whl.zip]
+[2024-06-01 09:32:14] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2024-06-01 09:32:14] INFO root fetch - main [MainThread]: Store serial: [23478177]
