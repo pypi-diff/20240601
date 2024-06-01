@@ -9917,3 +9917,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:54:24] INFO root fetch - processPackages [ape-solidity]: Remove: archive file [/home/abi/fetcher/tmp/ape-solidity-0.8.0.tar.gz]
 [2024-06-01 05:54:24] INFO root fetch - main [MainThread]: End processing [ape-solidity]: success
 [2024-06-01 05:54:24] INFO root fetch - main [MainThread]: Store serial: [23477119]
+[2024-06-01 05:56:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477119]
+[2024-06-01 05:56:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 05:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tesla-fleet-api
+[2024-06-01 05:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-pydantic-form
+[2024-06-01 05:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyQt-Fluent-Widgets
+[2024-06-01 05:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: relari
+[2024-06-01 05:56:32] INFO root fetch - processPackages [dash-pydantic-form]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 05:56:32] INFO root fetch - processPackages [tesla-fleet-api]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-01 05:56:32] INFO root fetch - processPackages [dash-pydantic-form]: Downloading https://files.pythonhosted.org/packages/5d/79/f2446a74a0647d97f1ed631fb51aac1114a2235ba75271a8e7912a8c0ae8/dash_pydantic_form-0.1.8.tar.gz
+[2024-06-01 05:56:32] INFO root fetch - processPackages [relari]: New version: [0.2.0a1] Old Version: [0.1.5]
+[2024-06-01 05:56:32] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/a8/43/22557f5eee1dcbb990fc879c88f0eabf17ee6ceed249b0680f354698798e/tesla_fleet_api-0.5.8.tar.gz
+[2024-06-01 05:56:32] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-01 05:56:32] INFO root fetch - processPackages [relari]: Downloading https://files.pythonhosted.org/packages/c8/97/86669bdc62e3df1f201f0df70a41080c1ca453755466e40e0f8141948fd9/relari-0.1.5.tar.gz
+[2024-06-01 05:56:32] INFO root fetch - processPackages [dash-pydantic-form]: Downloading https://files.pythonhosted.org/packages/27/6d/ebcc7cd94582252583d5ed56864691c7d23afa009ca5100c21ab9f8bb15d/dash_pydantic_form-0.1.9.tar.gz
+[2024-06-01 05:56:32] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/75/6d/6715278ba90a003c579d187b9e0cab858032082b63938d17ec495ded9647/PyQt-Fluent-Widgets-1.5.6.tar.gz
+[2024-06-01 05:56:33] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/05/b5/2095dab08ad055d1a9d7d6fb069e7e1febca6ec8343a72456b3ff6cce41e/tesla_fleet_api-0.5.9.tar.gz
+[2024-06-01 05:56:33] INFO root fetch - processPackages [dash-pydantic-form]: executing diffoscope
+[2024-06-01 05:56:33] INFO root fetch - processPackages [dash-pydantic-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_pydantic_form-0.1.8.tar.gz tmp/dash_pydantic_form-0.1.9.tar.gz --markdown 20240601/d/dash-pydantic-form/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 05:56:33] INFO root fetch - processPackages [tesla-fleet-api]: executing diffoscope
+[2024-06-01 05:56:33] INFO root fetch - processPackages [tesla-fleet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesla_fleet_api-0.5.8.tar.gz tmp/tesla_fleet_api-0.5.9.tar.gz --markdown 20240601/t/tesla-fleet-api/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-01 05:56:33] INFO root fetch - processPackages [relari]: Downloading https://files.pythonhosted.org/packages/a9/61/2511911da585278c6d6eb05858063daffac5875db7696279a47665ecb76a/relari-0.2.0a1.tar.gz
+[2024-06-01 05:56:33] INFO root fetch - processPackages [relari]: executing diffoscope
+[2024-06-01 05:56:33] INFO root fetch - processPackages [relari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relari-0.1.5.tar.gz tmp/relari-0.2.0a1.tar.gz --markdown 20240601/r/relari/0.1.5-0.2.0a1/README.md --exclude *.pyd
+[2024-06-01 05:56:33] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/26/5a/b35b14c57832893413e2272f10cd76233da105935ebe04cc1f1efc5f435c/PyQt-Fluent-Widgets-1.5.7.tar.gz
+[2024-06-01 05:56:33] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.8.tar.gz]
+[2024-06-01 05:56:33] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.9.tar.gz]
+[2024-06-01 05:56:33] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
+[2024-06-01 05:56:33] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2024-06-01 05:56:33] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-1.5.6.tar.gz tmp/PyQt-Fluent-Widgets-1.5.7.tar.gz --markdown 20240601/P/PyQt-Fluent-Widgets/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-01 05:56:33] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.8.tar.gz]
+[2024-06-01 05:56:33] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.9.tar.gz]
+[2024-06-01 05:56:33] INFO root fetch - main [MainThread]: End processing [dash-pydantic-form]: success
+[2024-06-01 05:56:33] INFO root fetch - processPackages [relari]: Remove: archive file [/home/abi/fetcher/tmp/relari-0.1.5.tar.gz]
+[2024-06-01 05:56:33] INFO root fetch - processPackages [relari]: Remove: archive file [/home/abi/fetcher/tmp/relari-0.2.0a1.tar.gz]
+[2024-06-01 05:56:33] INFO root fetch - main [MainThread]: End processing [relari]: success
+[2024-06-01 05:56:35] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-Fluent-Widgets-1.5.6.tar.gz]
+[2024-06-01 05:56:35] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-Fluent-Widgets-1.5.7.tar.gz]
+[2024-06-01 05:56:35] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2024-06-01 05:56:35] INFO root fetch - main [MainThread]: Store serial: [23477132]
