@@ -9361,3 +9361,45 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:16:05] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-06-01 05:16:05] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-06-01 05:16:05] INFO root fetch - main [MainThread]: Store serial: [23476853]
+[2024-06-01 05:18:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476853]
+[2024-06-01 05:18:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 05:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: busycat
+[2024-06-01 05:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semanticscholar
+[2024-06-01 05:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyeamxx
+[2024-06-01 05:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-core
+[2024-06-01 05:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thoi
+[2024-06-01 05:18:14] INFO root fetch - processPackages [busycat]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 05:18:14] INFO root fetch - processPackages [pyeamxx]: New version: [0.0.1.dev4] Old Version: [0.0.1.dev3]
+[2024-06-01 05:18:14] INFO root fetch - processPackages [busycat]: Downloading https://files.pythonhosted.org/packages/22/56/79f4d828253a8cf4f8601d4531ecda2a532d3eaea471206a9daf398adef9/busycat-0.1.1.tar.gz
+[2024-06-01 05:18:14] WARNING root fetch - processPackages [thoi]: Skipping, unable to determine old version
+[2024-06-01 05:18:14] INFO root fetch - main [MainThread]: End processing [thoi] error
+[2024-06-01 05:18:14] INFO root fetch - processPackages [composio-core]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-06-01 05:18:14] INFO root fetch - processPackages [semanticscholar]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-06-01 05:18:15] INFO root fetch - processPackages [pyeamxx]: Downloading https://files.pythonhosted.org/packages/b5/7c/e5c63488e6b77c305c6f10671e8a00a36597e7b65d71d06cbc5f3a25977a/pyeamxx-0.0.1.dev3.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [busycat]: Downloading https://files.pythonhosted.org/packages/d0/7c/82e7eca5fbe0f55eaf7e702812d2dbf233f5fd6785128db61f1df698ef35/busycat-0.1.2.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/8c/db/0c2183e033fc630c92d44cc3ca3201dd9b76241177da3f95ce612f958c11/composio_core-0.3.6.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [semanticscholar]: Downloading https://files.pythonhosted.org/packages/1d/fd/224ab7a62423f00836e9d0f082a9aa683c3958e69723156209ab840447d7/semanticscholar-0.8.1.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [busycat]: executing diffoscope
+[2024-06-01 05:18:15] INFO root fetch - processPackages [busycat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/busycat-0.1.1.tar.gz tmp/busycat-0.1.2.tar.gz --markdown 20240601/b/busycat/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 05:18:15] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/2c/48/b6de2f9603e75e410bd83af48b063956e121567bafdce275c7b5c1e16eee/composio_core-0.3.7.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [semanticscholar]: Downloading https://files.pythonhosted.org/packages/f1/24/111e009c3fcc739cdd778f09dc605191829d3d18f57465427fe66c8475b9/semanticscholar-0.8.2.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [semanticscholar]: executing diffoscope
+[2024-06-01 05:18:15] INFO root fetch - processPackages [semanticscholar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semanticscholar-0.8.1.tar.gz tmp/semanticscholar-0.8.2.tar.gz --markdown 20240601/s/semanticscholar/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-06-01 05:18:15] INFO root fetch - processPackages [pyeamxx]: Downloading https://files.pythonhosted.org/packages/7d/4e/3b31984a9f56998d20c2c73c98a16b957413a452ad139eeaa40a9ee78752/pyeamxx-0.0.1.dev4.tar.gz
+[2024-06-01 05:18:15] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-06-01 05:18:15] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.3.6.tar.gz tmp/composio_core-0.3.7.tar.gz --markdown 20240601/c/composio-core/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-06-01 05:18:15] INFO root fetch - processPackages [busycat]: Remove: archive file [/home/abi/fetcher/tmp/busycat-0.1.1.tar.gz]
+[2024-06-01 05:18:15] INFO root fetch - processPackages [busycat]: Remove: archive file [/home/abi/fetcher/tmp/busycat-0.1.2.tar.gz]
+[2024-06-01 05:18:15] INFO root fetch - main [MainThread]: End processing [busycat]: success
+[2024-06-01 05:18:15] INFO root fetch - processPackages [pyeamxx]: executing diffoscope
+[2024-06-01 05:18:15] INFO root fetch - processPackages [pyeamxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeamxx-0.0.1.dev3.tar.gz tmp/pyeamxx-0.0.1.dev4.tar.gz --markdown 20240601/p/pyeamxx/0.0.1.dev3-0.0.1.dev4/README.md --exclude *.pyd
+[2024-06-01 05:18:16] INFO root fetch - processPackages [semanticscholar]: Remove: archive file [/home/abi/fetcher/tmp/semanticscholar-0.8.1.tar.gz]
+[2024-06-01 05:18:16] INFO root fetch - processPackages [semanticscholar]: Remove: archive file [/home/abi/fetcher/tmp/semanticscholar-0.8.2.tar.gz]
+[2024-06-01 05:18:16] INFO root fetch - main [MainThread]: End processing [semanticscholar]: success
+[2024-06-01 05:18:16] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.6.tar.gz]
+[2024-06-01 05:18:16] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.7.tar.gz]
+[2024-06-01 05:18:16] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-06-01 05:19:11] INFO root fetch - processPackages [pyeamxx]: Remove: archive file [/home/abi/fetcher/tmp/pyeamxx-0.0.1.dev3.tar.gz]
+[2024-06-01 05:19:11] INFO root fetch - processPackages [pyeamxx]: Remove: archive file [/home/abi/fetcher/tmp/pyeamxx-0.0.1.dev4.tar.gz]
+[2024-06-01 05:19:11] INFO root fetch - main [MainThread]: End processing [pyeamxx]: success
+[2024-06-01 05:19:11] INFO root fetch - main [MainThread]: Store serial: [23476869]
