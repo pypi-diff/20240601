@@ -22891,3 +22891,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:36:29] INFO root fetch - processPackages [BayesBoom]: Remove: archive file [/home/abi/fetcher/tmp/BayesBoom-0.1.9.tar.gz]
 [2024-06-01 22:36:29] INFO root fetch - main [MainThread]: End processing [BayesBoom]: success
 [2024-06-01 22:36:29] INFO root fetch - main [MainThread]: Store serial: [23483393]
+[2024-06-01 22:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483393]
+[2024-06-01 22:38:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 22:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sportident
+[2024-06-01 22:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cv2ext
+[2024-06-01 22:38:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omicsdata
+[2024-06-01 22:38:38] INFO root fetch - processPackages [omicsdata]: New version: [1.2] Old Version: [1.1]
+[2024-06-01 22:38:38] INFO root fetch - processPackages [omicsdata]: Downloading https://files.pythonhosted.org/packages/99/78/2910d71e420ef1a8c6db06b90fab85bc4dafad1baa28477e2cdddbeebffe/omicsdata-1.1.tar.gz
+[2024-06-01 22:38:38] INFO root fetch - processPackages [cv2ext]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 22:38:38] INFO root fetch - processPackages [sportident]: New version: [1.2.8] Old Version: [1.2.7]
+[2024-06-01 22:38:38] INFO root fetch - processPackages [sportident]: Downloading https://files.pythonhosted.org/packages/70/ce/b186fc073e9318ee8df3967cf04ccb7f73771b76716e794af65c3824c569/sportident-1.2.7.tar.gz
+[2024-06-01 22:38:38] INFO root fetch - processPackages [cv2ext]: Downloading https://files.pythonhosted.org/packages/94/dc/a139f70fe8105903f507aa7e6ad48534b5e01328d8827d13cea36fdbe208/cv2ext-0.0.8.tar.gz
+[2024-06-01 22:38:39] INFO root fetch - processPackages [omicsdata]: Downloading https://files.pythonhosted.org/packages/c2/2e/e3400e27f29c8612fc19c5ae8b68a5e4dbd72960b70c02033a6a6d382447/omicsdata-1.2.tar.gz
+[2024-06-01 22:38:39] INFO root fetch - processPackages [sportident]: Downloading https://files.pythonhosted.org/packages/3e/6e/b1ccd9a2362c741be3b342a8fc93d41c5680c13c1f1f6921e578b9134c2d/sportident-1.2.8.tar.gz
+[2024-06-01 22:38:39] INFO root fetch - processPackages [omicsdata]: executing diffoscope
+[2024-06-01 22:38:39] INFO root fetch - processPackages [omicsdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omicsdata-1.1.tar.gz tmp/omicsdata-1.2.tar.gz --markdown 20240601/o/omicsdata/1.1-1.2/README.md --exclude *.pyd
+[2024-06-01 22:38:39] INFO root fetch - processPackages [cv2ext]: Downloading https://files.pythonhosted.org/packages/dc/6d/1136a4cb6c5045cd15f69ebb30bb9c7e72f02a22441a2ba2e63e0696c9d9/cv2ext-0.0.9.tar.gz
+[2024-06-01 22:38:39] INFO root fetch - processPackages [sportident]: executing diffoscope
+[2024-06-01 22:38:39] INFO root fetch - processPackages [sportident]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportident-1.2.7.tar.gz tmp/sportident-1.2.8.tar.gz --markdown 20240601/s/sportident/1.2.7-1.2.8/README.md --exclude *.pyd
+[2024-06-01 22:38:39] INFO root fetch - processPackages [cv2ext]: executing diffoscope
+[2024-06-01 22:38:39] INFO root fetch - processPackages [cv2ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2ext-0.0.8.tar.gz tmp/cv2ext-0.0.9.tar.gz --markdown 20240601/c/cv2ext/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 22:38:39] INFO root fetch - processPackages [omicsdata]: Remove: archive file [/home/abi/fetcher/tmp/omicsdata-1.1.tar.gz]
+[2024-06-01 22:38:39] INFO root fetch - processPackages [omicsdata]: Remove: archive file [/home/abi/fetcher/tmp/omicsdata-1.2.tar.gz]
+[2024-06-01 22:38:39] INFO root fetch - main [MainThread]: End processing [omicsdata]: success
+[2024-06-01 22:38:39] INFO root fetch - processPackages [sportident]: Remove: archive file [/home/abi/fetcher/tmp/sportident-1.2.7.tar.gz]
+[2024-06-01 22:38:39] INFO root fetch - processPackages [sportident]: Remove: archive file [/home/abi/fetcher/tmp/sportident-1.2.8.tar.gz]
+[2024-06-01 22:38:39] INFO root fetch - main [MainThread]: End processing [sportident]: success
+[2024-06-01 22:38:40] INFO root fetch - processPackages [cv2ext]: Remove: archive file [/home/abi/fetcher/tmp/cv2ext-0.0.8.tar.gz]
+[2024-06-01 22:38:40] INFO root fetch - processPackages [cv2ext]: Remove: archive file [/home/abi/fetcher/tmp/cv2ext-0.0.9.tar.gz]
+[2024-06-01 22:38:40] INFO root fetch - main [MainThread]: End processing [cv2ext]: success
+[2024-06-01 22:38:40] INFO root fetch - main [MainThread]: Store serial: [23483400]
