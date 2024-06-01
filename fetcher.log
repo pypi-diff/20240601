@@ -23260,3 +23260,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:04:52] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-06-01 23:04:52] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-06-01 23:04:52] INFO root fetch - main [MainThread]: Store serial: [23483628]
+[2024-06-01 23:06:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483628]
+[2024-06-01 23:07:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 23:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: legit-every-pip-library-i-own
+[2024-06-01 23:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipyslides
+[2024-06-01 23:07:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nipo-company-distance
+[2024-06-01 23:07:01] INFO root fetch - processPackages [nipo-company-distance]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-01 23:07:01] WARNING root fetch - processPackages [legit-every-pip-library-i-own]: Skipping, unable to determine old version
+[2024-06-01 23:07:01] INFO root fetch - main [MainThread]: End processing [legit-every-pip-library-i-own] error
+[2024-06-01 23:07:01] INFO root fetch - processPackages [ipyslides]: New version: [3.9.9] Old Version: [3.9.7]
+[2024-06-01 23:07:01] INFO root fetch - processPackages [nipo-company-distance]: Downloading https://files.pythonhosted.org/packages/8b/d1/85cb327ac08e66aea5bc52579dd1131f7e3ab49f3a15762be8834d0efc01/nipo_company_distance-0.1.0.tar.gz
+[2024-06-01 23:07:01] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/66/25/596ef64ca11e8a928e9faf06a21af19bd4a6853e41e6c83194ca87dfc01c/ipyslides-3.9.7.tar.gz
+[2024-06-01 23:07:01] WARNING root fetch - processPackages [nipo-company-distance]: Skipping package: exceeds size limit 21913747>=10485760
+[2024-06-01 23:07:01] INFO root fetch - main [MainThread]: End processing [nipo-company-distance] error
+[2024-06-01 23:07:02] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/8c/a0/d9b56bad4fadb34e075f0240f87f4c921739449db6e2fe3b814c11a1a1ec/ipyslides-3.9.9.tar.gz
+[2024-06-01 23:07:02] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-06-01 23:07:02] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.9.7.tar.gz tmp/ipyslides-3.9.9.tar.gz --markdown 20240601/i/ipyslides/3.9.7-3.9.9/README.md --exclude *.pyd
+[2024-06-01 23:07:03] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.7.tar.gz]
+[2024-06-01 23:07:03] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.9.tar.gz]
+[2024-06-01 23:07:03] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-06-01 23:07:03] INFO root fetch - main [MainThread]: Store serial: [23483639]
