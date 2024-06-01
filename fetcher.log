@@ -21875,3 +21875,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:15:33] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
 [2024-06-01 21:15:33] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
 [2024-06-01 21:15:33] INFO root fetch - main [MainThread]: Store serial: [23482920]
+[2024-06-01 21:17:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482920]
+[2024-06-01 21:17:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 21:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-cookie-jwtauth
+[2024-06-01 21:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SkiBiDi-ORM
+[2024-06-01 21:17:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: document-transformer
+[2024-06-01 21:17:44] WARNING root fetch - processPackages [document-transformer]: Skipping, unable to determine old version
+[2024-06-01 21:17:44] INFO root fetch - main [MainThread]: End processing [document-transformer] error
+[2024-06-01 21:17:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 21:17:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/b2/9a/a24f2439032da114f0f9ddcc71202fc6b5f058c6db7dce51208124a0e3fc/drf_cookie_jwtauth-0.0.2.tar.gz
+[2024-06-01 21:17:44] INFO root fetch - processPackages [SkiBiDi-ORM]: New version: [0.1.26] Old Version: [0.1.22]
+[2024-06-01 21:17:44] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/2b/ee/53061d6db172aed60287acaf6aee19862e8883d821dd5a67df7a2d77f9c7/skibidi_orm-0.1.22.tar.gz
+[2024-06-01 21:17:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/da/3e/36de223a9127a7264608b54807281476af9baf431081a829fae75d3590b7/drf_cookie_jwtauth-0.0.3.tar.gz
+[2024-06-01 21:17:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: executing diffoscope
+[2024-06-01 21:17:44] INFO root fetch - processPackages [drf-cookie-jwtauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_cookie_jwtauth-0.0.2.tar.gz tmp/drf_cookie_jwtauth-0.0.3.tar.gz --markdown 20240601/d/drf-cookie-jwtauth/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 21:17:45] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/fa/4c/914d13432246bfeee8d26accd3df66fe96da101f5c2dc7a12aa28dd0614e/skibidi_orm-0.1.26.tar.gz
+[2024-06-01 21:17:45] INFO root fetch - processPackages [SkiBiDi-ORM]: executing diffoscope
+[2024-06-01 21:17:45] INFO root fetch - processPackages [SkiBiDi-ORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skibidi_orm-0.1.22.tar.gz tmp/skibidi_orm-0.1.26.tar.gz --markdown 20240601/S/SkiBiDi-ORM/0.1.22-0.1.26/README.md --exclude *.pyd
+[2024-06-01 21:17:45] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.2.tar.gz]
+[2024-06-01 21:17:45] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.3.tar.gz]
+[2024-06-01 21:17:45] INFO root fetch - main [MainThread]: End processing [drf-cookie-jwtauth]: success
+[2024-06-01 21:17:46] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.22.tar.gz]
+[2024-06-01 21:17:46] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.26.tar.gz]
+[2024-06-01 21:17:46] INFO root fetch - main [MainThread]: End processing [SkiBiDi-ORM]: success
+[2024-06-01 21:17:46] INFO root fetch - main [MainThread]: Store serial: [23482930]
