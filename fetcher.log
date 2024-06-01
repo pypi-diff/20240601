@@ -13533,3 +13533,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:12:41] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.tar.gz]
 [2024-06-01 11:12:41] INFO root fetch - main [MainThread]: End processing [joyrl]: success
 [2024-06-01 11:12:41] INFO root fetch - main [MainThread]: Store serial: [23478941]
+[2024-06-01 11:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478941]
+[2024-06-01 11:14:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 11:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shgpt
+[2024-06-01 11:14:50] INFO root fetch - processPackages [shgpt]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-06-01 11:14:50] INFO root fetch - processPackages [shgpt]: Downloading https://files.pythonhosted.org/packages/59/ea/750a6505dc8ca46086dfb4693baf492c60de7ffcd9d6329fa64b992e9728/shgpt-0.2.1.tar.gz
+[2024-06-01 11:14:51] INFO root fetch - processPackages [shgpt]: Downloading https://files.pythonhosted.org/packages/e9/5b/6ccafa300a4ed38807a699acf5a91a84ed8d8aa3f72b504ad974bafe0776/shgpt-0.3.0.tar.gz
+[2024-06-01 11:14:51] INFO root fetch - processPackages [shgpt]: executing diffoscope
+[2024-06-01 11:14:51] INFO root fetch - processPackages [shgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shgpt-0.2.1.tar.gz tmp/shgpt-0.3.0.tar.gz --markdown 20240601/s/shgpt/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-06-01 11:14:51] INFO root fetch - processPackages [shgpt]: Remove: archive file [/home/abi/fetcher/tmp/shgpt-0.2.1.tar.gz]
+[2024-06-01 11:14:51] INFO root fetch - processPackages [shgpt]: Remove: archive file [/home/abi/fetcher/tmp/shgpt-0.3.0.tar.gz]
+[2024-06-01 11:14:51] INFO root fetch - main [MainThread]: End processing [shgpt]: success
+[2024-06-01 11:14:51] INFO root fetch - main [MainThread]: Store serial: [23478944]
