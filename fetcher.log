@@ -21298,3 +21298,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:33:40] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.6.2.tar.gz]
 [2024-06-01 20:33:40] INFO root fetch - main [MainThread]: End processing [pyDolarVenezuela]: success
 [2024-06-01 20:33:40] INFO root fetch - main [MainThread]: Store serial: [23482589]
+[2024-06-01 20:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482589]
+[2024-06-01 20:35:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2024-06-01 20:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kvalchemy
+[2024-06-01 20:35:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scim2-models
+[2024-06-01 20:35:49] WARNING root fetch - processPackages [scim2-models]: Skipping, unable to determine old version
+[2024-06-01 20:35:49] INFO root fetch - processPackages [kvalchemy]: New version: [0.2.1] Old Version: [0.1.1]
+[2024-06-01 20:35:49] INFO root fetch - main [MainThread]: End processing [scim2-models] error
+[2024-06-01 20:35:49] INFO root fetch - processPackages [checkov]: New version: [3.2.99] Old Version: [3.2.98]
+[2024-06-01 20:35:49] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/7c/86/cedee502356b2d41a0a76cb8483e87ee3992d419b6e360130fee5f49aceb/kvalchemy-0.1.1.tar.gz
+[2024-06-01 20:35:49] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/a9/34/826b2df19c26007adefb008f273e87b94019bf5e27747efea796070c2da5/checkov-3.2.98.tar.gz
+[2024-06-01 20:35:49] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/50/aa/4c1d4f48cbc7a7f3d5d805c75e177c47c22162a9033e8bda2a971adb03f0/kvalchemy-0.2.1.tar.gz
+[2024-06-01 20:35:50] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-06-01 20:35:50] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.1.1.tar.gz tmp/kvalchemy-0.2.1.tar.gz --markdown 20240601/k/kvalchemy/0.1.1-0.2.1/README.md --exclude *.pyd
+[2024-06-01 20:35:50] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/ff/ff/5ccc1f214d2e0bf1a97393d8f14eb1cda0f7675d0fedc54a6e5b09841a02/checkov-3.2.99.tar.gz
+[2024-06-01 20:35:50] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-06-01 20:35:50] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.98.tar.gz tmp/checkov-3.2.99.tar.gz --markdown 20240601/c/checkov/3.2.98-3.2.99/README.md --exclude *.pyd
+[2024-06-01 20:35:50] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.1.1.tar.gz]
+[2024-06-01 20:35:50] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.2.1.tar.gz]
+[2024-06-01 20:35:50] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-06-01 20:35:58] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.98.tar.gz]
+[2024-06-01 20:35:58] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.99.tar.gz]
+[2024-06-01 20:35:58] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-06-01 20:35:58] INFO root fetch - main [MainThread]: Store serial: [23482600]
