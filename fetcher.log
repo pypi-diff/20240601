@@ -10370,3 +10370,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:36:01] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.4.tar.gz]
 [2024-06-01 06:36:01] INFO root fetch - main [MainThread]: End processing [libresvip]: success
 [2024-06-01 06:36:01] INFO root fetch - main [MainThread]: Store serial: [23477280]
+[2024-06-01 06:38:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477280]
+[2024-06-01 06:38:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 06:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-llama
+[2024-06-01 06:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: i2cpy
+[2024-06-01 06:38:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cartoonizer-thellmike
+[2024-06-01 06:38:10] WARNING root fetch - processPackages [cartoonizer-thellmike]: Skipping, unable to determine old version
+[2024-06-01 06:38:10] INFO root fetch - main [MainThread]: End processing [cartoonizer-thellmike] error
+[2024-06-01 06:38:10] INFO root fetch - processPackages [easy-llama]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 06:38:10] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/ce/e9/39a06b9ce349625a5d6c7da00644a8cc7320112fb3ba2b2e54944d3a6135/easy_llama-0.1.8.tar.gz
+[2024-06-01 06:38:10] INFO root fetch - processPackages [i2cpy]: New version: [0.1.1] Old Version: [0.1.0b3]
+[2024-06-01 06:38:10] INFO root fetch - processPackages [i2cpy]: Downloading https://files.pythonhosted.org/packages/56/99/61032092edaedca2f10624de5cefe2dc0a8835a2c16e4f51030f6843953b/i2cpy-0.1.0b3.tar.gz
+[2024-06-01 06:38:10] INFO root fetch - processPackages [easy-llama]: Downloading https://files.pythonhosted.org/packages/98/5d/f5007368104957b81fc41c01c18234178e2875066cca25192bec1d846caf/easy_llama-0.1.9.tar.gz
+[2024-06-01 06:38:11] INFO root fetch - processPackages [easy-llama]: executing diffoscope
+[2024-06-01 06:38:11] INFO root fetch - processPackages [easy-llama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_llama-0.1.8.tar.gz tmp/easy_llama-0.1.9.tar.gz --markdown 20240601/e/easy-llama/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 06:38:11] INFO root fetch - processPackages [i2cpy]: Downloading https://files.pythonhosted.org/packages/96/40/17ef9981aff35f9d4cf3694ca409d4d71cc9f7085a96ee909b0a2c6f699e/i2cpy-0.1.1.tar.gz
+[2024-06-01 06:38:11] INFO root fetch - processPackages [i2cpy]: executing diffoscope
+[2024-06-01 06:38:11] INFO root fetch - processPackages [i2cpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2cpy-0.1.0b3.tar.gz tmp/i2cpy-0.1.1.tar.gz --markdown 20240601/i/i2cpy/0.1.0b3-0.1.1/README.md --exclude *.pyd
+[2024-06-01 06:38:11] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.8.tar.gz]
+[2024-06-01 06:38:11] INFO root fetch - processPackages [easy-llama]: Remove: archive file [/home/abi/fetcher/tmp/easy_llama-0.1.9.tar.gz]
+[2024-06-01 06:38:11] INFO root fetch - main [MainThread]: End processing [easy-llama]: success
+[2024-06-01 06:38:11] INFO root fetch - processPackages [i2cpy]: Remove: archive file [/home/abi/fetcher/tmp/i2cpy-0.1.0b3.tar.gz]
+[2024-06-01 06:38:11] INFO root fetch - processPackages [i2cpy]: Remove: archive file [/home/abi/fetcher/tmp/i2cpy-0.1.1.tar.gz]
+[2024-06-01 06:38:11] INFO root fetch - main [MainThread]: End processing [i2cpy]: success
+[2024-06-01 06:38:11] INFO root fetch - main [MainThread]: Store serial: [23477289]
