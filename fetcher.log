@@ -14288,3 +14288,40 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:20:06] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.4.tar.gz]
 [2024-06-01 12:20:06] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
 [2024-06-01 12:20:06] INFO root fetch - main [MainThread]: Store serial: [23479304]
+[2024-06-01 12:22:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479304]
+[2024-06-01 12:22:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 12:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sc3dg
+[2024-06-01 12:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinjyaml
+[2024-06-01 12:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dashbar
+[2024-06-01 12:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sc3dg
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 12:22:15] INFO root fetch - processPackages [jinjyaml]: New version: [0.4rc1] Old Version: [0.4]
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/ba/48/b7121976aba6f69992d4da93950b981f4d92debdd072b494ce22ddd772db/sc3dg-0.0.4.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/ba/48/b7121976aba6f69992d4da93950b981f4d92debdd072b494ce22ddd772db/sc3dg-0.0.4.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [dashbar]: New version: [2.1] Old Version: [2.0]
+[2024-06-01 12:22:15] INFO root fetch - processPackages [jinjyaml]: Downloading https://files.pythonhosted.org/packages/2f/27/9a486de3702acb4c349604c14d8baa0c5604ccda32a0b57d92a28978869b/jinjyaml-0.4.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [dashbar]: Downloading https://files.pythonhosted.org/packages/bb/f1/78d570fc7b18a1b3d310d125576c5e413ae1a26fe13c601274c0eacd458e/dashbar-2.0.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/e8/9f/25d77ccfac0972ff3e62e88c841ef3fc00b5cdcb5874f4f81ed8b70bd29e/sc3dg-0.0.5.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/e8/9f/25d77ccfac0972ff3e62e88c841ef3fc00b5cdcb5874f4f81ed8b70bd29e/sc3dg-0.0.5.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.4.tar.gz tmp/sc3dg-0.0.5.tar.gz --markdown 20240601/s/sc3dg/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-01 12:22:15] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.4.tar.gz tmp/sc3dg-0.0.5.tar.gz --markdown 20240601/s/sc3dg/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 12:22:15] INFO root fetch - processPackages [jinjyaml]: Downloading https://files.pythonhosted.org/packages/50/96/44d83812461177506df758e318ac2fc46e61fe7813633a89169137ccc4ec/jinjyaml-0.4rc1.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [dashbar]: Downloading https://files.pythonhosted.org/packages/02/af/2f88672added663bf78b4be8ac81aea73cfcc5d2a554e586fa229b6d3b27/dashbar-2.1.tar.gz
+[2024-06-01 12:22:15] INFO root fetch - processPackages [jinjyaml]: executing diffoscope
+[2024-06-01 12:22:15] INFO root fetch - processPackages [jinjyaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjyaml-0.4.tar.gz tmp/jinjyaml-0.4rc1.tar.gz --markdown 20240601/j/jinjyaml/0.4-0.4rc1/README.md --exclude *.pyd
+[2024-06-01 12:22:15] INFO root fetch - processPackages [dashbar]: executing diffoscope
+[2024-06-01 12:22:15] INFO root fetch - processPackages [dashbar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashbar-2.0.tar.gz tmp/dashbar-2.1.tar.gz --markdown 20240601/d/dashbar/2.0-2.1/README.md --exclude *.pyd
+[2024-06-01 12:22:16] INFO root fetch - processPackages [dashbar]: Remove: archive file [/home/abi/fetcher/tmp/dashbar-2.0.tar.gz]
+[2024-06-01 12:22:16] INFO root fetch - processPackages [dashbar]: Remove: archive file [/home/abi/fetcher/tmp/dashbar-2.1.tar.gz]
+[2024-06-01 12:22:16] INFO root fetch - main [MainThread]: End processing [dashbar]: success
+[2024-06-01 12:22:16] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.4.tar.gz]
+[2024-06-01 12:22:16] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.5.tar.gz]
+[2024-06-01 12:22:16] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-01 12:22:16] INFO root fetch - processPackages [jinjyaml]: Remove: archive file [/home/abi/fetcher/tmp/jinjyaml-0.4.tar.gz]
+[2024-06-01 12:22:16] INFO root fetch - processPackages [jinjyaml]: Remove: archive file [/home/abi/fetcher/tmp/jinjyaml-0.4rc1.tar.gz]
+[2024-06-01 12:22:16] INFO root fetch - main [MainThread]: End processing [jinjyaml]: success
+[2024-06-01 12:22:16] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-01 12:22:16] INFO root fetch - main [MainThread]: Store serial: [23479320]
