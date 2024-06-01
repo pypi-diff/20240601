@@ -21382,3 +21382,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:42:31] INFO root fetch - processPackages [mezcla]: Remove: archive file [/home/abi/fetcher/tmp/mezcla-1.4.0.2.tar.gz]
 [2024-06-01 20:42:31] INFO root fetch - main [MainThread]: End processing [mezcla]: success
 [2024-06-01 20:42:31] INFO root fetch - main [MainThread]: Store serial: [23482624]
+[2024-06-01 20:44:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482624]
+[2024-06-01 20:44:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 20:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Crackerjack
+[2024-06-01 20:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scim2-cli
+[2024-06-01 20:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: log-writer
+[2024-06-01 20:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bridgecrew
+[2024-06-01 20:44:39] INFO root fetch - processPackages [Crackerjack]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-06-01 20:44:40] WARNING root fetch - processPackages [scim2-cli]: Skipping, unable to determine old version
+[2024-06-01 20:44:40] INFO root fetch - main [MainThread]: End processing [scim2-cli] error
+[2024-06-01 20:44:40] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/b0/63/74dc219c339289de8992c6bffeca78bcfc0ad99f8446b48a81af3c884aa3/crackerjack-0.8.1.tar.gz
+[2024-06-01 20:44:40] WARNING root fetch - processPackages [log-writer]: Skipping, unable to determine old version
+[2024-06-01 20:44:40] INFO root fetch - main [MainThread]: End processing [log-writer] error
+[2024-06-01 20:44:40] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.99] Old Version: [3.2.98]
+[2024-06-01 20:44:40] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/5e/b5/7cd86ab5bf038cd7943f580e675768a014b20cb33f33518059ce303b9c9d/bridgecrew-3.2.98.tar.gz
+[2024-06-01 20:44:40] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/3e/8e/ea41fff5452266f21350a67f2641b1ecc97598ee93295cad52b08271adb6/crackerjack-0.8.2.tar.gz
+[2024-06-01 20:44:40] INFO root fetch - processPackages [Crackerjack]: executing diffoscope
+[2024-06-01 20:44:40] INFO root fetch - processPackages [Crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.8.1.tar.gz tmp/crackerjack-0.8.2.tar.gz --markdown 20240601/C/Crackerjack/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-06-01 20:44:40] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/8c/e2/de43e2e6c966fe98c0624abafa7f7374b59b424536aaa809a4d6a8fe4aa1/bridgecrew-3.2.99.tar.gz
+[2024-06-01 20:44:40] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-06-01 20:44:40] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.98.tar.gz tmp/bridgecrew-3.2.99.tar.gz --markdown 20240601/b/bridgecrew/3.2.98-3.2.99/README.md --exclude *.pyd
+[2024-06-01 20:44:41] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.8.1.tar.gz]
+[2024-06-01 20:44:41] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.8.2.tar.gz]
+[2024-06-01 20:44:41] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
+[2024-06-01 20:44:41] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.98.tar.gz]
+[2024-06-01 20:44:41] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.99.tar.gz]
+[2024-06-01 20:44:41] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-06-01 20:44:41] INFO root fetch - main [MainThread]: Store serial: [23482640]
