@@ -12321,3 +12321,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:38:45] INFO root fetch - processPackages [django-modeltranslation]: Remove: archive file [/home/abi/fetcher/tmp/django-modeltranslation-0.9.1.tar.gz]
 [2024-06-01 09:38:45] INFO root fetch - main [MainThread]: End processing [django-modeltranslation]: success
 [2024-06-01 09:38:45] INFO root fetch - main [MainThread]: Store serial: [23478238]
+[2024-06-01 09:40:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478238]
+[2024-06-01 09:40:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 09:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etherscan-pro
+[2024-06-01 09:40:54] WARNING root fetch - processPackages [etherscan-pro]: Skipping, unable to determine old version
+[2024-06-01 09:40:54] INFO root fetch - main [MainThread]: End processing [etherscan-pro] error
+[2024-06-01 09:40:54] INFO root fetch - main [MainThread]: Store serial: [23478256]
