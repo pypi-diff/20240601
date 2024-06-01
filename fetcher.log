@@ -14873,3 +14873,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 13:01:37] INFO root fetch - processPackages [pycatia]: Remove: archive file [/home/abi/fetcher/tmp/pycatia-0.6.9.tar.gz]
 [2024-06-01 13:01:37] INFO root fetch - main [MainThread]: End processing [pycatia]: success
 [2024-06-01 13:01:37] INFO root fetch - main [MainThread]: Store serial: [23479582]
+[2024-06-01 13:03:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479582]
+[2024-06-01 13:03:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 13:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sigmacode
+[2024-06-01 13:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dwd-global-radiation
+[2024-06-01 13:03:47] WARNING root fetch - processPackages [sigmacode]: Skipping, unable to determine old version
+[2024-06-01 13:03:47] INFO root fetch - main [MainThread]: End processing [sigmacode] error
+[2024-06-01 13:03:47] INFO root fetch - processPackages [dwd-global-radiation]: New version: [1.1.0rc5] Old Version: [1.1.0rc4]
+[2024-06-01 13:03:47] INFO root fetch - processPackages [dwd-global-radiation]: Downloading https://files.pythonhosted.org/packages/59/11/1c894f29ef0fd2caa4337037e27620bdb94fc81453b4fe222e2c7fc24ea7/dwd_global_radiation-1.1.0rc4.tar.gz
+[2024-06-01 13:03:47] INFO root fetch - processPackages [dwd-global-radiation]: Downloading https://files.pythonhosted.org/packages/5c/ef/efa7b8e11cc5705f87b248de26952435415b44809919d4db713eba1320eb/dwd_global_radiation-1.1.0rc5.tar.gz
+[2024-06-01 13:03:48] INFO root fetch - processPackages [dwd-global-radiation]: executing diffoscope
+[2024-06-01 13:03:48] INFO root fetch - processPackages [dwd-global-radiation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwd_global_radiation-1.1.0rc4.tar.gz tmp/dwd_global_radiation-1.1.0rc5.tar.gz --markdown 20240601/d/dwd-global-radiation/1.1.0rc4-1.1.0rc5/README.md --exclude *.pyd
+[2024-06-01 13:03:48] INFO root fetch - processPackages [dwd-global-radiation]: Remove: archive file [/home/abi/fetcher/tmp/dwd_global_radiation-1.1.0rc4.tar.gz]
+[2024-06-01 13:03:48] INFO root fetch - processPackages [dwd-global-radiation]: Remove: archive file [/home/abi/fetcher/tmp/dwd_global_radiation-1.1.0rc5.tar.gz]
+[2024-06-01 13:03:48] INFO root fetch - main [MainThread]: End processing [dwd-global-radiation]: success
+[2024-06-01 13:03:48] INFO root fetch - main [MainThread]: Store serial: [23479592]
