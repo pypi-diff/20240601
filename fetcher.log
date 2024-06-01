@@ -8801,3 +8801,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:02:57] INFO root fetch - processPackages [schwab-client]: Remove: archive file [/home/abi/fetcher/tmp/schwab-client-0.0.2.tar.gz]
 [2024-06-01 05:02:57] INFO root fetch - main [MainThread]: End processing [schwab-client]: success
 [2024-06-01 05:02:57] INFO root fetch - main [MainThread]: Store serial: [23476668]
+[2024-06-01 05:05:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476668]
+[2024-06-01 05:05:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 05:05:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-energy
+[2024-06-01 05:05:05] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2024-06-01 05:05:06] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2024-06-01 05:05:06] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2024-06-01 05:05:06] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2024-06-01 05:05:06] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20240601/h/honeybee-energy/1.99.8-1.99.9/README.md --exclude *.pyd
+[2024-06-01 05:05:07] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.8.tar.gz]
+[2024-06-01 05:05:07] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.9.tar.gz]
+[2024-06-01 05:05:07] INFO root fetch - main [MainThread]: End processing [honeybee-energy]: success
+[2024-06-01 05:05:07] INFO root fetch - main [MainThread]: Store serial: [23476671]
