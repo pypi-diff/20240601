@@ -13225,3 +13225,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:52:43] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.9.tar.gz]
 [2024-06-01 10:52:43] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-06-01 10:52:43] INFO root fetch - main [MainThread]: Store serial: [23478832]
+[2024-06-01 10:54:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478832]
+[2024-06-01 10:54:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 10:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: popoll-backend
+[2024-06-01 10:54:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-06-01 10:54:53] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.66] Old Version: [0.0.65]
+[2024-06-01 10:54:53] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-01 10:54:53] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/a5/d3/fef032319dd48aeb26f51ba14e3bc20a9b2293267b123f5f1e80eeca4491/popoll_backend-0.0.65.tar.gz
+[2024-06-01 10:54:53] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-01 10:54:53] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/74/01/17caf26cbd9e60624a7853321cdfe318c16d71a76aae9230d29f4243521b/popoll_backend-0.0.66.tar.gz
+[2024-06-01 10:54:53] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-01 10:54:53] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 10:54:53] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.65.tar.gz tmp/popoll_backend-0.0.66.tar.gz --markdown 20240601/p/popoll-backend/0.0.65-0.0.66/README.md --exclude *.pyd
+[2024-06-01 10:54:54] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-01 10:54:54] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240601/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-01 10:54:54] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.65.tar.gz]
+[2024-06-01 10:54:54] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.66.tar.gz]
+[2024-06-01 10:54:54] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 10:54:55] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-01 10:54:55] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-01 10:54:55] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-01 10:54:55] INFO root fetch - main [MainThread]: Store serial: [23478841]
