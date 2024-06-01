@@ -3395,3 +3395,33 @@
 [2024-06-01 02:59:30] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.9.0.tar.gz]
 [2024-06-01 02:59:30] INFO root fetch - main [MainThread]: End processing [honeybee-core]: success
 [2024-06-01 02:59:30] INFO root fetch - main [MainThread]: Store serial: [23474490]
+[2024-06-01 03:01:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474490]
+[2024-06-01 03:01:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-curl
+[2024-06-01 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rag-assistant
+[2024-06-01 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ladybug-comfort
+[2024-06-01 03:01:38] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 03:01:38] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-01 03:01:38] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 03:01:38] INFO root fetch - processPackages [ladybug-comfort]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 03:01:38] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-06-01 03:01:39] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 03:01:39] INFO root fetch - processPackages [ladybug-comfort]: Downloading https://files.pythonhosted.org/packages/6a/bf/8102b0e33435882b5600b8c0d7b5ebb92e379d665f3767b706dce6bdd2d3/ladybug-comfort-0.9.8.tar.gz
+[2024-06-01 03:01:39] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 03:01:39] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 03:01:39] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-06-01 03:01:39] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-06-01 03:01:39] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240601/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-01 03:01:39] INFO root fetch - processPackages [ladybug-comfort]: Downloading https://files.pythonhosted.org/packages/01/02/b871500d4bb81f18c253d98ce272a040dfa679de4682eb2f66a1f039c17a/ladybug-comfort-0.9.9.tar.gz
+[2024-06-01 03:01:39] INFO root fetch - processPackages [ladybug-comfort]: executing diffoscope
+[2024-06-01 03:01:39] INFO root fetch - processPackages [ladybug-comfort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-comfort-0.9.8.tar.gz tmp/ladybug-comfort-0.9.9.tar.gz --markdown 20240601/l/ladybug-comfort/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 03:01:39] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 03:01:39] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 03:01:39] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 03:01:40] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-06-01 03:01:40] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-06-01 03:01:40] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-06-01 03:01:40] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.8.tar.gz]
+[2024-06-01 03:01:40] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.9.tar.gz]
+[2024-06-01 03:01:40] INFO root fetch - main [MainThread]: End processing [ladybug-comfort]: success
+[2024-06-01 03:01:40] INFO root fetch - main [MainThread]: Store serial: [23474500]
