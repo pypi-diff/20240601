@@ -20240,3 +20240,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:16:40] INFO root fetch - processPackages [c2cciutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cciutils-1.7.0.dev99.tar.gz]
 [2024-06-01 19:16:40] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2024-06-01 19:16:40] INFO root fetch - main [MainThread]: Store serial: [23482097]
+[2024-06-01 19:18:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482097]
+[2024-06-01 19:18:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 19:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ramanspy
+[2024-06-01 19:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atnclib
+[2024-06-01 19:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nostr-dvm
+[2024-06-01 19:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: c2cciutils
+[2024-06-01 19:18:50] WARNING root fetch - processPackages [atnclib]: Skipping, unable to determine old version
+[2024-06-01 19:18:50] INFO root fetch - main [MainThread]: End processing [atnclib] error
+[2024-06-01 19:18:50] INFO root fetch - processPackages [c2cciutils]: New version: [1.7.0.dev99] Old Version: [1.7.0.dev98]
+[2024-06-01 19:18:50] INFO root fetch - processPackages [nostr-dvm]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-06-01 19:18:50] INFO root fetch - processPackages [ramanspy]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 19:18:50] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/62/aa/080c37692bc6af730809e32f5cb82932c00c5513d164349ff96537069e82/c2cciutils-1.7.0.dev98.tar.gz
+[2024-06-01 19:18:50] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/de/34/1cdfa5b2aec6b631cb783f621664248de311b581a83c1abef752da240126/nostr_dvm-0.5.3.tar.gz
+[2024-06-01 19:18:50] INFO root fetch - processPackages [ramanspy]: Downloading https://files.pythonhosted.org/packages/78/1b/f454d251d8d3272b1bfebcca248c71d778b25b45ad457e3fc421c5cfb743/ramanspy-0.2.8.tar.gz
+[2024-06-01 19:18:50] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/0b/33/b4f2b2d1c9a7ae924ddcc8b7cbf69f1ed37a1a5f0faa155ac94becd05a90/c2cciutils-1.7.0.dev99.tar.gz
+[2024-06-01 19:18:51] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2024-06-01 19:18:51] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.7.0.dev98.tar.gz tmp/c2cciutils-1.7.0.dev99.tar.gz --markdown 20240601/c/c2cciutils/1.7.0.dev98-1.7.0.dev99/README.md --exclude *.pyd
+[2024-06-01 19:18:51] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/ad/9c/aa8af034f843fe099a787fae30e03fbb0b3e32e5e139a0da35bcec149422/nostr_dvm-0.5.4.tar.gz
+[2024-06-01 19:18:51] INFO root fetch - processPackages [ramanspy]: Downloading https://files.pythonhosted.org/packages/06/d5/d5bf921a11886ef458609cff2217b4a2bbbb1aae1fef03bf0e1cd60667fb/ramanspy-0.2.9.tar.gz
+[2024-06-01 19:18:51] INFO root fetch - processPackages [nostr-dvm]: executing diffoscope
+[2024-06-01 19:18:51] INFO root fetch - processPackages [ramanspy]: executing diffoscope
+[2024-06-01 19:18:51] INFO root fetch - processPackages [nostr-dvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nostr_dvm-0.5.3.tar.gz tmp/nostr_dvm-0.5.4.tar.gz --markdown 20240601/n/nostr-dvm/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-06-01 19:18:51] INFO root fetch - processPackages [ramanspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramanspy-0.2.8.tar.gz tmp/ramanspy-0.2.9.tar.gz --markdown 20240601/r/ramanspy/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 19:18:51] INFO root fetch - processPackages [c2cciutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cciutils-1.7.0.dev98.tar.gz]
+[2024-06-01 19:18:51] INFO root fetch - processPackages [c2cciutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cciutils-1.7.0.dev99.tar.gz]
+[2024-06-01 19:18:51] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2024-06-01 19:18:52] INFO root fetch - processPackages [ramanspy]: Remove: archive file [/home/abi/fetcher/tmp/ramanspy-0.2.8.tar.gz]
+[2024-06-01 19:18:52] INFO root fetch - processPackages [ramanspy]: Remove: archive file [/home/abi/fetcher/tmp/ramanspy-0.2.9.tar.gz]
+[2024-06-01 19:18:52] INFO root fetch - main [MainThread]: End processing [ramanspy]: success
+[2024-06-01 19:18:52] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.3.tar.gz]
+[2024-06-01 19:18:52] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.4.tar.gz]
+[2024-06-01 19:18:52] INFO root fetch - main [MainThread]: End processing [nostr-dvm]: success
+[2024-06-01 19:18:52] INFO root fetch - main [MainThread]: Store serial: [23482108]
