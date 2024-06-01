@@ -19369,3 +19369,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:28:02] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.2.tar.gz]
 [2024-06-01 18:28:02] INFO root fetch - main [MainThread]: End processing [myfunctions-ysakova90]: success
 [2024-06-01 18:28:02] INFO root fetch - main [MainThread]: Store serial: [23481679]
+[2024-06-01 18:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481679]
+[2024-06-01 18:30:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 18:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joyrl
+[2024-06-01 18:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lenlp
+[2024-06-01 18:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-priming
+[2024-06-01 18:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vaul
+[2024-06-01 18:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RabiBridge
+[2024-06-01 18:30:10] INFO root fetch - processPackages [joyrl]: New version: [0.6.0.2] Old Version: [0.6.0.1]
+[2024-06-01 18:30:10] WARNING root fetch - processPackages [RabiBridge]: Skipping, unable to determine old version
+[2024-06-01 18:30:10] INFO root fetch - main [MainThread]: End processing [RabiBridge] error
+[2024-06-01 18:30:10] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 18:30:10] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/fe/4a/6f8c953826fc34d3e248dc200db9337f713dfb29a05ea150032f0997272e/joyrl-0.6.0.1.tar.gz
+[2024-06-01 18:30:10] INFO root fetch - processPackages [vaul]: New version: [0.1.23] Old Version: [0.1.22]
+[2024-06-01 18:30:10] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-01 18:30:10] INFO root fetch - processPackages [lenlp]: New version: [1.1.0] Old Version: [1.0.6]
+[2024-06-01 18:30:10] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/51/6d/d00660b01da6234491d45ab93a4fd8dcf6aaefe4bfaeb7ed73c255ad54d9/vaul-0.1.22.tar.gz
+[2024-06-01 18:30:10] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-01 18:30:10] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/50/44/0b4d2e2d7deff1ebc83dbfc5663b6aca616e69ea148f0179239d53284904/lenlp-1.0.6.tar.gz
+[2024-06-01 18:30:10] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/ad/b0/7e160d1fd3efbe6083c718a45e34af3ead0cf69b6a9097d7ceedad790185/joyrl-0.6.0.2.tar.gz
+[2024-06-01 18:30:11] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/08/6b/b2ad57ae63296904bed82f2d7860fe2b3c80f09ff989ecd3950a30fe0f24/vaul-0.1.23.tar.gz
+[2024-06-01 18:30:11] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2024-06-01 18:30:11] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.6.0.1.tar.gz tmp/joyrl-0.6.0.2.tar.gz --markdown 20240601/j/joyrl/0.6.0.1-0.6.0.2/README.md --exclude *.pyd
+[2024-06-01 18:30:11] INFO root fetch - processPackages [vaul]: executing diffoscope
+[2024-06-01 18:30:11] INFO root fetch - processPackages [vaul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaul-0.1.22.tar.gz tmp/vaul-0.1.23.tar.gz --markdown 20240601/v/vaul/0.1.22-0.1.23/README.md --exclude *.pyd
+[2024-06-01 18:30:11] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-01 18:30:11] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240601/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 18:30:11] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/0b/c1/19fc0dd3e1042569a2ae94a4b442459b32239ffb8d31ae6d764b01ecc44c/lenlp-1.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-06-01 18:30:11] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.22.tar.gz]
+[2024-06-01 18:30:11] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.23.tar.gz]
+[2024-06-01 18:30:11] INFO root fetch - main [MainThread]: End processing [vaul]: success
+[2024-06-01 18:30:11] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.1.tar.gz]
+[2024-06-01 18:30:11] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.2.tar.gz]
+[2024-06-01 18:30:11] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2024-06-01 18:30:11] INFO root fetch - processPackages [lenlp]: executing diffoscope
+[2024-06-01 18:30:11] INFO root fetch - processPackages [lenlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenlp-1.0.6.tar.gz tmp/lenlp-1.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240601/l/lenlp/1.0.6-1.1.0/README.md --exclude *.pyd
+[2024-06-01 18:30:12] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-01 18:30:12] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-01 18:30:12] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-01 18:30:12] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.6.tar.gz]
+[2024-06-01 18:30:12] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-06-01 18:30:12] INFO root fetch - main [MainThread]: End processing [lenlp]: success
+[2024-06-01 18:30:12] INFO root fetch - main [MainThread]: Store serial: [23481704]
