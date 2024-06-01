@@ -17340,3 +17340,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:09:08] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.1.1.tar.gz]
 [2024-06-01 16:09:08] INFO root fetch - main [MainThread]: End processing [cherche]: success
 [2024-06-01 16:09:08] INFO root fetch - main [MainThread]: Store serial: [23480652]
+[2024-06-01 16:11:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480652]
+[2024-06-01 16:11:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 16:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: consoleiotools
+[2024-06-01 16:11:16] INFO root fetch - processPackages [consoleiotools]: New version: [4.6.9] Old Version: [4.6.8]
+[2024-06-01 16:11:16] INFO root fetch - processPackages [consoleiotools]: Downloading https://files.pythonhosted.org/packages/30/27/4df41df234feb7ccfbb23e61f1ca46e36a55b45af4966d293e92a36f3817/consoleiotools-4.6.8.tar.gz
+[2024-06-01 16:11:16] INFO root fetch - processPackages [consoleiotools]: Downloading https://files.pythonhosted.org/packages/07/25/097d5a338b618c081c10ed9c82aeb8328d35509df2e7ca910ef0b8fdb65f/consoleiotools-4.6.9.tar.gz
+[2024-06-01 16:11:16] INFO root fetch - processPackages [consoleiotools]: executing diffoscope
+[2024-06-01 16:11:16] INFO root fetch - processPackages [consoleiotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/consoleiotools-4.6.8.tar.gz tmp/consoleiotools-4.6.9.tar.gz --markdown 20240601/c/consoleiotools/4.6.8-4.6.9/README.md --exclude *.pyd
+[2024-06-01 16:11:17] INFO root fetch - processPackages [consoleiotools]: Remove: archive file [/home/abi/fetcher/tmp/consoleiotools-4.6.8.tar.gz]
+[2024-06-01 16:11:17] INFO root fetch - processPackages [consoleiotools]: Remove: archive file [/home/abi/fetcher/tmp/consoleiotools-4.6.9.tar.gz]
+[2024-06-01 16:11:17] INFO root fetch - main [MainThread]: End processing [consoleiotools]: success
+[2024-06-01 16:11:17] INFO root fetch - main [MainThread]: Store serial: [23480698]
