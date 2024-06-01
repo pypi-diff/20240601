@@ -23230,3 +23230,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:02:40] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
 [2024-06-01 23:02:40] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-01 23:02:40] INFO root fetch - main [MainThread]: Store serial: [23483620]
+[2024-06-01 23:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483620]
+[2024-06-01 23:04:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 23:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm
+[2024-06-01 23:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smartlink-local
+[2024-06-01 23:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synth_machine
+[2024-06-01 23:04:50] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-06-01 23:04:50] INFO root fetch - processPackages [synth_machine]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 23:04:50] INFO root fetch - processPackages [smartlink-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 23:04:50] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-06-01 23:04:51] INFO root fetch - processPackages [synth_machine]: Downloading https://files.pythonhosted.org/packages/2f/e6/f76fc260f45ad54fdabfad2f72c1b7d1560f8a50b64395cdf069e51f39d9/synth_machine-0.2.0.tar.gz
+[2024-06-01 23:04:51] INFO root fetch - processPackages [smartlink-local]: Downloading https://files.pythonhosted.org/packages/33/0f/ea9406a1f10f69f535bf20c7279bd77b0c5e4be50c06b370e07773712231/smartlink-local-0.0.8.tar.gz
+[2024-06-01 23:04:51] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-06-01 23:04:51] INFO root fetch - processPackages [synth_machine]: Downloading https://files.pythonhosted.org/packages/ff/ba/1ad4c7e1c30041d593a5869a72570f6f11efff0d617f75253eaafa320e45/synth_machine-0.3.0.tar.gz
+[2024-06-01 23:04:51] INFO root fetch - processPackages [smartlink-local]: Downloading https://files.pythonhosted.org/packages/c8/e8/2941eb5c3e5dac4ad8d31d1a52137f323e161b66acc1f4d50ca9d1c0102b/smartlink-local-0.0.9.tar.gz
+[2024-06-01 23:04:51] INFO root fetch - processPackages [synth_machine]: executing diffoscope
+[2024-06-01 23:04:51] INFO root fetch - processPackages [synth_machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synth_machine-0.2.0.tar.gz tmp/synth_machine-0.3.0.tar.gz --markdown 20240601/s/synth_machine/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 23:04:51] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-06-01 23:04:51] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240601/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-06-01 23:04:51] INFO root fetch - processPackages [smartlink-local]: executing diffoscope
+[2024-06-01 23:04:51] INFO root fetch - processPackages [smartlink-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlink-local-0.0.8.tar.gz tmp/smartlink-local-0.0.9.tar.gz --markdown 20240601/s/smartlink-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 23:04:52] INFO root fetch - processPackages [synth_machine]: Remove: archive file [/home/abi/fetcher/tmp/synth_machine-0.2.0.tar.gz]
+[2024-06-01 23:04:52] INFO root fetch - processPackages [synth_machine]: Remove: archive file [/home/abi/fetcher/tmp/synth_machine-0.3.0.tar.gz]
+[2024-06-01 23:04:52] INFO root fetch - main [MainThread]: End processing [synth_machine]: success
+[2024-06-01 23:04:52] INFO root fetch - processPackages [smartlink-local]: Remove: archive file [/home/abi/fetcher/tmp/smartlink-local-0.0.8.tar.gz]
+[2024-06-01 23:04:52] INFO root fetch - processPackages [smartlink-local]: Remove: archive file [/home/abi/fetcher/tmp/smartlink-local-0.0.9.tar.gz]
+[2024-06-01 23:04:52] INFO root fetch - main [MainThread]: End processing [smartlink-local]: success
+[2024-06-01 23:04:52] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-06-01 23:04:52] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-06-01 23:04:52] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-06-01 23:04:52] INFO root fetch - main [MainThread]: Store serial: [23483628]
