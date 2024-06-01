@@ -14888,3 +14888,55 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 13:03:48] INFO root fetch - processPackages [dwd-global-radiation]: Remove: archive file [/home/abi/fetcher/tmp/dwd_global_radiation-1.1.0rc5.tar.gz]
 [2024-06-01 13:03:48] INFO root fetch - main [MainThread]: End processing [dwd-global-radiation]: success
 [2024-06-01 13:03:48] INFO root fetch - main [MainThread]: Store serial: [23479592]
+[2024-06-01 13:05:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479592]
+[2024-06-01 13:05:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 13:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-interface-app
+[2024-06-01 13:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: muko
+[2024-06-01 13:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: salve-ipc
+[2024-06-01 13:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: muko
+[2024-06-01 13:05:57] WARNING root fetch - processPackages [flask-interface-app]: Skipping, unable to determine old version
+[2024-06-01 13:05:57] INFO root fetch - main [MainThread]: End processing [flask-interface-app] error
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: New version: [2.61] Old Version: [2.6]
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: New version: [2.61] Old Version: [2.6]
+[2024-06-01 13:05:57] INFO root fetch - processPackages [salve-ipc]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/88/12/05b787c34acd07b1945a0afb921944c27d7c16929af8ffea8ae0c0b7aeb8/muko-2.6-py3-none-any.whl
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/88/12/05b787c34acd07b1945a0afb921944c27d7c16929af8ffea8ae0c0b7aeb8/muko-2.6-py3-none-any.whl
+[2024-06-01 13:05:57] INFO root fetch - processPackages [salve-ipc]: Downloading https://files.pythonhosted.org/packages/a9/98/d56de99c61fe75bf4a7d266984bbe8f676ce4d24e4c15e1a98c27570925c/salve_ipc-0.2.2.tar.gz
+[2024-06-01 13:05:57] INFO root fetch - processPackages [salve-ipc]: Downloading https://files.pythonhosted.org/packages/71/81/8cf457fd1dbb909ad4d986fe1f84cb2aba15e687464ad0a88f8ab72293e3/salve_ipc-0.3.0.tar.gz
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/eb/a7/8b220697c7cbfaf4d41be7745fea7f009d182c462a381b7177d5bd7b8f28/muko-2.61-py3-none-any.whl
+[2024-06-01 13:05:57] INFO root fetch - processPackages [salve-ipc]: executing diffoscope
+[2024-06-01 13:05:57] INFO root fetch - processPackages [salve-ipc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salve_ipc-0.2.2.tar.gz tmp/salve_ipc-0.3.0.tar.gz --markdown 20240601/s/salve-ipc/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/eb/a7/8b220697c7cbfaf4d41be7745fea7f009d182c462a381b7177d5bd7b8f28/muko-2.61-py3-none-any.whl
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-06-01 13:05:57] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.6-py3-none-any.whl.zip tmp/muko-2.61-py3-none-any.whl.zip --markdown 20240601/m/muko/2.6-2.61/README.md --exclude *.pyd
+[2024-06-01 13:05:58] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-06-01 13:05:58] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.6-py3-none-any.whl.zip tmp/muko-2.61-py3-none-any.whl.zip --markdown 20240601/m/muko/2.6-2.61/README.md --exclude *.pyd
+[2024-06-01 13:05:58] INFO root fetch - processPackages [salve-ipc]: Remove: archive file [/home/abi/fetcher/tmp/salve_ipc-0.2.2.tar.gz]
+[2024-06-01 13:05:58] INFO root fetch - processPackages [salve-ipc]: Remove: archive file [/home/abi/fetcher/tmp/salve_ipc-0.3.0.tar.gz]
+[2024-06-01 13:05:58] INFO root fetch - main [MainThread]: End processing [salve-ipc]: success
+[2024-06-01 13:05:58] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.6-py3-none-any.whl.zip]
+[2024-06-01 13:05:58] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.61-py3-none-any.whl.zip]
+[2024-06-01 13:05:58] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-06-01 13:05:58] ERROR root fetch - processPackages [muko]: Diffoscope failed: time="2024-06-01T13:05:58+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 66, in compare_root_paths
+    file1 = specialize(FilesystemFile(path1, container=container1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 75, in specialize
+    if try_recognize(file, cls, cls.recognizes):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/specialize.py", line 35, in try_recognize
+    if not recognizes(file):
+           ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/missing_file.py", line 43, in recognizes
+    assert Config().new_file, f"{file.name} does not exist"
+AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
+
+[2024-06-01 13:05:58] INFO root fetch - main [MainThread]: End processing [muko] error
+[2024-06-01 13:05:58] INFO root fetch - main [MainThread]: Store serial: [23479602]
