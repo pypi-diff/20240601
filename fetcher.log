@@ -13905,3 +13905,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:45:35] INFO root fetch - processPackages [tanjiro]: Remove: archive file [/home/abi/fetcher/tmp/tanjiro-0.2.2.tar.gz]
 [2024-06-01 11:45:35] INFO root fetch - main [MainThread]: End processing [tanjiro]: success
 [2024-06-01 11:45:35] INFO root fetch - main [MainThread]: Store serial: [23479118]
+[2024-06-01 11:47:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479118]
+[2024-06-01 11:47:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 11:47:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-interface
+[2024-06-01 11:47:44] WARNING root fetch - processPackages [flask-interface]: Skipping, unable to determine old version
+[2024-06-01 11:47:44] INFO root fetch - main [MainThread]: End processing [flask-interface] error
+[2024-06-01 11:47:44] INFO root fetch - main [MainThread]: Store serial: [23479122]
