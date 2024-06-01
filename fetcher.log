@@ -7908,3 +7908,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 03:51:07] INFO root fetch - processPackages [pytae]: Remove: archive file [/home/abi/fetcher/tmp/pytae-2.2.0.tar.gz]
 [2024-06-01 03:51:07] INFO root fetch - main [MainThread]: End processing [pytae]: success
 [2024-06-01 03:51:07] INFO root fetch - main [MainThread]: Store serial: [23475993]
+[2024-06-01 03:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23475993]
+[2024-06-01 03:53:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-claude
+[2024-06-01 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Geode-Explicit
+[2024-06-01 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: carbon-python-sdk
+[2024-06-01 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-crewai
+[2024-06-01 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rag-assistant
+[2024-06-01 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Geode-Simplex
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-claude]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 03:53:16] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-crewai]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-claude]: Downloading https://files.pythonhosted.org/packages/a8/ea/a43f91220fe7d26fd3d41cdec2f4378df190c10ce3cc2603fb1f6a7519a4/composio_claude-0.3.4.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [Geode-Explicit]: New version: [4.8.3rc1] Old Version: [4.8.3]
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/65/eb/bbfe06553410be443df5c5526c263655e74d583bd14ee98d8852db53e8f1/composio_crewai-0.3.4.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [carbon-python-sdk]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-01 03:53:16] INFO root fetch - processPackages [Geode-Simplex]: New version: [6.8.2rc1] Old Version: [6.8.2]
+[2024-06-01 03:53:16] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/05/2b/c9ed8b1b3f94ad3c1c7d42e3fcd95e3769c53196b93de0580095f16bd4c3/Geode_Explicit-4.8.3-cp39-cp39-manylinux2014_x86_64.whl
+[2024-06-01 03:53:16] INFO root fetch - processPackages [Geode-Simplex]: Downloading https://files.pythonhosted.org/packages/7b/68/620c47045eba45764d1a0a2d45bede02fed646652b8cc84fbd4307e7f782/Geode_Simplex-6.8.2-cp39-cp39-manylinux2014_x86_64.whl
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/6a/9e/36d7364462fed91e6921bfe87e7a1dcf175d0cd8c45f34f36786eb4fdb3f/composio_crewai-0.3.5.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/f6/47/215f76bbde9967a7170cf59d30eea4f419412d77f619905bd564d26fcb04/carbon_python_sdk-0.2.1.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-claude]: Downloading https://files.pythonhosted.org/packages/8a/dc/b92affe9d0d7770f80248d02cedc7d1d45d6aaaec2b4b1a991374ce00086/composio_claude-0.3.5.tar.gz
+[2024-06-01 03:53:16] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 03:53:16] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.3.4.tar.gz tmp/composio_crewai-0.3.5.tar.gz --markdown 20240601/c/composio-crewai/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-claude]: executing diffoscope
+[2024-06-01 03:53:16] INFO root fetch - processPackages [composio-claude]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_claude-0.3.4.tar.gz tmp/composio_claude-0.3.5.tar.gz --markdown 20240601/c/composio-claude/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 03:53:17] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/99/c2/b2f37c76b32caf1cd16554677f7146c1f590ad568630da1dc60ba7b2b29f/carbon_python_sdk-0.2.2.tar.gz
+[2024-06-01 03:53:17] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/19/fa/cf834b5253f99e92934ed93b5ad95cb6cdccecc54c95c9d5ae792798a464/Geode_Explicit-4.8.3rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:53:17] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 03:53:17] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 03:53:17] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 03:53:17] INFO root fetch - processPackages [carbon-python-sdk]: executing diffoscope
+[2024-06-01 03:53:17] INFO root fetch - processPackages [carbon-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon_python_sdk-0.2.1.tar.gz tmp/carbon_python_sdk-0.2.2.tar.gz --markdown 20240601/c/carbon-python-sdk/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-01 03:53:17] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.3.4.tar.gz]
+[2024-06-01 03:53:17] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.3.5.tar.gz]
+[2024-06-01 03:53:17] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-06-01 03:53:17] INFO root fetch - processPackages [composio-claude]: Remove: archive file [/home/abi/fetcher/tmp/composio_claude-0.3.4.tar.gz]
+[2024-06-01 03:53:17] INFO root fetch - processPackages [composio-claude]: Remove: archive file [/home/abi/fetcher/tmp/composio_claude-0.3.5.tar.gz]
+[2024-06-01 03:53:17] INFO root fetch - main [MainThread]: End processing [composio-claude]: success
+[2024-06-01 03:53:17] INFO root fetch - processPackages [Geode-Explicit]: executing diffoscope
+[2024-06-01 03:53:17] INFO root fetch - processPackages [Geode-Explicit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Explicit-4.8.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Explicit-4.8.3rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Explicit/4.8.3-4.8.3rc1/README.md --exclude *.pyd
+[2024-06-01 03:53:17] INFO root fetch - processPackages [Geode-Simplex]: Downloading https://files.pythonhosted.org/packages/a5/d7/922cefb0f9d487d5c718f467de9c92a35d25abc6825c702e0d19e9c6770b/Geode_Simplex-6.8.2rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:53:18] INFO root fetch - processPackages [Geode-Simplex]: executing diffoscope
+[2024-06-01 03:53:18] INFO root fetch - processPackages [Geode-Simplex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Simplex-6.8.2-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Simplex-6.8.2rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Simplex/6.8.2-6.8.2rc1/README.md --exclude *.pyd
+[2024-06-01 03:53:18] INFO root fetch - processPackages [Geode-Explicit]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Explicit-4.8.3-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-06-01 03:53:18] INFO root fetch - processPackages [Geode-Explicit]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Explicit-4.8.3rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:53:18] INFO root fetch - main [MainThread]: End processing [Geode-Explicit]: success
+[2024-06-01 03:53:19] INFO root fetch - processPackages [Geode-Simplex]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Simplex-6.8.2-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-06-01 03:53:19] INFO root fetch - processPackages [Geode-Simplex]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Simplex-6.8.2rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:53:19] INFO root fetch - main [MainThread]: End processing [Geode-Simplex]: success
+[2024-06-01 03:53:20] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.2.1.tar.gz]
+[2024-06-01 03:53:20] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.2.2.tar.gz]
+[2024-06-01 03:53:20] INFO root fetch - main [MainThread]: End processing [carbon-python-sdk]: success
+[2024-06-01 03:53:20] INFO root fetch - main [MainThread]: Store serial: [23476087]
