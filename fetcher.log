@@ -15752,3 +15752,48 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:12:45] INFO root fetch - processPackages [twird]: Remove: archive file [/home/abi/fetcher/tmp/twird-1.0.1-py3-none-any.whl.zip]
 [2024-06-01 14:12:45] INFO root fetch - main [MainThread]: End processing [twird]: success
 [2024-06-01 14:12:45] INFO root fetch - main [MainThread]: Store serial: [23479962]
+[2024-06-01 14:14:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479962]
+[2024-06-01 14:14:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 14:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Subdora
+[2024-06-01 14:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twird
+[2024-06-01 14:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: consoleiotools
+[2024-06-01 14:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: id-card-recognition
+[2024-06-01 14:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dve-lumipy-testing
+[2024-06-01 14:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eventu
+[2024-06-01 14:14:55] INFO root fetch - processPackages [twird]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 14:14:55] INFO root fetch - processPackages [dve-lumipy-testing]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-06-01 14:14:55] WARNING root fetch - processPackages [id-card-recognition]: Skipping, unable to determine old version
+[2024-06-01 14:14:55] INFO root fetch - main [MainThread]: End processing [id-card-recognition] error
+[2024-06-01 14:14:55] INFO root fetch - processPackages [twird]: Downloading https://files.pythonhosted.org/packages/fa/70/685ddc5d136376f4e78b2a2ed54add00cb73a1d7d0fb0387d4794146c4d0/twird-1.0.0.tar.gz
+[2024-06-01 14:14:55] INFO root fetch - processPackages [consoleiotools]: New version: [4.6.9] Old Version: [4.6.8]
+[2024-06-01 14:14:55] WARNING root fetch - processPackages [eventu]: Skipping, unable to determine old version
+[2024-06-01 14:14:55] INFO root fetch - main [MainThread]: End processing [eventu] error
+[2024-06-01 14:14:55] INFO root fetch - processPackages [Subdora]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 14:14:55] INFO root fetch - processPackages [dve-lumipy-testing]: Downloading https://files.pythonhosted.org/packages/ef/82/e6c03fc0dd925d2055bbcc5fd948a1d0af4e3f8c4439e5910978d3ef8971/dve_lumipy_testing-1.0.98-py3-none-any.whl
+[2024-06-01 14:14:55] INFO root fetch - processPackages [consoleiotools]: Downloading https://files.pythonhosted.org/packages/30/27/4df41df234feb7ccfbb23e61f1ca46e36a55b45af4966d293e92a36f3817/consoleiotools-4.6.8.tar.gz
+[2024-06-01 14:14:55] INFO root fetch - processPackages [Subdora]: Downloading https://files.pythonhosted.org/packages/80/b9/875383d95b0c1673faac129e888bea36425747f377fb1ed4e6edf4ff6a0e/subdora-0.1.0.tar.gz
+[2024-06-01 14:14:55] INFO root fetch - processPackages [twird]: Downloading https://files.pythonhosted.org/packages/1e/f1/c911a955499e5759ae7d57f387f8067a8142791536365f2d0e05302d07a6/twird-1.0.1-py3-none-any.whl
+[2024-06-01 14:14:55] INFO root fetch - processPackages [dve-lumipy-testing]: Downloading https://files.pythonhosted.org/packages/64/41/f4f4028a23777a5e5fb44c86dddc289c4a56e16a91b99e8b55a4326ed143/dve_lumipy_testing-1.0.99-py3-none-any.whl
+[2024-06-01 14:14:55] INFO root fetch - processPackages [twird]: executing diffoscope
+[2024-06-01 14:14:55] INFO root fetch - processPackages [twird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twird-1.0.0.tar.gz tmp/twird-1.0.1-py3-none-any.whl.zip --markdown 20240601/t/twird/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 14:14:55] INFO root fetch - processPackages [consoleiotools]: Downloading https://files.pythonhosted.org/packages/07/25/097d5a338b618c081c10ed9c82aeb8328d35509df2e7ca910ef0b8fdb65f/consoleiotools-4.6.9.tar.gz
+[2024-06-01 14:14:55] INFO root fetch - processPackages [dve-lumipy-testing]: executing diffoscope
+[2024-06-01 14:14:55] INFO root fetch - processPackages [dve-lumipy-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dve_lumipy_testing-1.0.98-py3-none-any.whl.zip tmp/dve_lumipy_testing-1.0.99-py3-none-any.whl.zip --markdown 20240601/d/dve-lumipy-testing/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-06-01 14:14:55] INFO root fetch - processPackages [consoleiotools]: executing diffoscope
+[2024-06-01 14:14:55] INFO root fetch - processPackages [consoleiotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/consoleiotools-4.6.8.tar.gz tmp/consoleiotools-4.6.9.tar.gz --markdown 20240601/c/consoleiotools/4.6.8-4.6.9/README.md --exclude *.pyd
+[2024-06-01 14:14:56] INFO root fetch - processPackages [Subdora]: Downloading https://files.pythonhosted.org/packages/6f/e2/ee88df9c726a7ef95fce05f636891f432e142c0f8a5b3abff8f169288a8e/subdora-0.1.1.tar.gz
+[2024-06-01 14:14:56] INFO root fetch - processPackages [twird]: Remove: archive file [/home/abi/fetcher/tmp/twird-1.0.0.tar.gz]
+[2024-06-01 14:14:56] INFO root fetch - processPackages [twird]: Remove: archive file [/home/abi/fetcher/tmp/twird-1.0.1-py3-none-any.whl.zip]
+[2024-06-01 14:14:56] INFO root fetch - main [MainThread]: End processing [twird]: success
+[2024-06-01 14:14:56] INFO root fetch - processPackages [Subdora]: executing diffoscope
+[2024-06-01 14:14:56] INFO root fetch - processPackages [Subdora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subdora-0.1.0.tar.gz tmp/subdora-0.1.1.tar.gz --markdown 20240601/S/Subdora/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 14:14:56] INFO root fetch - processPackages [consoleiotools]: Remove: archive file [/home/abi/fetcher/tmp/consoleiotools-4.6.8.tar.gz]
+[2024-06-01 14:14:56] INFO root fetch - processPackages [consoleiotools]: Remove: archive file [/home/abi/fetcher/tmp/consoleiotools-4.6.9.tar.gz]
+[2024-06-01 14:14:56] INFO root fetch - main [MainThread]: End processing [consoleiotools]: success
+[2024-06-01 14:14:57] INFO root fetch - processPackages [Subdora]: Remove: archive file [/home/abi/fetcher/tmp/subdora-0.1.0.tar.gz]
+[2024-06-01 14:14:57] INFO root fetch - processPackages [Subdora]: Remove: archive file [/home/abi/fetcher/tmp/subdora-0.1.1.tar.gz]
+[2024-06-01 14:14:57] INFO root fetch - main [MainThread]: End processing [Subdora]: success
+[2024-06-01 14:14:57] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.98-py3-none-any.whl.zip]
+[2024-06-01 14:14:57] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.99-py3-none-any.whl.zip]
+[2024-06-01 14:14:57] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
+[2024-06-01 14:14:57] INFO root fetch - main [MainThread]: Store serial: [23479985]
