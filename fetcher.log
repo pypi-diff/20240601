@@ -23054,3 +23054,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:49:35] INFO root fetch - processPackages [ws-sync]: Remove: archive file [/home/abi/fetcher/tmp/ws_sync-0.6.4.tar.gz]
 [2024-06-01 22:49:35] INFO root fetch - main [MainThread]: End processing [ws-sync]: success
 [2024-06-01 22:49:35] INFO root fetch - main [MainThread]: Store serial: [23483445]
+[2024-06-01 22:51:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483445]
+[2024-06-01 22:51:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 22:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyFileOps
+[2024-06-01 22:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prelude-parser
+[2024-06-01 22:51:43] INFO root fetch - processPackages [EasyFileOps]: New version: [0.1.6] Old Version: [0.1.55]
+[2024-06-01 22:51:43] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/0a/a6/ab2ef88e43ed57ecd0a42b193f89d7f3be3fa160b92973d4fbd1b0457be2/easyfileops-0.1.55.tar.gz
+[2024-06-01 22:51:43] INFO root fetch - processPackages [prelude-parser]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-01 22:51:44] INFO root fetch - processPackages [prelude-parser]: Downloading https://files.pythonhosted.org/packages/49/57/19349049ecd78c298f91b1053563b2f0d5b9d8c1474c89afd5f7f94db22c/prelude_parser-0.4.0.tar.gz
+[2024-06-01 22:51:44] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/0f/3c/cc6b1ba7933916aeb401fa59f48f34bd5f7a49f4c34a9dee486ab4c0d0eb/easyfileops-0.1.6.tar.gz
+[2024-06-01 22:51:44] INFO root fetch - processPackages [EasyFileOps]: executing diffoscope
+[2024-06-01 22:51:44] INFO root fetch - processPackages [EasyFileOps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyfileops-0.1.55.tar.gz tmp/easyfileops-0.1.6.tar.gz --markdown 20240601/E/EasyFileOps/0.1.55-0.1.6/README.md --exclude *.pyd
+[2024-06-01 22:51:44] INFO root fetch - processPackages [prelude-parser]: Downloading https://files.pythonhosted.org/packages/0a/6d/a67e81f3e6e77f093f24d3134943e53a285a8363867d3187d93c151e77fd/prelude_parser-0.5.0-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-06-01 22:51:44] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.55.tar.gz]
+[2024-06-01 22:51:44] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.6.tar.gz]
+[2024-06-01 22:51:44] INFO root fetch - main [MainThread]: End processing [EasyFileOps]: success
+[2024-06-01 22:51:44] INFO root fetch - processPackages [prelude-parser]: executing diffoscope
+[2024-06-01 22:51:44] INFO root fetch - processPackages [prelude-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude_parser-0.4.0.tar.gz tmp/prelude_parser-0.5.0-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip --markdown 20240601/p/prelude-parser/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 22:51:45] INFO root fetch - processPackages [prelude-parser]: Remove: archive file [/home/abi/fetcher/tmp/prelude_parser-0.4.0.tar.gz]
+[2024-06-01 22:51:45] INFO root fetch - processPackages [prelude-parser]: Remove: archive file [/home/abi/fetcher/tmp/prelude_parser-0.5.0-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
+[2024-06-01 22:51:45] INFO root fetch - main [MainThread]: End processing [prelude-parser]: success
+[2024-06-01 22:51:45] INFO root fetch - main [MainThread]: Store serial: [23483478]
