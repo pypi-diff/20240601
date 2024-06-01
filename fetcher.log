@@ -21923,3 +21923,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:19:56] INFO root fetch - processPackages [rose-pine-jupyterlab]: Remove: archive file [/home/abi/fetcher/tmp/rose_pine_jupyterlab-0.1.8.tar.gz]
 [2024-06-01 21:19:56] INFO root fetch - main [MainThread]: End processing [rose-pine-jupyterlab]: success
 [2024-06-01 21:19:56] INFO root fetch - main [MainThread]: Store serial: [23482947]
+[2024-06-01 21:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482947]
+[2024-06-01 21:22:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 21:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vmstate
+[2024-06-01 21:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tui-dsmt
+[2024-06-01 21:22:05] INFO root fetch - processPackages [tui-dsmt]: New version: [202406011729] Old Version: [202406011619]
+[2024-06-01 21:22:05] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/65/0c/c47722e9e8a826954ef1e662514c9ef33dddb3f2fec248601426e0a0d36b/tui_dsmt-202406011619.tar.gz
+[2024-06-01 21:22:05] WARNING root fetch - processPackages [vmstate]: Skipping, unable to determine old version
+[2024-06-01 21:22:05] INFO root fetch - main [MainThread]: End processing [vmstate] error
+[2024-06-01 21:22:05] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/2c/28/87b15127b132e8b897e588454817027d1dc7d9e0eeaadc7fa1e658e19b7e/tui_dsmt-202406011729.tar.gz
+[2024-06-01 21:22:06] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-06-01 21:22:06] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202406011619.tar.gz tmp/tui_dsmt-202406011729.tar.gz --markdown 20240601/t/tui-dsmt/202406011619-202406011729/README.md --exclude *.pyd
+[2024-06-01 21:22:07] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011619.tar.gz]
+[2024-06-01 21:22:07] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011729.tar.gz]
+[2024-06-01 21:22:07] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-06-01 21:22:07] INFO root fetch - main [MainThread]: Store serial: [23482955]
