@@ -15000,3 +15000,33 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:10:21] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.0.tar.gz]
 [2024-06-01 13:10:21] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 13:10:21] INFO root fetch - main [MainThread]: Store serial: [23479620]
+[2024-06-01 13:12:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479620]
+[2024-06-01 13:12:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 13:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Crackerjack
+[2024-06-01 13:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: salve-ipc
+[2024-06-01 13:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sigmacode
+[2024-06-01 13:12:31] INFO root fetch - processPackages [salve-ipc]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-06-01 13:12:31] INFO root fetch - processPackages [sigmacode]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 13:12:31] INFO root fetch - processPackages [Crackerjack]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-06-01 13:12:31] INFO root fetch - processPackages [salve-ipc]: Downloading https://files.pythonhosted.org/packages/a9/98/d56de99c61fe75bf4a7d266984bbe8f676ce4d24e4c15e1a98c27570925c/salve_ipc-0.2.2.tar.gz
+[2024-06-01 13:12:31] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/b1/5c/e416a0d06b23972b135dc832ac189dd99dd0a5e2d9517da912063e34c6f7/sigmacode-0.0.2.tar.gz
+[2024-06-01 13:12:31] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/a7/40/682dbf1a6b1f3d3ad06a2cdda255b0e2c3c5397a8830e62ede4c0dd7a9ae/crackerjack-0.7.8.tar.gz
+[2024-06-01 13:12:31] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/c5/75/3568b19058277b8cd82499102cf3be7570336f14e93bacedeb931e7e18cd/crackerjack-0.7.9.tar.gz
+[2024-06-01 13:12:31] INFO root fetch - processPackages [salve-ipc]: Downloading https://files.pythonhosted.org/packages/71/81/8cf457fd1dbb909ad4d986fe1f84cb2aba15e687464ad0a88f8ab72293e3/salve_ipc-0.3.0.tar.gz
+[2024-06-01 13:12:31] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/bd/d8/434f85635475f67b2530f5b98154325063ffa600a24688c0f0794fe65bc2/sigmacode-0.0.3.tar.gz
+[2024-06-01 13:12:31] INFO root fetch - processPackages [Crackerjack]: executing diffoscope
+[2024-06-01 13:12:31] INFO root fetch - processPackages [Crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.7.8.tar.gz tmp/crackerjack-0.7.9.tar.gz --markdown 20240601/C/Crackerjack/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-06-01 13:12:31] INFO root fetch - processPackages [salve-ipc]: executing diffoscope
+[2024-06-01 13:12:31] INFO root fetch - processPackages [salve-ipc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salve_ipc-0.2.2.tar.gz tmp/salve_ipc-0.3.0.tar.gz --markdown 20240601/s/salve-ipc/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-06-01 13:12:31] INFO root fetch - processPackages [sigmacode]: executing diffoscope
+[2024-06-01 13:12:31] INFO root fetch - processPackages [sigmacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmacode-0.0.2.tar.gz tmp/sigmacode-0.0.3.tar.gz --markdown 20240601/s/sigmacode/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 13:12:32] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.8.tar.gz]
+[2024-06-01 13:12:32] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
+[2024-06-01 13:12:32] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
+[2024-06-01 13:12:32] INFO root fetch - processPackages [salve-ipc]: Remove: archive file [/home/abi/fetcher/tmp/salve_ipc-0.2.2.tar.gz]
+[2024-06-01 13:12:32] INFO root fetch - processPackages [salve-ipc]: Remove: archive file [/home/abi/fetcher/tmp/salve_ipc-0.3.0.tar.gz]
+[2024-06-01 13:12:32] INFO root fetch - main [MainThread]: End processing [salve-ipc]: success
+[2024-06-01 13:12:32] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.2.tar.gz]
+[2024-06-01 13:12:32] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.3.tar.gz]
+[2024-06-01 13:12:32] INFO root fetch - main [MainThread]: End processing [sigmacode]: success
+[2024-06-01 13:12:32] INFO root fetch - main [MainThread]: Store serial: [23479628]
