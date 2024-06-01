@@ -11504,3 +11504,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:30:11] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.2.tar.gz]
 [2024-06-01 08:30:11] INFO root fetch - main [MainThread]: End processing [semchunk]: success
 [2024-06-01 08:30:11] INFO root fetch - main [MainThread]: Store serial: [23477892]
+[2024-06-01 08:32:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477892]
+[2024-06-01 08:32:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyJONDB
+[2024-06-01 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: todoist-auto
+[2024-06-01 08:32:19] INFO root fetch - processPackages [PyJONDB]: New version: [1.6] Old Version: [1.5]
+[2024-06-01 08:32:19] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-06-01 08:32:20] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/27/f4/ca1a4c432e1e22975c479b31d4551f80a3efe2ebbccb18f9ef91da2f334b/pyjondb-1.5.tar.gz
+[2024-06-01 08:32:20] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-06-01 08:32:20] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-06-01 08:32:20] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/f7/cd/cbf8d2c8d6ca0d567c2a44128fc935687563517529f87942c7e067f8ecbd/pyjondb-1.6.tar.gz
+[2024-06-01 08:32:20] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-06-01 08:32:20] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240601/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-06-01 08:32:20] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 08:32:20] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.5.tar.gz tmp/pyjondb-1.6.tar.gz --markdown 20240601/P/PyJONDB/1.5-1.6/README.md --exclude *.pyd
+[2024-06-01 08:32:20] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-06-01 08:32:20] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-06-01 08:32:20] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-06-01 08:32:20] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.5.tar.gz]
+[2024-06-01 08:32:20] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.6.tar.gz]
+[2024-06-01 08:32:20] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 08:32:20] INFO root fetch - main [MainThread]: Store serial: [23477897]
