@@ -23658,3 +23658,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:40:01] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.9.tar.gz]
 [2024-06-01 23:40:01] INFO root fetch - main [MainThread]: End processing [ladybug-comfort]: success
 [2024-06-01 23:40:01] INFO root fetch - main [MainThread]: Store serial: [23483847]
+[2024-06-01 23:42:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483847]
+[2024-06-01 23:42:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 23:42:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aixhello
+[2024-06-01 23:42:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protoc-polyglot
+[2024-06-01 23:42:10] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-01 23:42:10] INFO root fetch - processPackages [aixhello]: New version: [1.9] Old Version: [1.8]
+[2024-06-01 23:42:10] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-01 23:42:10] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/45/2f/3925f66397dedfc8046d3a3c41dce7196f9c8afc311cb9029adecfa1ae15/aixhello-1.8.tar.gz
+[2024-06-01 23:42:10] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-01 23:42:10] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/c2/ab/bcf459eeb0ffeb3abdc19717b1a01a83200553fc2e6affb342394fe34c37/aixhello-1.9.tar.gz
+[2024-06-01 23:42:10] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-01 23:42:10] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240601/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-01 23:42:10] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-01 23:42:10] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-1.8.tar.gz tmp/aixhello-1.9.tar.gz --markdown 20240601/a/aixhello/1.8-1.9/README.md --exclude *.pyd
+[2024-06-01 23:42:11] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-01 23:42:11] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-01 23:42:11] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-01 23:42:11] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.8.tar.gz]
+[2024-06-01 23:42:11] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.9.tar.gz]
+[2024-06-01 23:42:11] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-01 23:42:11] INFO root fetch - main [MainThread]: Store serial: [23483853]
