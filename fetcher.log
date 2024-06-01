@@ -17082,3 +17082,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:47:22] INFO root fetch - processPackages [encoded-core]: Remove: archive file [/home/abi/fetcher/tmp/encoded_core-0.9.1.tar.gz]
 [2024-06-01 15:47:22] INFO root fetch - main [MainThread]: End processing [encoded-core]: success
 [2024-06-01 15:47:22] INFO root fetch - main [MainThread]: Store serial: [23480520]
+[2024-06-01 15:49:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480520]
+[2024-06-01 15:49:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 15:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycontrails
+[2024-06-01 15:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intellipandora
+[2024-06-01 15:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fdk-asgi
+[2024-06-01 15:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dektools
+[2024-06-01 15:49:30] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-06-01 15:49:30] INFO root fetch - processPackages [pycontrails]: New version: [0.51.0] Old Version: [0.50.2]
+[2024-06-01 15:49:31] INFO root fetch - processPackages [fdk-asgi]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-06-01 15:49:31] INFO root fetch - processPackages [intellipandora]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-01 15:49:31] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-06-01 15:49:31] INFO root fetch - processPackages [pycontrails]: Downloading https://files.pythonhosted.org/packages/45/f7/c4b1c97b8140d66f5d8500312fd6b0519efbcb94365aa3e2c732b3b6c2aa/pycontrails-0.50.2.tar.gz
+[2024-06-01 15:49:31] WARNING root fetch - processPackages [pycontrails]: Skipping package: exceeds size limit 35366024>=10485760
+[2024-06-01 15:49:31] INFO root fetch - main [MainThread]: End processing [pycontrails] error
+[2024-06-01 15:49:31] INFO root fetch - processPackages [fdk-asgi]: Downloading https://files.pythonhosted.org/packages/99/73/d51abbaf48f956fd8b7d14495a605ab63cbf1eb23292599d9bf4b73bf075/fdk_asgi-0.7.0.tar.gz
+[2024-06-01 15:49:31] INFO root fetch - processPackages [intellipandora]: Downloading https://files.pythonhosted.org/packages/aa/53/b645ba582cd1904c0d41b80052b34b329a38ff0eabb345cbaab67040b650/intellipandora-1.0.6-py3-none-any.whl
+[2024-06-01 15:49:31] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-06-01 15:49:31] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-06-01 15:49:31] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240601/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-06-01 15:49:31] INFO root fetch - processPackages [fdk-asgi]: Downloading https://files.pythonhosted.org/packages/f8/c0/72bb616f2c97050d24c4c48c65df6f3e2255b6e426591345759f2fe73852/fdk_asgi-0.7.1.tar.gz
+[2024-06-01 15:49:31] INFO root fetch - processPackages [intellipandora]: Downloading https://files.pythonhosted.org/packages/ab/04/e78a5ad284d56531f16b386672be490781e61f94e2105c7771d1720509a0/intellipandora-1.0.7-py3-none-any.whl
+[2024-06-01 15:49:31] INFO root fetch - processPackages [fdk-asgi]: executing diffoscope
+[2024-06-01 15:49:31] INFO root fetch - processPackages [fdk-asgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fdk_asgi-0.7.0.tar.gz tmp/fdk_asgi-0.7.1.tar.gz --markdown 20240601/f/fdk-asgi/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-06-01 15:49:31] INFO root fetch - processPackages [intellipandora]: executing diffoscope
+[2024-06-01 15:49:31] INFO root fetch - processPackages [intellipandora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intellipandora-1.0.6-py3-none-any.whl.zip tmp/intellipandora-1.0.7-py3-none-any.whl.zip --markdown 20240601/i/intellipandora/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-01 15:49:32] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-06-01 15:49:32] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-06-01 15:49:32] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-06-01 15:49:32] INFO root fetch - processPackages [fdk-asgi]: Remove: archive file [/home/abi/fetcher/tmp/fdk_asgi-0.7.0.tar.gz]
+[2024-06-01 15:49:32] INFO root fetch - processPackages [fdk-asgi]: Remove: archive file [/home/abi/fetcher/tmp/fdk_asgi-0.7.1.tar.gz]
+[2024-06-01 15:49:32] INFO root fetch - main [MainThread]: End processing [fdk-asgi]: success
+[2024-06-01 15:49:32] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.6-py3-none-any.whl.zip]
+[2024-06-01 15:49:32] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.7-py3-none-any.whl.zip]
+[2024-06-01 15:49:32] INFO root fetch - main [MainThread]: End processing [intellipandora]: success
+[2024-06-01 15:49:32] INFO root fetch - main [MainThread]: Store serial: [23480550]
