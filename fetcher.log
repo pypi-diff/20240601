@@ -17026,3 +17026,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:43:02] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.3.tar.gz]
 [2024-06-01 15:43:02] INFO root fetch - main [MainThread]: End processing [ponytail-agents]: success
 [2024-06-01 15:43:02] INFO root fetch - main [MainThread]: Store serial: [23480499]
+[2024-06-01 15:45:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480499]
+[2024-06-01 15:45:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 15:45:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlable
+[2024-06-01 15:45:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-xstress
+[2024-06-01 15:45:10] INFO root fetch - processPackages [mlable]: New version: [0.3.1] Old Version: [0.2.2]
+[2024-06-01 15:45:10] INFO root fetch - processPackages [mlable]: Downloading https://files.pythonhosted.org/packages/0f/d9/82188a365752bdf14108441ec55c48894c004c4314dde41865c29b4ac553/mlable-0.2.2.tar.gz
+[2024-06-01 15:45:10] INFO root fetch - processPackages [pytest-xstress]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 15:45:10] INFO root fetch - processPackages [mlable]: Downloading https://files.pythonhosted.org/packages/25/22/c74f6635d767388545971908560fb47e3b8952afb2960bde4fcfba6c682e/mlable-0.3.1.tar.gz
+[2024-06-01 15:45:11] INFO root fetch - processPackages [pytest-xstress]: Downloading https://files.pythonhosted.org/packages/0a/fc/ecf8d31b4d1dda3d3bc5fda7b8d85bb6be569215ca085f31d715f4ed5c38/pytest_xstress-1.0.0.tar.gz
+[2024-06-01 15:45:11] INFO root fetch - processPackages [mlable]: executing diffoscope
+[2024-06-01 15:45:11] INFO root fetch - processPackages [mlable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlable-0.2.2.tar.gz tmp/mlable-0.3.1.tar.gz --markdown 20240601/m/mlable/0.2.2-0.3.1/README.md --exclude *.pyd
+[2024-06-01 15:45:11] INFO root fetch - processPackages [pytest-xstress]: Downloading https://files.pythonhosted.org/packages/78/73/fc151412afa5d6e5da718d56a3469c4ab958c5e49ffd940fb2af54155f92/pytest_xstress-1.0.1.tar.gz
+[2024-06-01 15:45:11] INFO root fetch - processPackages [pytest-xstress]: executing diffoscope
+[2024-06-01 15:45:11] INFO root fetch - processPackages [pytest-xstress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_xstress-1.0.0.tar.gz tmp/pytest_xstress-1.0.1.tar.gz --markdown 20240601/p/pytest-xstress/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 15:45:11] INFO root fetch - processPackages [mlable]: Remove: archive file [/home/abi/fetcher/tmp/mlable-0.2.2.tar.gz]
+[2024-06-01 15:45:11] INFO root fetch - processPackages [mlable]: Remove: archive file [/home/abi/fetcher/tmp/mlable-0.3.1.tar.gz]
+[2024-06-01 15:45:11] INFO root fetch - main [MainThread]: End processing [mlable]: success
+[2024-06-01 15:45:12] INFO root fetch - processPackages [pytest-xstress]: Remove: archive file [/home/abi/fetcher/tmp/pytest_xstress-1.0.0.tar.gz]
+[2024-06-01 15:45:12] INFO root fetch - processPackages [pytest-xstress]: Remove: archive file [/home/abi/fetcher/tmp/pytest_xstress-1.0.1.tar.gz]
+[2024-06-01 15:45:12] INFO root fetch - main [MainThread]: End processing [pytest-xstress]: success
+[2024-06-01 15:45:12] INFO root fetch - main [MainThread]: Store serial: [23480506]
