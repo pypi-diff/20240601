@@ -8279,3 +8279,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:23:55] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting_desktop-2024.5.7.tar.gz]
 [2024-06-01 04:23:55] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting-desktop]: success
 [2024-06-01 04:23:55] INFO root fetch - main [MainThread]: Store serial: [23476379]
+[2024-06-01 04:25:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476379]
+[2024-06-01 04:26:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 04:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-plugin-pypi-proxy
+[2024-06-01 04:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdmty-django-users
+[2024-06-01 04:26:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kabutobashi
+[2024-06-01 04:26:04] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-01 04:26:04] INFO root fetch - processPackages [gdmty-django-users]: New version: [24.5.2] Old Version: [24.5.1]
+[2024-06-01 04:26:04] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: Downloading https://files.pythonhosted.org/packages/26/3f/2887e0b85f95b7c86727217132c108b10bc8f68c53760021de4ef0b43736/poetry_plugin_pypi_proxy-0.1.2.tar.gz
+[2024-06-01 04:26:04] INFO root fetch - processPackages [kabutobashi]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-06-01 04:26:04] INFO root fetch - processPackages [gdmty-django-users]: Downloading https://files.pythonhosted.org/packages/55/31/c1d7240d1f972606dc81011affc87da3e887865c147713997fc3ec5138c1/gdmty_django_users-24.5.1.tar.gz
+[2024-06-01 04:26:04] INFO root fetch - processPackages [kabutobashi]: Downloading https://files.pythonhosted.org/packages/69/f8/982762bb10c3ee57c840b30af914e59b9029d47fee4d46f1382422721ceb/kabutobashi-0.7.2.tar.gz
+[2024-06-01 04:26:04] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: Downloading https://files.pythonhosted.org/packages/57/97/93853b643907b5da464f2fdd6e2f4f833ec394772a57fc5ad61e3a50e7e1/poetry_plugin_pypi_proxy-0.1.3.tar.gz
+[2024-06-01 04:26:04] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: executing diffoscope
+[2024-06-01 04:26:04] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_pypi_proxy-0.1.2.tar.gz tmp/poetry_plugin_pypi_proxy-0.1.3.tar.gz --markdown 20240601/p/poetry-plugin-pypi-proxy/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-01 04:26:04] INFO root fetch - processPackages [gdmty-django-users]: Downloading https://files.pythonhosted.org/packages/8d/bd/ac41af7ddb4bf98a9aa4ff35956bbc2b47dd248349ff7ab9395841decb0c/gdmty_django_users-24.5.2.tar.gz
+[2024-06-01 04:26:04] INFO root fetch - processPackages [kabutobashi]: Downloading https://files.pythonhosted.org/packages/99/10/6ac690da116edab3ce6dcfd35f0edd86cedaa4d0cc739e1e7382e8173500/kabutobashi-0.8.0.tar.gz
+[2024-06-01 04:26:04] INFO root fetch - processPackages [gdmty-django-users]: executing diffoscope
+[2024-06-01 04:26:04] INFO root fetch - processPackages [gdmty-django-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdmty_django_users-24.5.1.tar.gz tmp/gdmty_django_users-24.5.2.tar.gz --markdown 20240601/g/gdmty-django-users/24.5.1-24.5.2/README.md --exclude *.pyd
+[2024-06-01 04:26:05] INFO root fetch - processPackages [kabutobashi]: executing diffoscope
+[2024-06-01 04:26:05] INFO root fetch - processPackages [kabutobashi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kabutobashi-0.7.2.tar.gz tmp/kabutobashi-0.8.0.tar.gz --markdown 20240601/k/kabutobashi/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-06-01 04:26:05] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_pypi_proxy-0.1.2.tar.gz]
+[2024-06-01 04:26:05] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_pypi_proxy-0.1.3.tar.gz]
+[2024-06-01 04:26:05] INFO root fetch - main [MainThread]: End processing [poetry-plugin-pypi-proxy]: success
+[2024-06-01 04:26:05] INFO root fetch - processPackages [gdmty-django-users]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_django_users-24.5.1.tar.gz]
+[2024-06-01 04:26:05] INFO root fetch - processPackages [gdmty-django-users]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_django_users-24.5.2.tar.gz]
+[2024-06-01 04:26:05] INFO root fetch - main [MainThread]: End processing [gdmty-django-users]: success
+[2024-06-01 04:26:05] INFO root fetch - processPackages [kabutobashi]: Remove: archive file [/home/abi/fetcher/tmp/kabutobashi-0.7.2.tar.gz]
+[2024-06-01 04:26:05] INFO root fetch - processPackages [kabutobashi]: Remove: archive file [/home/abi/fetcher/tmp/kabutobashi-0.8.0.tar.gz]
+[2024-06-01 04:26:05] INFO root fetch - main [MainThread]: End processing [kabutobashi]: success
+[2024-06-01 04:26:05] INFO root fetch - main [MainThread]: Store serial: [23476392]
