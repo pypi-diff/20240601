@@ -22364,3 +22364,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:59:15] INFO root fetch - processPackages [libstc-geck]: Remove: archive file [/home/abi/fetcher/tmp/libstc_geck-2.0.1.tar.gz]
 [2024-06-01 21:59:15] INFO root fetch - main [MainThread]: End processing [libstc-geck]: success
 [2024-06-01 21:59:15] INFO root fetch - main [MainThread]: Store serial: [23483142]
+[2024-06-01 22:01:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483142]
+[2024-06-01 22:01:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 22:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weather-chatbot-phi3
+[2024-06-01 22:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-06-01 22:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-apscheduler4
+[2024-06-01 22:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: log-writer
+[2024-06-01 22:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EasyFileOps
+[2024-06-01 22:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zenaura
+[2024-06-01 22:01:24] INFO root fetch - processPackages [weather-chatbot-phi3]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 22:01:24] INFO root fetch - processPackages [log-writer]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 22:01:24] WARNING root fetch - processPackages [EasyFileOps]: Skipping, unable to determine old version
+[2024-06-01 22:01:24] INFO root fetch - main [MainThread]: End processing [EasyFileOps] error
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 22:01:24] WARNING root fetch - processPackages [fastapi-apscheduler4]: Skipping, unable to determine old version
+[2024-06-01 22:01:24] INFO root fetch - main [MainThread]: End processing [fastapi-apscheduler4] error
+[2024-06-01 22:01:24] INFO root fetch - processPackages [weather-chatbot-phi3]: Downloading https://files.pythonhosted.org/packages/54/c1/d83b151145feba9a476e994f5a6fbcb7009a3847e4e54e5efec21d8cf2f1/weather_chatbot_phi3-0.1.0.tar.gz
+[2024-06-01 22:01:24] INFO root fetch - processPackages [log-writer]: Downloading https://files.pythonhosted.org/packages/1f/42/2a8361dd4f292addc12808e21d7eaa118a5bcd9d74512aca72d031907227/log_writer-1.0.0.tar.gz
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 22:01:24] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 22:01:24] INFO root fetch - processPackages [weather-chatbot-phi3]: Downloading https://files.pythonhosted.org/packages/64/39/e82b46dd8351e26acb878a6d7a0bcc9bdf8e382074d72dd468437b6e0109/weather_chatbot_phi3-0.1.1.tar.gz
+[2024-06-01 22:01:24] INFO root fetch - processPackages [log-writer]: Downloading https://files.pythonhosted.org/packages/b4/ea/13b675a3588f01223ddce460cf9e621818c98c34357befc581fe2a652baa/log_writer-1.0.1-py3-none-any.whl
+[2024-06-01 22:01:24] INFO root fetch - processPackages [weather-chatbot-phi3]: executing diffoscope
+[2024-06-01 22:01:24] INFO root fetch - processPackages [weather-chatbot-phi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weather_chatbot_phi3-0.1.0.tar.gz tmp/weather_chatbot_phi3-0.1.1.tar.gz --markdown 20240601/w/weather-chatbot-phi3/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 22:01:24] INFO root fetch - processPackages [log-writer]: executing diffoscope
+[2024-06-01 22:01:24] INFO root fetch - processPackages [log-writer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/log_writer-1.0.0.tar.gz tmp/log_writer-1.0.1-py3-none-any.whl.zip --markdown 20240601/l/log-writer/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 22:01:25] INFO root fetch - processPackages [weather-chatbot-phi3]: Remove: archive file [/home/abi/fetcher/tmp/weather_chatbot_phi3-0.1.0.tar.gz]
+[2024-06-01 22:01:25] INFO root fetch - processPackages [weather-chatbot-phi3]: Remove: archive file [/home/abi/fetcher/tmp/weather_chatbot_phi3-0.1.1.tar.gz]
+[2024-06-01 22:01:25] INFO root fetch - main [MainThread]: End processing [weather-chatbot-phi3]: success
+[2024-06-01 22:01:25] INFO root fetch - processPackages [log-writer]: Remove: archive file [/home/abi/fetcher/tmp/log_writer-1.0.0.tar.gz]
+[2024-06-01 22:01:25] INFO root fetch - processPackages [log-writer]: Remove: archive file [/home/abi/fetcher/tmp/log_writer-1.0.1-py3-none-any.whl.zip]
+[2024-06-01 22:01:25] INFO root fetch - main [MainThread]: End processing [log-writer]: success
+[2024-06-01 22:01:25] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.98.tar.gz]
+[2024-06-01 22:01:25] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
+[2024-06-01 22:01:25] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 22:01:25] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 22:01:25] INFO root fetch - main [MainThread]: Store serial: [23483168]
