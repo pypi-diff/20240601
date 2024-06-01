@@ -18105,3 +18105,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:02:17] INFO root fetch - processPackages [flagright]: Remove: archive file [/home/abi/fetcher/tmp/flagright-1.5.9.tar.gz]
 [2024-06-01 17:02:17] INFO root fetch - main [MainThread]: End processing [flagright]: success
 [2024-06-01 17:02:17] INFO root fetch - main [MainThread]: Store serial: [23481107]
+[2024-06-01 17:04:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481107]
+[2024-06-01 17:04:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 17:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mfprocess
+[2024-06-01 17:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qin
+[2024-06-01 17:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solver-multiRPC
+[2024-06-01 17:04:27] INFO root fetch - processPackages [solver-multiRPC]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-06-01 17:04:27] INFO root fetch - processPackages [qin]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-06-01 17:04:27] INFO root fetch - processPackages [mfprocess]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 17:04:27] INFO root fetch - processPackages [solver-multiRPC]: Downloading https://files.pythonhosted.org/packages/47/bf/4f50e6e253125985750fe7f8830cbeb194f9e1cc7a58f2d8da4d783c7058/solver-multiRPC-2.0.3.tar.gz
+[2024-06-01 17:04:27] INFO root fetch - processPackages [mfprocess]: Downloading https://files.pythonhosted.org/packages/69/67/0a9948bb4ad6ee1cd91cd893ca1a9958b1f51d055860d07b2fa7a04eecd0/mfprocess-1.0.8.tar.gz
+[2024-06-01 17:04:27] INFO root fetch - processPackages [qin]: Downloading https://files.pythonhosted.org/packages/73/f8/c923b11e86bfd09a8fc3590f8b8fbb06e40cd2d957ffd6dc1b4d59d4cc05/qin-0.0.1-py3-none-any.whl
+[2024-06-01 17:04:28] INFO root fetch - processPackages [solver-multiRPC]: Downloading https://files.pythonhosted.org/packages/13/b0/842cdaff844cf14ec8dd497edc3a67a0168cfe623afb5fb28e4348c59979/solver-multiRPC-2.0.4.tar.gz
+[2024-06-01 17:04:28] INFO root fetch - processPackages [mfprocess]: Downloading https://files.pythonhosted.org/packages/2a/ea/e500f375b708c3fd5a6705d8a3e160c1dd88026ffdbe18484bfba29a1229/mfprocess-1.0.9.tar.gz
+[2024-06-01 17:04:28] INFO root fetch - processPackages [qin]: Downloading https://files.pythonhosted.org/packages/f0/2c/f7d22d21cf4b3f8269f68a1821284b81c278217589d1223790c01a977835/qin-0.1.0.tar.gz
+[2024-06-01 17:04:28] INFO root fetch - processPackages [qin]: executing diffoscope
+[2024-06-01 17:04:28] INFO root fetch - processPackages [qin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qin-0.0.1-py3-none-any.whl.zip tmp/qin-0.1.0.tar.gz --markdown 20240601/q/qin/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-06-01 17:04:28] INFO root fetch - processPackages [mfprocess]: executing diffoscope
+[2024-06-01 17:04:28] INFO root fetch - processPackages [solver-multiRPC]: executing diffoscope
+[2024-06-01 17:04:28] INFO root fetch - processPackages [solver-multiRPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solver-multiRPC-2.0.3.tar.gz tmp/solver-multiRPC-2.0.4.tar.gz --markdown 20240601/s/solver-multiRPC/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-06-01 17:04:28] INFO root fetch - processPackages [mfprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfprocess-1.0.8.tar.gz tmp/mfprocess-1.0.9.tar.gz --markdown 20240601/m/mfprocess/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 17:04:28] INFO root fetch - processPackages [qin]: Remove: archive file [/home/abi/fetcher/tmp/qin-0.0.1-py3-none-any.whl.zip]
+[2024-06-01 17:04:28] INFO root fetch - processPackages [qin]: Remove: archive file [/home/abi/fetcher/tmp/qin-0.1.0.tar.gz]
+[2024-06-01 17:04:28] INFO root fetch - main [MainThread]: End processing [qin]: success
+[2024-06-01 17:04:28] INFO root fetch - processPackages [mfprocess]: Remove: archive file [/home/abi/fetcher/tmp/mfprocess-1.0.8.tar.gz]
+[2024-06-01 17:04:28] INFO root fetch - processPackages [mfprocess]: Remove: archive file [/home/abi/fetcher/tmp/mfprocess-1.0.9.tar.gz]
+[2024-06-01 17:04:28] INFO root fetch - main [MainThread]: End processing [mfprocess]: success
+[2024-06-01 17:04:28] INFO root fetch - processPackages [solver-multiRPC]: Remove: archive file [/home/abi/fetcher/tmp/solver-multiRPC-2.0.3.tar.gz]
+[2024-06-01 17:04:28] INFO root fetch - processPackages [solver-multiRPC]: Remove: archive file [/home/abi/fetcher/tmp/solver-multiRPC-2.0.4.tar.gz]
+[2024-06-01 17:04:28] INFO root fetch - main [MainThread]: End processing [solver-multiRPC]: success
+[2024-06-01 17:04:28] INFO root fetch - main [MainThread]: Store serial: [23481136]
