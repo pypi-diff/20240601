@@ -21950,3 +21950,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:24:20] INFO root fetch - processPackages [ampel-hu-astro]: Remove: archive file [/home/abi/fetcher/tmp/ampel_hu_astro-0.8.4a4.tar.gz]
 [2024-06-01 21:24:20] INFO root fetch - main [MainThread]: End processing [ampel-hu-astro]: success
 [2024-06-01 21:24:20] INFO root fetch - main [MainThread]: Store serial: [23482958]
+[2024-06-01 21:26:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482958]
+[2024-06-01 21:26:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 21:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rattail
+[2024-06-01 21:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BISOInvest-pack
+[2024-06-01 21:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BISOInvest-pack
+[2024-06-01 21:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: little-atf-programmer
+[2024-06-01 21:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BISOInvest-pack
+[2024-06-01 21:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: document-transformer
+[2024-06-01 21:26:30] INFO root fetch - processPackages [BISOInvest-pack]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 21:26:30] INFO root fetch - processPackages [BISOInvest-pack]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 21:26:30] INFO root fetch - processPackages [BISOInvest-pack]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 21:26:30] INFO root fetch - processPackages [little-atf-programmer]: New version: [2024.1013] Old Version: [2024.1012]
+[2024-06-01 21:26:30] INFO root fetch - processPackages [document-transformer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 21:26:30] INFO root fetch - processPackages [rattail]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 21:26:30] INFO root fetch - processPackages [BISOInvest-pack]: Downloading https://files.pythonhosted.org/packages/46/c7/42b0aea87a1ee6b2836f46595d42ddfaeec97daad80fa5753e148cfce31d/BISOInvest_pack-0.2.0.tar.gz
+[2024-06-01 21:26:30] INFO root fetch - processPackages [BISOInvest-pack]: Downloading https://files.pythonhosted.org/packages/46/c7/42b0aea87a1ee6b2836f46595d42ddfaeec97daad80fa5753e148cfce31d/BISOInvest_pack-0.2.0.tar.gz
+[2024-06-01 21:26:30] INFO root fetch - processPackages [BISOInvest-pack]: Downloading https://files.pythonhosted.org/packages/46/c7/42b0aea87a1ee6b2836f46595d42ddfaeec97daad80fa5753e148cfce31d/BISOInvest_pack-0.2.0.tar.gz
+[2024-06-01 21:26:30] INFO root fetch - processPackages [document-transformer]: Downloading https://files.pythonhosted.org/packages/6d/40/8030cea725c34540cc1bf93879566cfdc127eeae4fb563b70cbd7823abdb/document_transformer-0.1.1.tar.gz
+[2024-06-01 21:26:30] INFO root fetch - processPackages [little-atf-programmer]: Downloading https://files.pythonhosted.org/packages/5f/d5/dffc2f9a3df381c9a2ef1c9d6ac0bf920fed62ac1ff118ffeef26ec88c4f/little_atf_programmer-2024.1012.tar.gz
+[2024-06-01 21:26:30] INFO root fetch - processPackages [rattail]: Downloading https://files.pythonhosted.org/packages/8a/ab/1d0b66effa702be7aef6de038a0b9a0727d9d4053df5c56aa1ee5b1d9b45/rattail-0.9.98.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [document-transformer]: Downloading https://files.pythonhosted.org/packages/a6/ab/8fc522467b0c8ec39dd8e48693b6efe6aa6da42eceb6b2b5b769f199ea6e/document_transformer-0.1.2.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: Downloading https://files.pythonhosted.org/packages/93/7d/e8d8fbc1968858814da295c5705a54c6975f6780a672f7dcd974a41dc222/BISOInvest_pack-0.3.0.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: Downloading https://files.pythonhosted.org/packages/93/7d/e8d8fbc1968858814da295c5705a54c6975f6780a672f7dcd974a41dc222/BISOInvest_pack-0.3.0.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: Downloading https://files.pythonhosted.org/packages/93/7d/e8d8fbc1968858814da295c5705a54c6975f6780a672f7dcd974a41dc222/BISOInvest_pack-0.3.0.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [little-atf-programmer]: Downloading https://files.pythonhosted.org/packages/ce/6f/09e21e20fcb87d73a0bfb06b2f9070e264f8cf21fdf663eac8a304bc1f98/little_atf_programmer-2024.1013.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: executing diffoscope
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BISOInvest_pack-0.2.0.tar.gz tmp/BISOInvest_pack-0.3.0.tar.gz --markdown 20240601/B/BISOInvest-pack/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 21:26:31] INFO root fetch - processPackages [little-atf-programmer]: executing diffoscope
+[2024-06-01 21:26:31] INFO root fetch - processPackages [little-atf-programmer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/little_atf_programmer-2024.1012.tar.gz tmp/little_atf_programmer-2024.1013.tar.gz --markdown 20240601/l/little-atf-programmer/2024.1012-2024.1013/README.md --exclude *.pyd
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: executing diffoscope
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BISOInvest_pack-0.2.0.tar.gz tmp/BISOInvest_pack-0.3.0.tar.gz --markdown 20240601/B/BISOInvest-pack/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: executing diffoscope
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BISOInvest_pack-0.2.0.tar.gz tmp/BISOInvest_pack-0.3.0.tar.gz --markdown 20240601/B/BISOInvest-pack/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 21:26:31] INFO root fetch - processPackages [document-transformer]: executing diffoscope
+[2024-06-01 21:26:31] INFO root fetch - processPackages [document-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/document_transformer-0.1.1.tar.gz tmp/document_transformer-0.1.2.tar.gz --markdown 20240601/d/document-transformer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 21:26:31] INFO root fetch - processPackages [rattail]: Downloading https://files.pythonhosted.org/packages/1e/c3/79e6d80f4a830a425f80fae7cf7f242293341bfd63e5d6f25421dfd44465/rattail-0.9.99.tar.gz
+[2024-06-01 21:26:31] INFO root fetch - processPackages [rattail]: executing diffoscope
+[2024-06-01 21:26:31] INFO root fetch - processPackages [rattail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-0.9.98.tar.gz tmp/rattail-0.9.99.tar.gz --markdown 20240601/r/rattail/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: Remove: archive file [/home/abi/fetcher/tmp/BISOInvest_pack-0.2.0.tar.gz]
+[2024-06-01 21:26:31] INFO root fetch - processPackages [BISOInvest-pack]: Remove: archive file [/home/abi/fetcher/tmp/BISOInvest_pack-0.3.0.tar.gz]
+[2024-06-01 21:26:31] INFO root fetch - main [MainThread]: End processing [BISOInvest-pack]: success
+[2024-06-01 21:26:31] INFO root fetch - main [MainThread]: End processing [BISOInvest-pack]: success
+[2024-06-01 21:26:31] INFO root fetch - main [MainThread]: End processing [BISOInvest-pack]: success
+[2024-06-01 21:26:32] INFO root fetch - processPackages [document-transformer]: Remove: archive file [/home/abi/fetcher/tmp/document_transformer-0.1.1.tar.gz]
+[2024-06-01 21:26:32] INFO root fetch - processPackages [document-transformer]: Remove: archive file [/home/abi/fetcher/tmp/document_transformer-0.1.2.tar.gz]
+[2024-06-01 21:26:32] INFO root fetch - main [MainThread]: End processing [document-transformer]: success
+[2024-06-01 21:26:32] INFO root fetch - processPackages [little-atf-programmer]: Remove: archive file [/home/abi/fetcher/tmp/little_atf_programmer-2024.1012.tar.gz]
+[2024-06-01 21:26:32] INFO root fetch - processPackages [little-atf-programmer]: Remove: archive file [/home/abi/fetcher/tmp/little_atf_programmer-2024.1013.tar.gz]
+[2024-06-01 21:26:32] INFO root fetch - main [MainThread]: End processing [little-atf-programmer]: success
+[2024-06-01 21:26:33] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.98.tar.gz]
+[2024-06-01 21:26:33] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.99.tar.gz]
+[2024-06-01 21:26:33] INFO root fetch - main [MainThread]: End processing [rattail]: success
+[2024-06-01 21:26:33] INFO root fetch - main [MainThread]: Store serial: [23482978]
