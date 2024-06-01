@@ -23864,3 +23864,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:49:33] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
 [2024-06-01 23:49:33] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
 [2024-06-01 23:49:33] INFO root fetch - main [MainThread]: Store serial: [23483956]
+[2024-06-01 23:51:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483956]
+[2024-06-01 23:51:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gersemi
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-ladybug
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcnum
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protoc-polyglot
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: almax-common
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SkiBiDi-ORM
+[2024-06-01 23:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mimesis
+[2024-06-01 23:51:42] INFO root fetch - processPackages [dcnum]: New version: [0.21.0] Old Version: [0.20.4]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [almax-common]: New version: [1.0.4.dev20240601201036] Old Version: [1.0.4]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [gersemi]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [lbt-ladybug]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [SkiBiDi-ORM]: New version: [0.1.35] Old Version: [0.1.31]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [dcnum]: Downloading https://files.pythonhosted.org/packages/b6/b2/e4bfa17db64a1b7434e62d6e27e93117ccca74ba468bf255b4b4b2ba1622/dcnum-0.20.4.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [mimesis]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-06-01 23:51:42] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [gersemi]: Downloading https://files.pythonhosted.org/packages/38/96/8a1b8ae83fb9041b7194544beec2ab3791548fdef6ddfb12893238ef1294/gersemi-0.9.3.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [lbt-ladybug]: Downloading https://files.pythonhosted.org/packages/e4/ac/474c600d6f495b8d63c49d7689b2b076f0c5f94c22728fe795233852a9e1/lbt-ladybug-0.8.1.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/20/45/c0871bf1888a4f06cf7a7caebef0c4311b7030a30cb8a58628ecbb902e36/almax_common-1.0.4.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/69/93/67e03f86de48d1b61404eca83b9057fe950508021fc18021faa42a1733e9/skibidi_orm-0.1.31.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-01 23:51:42] INFO root fetch - processPackages [mimesis]: Downloading https://files.pythonhosted.org/packages/11/c3/63f9ae346af2a23876aba1aab2b65934ac4b9c65ddf6af5e89c93c492cf4/mimesis-8.0.0.tar.gz
+[2024-06-01 23:51:43] INFO root fetch - processPackages [gersemi]: Downloading https://files.pythonhosted.org/packages/41/b4/2cecb2d2e6d90f93fd73e6d743c4a7d1403d83a4d9317dda6efe5dc7095c/gersemi-0.9.4.tar.gz
+[2024-06-01 23:51:43] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/3f/bd/8051cc396773acb3d98d654e64dccbab710d39552a667dab0233ee716415/almax_common-1.0.4.dev20240601201036.tar.gz
+[2024-06-01 23:51:43] INFO root fetch - processPackages [dcnum]: Downloading https://files.pythonhosted.org/packages/a4/f2/b24ac2f508ce474d68780a7587246230a59ec835b431eab717a2647ee6e6/dcnum-0.21.0.tar.gz
+[2024-06-01 23:51:43] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-01 23:51:43] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240601/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-01 23:51:43] INFO root fetch - processPackages [lbt-ladybug]: Downloading https://files.pythonhosted.org/packages/6e/e7/a4e6dcfc6b2750475acd6dee9e849a991053471ff22a90aa8f986eaef25b/lbt-ladybug-0.9.0.tar.gz
+[2024-06-01 23:51:43] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 23:51:43] INFO root fetch - processPackages [gersemi]: executing diffoscope
+[2024-06-01 23:51:43] INFO root fetch - processPackages [gersemi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gersemi-0.9.3.tar.gz tmp/gersemi-0.9.4.tar.gz --markdown 20240601/g/gersemi/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-06-01 23:51:43] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.4.tar.gz tmp/almax_common-1.0.4.dev20240601201036.tar.gz --markdown 20240601/a/almax-common/1.0.4-1.0.4.dev20240601201036/README.md --exclude *.pyd
+[2024-06-01 23:51:43] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/73/5b/d477d30e583742bf8bb7adb6eabb671f8cd9b97f153b9ce53f9890f81d61/skibidi_orm-0.1.35.tar.gz
+[2024-06-01 23:51:43] INFO root fetch - processPackages [dcnum]: executing diffoscope
+[2024-06-01 23:51:43] INFO root fetch - processPackages [dcnum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcnum-0.20.4.tar.gz tmp/dcnum-0.21.0.tar.gz --markdown 20240601/d/dcnum/0.20.4-0.21.0/README.md --exclude *.pyd
+[2024-06-01 23:51:43] INFO root fetch - processPackages [lbt-ladybug]: executing diffoscope
+[2024-06-01 23:51:43] INFO root fetch - processPackages [lbt-ladybug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-ladybug-0.8.1.tar.gz tmp/lbt-ladybug-0.9.0.tar.gz --markdown 20240601/l/lbt-ladybug/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 23:51:43] INFO root fetch - processPackages [SkiBiDi-ORM]: executing diffoscope
+[2024-06-01 23:51:43] INFO root fetch - processPackages [SkiBiDi-ORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skibidi_orm-0.1.31.tar.gz tmp/skibidi_orm-0.1.35.tar.gz --markdown 20240601/S/SkiBiDi-ORM/0.1.31-0.1.35/README.md --exclude *.pyd
+[2024-06-01 23:51:43] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-01 23:51:43] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-01 23:51:43] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-01 23:51:43] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.4.tar.gz]
+[2024-06-01 23:51:43] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.4.dev20240601201036.tar.gz]
+[2024-06-01 23:51:43] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 23:51:44] INFO root fetch - processPackages [gersemi]: Remove: archive file [/home/abi/fetcher/tmp/gersemi-0.9.3.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - processPackages [gersemi]: Remove: archive file [/home/abi/fetcher/tmp/gersemi-0.9.4.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - main [MainThread]: End processing [gersemi]: success
+[2024-06-01 23:51:44] INFO root fetch - processPackages [dcnum]: Remove: archive file [/home/abi/fetcher/tmp/dcnum-0.20.4.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - processPackages [dcnum]: Remove: archive file [/home/abi/fetcher/tmp/dcnum-0.21.0.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - main [MainThread]: End processing [dcnum]: success
+[2024-06-01 23:51:44] INFO root fetch - processPackages [mimesis]: Downloading https://files.pythonhosted.org/packages/74/f4/34b8f193a24f5ed60e1c38836a3d3ff7fc7f321c0a3e00340f7070ea1a5c/mimesis-9.0.0.tar.gz
+[2024-06-01 23:51:44] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.8.1.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.9.0.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - main [MainThread]: End processing [lbt-ladybug]: success
+[2024-06-01 23:51:44] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.31.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.35.tar.gz]
+[2024-06-01 23:51:44] INFO root fetch - main [MainThread]: End processing [SkiBiDi-ORM]: success
+[2024-06-01 23:51:47] INFO root fetch - processPackages [mimesis]: executing diffoscope
+[2024-06-01 23:51:47] INFO root fetch - processPackages [mimesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimesis-8.0.0.tar.gz tmp/mimesis-9.0.0.tar.gz --markdown 20240601/m/mimesis/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-06-01 23:51:49] INFO root fetch - processPackages [mimesis]: Remove: archive file [/home/abi/fetcher/tmp/mimesis-8.0.0.tar.gz]
+[2024-06-01 23:51:49] INFO root fetch - processPackages [mimesis]: Remove: archive file [/home/abi/fetcher/tmp/mimesis-9.0.0.tar.gz]
+[2024-06-01 23:51:49] INFO root fetch - main [MainThread]: End processing [mimesis]: success
+[2024-06-01 23:51:49] INFO root fetch - main [MainThread]: Store serial: [23483977]
