@@ -19214,3 +19214,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:14:54] INFO root fetch - processPackages [anemoi-datasets]: Remove: archive file [/home/abi/fetcher/tmp/anemoi_datasets-0.3.1.tar.gz]
 [2024-06-01 18:14:54] INFO root fetch - main [MainThread]: End processing [anemoi-datasets]: success
 [2024-06-01 18:14:54] INFO root fetch - main [MainThread]: Store serial: [23481627]
+[2024-06-01 18:16:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481627]
+[2024-06-01 18:17:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 18:17:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 18:17:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toyai
+[2024-06-01 18:17:03] INFO root fetch - processPackages [toyai]: New version: [0.2] Old Version: [0.1]
+[2024-06-01 18:17:03] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 18:17:03] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/66/c7/db427e0eb2eb1acf04a420f2a085cd4d203a847b70fde32d57b3b460c659/toyai-0.1.tar.gz
+[2024-06-01 18:17:04] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 18:17:04] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/d8/76/14ea5a41222e4908226cf7603c97b8b57ef0ce6364586e0488f93a7e62e3/toyai-0.2.tar.gz
+[2024-06-01 18:17:04] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 18:17:04] INFO root fetch - processPackages [toyai]: executing diffoscope
+[2024-06-01 18:17:04] INFO root fetch - processPackages [toyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyai-0.1.tar.gz tmp/toyai-0.2.tar.gz --markdown 20240601/t/toyai/0.1-0.2/README.md --exclude *.pyd
+[2024-06-01 18:17:04] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 18:17:04] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 18:17:05] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.1.tar.gz]
+[2024-06-01 18:17:05] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
+[2024-06-01 18:17:05] INFO root fetch - main [MainThread]: End processing [toyai]: success
+[2024-06-01 18:17:05] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 18:17:05] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 18:17:05] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 18:17:05] INFO root fetch - main [MainThread]: Store serial: [23481632]
