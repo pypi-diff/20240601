@@ -21680,3 +21680,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:00:10] INFO root fetch - processPackages [schemaorg-lite]: Remove: archive file [/home/abi/fetcher/tmp/schemaorg_lite-0.1.9.tar.gz]
 [2024-06-01 21:00:10] INFO root fetch - main [MainThread]: End processing [schemaorg-lite]: success
 [2024-06-01 21:00:10] INFO root fetch - main [MainThread]: Store serial: [23482792]
+[2024-06-01 21:02:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482792]
+[2024-06-01 21:02:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 21:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webull-options
+[2024-06-01 21:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gallery-dl
+[2024-06-01 21:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py3-validate-email
+[2024-06-01 21:02:19] INFO root fetch - processPackages [py3-validate-email]: New version: [1.0.5.post2] Old Version: [1.0.5.post1]
+[2024-06-01 21:02:19] INFO root fetch - processPackages [webull-options]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-06-01 21:02:19] INFO root fetch - processPackages [py3-validate-email]: Downloading https://files.pythonhosted.org/packages/fb/6f/93a266430714f3b76d433f9e768c5fad38438fc78281af85c14942dbf3ab/py3-validate-email-1.0.5.post1.tar.gz
+[2024-06-01 21:02:19] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/66/94/217ae3ac1c085b329ba594ea0ef7ed4b6de04e6bfba05d11226178e8d1a6/webull_options-0.6.6.tar.gz
+[2024-06-01 21:02:19] INFO root fetch - processPackages [gallery-dl]: New version: [1.9.0] Old Version: [1.8.7]
+[2024-06-01 21:02:19] INFO root fetch - processPackages [py3-validate-email]: Downloading https://files.pythonhosted.org/packages/87/ac/2b032c39f0f7dac58ab9f3e0636f3ce9862d4db15ff6fad91c9a2f08edc8/py3_validate_email-1.0.5.post2-py3-none-any.whl
+[2024-06-01 21:02:19] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/1e/e8/1b32b27c90fa16e2df4d8ea950d76bb9ffd89d171f7c95c57a0e5a7dae9e/webull_options-0.6.7.tar.gz
+[2024-06-01 21:02:19] INFO root fetch - processPackages [gallery-dl]: Downloading https://files.pythonhosted.org/packages/5d/1c/09cf02a5b984e19ad70eef4b0546aef2c2642861044e7d619f393e8c8b9a/gallery_dl-1.8.7.tar.gz
+[2024-06-01 21:02:19] INFO root fetch - processPackages [py3-validate-email]: executing diffoscope
+[2024-06-01 21:02:19] INFO root fetch - processPackages [py3-validate-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3-validate-email-1.0.5.post1.tar.gz tmp/py3_validate_email-1.0.5.post2-py3-none-any.whl.zip --markdown 20240601/p/py3-validate-email/1.0.5.post1-1.0.5.post2/README.md --exclude *.pyd
+[2024-06-01 21:02:19] INFO root fetch - processPackages [webull-options]: executing diffoscope
+[2024-06-01 21:02:19] INFO root fetch - processPackages [webull-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_options-0.6.6.tar.gz tmp/webull_options-0.6.7.tar.gz --markdown 20240601/w/webull-options/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-06-01 21:02:20] INFO root fetch - processPackages [gallery-dl]: Downloading https://files.pythonhosted.org/packages/c5/b2/1405454a6bfc347687a5b389bf788d050a0f09cf6f56e4409b54a6571334/gallery_dl-1.9.0.tar.gz
+[2024-06-01 21:02:20] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.6.tar.gz]
+[2024-06-01 21:02:20] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.7.tar.gz]
+[2024-06-01 21:02:20] INFO root fetch - main [MainThread]: End processing [webull-options]: success
+[2024-06-01 21:02:20] INFO root fetch - processPackages [gallery-dl]: executing diffoscope
+[2024-06-01 21:02:20] INFO root fetch - processPackages [gallery-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gallery_dl-1.8.7.tar.gz tmp/gallery_dl-1.9.0.tar.gz --markdown 20240601/g/gallery-dl/1.8.7-1.9.0/README.md --exclude *.pyd
+[2024-06-01 21:02:20] INFO root fetch - processPackages [py3-validate-email]: Remove: archive file [/home/abi/fetcher/tmp/py3-validate-email-1.0.5.post1.tar.gz]
+[2024-06-01 21:02:20] INFO root fetch - processPackages [py3-validate-email]: Remove: archive file [/home/abi/fetcher/tmp/py3_validate_email-1.0.5.post2-py3-none-any.whl.zip]
+[2024-06-01 21:02:20] INFO root fetch - main [MainThread]: End processing [py3-validate-email]: success
+[2024-06-01 21:02:21] INFO root fetch - processPackages [gallery-dl]: Remove: archive file [/home/abi/fetcher/tmp/gallery_dl-1.8.7.tar.gz]
+[2024-06-01 21:02:21] INFO root fetch - processPackages [gallery-dl]: Remove: archive file [/home/abi/fetcher/tmp/gallery_dl-1.9.0.tar.gz]
+[2024-06-01 21:02:21] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
+[2024-06-01 21:02:21] INFO root fetch - main [MainThread]: Store serial: [23482799]
