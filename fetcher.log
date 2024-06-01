@@ -21334,3 +21334,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:38:08] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.38.0.tar.gz]
 [2024-06-01 20:38:08] INFO root fetch - main [MainThread]: End processing [hezar]: success
 [2024-06-01 20:38:08] INFO root fetch - main [MainThread]: Store serial: [23482604]
+[2024-06-01 20:40:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482604]
+[2024-06-01 20:40:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moroccan-prayer-times
+[2024-06-01 20:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scim2-client
+[2024-06-01 20:40:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: exllamav2
+[2024-06-01 20:40:17] INFO root fetch - processPackages [moroccan-prayer-times]: New version: [0.0.9] Old Version: [0.0.13]
+[2024-06-01 20:40:17] WARNING root fetch - processPackages [scim2-client]: Skipping, unable to determine old version
+[2024-06-01 20:40:17] INFO root fetch - main [MainThread]: End processing [scim2-client] error
+[2024-06-01 20:40:17] INFO root fetch - processPackages [exllamav2]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 20:40:17] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/de/fb/2433715afa341f443ea4af55becb630fe065df4e8e79d9cb70f5131df348/moroccan_prayer_times-0.0.13.tar.gz
+[2024-06-01 20:40:17] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/60/94/6af0d7d7e310adaeb55ec445e70cc89c801948b3c283ba62f7b61d5a6c89/exllamav2-0.1.1-py3-none-any.whl
+[2024-06-01 20:40:17] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/6f/b6/974e7dd7973732bb57010d61ea7a49703337769a92389d6d635aa04aa355/moroccan_prayer_times-0.0.9-py3-none-any.whl
+[2024-06-01 20:40:17] INFO root fetch - processPackages [moroccan-prayer-times]: executing diffoscope
+[2024-06-01 20:40:17] INFO root fetch - processPackages [moroccan-prayer-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moroccan_prayer_times-0.0.13.tar.gz tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip --markdown 20240601/m/moroccan-prayer-times/0.0.13-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:40:18] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/90/3b/afd61d767975e136c863a0e51245be3643f8654509c65f810c9facb1c2c6/exllamav2-0.1.2-py3-none-any.whl
+[2024-06-01 20:40:18] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.13.tar.gz]
+[2024-06-01 20:40:18] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip]
+[2024-06-01 20:40:18] INFO root fetch - main [MainThread]: End processing [moroccan-prayer-times]: success
+[2024-06-01 20:40:18] INFO root fetch - processPackages [exllamav2]: executing diffoscope
+[2024-06-01 20:40:18] INFO root fetch - processPackages [exllamav2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exllamav2-0.1.1-py3-none-any.whl.zip tmp/exllamav2-0.1.2-py3-none-any.whl.zip --markdown 20240601/e/exllamav2/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 20:40:19] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.1.1-py3-none-any.whl.zip]
+[2024-06-01 20:40:19] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.1.2-py3-none-any.whl.zip]
+[2024-06-01 20:40:19] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
+[2024-06-01 20:40:19] INFO root fetch - main [MainThread]: Store serial: [23482612]
