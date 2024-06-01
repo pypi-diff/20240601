@@ -10189,3 +10189,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:16:29] INFO root fetch - processPackages [odoo-addons-oca-edi]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_edi-16.0.20240531.0-py3-none-any.whl.zip]
 [2024-06-01 06:16:29] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-edi]: success
 [2024-06-01 06:16:29] INFO root fetch - main [MainThread]: Store serial: [23477216]
+[2024-06-01 06:18:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477216]
+[2024-06-01 06:18:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 06:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semversioner
+[2024-06-01 06:18:38] INFO root fetch - processPackages [semversioner]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-06-01 06:18:38] INFO root fetch - processPackages [semversioner]: Downloading https://files.pythonhosted.org/packages/04/66/42d9f73bd8e99a223395232641166f984ca646e063ac191c597e7d3f9fe7/semversioner-2.0.2.tar.gz
+[2024-06-01 06:18:38] INFO root fetch - processPackages [semversioner]: Downloading https://files.pythonhosted.org/packages/c1/3f/8cbde6952af26fa214c364758a648bf2fd01e6a2e24e70026506f3fc91a8/semversioner-2.0.3.tar.gz
+[2024-06-01 06:18:38] INFO root fetch - processPackages [semversioner]: executing diffoscope
+[2024-06-01 06:18:38] INFO root fetch - processPackages [semversioner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semversioner-2.0.2.tar.gz tmp/semversioner-2.0.3.tar.gz --markdown 20240601/s/semversioner/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-06-01 06:18:39] INFO root fetch - processPackages [semversioner]: Remove: archive file [/home/abi/fetcher/tmp/semversioner-2.0.2.tar.gz]
+[2024-06-01 06:18:39] INFO root fetch - processPackages [semversioner]: Remove: archive file [/home/abi/fetcher/tmp/semversioner-2.0.3.tar.gz]
+[2024-06-01 06:18:39] INFO root fetch - main [MainThread]: End processing [semversioner]: success
+[2024-06-01 06:18:39] INFO root fetch - main [MainThread]: Store serial: [23477219]
