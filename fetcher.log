@@ -10744,3 +10744,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:27:47] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-06-01 07:27:47] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-06-01 07:27:47] INFO root fetch - main [MainThread]: Store serial: [23477498]
+[2024-06-01 07:29:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477498]
+[2024-06-01 07:29:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 07:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-package202461
+[2024-06-01 07:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver
+[2024-06-01 07:29:56] WARNING root fetch - processPackages [my-package202461]: Skipping, unable to determine old version
+[2024-06-01 07:29:56] INFO root fetch - main [MainThread]: End processing [my-package202461] error
+[2024-06-01 07:29:56] INFO root fetch - processPackages [heaserver]: New version: [1.6.2] Old Version: [1.6.0]
+[2024-06-01 07:29:56] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/28/e9/5e9be35093efd7f689541977f1d6e3d72fd28c339708a320cb47950c360d/heaserver-1.6.0.tar.gz
+[2024-06-01 07:29:56] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/58/af/76b7e0135a51ccb22313e770d2337b6fbddb4459f757fd3fb9e2ea24cedb/heaserver-1.6.2.tar.gz
+[2024-06-01 07:29:57] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2024-06-01 07:29:57] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.6.0.tar.gz tmp/heaserver-1.6.2.tar.gz --markdown 20240601/h/heaserver/1.6.0-1.6.2/README.md --exclude *.pyd
+[2024-06-01 07:29:58] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.6.0.tar.gz]
+[2024-06-01 07:29:58] INFO root fetch - processPackages [heaserver]: Remove: archive file [/home/abi/fetcher/tmp/heaserver-1.6.2.tar.gz]
+[2024-06-01 07:29:58] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2024-06-01 07:29:58] INFO root fetch - main [MainThread]: Store serial: [23477506]
