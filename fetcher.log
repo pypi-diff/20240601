@@ -14816,3 +14816,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:59:22] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.424.tar.gz]
 [2024-06-01 12:59:22] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-06-01 12:59:22] INFO root fetch - main [MainThread]: Store serial: [23479547]
+[2024-06-01 13:01:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479547]
+[2024-06-01 13:01:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python3-commons
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: R4P
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: IDswapper
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycatia
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-compute-module
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: helloworld-sdk
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: anaplan-sdk
+[2024-06-01 13:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tanjiro
+[2024-06-01 13:01:31] INFO root fetch - processPackages [IDswapper]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-01 13:01:31] INFO root fetch - processPackages [tanjiro]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-06-01 13:01:31] INFO root fetch - processPackages [python3-commons]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-01 13:01:31] INFO root fetch - processPackages [pycatia]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-06-01 13:01:31] WARNING root fetch - processPackages [R4P]: Skipping, unable to determine old version
+[2024-06-01 13:01:31] INFO root fetch - processPackages [tanjiro]: Downloading https://files.pythonhosted.org/packages/a4/29/9bf286627233def81ab1192e5529cfeae82cabba9071255c41860a5032ee/tanjiro-0.2.0.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - main [MainThread]: End processing [R4P] error
+[2024-06-01 13:01:31] WARNING root fetch - processPackages [helloworld-sdk]: Skipping, unable to determine old version
+[2024-06-01 13:01:31] INFO root fetch - main [MainThread]: End processing [helloworld-sdk] error
+[2024-06-01 13:01:31] WARNING root fetch - processPackages [python-compute-module]: Skipping, unable to determine old version
+[2024-06-01 13:01:31] INFO root fetch - main [MainThread]: End processing [python-compute-module] error
+[2024-06-01 13:01:31] INFO root fetch - processPackages [anaplan-sdk]: New version: [0.1.0] Old Version: [0.0.7]
+[2024-06-01 13:01:31] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/78/7a/a07b20c0edccdb172e4b62c76ef23fa909378796f5c9de0957b8ddfb80b3/python3_commons-0.5.8.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/14/eb/dcb7f6daf7524aa972791c59ef69d66d577ca818ec4bf10e47bb4a0acb16/idswapper-0.0.7.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [pycatia]: Downloading https://files.pythonhosted.org/packages/a7/bc/76a7862a0e57191581070bdff8c496154ef4afb1c74d76b0a0e3a2918390/pycatia-0.6.8.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [anaplan-sdk]: Downloading https://files.pythonhosted.org/packages/f6/c6/5edd53f5ceb563e4650d17d8834e5328af5f8518b6c4327366735c80d1a2/anaplan_sdk-0.0.7.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [tanjiro]: Downloading https://files.pythonhosted.org/packages/be/00/626e16ccc243999d79e3cdfac963d2164e6020048d68694b22fc992ef4d1/tanjiro-0.2.2.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/11/35/b353c6e9fb49ef089fcb645c3e1794bb907055a8b3de18a6b509abb9ecfc/python3_commons-0.5.9.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/3d/dc/3a24261122011eb283acc2b00a44f39f065992afdddc1ef09df028f62796/idswapper-0.0.8.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [tanjiro]: executing diffoscope
+[2024-06-01 13:01:31] INFO root fetch - processPackages [tanjiro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tanjiro-0.2.0.tar.gz tmp/tanjiro-0.2.2.tar.gz --markdown 20240601/t/tanjiro/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-06-01 13:01:31] INFO root fetch - processPackages [python3-commons]: executing diffoscope
+[2024-06-01 13:01:31] INFO root fetch - processPackages [python3-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python3_commons-0.5.8.tar.gz tmp/python3_commons-0.5.9.tar.gz --markdown 20240601/p/python3-commons/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-01 13:01:31] INFO root fetch - processPackages [pycatia]: Downloading https://files.pythonhosted.org/packages/67/5f/427610b345123536e143425f1d81deccd06e6d32f0dce54497bf17f4fd01/pycatia-0.6.9.tar.gz
+[2024-06-01 13:01:31] INFO root fetch - processPackages [anaplan-sdk]: Downloading https://files.pythonhosted.org/packages/25/af/7a654b6061e16a5bb06f4065bb2842182af6819e088457e5e44b85aaa771/anaplan_sdk-0.1.0.tar.gz
+[2024-06-01 13:01:32] INFO root fetch - processPackages [pycatia]: executing diffoscope
+[2024-06-01 13:01:32] INFO root fetch - processPackages [pycatia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatia-0.6.8.tar.gz tmp/pycatia-0.6.9.tar.gz --markdown 20240601/p/pycatia/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-06-01 13:01:32] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 13:01:32] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.7.tar.gz tmp/idswapper-0.0.8.tar.gz --markdown 20240601/I/IDswapper/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-01 13:01:32] INFO root fetch - processPackages [anaplan-sdk]: executing diffoscope
+[2024-06-01 13:01:32] INFO root fetch - processPackages [anaplan-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anaplan_sdk-0.0.7.tar.gz tmp/anaplan_sdk-0.1.0.tar.gz --markdown 20240601/a/anaplan-sdk/0.0.7-0.1.0/README.md --exclude *.pyd
+[2024-06-01 13:01:32] INFO root fetch - processPackages [tanjiro]: Remove: archive file [/home/abi/fetcher/tmp/tanjiro-0.2.0.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - processPackages [tanjiro]: Remove: archive file [/home/abi/fetcher/tmp/tanjiro-0.2.2.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - main [MainThread]: End processing [tanjiro]: success
+[2024-06-01 13:01:32] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.8.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.9.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
+[2024-06-01 13:01:32] INFO root fetch - processPackages [anaplan-sdk]: Remove: archive file [/home/abi/fetcher/tmp/anaplan_sdk-0.0.7.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - processPackages [anaplan-sdk]: Remove: archive file [/home/abi/fetcher/tmp/anaplan_sdk-0.1.0.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - main [MainThread]: End processing [anaplan-sdk]: success
+[2024-06-01 13:01:32] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.7.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.8.tar.gz]
+[2024-06-01 13:01:32] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 13:01:37] INFO root fetch - processPackages [pycatia]: Remove: archive file [/home/abi/fetcher/tmp/pycatia-0.6.8.tar.gz]
+[2024-06-01 13:01:37] INFO root fetch - processPackages [pycatia]: Remove: archive file [/home/abi/fetcher/tmp/pycatia-0.6.9.tar.gz]
+[2024-06-01 13:01:37] INFO root fetch - main [MainThread]: End processing [pycatia]: success
+[2024-06-01 13:01:37] INFO root fetch - main [MainThread]: Store serial: [23479582]
