@@ -15329,3 +15329,45 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:33:44] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.22.tar.gz]
 [2024-06-01 13:33:44] INFO root fetch - main [MainThread]: End processing [aiomql]: success
 [2024-06-01 13:33:44] INFO root fetch - main [MainThread]: Store serial: [23479765]
+[2024-06-01 13:35:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479765]
+[2024-06-01 13:35:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 13:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haniwers
+[2024-06-01 13:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchsnapshot-nightly
+[2024-06-01 13:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: IDswapper
+[2024-06-01 13:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lycoris-lora
+[2024-06-01 13:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyjous
+[2024-06-01 13:35:53] INFO root fetch - processPackages [IDswapper]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 13:35:53] INFO root fetch - processPackages [torchsnapshot-nightly]: New version: [2024.5.31] Old Version: [2024.5.30]
+[2024-06-01 13:35:53] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/5c/91/66ce08dbf73ecbfe34b47455f99641d5b874b4f75eaa64dacc57c32239cd/idswapper-0.1.0.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [haniwers]: New version: [0.16.0] Old Version: [0.15.2]
+[2024-06-01 13:35:53] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/ef/83/8d4ba8fb95a79a92a733d8259eb5559500b095dd756237da1f712f80b3f2/torchsnapshot_nightly-2024.5.30.tar.gz
+[2024-06-01 13:35:53] WARNING root fetch - processPackages [pyjous]: Skipping, unable to determine old version
+[2024-06-01 13:35:53] INFO root fetch - main [MainThread]: End processing [pyjous] error
+[2024-06-01 13:35:53] INFO root fetch - processPackages [lycoris-lora]: New version: [3.0.0.dev7] Old Version: [3.0.0.dev6]
+[2024-06-01 13:35:53] INFO root fetch - processPackages [haniwers]: Downloading https://files.pythonhosted.org/packages/aa/bc/d6dada005496daf4b60c80cc0a8c28cfd6d93b90ac2075bcfc9a8edeff46/haniwers-0.15.2.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/49/74/f04f736373cde6631a4b08a013a1ae493f560e82850300e67f8cbf14244a/lycoris_lora-3.0.0.dev6.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [torchsnapshot-nightly]: Downloading https://files.pythonhosted.org/packages/52/61/824e19f38974982e03859cc1d7a238ab5533e0cdd8faa52561fd42e4ec82/torchsnapshot_nightly-2024.5.31.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [torchsnapshot-nightly]: executing diffoscope
+[2024-06-01 13:35:53] INFO root fetch - processPackages [torchsnapshot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsnapshot_nightly-2024.5.30.tar.gz tmp/torchsnapshot_nightly-2024.5.31.tar.gz --markdown 20240601/t/torchsnapshot-nightly/2024.5.30-2024.5.31/README.md --exclude *.pyd
+[2024-06-01 13:35:53] INFO root fetch - processPackages [haniwers]: Downloading https://files.pythonhosted.org/packages/30/ca/6f4bff8ece0c762b4058bde9578cb59ef620fd9f2f496396daff8ed8538e/haniwers-0.16.0.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/1f/b4/fb8488b1cfe6e5505493e3ff1c17a3db9708d17dd91f13fff5c3a99c0522/lycoris_lora-3.0.0.dev7.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/cf/97/9c5528503232e075f2301ec8b367a8a218dd78cf782f997f82097c00e807/idswapper-0.1.1.tar.gz
+[2024-06-01 13:35:53] INFO root fetch - processPackages [haniwers]: executing diffoscope
+[2024-06-01 13:35:53] INFO root fetch - processPackages [haniwers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haniwers-0.15.2.tar.gz tmp/haniwers-0.16.0.tar.gz --markdown 20240601/h/haniwers/0.15.2-0.16.0/README.md --exclude *.pyd
+[2024-06-01 13:35:53] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2024-06-01 13:35:53] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-3.0.0.dev6.tar.gz tmp/lycoris_lora-3.0.0.dev7.tar.gz --markdown 20240601/l/lycoris-lora/3.0.0.dev6-3.0.0.dev7/README.md --exclude *.pyd
+[2024-06-01 13:35:54] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 13:35:54] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.1.0.tar.gz tmp/idswapper-0.1.1.tar.gz --markdown 20240601/I/IDswapper/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 13:35:54] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.30.tar.gz]
+[2024-06-01 13:35:54] INFO root fetch - processPackages [torchsnapshot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchsnapshot_nightly-2024.5.31.tar.gz]
+[2024-06-01 13:35:54] INFO root fetch - main [MainThread]: End processing [torchsnapshot-nightly]: success
+[2024-06-01 13:35:54] INFO root fetch - processPackages [haniwers]: Remove: archive file [/home/abi/fetcher/tmp/haniwers-0.15.2.tar.gz]
+[2024-06-01 13:35:54] INFO root fetch - processPackages [haniwers]: Remove: archive file [/home/abi/fetcher/tmp/haniwers-0.16.0.tar.gz]
+[2024-06-01 13:35:54] INFO root fetch - main [MainThread]: End processing [haniwers]: success
+[2024-06-01 13:35:54] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-3.0.0.dev6.tar.gz]
+[2024-06-01 13:35:54] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-3.0.0.dev7.tar.gz]
+[2024-06-01 13:35:54] INFO root fetch - main [MainThread]: End processing [lycoris-lora]: success
+[2024-06-01 13:35:55] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.0.tar.gz]
+[2024-06-01 13:35:55] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.1.tar.gz]
+[2024-06-01 13:35:55] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 13:35:55] INFO root fetch - main [MainThread]: Store serial: [23479781]
