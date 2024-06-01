@@ -14940,3 +14940,24 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 
 [2024-06-01 13:05:58] INFO root fetch - main [MainThread]: End processing [muko] error
 [2024-06-01 13:05:58] INFO root fetch - main [MainThread]: Store serial: [23479602]
+[2024-06-01 13:08:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479602]
+[2024-06-01 13:08:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 13:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: portkey-ai
+[2024-06-01 13:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IDswapper
+[2024-06-01 13:08:07] INFO root fetch - processPackages [IDswapper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 13:08:07] INFO root fetch - processPackages [portkey-ai]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-06-01 13:08:07] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/3d/dc/3a24261122011eb283acc2b00a44f39f065992afdddc1ef09df028f62796/idswapper-0.0.8.tar.gz
+[2024-06-01 13:08:07] INFO root fetch - processPackages [portkey-ai]: Downloading https://files.pythonhosted.org/packages/c7/96/448210e1c24f067758f23643be8b25f5101da9ed7290bfd9079a6a4d884d/portkey_ai-1.3.0.tar.gz
+[2024-06-01 13:08:07] INFO root fetch - processPackages [portkey-ai]: Downloading https://files.pythonhosted.org/packages/3e/de/1fc8d5ee5fafaaf24e6ce551a2d2339d58983ba3cf92c4aed1a09469f14e/portkey_ai-1.3.1.tar.gz
+[2024-06-01 13:08:07] INFO root fetch - processPackages [portkey-ai]: executing diffoscope
+[2024-06-01 13:08:07] INFO root fetch - processPackages [portkey-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portkey_ai-1.3.0.tar.gz tmp/portkey_ai-1.3.1.tar.gz --markdown 20240601/p/portkey-ai/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-06-01 13:08:08] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/18/2d/8f4ab910e8d7a0424bec480d1bbbdf4f0f9d8d2e111e7a0602d817faff77/idswapper-0.0.9.tar.gz
+[2024-06-01 13:08:08] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 13:08:08] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.8.tar.gz tmp/idswapper-0.0.9.tar.gz --markdown 20240601/I/IDswapper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 13:08:08] INFO root fetch - processPackages [portkey-ai]: Remove: archive file [/home/abi/fetcher/tmp/portkey_ai-1.3.0.tar.gz]
+[2024-06-01 13:08:08] INFO root fetch - processPackages [portkey-ai]: Remove: archive file [/home/abi/fetcher/tmp/portkey_ai-1.3.1.tar.gz]
+[2024-06-01 13:08:08] INFO root fetch - main [MainThread]: End processing [portkey-ai]: success
+[2024-06-01 13:08:09] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.8.tar.gz]
+[2024-06-01 13:08:09] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.9.tar.gz]
+[2024-06-01 13:08:09] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 13:08:09] INFO root fetch - main [MainThread]: Store serial: [23479608]
