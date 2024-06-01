@@ -9741,3 +9741,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:34:51] INFO root fetch - processPackages [django-lookbook]: Remove: archive file [/home/abi/fetcher/tmp/django_lookbook-1.0.1.tar.gz]
 [2024-06-01 05:34:51] INFO root fetch - main [MainThread]: End processing [django-lookbook]: success
 [2024-06-01 05:34:51] INFO root fetch - main [MainThread]: Store serial: [23476989]
+[2024-06-01 05:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476989]
+[2024-06-01 05:37:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 05:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygda
+[2024-06-01 05:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: distribute-crawler
+[2024-06-01 05:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphmix
+[2024-06-01 05:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: space-analysis.py
+[2024-06-01 05:37:00] INFO root fetch - processPackages [space-analysis.py]: New version: [2024.5.31] Old Version: [0.1.0]
+[2024-06-01 05:37:01] INFO root fetch - processPackages [graphmix]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-06-01 05:37:01] INFO root fetch - processPackages [pygda]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 05:37:01] INFO root fetch - processPackages [space-analysis.py]: Downloading https://files.pythonhosted.org/packages/7d/8d/64186b9d73e80619edaaa62273abc907e2581ae6366df2e13831d7df6e70/space_analysis_py-0.1.0.tar.gz
+[2024-06-01 05:37:01] WARNING root fetch - processPackages [distribute-crawler]: Skipping, unable to determine old version
+[2024-06-01 05:37:01] INFO root fetch - main [MainThread]: End processing [distribute-crawler] error
+[2024-06-01 05:37:01] INFO root fetch - processPackages [graphmix]: Downloading https://files.pythonhosted.org/packages/72/71/85a877d6e2838823c356ade96d4c07afb0694567bec10745d58a2c4d4086/graphmix-0.0.0.tar.gz
+[2024-06-01 05:37:01] INFO root fetch - processPackages [pygda]: Downloading https://files.pythonhosted.org/packages/ab/cb/42b4445e5b61954f61136608c6d07d96ade1a440fb9ef412bafc15dbfbb8/pygda-0.0.3.tar.gz
+[2024-06-01 05:37:01] INFO root fetch - processPackages [space-analysis.py]: Downloading https://files.pythonhosted.org/packages/e0/79/2308c4c7351543b67422b7d26765b79a01944d890c73e1752015bf60fc47/space_analysis_py-2024.5.31.tar.gz
+[2024-06-01 05:37:01] INFO root fetch - processPackages [space-analysis.py]: executing diffoscope
+[2024-06-01 05:37:01] INFO root fetch - processPackages [space-analysis.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/space_analysis_py-0.1.0.tar.gz tmp/space_analysis_py-2024.5.31.tar.gz --markdown 20240601/s/space-analysis.py/0.1.0-2024.5.31/README.md --exclude *.pyd
+[2024-06-01 05:37:01] INFO root fetch - processPackages [graphmix]: Downloading https://files.pythonhosted.org/packages/4f/b6/f25b2984bcf235b2944da548722da08d13696b27dda383d8f385cd966f4c/graphmix-0.0.1.tar.gz
+[2024-06-01 05:37:01] INFO root fetch - processPackages [pygda]: Downloading https://files.pythonhosted.org/packages/ae/eb/ce471def672802d0c320ba42fd6d7c989c49d9c8c38799de074b621d8f36/pygda-0.0.4.tar.gz
+[2024-06-01 05:37:01] INFO root fetch - processPackages [pygda]: executing diffoscope
+[2024-06-01 05:37:01] INFO root fetch - processPackages [pygda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygda-0.0.3.tar.gz tmp/pygda-0.0.4.tar.gz --markdown 20240601/p/pygda/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 05:37:01] INFO root fetch - processPackages [graphmix]: executing diffoscope
+[2024-06-01 05:37:01] INFO root fetch - processPackages [graphmix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphmix-0.0.0.tar.gz tmp/graphmix-0.0.1.tar.gz --markdown 20240601/g/graphmix/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-06-01 05:37:02] INFO root fetch - processPackages [space-analysis.py]: Remove: archive file [/home/abi/fetcher/tmp/space_analysis_py-0.1.0.tar.gz]
+[2024-06-01 05:37:02] INFO root fetch - processPackages [space-analysis.py]: Remove: archive file [/home/abi/fetcher/tmp/space_analysis_py-2024.5.31.tar.gz]
+[2024-06-01 05:37:02] INFO root fetch - main [MainThread]: End processing [space-analysis.py]: success
+[2024-06-01 05:37:02] INFO root fetch - processPackages [graphmix]: Remove: archive file [/home/abi/fetcher/tmp/graphmix-0.0.0.tar.gz]
+[2024-06-01 05:37:02] INFO root fetch - processPackages [graphmix]: Remove: archive file [/home/abi/fetcher/tmp/graphmix-0.0.1.tar.gz]
+[2024-06-01 05:37:02] INFO root fetch - main [MainThread]: End processing [graphmix]: success
+[2024-06-01 05:37:02] INFO root fetch - processPackages [pygda]: Remove: archive file [/home/abi/fetcher/tmp/pygda-0.0.3.tar.gz]
+[2024-06-01 05:37:02] INFO root fetch - processPackages [pygda]: Remove: archive file [/home/abi/fetcher/tmp/pygda-0.0.4.tar.gz]
+[2024-06-01 05:37:02] INFO root fetch - main [MainThread]: End processing [pygda]: success
+[2024-06-01 05:37:02] INFO root fetch - main [MainThread]: Store serial: [23477003]
