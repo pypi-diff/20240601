@@ -22525,3 +22525,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:10:07] INFO root fetch - processPackages [gotrue]: Remove: archive file [/home/abi/fetcher/tmp/gotrue-2.4.3.tar.gz]
 [2024-06-01 22:10:07] INFO root fetch - main [MainThread]: End processing [gotrue]: success
 [2024-06-01 22:10:07] INFO root fetch - main [MainThread]: Store serial: [23483238]
+[2024-06-01 22:12:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483238]
+[2024-06-01 22:12:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zprp-ffmpeg
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: klldFN
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: c2cgeoportal-commons
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: c2cgeoportal-geoportal
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: almax-common
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: c2cgeoportal-admin
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: weather-chatbot-phi3
+[2024-06-01 22:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: upgini
+[2024-06-01 22:12:16] INFO root fetch - processPackages [almax-common]: New version: [1.0.3.dev20240601181343] Old Version: [1.0.3]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [zprp-ffmpeg]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [weather-chatbot-phi3]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [c2cgeoportal-admin]: New version: [2.8.1.96] Old Version: [2.8.1.94]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [klldFN]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/78/f6/914177491fd930b4b2044174f95de3ef1bec9204c7025a6e355c3f763556/zprp_ffmpeg-1.2.0.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [weather-chatbot-phi3]: Downloading https://files.pythonhosted.org/packages/64/39/e82b46dd8351e26acb878a6d7a0bcc9bdf8e382074d72dd468437b6e0109/weather_chatbot_phi3-0.1.1.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [c2cgeoportal-commons]: New version: [2.8.1.96] Old Version: [2.8.1.94]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [c2cgeoportal-geoportal]: New version: [2.8.1.96] Old Version: [2.8.1.94]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-06-01 22:12:16] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/ab/9a/bd48f98f35155fc9155da6cc9c7882cf3013b21278de0cc4898c3722574a/almax_common-1.0.3.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [c2cgeoportal-admin]: Downloading https://files.pythonhosted.org/packages/44/9e/ed9414db135a3fc7b4d492fd5b51ba5251b380d67642cbf19135e257af51/c2cgeoportal_admin-2.8.1.94-py3-none-any.whl
+[2024-06-01 22:12:16] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/5a/06/2a04f5bcd6919d74834fb47e13574fcfb403868fe094c277a04bcfd8e5bf/klldFN-2.0.1.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [c2cgeoportal-commons]: Downloading https://files.pythonhosted.org/packages/7a/a5/278f87913db47c703bc0a57c1798acca5c99e9558715269af2dbf0464df6/c2cgeoportal_commons-2.8.1.94-py3-none-any.whl
+[2024-06-01 22:12:16] INFO root fetch - processPackages [zprp-ffmpeg]: Downloading https://files.pythonhosted.org/packages/c1/5a/124ad625fb7ab5feec088bcd449dabb61c4c0ac3688dfc2d282bdcb57906/zprp_ffmpeg-2.0.0.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [c2cgeoportal-geoportal]: Downloading https://files.pythonhosted.org/packages/a6/ac/e5689b621f876a934c05abe2c4583865c7c8bb2764ce253fae12da66d67a/c2cgeoportal_geoportal-2.8.1.94-py2.py3-none-any.whl
+[2024-06-01 22:12:16] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/64/88/ae4d436cd5914c9d08b5efe8cd8636570554e42f3b1d0633c9e85498b061/almax_common-1.0.3.dev20240601181343.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [upgini]: Downloading https://files.pythonhosted.org/packages/59/79/dc47448e0c68a4e00d9d0b7f4c640207fa605fe48cdc53e30221037a1962/upgini-1.1.98.tar.gz
+[2024-06-01 22:12:16] INFO root fetch - processPackages [weather-chatbot-phi3]: Downloading https://files.pythonhosted.org/packages/bd/c5/6b56926d76f4de8d1108d23a825b7cf59f4522e89c82e93f6e73de70b3b5/weather_chatbot_phi3-0.1.2.tar.gz
+[2024-06-01 22:12:17] INFO root fetch - processPackages [zprp-ffmpeg]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [zprp-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zprp_ffmpeg-1.2.0.tar.gz tmp/zprp_ffmpeg-2.0.0.tar.gz --markdown 20240601/z/zprp-ffmpeg/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.3.tar.gz tmp/almax_common-1.0.3.dev20240601181343.tar.gz --markdown 20240601/a/almax-common/1.0.3-1.0.3.dev20240601181343/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [weather-chatbot-phi3]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [weather-chatbot-phi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weather_chatbot_phi3-0.1.1.tar.gz tmp/weather_chatbot_phi3-0.1.2.tar.gz --markdown 20240601/w/weather-chatbot-phi3/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/4e/df/c489406eab9729742960497b90ca12e1ede97ecef63c16cb8fb551b59f87/klldFN-2.0.2.tar.gz
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-admin]: Downloading https://files.pythonhosted.org/packages/a8/ec/a5f4c115741d3d0c1c17663fc279d9531603c64bb6d5fae1a2bca5479b9b/c2cgeoportal_admin-2.8.1.96-py3-none-any.whl
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-commons]: Downloading https://files.pythonhosted.org/packages/24/5d/239e7b478e544470d5527cd141a82569dee0b514f55f1dd3c24470aceab3/c2cgeoportal_commons-2.8.1.96-py3-none-any.whl
+[2024-06-01 22:12:17] INFO root fetch - processPackages [klldFN]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [klldFN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klldFN-2.0.1.tar.gz tmp/klldFN-2.0.2.tar.gz --markdown 20240601/k/klldFN/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [upgini]: Downloading https://files.pythonhosted.org/packages/32/f1/1df90a6a856d855308ddf057a7b8cdad7dbcafb6230f0592bbff90f929fd/upgini-1.1.99.tar.gz
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-commons]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cgeoportal_commons-2.8.1.94-py3-none-any.whl.zip tmp/c2cgeoportal_commons-2.8.1.96-py3-none-any.whl.zip --markdown 20240601/c/c2cgeoportal-commons/2.8.1.94-2.8.1.96/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-geoportal]: Downloading https://files.pythonhosted.org/packages/39/59/e4c3a533c3c83ef22b4adf68036c21a6132d58e8be4bfb1672db44ab9522/c2cgeoportal_geoportal-2.8.1.96-py2.py3-none-any.whl
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-admin]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cgeoportal_admin-2.8.1.94-py3-none-any.whl.zip tmp/c2cgeoportal_admin-2.8.1.96-py3-none-any.whl.zip --markdown 20240601/c/c2cgeoportal-admin/2.8.1.94-2.8.1.96/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20240601/u/upgini/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [weather-chatbot-phi3]: Remove: archive file [/home/abi/fetcher/tmp/weather_chatbot_phi3-0.1.1.tar.gz]
+[2024-06-01 22:12:17] INFO root fetch - processPackages [weather-chatbot-phi3]: Remove: archive file [/home/abi/fetcher/tmp/weather_chatbot_phi3-0.1.2.tar.gz]
+[2024-06-01 22:12:17] INFO root fetch - main [MainThread]: End processing [weather-chatbot-phi3]: success
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-geoportal]: executing diffoscope
+[2024-06-01 22:12:17] INFO root fetch - processPackages [c2cgeoportal-geoportal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cgeoportal_geoportal-2.8.1.94-py2.py3-none-any.whl.zip tmp/c2cgeoportal_geoportal-2.8.1.96-py2.py3-none-any.whl.zip --markdown 20240601/c/c2cgeoportal-geoportal/2.8.1.94-2.8.1.96/README.md --exclude *.pyd
+[2024-06-01 22:12:17] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.3.tar.gz]
+[2024-06-01 22:12:17] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.3.dev20240601181343.tar.gz]
+[2024-06-01 22:12:17] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 22:12:18] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-2.0.1.tar.gz]
+[2024-06-01 22:12:18] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-2.0.2.tar.gz]
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [klldFN]: success
+[2024-06-01 22:12:18] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-1.2.0.tar.gz]
+[2024-06-01 22:12:18] INFO root fetch - processPackages [zprp-ffmpeg]: Remove: archive file [/home/abi/fetcher/tmp/zprp_ffmpeg-2.0.0.tar.gz]
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [zprp-ffmpeg]: success
+[2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-commons]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_commons-2.8.1.94-py3-none-any.whl.zip]
+[2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-commons]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_commons-2.8.1.96-py3-none-any.whl.zip]
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [c2cgeoportal-commons]: success
+[2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-admin]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_admin-2.8.1.94-py3-none-any.whl.zip]
+[2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-admin]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_admin-2.8.1.96-py3-none-any.whl.zip]
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [c2cgeoportal-admin]: success
+[2024-06-01 22:12:18] INFO root fetch - processPackages [upgini]: Remove: archive file [/home/abi/fetcher/tmp/upgini-1.1.98.tar.gz]
+[2024-06-01 22:12:18] INFO root fetch - processPackages [upgini]: Remove: archive file [/home/abi/fetcher/tmp/upgini-1.1.99.tar.gz]
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-geoportal]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_geoportal-2.8.1.94-py2.py3-none-any.whl.zip]
+[2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-geoportal]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_geoportal-2.8.1.96-py2.py3-none-any.whl.zip]
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [c2cgeoportal-geoportal]: success
+[2024-06-01 22:12:18] INFO root fetch - main [MainThread]: Store serial: [23483260]
