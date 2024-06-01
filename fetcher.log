@@ -19921,3 +19921,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:59:09] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.9.0.tar.gz]
 [2024-06-01 18:59:09] INFO root fetch - main [MainThread]: End processing [burr]: success
 [2024-06-01 18:59:09] INFO root fetch - main [MainThread]: Store serial: [23481966]
+[2024-06-01 19:01:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481966]
+[2024-06-01 19:01:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 19:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmflex
+[2024-06-01 19:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lensepy
+[2024-06-01 19:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uvpipx
+[2024-06-01 19:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clarabel
+[2024-06-01 19:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: julep
+[2024-06-01 19:01:19] INFO root fetch - processPackages [llmflex]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 19:01:19] INFO root fetch - processPackages [uvpipx]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-06-01 19:01:19] INFO root fetch - processPackages [julep]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 19:01:19] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/15/75/405ce5d57939b02d01f1aeb62f864fb6458f40b07802b19e74694f655a3c/llmflex-0.1.7.tar.gz
+[2024-06-01 19:01:19] WARNING root fetch - processPackages [lensepy]: Skipping, unable to determine old version
+[2024-06-01 19:01:19] INFO root fetch - main [MainThread]: End processing [lensepy] error
+[2024-06-01 19:01:19] INFO root fetch - processPackages [uvpipx]: Downloading https://files.pythonhosted.org/packages/71/f2/ef54f8d4f983d37f46a43bc57e5f1ca6bd7225b145bf3205e0c756524781/uvpipx-0.3.1.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/16/c5/f2a1a132f5f837c77d1e19669ebd975de7c353d144ecd34a49a9dfaf7c0c/julep-0.3.4.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [clarabel]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 19:01:19] INFO root fetch - processPackages [clarabel]: Downloading https://files.pythonhosted.org/packages/85/bb/5a61eeed37a28b6c0f40657713b5130fd802605b057a6e8a008046c2122f/clarabel-0.8.1.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [uvpipx]: Downloading https://files.pythonhosted.org/packages/9f/87/e5faab4cf751dd898ed8c3d5118a3c02a22d8251fc49d392506cc1cceeba/uvpipx-0.4.0.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/99/5f/4d3afeccc3bb2880986a999d89eb9c3c6f184bc38aa085f44f9e6f32b21d/llmflex-0.1.8.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/11/d3/170cafc6e0d6549af0b681cfab9f92ac5a3c5edc9b7e89ec53ceff16f27d/julep-0.3.5.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [uvpipx]: executing diffoscope
+[2024-06-01 19:01:19] INFO root fetch - processPackages [uvpipx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uvpipx-0.3.1.tar.gz tmp/uvpipx-0.4.0.tar.gz --markdown 20240601/u/uvpipx/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-06-01 19:01:19] INFO root fetch - processPackages [llmflex]: executing diffoscope
+[2024-06-01 19:01:19] INFO root fetch - processPackages [llmflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmflex-0.1.7.tar.gz tmp/llmflex-0.1.8.tar.gz --markdown 20240601/l/llmflex/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 19:01:19] INFO root fetch - processPackages [julep]: executing diffoscope
+[2024-06-01 19:01:19] INFO root fetch - processPackages [julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/julep-0.3.4.tar.gz tmp/julep-0.3.5.tar.gz --markdown 20240601/j/julep/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 19:01:19] INFO root fetch - processPackages [clarabel]: Downloading https://files.pythonhosted.org/packages/bb/93/fb4b178a6697d04690c392289bb504032116eaf9f46c501fb23eb42a069d/clarabel-0.9.0.tar.gz
+[2024-06-01 19:01:19] INFO root fetch - processPackages [clarabel]: executing diffoscope
+[2024-06-01 19:01:19] INFO root fetch - processPackages [clarabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clarabel-0.8.1.tar.gz tmp/clarabel-0.9.0.tar.gz --markdown 20240601/c/clarabel/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 19:01:20] INFO root fetch - processPackages [uvpipx]: Remove: archive file [/home/abi/fetcher/tmp/uvpipx-0.3.1.tar.gz]
+[2024-06-01 19:01:20] INFO root fetch - processPackages [uvpipx]: Remove: archive file [/home/abi/fetcher/tmp/uvpipx-0.4.0.tar.gz]
+[2024-06-01 19:01:20] INFO root fetch - main [MainThread]: End processing [uvpipx]: success
+[2024-06-01 19:01:20] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.7.tar.gz]
+[2024-06-01 19:01:20] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.8.tar.gz]
+[2024-06-01 19:01:20] INFO root fetch - main [MainThread]: End processing [llmflex]: success
+[2024-06-01 19:01:20] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.4.tar.gz]
+[2024-06-01 19:01:20] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.5.tar.gz]
+[2024-06-01 19:01:20] INFO root fetch - main [MainThread]: End processing [julep]: success
+[2024-06-01 19:01:21] INFO root fetch - processPackages [clarabel]: Remove: archive file [/home/abi/fetcher/tmp/clarabel-0.8.1.tar.gz]
+[2024-06-01 19:01:21] INFO root fetch - processPackages [clarabel]: Remove: archive file [/home/abi/fetcher/tmp/clarabel-0.9.0.tar.gz]
+[2024-06-01 19:01:21] INFO root fetch - main [MainThread]: End processing [clarabel]: success
+[2024-06-01 19:01:21] INFO root fetch - main [MainThread]: Store serial: [23481990]
