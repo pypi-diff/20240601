@@ -9828,3 +9828,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:41:27] INFO root fetch - processPackages [cdktf-cdktf-provider-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-digitalocean-9.0.1.tar.gz]
 [2024-06-01 05:41:27] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-digitalocean]: success
 [2024-06-01 05:41:27] INFO root fetch - main [MainThread]: Store serial: [23477018]
+[2024-06-01 05:43:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477018]
+[2024-06-01 05:43:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 05:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chinastock-pro
+[2024-06-01 05:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kyutils
+[2024-06-01 05:43:36] WARNING root fetch - processPackages [chinastock-pro]: Skipping, unable to determine old version
+[2024-06-01 05:43:36] INFO root fetch - main [MainThread]: End processing [chinastock-pro] error
+[2024-06-01 05:43:36] INFO root fetch - processPackages [kyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 05:43:36] INFO root fetch - processPackages [kyutils]: Downloading https://files.pythonhosted.org/packages/0f/ea/d45838cd81aec74ddac9abaffe008e748749f47c13c7a245d398e04959c7/kyutils-0.1.8.tar.gz
+[2024-06-01 05:43:37] INFO root fetch - processPackages [kyutils]: Downloading https://files.pythonhosted.org/packages/2d/78/86c3d121c7ace4c77754448df9f9265e090ccbc4647d65e8cdef1dfa7866/kyutils-0.1.9.tar.gz
+[2024-06-01 05:43:37] INFO root fetch - processPackages [kyutils]: executing diffoscope
+[2024-06-01 05:43:37] INFO root fetch - processPackages [kyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kyutils-0.1.8.tar.gz tmp/kyutils-0.1.9.tar.gz --markdown 20240601/k/kyutils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 05:43:37] INFO root fetch - processPackages [kyutils]: Remove: archive file [/home/abi/fetcher/tmp/kyutils-0.1.8.tar.gz]
+[2024-06-01 05:43:37] INFO root fetch - processPackages [kyutils]: Remove: archive file [/home/abi/fetcher/tmp/kyutils-0.1.9.tar.gz]
+[2024-06-01 05:43:37] INFO root fetch - main [MainThread]: End processing [kyutils]: success
+[2024-06-01 05:43:37] INFO root fetch - main [MainThread]: Store serial: [23477029]
