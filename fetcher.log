@@ -20101,3 +20101,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:10:08] INFO root fetch - main [MainThread]: End processing [CausalBootstrapping]: success
 [2024-06-01 19:10:08] INFO root fetch - main [MainThread]: End processing [almax-common]: success
 [2024-06-01 19:10:08] INFO root fetch - main [MainThread]: Store serial: [23482046]
+[2024-06-01 19:12:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482046]
+[2024-06-01 19:12:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 19:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gh-copilot-history
+[2024-06-01 19:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-queue
+[2024-06-01 19:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-datapack
+[2024-06-01 19:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otsucfgmng
+[2024-06-01 19:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qfpy
+[2024-06-01 19:12:17] INFO root fetch - processPackages [python-datapack]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-01 19:12:17] WARNING root fetch - processPackages [gh-copilot-history]: Skipping, unable to determine old version
+[2024-06-01 19:12:17] INFO root fetch - main [MainThread]: End processing [gh-copilot-history] error
+[2024-06-01 19:12:17] INFO root fetch - processPackages [qfpy]: New version: [9.0.0] Old Version: [8.2.1]
+[2024-06-01 19:12:17] INFO root fetch - processPackages [yt-queue]: New version: [0.9.1] Old Version: [0.8.0]
+[2024-06-01 19:12:17] INFO root fetch - processPackages [otsucfgmng]: New version: [1.4.0.311] Old Version: [1.3.5.311]
+[2024-06-01 19:12:17] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/1a/60/2b8d065372b9267d4ef97544f4f073f5e2f018bfb4248b6725ec722d61d7/python_datapack-0.2.0.tar.gz
+[2024-06-01 19:12:17] INFO root fetch - processPackages [yt-queue]: Downloading https://files.pythonhosted.org/packages/2b/f2/21e925d73a92e0893cd553108adef375e4a5b788eac0fb8457efc2d8acbb/yt-queue-0.8.0.tar.gz
+[2024-06-01 19:12:17] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/52/37/a71aafd1bda0239111abc2852dc1e73bbbf4043fcb9115b75dd305de995a/qfpy-8.2.1.tar.gz
+[2024-06-01 19:12:17] INFO root fetch - processPackages [otsucfgmng]: Downloading https://files.pythonhosted.org/packages/16/2f/1d02339ec1e169a6d585de44693c37f4fabab1fa581c3aaab71ac8960ba0/otsucfgmng-1.3.5.311-py3-none-any.whl
+[2024-06-01 19:12:17] INFO root fetch - processPackages [python-datapack]: Downloading https://files.pythonhosted.org/packages/7b/f1/bad60c9cb79bb4500c489edcb317178c03c2e2a22fbcc1809a4cd7493733/python_datapack-0.2.1.tar.gz
+[2024-06-01 19:12:17] INFO root fetch - processPackages [qfpy]: Downloading https://files.pythonhosted.org/packages/94/b7/c7361f4a53aeb04bd76bcadef0071d93e9fce3479221259433c5528aa846/qfpy-9.0.0.tar.gz
+[2024-06-01 19:12:17] INFO root fetch - processPackages [otsucfgmng]: Downloading https://files.pythonhosted.org/packages/55/da/d29778c4709166a9ac3c39d6f61b2fe5b0ccd5cfac0f429e9abb01f57c6d/otsucfgmng-1.4.0.311-py3-none-any.whl
+[2024-06-01 19:12:17] INFO root fetch - processPackages [python-datapack]: executing diffoscope
+[2024-06-01 19:12:17] INFO root fetch - processPackages [python-datapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_datapack-0.2.0.tar.gz tmp/python_datapack-0.2.1.tar.gz --markdown 20240601/p/python-datapack/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-01 19:12:18] INFO root fetch - processPackages [yt-queue]: Downloading https://files.pythonhosted.org/packages/6c/bd/72a022468f75a329159e74736e3d51543b324508f8f08ff19f5e35912c1d/yt_queue-0.9.1.tar.gz
+[2024-06-01 19:12:18] INFO root fetch - processPackages [otsucfgmng]: executing diffoscope
+[2024-06-01 19:12:18] INFO root fetch - processPackages [otsucfgmng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otsucfgmng-1.3.5.311-py3-none-any.whl.zip tmp/otsucfgmng-1.4.0.311-py3-none-any.whl.zip --markdown 20240601/o/otsucfgmng/1.3.5.311-1.4.0.311/README.md --exclude *.pyd
+[2024-06-01 19:12:18] INFO root fetch - processPackages [qfpy]: executing diffoscope
+[2024-06-01 19:12:18] INFO root fetch - processPackages [yt-queue]: executing diffoscope
+[2024-06-01 19:12:18] INFO root fetch - processPackages [qfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qfpy-8.2.1.tar.gz tmp/qfpy-9.0.0.tar.gz --markdown 20240601/q/qfpy/8.2.1-9.0.0/README.md --exclude *.pyd
+[2024-06-01 19:12:18] INFO root fetch - processPackages [yt-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-queue-0.8.0.tar.gz tmp/yt_queue-0.9.1.tar.gz --markdown 20240601/y/yt-queue/0.8.0-0.9.1/README.md --exclude *.pyd
+[2024-06-01 19:12:18] INFO root fetch - processPackages [otsucfgmng]: Remove: archive file [/home/abi/fetcher/tmp/otsucfgmng-1.3.5.311-py3-none-any.whl.zip]
+[2024-06-01 19:12:18] INFO root fetch - processPackages [otsucfgmng]: Remove: archive file [/home/abi/fetcher/tmp/otsucfgmng-1.4.0.311-py3-none-any.whl.zip]
+[2024-06-01 19:12:18] INFO root fetch - main [MainThread]: End processing [otsucfgmng]: success
+[2024-06-01 19:12:18] INFO root fetch - processPackages [yt-queue]: Remove: archive file [/home/abi/fetcher/tmp/yt-queue-0.8.0.tar.gz]
+[2024-06-01 19:12:18] INFO root fetch - processPackages [yt-queue]: Remove: archive file [/home/abi/fetcher/tmp/yt_queue-0.9.1.tar.gz]
+[2024-06-01 19:12:18] INFO root fetch - main [MainThread]: End processing [yt-queue]: success
+[2024-06-01 19:12:18] INFO root fetch - processPackages [qfpy]: Remove: archive file [/home/abi/fetcher/tmp/qfpy-8.2.1.tar.gz]
+[2024-06-01 19:12:18] INFO root fetch - processPackages [qfpy]: Remove: archive file [/home/abi/fetcher/tmp/qfpy-9.0.0.tar.gz]
+[2024-06-01 19:12:18] INFO root fetch - main [MainThread]: End processing [qfpy]: success
+[2024-06-01 19:12:18] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.0.tar.gz]
+[2024-06-01 19:12:18] INFO root fetch - processPackages [python-datapack]: Remove: archive file [/home/abi/fetcher/tmp/python_datapack-0.2.1.tar.gz]
+[2024-06-01 19:12:18] INFO root fetch - main [MainThread]: End processing [python-datapack]: success
+[2024-06-01 19:12:18] INFO root fetch - main [MainThread]: Store serial: [23482062]
