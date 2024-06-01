@@ -15701,3 +15701,33 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:08:25] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-2.0.6.tar.gz]
 [2024-06-01 14:08:25] INFO root fetch - main [MainThread]: End processing [bosing]: success
 [2024-06-01 14:08:25] INFO root fetch - main [MainThread]: Store serial: [23479943]
+[2024-06-01 14:10:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479943]
+[2024-06-01 14:10:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 14:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shiki.py
+[2024-06-01 14:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Chem-Atom
+[2024-06-01 14:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: IDswapper
+[2024-06-01 14:10:33] INFO root fetch - processPackages [IDswapper]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-01 14:10:33] INFO root fetch - processPackages [Chem-Atom]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 14:10:33] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/7c/c5/f8eb04b65670092186a6e710695a37251467192671811a2bf5b903b042d6/idswapper-0.1.3.tar.gz
+[2024-06-01 14:10:33] INFO root fetch - processPackages [shiki.py]: New version: [1.1.1] Old Version: [1.0.2]
+[2024-06-01 14:10:33] INFO root fetch - processPackages [Chem-Atom]: Downloading https://files.pythonhosted.org/packages/69/9e/4ab30c55a9a313a546cf1bfc7b6b1251445604e37d07bab993f90020cba7/Chem_Atom-0.0.1-py39-none-win_amd64.whl
+[2024-06-01 14:10:34] INFO root fetch - processPackages [shiki.py]: Downloading https://files.pythonhosted.org/packages/3c/4f/ae2ed6b46e6b6dae3475a4880ac255dd3c8c8139115e823516c083f181fa/shiki_py-1.0.2.tar.gz
+[2024-06-01 14:10:34] INFO root fetch - processPackages [Chem-Atom]: Downloading https://files.pythonhosted.org/packages/3c/c4/cc0e5d554bd3e338a42cda41cd7f26605483792f1cfbc2fe610aac53d3b9/Chem_Atom-0.0.2-cp3-none-win_amd64.whl
+[2024-06-01 14:10:34] INFO root fetch - processPackages [shiki.py]: Downloading https://files.pythonhosted.org/packages/76/6e/2b44a8d7d0051d979bc784e74607ba422c9b2387909cf3b8e3c4a28ca483/shiki_py-1.1.1.tar.gz
+[2024-06-01 14:10:34] INFO root fetch - processPackages [Chem-Atom]: executing diffoscope
+[2024-06-01 14:10:34] INFO root fetch - processPackages [Chem-Atom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Chem_Atom-0.0.1-py39-none-win_amd64.whl.zip tmp/Chem_Atom-0.0.2-cp3-none-win_amd64.whl.zip --markdown 20240601/C/Chem-Atom/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 14:10:34] INFO root fetch - processPackages [shiki.py]: executing diffoscope
+[2024-06-01 14:10:34] INFO root fetch - processPackages [shiki.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shiki_py-1.0.2.tar.gz tmp/shiki_py-1.1.1.tar.gz --markdown 20240601/s/shiki.py/1.0.2-1.1.1/README.md --exclude *.pyd
+[2024-06-01 14:10:34] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/73/36/ccab24e7d8a08926d8d313985e248966533b741908c61391c812b2104292/idswapper-0.1.4.tar.gz
+[2024-06-01 14:10:34] INFO root fetch - processPackages [Chem-Atom]: Remove: archive file [/home/abi/fetcher/tmp/Chem_Atom-0.0.1-py39-none-win_amd64.whl.zip]
+[2024-06-01 14:10:34] INFO root fetch - processPackages [Chem-Atom]: Remove: archive file [/home/abi/fetcher/tmp/Chem_Atom-0.0.2-cp3-none-win_amd64.whl.zip]
+[2024-06-01 14:10:34] INFO root fetch - main [MainThread]: End processing [Chem-Atom]: success
+[2024-06-01 14:10:34] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 14:10:34] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.1.3.tar.gz tmp/idswapper-0.1.4.tar.gz --markdown 20240601/I/IDswapper/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-01 14:10:35] INFO root fetch - processPackages [shiki.py]: Remove: archive file [/home/abi/fetcher/tmp/shiki_py-1.0.2.tar.gz]
+[2024-06-01 14:10:35] INFO root fetch - processPackages [shiki.py]: Remove: archive file [/home/abi/fetcher/tmp/shiki_py-1.1.1.tar.gz]
+[2024-06-01 14:10:35] INFO root fetch - main [MainThread]: End processing [shiki.py]: success
+[2024-06-01 14:10:35] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.3.tar.gz]
+[2024-06-01 14:10:35] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.4.tar.gz]
+[2024-06-01 14:10:35] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 14:10:35] INFO root fetch - main [MainThread]: Store serial: [23479956]
