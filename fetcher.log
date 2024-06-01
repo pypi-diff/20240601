@@ -20706,3 +20706,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:57:51] INFO root fetch - processPackages [genvarloader]: Remove: archive file [/home/abi/fetcher/tmp/genvarloader-0.3.3.tar.gz]
 [2024-06-01 19:57:51] INFO root fetch - main [MainThread]: End processing [genvarloader]: success
 [2024-06-01 19:57:51] INFO root fetch - main [MainThread]: Store serial: [23482280]
+[2024-06-01 19:59:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482280]
+[2024-06-01 20:00:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 20:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vaul
+[2024-06-01 20:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: procfuse
+[2024-06-01 20:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-cookie-jwtauth
+[2024-06-01 20:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: usportspy
+[2024-06-01 20:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moroccan-prayer-times
+[2024-06-01 20:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zenaura
+[2024-06-01 20:00:01] INFO root fetch - processPackages [vaul]: New version: [0.1.23] Old Version: [0.1.22]
+[2024-06-01 20:00:01] INFO root fetch - processPackages [zenaura]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-06-01 20:00:01] WARNING root fetch - processPackages [moroccan-prayer-times]: Skipping, unable to determine old version
+[2024-06-01 20:00:01] INFO root fetch - main [MainThread]: End processing [moroccan-prayer-times] error
+[2024-06-01 20:00:01] WARNING root fetch - processPackages [procfuse]: Skipping, unable to determine old version
+[2024-06-01 20:00:01] INFO root fetch - main [MainThread]: End processing [procfuse] error
+[2024-06-01 20:00:01] INFO root fetch - processPackages [drf-cookie-jwtauth]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 20:00:01] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ae/cb/61c50ad42061c242bf754e7652d208e0db573a3c78b88a9dc4ab2501a3c9/zenaura-0.9.96.tar.gz
+[2024-06-01 20:00:01] WARNING root fetch - processPackages [usportspy]: Skipping, unable to determine old version
+[2024-06-01 20:00:01] INFO root fetch - main [MainThread]: End processing [usportspy] error
+[2024-06-01 20:00:01] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/51/6d/d00660b01da6234491d45ab93a4fd8dcf6aaefe4bfaeb7ed73c255ad54d9/vaul-0.1.22.tar.gz
+[2024-06-01 20:00:01] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/b2/9a/a24f2439032da114f0f9ddcc71202fc6b5f058c6db7dce51208124a0e3fc/drf_cookie_jwtauth-0.0.2.tar.gz
+[2024-06-01 20:00:01] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/08/6b/b2ad57ae63296904bed82f2d7860fe2b3c80f09ff989ecd3950a30fe0f24/vaul-0.1.23.tar.gz
+[2024-06-01 20:00:02] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/0a/36/6c6c313edffa3cf60260ab81fa50d9c4ef93a716990423ab3ca654a380a5/zenaura-0.9.97.tar.gz
+[2024-06-01 20:00:02] INFO root fetch - processPackages [vaul]: executing diffoscope
+[2024-06-01 20:00:02] INFO root fetch - processPackages [vaul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaul-0.1.22.tar.gz tmp/vaul-0.1.23.tar.gz --markdown 20240601/v/vaul/0.1.22-0.1.23/README.md --exclude *.pyd
+[2024-06-01 20:00:02] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 20:00:02] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.96.tar.gz tmp/zenaura-0.9.97.tar.gz --markdown 20240601/z/zenaura/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-06-01 20:00:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Downloading https://files.pythonhosted.org/packages/da/3e/36de223a9127a7264608b54807281476af9baf431081a829fae75d3590b7/drf_cookie_jwtauth-0.0.3.tar.gz
+[2024-06-01 20:00:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: executing diffoscope
+[2024-06-01 20:00:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_cookie_jwtauth-0.0.2.tar.gz tmp/drf_cookie_jwtauth-0.0.3.tar.gz --markdown 20240601/d/drf-cookie-jwtauth/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 20:00:02] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.22.tar.gz]
+[2024-06-01 20:00:02] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.23.tar.gz]
+[2024-06-01 20:00:02] INFO root fetch - main [MainThread]: End processing [vaul]: success
+[2024-06-01 20:00:02] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.96.tar.gz]
+[2024-06-01 20:00:02] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.97.tar.gz]
+[2024-06-01 20:00:02] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 20:00:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.2.tar.gz]
+[2024-06-01 20:00:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.3.tar.gz]
+[2024-06-01 20:00:02] INFO root fetch - main [MainThread]: End processing [drf-cookie-jwtauth]: success
+[2024-06-01 20:00:02] INFO root fetch - main [MainThread]: Store serial: [23482303]
