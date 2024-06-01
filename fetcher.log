@@ -13054,3 +13054,57 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:37:20] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
 [2024-06-01 10:37:20] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
 [2024-06-01 10:37:20] INFO root fetch - main [MainThread]: Store serial: [23478682]
+[2024-06-01 10:39:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478682]
+[2024-06-01 10:39:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyFileOps
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: musiclib
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: safety-checker
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scinumtools
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: turbogpt-pro
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: twikit-pro
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kuzu
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: twitter-api-client-pro
+[2024-06-01 10:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Flask-Apium
+[2024-06-01 10:39:29] WARNING root fetch - processPackages [EasyFileOps]: Skipping, unable to determine old version
+[2024-06-01 10:39:29] INFO root fetch - main [MainThread]: End processing [EasyFileOps] error
+[2024-06-01 10:39:29] INFO root fetch - processPackages [safety-checker]: New version: [0.5] Old Version: [0.4]
+[2024-06-01 10:39:29] WARNING root fetch - processPackages [turbogpt-pro]: Skipping, unable to determine old version
+[2024-06-01 10:39:29] INFO root fetch - main [MainThread]: End processing [turbogpt-pro] error
+[2024-06-01 10:39:29] INFO root fetch - processPackages [musiclib]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-06-01 10:39:29] WARNING root fetch - processPackages [Flask-Apium]: Skipping, unable to determine old version
+[2024-06-01 10:39:29] INFO root fetch - main [MainThread]: End processing [Flask-Apium] error
+[2024-06-01 10:39:29] WARNING root fetch - processPackages [twikit-pro]: Skipping, unable to determine old version
+[2024-06-01 10:39:29] INFO root fetch - main [MainThread]: End processing [twikit-pro] error
+[2024-06-01 10:39:29] WARNING root fetch - processPackages [twitter-api-client-pro]: Skipping, unable to determine old version
+[2024-06-01 10:39:29] INFO root fetch - main [MainThread]: End processing [twitter-api-client-pro] error
+[2024-06-01 10:39:29] INFO root fetch - processPackages [scinumtools]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-06-01 10:39:29] INFO root fetch - processPackages [safety-checker]: Downloading https://files.pythonhosted.org/packages/05/8a/8fde7fb2d71d6f93d7b059c0bcfe4a9f173e4c2154dde715afb80cdf40c8/safety_checker-0.4.tar.gz
+[2024-06-01 10:39:29] INFO root fetch - processPackages [musiclib]: Downloading https://files.pythonhosted.org/packages/d8/fb/553ea08fda8dc71bda12673d7cd61431c8477fc3ed1de540c5f03499d35b/musiclib-2.4.0.tar.gz
+[2024-06-01 10:39:30] INFO root fetch - processPackages [scinumtools]: Downloading https://files.pythonhosted.org/packages/91/f2/6b088986084193107864be513b3113a0f34800f67fde6d1459573ea40f8e/scinumtools-2.8.0.tar.gz
+[2024-06-01 10:39:30] INFO root fetch - processPackages [kuzu]: New version: [0.4.3.dev9] Old Version: [0.4.3.dev8]
+[2024-06-01 10:39:30] INFO root fetch - processPackages [safety-checker]: Downloading https://files.pythonhosted.org/packages/a9/38/7612c6955aaf10758a758fb8205ea79f98b41f2f17e5b5566c890b1f7091/safety_checker-0.5.tar.gz
+[2024-06-01 10:39:30] INFO root fetch - processPackages [musiclib]: Downloading https://files.pythonhosted.org/packages/8e/28/bb53778a74c304600f068bd1d5c5092b8c5cc73e30c4f6928b3ffeac5b77/musiclib-2.5.0.tar.gz
+[2024-06-01 10:39:30] INFO root fetch - processPackages [safety-checker]: executing diffoscope
+[2024-06-01 10:39:30] INFO root fetch - processPackages [safety-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safety_checker-0.4.tar.gz tmp/safety_checker-0.5.tar.gz --markdown 20240601/s/safety-checker/0.4-0.5/README.md --exclude *.pyd
+[2024-06-01 10:39:30] INFO root fetch - processPackages [scinumtools]: Downloading https://files.pythonhosted.org/packages/84/1e/b3c5f44e326bfc50a2f87de28d5cd99d62b01328d3efaf3993a0b51f9d02/scinumtools-2.9.0.tar.gz
+[2024-06-01 10:39:30] INFO root fetch - processPackages [musiclib]: executing diffoscope
+[2024-06-01 10:39:30] INFO root fetch - processPackages [musiclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musiclib-2.4.0.tar.gz tmp/musiclib-2.5.0.tar.gz --markdown 20240601/m/musiclib/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-06-01 10:39:30] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/8c/65/7162eaa21f2086d35586ac13298c2ee7127cec11827c394a1c4a3a08801e/kuzu-0.4.3.dev8.tar.gz
+[2024-06-01 10:39:30] INFO root fetch - processPackages [scinumtools]: executing diffoscope
+[2024-06-01 10:39:30] INFO root fetch - processPackages [scinumtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scinumtools-2.8.0.tar.gz tmp/scinumtools-2.9.0.tar.gz --markdown 20240601/s/scinumtools/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-06-01 10:39:31] INFO root fetch - processPackages [safety-checker]: Remove: archive file [/home/abi/fetcher/tmp/safety_checker-0.4.tar.gz]
+[2024-06-01 10:39:31] INFO root fetch - processPackages [safety-checker]: Remove: archive file [/home/abi/fetcher/tmp/safety_checker-0.5.tar.gz]
+[2024-06-01 10:39:31] INFO root fetch - main [MainThread]: End processing [safety-checker]: success
+[2024-06-01 10:39:31] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/df/58/55a184ddd23fb47a5a837c33035095e3fcffa62119ae3557cf8e8b4f7f0c/kuzu-0.4.3.dev9.tar.gz
+[2024-06-01 10:39:31] INFO root fetch - processPackages [musiclib]: Remove: archive file [/home/abi/fetcher/tmp/musiclib-2.4.0.tar.gz]
+[2024-06-01 10:39:31] INFO root fetch - processPackages [musiclib]: Remove: archive file [/home/abi/fetcher/tmp/musiclib-2.5.0.tar.gz]
+[2024-06-01 10:39:31] INFO root fetch - main [MainThread]: End processing [musiclib]: success
+[2024-06-01 10:39:31] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-06-01 10:39:31] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.3.dev8.tar.gz tmp/kuzu-0.4.3.dev9.tar.gz --markdown 20240601/k/kuzu/0.4.3.dev8-0.4.3.dev9/README.md --exclude *.pyd
+[2024-06-01 10:39:31] INFO root fetch - processPackages [scinumtools]: Remove: archive file [/home/abi/fetcher/tmp/scinumtools-2.8.0.tar.gz]
+[2024-06-01 10:39:31] INFO root fetch - processPackages [scinumtools]: Remove: archive file [/home/abi/fetcher/tmp/scinumtools-2.9.0.tar.gz]
+[2024-06-01 10:39:31] INFO root fetch - main [MainThread]: End processing [scinumtools]: success
+[2024-06-01 10:39:38] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev8.tar.gz]
+[2024-06-01 10:39:38] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev9.tar.gz]
+[2024-06-01 10:39:38] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-06-01 10:39:38] INFO root fetch - main [MainThread]: Store serial: [23478731]
