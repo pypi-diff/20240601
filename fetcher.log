@@ -18159,3 +18159,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:07:06] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240531-py3-none-win_amd64.whl.zip]
 [2024-06-01 17:07:06] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-06-01 17:07:06] INFO root fetch - main [MainThread]: Store serial: [23481146]
+[2024-06-01 17:09:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481146]
+[2024-06-01 17:09:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 17:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uwrapper
+[2024-06-01 17:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: export-to-telegraph
+[2024-06-01 17:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stashconnect
+[2024-06-01 17:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CTkKeyboard
+[2024-06-01 17:09:21] WARNING root fetch - processPackages [CTkKeyboard]: Skipping, unable to determine old version
+[2024-06-01 17:09:21] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 17:09:21] INFO root fetch - processPackages [stashconnect]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-06-01 17:09:21] WARNING root fetch - processPackages [uwrapper]: Skipping, unable to determine old version
+[2024-06-01 17:09:21] INFO root fetch - main [MainThread]: End processing [uwrapper] error
+[2024-06-01 17:09:21] INFO root fetch - processPackages [export-to-telegraph]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 17:09:22] INFO root fetch - processPackages [export-to-telegraph]: Downloading https://files.pythonhosted.org/packages/1a/cd/3319733bb16d9cb08ed8443eab80fdb4b8e25672276caec459a0a477669a/export_to_telegraph-0.0.98.tar.gz
+[2024-06-01 17:09:22] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/d7/93/4fabe19de4e3dda213e0461f3d85d7f09922081fde3e198a5ed26cde8a55/stashconnect-0.7.6.tar.gz
+[2024-06-01 17:09:22] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/f0/8a/7a77df63ec553f40a43e243a40776489daeca242790911dbecddd910aad9/stashconnect-0.7.7.tar.gz
+[2024-06-01 17:09:22] INFO root fetch - processPackages [export-to-telegraph]: Downloading https://files.pythonhosted.org/packages/ee/09/730e48f3664f93246bdf05d8015b7601fbdd631227321126c7caa2b36f5e/export_to_telegraph-0.0.99.tar.gz
+[2024-06-01 17:09:22] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-01 17:09:22] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.7.6.tar.gz tmp/stashconnect-0.7.7.tar.gz --markdown 20240601/s/stashconnect/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-06-01 17:09:22] INFO root fetch - processPackages [export-to-telegraph]: executing diffoscope
+[2024-06-01 17:09:22] INFO root fetch - processPackages [export-to-telegraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/export_to_telegraph-0.0.98.tar.gz tmp/export_to_telegraph-0.0.99.tar.gz --markdown 20240601/e/export-to-telegraph/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 17:09:23] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.6.tar.gz]
+[2024-06-01 17:09:23] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.7.tar.gz]
+[2024-06-01 17:09:23] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-01 17:09:23] INFO root fetch - processPackages [export-to-telegraph]: Remove: archive file [/home/abi/fetcher/tmp/export_to_telegraph-0.0.98.tar.gz]
+[2024-06-01 17:09:23] INFO root fetch - processPackages [export-to-telegraph]: Remove: archive file [/home/abi/fetcher/tmp/export_to_telegraph-0.0.99.tar.gz]
+[2024-06-01 17:09:23] INFO root fetch - main [MainThread]: End processing [export-to-telegraph]: success
+[2024-06-01 17:09:23] INFO root fetch - main [MainThread]: Store serial: [23481163]
