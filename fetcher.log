@@ -23324,3 +23324,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:13:29] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
 [2024-06-01 23:13:29] INFO root fetch - main [MainThread]: End processing [zenaura]: success
 [2024-06-01 23:13:29] INFO root fetch - main [MainThread]: Store serial: [23483661]
+[2024-06-01 23:15:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483661]
+[2024-06-01 23:15:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 23:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muGrid
+[2024-06-01 23:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-06-01 23:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reka-api
+[2024-06-01 23:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-fnc
+[2024-06-01 23:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easymp3
+[2024-06-01 23:15:39] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 23:15:39] INFO root fetch - processPackages [muGrid]: New version: [0.90.1] Old Version: [0.90.0]
+[2024-06-01 23:15:39] WARNING root fetch - processPackages [easymp3]: Skipping, unable to determine old version
+[2024-06-01 23:15:39] INFO root fetch - main [MainThread]: End processing [easymp3] error
+[2024-06-01 23:15:39] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 23:15:39] INFO root fetch - processPackages [reka-api]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-06-01 23:15:39] INFO root fetch - processPackages [easy-fnc]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 23:15:40] INFO root fetch - processPackages [muGrid]: Downloading https://files.pythonhosted.org/packages/e9/da/bbfb2fd9aa87629400300f26c9b02d5ee34facc9a22122a598947c0c0ae8/mugrid-0.90.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:15:40] INFO root fetch - processPackages [reka-api]: Downloading https://files.pythonhosted.org/packages/a0/b4/7a9e8e5e114e5c6d2f6366fb842eafa8aedbc0b34d84e003996d18b8e64e/reka_api-3.0.5.tar.gz
+[2024-06-01 23:15:40] INFO root fetch - processPackages [easy-fnc]: Downloading https://files.pythonhosted.org/packages/75/1e/02e5fec17a7c94ae424ccc18f6a82e438fd3d7221b6f75e970811a286bf2/easy_fnc-0.1.5.tar.gz
+[2024-06-01 23:15:40] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 23:15:40] INFO root fetch - processPackages [reka-api]: Downloading https://files.pythonhosted.org/packages/8f/60/52d0e7d1afca8b014f6f59699d2e16c52b9e375bd161b8dafe5ac49b1c86/reka_api-3.0.6.tar.gz
+[2024-06-01 23:15:40] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 23:15:40] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 23:15:40] INFO root fetch - processPackages [easy-fnc]: Downloading https://files.pythonhosted.org/packages/51/f0/7f63caf1b534df2a28fd53d198aae200eaedb4e1b4cdbaf55c59e86b2428/easy_fnc-0.1.6.tar.gz
+[2024-06-01 23:15:40] INFO root fetch - processPackages [reka-api]: executing diffoscope
+[2024-06-01 23:15:40] INFO root fetch - processPackages [reka-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reka_api-3.0.5.tar.gz tmp/reka_api-3.0.6.tar.gz --markdown 20240601/r/reka-api/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-06-01 23:15:40] INFO root fetch - processPackages [easy-fnc]: executing diffoscope
+[2024-06-01 23:15:40] INFO root fetch - processPackages [easy-fnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_fnc-0.1.5.tar.gz tmp/easy_fnc-0.1.6.tar.gz --markdown 20240601/e/easy-fnc/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 23:15:40] INFO root fetch - processPackages [muGrid]: Downloading https://files.pythonhosted.org/packages/cd/40/b5c7110be8706795437ec2c7cfa9a19a34b030b311f6d89a17dc5667bd8e/mugrid-0.90.1.tar.gz
+[2024-06-01 23:15:40] INFO root fetch - processPackages [muGrid]: executing diffoscope
+[2024-06-01 23:15:40] INFO root fetch - processPackages [muGrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mugrid-0.90.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/mugrid-0.90.1.tar.gz --markdown 20240601/m/muGrid/0.90.0-0.90.1/README.md --exclude *.pyd
+[2024-06-01 23:15:41] INFO root fetch - processPackages [reka-api]: Remove: archive file [/home/abi/fetcher/tmp/reka_api-3.0.5.tar.gz]
+[2024-06-01 23:15:41] INFO root fetch - processPackages [reka-api]: Remove: archive file [/home/abi/fetcher/tmp/reka_api-3.0.6.tar.gz]
+[2024-06-01 23:15:41] INFO root fetch - main [MainThread]: End processing [reka-api]: success
+[2024-06-01 23:15:41] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.98.tar.gz]
+[2024-06-01 23:15:41] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
+[2024-06-01 23:15:41] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 23:15:41] INFO root fetch - processPackages [easy-fnc]: Remove: archive file [/home/abi/fetcher/tmp/easy_fnc-0.1.5.tar.gz]
+[2024-06-01 23:15:41] INFO root fetch - processPackages [easy-fnc]: Remove: archive file [/home/abi/fetcher/tmp/easy_fnc-0.1.6.tar.gz]
+[2024-06-01 23:15:41] INFO root fetch - main [MainThread]: End processing [easy-fnc]: success
+[2024-06-01 23:15:45] INFO root fetch - processPackages [muGrid]: Remove: archive file [/home/abi/fetcher/tmp/mugrid-0.90.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:15:45] INFO root fetch - processPackages [muGrid]: Remove: archive file [/home/abi/fetcher/tmp/mugrid-0.90.1.tar.gz]
+[2024-06-01 23:15:45] INFO root fetch - main [MainThread]: End processing [muGrid]: success
+[2024-06-01 23:15:45] INFO root fetch - main [MainThread]: Store serial: [23483681]
