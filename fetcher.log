@@ -8213,3 +8213,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:17:11] WARNING root fetch - processPackages [emu-data-loader]: Skipping, unable to determine old version
 [2024-06-01 04:17:11] INFO root fetch - main [MainThread]: End processing [emu-data-loader] error
 [2024-06-01 04:17:11] INFO root fetch - main [MainThread]: Store serial: [23476355]
+[2024-06-01 04:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476355]
+[2024-06-01 04:19:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 04:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: staging-cacao-accounting
+[2024-06-01 04:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notebooks-and-scripts
+[2024-06-01 04:19:20] INFO root fetch - processPackages [staging-cacao-accounting]: New version: [0.0.2rc20240531] Old Version: [0.0.1b20240519]
+[2024-06-01 04:19:20] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.480.1] Old Version: [4.476.1]
+[2024-06-01 04:19:20] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/1e/56/39b5127aeb6a724a665df4d968f972fbbab3835554de98950a9f6efffb77/staging_cacao_accounting-0.0.1b20240519.tar.gz
+[2024-06-01 04:19:20] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/91/94/ac36ac0bcdb7b35e09d3153240ee997feab85b2f6c825ea895adff8e9565/notebooks_and_scripts-4.476.1.tar.gz
+[2024-06-01 04:19:20] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/ac/51/4fdb6787ad89af39982ededca2bf25c1995a4b14568abe38f8aab649b90b/notebooks_and_scripts-4.480.1.tar.gz
+[2024-06-01 04:19:20] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-06-01 04:19:20] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.476.1.tar.gz tmp/notebooks_and_scripts-4.480.1.tar.gz --markdown 20240601/n/notebooks-and-scripts/4.476.1-4.480.1/README.md --exclude *.pyd
+[2024-06-01 04:19:20] INFO root fetch - processPackages [staging-cacao-accounting]: Downloading https://files.pythonhosted.org/packages/c5/78/679e9b06916fadcdd7595d1019a146b48ca1775d8568089de50a3bcc64e8/staging_cacao_accounting-0.0.2rc20240531.tar.gz
+[2024-06-01 04:19:21] INFO root fetch - processPackages [staging-cacao-accounting]: executing diffoscope
+[2024-06-01 04:19:21] INFO root fetch - processPackages [staging-cacao-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staging_cacao_accounting-0.0.1b20240519.tar.gz tmp/staging_cacao_accounting-0.0.2rc20240531.tar.gz --markdown 20240601/s/staging-cacao-accounting/0.0.1b20240519-0.0.2rc20240531/README.md --exclude *.pyd
+[2024-06-01 04:19:21] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.476.1.tar.gz]
+[2024-06-01 04:19:21] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.480.1.tar.gz]
+[2024-06-01 04:19:21] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-06-01 04:19:30] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.1b20240519.tar.gz]
+[2024-06-01 04:19:30] INFO root fetch - processPackages [staging-cacao-accounting]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting-0.0.2rc20240531.tar.gz]
+[2024-06-01 04:19:30] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting]: success
+[2024-06-01 04:19:30] INFO root fetch - main [MainThread]: Store serial: [23476361]
