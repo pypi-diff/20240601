@@ -13870,3 +13870,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:39:08] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.8.tar.gz]
 [2024-06-01 11:39:08] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-01 11:39:08] INFO root fetch - main [MainThread]: Store serial: [23479109]
+[2024-06-01 11:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479109]
+[2024-06-01 11:41:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 11:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: menuchoice
+[2024-06-01 11:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: espy-contact
+[2024-06-01 11:41:18] INFO root fetch - processPackages [espy-contact]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-06-01 11:41:18] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/0e/45/386d301a7573988cfc80de5753544384a517e8794b4856e2bd8b36bea93d/espy_contact-2.0.8.tar.gz
+[2024-06-01 11:41:18] INFO root fetch - processPackages [menuchoice]: New version: [0.5] Old Version: [0.4]
+[2024-06-01 11:41:18] INFO root fetch - processPackages [menuchoice]: Downloading https://files.pythonhosted.org/packages/93/cf/8a46ec1332697ebc04eafd136ad4f77410c5de10b8c8110ee68d51f50507/menuchoice-0.4.tar.gz
+[2024-06-01 11:41:18] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/58/d3/f5342b21e4c78ea6e82e84ce53b20e95974612386583f4276df720f93274/espy_contact-2.0.9.tar.gz
+[2024-06-01 11:41:18] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-06-01 11:41:18] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.8.tar.gz tmp/espy_contact-2.0.9.tar.gz --markdown 20240601/e/espy-contact/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-06-01 11:41:18] INFO root fetch - processPackages [menuchoice]: Downloading https://files.pythonhosted.org/packages/a5/24/4435224b38d237e14de53541185c25302d438e4eaf7175e1508c08d1649a/menuchoice-0.5.tar.gz
+[2024-06-01 11:41:19] INFO root fetch - processPackages [menuchoice]: executing diffoscope
+[2024-06-01 11:41:19] INFO root fetch - processPackages [menuchoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/menuchoice-0.4.tar.gz tmp/menuchoice-0.5.tar.gz --markdown 20240601/m/menuchoice/0.4-0.5/README.md --exclude *.pyd
+[2024-06-01 11:41:19] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.8.tar.gz]
+[2024-06-01 11:41:19] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.9.tar.gz]
+[2024-06-01 11:41:19] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-06-01 11:41:19] INFO root fetch - processPackages [menuchoice]: Remove: archive file [/home/abi/fetcher/tmp/menuchoice-0.4.tar.gz]
+[2024-06-01 11:41:19] INFO root fetch - processPackages [menuchoice]: Remove: archive file [/home/abi/fetcher/tmp/menuchoice-0.5.tar.gz]
+[2024-06-01 11:41:19] INFO root fetch - main [MainThread]: End processing [menuchoice]: success
+[2024-06-01 11:41:19] INFO root fetch - main [MainThread]: Store serial: [23479115]
