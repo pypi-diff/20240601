@@ -21103,3 +21103,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:18:22] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-06-01 20:18:22] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-06-01 20:18:22] INFO root fetch - main [MainThread]: Store serial: [23482462]
+[2024-06-01 20:20:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482462]
+[2024-06-01 20:20:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 20:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EDAeasy
+[2024-06-01 20:20:31] INFO root fetch - processPackages [almax-common]: New version: [1.0.3.dev20240601181343] Old Version: [1.0.2.dev20240601180721]
+[2024-06-01 20:20:31] INFO root fetch - processPackages [EDAeasy]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-06-01 20:20:31] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/68/ea/2d5340fc5cb478a544a7fc96292420629f47b51f90a0e04e58775e3fcd9a/almax_common-1.0.2.dev20240601180721.tar.gz
+[2024-06-01 20:20:31] INFO root fetch - processPackages [EDAeasy]: Downloading https://files.pythonhosted.org/packages/b4/5c/89f451cc71d5314f4955d0788b67ac0040318bec6deb1236e6f55279b2e9/edaeasy-1.1.1.tar.gz
+[2024-06-01 20:20:31] INFO root fetch - processPackages [EDAeasy]: Downloading https://files.pythonhosted.org/packages/17/93/f9816f6e16511d2949b519f0904eb79b6e2eb0026ad58198d02daee472b5/edaeasy-1.1.2.tar.gz
+[2024-06-01 20:20:32] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/64/88/ae4d436cd5914c9d08b5efe8cd8636570554e42f3b1d0633c9e85498b061/almax_common-1.0.3.dev20240601181343.tar.gz
+[2024-06-01 20:20:32] INFO root fetch - processPackages [EDAeasy]: executing diffoscope
+[2024-06-01 20:20:32] INFO root fetch - processPackages [EDAeasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaeasy-1.1.1.tar.gz tmp/edaeasy-1.1.2.tar.gz --markdown 20240601/E/EDAeasy/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-06-01 20:20:32] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 20:20:32] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.2.dev20240601180721.tar.gz tmp/almax_common-1.0.3.dev20240601181343.tar.gz --markdown 20240601/a/almax-common/1.0.2.dev20240601180721-1.0.3.dev20240601181343/README.md --exclude *.pyd
+[2024-06-01 20:20:32] INFO root fetch - processPackages [EDAeasy]: Remove: archive file [/home/abi/fetcher/tmp/edaeasy-1.1.1.tar.gz]
+[2024-06-01 20:20:32] INFO root fetch - processPackages [EDAeasy]: Remove: archive file [/home/abi/fetcher/tmp/edaeasy-1.1.2.tar.gz]
+[2024-06-01 20:20:32] INFO root fetch - main [MainThread]: End processing [EDAeasy]: success
+[2024-06-01 20:20:32] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.2.dev20240601180721.tar.gz]
+[2024-06-01 20:20:32] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.3.dev20240601181343.tar.gz]
+[2024-06-01 20:20:32] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 20:20:32] INFO root fetch - main [MainThread]: Store serial: [23482468]
