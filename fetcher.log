@@ -22663,3 +22663,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:16:39] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
 [2024-06-01 22:16:39] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-06-01 22:16:39] INFO root fetch - main [MainThread]: Store serial: [23483288]
+[2024-06-01 22:18:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483288]
+[2024-06-01 22:18:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opsgeniecli
+[2024-06-01 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: single-object-detection
+[2024-06-01 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpy-cross-multi
+[2024-06-01 22:18:48] INFO root fetch - processPackages [mpy-cross-multi]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-06-01 22:18:48] INFO root fetch - processPackages [mpy-cross-multi]: Downloading https://files.pythonhosted.org/packages/50/9d/f2076e0ddcec9891d9e16c8a9fb8b4edbdb82e0f7add0e9b8c2f1e326f6d/mpy_cross_multi-1.0.0.tar.gz
+[2024-06-01 22:18:48] WARNING root fetch - processPackages [single-object-detection]: Skipping, unable to determine old version
+[2024-06-01 22:18:48] INFO root fetch - main [MainThread]: End processing [single-object-detection] error
+[2024-06-01 22:18:48] INFO root fetch - processPackages [opsgeniecli]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-06-01 22:18:48] INFO root fetch - processPackages [mpy-cross-multi]: Downloading https://files.pythonhosted.org/packages/ee/89/91940fa6113243833996ed30c0308d3519ac2a4ffae160a8e6b15cde0506/mpy_cross_multi-1.1.0.tar.gz
+[2024-06-01 22:18:48] INFO root fetch - processPackages [opsgeniecli]: Downloading https://files.pythonhosted.org/packages/41/25/4ba0d090cfb39abc8d4111169871b1b94e501e255185505d68f8e54a4f5e/opsgeniecli-0.1.9.tar.gz
+[2024-06-01 22:18:49] INFO root fetch - processPackages [mpy-cross-multi]: executing diffoscope
+[2024-06-01 22:18:49] INFO root fetch - processPackages [mpy-cross-multi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy_cross_multi-1.0.0.tar.gz tmp/mpy_cross_multi-1.1.0.tar.gz --markdown 20240601/m/mpy-cross-multi/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-06-01 22:18:49] INFO root fetch - processPackages [opsgeniecli]: Downloading https://files.pythonhosted.org/packages/37/ea/66d3e285092fbb6026babc95c5ceb62699b3d189d14026d7e6f0c65a0819/opsgeniecli-0.2.0.tar.gz
+[2024-06-01 22:18:49] INFO root fetch - processPackages [opsgeniecli]: executing diffoscope
+[2024-06-01 22:18:49] INFO root fetch - processPackages [opsgeniecli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsgeniecli-0.1.9.tar.gz tmp/opsgeniecli-0.2.0.tar.gz --markdown 20240601/o/opsgeniecli/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-06-01 22:18:49] INFO root fetch - processPackages [mpy-cross-multi]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_multi-1.0.0.tar.gz]
+[2024-06-01 22:18:49] INFO root fetch - processPackages [mpy-cross-multi]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_multi-1.1.0.tar.gz]
+[2024-06-01 22:18:49] INFO root fetch - main [MainThread]: End processing [mpy-cross-multi]: success
+[2024-06-01 22:18:50] INFO root fetch - processPackages [opsgeniecli]: Remove: archive file [/home/abi/fetcher/tmp/opsgeniecli-0.1.9.tar.gz]
+[2024-06-01 22:18:50] INFO root fetch - processPackages [opsgeniecli]: Remove: archive file [/home/abi/fetcher/tmp/opsgeniecli-0.2.0.tar.gz]
+[2024-06-01 22:18:50] INFO root fetch - main [MainThread]: End processing [opsgeniecli]: success
+[2024-06-01 22:18:50] INFO root fetch - main [MainThread]: Store serial: [23483302]
