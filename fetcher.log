@@ -10234,3 +10234,17 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:23:00] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-06-01 06:23:00] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-06-01 06:23:00] INFO root fetch - main [MainThread]: Store serial: [23477227]
+[2024-06-01 06:25:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477227]
+[2024-06-01 06:25:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 06:27:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477227]
+[2024-06-01 06:27:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 06:27:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfilecache
+[2024-06-01 06:27:13] INFO root fetch - processPackages [pyfilecache]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-01 06:27:13] INFO root fetch - processPackages [pyfilecache]: Downloading https://files.pythonhosted.org/packages/65/42/825ed554912e8cfa2ca2fe3a42a0e1481c3811f947befff28c0d10d7e6f4/pyfilecache-0.1.3-py3-none-any.whl
+[2024-06-01 06:27:14] INFO root fetch - processPackages [pyfilecache]: Downloading https://files.pythonhosted.org/packages/4c/4e/11550e9fada8aee60d7e7c577d1834acc232949f8e495a67803cc4cba5e5/pyfilecache-0.1.4.tar.gz
+[2024-06-01 06:27:14] INFO root fetch - processPackages [pyfilecache]: executing diffoscope
+[2024-06-01 06:27:14] INFO root fetch - processPackages [pyfilecache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfilecache-0.1.3-py3-none-any.whl.zip tmp/pyfilecache-0.1.4.tar.gz --markdown 20240601/p/pyfilecache/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-01 06:27:14] INFO root fetch - processPackages [pyfilecache]: Remove: archive file [/home/abi/fetcher/tmp/pyfilecache-0.1.3-py3-none-any.whl.zip]
+[2024-06-01 06:27:14] INFO root fetch - processPackages [pyfilecache]: Remove: archive file [/home/abi/fetcher/tmp/pyfilecache-0.1.4.tar.gz]
+[2024-06-01 06:27:14] INFO root fetch - main [MainThread]: End processing [pyfilecache]: success
+[2024-06-01 06:27:14] INFO root fetch - main [MainThread]: Store serial: [23477230]
