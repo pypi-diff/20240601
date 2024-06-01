@@ -20902,3 +20902,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:09:39] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240531232611.tar.gz]
 [2024-06-01 20:09:39] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2024-06-01 20:09:39] INFO root fetch - main [MainThread]: Store serial: [23482391]
+[2024-06-01 20:11:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482391]
+[2024-06-01 20:11:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 20:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cobble
+[2024-06-01 20:11:48] INFO root fetch - processPackages [cobble]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-01 20:11:49] INFO root fetch - processPackages [cobble]: Downloading https://files.pythonhosted.org/packages/d2/13/306dbd6d10f7bc13de0bdc313b2bbf1a031abc0beb36033ea850a3782656/cobble-0.1.3.tar.gz
+[2024-06-01 20:11:49] INFO root fetch - processPackages [cobble]: Downloading https://files.pythonhosted.org/packages/54/7a/a507c709be2c96e1bb6102eb7b7f4026c5e5e223ef7d745a17d239e9d844/cobble-0.1.4.tar.gz
+[2024-06-01 20:11:49] INFO root fetch - processPackages [cobble]: executing diffoscope
+[2024-06-01 20:11:49] INFO root fetch - processPackages [cobble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cobble-0.1.3.tar.gz tmp/cobble-0.1.4.tar.gz --markdown 20240601/c/cobble/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-01 20:11:49] INFO root fetch - processPackages [cobble]: Remove: archive file [/home/abi/fetcher/tmp/cobble-0.1.3.tar.gz]
+[2024-06-01 20:11:49] INFO root fetch - processPackages [cobble]: Remove: archive file [/home/abi/fetcher/tmp/cobble-0.1.4.tar.gz]
+[2024-06-01 20:11:49] INFO root fetch - main [MainThread]: End processing [cobble]: success
+[2024-06-01 20:11:49] INFO root fetch - main [MainThread]: Store serial: [23482396]
