@@ -14777,3 +14777,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:57:12] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.1.tar.gz]
 [2024-06-01 12:57:12] INFO root fetch - main [MainThread]: End processing [anne]: success
 [2024-06-01 12:57:12] INFO root fetch - main [MainThread]: Store serial: [23479531]
+[2024-06-01 12:59:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479531]
+[2024-06-01 12:59:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 12:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anne
+[2024-06-01 12:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-06-01 12:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: IDswapper
+[2024-06-01 12:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: devdeck-core
+[2024-06-01 12:59:20] INFO root fetch - processPackages [IDswapper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 12:59:20] INFO root fetch - processPackages [anne]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-06-01 12:59:21] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/f5/d1/3abeedecb4a2542061cd32109a6a90111d071b32083aab6842786ba9e6fe/idswapper-0.0.6.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/6b/bf/e5711a47453b0825a38dce9474949fc6e9dc8fac9400dfb00787bb80a911/anne-1.1.1.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [devdeck-core]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-01 12:59:21] INFO root fetch - processPackages [pkscreener]: New version: [0.45.20240601.424] Old Version: [0.45.20240601.423]
+[2024-06-01 12:59:21] INFO root fetch - processPackages [devdeck-core]: Downloading https://files.pythonhosted.org/packages/fc/11/14eb596b52716f2a727ba55c3ba8b9c6dfba20b248b6b202a087085f8359/devdeck_core-1.0.7.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/20/a2/a56d95dc6eb415d1bfbac612ed2b6d44f97cafabd4226acc228aa7836b5f/pkscreener-0.45.20240601.423.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/46/c8/4f5d39d09bccd8660f6cb74e022c60961782fe421bf859560c86af8b5af5/anne-1.1.2.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/14/eb/dcb7f6daf7524aa972791c59ef69d66d577ca818ec4bf10e47bb4a0acb16/idswapper-0.0.7.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 12:59:21] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.6.tar.gz tmp/idswapper-0.0.7.tar.gz --markdown 20240601/I/IDswapper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 12:59:21] INFO root fetch - processPackages [anne]: executing diffoscope
+[2024-06-01 12:59:21] INFO root fetch - processPackages [anne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anne-1.1.1.tar.gz tmp/anne-1.1.2.tar.gz --markdown 20240601/a/anne/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-06-01 12:59:21] INFO root fetch - processPackages [devdeck-core]: Downloading https://files.pythonhosted.org/packages/e2/68/3da3dca8dd0b06bcf6e779d99190e492b66873d76d4b745321b90d8ca589/devdeck_core-1.0.8.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [devdeck-core]: executing diffoscope
+[2024-06-01 12:59:21] INFO root fetch - processPackages [devdeck-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devdeck_core-1.0.7.tar.gz tmp/devdeck_core-1.0.8.tar.gz --markdown 20240601/d/devdeck-core/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-01 12:59:21] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/03/5c/3107eecf7d343ac35e93afeff8c6570bf0e51da6be754a77d8f1be648eb8/pkscreener-0.45.20240601.424.tar.gz
+[2024-06-01 12:59:21] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-06-01 12:59:21] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.45.20240601.423.tar.gz tmp/pkscreener-0.45.20240601.424.tar.gz --markdown 20240601/p/pkscreener/0.45.20240601.423-0.45.20240601.424/README.md --exclude *.pyd
+[2024-06-01 12:59:22] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.1.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.2.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - main [MainThread]: End processing [anne]: success
+[2024-06-01 12:59:22] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.6.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.7.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 12:59:22] INFO root fetch - processPackages [devdeck-core]: Remove: archive file [/home/abi/fetcher/tmp/devdeck_core-1.0.7.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - processPackages [devdeck-core]: Remove: archive file [/home/abi/fetcher/tmp/devdeck_core-1.0.8.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - main [MainThread]: End processing [devdeck-core]: success
+[2024-06-01 12:59:22] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.423.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.45.20240601.424.tar.gz]
+[2024-06-01 12:59:22] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-06-01 12:59:22] INFO root fetch - main [MainThread]: Store serial: [23479547]
