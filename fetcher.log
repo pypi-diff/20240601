@@ -18744,3 +18744,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:40:00] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
 [2024-06-01 17:40:00] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
 [2024-06-01 17:40:00] INFO root fetch - main [MainThread]: Store serial: [23481425]
+[2024-06-01 17:42:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481425]
+[2024-06-01 17:42:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 17:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 17:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-dragonfly
+[2024-06-01 17:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uwrapper
+[2024-06-01 17:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdps
+[2024-06-01 17:42:08] INFO root fetch - processPackages [uwrapper]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-01 17:42:08] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:42:08] INFO root fetch - processPackages [cdps]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-01 17:42:08] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 17:42:08] INFO root fetch - processPackages [uwrapper]: Downloading https://files.pythonhosted.org/packages/ca/f1/4770ff2c75e8f70ae13a89185fab993b278b45bddf5d880e3bc4861039f9/uwrapper-0.0.5.tar.gz
+[2024-06-01 17:42:08] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:42:08] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/ba/9c/ad9bf11824edca078f38c114db370957dc5b7177c6a6cbd1c118feee68cf/cdps-1.0.7.tar.gz
+[2024-06-01 17:42:09] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-06-01 17:42:09] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-06-01 17:42:09] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:42:09] INFO root fetch - processPackages [uwrapper]: Downloading https://files.pythonhosted.org/packages/e0/d6/d7ea85135e75c873e8fc16047aa5aafbe49e5a94d03d83c3f586b02880c7/uwrapper-0.0.6.tar.gz
+[2024-06-01 17:42:09] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-06-01 17:42:09] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240601/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 17:42:09] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/22/73/8fd2176ba089f5ae55a93146109d271db9f9a6bdbd4b2fdf1eb3dccb5764/cdps-1.0.8.tar.gz
+[2024-06-01 17:42:09] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:42:09] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:42:09] INFO root fetch - processPackages [uwrapper]: executing diffoscope
+[2024-06-01 17:42:09] INFO root fetch - processPackages [uwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwrapper-0.0.5.tar.gz tmp/uwrapper-0.0.6.tar.gz --markdown 20240601/u/uwrapper/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-01 17:42:09] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:42:09] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.7.tar.gz tmp/cdps-1.0.8.tar.gz --markdown 20240601/c/cdps/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-01 17:42:10] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.5.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.6.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - main [MainThread]: End processing [uwrapper]: success
+[2024-06-01 17:42:10] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-06-01 17:42:10] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:42:10] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.7.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.8.tar.gz]
+[2024-06-01 17:42:10] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:42:10] INFO root fetch - main [MainThread]: Store serial: [23481457]
