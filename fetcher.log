@@ -13189,3 +13189,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:48:20] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-06-01 10:48:20] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-06-01 10:48:20] INFO root fetch - main [MainThread]: Store serial: [23478819]
+[2024-06-01 10:50:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478819]
+[2024-06-01 10:50:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 10:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twird
+[2024-06-01 10:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simple-Space
+[2024-06-01 10:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: changy
+[2024-06-01 10:50:29] INFO root fetch - processPackages [changy]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-01 10:50:29] INFO root fetch - processPackages [changy]: Downloading https://files.pythonhosted.org/packages/2e/1f/65a89f5fe361d196bb2d1581f2415584370444b924081ba84f2beee09595/changy-0.3.0.tar.gz
+[2024-06-01 10:50:29] WARNING root fetch - processPackages [twird]: Skipping, unable to determine old version
+[2024-06-01 10:50:29] INFO root fetch - processPackages [Simple-Space]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-06-01 10:50:29] INFO root fetch - main [MainThread]: End processing [twird] error
+[2024-06-01 10:50:30] INFO root fetch - processPackages [Simple-Space]: Downloading https://files.pythonhosted.org/packages/5e/40/dc7155f9725a571a17794db2c742c03f82c4696133d91238e4640fb60292/simple_space-0.9.0.tar.gz
+[2024-06-01 10:50:30] INFO root fetch - processPackages [changy]: Downloading https://files.pythonhosted.org/packages/bd/bb/e6c87bdc4e495c231da6d446f57f3274ec771b02abb83da611e4ba97653e/changy-0.4.0.tar.gz
+[2024-06-01 10:50:30] INFO root fetch - processPackages [changy]: executing diffoscope
+[2024-06-01 10:50:30] INFO root fetch - processPackages [changy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/changy-0.3.0.tar.gz tmp/changy-0.4.0.tar.gz --markdown 20240601/c/changy/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-01 10:50:30] INFO root fetch - processPackages [Simple-Space]: Downloading https://files.pythonhosted.org/packages/83/d0/641a297b26ece98cdcb22fc63b29bc7c3e343f57fda956f36abd024fe362/simple_space-1.0.0.tar.gz
+[2024-06-01 10:50:30] INFO root fetch - processPackages [Simple-Space]: executing diffoscope
+[2024-06-01 10:50:30] INFO root fetch - processPackages [Simple-Space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_space-0.9.0.tar.gz tmp/simple_space-1.0.0.tar.gz --markdown 20240601/S/Simple-Space/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-06-01 10:50:30] INFO root fetch - processPackages [changy]: Remove: archive file [/home/abi/fetcher/tmp/changy-0.3.0.tar.gz]
+[2024-06-01 10:50:30] INFO root fetch - processPackages [changy]: Remove: archive file [/home/abi/fetcher/tmp/changy-0.4.0.tar.gz]
+[2024-06-01 10:50:30] INFO root fetch - main [MainThread]: End processing [changy]: success
+[2024-06-01 10:50:31] INFO root fetch - processPackages [Simple-Space]: Remove: archive file [/home/abi/fetcher/tmp/simple_space-0.9.0.tar.gz]
+[2024-06-01 10:50:31] INFO root fetch - processPackages [Simple-Space]: Remove: archive file [/home/abi/fetcher/tmp/simple_space-1.0.0.tar.gz]
+[2024-06-01 10:50:31] INFO root fetch - main [MainThread]: End processing [Simple-Space]: success
+[2024-06-01 10:50:31] INFO root fetch - main [MainThread]: Store serial: [23478829]
