@@ -11451,3 +11451,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:23:43] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.5.tar.gz]
 [2024-06-01 08:23:43] INFO root fetch - main [MainThread]: End processing [nftpy]: success
 [2024-06-01 08:23:43] INFO root fetch - main [MainThread]: Store serial: [23477876]
+[2024-06-01 08:25:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477876]
+[2024-06-01 08:25:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 08:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydflow
+[2024-06-01 08:25:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: todoist-auto
+[2024-06-01 08:25:52] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-06-01 08:25:52] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-06-01 08:25:52] INFO root fetch - processPackages [pydflow]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-06-01 08:25:53] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-06-01 08:25:53] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-06-01 08:25:53] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240601/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-06-01 08:25:53] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/8d/22/584c02b6b9a49c26a40cc22b7f10af25724fe70df5357e5a527c2c36729a/pydflow-1.8.8.tar.gz
+[2024-06-01 08:25:53] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/b8/ee/62435e12ce818ae5c15b7256f01e225eb1dd5e3d49e3bde8e913944b4caa/pydflow-1.8.9.tar.gz
+[2024-06-01 08:25:53] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-06-01 08:25:53] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-06-01 08:25:53] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-06-01 08:25:53] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2024-06-01 08:25:53] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.8.8.tar.gz tmp/pydflow-1.8.9.tar.gz --markdown 20240601/p/pydflow/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-06-01 08:25:54] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.8.tar.gz]
+[2024-06-01 08:25:54] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
+[2024-06-01 08:25:54] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2024-06-01 08:25:54] INFO root fetch - main [MainThread]: Store serial: [23477882]
