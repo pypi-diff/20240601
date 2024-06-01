@@ -17919,3 +17919,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:46:54] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-3.0b0.tar.gz]
 [2024-06-01 16:46:54] INFO root fetch - main [MainThread]: End processing [webscout]: success
 [2024-06-01 16:46:54] INFO root fetch - main [MainThread]: Store serial: [23481033]
+[2024-06-01 16:48:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481033]
+[2024-06-01 16:49:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 16:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bgutils-hddly
+[2024-06-01 16:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simba-UW-tf-dev
+[2024-06-01 16:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pp-weight-estimation
+[2024-06-01 16:49:03] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-06-01 16:49:03] INFO root fetch - processPackages [pp-weight-estimation]: New version: [1.1.41] Old Version: [1.1.40]
+[2024-06-01 16:49:03] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-06-01 16:49:03] INFO root fetch - processPackages [pp-weight-estimation]: Downloading https://files.pythonhosted.org/packages/5b/19/16d146668f5a2f8c7cbecab9d96891a099b833c422247e2114cdbc8dc9fc/pp_weight_estimation-1.1.40.tar.gz
+[2024-06-01 16:49:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.94.5] Old Version: [1.94.4]
+[2024-06-01 16:49:03] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-06-01 16:49:03] INFO root fetch - processPackages [pp-weight-estimation]: Downloading https://files.pythonhosted.org/packages/2c/b5/ecd7bfc52ad45f324fdec7f9567ed6b35890f2913abc601f4a1bb3219b47/pp_weight_estimation-1.1.41.tar.gz
+[2024-06-01 16:49:03] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-06-01 16:49:03] INFO root fetch - processPackages [pp-weight-estimation]: executing diffoscope
+[2024-06-01 16:49:03] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240601/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-06-01 16:49:03] INFO root fetch - processPackages [pp-weight-estimation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pp_weight_estimation-1.1.40.tar.gz tmp/pp_weight_estimation-1.1.41.tar.gz --markdown 20240601/p/pp-weight-estimation/1.1.40-1.1.41/README.md --exclude *.pyd
+[2024-06-01 16:49:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/05/bf/8bc673ea4673749a214e2b7986c18326c54f8dcdf79e1063bbae7ca6fcc2/Simba-UW-tf-dev-1.94.4.tar.gz
+[2024-06-01 16:49:04] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-06-01 16:49:04] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-06-01 16:49:04] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-06-01 16:49:04] INFO root fetch - processPackages [pp-weight-estimation]: Remove: archive file [/home/abi/fetcher/tmp/pp_weight_estimation-1.1.40.tar.gz]
+[2024-06-01 16:49:04] INFO root fetch - processPackages [pp-weight-estimation]: Remove: archive file [/home/abi/fetcher/tmp/pp_weight_estimation-1.1.41.tar.gz]
+[2024-06-01 16:49:04] INFO root fetch - main [MainThread]: End processing [pp-weight-estimation]: success
+[2024-06-01 16:49:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/ee/c2/c26f578d654e18fec7b038fccaf839c1f12a9faad24120fe8c4e972051f9/Simba-UW-tf-dev-1.94.5.tar.gz
+[2024-06-01 16:49:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-06-01 16:49:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.94.4.tar.gz tmp/Simba-UW-tf-dev-1.94.5.tar.gz --markdown 20240601/S/Simba-UW-tf-dev/1.94.4-1.94.5/README.md --exclude *.pyd
+[2024-06-01 16:49:07] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.94.4.tar.gz]
+[2024-06-01 16:49:07] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.94.5.tar.gz]
+[2024-06-01 16:49:07] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-06-01 16:49:07] INFO root fetch - main [MainThread]: Store serial: [23481043]
