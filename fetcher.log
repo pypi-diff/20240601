@@ -11358,3 +11358,54 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:16:58] INFO root fetch - processPackages [hal9]: Remove: archive file [/home/abi/fetcher/tmp/hal9-2.1.7.tar.gz]
 [2024-06-01 08:16:58] INFO root fetch - main [MainThread]: End processing [hal9]: success
 [2024-06-01 08:16:58] INFO root fetch - main [MainThread]: Store serial: [23477846]
+[2024-06-01 08:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477846]
+[2024-06-01 08:19:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 08:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-purchase-reporting
+[2024-06-01 08:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module-latest
+[2024-06-01 08:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kwnn
+[2024-06-01 08:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fake-bpy-module
+[2024-06-01 08:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chemcat
+[2024-06-01 08:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-namespace-vet1ments
+[2024-06-01 08:19:07] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240531] Old Version: [20240530]
+[2024-06-01 08:19:07] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240531] Old Version: [20240530]
+[2024-06-01 08:19:07] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/bd/9c/7db7bbe9d234610a5a9cd892129e0010bc04ba65d5ea6b3f4f86b86313ed/fake_bpy_module-20240530.tar.gz
+[2024-06-01 08:19:07] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 08:19:07] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: New version: [16.0.20240531.0] Old Version: [16.0.20240406.0]
+[2024-06-01 08:19:07] WARNING root fetch - processPackages [kwnn]: Skipping, unable to determine old version
+[2024-06-01 08:19:07] INFO root fetch - main [MainThread]: End processing [kwnn] error
+[2024-06-01 08:19:07] INFO root fetch - processPackages [chemcat]: New version: [0.3.9] Old Version: [0.3.8b1]
+[2024-06-01 08:19:07] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/5a/b1/7e79fa2679b7a2582be230fdb242129b5c2b4cd0aaa6682eada6a524e53b/fake_bpy_module_latest-20240530.tar.gz
+[2024-06-01 08:19:08] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Downloading https://files.pythonhosted.org/packages/a5/c4/8895412a3121d72e76af6ab60f42e91ddfcc0c85d199c36262ce947e47e2/odoo_addons_oca_purchase_reporting-16.0.20240406.0-py3-none-any.whl
+[2024-06-01 08:19:08] INFO root fetch - processPackages [chemcat]: Downloading https://files.pythonhosted.org/packages/f7/2f/9e9fafc963790095482f1f2acfa1d343cfed0559ffd5ee701840400e5712/chemcat-0.3.8b1.tar.gz
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: Downloading https://files.pythonhosted.org/packages/f9/2b/13e2e8a344a08eb5211c436180c1eb8a6e8a8e0685f25e3fdbf18461bf36/fastapi_namespace_vet1ments-0.1.8.tar.gz
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/05/a8/05e028e16a5cc3bb802fcb161d95990a9adc65f326ed824dd732b396d465/fake_bpy_module_latest-20240531.tar.gz
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/84/ec/588fd62fa28bbc286f23615f2a41238194a359375376332084aee8f7eb1f/fake_bpy_module-20240531.tar.gz
+[2024-06-01 08:19:08] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Downloading https://files.pythonhosted.org/packages/1c/25/a8fe2986519cd2119da73fe40f4b8dfef8a0988f80451b1ed301066dbc0d/odoo_addons_oca_purchase_reporting-16.0.20240531.0-py3-none-any.whl
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240530.tar.gz tmp/fake_bpy_module-20240531.tar.gz --markdown 20240601/f/fake-bpy-module/20240530-20240531/README.md --exclude *.pyd
+[2024-06-01 08:19:08] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: executing diffoscope
+[2024-06-01 08:19:08] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_purchase_reporting-16.0.20240406.0-py3-none-any.whl.zip tmp/odoo_addons_oca_purchase_reporting-16.0.20240531.0-py3-none-any.whl.zip --markdown 20240601/o/odoo-addons-oca-purchase-reporting/16.0.20240406.0-16.0.20240531.0/README.md --exclude *.pyd
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240530.tar.gz tmp/fake_bpy_module_latest-20240531.tar.gz --markdown 20240601/f/fake-bpy-module-latest/20240530-20240531/README.md --exclude *.pyd
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: Downloading https://files.pythonhosted.org/packages/e2/db/1d56ccae8a16d546789bb6ad6ab5d50975e1662ede84f77aa37fe45d944c/fastapi_namespace_vet1ments-0.1.9.tar.gz
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: executing diffoscope
+[2024-06-01 08:19:08] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_namespace_vet1ments-0.1.8.tar.gz tmp/fastapi_namespace_vet1ments-0.1.9.tar.gz --markdown 20240601/f/fastapi-namespace-vet1ments/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 08:19:08] INFO root fetch - processPackages [chemcat]: Downloading https://files.pythonhosted.org/packages/59/0b/5e9d115b02c22cffc9253723948e325c9a02d71e0f9a99ad81b54da483ff/chemcat-0.3.9.tar.gz
+[2024-06-01 08:19:09] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_purchase_reporting-16.0.20240406.0-py3-none-any.whl.zip]
+[2024-06-01 08:19:09] INFO root fetch - processPackages [odoo-addons-oca-purchase-reporting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_purchase_reporting-16.0.20240531.0-py3-none-any.whl.zip]
+[2024-06-01 08:19:09] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-purchase-reporting]: success
+[2024-06-01 08:19:09] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_namespace_vet1ments-0.1.8.tar.gz]
+[2024-06-01 08:19:09] INFO root fetch - processPackages [fastapi-namespace-vet1ments]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_namespace_vet1ments-0.1.9.tar.gz]
+[2024-06-01 08:19:09] INFO root fetch - main [MainThread]: End processing [fastapi-namespace-vet1ments]: success
+[2024-06-01 08:19:09] INFO root fetch - processPackages [chemcat]: executing diffoscope
+[2024-06-01 08:19:09] INFO root fetch - processPackages [chemcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemcat-0.3.8b1.tar.gz tmp/chemcat-0.3.9.tar.gz --markdown 20240601/c/chemcat/0.3.8b1-0.3.9/README.md --exclude *.pyd
+[2024-06-01 08:19:15] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240530.tar.gz]
+[2024-06-01 08:19:15] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240531.tar.gz]
+[2024-06-01 08:19:15] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-06-01 08:19:15] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240530.tar.gz]
+[2024-06-01 08:19:15] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240531.tar.gz]
+[2024-06-01 08:19:15] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-06-01 08:19:18] INFO root fetch - processPackages [chemcat]: Remove: archive file [/home/abi/fetcher/tmp/chemcat-0.3.8b1.tar.gz]
+[2024-06-01 08:19:18] INFO root fetch - processPackages [chemcat]: Remove: archive file [/home/abi/fetcher/tmp/chemcat-0.3.9.tar.gz]
+[2024-06-01 08:19:18] INFO root fetch - main [MainThread]: End processing [chemcat]: success
+[2024-06-01 08:19:18] INFO root fetch - main [MainThread]: Store serial: [23477864]
