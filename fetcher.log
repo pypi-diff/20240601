@@ -17760,3 +17760,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:33:18] INFO root fetch - processPackages [gulagcleaner]: Remove: archive file [/home/abi/fetcher/tmp/gulagcleaner-0.8.2.tar.gz]
 [2024-06-01 16:33:18] INFO root fetch - main [MainThread]: End processing [gulagcleaner]: success
 [2024-06-01 16:33:18] INFO root fetch - main [MainThread]: Store serial: [23480964]
+[2024-06-01 16:35:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480964]
+[2024-06-01 16:35:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 16:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: creosote
+[2024-06-01 16:35:28] INFO root fetch - processPackages [creosote]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: Downloading https://files.pythonhosted.org/packages/84/70/f72e508d706682c37ece4e013833d6289d7eb24ef7c9c1d72052ea571211/creosote-3.0.0-py3-none-any.whl
+[2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: Downloading https://files.pythonhosted.org/packages/2c/34/298610b05ef15867061775b2bd30bc5224c8e060b4898582e7b1b607803f/creosote-3.0.1-py3-none-any.whl
+[2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: executing diffoscope
+[2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/creosote-3.0.0-py3-none-any.whl.zip tmp/creosote-3.0.1-py3-none-any.whl.zip --markdown 20240601/c/creosote/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: Remove: archive file [/home/abi/fetcher/tmp/creosote-3.0.0-py3-none-any.whl.zip]
+[2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: Remove: archive file [/home/abi/fetcher/tmp/creosote-3.0.1-py3-none-any.whl.zip]
+[2024-06-01 16:35:29] INFO root fetch - main [MainThread]: End processing [creosote]: success
+[2024-06-01 16:35:29] INFO root fetch - main [MainThread]: Store serial: [23480968]
