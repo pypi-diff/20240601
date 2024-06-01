@@ -21710,3 +21710,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:02:21] INFO root fetch - processPackages [gallery-dl]: Remove: archive file [/home/abi/fetcher/tmp/gallery_dl-1.9.0.tar.gz]
 [2024-06-01 21:02:21] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
 [2024-06-01 21:02:21] INFO root fetch - main [MainThread]: Store serial: [23482799]
+[2024-06-01 21:04:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482799]
+[2024-06-01 21:04:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 21:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-tool-generator
+[2024-06-01 21:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ngstrefftz
+[2024-06-01 21:04:31] WARNING root fetch - processPackages [openai-tool-generator]: Skipping, unable to determine old version
+[2024-06-01 21:04:31] INFO root fetch - main [MainThread]: End processing [openai-tool-generator] error
+[2024-06-01 21:04:31] INFO root fetch - processPackages [ngstrefftz]: New version: [0.3.2403.dev5] Old Version: [0.3.2402.dev35]
+[2024-06-01 21:04:31] INFO root fetch - processPackages [ngstrefftz]: Downloading https://files.pythonhosted.org/packages/44/7d/44aa826889bd95b815df52f2e4f41261bb32933951d52bd761ae418110fa/ngstrefftz-0.3.2402.dev35.tar.gz
+[2024-06-01 21:04:32] INFO root fetch - processPackages [ngstrefftz]: Downloading https://files.pythonhosted.org/packages/66/dc/5eecb876d44aca94f2789695f5a2111a5cc2bffc86d4d31eabd3b996579f/ngstrefftz-0.3.2403.dev5.tar.gz
+[2024-06-01 21:04:32] INFO root fetch - processPackages [ngstrefftz]: executing diffoscope
+[2024-06-01 21:04:32] INFO root fetch - processPackages [ngstrefftz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngstrefftz-0.3.2402.dev35.tar.gz tmp/ngstrefftz-0.3.2403.dev5.tar.gz --markdown 20240601/n/ngstrefftz/0.3.2402.dev35-0.3.2403.dev5/README.md --exclude *.pyd
+[2024-06-01 21:04:33] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2402.dev35.tar.gz]
+[2024-06-01 21:04:33] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2403.dev5.tar.gz]
+[2024-06-01 21:04:33] INFO root fetch - main [MainThread]: End processing [ngstrefftz]: success
+[2024-06-01 21:04:33] INFO root fetch - main [MainThread]: Store serial: [23482810]
