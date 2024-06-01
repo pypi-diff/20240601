@@ -18890,3 +18890,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:50:53] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.3.8.tar.gz]
 [2024-06-01 17:50:53] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-06-01 17:50:53] INFO root fetch - main [MainThread]: Store serial: [23481509]
+[2024-06-01 17:52:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481509]
+[2024-06-01 17:53:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 17:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic-mongo-document
+[2024-06-01 17:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pykwl
+[2024-06-01 17:53:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chaos-stratus
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pydantic-mongo-document]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pykwl]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/e7/3c/05a69371855168eeefafc750509822cac9abdb3e751aec4e946ff65574e0/pydantic_mongo_document-0.1.5.tar.gz
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/fe/0d/54df9b3f876d3c7bc02b8863a3d36c544df1258cfed5d2fe0e8fd27e38c5/pykwl-0.0.8.tar.gz
+[2024-06-01 17:53:02] INFO root fetch - processPackages [chaos-stratus]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-06-01 17:53:02] INFO root fetch - processPackages [chaos-stratus]: Downloading https://files.pythonhosted.org/packages/0a/9f/6b3f06f560edb6cce05e6b8e88ac38f53f5ea542a6522d4e064c5b46f777/chaos_stratus-1.0.1.tar.gz
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/af/8c/4103b3c2c1d782a7b72db67a054d581ce765d3887de52331b6ed5b7e36cd/pykwl-0.0.9.tar.gz
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/41/2c/a524bb4aa306a08d5ea8108f53179a803501a83c8569d53dec5c07a761a4/pydantic_mongo_document-0.1.6.tar.gz
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pykwl]: executing diffoscope
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pykwl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykwl-0.0.8.tar.gz tmp/pykwl-0.0.9.tar.gz --markdown 20240601/p/pykwl/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pydantic-mongo-document]: executing diffoscope
+[2024-06-01 17:53:02] INFO root fetch - processPackages [pydantic-mongo-document]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_mongo_document-0.1.5.tar.gz tmp/pydantic_mongo_document-0.1.6.tar.gz --markdown 20240601/p/pydantic-mongo-document/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 17:53:02] INFO root fetch - processPackages [chaos-stratus]: Downloading https://files.pythonhosted.org/packages/a1/bd/623068cfc2ab347f444961d5d5f2147dd30d2883b263600a3e673df58bc8/chaos_stratus-1.1.0.tar.gz
+[2024-06-01 17:53:03] INFO root fetch - processPackages [chaos-stratus]: executing diffoscope
+[2024-06-01 17:53:03] INFO root fetch - processPackages [chaos-stratus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaos_stratus-1.0.1.tar.gz tmp/chaos_stratus-1.1.0.tar.gz --markdown 20240601/c/chaos-stratus/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-06-01 17:53:03] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.8.tar.gz]
+[2024-06-01 17:53:03] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.9.tar.gz]
+[2024-06-01 17:53:03] INFO root fetch - main [MainThread]: End processing [pykwl]: success
+[2024-06-01 17:53:03] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.5.tar.gz]
+[2024-06-01 17:53:03] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.6.tar.gz]
+[2024-06-01 17:53:03] INFO root fetch - main [MainThread]: End processing [pydantic-mongo-document]: success
+[2024-06-01 17:53:03] INFO root fetch - processPackages [chaos-stratus]: Remove: archive file [/home/abi/fetcher/tmp/chaos_stratus-1.0.1.tar.gz]
+[2024-06-01 17:53:03] INFO root fetch - processPackages [chaos-stratus]: Remove: archive file [/home/abi/fetcher/tmp/chaos_stratus-1.1.0.tar.gz]
+[2024-06-01 17:53:03] INFO root fetch - main [MainThread]: End processing [chaos-stratus]: success
+[2024-06-01 17:53:03] INFO root fetch - main [MainThread]: Store serial: [23481517]
