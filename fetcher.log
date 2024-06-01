@@ -10222,3 +10222,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:20:50] INFO root fetch - processPackages [bigtree]: Remove: archive file [/home/abi/fetcher/tmp/bigtree-0.9.5.tar.gz]
 [2024-06-01 06:20:50] INFO root fetch - main [MainThread]: End processing [bigtree]: success
 [2024-06-01 06:20:50] INFO root fetch - main [MainThread]: Store serial: [23477224]
+[2024-06-01 06:22:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477224]
+[2024-06-01 06:22:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 06:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-06-01 06:22:58] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 06:22:58] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-06-01 06:22:59] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-06-01 06:22:59] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-06-01 06:22:59] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240601/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 06:23:00] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-06-01 06:23:00] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-06-01 06:23:00] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-06-01 06:23:00] INFO root fetch - main [MainThread]: Store serial: [23477227]
