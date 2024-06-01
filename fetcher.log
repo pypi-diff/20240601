@@ -13108,3 +13108,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:39:38] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev9.tar.gz]
 [2024-06-01 10:39:38] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-06-01 10:39:38] INFO root fetch - main [MainThread]: Store serial: [23478731]
+[2024-06-01 10:41:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478731]
+[2024-06-01 10:41:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 10:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Umi-OCR
+[2024-06-01 10:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webCrawl-pro
+[2024-06-01 10:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wechat-admin
+[2024-06-01 10:41:47] WARNING root fetch - processPackages [webCrawl-pro]: Skipping, unable to determine old version
+[2024-06-01 10:41:47] INFO root fetch - main [MainThread]: End processing [webCrawl-pro] error
+[2024-06-01 10:41:47] WARNING root fetch - processPackages [Umi-OCR]: Skipping, unable to determine old version
+[2024-06-01 10:41:47] INFO root fetch - main [MainThread]: End processing [Umi-OCR] error
+[2024-06-01 10:41:47] WARNING root fetch - processPackages [wechat-admin]: Skipping, unable to determine old version
+[2024-06-01 10:41:47] INFO root fetch - main [MainThread]: End processing [wechat-admin] error
+[2024-06-01 10:41:47] INFO root fetch - main [MainThread]: Store serial: [23478763]
