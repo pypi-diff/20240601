@@ -23366,3 +23366,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:15:45] INFO root fetch - processPackages [muGrid]: Remove: archive file [/home/abi/fetcher/tmp/mugrid-0.90.1.tar.gz]
 [2024-06-01 23:15:45] INFO root fetch - main [MainThread]: End processing [muGrid]: success
 [2024-06-01 23:15:45] INFO root fetch - main [MainThread]: Store serial: [23483681]
+[2024-06-01 23:18:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483681]
+[2024-06-01 23:18:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 23:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rencrypt
+[2024-06-01 23:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mindspore-dev
+[2024-06-01 23:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cg635-clock-generator
+[2024-06-01 23:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cg635-clock-generator
+[2024-06-01 23:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Cut4Url
+[2024-06-01 23:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mkdocs-include-markdown-plugin
+[2024-06-01 23:18:07] INFO root fetch - processPackages [cg635-clock-generator]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 23:18:07] INFO root fetch - processPackages [cg635-clock-generator]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 23:18:07] WARNING root fetch - processPackages [Cut4Url]: Skipping, unable to determine old version
+[2024-06-01 23:18:07] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: New version: [6.1.1] Old Version: [6.1.0]
+[2024-06-01 23:18:07] INFO root fetch - main [MainThread]: End processing [Cut4Url] error
+[2024-06-01 23:18:07] INFO root fetch - processPackages [rencrypt]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 23:18:07] INFO root fetch - processPackages [mindspore-dev]: New version: [2.3.0.dev20240602] Old Version: [2.3.0.dev20240526]
+[2024-06-01 23:18:07] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Downloading https://files.pythonhosted.org/packages/be/eb/65b7508cbddfd5e43dd243e26a6f327afde209fb7b96ff2ed1fb9280063e/mkdocs_include_markdown_plugin-6.1.0.tar.gz
+[2024-06-01 23:18:07] INFO root fetch - processPackages [cg635-clock-generator]: Downloading https://files.pythonhosted.org/packages/6d/07/afe05b9570266a6ea3ae9c8644c9bc7a3c681a66aafcab5905bb1ee1a09c/cg635_clock_generator-1.0.0.tar.gz
+[2024-06-01 23:18:07] INFO root fetch - processPackages [cg635-clock-generator]: Downloading https://files.pythonhosted.org/packages/6d/07/afe05b9570266a6ea3ae9c8644c9bc7a3c681a66aafcab5905bb1ee1a09c/cg635_clock_generator-1.0.0.tar.gz
+[2024-06-01 23:18:07] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/a6/25/8242ff2eb1086921ce695d7e231562ff3852dfaf31c497aea971e084b365/REncrypt-0.1.8.tar.gz
+[2024-06-01 23:18:07] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/60/50/b77f7e5f50cb36d86d26569910eb19f8239a8f1ae7a53529aab239788dbd/mindspore_dev-2.3.0.dev20240526-cp39-none-any.whl
+[2024-06-01 23:18:07] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 244833559>=10485760
+[2024-06-01 23:18:07] INFO root fetch - main [MainThread]: End processing [mindspore-dev] error
+[2024-06-01 23:18:08] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Downloading https://files.pythonhosted.org/packages/e4/b2/8e028b4153c169238702b52ff2b880e2771f2dae5e980925ef93acdbda76/mkdocs_include_markdown_plugin-6.1.1.tar.gz
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: Downloading https://files.pythonhosted.org/packages/bc/34/4c135d6e64747438945601cf58162e53bea0e167d0a4cba80d90a17c1e64/cg635_clock_generator-1.0.1.tar.gz
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: Downloading https://files.pythonhosted.org/packages/bc/34/4c135d6e64747438945601cf58162e53bea0e167d0a4cba80d90a17c1e64/cg635_clock_generator-1.0.1.tar.gz
+[2024-06-01 23:18:08] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: executing diffoscope
+[2024-06-01 23:18:08] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_include_markdown_plugin-6.1.0.tar.gz tmp/mkdocs_include_markdown_plugin-6.1.1.tar.gz --markdown 20240601/m/mkdocs-include-markdown-plugin/6.1.0-6.1.1/README.md --exclude *.pyd
+[2024-06-01 23:18:08] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/05/a0/d8093ea3b8c7cffd668f46310034f7690d20e23a1a2e2c643fe41a9d9e9c/REncrypt-0.1.9.tar.gz
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: executing diffoscope
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg635_clock_generator-1.0.0.tar.gz tmp/cg635_clock_generator-1.0.1.tar.gz --markdown 20240601/c/cg635-clock-generator/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: executing diffoscope
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg635_clock_generator-1.0.0.tar.gz tmp/cg635_clock_generator-1.0.1.tar.gz --markdown 20240601/c/cg635-clock-generator/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 23:18:08] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-01 23:18:08] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.8.tar.gz tmp/REncrypt-0.1.9.tar.gz --markdown 20240601/r/rencrypt/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 23:18:08] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_include_markdown_plugin-6.1.0.tar.gz]
+[2024-06-01 23:18:08] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_include_markdown_plugin-6.1.1.tar.gz]
+[2024-06-01 23:18:08] INFO root fetch - main [MainThread]: End processing [mkdocs-include-markdown-plugin]: success
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: Remove: archive file [/home/abi/fetcher/tmp/cg635_clock_generator-1.0.0.tar.gz]
+[2024-06-01 23:18:08] INFO root fetch - processPackages [cg635-clock-generator]: Remove: archive file [/home/abi/fetcher/tmp/cg635_clock_generator-1.0.1.tar.gz]
+[2024-06-01 23:18:08] INFO root fetch - main [MainThread]: End processing [cg635-clock-generator]: success
+[2024-06-01 23:18:08] INFO root fetch - main [MainThread]: End processing [cg635-clock-generator]: success
+[2024-06-01 23:18:10] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.8.tar.gz]
+[2024-06-01 23:18:10] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
+[2024-06-01 23:18:10] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-01 23:18:10] INFO root fetch - main [MainThread]: Store serial: [23483748]
