@@ -11188,3 +11188,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:01:39] WARNING root fetch - processPackages [toyai]: Skipping, unable to determine old version
 [2024-06-01 08:01:39] INFO root fetch - main [MainThread]: End processing [toyai] error
 [2024-06-01 08:01:39] INFO root fetch - main [MainThread]: Store serial: [23477744]
+[2024-06-01 08:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477744]
+[2024-06-01 08:03:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 08:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyJONDB
+[2024-06-01 08:03:48] INFO root fetch - processPackages [PyJONDB]: New version: [1.5] Old Version: [1.4]
+[2024-06-01 08:03:48] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/50/62/4db3f44caeba5a0fc526ec28333e7fae7f66a915ad86cf1c7e16b229037a/pyjondb-1.4.tar.gz
+[2024-06-01 08:03:48] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/27/f4/ca1a4c432e1e22975c479b31d4551f80a3efe2ebbccb18f9ef91da2f334b/pyjondb-1.5.tar.gz
+[2024-06-01 08:03:49] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 08:03:49] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.4.tar.gz tmp/pyjondb-1.5.tar.gz --markdown 20240601/P/PyJONDB/1.4-1.5/README.md --exclude *.pyd
+[2024-06-01 08:03:49] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.4.tar.gz]
+[2024-06-01 08:03:49] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.5.tar.gz]
+[2024-06-01 08:03:49] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 08:03:49] INFO root fetch - main [MainThread]: Store serial: [23477746]
