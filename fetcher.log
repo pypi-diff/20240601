@@ -2847,3 +2847,33 @@
 [2024-06-01 02:34:11] INFO root fetch - processPackages [enigma-workflow-14]: Remove: archive file [/home/abi/fetcher/tmp/enigma_workflow_14-14.0.9-cp39-cp39-macosx_11_0_arm64.whl.zip]
 [2024-06-01 02:34:11] INFO root fetch - main [MainThread]: End processing [enigma-workflow-14]: success
 [2024-06-01 02:34:11] INFO root fetch - main [MainThread]: Store serial: [23474103]
+[2024-06-01 02:36:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474103]
+[2024-06-01 02:36:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 02:36:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl-nightly
+[2024-06-01 02:36:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyJONDB
+[2024-06-01 02:36:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: negar-gui
+[2024-06-01 02:36:20] INFO root fetch - processPackages [PyJONDB]: New version: [1.1] Old Version: [1.0]
+[2024-06-01 02:36:20] INFO root fetch - processPackages [negar-gui]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-06-01 02:36:20] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240531] Old Version: [0.1.5.dev20240530]
+[2024-06-01 02:36:20] INFO root fetch - processPackages [negar-gui]: Downloading https://files.pythonhosted.org/packages/8d/3b/c6de56403d401dd8718ad850359a4f0d0abd88c07897f87e340c9e5d2da9/negar_gui-0.8.4.tar.gz
+[2024-06-01 02:36:20] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/c1/55/eaf73d8aa33200a663b81a7d2a41f1ba5861ae3297a108176a823eef6127/aeppl_nightly-0.1.5.dev20240530.tar.gz
+[2024-06-01 02:36:20] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/6c/98/5f436f4774d3cf8c8bdf9630dc0708ab18f7d74b3f1c0435be0432a83671/pyjondb-1.0.tar.gz
+[2024-06-01 02:36:20] INFO root fetch - processPackages [negar-gui]: Downloading https://files.pythonhosted.org/packages/3c/a0/ec7cfb4d3ba1868e585fcceb0fcb80d74a0ef3306b7e53843b04aef94674/negar_gui-0.8.5.tar.gz
+[2024-06-01 02:36:20] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/eb/c1/4ada4b1650cfd6d52002fe0ef96d35b4cfd0a0e8f1d9b9b80070f2656681/aeppl_nightly-0.1.5.dev20240531.tar.gz
+[2024-06-01 02:36:20] INFO root fetch - processPackages [negar-gui]: executing diffoscope
+[2024-06-01 02:36:20] INFO root fetch - processPackages [negar-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/negar_gui-0.8.4.tar.gz tmp/negar_gui-0.8.5.tar.gz --markdown 20240601/n/negar-gui/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-06-01 02:36:20] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/5f/2f/efaf8d2899de165f3d8905ff67e9333492857d34880a5eace408956c1f97/pyjondb-1.1.tar.gz
+[2024-06-01 02:36:21] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-06-01 02:36:21] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240530.tar.gz tmp/aeppl_nightly-0.1.5.dev20240531.tar.gz --markdown 20240601/a/aeppl-nightly/0.1.5.dev20240530-0.1.5.dev20240531/README.md --exclude *.pyd
+[2024-06-01 02:36:21] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 02:36:21] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.0.tar.gz tmp/pyjondb-1.1.tar.gz --markdown 20240601/P/PyJONDB/1.0-1.1/README.md --exclude *.pyd
+[2024-06-01 02:36:21] INFO root fetch - processPackages [negar-gui]: Remove: archive file [/home/abi/fetcher/tmp/negar_gui-0.8.4.tar.gz]
+[2024-06-01 02:36:21] INFO root fetch - processPackages [negar-gui]: Remove: archive file [/home/abi/fetcher/tmp/negar_gui-0.8.5.tar.gz]
+[2024-06-01 02:36:21] INFO root fetch - main [MainThread]: End processing [negar-gui]: success
+[2024-06-01 02:36:21] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.0.tar.gz]
+[2024-06-01 02:36:21] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.1.tar.gz]
+[2024-06-01 02:36:21] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 02:36:21] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240530.tar.gz]
+[2024-06-01 02:36:21] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240531.tar.gz]
+[2024-06-01 02:36:21] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-06-01 02:36:21] INFO root fetch - main [MainThread]: Store serial: [23474112]
