@@ -8759,3 +8759,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:58:36] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
 [2024-06-01 04:58:36] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2024-06-01 04:58:36] INFO root fetch - main [MainThread]: Store serial: [23476650]
+[2024-06-01 05:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476650]
+[2024-06-01 05:00:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 05:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mesop
+[2024-06-01 05:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schwab-client
+[2024-06-01 05:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myfunctions-ysakova90
+[2024-06-01 05:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: omniverse-kit
+[2024-06-01 05:00:45] WARNING root fetch - processPackages [myfunctions-ysakova90]: Skipping, unable to determine old version
+[2024-06-01 05:00:45] INFO root fetch - main [MainThread]: End processing [myfunctions-ysakova90] error
+[2024-06-01 05:00:45] WARNING root fetch - processPackages [schwab-client]: Skipping, unable to determine old version
+[2024-06-01 05:00:45] INFO root fetch - main [MainThread]: End processing [schwab-client] error
+[2024-06-01 05:00:45] ERROR root fetch - processPackages [omniverse-kit]: Unable to get metadata: No such project 'omniverse-kit'
+[2024-06-01 05:00:45] INFO root fetch - main [MainThread]: End processing [omniverse-kit] error
+[2024-06-01 05:00:45] INFO root fetch - processPackages [mesop]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-06-01 05:00:45] INFO root fetch - processPackages [mesop]: Downloading https://files.pythonhosted.org/packages/29/8e/a1e0e5ed832e1f13c9831772e39b7eeaed742fbfd0d203a9bf16ad9bf87e/mesop-0.7.1-py3-none-any.whl
+[2024-06-01 05:00:46] INFO root fetch - processPackages [mesop]: Downloading https://files.pythonhosted.org/packages/2f/7a/c31a6ace6ba4974a9fb0f34274a509ccded1592bfdc51f78fc7d741e1270/mesop-0.7.2-py3-none-any.whl
+[2024-06-01 05:00:46] INFO root fetch - processPackages [mesop]: executing diffoscope
+[2024-06-01 05:00:46] INFO root fetch - processPackages [mesop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesop-0.7.1-py3-none-any.whl.zip tmp/mesop-0.7.2-py3-none-any.whl.zip --markdown 20240601/m/mesop/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-06-01 05:00:48] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.7.1-py3-none-any.whl.zip]
+[2024-06-01 05:00:48] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.7.2-py3-none-any.whl.zip]
+[2024-06-01 05:00:48] INFO root fetch - main [MainThread]: End processing [mesop]: success
+[2024-06-01 05:00:48] INFO root fetch - main [MainThread]: Store serial: [23476662]
