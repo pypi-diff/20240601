@@ -20623,3 +20623,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:51:21] WARNING root fetch - processPackages [sktime]: Skipping package: exceeds size limit 11076866>=10485760
 [2024-06-01 19:51:21] INFO root fetch - main [MainThread]: End processing [sktime] error
 [2024-06-01 19:51:21] INFO root fetch - main [MainThread]: Store serial: [23482236]
+[2024-06-01 19:53:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482236]
+[2024-06-01 19:53:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 19:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plugwise
+[2024-06-01 19:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gradio
+[2024-06-01 19:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai-voicestream
+[2024-06-01 19:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: todoist-auto
+[2024-06-01 19:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: usportspy
+[2024-06-01 19:53:30] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-06-01 19:53:30] INFO root fetch - processPackages [gradio]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-06-01 19:53:30] WARNING root fetch - processPackages [openai-voicestream]: Skipping, unable to determine old version
+[2024-06-01 19:53:30] INFO root fetch - main [MainThread]: End processing [openai-voicestream] error
+[2024-06-01 19:53:30] WARNING root fetch - processPackages [usportspy]: Skipping, unable to determine old version
+[2024-06-01 19:53:30] INFO root fetch - main [MainThread]: End processing [usportspy] error
+[2024-06-01 19:53:30] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-06-01 19:53:30] INFO root fetch - processPackages [plugwise]: New version: [0.9.4a9] Old Version: [0.9.4a8]
+[2024-06-01 19:53:30] INFO root fetch - processPackages [plugwise]: Downloading https://files.pythonhosted.org/packages/9f/eb/88773e492984c980bc342942239d3bd6eee77c3dc052d35d25e42e2137a6/plugwise-0.9.4a8.tar.gz
+[2024-06-01 19:53:30] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-06-01 19:53:30] INFO root fetch - processPackages [gradio]: Downloading https://files.pythonhosted.org/packages/eb/a2/56c39c590c6c0e5d2583115b6e478de4bf1c9aa42b45cc47d81d88f93665/gradio-4.9.0.tar.gz
+[2024-06-01 19:53:30] WARNING root fetch - processPackages [gradio]: Skipping package: exceeds size limit 26124496>=10485760
+[2024-06-01 19:53:30] INFO root fetch - main [MainThread]: End processing [gradio] error
+[2024-06-01 19:53:30] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-06-01 19:53:30] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240601/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-06-01 19:53:30] INFO root fetch - processPackages [plugwise]: Downloading https://files.pythonhosted.org/packages/ec/fd/45b5a2ee424806593e900234e26bf62ae0c3582ac99cadfa9477e6719004/plugwise-0.9.4a9.tar.gz
+[2024-06-01 19:53:30] INFO root fetch - processPackages [plugwise]: executing diffoscope
+[2024-06-01 19:53:30] INFO root fetch - processPackages [plugwise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugwise-0.9.4a8.tar.gz tmp/plugwise-0.9.4a9.tar.gz --markdown 20240601/p/plugwise/0.9.4a8-0.9.4a9/README.md --exclude *.pyd
+[2024-06-01 19:53:31] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-06-01 19:53:31] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-06-01 19:53:31] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-06-01 19:53:31] INFO root fetch - processPackages [plugwise]: Remove: archive file [/home/abi/fetcher/tmp/plugwise-0.9.4a8.tar.gz]
+[2024-06-01 19:53:31] INFO root fetch - processPackages [plugwise]: Remove: archive file [/home/abi/fetcher/tmp/plugwise-0.9.4a9.tar.gz]
+[2024-06-01 19:53:31] INFO root fetch - main [MainThread]: End processing [plugwise]: success
+[2024-06-01 19:53:31] INFO root fetch - main [MainThread]: Store serial: [23482255]
