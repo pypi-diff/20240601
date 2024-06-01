@@ -23643,3 +23643,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:37:52] INFO root fetch - processPackages [rekker]: Remove: archive file [/home/abi/fetcher/tmp/rekker-0.1.2.tar.gz]
 [2024-06-01 23:37:52] INFO root fetch - main [MainThread]: End processing [rekker]: success
 [2024-06-01 23:37:52] INFO root fetch - main [MainThread]: Store serial: [23483837]
+[2024-06-01 23:39:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483837]
+[2024-06-01 23:40:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ladybug-comfort
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Cut4Url
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ladybug-comfort]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 23:40:00] WARNING root fetch - processPackages [Cut4Url]: Skipping, unable to determine old version
+[2024-06-01 23:40:00] INFO root fetch - main [MainThread]: End processing [Cut4Url] error
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ladybug-comfort]: Downloading https://files.pythonhosted.org/packages/6a/bf/8102b0e33435882b5600b8c0d7b5ebb92e379d665f3767b706dce6bdd2d3/ladybug-comfort-0.9.8.tar.gz
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ladybug-comfort]: Downloading https://files.pythonhosted.org/packages/01/02/b871500d4bb81f18c253d98ce272a040dfa679de4682eb2f66a1f039c17a/ladybug-comfort-0.9.9.tar.gz
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ladybug-comfort]: executing diffoscope
+[2024-06-01 23:40:00] INFO root fetch - processPackages [ladybug-comfort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-comfort-0.9.8.tar.gz tmp/ladybug-comfort-0.9.9.tar.gz --markdown 20240601/l/ladybug-comfort/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 23:40:01] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.8.tar.gz]
+[2024-06-01 23:40:01] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.9.tar.gz]
+[2024-06-01 23:40:01] INFO root fetch - main [MainThread]: End processing [ladybug-comfort]: success
+[2024-06-01 23:40:01] INFO root fetch - main [MainThread]: Store serial: [23483847]
