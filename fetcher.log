@@ -2312,3 +2312,54 @@
 [2024-06-01 02:06:38] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.1.0.20240601.434.tar.gz]
 [2024-06-01 02:06:38] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-06-01 02:06:38] INFO root fetch - main [MainThread]: Store serial: [23473885]
+[2024-06-01 02:08:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473885]
+[2024-06-01 02:08:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 02:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hydra-rbp
+[2024-06-01 02:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxutils-nightly
+[2024-06-01 02:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omniduct
+[2024-06-01 02:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-06-01 02:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-06-01 02:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-common
+[2024-06-01 02:08:47] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240531] Old Version: [0.0.8.dev20240530]
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.30a1717109630] Old Version: [0.0.30a1717109610]
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.30a1717109630] Old Version: [0.0.30a1717109610]
+[2024-06-01 02:08:47] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-01 02:08:47] INFO root fetch - processPackages [hydra-rbp]: New version: [0.1.21.35] Old Version: [0.1.21.34]
+[2024-06-01 02:08:47] INFO root fetch - processPackages [omniduct]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-06-01 02:08:47] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/de/86/3cb88617de22b7adca9ea28eefd68d78fbff4a39ee24f8e4838f06b610cf/jaxutils-nightly-0.0.8.dev20240530.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/3e/12/01d2ccf284c8f5ef54b3c08d3908176c8059b33afd33ba70d5681ed9bc58/pulumi_kubernetes_the_hard_way-0.0.30a1717109610.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/3e/12/01d2ccf284c8f5ef54b3c08d3908176c8059b33afd33ba70d5681ed9bc58/pulumi_kubernetes_the_hard_way-0.0.30a1717109610.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [hydra-rbp]: Downloading https://files.pythonhosted.org/packages/12/84/4e08c0bc35387dfd2176c0136f91f3e4f2f0009606b3985fab1e652a1497/hydra_rbp-0.1.21.34.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [omniduct]: Downloading https://files.pythonhosted.org/packages/15/07/d9121d08e8cedf3c53ef9fbe3f6ea603d8ce6d339320c4694d74805850d8/omniduct-1.2.1.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/10/98/29c1ef2bd7c6c3c909f8c6c327a80737a6fb246a47a0b4bcfee29ebd9ab3/pulumi_kubernetes_the_hard_way-0.0.30a1717109630.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/10/98/29c1ef2bd7c6c3c909f8c6c327a80737a6fb246a47a0b4bcfee29ebd9ab3/pulumi_kubernetes_the_hard_way-0.0.30a1717109630.tar.gz
+[2024-06-01 02:08:47] WARNING root fetch - processPackages [hydra-rbp]: Skipping package: exceeds size limit 52348262>=10485760
+[2024-06-01 02:08:47] INFO root fetch - main [MainThread]: End processing [hydra-rbp] error
+[2024-06-01 02:08:47] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/6d/1d/23d369b20f7116a4cca16cf11d416348c792643e68e2cd966761436b2226/jaxutils-nightly-0.0.8.dev20240531.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.30a1717109610.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.30a1717109630.tar.gz --markdown 20240601/p/pulumi-kubernetes-the-hard-way/0.0.30a1717109610-0.0.30a1717109630/README.md --exclude *.pyd
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-06-01 02:08:47] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.30a1717109610.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.30a1717109630.tar.gz --markdown 20240601/p/pulumi-kubernetes-the-hard-way/0.0.30a1717109610-0.0.30a1717109630/README.md --exclude *.pyd
+[2024-06-01 02:08:47] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-06-01 02:08:47] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240530.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240531.tar.gz --markdown 20240601/j/jaxutils-nightly/0.0.8.dev20240530-0.0.8.dev20240531/README.md --exclude *.pyd
+[2024-06-01 02:08:47] INFO root fetch - processPackages [omniduct]: Downloading https://files.pythonhosted.org/packages/ea/d5/c819e25f63f3d5202363e716598413be975eee3001db69886a6a0d2421f8/omniduct-1.2.2.tar.gz
+[2024-06-01 02:08:47] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-06-01 02:08:48] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-06-01 02:08:48] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240601/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-01 02:08:48] INFO root fetch - processPackages [omniduct]: executing diffoscope
+[2024-06-01 02:08:48] INFO root fetch - processPackages [omniduct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniduct-1.2.1.tar.gz tmp/omniduct-1.2.2.tar.gz --markdown 20240601/o/omniduct/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-06-01 02:08:48] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240530.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240531.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-06-01 02:08:48] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.30a1717109610.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.30a1717109630.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-06-01 02:08:48] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-06-01 02:08:48] INFO root fetch - processPackages [omniduct]: Remove: archive file [/home/abi/fetcher/tmp/omniduct-1.2.1.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - processPackages [omniduct]: Remove: archive file [/home/abi/fetcher/tmp/omniduct-1.2.2.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - main [MainThread]: End processing [omniduct]: success
+[2024-06-01 02:08:48] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-06-01 02:08:48] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-06-01 02:08:48] INFO root fetch - main [MainThread]: Store serial: [23473903]
