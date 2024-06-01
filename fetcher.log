@@ -23411,3 +23411,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:18:10] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
 [2024-06-01 23:18:10] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
 [2024-06-01 23:18:10] INFO root fetch - main [MainThread]: Store serial: [23483748]
+[2024-06-01 23:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483748]
+[2024-06-01 23:20:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 23:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docassemble
+[2024-06-01 23:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docassemble.base
+[2024-06-01 23:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stashconnect
+[2024-06-01 23:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docassemble.demo
+[2024-06-01 23:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docassemble.webapp
+[2024-06-01 23:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: makex
+[2024-06-01 23:20:19] INFO root fetch - processPackages [stashconnect]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-06-01 23:20:19] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/f0/8a/7a77df63ec553f40a43e243a40776489daeca242790911dbecddd910aad9/stashconnect-0.7.7.tar.gz
+[2024-06-01 23:20:19] INFO root fetch - processPackages [docassemble.base]: New version: [1.4.99] Old Version: [1.4.98]
+[2024-06-01 23:20:19] INFO root fetch - processPackages [docassemble.demo]: New version: [1.4.99] Old Version: [1.4.98]
+[2024-06-01 23:20:19] INFO root fetch - processPackages [makex]: New version: [20240601] Old Version: [20240401]
+[2024-06-01 23:20:19] INFO root fetch - processPackages [docassemble.webapp]: New version: [1.4.99] Old Version: [1.4.98]
+[2024-06-01 23:20:19] INFO root fetch - processPackages [docassemble]: New version: [1.4.99] Old Version: [1.4.98]
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble.demo]: Downloading https://files.pythonhosted.org/packages/a3/c1/1f280a60b99d515b42335d1f026d71124bf1f77a53c6fb418d16355bad3f/docassemble.demo-1.4.98.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [makex]: Downloading https://files.pythonhosted.org/packages/c0/27/d854d03195e29653b94d65ba50b6933da32098df8f4720b80c7dfed55cb4/makex-20240401.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble.base]: Downloading https://files.pythonhosted.org/packages/c6/97/6e8362248c76002539b0015c395a996f1a752b7e942e6e1d8c58bd011bde/docassemble.base-1.4.98.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble]: Downloading https://files.pythonhosted.org/packages/f2/79/70f99e0f2d7ac441ba6078f72c2defa6de83c4996b43a1605d58db6cee9e/docassemble-1.4.98.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble.webapp]: Downloading https://files.pythonhosted.org/packages/2d/cf/51a09408573088f9ea4d1e96bd1d8de19d00ae342d32fa0c339d056e7cb7/docassemble.webapp-1.4.98.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/90/4c/30d829e65120fca3e1277c0ff1e4adab564925ddd8326b60dda5990a40a3/stashconnect-0.7.8.tar.gz
+[2024-06-01 23:20:20] WARNING root fetch - processPackages [docassemble.base]: Skipping package: exceeds size limit 11016774>=10485760
+[2024-06-01 23:20:20] INFO root fetch - main [MainThread]: End processing [docassemble.base] error
+[2024-06-01 23:20:20] INFO root fetch - processPackages [makex]: Downloading https://files.pythonhosted.org/packages/1b/0b/845ec754764e62fd8195e67ffdb54644fac521112e51b4997d82e178308e/makex-20240601.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble]: Downloading https://files.pythonhosted.org/packages/ab/f8/10651b6a66fb81041c9e56e6e5488e9df680f343eee09c7dce1d7d278d44/docassemble-1.4.99.tar.gz
+[2024-06-01 23:20:20] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-01 23:20:20] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.7.7.tar.gz tmp/stashconnect-0.7.8.tar.gz --markdown 20240601/s/stashconnect/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble]: executing diffoscope
+[2024-06-01 23:20:20] INFO root fetch - processPackages [docassemble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble-1.4.98.tar.gz tmp/docassemble-1.4.99.tar.gz --markdown 20240601/d/docassemble/1.4.98-1.4.99/README.md --exclude *.pyd
+[2024-06-01 23:20:20] INFO root fetch - processPackages [makex]: executing diffoscope
+[2024-06-01 23:20:20] INFO root fetch - processPackages [makex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makex-20240401.tar.gz tmp/makex-20240601.tar.gz --markdown 20240601/m/makex/20240401-20240601/README.md --exclude *.pyd
+[2024-06-01 23:20:21] INFO root fetch - processPackages [docassemble]: Remove: archive file [/home/abi/fetcher/tmp/docassemble-1.4.98.tar.gz]
+[2024-06-01 23:20:21] INFO root fetch - processPackages [docassemble]: Remove: archive file [/home/abi/fetcher/tmp/docassemble-1.4.99.tar.gz]
+[2024-06-01 23:20:21] INFO root fetch - main [MainThread]: End processing [docassemble]: success
+[2024-06-01 23:20:21] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.7.tar.gz]
+[2024-06-01 23:20:21] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.8.tar.gz]
+[2024-06-01 23:20:21] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-01 23:20:21] INFO root fetch - processPackages [makex]: Remove: archive file [/home/abi/fetcher/tmp/makex-20240401.tar.gz]
+[2024-06-01 23:20:21] INFO root fetch - processPackages [makex]: Remove: archive file [/home/abi/fetcher/tmp/makex-20240601.tar.gz]
+[2024-06-01 23:20:21] INFO root fetch - main [MainThread]: End processing [makex]: success
+[2024-06-01 23:20:23] INFO root fetch - processPackages [docassemble.demo]: Downloading https://files.pythonhosted.org/packages/dd/f7/ccb6bf3663735bc68039754460782028e93db06c0d6add926bb0c1729889/docassemble.demo-1.4.99.tar.gz
+[2024-06-01 23:20:24] INFO root fetch - processPackages [docassemble.webapp]: Downloading https://files.pythonhosted.org/packages/f6/c0/9fde55b04929167c432c602176d328ac450748b5039b84cdf84e6ce5f525/docassemble.webapp-1.4.99.tar.gz
+[2024-06-01 23:20:26] INFO root fetch - processPackages [docassemble.demo]: executing diffoscope
+[2024-06-01 23:20:26] INFO root fetch - processPackages [docassemble.demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.demo-1.4.98.tar.gz tmp/docassemble.demo-1.4.99.tar.gz --markdown 20240601/d/docassemble.demo/1.4.98-1.4.99/README.md --exclude *.pyd
+[2024-06-01 23:20:27] INFO root fetch - processPackages [docassemble.webapp]: executing diffoscope
+[2024-06-01 23:20:27] INFO root fetch - processPackages [docassemble.webapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.webapp-1.4.98.tar.gz tmp/docassemble.webapp-1.4.99.tar.gz --markdown 20240601/d/docassemble.webapp/1.4.98-1.4.99/README.md --exclude *.pyd
+[2024-06-01 23:20:28] INFO root fetch - processPackages [docassemble.demo]: Remove: archive file [/home/abi/fetcher/tmp/docassemble.demo-1.4.98.tar.gz]
+[2024-06-01 23:20:28] INFO root fetch - processPackages [docassemble.demo]: Remove: archive file [/home/abi/fetcher/tmp/docassemble.demo-1.4.99.tar.gz]
+[2024-06-01 23:20:28] INFO root fetch - main [MainThread]: End processing [docassemble.demo]: success
+[2024-06-01 23:20:32] INFO root fetch - processPackages [docassemble.webapp]: Remove: archive file [/home/abi/fetcher/tmp/docassemble.webapp-1.4.98.tar.gz]
+[2024-06-01 23:20:32] INFO root fetch - processPackages [docassemble.webapp]: Remove: archive file [/home/abi/fetcher/tmp/docassemble.webapp-1.4.99.tar.gz]
+[2024-06-01 23:20:32] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
+[2024-06-01 23:20:32] INFO root fetch - main [MainThread]: Store serial: [23483773]
