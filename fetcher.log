@@ -12617,3 +12617,63 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:04:48] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-06-01 10:04:48] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-06-01 10:04:48] INFO root fetch - main [MainThread]: Store serial: [23478375]
+[2024-06-01 10:06:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478375]
+[2024-06-01 10:06:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: popoll-backend
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MIGPT-pro
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hezar
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python3-commons
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MoneyPrinterTurbo
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mootdxpro
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: msxiaoiceapi
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyglove
+[2024-06-01 10:06:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eventum-cli
+[2024-06-01 10:06:58] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.64] Old Version: [0.0.63]
+[2024-06-01 10:06:58] INFO root fetch - processPackages [eventum-cli]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 10:06:58] INFO root fetch - processPackages [python3-commons]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-06-01 10:06:58] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240531] Old Version: [0.4.5.dev20240530]
+[2024-06-01 10:06:58] INFO root fetch - processPackages [eventum-cli]: Downloading https://files.pythonhosted.org/packages/8d/f0/e9f22bafe2d5eb4cb2b1dc634a8e84e4cae8d24bb953dfe3851c24f24720/eventum_cli-1.0.3.tar.gz
+[2024-06-01 10:06:58] WARNING root fetch - processPackages [MoneyPrinterTurbo]: Skipping, unable to determine old version
+[2024-06-01 10:06:58] INFO root fetch - main [MainThread]: End processing [MoneyPrinterTurbo] error
+[2024-06-01 10:06:58] WARNING root fetch - processPackages [MIGPT-pro]: Skipping, unable to determine old version
+[2024-06-01 10:06:58] INFO root fetch - main [MainThread]: End processing [MIGPT-pro] error
+[2024-06-01 10:06:58] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/ba/c9/79912cba92a6168bbcd737846bfbe9b63014c15b381fe244e1a13773667a/popoll_backend-0.0.63.tar.gz
+[2024-06-01 10:06:58] WARNING root fetch - processPackages [mootdxpro]: Skipping, unable to determine old version
+[2024-06-01 10:06:58] INFO root fetch - main [MainThread]: End processing [mootdxpro] error
+[2024-06-01 10:06:58] WARNING root fetch - processPackages [msxiaoiceapi]: Skipping, unable to determine old version
+[2024-06-01 10:06:58] INFO root fetch - main [MainThread]: End processing [msxiaoiceapi] error
+[2024-06-01 10:06:58] INFO root fetch - processPackages [hezar]: New version: [0.38.0] Old Version: [0.37.0]
+[2024-06-01 10:06:58] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/ec/1a/1a7a3492f50318c7cb8acd004e420b7118a20d87742e0800282fe848fe2b/python3_commons-0.5.6.tar.gz
+[2024-06-01 10:06:58] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/51/7d/06009ae754f573d86d3c9d2ed564e4fd3dbe572ba8228add6bc2f9d23afb/pyglove-0.4.5.dev20240530.tar.gz
+[2024-06-01 10:06:58] INFO root fetch - processPackages [hezar]: Downloading https://files.pythonhosted.org/packages/91/5e/033e56a31a9e80d7bd0a1f662fc7a9d2810cd49700e31aa9308ed1c9353b/hezar-0.37.0.tar.gz
+[2024-06-01 10:06:58] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/a1/7a/b0464dd8f4e70a0259821c6dcab42bcaa80a606089c19c522ad16c50e8e7/python3_commons-0.5.7.tar.gz
+[2024-06-01 10:06:58] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/61/be/516f45a1baed868d686caa1822fc6ed33c3fdf66e135f0d37ce4eadcf2bf/popoll_backend-0.0.64.tar.gz
+[2024-06-01 10:06:58] INFO root fetch - processPackages [eventum-cli]: Downloading https://files.pythonhosted.org/packages/ec/ac/0b2ace5ec173d33cbb4c16c542c778e79b07673b28621a4f6ff72759d8c8/eventum_cli-1.0.4.tar.gz
+[2024-06-01 10:06:58] INFO root fetch - processPackages [python3-commons]: executing diffoscope
+[2024-06-01 10:06:58] INFO root fetch - processPackages [python3-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python3_commons-0.5.6.tar.gz tmp/python3_commons-0.5.7.tar.gz --markdown 20240601/p/python3-commons/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-06-01 10:06:58] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 10:06:58] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.63.tar.gz tmp/popoll_backend-0.0.64.tar.gz --markdown 20240601/p/popoll-backend/0.0.63-0.0.64/README.md --exclude *.pyd
+[2024-06-01 10:06:58] INFO root fetch - processPackages [eventum-cli]: executing diffoscope
+[2024-06-01 10:06:58] INFO root fetch - processPackages [eventum-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventum_cli-1.0.3.tar.gz tmp/eventum_cli-1.0.4.tar.gz --markdown 20240601/e/eventum-cli/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 10:06:59] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/83/a5/7750f02c425b154459f41b3cfad2c37a806cee92edd03890ef08d959bd65/pyglove-0.4.5.dev20240531.tar.gz
+[2024-06-01 10:06:59] INFO root fetch - processPackages [hezar]: Downloading https://files.pythonhosted.org/packages/2b/f8/6e2619c56aa1799ad8f338dcb5baa934ca7c00a81fede68a0fa112f23634/hezar-0.38.0.tar.gz
+[2024-06-01 10:06:59] INFO root fetch - processPackages [hezar]: executing diffoscope
+[2024-06-01 10:06:59] INFO root fetch - processPackages [hezar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hezar-0.37.0.tar.gz tmp/hezar-0.38.0.tar.gz --markdown 20240601/h/hezar/0.37.0-0.38.0/README.md --exclude *.pyd
+[2024-06-01 10:06:59] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-06-01 10:06:59] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240530.tar.gz tmp/pyglove-0.4.5.dev20240531.tar.gz --markdown 20240601/p/pyglove/0.4.5.dev20240530-0.4.5.dev20240531/README.md --exclude *.pyd
+[2024-06-01 10:06:59] INFO root fetch - processPackages [eventum-cli]: Remove: archive file [/home/abi/fetcher/tmp/eventum_cli-1.0.3.tar.gz]
+[2024-06-01 10:06:59] INFO root fetch - processPackages [eventum-cli]: Remove: archive file [/home/abi/fetcher/tmp/eventum_cli-1.0.4.tar.gz]
+[2024-06-01 10:06:59] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.6.tar.gz]
+[2024-06-01 10:06:59] INFO root fetch - main [MainThread]: End processing [eventum-cli]: success
+[2024-06-01 10:06:59] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.7.tar.gz]
+[2024-06-01 10:06:59] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
+[2024-06-01 10:06:59] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.63.tar.gz]
+[2024-06-01 10:06:59] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.64.tar.gz]
+[2024-06-01 10:06:59] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 10:07:00] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.37.0.tar.gz]
+[2024-06-01 10:07:00] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.38.0.tar.gz]
+[2024-06-01 10:07:00] INFO root fetch - main [MainThread]: End processing [hezar]: success
+[2024-06-01 10:07:00] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240530.tar.gz]
+[2024-06-01 10:07:00] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240531.tar.gz]
+[2024-06-01 10:07:00] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-06-01 10:07:00] INFO root fetch - main [MainThread]: Store serial: [23478411]
