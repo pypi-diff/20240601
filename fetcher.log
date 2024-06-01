@@ -12058,3 +12058,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:25:42] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.5.tar.gz]
 [2024-06-01 09:25:42] INFO root fetch - main [MainThread]: End processing [redcoffee]: success
 [2024-06-01 09:25:42] INFO root fetch - main [MainThread]: Store serial: [23478092]
+[2024-06-01 09:27:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478092]
+[2024-06-01 09:27:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 09:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: todoist-auto
+[2024-06-01 09:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lckytools
+[2024-06-01 09:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celery-pro
+[2024-06-01 09:27:51] INFO root fetch - processPackages [lckytools]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-06-01 09:27:51] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-06-01 09:27:51] INFO root fetch - processPackages [lckytools]: Downloading https://files.pythonhosted.org/packages/32/87/6919f602b2d930da1130e471770541db40ed561db6cf403688f591ee289c/lckytools-0.0.0a8.tar.gz
+[2024-06-01 09:27:51] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-06-01 09:27:51] WARNING root fetch - processPackages [celery-pro]: Skipping, unable to determine old version
+[2024-06-01 09:27:51] INFO root fetch - main [MainThread]: End processing [celery-pro] error
+[2024-06-01 09:27:51] INFO root fetch - processPackages [lckytools]: Downloading https://files.pythonhosted.org/packages/58/b4/76a808942400823f951edef5f1ed63b459873a985a8544794218b4f273ee/lckytools-0.0.0a9.tar.gz
+[2024-06-01 09:27:51] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-06-01 09:27:51] INFO root fetch - processPackages [lckytools]: executing diffoscope
+[2024-06-01 09:27:51] INFO root fetch - processPackages [lckytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lckytools-0.0.0a8.tar.gz tmp/lckytools-0.0.0a9.tar.gz --markdown 20240601/l/lckytools/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-06-01 09:27:51] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-06-01 09:27:51] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240601/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-06-01 09:27:52] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-06-01 09:27:52] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-06-01 09:27:52] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-06-01 09:27:52] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a8.tar.gz]
+[2024-06-01 09:27:52] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a9.tar.gz]
+[2024-06-01 09:27:52] INFO root fetch - main [MainThread]: End processing [lckytools]: success
+[2024-06-01 09:27:52] INFO root fetch - main [MainThread]: Store serial: [23478103]
