@@ -11819,3 +11819,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:06:06] INFO root fetch - processPackages [beforerr]: Remove: archive file [/home/abi/fetcher/tmp/beforerr-2024.6.1.tar.gz]
 [2024-06-01 09:06:06] INFO root fetch - main [MainThread]: End processing [beforerr]: success
 [2024-06-01 09:06:06] INFO root fetch - main [MainThread]: Store serial: [23477991]
+[2024-06-01 09:08:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477991]
+[2024-06-01 09:08:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dark-matter
+[2024-06-01 09:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indic-eval
+[2024-06-01 09:08:14] WARNING root fetch - processPackages [indic-eval]: Skipping, unable to determine old version
+[2024-06-01 09:08:14] INFO root fetch - main [MainThread]: End processing [indic-eval] error
+[2024-06-01 09:08:15] INFO root fetch - processPackages [dark-matter]: New version: [4.0.9] Old Version: [4.0.84]
+[2024-06-01 09:08:15] INFO root fetch - processPackages [dark-matter]: Downloading https://files.pythonhosted.org/packages/2f/d2/3ab8414f88baeb21c3102dfa3d36ba9661f71021de6f12ccfd7ad806cbf2/dark-matter-4.0.84.tar.gz
+[2024-06-01 09:08:15] INFO root fetch - processPackages [dark-matter]: Downloading https://files.pythonhosted.org/packages/c3/ec/2598bd337fd9f176a9b456b4915afd25b446ddb15e6e6b0f772ea1457b6b/dark-matter-4.0.9.tar.gz
+[2024-06-01 09:08:15] INFO root fetch - processPackages [dark-matter]: executing diffoscope
+[2024-06-01 09:08:15] INFO root fetch - processPackages [dark-matter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dark-matter-4.0.84.tar.gz tmp/dark-matter-4.0.9.tar.gz --markdown 20240601/d/dark-matter/4.0.84-4.0.9/README.md --exclude *.pyd
+[2024-06-01 09:08:17] INFO root fetch - processPackages [dark-matter]: Remove: archive file [/home/abi/fetcher/tmp/dark-matter-4.0.84.tar.gz]
+[2024-06-01 09:08:17] INFO root fetch - processPackages [dark-matter]: Remove: archive file [/home/abi/fetcher/tmp/dark-matter-4.0.9.tar.gz]
+[2024-06-01 09:08:17] INFO root fetch - main [MainThread]: End processing [dark-matter]: success
+[2024-06-01 09:08:17] INFO root fetch - main [MainThread]: Store serial: [23478003]
