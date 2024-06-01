@@ -9956,3 +9956,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:56:35] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-Fluent-Widgets-1.5.7.tar.gz]
 [2024-06-01 05:56:35] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2024-06-01 05:56:35] INFO root fetch - main [MainThread]: Store serial: [23477132]
+[2024-06-01 05:58:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477132]
+[2024-06-01 05:58:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 05:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: resages
+[2024-06-01 05:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sxs
+[2024-06-01 05:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-cdktf-provider-opentelekomcloud
+[2024-06-01 05:58:44] INFO root fetch - processPackages [resages]: New version: [0.21] Old Version: [0.2]
+[2024-06-01 05:58:44] INFO root fetch - processPackages [sxs]: New version: [2023.1.3] Old Version: [2023.1.2]
+[2024-06-01 05:58:44] INFO root fetch - processPackages [resages]: Downloading https://files.pythonhosted.org/packages/c0/49/a30ab3215a812998e25716b3c4088094ab9fb8ffa338f3bc1f5a2f43b4d3/resages-0.2.tar.gz
+[2024-06-01 05:58:44] INFO root fetch - processPackages [sxs]: Downloading https://files.pythonhosted.org/packages/a5/a2/a7c498410e6d3380e3b1e4923c6c880ac4246d62ff085e6879b1e3c81686/sxs-2023.1.2.tar.gz
+[2024-06-01 05:58:44] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: New version: [9.0.3] Old Version: [9.0.2]
+[2024-06-01 05:58:45] INFO root fetch - processPackages [resages]: Downloading https://files.pythonhosted.org/packages/59/ad/2c1a7ae2cca4df7dba803c2f65c2a68dec7d10a4fed2b8d9c381bcf2a38d/resages-0.21.tar.gz
+[2024-06-01 05:58:45] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: Downloading https://files.pythonhosted.org/packages/25/5d/4e16255c4b96e1e12b50eaa52595c1013b61e4009b86a4252e7a89d491f5/cdktf-cdktf-provider-opentelekomcloud-9.0.2.tar.gz
+[2024-06-01 05:58:45] INFO root fetch - processPackages [resages]: executing diffoscope
+[2024-06-01 05:58:45] INFO root fetch - processPackages [resages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resages-0.2.tar.gz tmp/resages-0.21.tar.gz --markdown 20240601/r/resages/0.2-0.21/README.md --exclude *.pyd
+[2024-06-01 05:58:45] INFO root fetch - processPackages [sxs]: Downloading https://files.pythonhosted.org/packages/aa/6f/3dbf0ae13d3f6422c367a77468feb9a47602160d7cec134562ccec946841/sxs-2023.1.3.tar.gz
+[2024-06-01 05:58:45] INFO root fetch - processPackages [resages]: Remove: archive file [/home/abi/fetcher/tmp/resages-0.2.tar.gz]
+[2024-06-01 05:58:45] INFO root fetch - processPackages [resages]: Remove: archive file [/home/abi/fetcher/tmp/resages-0.21.tar.gz]
+[2024-06-01 05:58:45] INFO root fetch - main [MainThread]: End processing [resages]: success
+[2024-06-01 05:58:45] INFO root fetch - processPackages [sxs]: executing diffoscope
+[2024-06-01 05:58:45] INFO root fetch - processPackages [sxs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sxs-2023.1.2.tar.gz tmp/sxs-2023.1.3.tar.gz --markdown 20240601/s/sxs/2023.1.2-2023.1.3/README.md --exclude *.pyd
+[2024-06-01 05:58:46] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: Downloading https://files.pythonhosted.org/packages/39/17/3c273360c73bc39d11aecf1ff01e54107401e2f87112d02c46161075a612/cdktf-cdktf-provider-opentelekomcloud-9.0.3.tar.gz
+[2024-06-01 05:58:46] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: executing diffoscope
+[2024-06-01 05:58:46] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-opentelekomcloud-9.0.2.tar.gz tmp/cdktf-cdktf-provider-opentelekomcloud-9.0.3.tar.gz --markdown 20240601/c/cdktf-cdktf-provider-opentelekomcloud/9.0.2-9.0.3/README.md --exclude *.pyd
+[2024-06-01 05:58:47] INFO root fetch - processPackages [sxs]: Remove: archive file [/home/abi/fetcher/tmp/sxs-2023.1.2.tar.gz]
+[2024-06-01 05:58:47] INFO root fetch - processPackages [sxs]: Remove: archive file [/home/abi/fetcher/tmp/sxs-2023.1.3.tar.gz]
+[2024-06-01 05:58:47] INFO root fetch - main [MainThread]: End processing [sxs]: success
+[2024-06-01 05:58:53] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-opentelekomcloud-9.0.2.tar.gz]
+[2024-06-01 05:58:53] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-opentelekomcloud-9.0.3.tar.gz]
+[2024-06-01 05:58:53] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-opentelekomcloud]: success
+[2024-06-01 05:58:53] INFO root fetch - main [MainThread]: Store serial: [23477141]
