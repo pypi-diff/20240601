@@ -8126,3 +8126,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:00:53] INFO root fetch - processPackages [Geode-Hybrid]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Hybrid-2.4.4rc1-cp39-cp39-win_amd64.whl.zip]
 [2024-06-01 04:00:53] INFO root fetch - main [MainThread]: End processing [Geode-Hybrid]: success
 [2024-06-01 04:00:53] INFO root fetch - main [MainThread]: Store serial: [23476321]
+[2024-06-01 04:02:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476321]
+[2024-06-01 04:03:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 04:03:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emu-data-loader
+[2024-06-01 04:03:02] WARNING root fetch - processPackages [emu-data-loader]: Skipping, unable to determine old version
+[2024-06-01 04:03:02] INFO root fetch - main [MainThread]: End processing [emu-data-loader] error
+[2024-06-01 04:03:02] INFO root fetch - main [MainThread]: Store serial: [23476326]
