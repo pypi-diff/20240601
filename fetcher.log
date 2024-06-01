@@ -2363,3 +2363,30 @@
 [2024-06-01 02:08:48] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-06-01 02:08:48] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-06-01 02:08:48] INFO root fetch - main [MainThread]: Store serial: [23473903]
+[2024-06-01 02:10:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473903]
+[2024-06-01 02:10:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 02:10:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ampapi
+[2024-06-01 02:10:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simkit
+[2024-06-01 02:10:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coherence-client
+[2024-06-01 02:10:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkrhistoryconverter
+[2024-06-01 02:10:57] WARNING root fetch - processPackages [simkit]: Skipping, unable to determine old version
+[2024-06-01 02:10:57] INFO root fetch - main [MainThread]: End processing [simkit] error
+[2024-06-01 02:10:57] INFO root fetch - processPackages [coherence-client]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-01 02:10:57] INFO root fetch - processPackages [ampapi]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-06-01 02:10:57] WARNING root fetch - processPackages [pkrhistoryconverter]: Skipping, unable to determine old version
+[2024-06-01 02:10:57] INFO root fetch - main [MainThread]: End processing [pkrhistoryconverter] error
+[2024-06-01 02:10:57] INFO root fetch - processPackages [coherence-client]: Downloading https://files.pythonhosted.org/packages/1f/02/b6dbe3be8b91f215211a777de71e423cd296f6747b9da8ea22506208044f/coherence_client-1.1.0.tar.gz
+[2024-06-01 02:10:57] INFO root fetch - processPackages [ampapi]: Downloading https://files.pythonhosted.org/packages/d4/79/fe821dee368d4e438c5cb2e462b92eb15889b2ad18d1a7ab4f9b1047603b/ampapi-1.3.8.tar.gz
+[2024-06-01 02:10:58] INFO root fetch - processPackages [coherence-client]: Downloading https://files.pythonhosted.org/packages/a4/ca/6816491f560af11fe412ca1a143ba6acecbe455fbfff06b7f094a24afce2/coherence_client-1.1.1.tar.gz
+[2024-06-01 02:10:58] INFO root fetch - processPackages [ampapi]: Downloading https://files.pythonhosted.org/packages/97/63/73b3825bb6ab9140b2805ede023d1651eccf2a4bc3e7f873c4f3d772edc5/ampapi-1.3.9.tar.gz
+[2024-06-01 02:10:58] INFO root fetch - processPackages [ampapi]: executing diffoscope
+[2024-06-01 02:10:58] INFO root fetch - processPackages [ampapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampapi-1.3.8.tar.gz tmp/ampapi-1.3.9.tar.gz --markdown 20240601/a/ampapi/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-06-01 02:10:58] INFO root fetch - processPackages [coherence-client]: executing diffoscope
+[2024-06-01 02:10:58] INFO root fetch - processPackages [coherence-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherence_client-1.1.0.tar.gz tmp/coherence_client-1.1.1.tar.gz --markdown 20240601/c/coherence-client/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-01 02:10:58] INFO root fetch - processPackages [coherence-client]: Remove: archive file [/home/abi/fetcher/tmp/coherence_client-1.1.0.tar.gz]
+[2024-06-01 02:10:58] INFO root fetch - processPackages [ampapi]: Remove: archive file [/home/abi/fetcher/tmp/ampapi-1.3.8.tar.gz]
+[2024-06-01 02:10:58] INFO root fetch - processPackages [coherence-client]: Remove: archive file [/home/abi/fetcher/tmp/coherence_client-1.1.1.tar.gz]
+[2024-06-01 02:10:58] INFO root fetch - processPackages [ampapi]: Remove: archive file [/home/abi/fetcher/tmp/ampapi-1.3.9.tar.gz]
+[2024-06-01 02:10:58] INFO root fetch - main [MainThread]: End processing [coherence-client]: success
+[2024-06-01 02:10:58] INFO root fetch - main [MainThread]: End processing [ampapi]: success
+[2024-06-01 02:10:58] INFO root fetch - main [MainThread]: Store serial: [23473914]
