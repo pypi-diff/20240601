@@ -10512,3 +10512,29 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:57:37] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
 [2024-06-01 06:57:37] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
 [2024-06-01 06:57:37] INFO root fetch - main [MainThread]: Store serial: [23477392]
+[2024-06-01 06:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477392]
+[2024-06-01 06:59:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 07:01:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477392]
+[2024-06-01 07:01:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 07:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte-source-faker
+[2024-06-01 07:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pr-pilot-cli
+[2024-06-01 07:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thoi
+[2024-06-01 07:01:51] WARNING root fetch - processPackages [thoi]: Skipping, unable to determine old version
+[2024-06-01 07:01:51] INFO root fetch - processPackages [pr-pilot-cli]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-06-01 07:01:51] INFO root fetch - main [MainThread]: End processing [thoi] error
+[2024-06-01 07:01:51] INFO root fetch - processPackages [airbyte-source-faker]: New version: [6.1.2] Old Version: [6.1.1]
+[2024-06-01 07:01:51] INFO root fetch - processPackages [pr-pilot-cli]: Downloading https://files.pythonhosted.org/packages/62/a0/0f696d58b0b53c1a97610c9f21262bb6907159c1ae1ed7b470e02d43356c/pr_pilot_cli-1.4.1.tar.gz
+[2024-06-01 07:01:51] INFO root fetch - processPackages [airbyte-source-faker]: Downloading https://files.pythonhosted.org/packages/4d/80/bac27589e7f5c3d8c7249716c6b048f360339edba0b9665526b472a5ca43/airbyte_source_faker-6.1.1.tar.gz
+[2024-06-01 07:01:51] INFO root fetch - processPackages [pr-pilot-cli]: Downloading https://files.pythonhosted.org/packages/e3/de/ffc676228270270f0b22d83ed2437d44edcb60fee3b7a3b1174ab1df34da/pr_pilot_cli-1.4.2.tar.gz
+[2024-06-01 07:01:51] INFO root fetch - processPackages [airbyte-source-faker]: Downloading https://files.pythonhosted.org/packages/5b/37/4ee8d27a0ea38234111039afc38a2d629fe3b80cd432599bdfd1f06bafa6/airbyte_source_faker-6.1.2.tar.gz
+[2024-06-01 07:01:51] INFO root fetch - processPackages [pr-pilot-cli]: executing diffoscope
+[2024-06-01 07:01:51] INFO root fetch - processPackages [pr-pilot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pr_pilot_cli-1.4.1.tar.gz tmp/pr_pilot_cli-1.4.2.tar.gz --markdown 20240601/p/pr-pilot-cli/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-06-01 07:01:51] INFO root fetch - processPackages [airbyte-source-faker]: executing diffoscope
+[2024-06-01 07:01:51] INFO root fetch - processPackages [airbyte-source-faker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_faker-6.1.1.tar.gz tmp/airbyte_source_faker-6.1.2.tar.gz --markdown 20240601/a/airbyte-source-faker/6.1.1-6.1.2/README.md --exclude *.pyd
+[2024-06-01 07:01:52] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.4.1.tar.gz]
+[2024-06-01 07:01:52] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.4.2.tar.gz]
+[2024-06-01 07:01:52] INFO root fetch - main [MainThread]: End processing [pr-pilot-cli]: success
+[2024-06-01 07:01:52] INFO root fetch - processPackages [airbyte-source-faker]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_faker-6.1.1.tar.gz]
+[2024-06-01 07:01:52] INFO root fetch - processPackages [airbyte-source-faker]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_faker-6.1.2.tar.gz]
+[2024-06-01 07:01:52] INFO root fetch - main [MainThread]: End processing [airbyte-source-faker]: success
+[2024-06-01 07:01:52] INFO root fetch - main [MainThread]: Store serial: [23477405]
