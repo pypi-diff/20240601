@@ -21553,3 +21553,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:51:16] INFO root fetch - processPackages [model-registry]: Remove: archive file [/home/abi/fetcher/tmp/model_registry-0.2.1a1.tar.gz]
 [2024-06-01 20:51:16] INFO root fetch - main [MainThread]: End processing [model-registry]: success
 [2024-06-01 20:51:16] INFO root fetch - main [MainThread]: Store serial: [23482702]
+[2024-06-01 20:53:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482702]
+[2024-06-01 20:53:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acb
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: playwright-html-renderer
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: staffspy
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fudstop
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyflowy
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dataengine
+[2024-06-01 20:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: log-writer
+[2024-06-01 20:53:24] WARNING root fetch - processPackages [log-writer]: Skipping, unable to determine old version
+[2024-06-01 20:53:24] INFO root fetch - main [MainThread]: End processing [log-writer] error
+[2024-06-01 20:53:24] INFO root fetch - processPackages [acb]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-06-01 20:53:24] INFO root fetch - processPackages [fudstop]: New version: [2.8.6] Old Version: [2.8.5]
+[2024-06-01 20:53:25] WARNING root fetch - processPackages [playwright-html-renderer]: Skipping, unable to determine old version
+[2024-06-01 20:53:25] INFO root fetch - main [MainThread]: End processing [playwright-html-renderer] error
+[2024-06-01 20:53:25] WARNING root fetch - processPackages [pyflowy]: Skipping, unable to determine old version
+[2024-06-01 20:53:25] INFO root fetch - main [MainThread]: End processing [pyflowy] error
+[2024-06-01 20:53:25] WARNING root fetch - processPackages [staffspy]: Skipping, unable to determine old version
+[2024-06-01 20:53:25] INFO root fetch - main [MainThread]: End processing [staffspy] error
+[2024-06-01 20:53:25] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d3/75/526867ca3dad58585f90fecfe0bda81c52c534e5bd681bd093e9e9ba6a88/fudstop-2.8.5.tar.gz
+[2024-06-01 20:53:25] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/81/7f/c55fd5df3604dac401bb17986a740b2feabbded86c3c5d8b20b91de82822/acb-0.6.1.tar.gz
+[2024-06-01 20:53:25] INFO root fetch - processPackages [dataengine]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 20:53:25] INFO root fetch - processPackages [dataengine]: Downloading https://files.pythonhosted.org/packages/7f/81/fc6b67971e8784e7530090dc45b1797d47287c29de48fe1353cec4ae78dd/dataengine-0.0.8.tar.gz
+[2024-06-01 20:53:25] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/40/f8/ff02442fc1aca9497b71841202e43f9f1c57e738937303151d4392c7b520/fudstop-2.8.6.tar.gz
+[2024-06-01 20:53:25] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/60/f0/375e8f275a963bac0985193f70b5685e7ec8d54e082e334f24acdf0e3833/acb-0.6.2.tar.gz
+[2024-06-01 20:53:25] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-06-01 20:53:25] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.8.5.tar.gz tmp/fudstop-2.8.6.tar.gz --markdown 20240601/f/fudstop/2.8.5-2.8.6/README.md --exclude *.pyd
+[2024-06-01 20:53:25] INFO root fetch - processPackages [acb]: executing diffoscope
+[2024-06-01 20:53:25] INFO root fetch - processPackages [acb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acb-0.6.1.tar.gz tmp/acb-0.6.2.tar.gz --markdown 20240601/a/acb/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-06-01 20:53:25] INFO root fetch - processPackages [dataengine]: Downloading https://files.pythonhosted.org/packages/b4/d2/f8322f7f0b775b98c3631998815ac41d87d55acb0a6661e0037b0c37f1b0/dataengine-0.0.9.tar.gz
+[2024-06-01 20:53:25] INFO root fetch - processPackages [dataengine]: executing diffoscope
+[2024-06-01 20:53:25] INFO root fetch - processPackages [dataengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataengine-0.0.8.tar.gz tmp/dataengine-0.0.9.tar.gz --markdown 20240601/d/dataengine/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:53:26] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.6.1.tar.gz]
+[2024-06-01 20:53:26] INFO root fetch - processPackages [acb]: Remove: archive file [/home/abi/fetcher/tmp/acb-0.6.2.tar.gz]
+[2024-06-01 20:53:26] INFO root fetch - main [MainThread]: End processing [acb]: success
+[2024-06-01 20:53:26] INFO root fetch - processPackages [dataengine]: Remove: archive file [/home/abi/fetcher/tmp/dataengine-0.0.8.tar.gz]
+[2024-06-01 20:53:26] INFO root fetch - processPackages [dataengine]: Remove: archive file [/home/abi/fetcher/tmp/dataengine-0.0.9.tar.gz]
+[2024-06-01 20:53:26] INFO root fetch - main [MainThread]: End processing [dataengine]: success
+[2024-06-01 20:53:27] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.5.tar.gz]
+[2024-06-01 20:53:27] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.6.tar.gz]
+[2024-06-01 20:53:27] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-06-01 20:53:27] INFO root fetch - main [MainThread]: Store serial: [23482752]
