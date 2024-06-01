@@ -16773,3 +16773,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:24:38] INFO root fetch - main [MainThread]: End processing [ovos-skill-wikipedia]: success
 [2024-06-01 15:24:38] INFO root fetch - main [MainThread]: End processing [ovos-skill-wikipedia]: success
 [2024-06-01 15:24:38] INFO root fetch - main [MainThread]: Store serial: [23480395]
+[2024-06-01 15:26:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480395]
+[2024-06-01 15:26:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 15:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bauplan
+[2024-06-01 15:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: id-card-recognition
+[2024-06-01 15:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lantana
+[2024-06-01 15:26:46] INFO root fetch - processPackages [id-card-recognition]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-01 15:26:46] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a99] Old Version: [0.0.3a98]
+[2024-06-01 15:26:46] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/2c/87/c360d85d4a1a46e82a7704e274261ac65a5807400306e45bedec91083a9e/id_card_recognition-0.3.0.tar.gz
+[2024-06-01 15:26:46] INFO root fetch - processPackages [lantana]: New version: [2.9.8.7] Old Version: [2.9.8.6]
+[2024-06-01 15:26:46] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/85/15/20d89c1bcd5e00733e248397ee4046f32827c24be330deed927e9fc323ad/bauplan-0.0.3a98-py3-none-win_amd64.whl
+[2024-06-01 15:26:47] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/73/70/08f4a4f702b46b7cc99e2fa9281328cb631ad80652b34334bd66fec5fe7f/lantana-2.9.8.6.tar.gz
+[2024-06-01 15:26:47] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/34/ee/c68bd402c75033b2795a806797522b98175cea76117014d6412f5b64c1a1/id_card_recognition-0.3.1.tar.gz
+[2024-06-01 15:26:47] INFO root fetch - processPackages [id-card-recognition]: executing diffoscope
+[2024-06-01 15:26:47] INFO root fetch - processPackages [id-card-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/id_card_recognition-0.3.0.tar.gz tmp/id_card_recognition-0.3.1.tar.gz --markdown 20240601/i/id-card-recognition/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-01 15:26:47] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/09/70/f00e4c6a30fd78d3c3419450b0ded5b659aa485a7d31c6c413333941cfc4/lantana-2.9.8.7.tar.gz
+[2024-06-01 15:26:47] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/23/8b/70ca9196e9ab95cc954089482ad31add486cddb9566cd3de6f70ff677781/bauplan-0.0.3a99-py3-none-win_amd64.whl
+[2024-06-01 15:26:47] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-06-01 15:26:47] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.6.tar.gz tmp/lantana-2.9.8.7.tar.gz --markdown 20240601/l/lantana/2.9.8.6-2.9.8.7/README.md --exclude *.pyd
+[2024-06-01 15:26:47] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.3.0.tar.gz]
+[2024-06-01 15:26:47] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.3.1.tar.gz]
+[2024-06-01 15:26:47] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
+[2024-06-01 15:26:47] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-06-01 15:26:47] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a98-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a99-py3-none-win_amd64.whl.zip --markdown 20240601/b/bauplan/0.0.3a98-0.0.3a99/README.md --exclude *.pyd
+[2024-06-01 15:26:48] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.6.tar.gz]
+[2024-06-01 15:26:48] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.7.tar.gz]
+[2024-06-01 15:26:48] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-06-01 15:27:39] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a98-py3-none-win_amd64.whl.zip]
+[2024-06-01 15:27:39] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a99-py3-none-win_amd64.whl.zip]
+[2024-06-01 15:27:39] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-06-01 15:27:39] INFO root fetch - main [MainThread]: Store serial: [23480419]
