@@ -20814,3 +20814,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:05:13] INFO root fetch - processPackages [vectorvision]: Remove: archive file [/home/abi/fetcher/tmp/vectorvision-0.1.1.tar.gz]
 [2024-06-01 20:05:13] INFO root fetch - main [MainThread]: End processing [vectorvision]: success
 [2024-06-01 20:05:13] INFO root fetch - main [MainThread]: Store serial: [23482348]
+[2024-06-01 20:07:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482348]
+[2024-06-01 20:07:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compressed-tensors-nightly
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpy-cross
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpy-cross
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyontoenv
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paka
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dexter-cqa
+[2024-06-01 20:07:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ALLMDEV
+[2024-06-01 20:07:22] WARNING root fetch - processPackages [dexter-cqa]: Skipping, unable to determine old version
+[2024-06-01 20:07:22] INFO root fetch - main [MainThread]: End processing [dexter-cqa] error
+[2024-06-01 20:07:22] INFO root fetch - processPackages [compressed-tensors-nightly]: New version: [0.3.3.20240601] Old Version: [0.3.3.20240531]
+[2024-06-01 20:07:22] INFO root fetch - processPackages [pyontoenv]: New version: [0.1.7a8] Old Version: [0.1.7a7]
+[2024-06-01 20:07:22] INFO root fetch - processPackages [mpy-cross]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-06-01 20:07:22] INFO root fetch - processPackages [mpy-cross]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-06-01 20:07:22] INFO root fetch - processPackages [paka]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 20:07:22] INFO root fetch - processPackages [ALLMDEV]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-06-01 20:07:22] INFO root fetch - processPackages [mpy-cross]: Downloading https://files.pythonhosted.org/packages/be/89/c3c6850b0f6f1795065808dcafc2a21d6e3c49b6cd8d8ffc0c4f060a9a61/mpy_cross-1.9.3-py2.py3-none-win_amd64.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [compressed-tensors-nightly]: Downloading https://files.pythonhosted.org/packages/c8/10/56a2a8405de01bd233258a050fbaf73e0085ee62c106a9b11f8a76964a30/compressed_tensors_nightly-0.3.3.20240531-py3-none-any.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [pyontoenv]: Downloading https://files.pythonhosted.org/packages/93/96/e1fa63d4efce506020c206d7105a96bd95040eb89ff6143ff8244112bc8e/pyontoenv-0.1.7a7.tar.gz
+[2024-06-01 20:07:22] INFO root fetch - processPackages [mpy-cross]: Downloading https://files.pythonhosted.org/packages/be/89/c3c6850b0f6f1795065808dcafc2a21d6e3c49b6cd8d8ffc0c4f060a9a61/mpy_cross-1.9.3-py2.py3-none-win_amd64.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/05/f9/7c045b637bfaba69975565f11a394fe7762e530d45ea9fb7c38c55b47bd0/ALLMDEV-1.3.9-py3-none-any.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [paka]: Downloading https://files.pythonhosted.org/packages/46/9f/18b9dfb41dc3df5192e90384d859b7e619009522c945e879ea8465389689/paka-0.1.8.tar.gz
+[2024-06-01 20:07:22] INFO root fetch - processPackages [compressed-tensors-nightly]: Downloading https://files.pythonhosted.org/packages/8c/fb/c8b2738f760364cd597d216c88d5ab2166ef129938aee7008cea47cf37e1/compressed_tensors_nightly-0.3.3.20240601-py3-none-any.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [mpy-cross]: Downloading https://files.pythonhosted.org/packages/dd/07/c54049c5a7a3944b69a8da007d730d914ba0987d320e389afb129208d43c/mpy_cross-1.9.4-py2.py3-none-win_amd64.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [mpy-cross]: Downloading https://files.pythonhosted.org/packages/dd/07/c54049c5a7a3944b69a8da007d730d914ba0987d320e389afb129208d43c/mpy_cross-1.9.4-py2.py3-none-win_amd64.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/d4/1d/bf4af43c001ad157d4f360981b1e75e9e334e3a285e398f565de7ff822bf/ALLMDEV-1.4.0-py3-none-any.whl
+[2024-06-01 20:07:22] INFO root fetch - processPackages [pyontoenv]: Downloading https://files.pythonhosted.org/packages/3f/fb/df49bd436a53cdab36e9c6f0b775bfb86e9c74ede5ab77fe327eb5a21236/pyontoenv-0.1.7a8.tar.gz
+[2024-06-01 20:07:22] INFO root fetch - processPackages [paka]: Downloading https://files.pythonhosted.org/packages/1b/05/a45edd3bc43cea16977b27c2bc259ff1ba15a160d8cc759349945a719e7f/paka-0.1.9.tar.gz
+[2024-06-01 20:07:22] INFO root fetch - processPackages [compressed-tensors-nightly]: executing diffoscope
+[2024-06-01 20:07:22] INFO root fetch - processPackages [compressed-tensors-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compressed_tensors_nightly-0.3.3.20240531-py3-none-any.whl.zip tmp/compressed_tensors_nightly-0.3.3.20240601-py3-none-any.whl.zip --markdown 20240601/c/compressed-tensors-nightly/0.3.3.20240531-0.3.3.20240601/README.md --exclude *.pyd
+[2024-06-01 20:07:23] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-06-01 20:07:23] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.3.9-py3-none-any.whl.zip tmp/ALLMDEV-1.4.0-py3-none-any.whl.zip --markdown 20240601/A/ALLMDEV/1.3.9-1.4.0/README.md --exclude *.pyd
+[2024-06-01 20:07:23] INFO root fetch - processPackages [paka]: executing diffoscope
+[2024-06-01 20:07:23] INFO root fetch - processPackages [paka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paka-0.1.8.tar.gz tmp/paka-0.1.9.tar.gz --markdown 20240601/p/paka/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 20:07:23] INFO root fetch - processPackages [pyontoenv]: executing diffoscope
+[2024-06-01 20:07:23] INFO root fetch - processPackages [pyontoenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyontoenv-0.1.7a7.tar.gz tmp/pyontoenv-0.1.7a8.tar.gz --markdown 20240601/p/pyontoenv/0.1.7a7-0.1.7a8/README.md --exclude *.pyd
+[2024-06-01 20:07:23] INFO root fetch - processPackages [mpy-cross]: executing diffoscope
+[2024-06-01 20:07:23] INFO root fetch - processPackages [mpy-cross]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy_cross-1.9.3-py2.py3-none-win_amd64.whl.zip tmp/mpy_cross-1.9.4-py2.py3-none-win_amd64.whl.zip --markdown 20240601/m/mpy-cross/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-06-01 20:07:23] INFO root fetch - processPackages [mpy-cross]: executing diffoscope
+[2024-06-01 20:07:23] INFO root fetch - processPackages [mpy-cross]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy_cross-1.9.3-py2.py3-none-win_amd64.whl.zip tmp/mpy_cross-1.9.4-py2.py3-none-win_amd64.whl.zip --markdown 20240601/m/mpy-cross/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-06-01 20:07:23] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.9-py3-none-any.whl.zip]
+[2024-06-01 20:07:23] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.4.0-py3-none-any.whl.zip]
+[2024-06-01 20:07:23] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-06-01 20:07:23] INFO root fetch - processPackages [compressed-tensors-nightly]: Remove: archive file [/home/abi/fetcher/tmp/compressed_tensors_nightly-0.3.3.20240531-py3-none-any.whl.zip]
+[2024-06-01 20:07:23] INFO root fetch - processPackages [compressed-tensors-nightly]: Remove: archive file [/home/abi/fetcher/tmp/compressed_tensors_nightly-0.3.3.20240601-py3-none-any.whl.zip]
+[2024-06-01 20:07:23] INFO root fetch - main [MainThread]: End processing [compressed-tensors-nightly]: success
+[2024-06-01 20:07:23] INFO root fetch - processPackages [paka]: Remove: archive file [/home/abi/fetcher/tmp/paka-0.1.8.tar.gz]
+[2024-06-01 20:07:23] INFO root fetch - processPackages [paka]: Remove: archive file [/home/abi/fetcher/tmp/paka-0.1.9.tar.gz]
+[2024-06-01 20:07:23] INFO root fetch - main [MainThread]: End processing [paka]: success
+[2024-06-01 20:07:24] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.7a7.tar.gz]
+[2024-06-01 20:07:24] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.7a8.tar.gz]
+[2024-06-01 20:07:24] INFO root fetch - main [MainThread]: End processing [pyontoenv]: success
+[2024-06-01 20:07:24] INFO root fetch - processPackages [mpy-cross]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross-1.9.3-py2.py3-none-win_amd64.whl.zip]
+[2024-06-01 20:07:24] INFO root fetch - processPackages [mpy-cross]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross-1.9.4-py2.py3-none-win_amd64.whl.zip]
+[2024-06-01 20:07:24] INFO root fetch - main [MainThread]: End processing [mpy-cross]: success
+[2024-06-01 20:07:24] INFO root fetch - main [MainThread]: End processing [mpy-cross]: success
+[2024-06-01 20:07:24] INFO root fetch - main [MainThread]: Store serial: [23482382]
