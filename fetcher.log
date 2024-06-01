@@ -8183,3 +8183,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:10:42] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
 [2024-06-01 04:10:42] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2024-06-01 04:10:42] INFO root fetch - main [MainThread]: Store serial: [23476344]
+[2024-06-01 04:12:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476344]
+[2024-06-01 04:12:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 04:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zoho-analytics-connector
+[2024-06-01 04:12:51] INFO root fetch - processPackages [zoho-analytics-connector]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-06-01 04:12:51] INFO root fetch - processPackages [zoho-analytics-connector]: Downloading https://files.pythonhosted.org/packages/eb/3f/84844c704889aaef720dea22e9ef407ef8fdb284c7de24eade3ea2a6c7a0/zoho_analytics_connector-1.4.4.tar.gz
+[2024-06-01 04:12:51] INFO root fetch - processPackages [zoho-analytics-connector]: Downloading https://files.pythonhosted.org/packages/f8/f0/b0cbb4d818c95323c7d1d95755423eb0e74cd54b8590f6187bb2df450a1b/zoho_analytics_connector-1.4.5.tar.gz
+[2024-06-01 04:12:52] INFO root fetch - processPackages [zoho-analytics-connector]: executing diffoscope
+[2024-06-01 04:12:52] INFO root fetch - processPackages [zoho-analytics-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoho_analytics_connector-1.4.4.tar.gz tmp/zoho_analytics_connector-1.4.5.tar.gz --markdown 20240601/z/zoho-analytics-connector/1.4.4-1.4.5/README.md --exclude *.pyd
+[2024-06-01 04:12:52] INFO root fetch - processPackages [zoho-analytics-connector]: Remove: archive file [/home/abi/fetcher/tmp/zoho_analytics_connector-1.4.4.tar.gz]
+[2024-06-01 04:12:52] INFO root fetch - processPackages [zoho-analytics-connector]: Remove: archive file [/home/abi/fetcher/tmp/zoho_analytics_connector-1.4.5.tar.gz]
+[2024-06-01 04:12:52] INFO root fetch - main [MainThread]: End processing [zoho-analytics-connector]: success
+[2024-06-01 04:12:52] INFO root fetch - main [MainThread]: Store serial: [23476347]
