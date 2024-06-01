@@ -9774,3 +9774,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:37:02] INFO root fetch - processPackages [pygda]: Remove: archive file [/home/abi/fetcher/tmp/pygda-0.0.4.tar.gz]
 [2024-06-01 05:37:02] INFO root fetch - main [MainThread]: End processing [pygda]: success
 [2024-06-01 05:37:02] INFO root fetch - main [MainThread]: Store serial: [23477003]
+[2024-06-01 05:39:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477003]
+[2024-06-01 05:39:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 05:39:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySide2-Fluent-Widgets
+[2024-06-01 05:39:11] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-01 05:39:11] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/7f/d1/750c0cc04d77eeb9ccfbbd7e3125c3ee835f2282338666e156bd0f60e417/PySide2-Fluent-Widgets-1.5.6.tar.gz
+[2024-06-01 05:39:12] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/4c/06/1cb4823b1d0ea393cb8eb8683dea6a50b8ffe7e40745d55df8f13b6130d0/PySide2-Fluent-Widgets-1.5.7.tar.gz
+[2024-06-01 05:39:12] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2024-06-01 05:39:12] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-1.5.6.tar.gz tmp/PySide2-Fluent-Widgets-1.5.7.tar.gz --markdown 20240601/P/PySide2-Fluent-Widgets/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-01 05:39:14] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide2-Fluent-Widgets-1.5.6.tar.gz]
+[2024-06-01 05:39:14] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide2-Fluent-Widgets-1.5.7.tar.gz]
+[2024-06-01 05:39:14] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2024-06-01 05:39:14] INFO root fetch - main [MainThread]: Store serial: [23477006]
