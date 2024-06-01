@@ -10052,3 +10052,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:05:25] INFO root fetch - processPackages [yandexcloud]: Remove: archive file [/home/abi/fetcher/tmp/yandexcloud-0.99.0.tar.gz]
 [2024-06-01 06:05:25] INFO root fetch - main [MainThread]: End processing [yandexcloud]: success
 [2024-06-01 06:05:25] INFO root fetch - main [MainThread]: Store serial: [23477164]
+[2024-06-01 06:07:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477164]
+[2024-06-01 06:07:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 06:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: posuto
+[2024-06-01 06:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syngen
+[2024-06-01 06:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eprempy
+[2024-06-01 06:07:33] INFO root fetch - processPackages [posuto]: New version: [2024.5.0] Old Version: [2024.4.0]
+[2024-06-01 06:07:34] INFO root fetch - processPackages [eprempy]: New version: [0.6.0] Old Version: [0.5.5]
+[2024-06-01 06:07:34] INFO root fetch - processPackages [syngen]: New version: [0.9.0] Old Version: [0.8.5]
+[2024-06-01 06:07:34] INFO root fetch - processPackages [posuto]: Downloading https://files.pythonhosted.org/packages/b7/3d/a6f1223527817bcc4dac0075493ed718490924298d904a119bba9c559b62/posuto-2024.4.0.tar.gz
+[2024-06-01 06:07:34] INFO root fetch - processPackages [eprempy]: Downloading https://files.pythonhosted.org/packages/60/b4/b25ff872023e231ac2ccea8f9db69203e18c8752986a8db1924fe4c8a2bd/eprempy-0.5.5.tar.gz
+[2024-06-01 06:07:34] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/61/b0/314019356cf03ae5c10b7e2beae442ef95cc9b43d8e0c27c13d67919abd2/syngen-0.8.5.tar.gz
+[2024-06-01 06:07:34] INFO root fetch - processPackages [eprempy]: Downloading https://files.pythonhosted.org/packages/87/c6/0c20b44b6daf158d3859be8d3b4e252c5fb29376607abdebc8f05b941520/eprempy-0.6.0.tar.gz
+[2024-06-01 06:07:34] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/7e/a4/af5255fa7d54d9ed715410f759429c9d7a306ea8757a0296dd7be532d608/syngen-0.9.0.tar.gz
+[2024-06-01 06:07:34] INFO root fetch - processPackages [posuto]: Downloading https://files.pythonhosted.org/packages/fd/96/43e19e204d6c95e1f4564f6941b3a11359308effdbb8c9bc19d074504e61/posuto-2024.5.0.tar.gz
+[2024-06-01 06:07:34] INFO root fetch - processPackages [eprempy]: executing diffoscope
+[2024-06-01 06:07:34] INFO root fetch - processPackages [eprempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eprempy-0.5.5.tar.gz tmp/eprempy-0.6.0.tar.gz --markdown 20240601/e/eprempy/0.5.5-0.6.0/README.md --exclude *.pyd
+[2024-06-01 06:07:35] INFO root fetch - processPackages [posuto]: executing diffoscope
+[2024-06-01 06:07:35] INFO root fetch - processPackages [posuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/posuto-2024.4.0.tar.gz tmp/posuto-2024.5.0.tar.gz --markdown 20240601/p/posuto/2024.4.0-2024.5.0/README.md --exclude *.pyd
+[2024-06-01 06:07:35] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2024-06-01 06:07:35] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.8.5.tar.gz tmp/syngen-0.9.0.tar.gz --markdown 20240601/s/syngen/0.8.5-0.9.0/README.md --exclude *.pyd
+[2024-06-01 06:07:35] INFO root fetch - processPackages [eprempy]: Remove: archive file [/home/abi/fetcher/tmp/eprempy-0.5.5.tar.gz]
+[2024-06-01 06:07:35] INFO root fetch - processPackages [eprempy]: Remove: archive file [/home/abi/fetcher/tmp/eprempy-0.6.0.tar.gz]
+[2024-06-01 06:07:35] INFO root fetch - main [MainThread]: End processing [eprempy]: success
+[2024-06-01 06:07:36] INFO root fetch - processPackages [syngen]: Remove: archive file [/home/abi/fetcher/tmp/syngen-0.8.5.tar.gz]
+[2024-06-01 06:07:36] INFO root fetch - processPackages [syngen]: Remove: archive file [/home/abi/fetcher/tmp/syngen-0.9.0.tar.gz]
+[2024-06-01 06:07:36] INFO root fetch - main [MainThread]: End processing [syngen]: success
+[2024-06-01 06:07:47] INFO root fetch - processPackages [posuto]: Remove: archive file [/home/abi/fetcher/tmp/posuto-2024.4.0.tar.gz]
+[2024-06-01 06:07:47] INFO root fetch - processPackages [posuto]: Remove: archive file [/home/abi/fetcher/tmp/posuto-2024.5.0.tar.gz]
+[2024-06-01 06:07:47] INFO root fetch - main [MainThread]: End processing [posuto]: success
+[2024-06-01 06:07:47] INFO root fetch - main [MainThread]: Store serial: [23477173]
