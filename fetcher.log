@@ -11980,3 +11980,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:21:19] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-06-01 09:21:19] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-06-01 09:21:19] INFO root fetch - main [MainThread]: Store serial: [23478073]
+[2024-06-01 09:23:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478073]
+[2024-06-01 09:23:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: todoist-auto
+[2024-06-01 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oahspe
+[2024-06-01 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toyai
+[2024-06-01 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-fs-base-multi-media
+[2024-06-01 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-fs-image-thumbnail
+[2024-06-01 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-fs-product-multi-media
+[2024-06-01 09:23:30] INFO root fetch - processPackages [oahspe]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.2.4]
+[2024-06-01 09:23:30] INFO root fetch - processPackages [todoist-auto]: New version: [9.0.0] Old Version: [8.0.0]
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.2]
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.1.4]
+[2024-06-01 09:23:30] INFO root fetch - processPackages [toyai]: New version: [0.2] Old Version: [0.1]
+[2024-06-01 09:23:30] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/4b/74/d4e56352cf9c4bcbdb9def76baacfa0f8f561d2056675a7966bca54343aa/oahspe-0.0.8.tar.gz
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: Downloading https://files.pythonhosted.org/packages/07/4b/577d4e524982f460fa08d2c2c34a38d9159c12b5daf4bce49e66a31f5c50/odoo_addon_fs_product_multi_media-16.0.1.0.2.4-py3-none-any.whl
+[2024-06-01 09:23:30] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/b1/78/baea81138dfb8700e7a2b795b192569b97f1b353b15e6374ef7c32ec9bd9/todoist_auto-8.0.0.tar.gz
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: Downloading https://files.pythonhosted.org/packages/2e/fd/9af8711175cfb0a1e80908035badb4e22054e1ead221e005d1146d147b18/odoo_addon_fs_image_thumbnail-16.0.1.0.2-py3-none-any.whl
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: Downloading https://files.pythonhosted.org/packages/da/e1/500e7024788c91d5d82b375789f7baab86a263f6ec4b5964ba8596c8e81f/odoo_addon_fs_base_multi_media-16.0.1.0.1.4-py3-none-any.whl
+[2024-06-01 09:23:30] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/66/c7/db427e0eb2eb1acf04a420f2a085cd4d203a847b70fde32d57b3b460c659/toyai-0.1.tar.gz
+[2024-06-01 09:23:30] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/de/d5/1e822b9aa967a7cbfc30d1e9b77cb573842f5536e41ade896d0df136f0ee/oahspe-0.0.9.tar.gz
+[2024-06-01 09:23:30] INFO root fetch - processPackages [todoist-auto]: Downloading https://files.pythonhosted.org/packages/ad/42/49bc0ab11074d45b08e24c5a91b302992d6e5855e521f2a779d82a91eed5/todoist_auto-9.0.0.tar.gz
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: Downloading https://files.pythonhosted.org/packages/1c/49/bf19d6533e02c97a0557853a82d545ad90dda4cfe517622f7f74f9f6346b/odoo_addon_fs_product_multi_media-17.0.1.0.0.2-py3-none-any.whl
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: Downloading https://files.pythonhosted.org/packages/f1/58/0eb2aeec4833717c7b0d3fb3c982752076fbf10016b90f548cc16c9aa4c1/odoo_addon_fs_base_multi_media-17.0.1.0.0.2-py3-none-any.whl
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: Downloading https://files.pythonhosted.org/packages/fa/b2/4748b3f11a96cf4488dfc071d93808512b1defd3b89c26b0a92e3371dbbc/odoo_addon_fs_image_thumbnail-17.0.1.0.0.2-py3-none-any.whl
+[2024-06-01 09:23:30] INFO root fetch - processPackages [toyai]: Downloading https://files.pythonhosted.org/packages/d8/76/14ea5a41222e4908226cf7603c97b8b57ef0ce6364586e0488f93a7e62e3/toyai-0.2.tar.gz
+[2024-06-01 09:23:30] INFO root fetch - processPackages [oahspe]: executing diffoscope
+[2024-06-01 09:23:30] INFO root fetch - processPackages [oahspe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oahspe-0.0.8.tar.gz tmp/oahspe-0.0.9.tar.gz --markdown 20240601/o/oahspe/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:23:30] INFO root fetch - processPackages [todoist-auto]: executing diffoscope
+[2024-06-01 09:23:30] INFO root fetch - processPackages [todoist-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todoist_auto-8.0.0.tar.gz tmp/todoist_auto-9.0.0.tar.gz --markdown 20240601/t/todoist-auto/8.0.0-9.0.0/README.md --exclude *.pyd
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: executing diffoscope
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_product_multi_media-16.0.1.0.2.4-py3-none-any.whl.zip tmp/odoo_addon_fs_product_multi_media-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-fs-product-multi-media/16.0.1.0.2.4-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: executing diffoscope
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_base_multi_media-16.0.1.0.1.4-py3-none-any.whl.zip tmp/odoo_addon_fs_base_multi_media-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-fs-base-multi-media/16.0.1.0.1.4-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-06-01 09:23:30] INFO root fetch - processPackages [toyai]: executing diffoscope
+[2024-06-01 09:23:30] INFO root fetch - processPackages [toyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toyai-0.1.tar.gz tmp/toyai-0.2.tar.gz --markdown 20240601/t/toyai/0.1-0.2/README.md --exclude *.pyd
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: executing diffoscope
+[2024-06-01 09:23:30] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_image_thumbnail-16.0.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_fs_image_thumbnail-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-fs-image-thumbnail/16.0.1.0.2-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-06-01 09:23:31] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.1.tar.gz]
+[2024-06-01 09:23:31] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [toyai]: success
+[2024-06-01 09:23:31] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-8.0.0.tar.gz]
+[2024-06-01 09:23:31] INFO root fetch - processPackages [todoist-auto]: Remove: archive file [/home/abi/fetcher/tmp/todoist_auto-9.0.0.tar.gz]
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [todoist-auto]: success
+[2024-06-01 09:23:31] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.8.tar.gz]
+[2024-06-01 09:23:31] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.9.tar.gz]
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [oahspe]: success
+[2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_base_multi_media-16.0.1.0.1.4-py3-none-any.whl.zip]
+[2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-base-multi-media]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_base_multi_media-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-base-multi-media]: success
+[2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_product_multi_media-16.0.1.0.2.4-py3-none-any.whl.zip]
+[2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-product-multi-media]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_product_multi_media-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-product-multi-media]: success
+[2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_image_thumbnail-16.0.1.0.2-py3-none-any.whl.zip]
+[2024-06-01 09:23:31] INFO root fetch - processPackages [odoo-addon-fs-image-thumbnail]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_image_thumbnail-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-image-thumbnail]: success
+[2024-06-01 09:23:31] INFO root fetch - main [MainThread]: Store serial: [23478086]
