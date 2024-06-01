@@ -22431,3 +22431,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:03:35] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.9.tar.gz]
 [2024-06-01 22:03:35] INFO root fetch - main [MainThread]: End processing [OpenTTDLab]: success
 [2024-06-01 22:03:35] INFO root fetch - main [MainThread]: Store serial: [23483179]
+[2024-06-01 22:05:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483179]
+[2024-06-01 22:05:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 22:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BISOInvest-pack2
+[2024-06-01 22:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: churn-lib
+[2024-06-01 22:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vmstate
+[2024-06-01 22:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mpy-cross-v6.3
+[2024-06-01 22:05:44] WARNING root fetch - processPackages [vmstate]: Skipping, unable to determine old version
+[2024-06-01 22:05:44] INFO root fetch - main [MainThread]: End processing [vmstate] error
+[2024-06-01 22:05:44] ERROR root fetch - processPackages [mpy-cross-v6.3]: Unable to get metadata: No such project 'mpy-cross-v6.3'
+[2024-06-01 22:05:44] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6.3] error
+[2024-06-01 22:05:44] WARNING root fetch - processPackages [BISOInvest-pack2]: Skipping, unable to determine old version
+[2024-06-01 22:05:44] INFO root fetch - main [MainThread]: End processing [BISOInvest-pack2] error
+[2024-06-01 22:05:44] WARNING root fetch - processPackages [churn-lib]: Skipping, unable to determine old version
+[2024-06-01 22:05:44] INFO root fetch - main [MainThread]: End processing [churn-lib] error
+[2024-06-01 22:05:44] INFO root fetch - main [MainThread]: Store serial: [23483194]
