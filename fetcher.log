@@ -22951,3 +22951,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:40:51] INFO root fetch - processPackages [cyhole]: Remove: archive file [/home/abi/fetcher/tmp/cyhole-0.0.1a1.tar.gz]
 [2024-06-01 22:40:51] INFO root fetch - main [MainThread]: End processing [cyhole]: success
 [2024-06-01 22:40:51] INFO root fetch - main [MainThread]: Store serial: [23483409]
+[2024-06-01 22:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483409]
+[2024-06-01 22:43:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 22:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usportspy
+[2024-06-01 22:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dspy-ai
+[2024-06-01 22:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphscope
+[2024-06-01 22:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphscope-client
+[2024-06-01 22:43:00] WARNING root fetch - processPackages [usportspy]: Skipping, unable to determine old version
+[2024-06-01 22:43:00] INFO root fetch - main [MainThread]: End processing [usportspy] error
+[2024-06-01 22:43:00] INFO root fetch - processPackages [graphscope-client]: New version: [0.28.0a20240531] Old Version: [0.28.0a20240529]
+[2024-06-01 22:43:00] INFO root fetch - processPackages [graphscope]: New version: [0.28.0a20240531] Old Version: [0.28.0a20240529]
+[2024-06-01 22:43:00] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/b0/73/81a72ef26519db56ef024ec49596c9c482357a05aa9f05e5df16ecf3ad38/graphscope_client-0.28.0a20240529-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 22:43:00] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/cc/b6/7574c925c482ab9f827ce53d80ba2852ba88a101cb177e8ae12e0a5dad9d/graphscope-0.28.0a20240529-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 22:43:00] INFO root fetch - processPackages [dspy-ai]: New version: [2.5.0rc3] Old Version: [2.5.0rc2]
+[2024-06-01 22:43:00] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 96588979>=10485760
+[2024-06-01 22:43:00] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2024-06-01 22:43:00] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 218046235>=10485760
+[2024-06-01 22:43:00] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2024-06-01 22:43:01] INFO root fetch - processPackages [dspy-ai]: Downloading https://files.pythonhosted.org/packages/e0/b5/64b0953b5651645d3172708b86ba30636526bd05d612d7ea84fb97e5a916/dspy_ai-2.5.0rc2.tar.gz
+[2024-06-01 22:43:01] INFO root fetch - processPackages [dspy-ai]: Downloading https://files.pythonhosted.org/packages/7c/7e/de90e3b9274e421922f66540abc6786e1188e896c8a8b2a29910b2109d11/dspy_ai-2.5.0rc3.tar.gz
+[2024-06-01 22:43:01] INFO root fetch - processPackages [dspy-ai]: executing diffoscope
+[2024-06-01 22:43:01] INFO root fetch - processPackages [dspy-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspy_ai-2.5.0rc2.tar.gz tmp/dspy_ai-2.5.0rc3.tar.gz --markdown 20240601/d/dspy-ai/2.5.0rc2-2.5.0rc3/README.md --exclude *.pyd
+[2024-06-01 22:43:02] INFO root fetch - processPackages [dspy-ai]: Remove: archive file [/home/abi/fetcher/tmp/dspy_ai-2.5.0rc2.tar.gz]
+[2024-06-01 22:43:02] INFO root fetch - processPackages [dspy-ai]: Remove: archive file [/home/abi/fetcher/tmp/dspy_ai-2.5.0rc3.tar.gz]
+[2024-06-01 22:43:02] INFO root fetch - main [MainThread]: End processing [dspy-ai]: success
+[2024-06-01 22:43:02] INFO root fetch - main [MainThread]: Store serial: [23483419]
