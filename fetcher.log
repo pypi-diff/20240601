@@ -15197,3 +15197,42 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:24:56] INFO root fetch - processPackages [drf-spectacular-sidecar]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_sidecar-2024.6.1.tar.gz]
 [2024-06-01 13:24:56] INFO root fetch - main [MainThread]: End processing [drf-spectacular-sidecar]: success
 [2024-06-01 13:24:56] INFO root fetch - main [MainThread]: Store serial: [23479703]
+[2024-06-01 13:27:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479703]
+[2024-06-01 13:27:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 13:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Devansh-Topsis-Package
+[2024-06-01 13:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sigmacode
+[2024-06-01 13:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snowq
+[2024-06-01 13:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jobQuery
+[2024-06-01 13:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gadapt
+[2024-06-01 13:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MainServiceManager
+[2024-06-01 13:27:06] WARNING root fetch - processPackages [jobQuery]: Skipping, unable to determine old version
+[2024-06-01 13:27:06] INFO root fetch - main [MainThread]: End processing [jobQuery] error
+[2024-06-01 13:27:06] WARNING root fetch - processPackages [Devansh-Topsis-Package]: Skipping, unable to determine old version
+[2024-06-01 13:27:06] INFO root fetch - main [MainThread]: End processing [Devansh-Topsis-Package] error
+[2024-06-01 13:27:06] INFO root fetch - processPackages [sigmacode]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-01 13:27:06] INFO root fetch - processPackages [MainServiceManager]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 13:27:06] WARNING root fetch - processPackages [snowq]: Skipping, unable to determine old version
+[2024-06-01 13:27:06] INFO root fetch - main [MainThread]: End processing [snowq] error
+[2024-06-01 13:27:06] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/41/15/d5a5d34a1f32415758b7162a09516fdf1ea12f5ae80e4f3cc068ea0ac2b7/mainservicemanager-0.0.3.tar.gz
+[2024-06-01 13:27:06] INFO root fetch - processPackages [gadapt]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-06-01 13:27:06] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/76/1b/71018c9c0792e53eb49aa11260e18d60f955ec453d654960bb689d073bf9/sigmacode-0.0.5.tar.gz
+[2024-06-01 13:27:06] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/18/68/ec9b06192b62b296a42ae493441214b393543f31ba3c655792125045c26a/gadapt-0.4.8.tar.gz
+[2024-06-01 13:27:06] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/fe/5a/b57c01f5c8280fd501ca12f527df498c791d1adfd13143609fb9fe432ad5/mainservicemanager-0.0.4.tar.gz
+[2024-06-01 13:27:07] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/6d/a0/d1b359760bc76f700f8a2a978c9103597345b7cb97ed784eb177008f771f/sigmacode-0.0.6.tar.gz
+[2024-06-01 13:27:07] INFO root fetch - processPackages [MainServiceManager]: executing diffoscope
+[2024-06-01 13:27:07] INFO root fetch - processPackages [MainServiceManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainservicemanager-0.0.3.tar.gz tmp/mainservicemanager-0.0.4.tar.gz --markdown 20240601/M/MainServiceManager/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 13:27:07] INFO root fetch - processPackages [sigmacode]: executing diffoscope
+[2024-06-01 13:27:07] INFO root fetch - processPackages [sigmacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmacode-0.0.5.tar.gz tmp/sigmacode-0.0.6.tar.gz --markdown 20240601/s/sigmacode/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-01 13:27:07] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/f6/55/43ef5a77fb2ffd368ecb1d7fb86383148ea58ebf4c50b797c7c8bb94e9fa/gadapt-0.4.9.tar.gz
+[2024-06-01 13:27:07] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-06-01 13:27:07] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.4.8.tar.gz tmp/gadapt-0.4.9.tar.gz --markdown 20240601/g/gadapt/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-06-01 13:27:07] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.3.tar.gz]
+[2024-06-01 13:27:07] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.4.tar.gz]
+[2024-06-01 13:27:07] INFO root fetch - main [MainThread]: End processing [MainServiceManager]: success
+[2024-06-01 13:27:07] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.5.tar.gz]
+[2024-06-01 13:27:07] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.6.tar.gz]
+[2024-06-01 13:27:07] INFO root fetch - main [MainThread]: End processing [sigmacode]: success
+[2024-06-01 13:27:08] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.8.tar.gz]
+[2024-06-01 13:27:08] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.9.tar.gz]
+[2024-06-01 13:27:08] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-06-01 13:27:08] INFO root fetch - main [MainThread]: Store serial: [23479731]
