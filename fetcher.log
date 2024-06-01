@@ -15030,3 +15030,33 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:12:32] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.3.tar.gz]
 [2024-06-01 13:12:32] INFO root fetch - main [MainThread]: End processing [sigmacode]: success
 [2024-06-01 13:12:32] INFO root fetch - main [MainThread]: Store serial: [23479628]
+[2024-06-01 13:14:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479628]
+[2024-06-01 13:14:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trainerbase
+[2024-06-01 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-moss
+[2024-06-01 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MainServiceManager
+[2024-06-01 13:14:41] INFO root fetch - processPackages [python-moss]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-06-01 13:14:41] INFO root fetch - processPackages [trainerbase]: New version: [3.9.0] Old Version: [3.8.2]
+[2024-06-01 13:14:41] INFO root fetch - processPackages [MainServiceManager]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 13:14:41] INFO root fetch - processPackages [python-moss]: Downloading https://files.pythonhosted.org/packages/bb/a5/72da86df351c8a2971f5ba781e2e7b6e2256a5c243f64595a127845cc2a9/python_moss-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 13:14:41] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/5c/03/4516109f739b7a8b4001b92033cc72e74e1d6756a3745435293d5da53262/trainerbase-3.8.2.tar.gz
+[2024-06-01 13:14:41] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/b9/bf/10f3d2ff2ff251a445b45b3578cf78169b0869d90cfb126bb2343527e744/mainservicemanager-0.0.1.tar.gz
+[2024-06-01 13:14:41] INFO root fetch - processPackages [trainerbase]: Downloading https://files.pythonhosted.org/packages/fb/c1/1d14e6a9abf8df0b2db4181f5ed1bafd6fe28e8130c732c258c9a8116707/trainerbase-3.9.0.tar.gz
+[2024-06-01 13:14:41] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2024-06-01 13:14:41] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trainerbase-3.8.2.tar.gz tmp/trainerbase-3.9.0.tar.gz --markdown 20240601/t/trainerbase/3.8.2-3.9.0/README.md --exclude *.pyd
+[2024-06-01 13:14:41] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/cb/ab/e6bd4f9f40d79a49224e7d5e025dfc295ec8be31a6a87e39f189276942c8/mainservicemanager-0.0.2.tar.gz
+[2024-06-01 13:14:41] INFO root fetch - processPackages [python-moss]: Downloading https://files.pythonhosted.org/packages/18/f5/2d720cd8e78db0aa3b097c04fd840e6460352d5044a32d6421bb28a9920d/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 13:14:41] INFO root fetch - processPackages [MainServiceManager]: executing diffoscope
+[2024-06-01 13:14:41] INFO root fetch - processPackages [MainServiceManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainservicemanager-0.0.1.tar.gz tmp/mainservicemanager-0.0.2.tar.gz --markdown 20240601/M/MainServiceManager/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 13:14:42] INFO root fetch - processPackages [python-moss]: executing diffoscope
+[2024-06-01 13:14:42] INFO root fetch - processPackages [python-moss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_moss-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/p/python-moss/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-06-01 13:14:42] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.1.tar.gz]
+[2024-06-01 13:14:42] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.2.tar.gz]
+[2024-06-01 13:14:42] INFO root fetch - main [MainThread]: End processing [MainServiceManager]: success
+[2024-06-01 13:14:42] INFO root fetch - processPackages [trainerbase]: Remove: archive file [/home/abi/fetcher/tmp/trainerbase-3.8.2.tar.gz]
+[2024-06-01 13:14:42] INFO root fetch - processPackages [trainerbase]: Remove: archive file [/home/abi/fetcher/tmp/trainerbase-3.9.0.tar.gz]
+[2024-06-01 13:14:42] INFO root fetch - main [MainThread]: End processing [trainerbase]: success
+[2024-06-01 13:15:37] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 13:15:37] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 13:15:37] INFO root fetch - main [MainThread]: End processing [python-moss]: success
+[2024-06-01 13:15:37] INFO root fetch - main [MainThread]: Store serial: [23479641]
