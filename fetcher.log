@@ -20308,3 +20308,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:25:17] INFO root fetch - processPackages [coordinax]: Remove: archive file [/home/abi/fetcher/tmp/coordinax-0.5.tar.gz]
 [2024-06-01 19:25:17] INFO root fetch - main [MainThread]: End processing [coordinax]: success
 [2024-06-01 19:25:17] INFO root fetch - main [MainThread]: Store serial: [23482117]
+[2024-06-01 19:27:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482117]
+[2024-06-01 19:27:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 19:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: desktop-env
+[2024-06-01 19:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RealTimeTTS
+[2024-06-01 19:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: VRE-Repository-Connector
+[2024-06-01 19:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Pint
+[2024-06-01 19:27:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gmymaps
+[2024-06-01 19:27:26] INFO root fetch - processPackages [VRE-Repository-Connector]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-01 19:27:26] INFO root fetch - processPackages [desktop-env]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 19:27:26] INFO root fetch - processPackages [Pint]: New version: [0.9] Old Version: [0.8.1]
+[2024-06-01 19:27:26] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/6c/c8/18784200c275d894137f19975be16b0f194b977c7b2a4e985331135d2634/vre_repository_connector-0.2.0.tar.gz
+[2024-06-01 19:27:26] INFO root fetch - processPackages [RealTimeTTS]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-06-01 19:27:26] WARNING root fetch - processPackages [gmymaps]: Skipping, unable to determine old version
+[2024-06-01 19:27:26] INFO root fetch - main [MainThread]: End processing [gmymaps] error
+[2024-06-01 19:27:26] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/56/31/7b6552d8199fbe4871c70de1fd81920b3869270b706439d1c214499d6b22/desktop_env-0.1.8.tar.gz
+[2024-06-01 19:27:26] INFO root fetch - processPackages [Pint]: Downloading https://files.pythonhosted.org/packages/1e/40/6938f7d544eef208a8183c2c80624289e8a4f4e0aea43f4658b9527077de/Pint-0.8.1.tar.gz
+[2024-06-01 19:27:26] INFO root fetch - processPackages [RealTimeTTS]: Downloading https://files.pythonhosted.org/packages/52/fd/e7b88197da99903cbb46625042b2389f66ef5196beaa9db291a5bba81fd0/RealTimeTTS-0.4.0.tar.gz
+[2024-06-01 19:27:26] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/08/ac/40326ba6bbddcf553f83f046e7c0cc411fba1a3cfdd794eb3834e8df6bcd/vre_repository_connector-0.2.1.tar.gz
+[2024-06-01 19:27:27] INFO root fetch - processPackages [VRE-Repository-Connector]: executing diffoscope
+[2024-06-01 19:27:27] INFO root fetch - processPackages [VRE-Repository-Connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vre_repository_connector-0.2.0.tar.gz tmp/vre_repository_connector-0.2.1.tar.gz --markdown 20240601/V/VRE-Repository-Connector/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-01 19:27:27] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/34/c2/44dbe104fd250bc98e5640f34fa477ed837da112a8e7f87030a9d64589a9/desktop_env-0.1.9.tar.gz
+[2024-06-01 19:27:27] INFO root fetch - processPackages [Pint]: Downloading https://files.pythonhosted.org/packages/33/f2/1f32a10dda56fd941297b008b6dd850161537f33b510e283e0b47ce1700b/Pint-0.9.tar.gz
+[2024-06-01 19:27:27] INFO root fetch - processPackages [RealTimeTTS]: Downloading https://files.pythonhosted.org/packages/3d/d7/fc4fa69bd2c471a7084b6a115683931ba690d690f96f4615091c56bf7cbd/RealTimeTTS-0.4.1.tar.gz
+[2024-06-01 19:27:27] INFO root fetch - processPackages [desktop-env]: executing diffoscope
+[2024-06-01 19:27:27] INFO root fetch - processPackages [desktop-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop_env-0.1.8.tar.gz tmp/desktop_env-0.1.9.tar.gz --markdown 20240601/d/desktop-env/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 19:27:27] INFO root fetch - processPackages [Pint]: executing diffoscope
+[2024-06-01 19:27:27] INFO root fetch - processPackages [Pint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pint-0.8.1.tar.gz tmp/Pint-0.9.tar.gz --markdown 20240601/P/Pint/0.8.1-0.9/README.md --exclude *.pyd
+[2024-06-01 19:27:27] INFO root fetch - processPackages [RealTimeTTS]: executing diffoscope
+[2024-06-01 19:27:27] INFO root fetch - processPackages [RealTimeTTS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RealTimeTTS-0.4.0.tar.gz tmp/RealTimeTTS-0.4.1.tar.gz --markdown 20240601/R/RealTimeTTS/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-06-01 19:27:27] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.2.0.tar.gz]
+[2024-06-01 19:27:27] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.2.1.tar.gz]
+[2024-06-01 19:27:27] INFO root fetch - main [MainThread]: End processing [VRE-Repository-Connector]: success
+[2024-06-01 19:27:27] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.8.tar.gz]
+[2024-06-01 19:27:27] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.9.tar.gz]
+[2024-06-01 19:27:27] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
+[2024-06-01 19:27:28] INFO root fetch - processPackages [RealTimeTTS]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeTTS-0.4.0.tar.gz]
+[2024-06-01 19:27:28] INFO root fetch - processPackages [RealTimeTTS]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeTTS-0.4.1.tar.gz]
+[2024-06-01 19:27:28] INFO root fetch - main [MainThread]: End processing [RealTimeTTS]: success
+[2024-06-01 19:27:28] INFO root fetch - processPackages [Pint]: Remove: archive file [/home/abi/fetcher/tmp/Pint-0.8.1.tar.gz]
+[2024-06-01 19:27:28] INFO root fetch - processPackages [Pint]: Remove: archive file [/home/abi/fetcher/tmp/Pint-0.9.tar.gz]
+[2024-06-01 19:27:28] INFO root fetch - main [MainThread]: End processing [Pint]: success
+[2024-06-01 19:27:28] INFO root fetch - main [MainThread]: Store serial: [23482135]
