@@ -8576,3 +8576,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:44:25] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.493.1.tar.gz]
 [2024-06-01 04:44:25] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
 [2024-06-01 04:44:25] INFO root fetch - main [MainThread]: Store serial: [23476516]
+[2024-06-01 04:46:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476516]
+[2024-06-01 04:46:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 04:46:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notebooks-and-scripts
+[2024-06-01 04:46:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rag-assistant
+[2024-06-01 04:46:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rockai-cli-app
+[2024-06-01 04:46:33] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.494.1] Old Version: [4.493.1]
+[2024-06-01 04:46:33] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 04:46:34] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/ae/6e/a4abc4e1501737197930723d52a9dd4bcb7de3c445693a24a0055ecfc677/notebooks_and_scripts-4.493.1.tar.gz
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 04:46:34] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/93/74/b6ed230c14cadf2d4a3469c36ac1b576dda579a4129bd2acf5c2a354070a/notebooks_and_scripts-4.494.1.tar.gz
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 04:46:34] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-06-01 04:46:34] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.493.1.tar.gz tmp/notebooks_and_scripts-4.494.1.tar.gz --markdown 20240601/n/notebooks-and-scripts/4.493.1-4.494.1/README.md --exclude *.pyd
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 04:46:34] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 04:46:34] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 04:46:35] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 04:46:35] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 04:46:35] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 04:46:35] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.493.1.tar.gz]
+[2024-06-01 04:46:35] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.494.1.tar.gz]
+[2024-06-01 04:46:35] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-06-01 04:46:35] INFO root fetch - main [MainThread]: Store serial: [23476525]
