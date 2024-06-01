@@ -13729,3 +13729,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:28:03] INFO root fetch - processPackages [seabreeze]: Remove: archive file [/home/abi/fetcher/tmp/seabreeze-2.8.0.tar.gz]
 [2024-06-01 11:28:03] INFO root fetch - main [MainThread]: End processing [seabreeze]: success
 [2024-06-01 11:28:03] INFO root fetch - main [MainThread]: Store serial: [23479050]
+[2024-06-01 11:30:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479050]
+[2024-06-01 11:30:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 11:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rencrypt
+[2024-06-01 11:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-mongo
+[2024-06-01 11:30:12] INFO root fetch - processPackages [rencrypt]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 11:30:12] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/5e/dc/b73dad6da0bc332be54767905c464cbf3a382d66f714599a7d3ca2393d88/REncrypt-0.1.5.tar.gz
+[2024-06-01 11:30:12] WARNING root fetch - processPackages [fastapi-mongo]: Skipping, unable to determine old version
+[2024-06-01 11:30:12] INFO root fetch - main [MainThread]: End processing [fastapi-mongo] error
+[2024-06-01 11:30:13] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/68/6a/f8ae25160b9423e2c18c284d7e2c590ba27568f1de5bbadf9bdcf6314352/REncrypt-0.1.6.tar.gz
+[2024-06-01 11:30:13] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-01 11:30:13] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.5.tar.gz tmp/REncrypt-0.1.6.tar.gz --markdown 20240601/r/rencrypt/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 11:30:15] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.5.tar.gz]
+[2024-06-01 11:30:15] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.6.tar.gz]
+[2024-06-01 11:30:15] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-01 11:30:15] INFO root fetch - main [MainThread]: Store serial: [23479058]
