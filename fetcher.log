@@ -12399,3 +12399,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:47:26] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.8.tar.gz]
 [2024-06-01 09:47:26] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
 [2024-06-01 09:47:26] INFO root fetch - main [MainThread]: Store serial: [23478289]
+[2024-06-01 09:49:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478289]
+[2024-06-01 09:49:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:49:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tikos
+[2024-06-01 09:49:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tuyul-sdk
+[2024-06-01 09:49:35] INFO root fetch - processPackages [tuyul-sdk]: New version: [0.1.0rc2] Old Version: [0.1.0rc1]
+[2024-06-01 09:49:35] INFO root fetch - processPackages [tikos]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 09:49:35] INFO root fetch - processPackages [tuyul-sdk]: Downloading https://files.pythonhosted.org/packages/ac/a7/48506287bd04ec834572e7540c17b8d25c419f3c67ec175c5c2714dcce7a/tuyul_sdk-0.1.0rc1.tar.gz
+[2024-06-01 09:49:35] INFO root fetch - processPackages [tikos]: Downloading https://files.pythonhosted.org/packages/05/49/cca9927a982584bae412b0683c7599454a3b80d68789f8405c3335260bd9/tikos-0.0.2.tar.gz
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tuyul-sdk]: Downloading https://files.pythonhosted.org/packages/84/08/fc10d40d5136fef015b7b221a76b3b7c55ef33129f7e08822043868196f7/tuyul_sdk-0.1.0rc2.tar.gz
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tikos]: Downloading https://files.pythonhosted.org/packages/9c/7d/cf0d4c0ccc1bcb56d08847c47e32bcfbfc6ef999a5f2e158b30f7e727e18/tikos-0.0.3.tar.gz
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tikos]: executing diffoscope
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tikos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tikos-0.0.2.tar.gz tmp/tikos-0.0.3.tar.gz --markdown 20240601/t/tikos/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tuyul-sdk]: executing diffoscope
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tuyul-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuyul_sdk-0.1.0rc1.tar.gz tmp/tuyul_sdk-0.1.0rc2.tar.gz --markdown 20240601/t/tuyul-sdk/0.1.0rc1-0.1.0rc2/README.md --exclude *.pyd
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tuyul-sdk]: Remove: archive file [/home/abi/fetcher/tmp/tuyul_sdk-0.1.0rc1.tar.gz]
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tuyul-sdk]: Remove: archive file [/home/abi/fetcher/tmp/tuyul_sdk-0.1.0rc2.tar.gz]
+[2024-06-01 09:49:36] INFO root fetch - main [MainThread]: End processing [tuyul-sdk]: success
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tikos]: Remove: archive file [/home/abi/fetcher/tmp/tikos-0.0.2.tar.gz]
+[2024-06-01 09:49:36] INFO root fetch - processPackages [tikos]: Remove: archive file [/home/abi/fetcher/tmp/tikos-0.0.3.tar.gz]
+[2024-06-01 09:49:36] INFO root fetch - main [MainThread]: End processing [tikos]: success
+[2024-06-01 09:49:36] INFO root fetch - main [MainThread]: Store serial: [23478295]
