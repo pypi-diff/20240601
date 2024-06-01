@@ -7846,3 +7846,65 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 03:48:51] INFO root fetch - processPackages [bokeh]: Remove: archive file [/home/abi/fetcher/tmp/bokeh-3.5.0.dev4.tar.gz]
 [2024-06-01 03:48:51] INFO root fetch - main [MainThread]: End processing [bokeh]: success
 [2024-06-01 03:48:51] INFO root fetch - main [MainThread]: Store serial: [23475891]
+[2024-06-01 03:50:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23475891]
+[2024-06-01 03:51:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytae
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xerenity
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dyno-viewer
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyDynamoDB
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django_medilab_dental
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-core
+[2024-06-01 03:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: composio-autogen
+[2024-06-01 03:51:00] INFO root fetch - processPackages [composio-core]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [xerenity]: New version: [0.0.52] Old Version: [0.0.51]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [django_medilab_dental]: New version: [3.1.2] Old Version: [3.1.0]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [composio-autogen]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/84/c2/c6d50bfce3dc4d722e64df831896b00dae451ccb8d5d07fbe9e8b1c4bdaf/composio_core-0.3.4.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [xerenity]: Downloading https://files.pythonhosted.org/packages/65/3c/cf94044b71397392f89d55e6e3b11bceada6603be341560354c5b56456c7/xerenity-0.0.51.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [pytae]: New version: [2.2.0] Old Version: [2.1.5]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [django_medilab_dental]: Downloading https://files.pythonhosted.org/packages/72/72/bac5cb7183216ee7868ab7306325c82075aacb37ecdf1b03872126189ee6/django_medilab_dental-3.1.0.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [dyno-viewer]: New version: [0.22.0] Old Version: [0.21.4]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [PyDynamoDB]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-06-01 03:51:00] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/6e/21/12028d896639bec33cbad73eda5acb4dc3a8b0e5ebf344132d735f41f8f1/composio_autogen-0.3.4.tar.gz
+[2024-06-01 03:51:00] ERROR root fetch - processPackages [xerenity]: Unable to fetch info: No such project/version 'xerenity' 0.0.52
+[2024-06-01 03:51:00] INFO root fetch - main [MainThread]: End processing [xerenity] error
+[2024-06-01 03:51:00] INFO root fetch - processPackages [pytae]: Downloading https://files.pythonhosted.org/packages/0c/b3/c0a421b428984c7957e924f43603dab25ab5ab2ef21dc3047ef14c0304b3/pytae-2.1.5.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [dyno-viewer]: Downloading https://files.pythonhosted.org/packages/e8/1d/ad7c47177efe69311c62da779da9a51b34a906b344f76257d52f5a10795a/dyno_viewer-0.21.4.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [PyDynamoDB]: Downloading https://files.pythonhosted.org/packages/b3/03/2d698018dea0a9b3e02a542806e4f68e6b2a7ea3ce9e8bd98cc047961764/PyDynamoDB-0.5.7.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/b7/ff/89d581c9d5d8b646ae45b22559a3629293b6ec1a455dde6b1e2bb3422e2d/composio_core-0.3.5.tar.gz
+[2024-06-01 03:51:00] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/ab/9d/29ad9445dbc451c0b03e993d11d1e4bc67f472597e26aa55dd7165654e64/composio_autogen-0.3.5.tar.gz
+[2024-06-01 03:51:01] INFO root fetch - processPackages [django_medilab_dental]: Downloading https://files.pythonhosted.org/packages/82/5e/6aacade007f2c095e6683f2f807ec1c9da3cb8b3b48170b416f8387b712c/django_medilab_dental-3.1.2.tar.gz
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.3.4.tar.gz tmp/composio_core-0.3.5.tar.gz --markdown 20240601/c/composio-core/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.3.4.tar.gz tmp/composio_autogen-0.3.5.tar.gz --markdown 20240601/c/composio-autogen/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 03:51:01] INFO root fetch - processPackages [pytae]: Downloading https://files.pythonhosted.org/packages/c4/2d/47fdfe3dc68fda72257f5abe0aa7bc14f78e380de706aabbdb92f18ccafc/pytae-2.2.0.tar.gz
+[2024-06-01 03:51:01] INFO root fetch - processPackages [dyno-viewer]: Downloading https://files.pythonhosted.org/packages/76/cf/7edcaefa726eec423eae6ed1d2636451e726ebbe1019bb526322e6911df7/dyno_viewer-0.22.0.tar.gz
+[2024-06-01 03:51:01] INFO root fetch - processPackages [PyDynamoDB]: Downloading https://files.pythonhosted.org/packages/f7/6b/e339963a9018cfa94a09774e1e2c3e36333445e66119bbf76636ed7581fb/PyDynamoDB-0.5.8.tar.gz
+[2024-06-01 03:51:01] INFO root fetch - processPackages [dyno-viewer]: executing diffoscope
+[2024-06-01 03:51:01] INFO root fetch - processPackages [dyno-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyno_viewer-0.21.4.tar.gz tmp/dyno_viewer-0.22.0.tar.gz --markdown 20240601/d/dyno-viewer/0.21.4-0.22.0/README.md --exclude *.pyd
+[2024-06-01 03:51:01] INFO root fetch - processPackages [pytae]: executing diffoscope
+[2024-06-01 03:51:01] INFO root fetch - processPackages [pytae]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytae-2.1.5.tar.gz tmp/pytae-2.2.0.tar.gz --markdown 20240601/p/pytae/2.1.5-2.2.0/README.md --exclude *.pyd
+[2024-06-01 03:51:01] INFO root fetch - processPackages [PyDynamoDB]: executing diffoscope
+[2024-06-01 03:51:01] INFO root fetch - processPackages [PyDynamoDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDynamoDB-0.5.7.tar.gz tmp/PyDynamoDB-0.5.8.tar.gz --markdown 20240601/P/PyDynamoDB/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-06-01 03:51:01] INFO root fetch - processPackages [django_medilab_dental]: executing diffoscope
+[2024-06-01 03:51:01] INFO root fetch - processPackages [django_medilab_dental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_medilab_dental-3.1.0.tar.gz tmp/django_medilab_dental-3.1.2.tar.gz --markdown 20240601/d/django_medilab_dental/3.1.0-3.1.2/README.md --exclude *.pyd
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.3.4.tar.gz]
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.3.5.tar.gz]
+[2024-06-01 03:51:01] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.4.tar.gz]
+[2024-06-01 03:51:01] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.5.tar.gz]
+[2024-06-01 03:51:01] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-06-01 03:51:01] INFO root fetch - processPackages [dyno-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dyno_viewer-0.21.4.tar.gz]
+[2024-06-01 03:51:01] INFO root fetch - processPackages [dyno-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dyno_viewer-0.22.0.tar.gz]
+[2024-06-01 03:51:01] INFO root fetch - main [MainThread]: End processing [dyno-viewer]: success
+[2024-06-01 03:51:02] INFO root fetch - processPackages [PyDynamoDB]: Remove: archive file [/home/abi/fetcher/tmp/PyDynamoDB-0.5.7.tar.gz]
+[2024-06-01 03:51:02] INFO root fetch - processPackages [PyDynamoDB]: Remove: archive file [/home/abi/fetcher/tmp/PyDynamoDB-0.5.8.tar.gz]
+[2024-06-01 03:51:02] INFO root fetch - main [MainThread]: End processing [PyDynamoDB]: success
+[2024-06-01 03:51:03] INFO root fetch - processPackages [django_medilab_dental]: Remove: archive file [/home/abi/fetcher/tmp/django_medilab_dental-3.1.0.tar.gz]
+[2024-06-01 03:51:03] INFO root fetch - processPackages [django_medilab_dental]: Remove: archive file [/home/abi/fetcher/tmp/django_medilab_dental-3.1.2.tar.gz]
+[2024-06-01 03:51:03] INFO root fetch - main [MainThread]: End processing [django_medilab_dental]: success
+[2024-06-01 03:51:07] INFO root fetch - processPackages [pytae]: Remove: archive file [/home/abi/fetcher/tmp/pytae-2.1.5.tar.gz]
+[2024-06-01 03:51:07] INFO root fetch - processPackages [pytae]: Remove: archive file [/home/abi/fetcher/tmp/pytae-2.2.0.tar.gz]
+[2024-06-01 03:51:07] INFO root fetch - main [MainThread]: End processing [pytae]: success
+[2024-06-01 03:51:07] INFO root fetch - main [MainThread]: Store serial: [23475993]
