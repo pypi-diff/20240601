@@ -12845,3 +12845,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:20:00] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
 [2024-06-01 10:20:00] INFO root fetch - main [MainThread]: End processing [narwhals]: success
 [2024-06-01 10:20:00] INFO root fetch - main [MainThread]: Store serial: [23478529]
+[2024-06-01 10:22:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478529]
+[2024-06-01 10:22:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 10:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: real-trader
+[2024-06-01 10:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redash-x
+[2024-06-01 10:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rqalpha-minsec-trade-realtime
+[2024-06-01 10:22:09] WARNING root fetch - processPackages [real-trader]: Skipping, unable to determine old version
+[2024-06-01 10:22:09] INFO root fetch - main [MainThread]: End processing [real-trader] error
+[2024-06-01 10:22:09] WARNING root fetch - processPackages [redash-x]: Skipping, unable to determine old version
+[2024-06-01 10:22:09] INFO root fetch - main [MainThread]: End processing [redash-x] error
+[2024-06-01 10:22:09] WARNING root fetch - processPackages [rqalpha-minsec-trade-realtime]: Skipping, unable to determine old version
+[2024-06-01 10:22:09] INFO root fetch - main [MainThread]: End processing [rqalpha-minsec-trade-realtime] error
+[2024-06-01 10:22:09] INFO root fetch - main [MainThread]: Store serial: [23478544]
