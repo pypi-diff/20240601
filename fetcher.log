@@ -19294,3 +19294,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:21:30] INFO root fetch - processPackages [gersemi]: Remove: archive file [/home/abi/fetcher/tmp/gersemi-0.9.4.tar.gz]
 [2024-06-01 18:21:30] INFO root fetch - main [MainThread]: End processing [gersemi]: success
 [2024-06-01 18:21:30] INFO root fetch - main [MainThread]: Store serial: [23481655]
+[2024-06-01 18:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481655]
+[2024-06-01 18:23:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 18:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kbodata
+[2024-06-01 18:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RabiBridge
+[2024-06-01 18:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tuneapi
+[2024-06-01 18:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyJONDB
+[2024-06-01 18:23:41] INFO root fetch - processPackages [PyJONDB]: New version: [1.9] Old Version: [1.8]
+[2024-06-01 18:23:41] INFO root fetch - processPackages [kbodata]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-06-01 18:23:41] WARNING root fetch - processPackages [RabiBridge]: Skipping, unable to determine old version
+[2024-06-01 18:23:41] INFO root fetch - main [MainThread]: End processing [RabiBridge] error
+[2024-06-01 18:23:41] INFO root fetch - processPackages [tuneapi]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-06-01 18:23:41] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/e9/6f/4cf30e51ec9922ca746e6470d6954d4baefdb96fffdd2e6ce2eaaa1a0920/pyjondb-1.8.tar.gz
+[2024-06-01 18:23:41] INFO root fetch - processPackages [kbodata]: Downloading https://files.pythonhosted.org/packages/1e/41/f8a8e67751b45d436a123d25a23036e8798b782004bd63a478c5be42b187/kbodata-0.1.7.tar.gz
+[2024-06-01 18:23:41] INFO root fetch - processPackages [kbodata]: Downloading https://files.pythonhosted.org/packages/fe/da/67488a79b745889c0afde9eecf701498cb59c7d03c46a5cefe2f31031412/kbodata-0.2.0.tar.gz
+[2024-06-01 18:23:41] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/a1/b0/6ad9f1d29ebde39632b921819727d0a296eddd34f1c7ec370aabb7e93bd3/tuneapi-0.4.3.tar.gz
+[2024-06-01 18:23:41] INFO root fetch - processPackages [kbodata]: executing diffoscope
+[2024-06-01 18:23:41] INFO root fetch - processPackages [kbodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kbodata-0.1.7.tar.gz tmp/kbodata-0.2.0.tar.gz --markdown 20240601/k/kbodata/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-06-01 18:23:41] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/a7/ee/8e43a17c1a5ced2f7805366f17e3134bb66c4547c28fb20e3a52360acd47/pyjondb-1.9.tar.gz
+[2024-06-01 18:23:41] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 18:23:41] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.8.tar.gz tmp/pyjondb-1.9.tar.gz --markdown 20240601/P/PyJONDB/1.8-1.9/README.md --exclude *.pyd
+[2024-06-01 18:23:41] INFO root fetch - processPackages [tuneapi]: Downloading https://files.pythonhosted.org/packages/f9/84/7c01fdef0a97374b036189a522ca7d9014982be9c90394a6d3e87ec470df/tuneapi-0.4.4.tar.gz
+[2024-06-01 18:23:41] INFO root fetch - processPackages [tuneapi]: executing diffoscope
+[2024-06-01 18:23:41] INFO root fetch - processPackages [tuneapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneapi-0.4.3.tar.gz tmp/tuneapi-0.4.4.tar.gz --markdown 20240601/t/tuneapi/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-06-01 18:23:42] INFO root fetch - processPackages [kbodata]: Remove: archive file [/home/abi/fetcher/tmp/kbodata-0.1.7.tar.gz]
+[2024-06-01 18:23:42] INFO root fetch - processPackages [kbodata]: Remove: archive file [/home/abi/fetcher/tmp/kbodata-0.2.0.tar.gz]
+[2024-06-01 18:23:42] INFO root fetch - main [MainThread]: End processing [kbodata]: success
+[2024-06-01 18:23:42] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.8.tar.gz]
+[2024-06-01 18:23:42] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.9.tar.gz]
+[2024-06-01 18:23:42] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 18:23:42] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.4.3.tar.gz]
+[2024-06-01 18:23:42] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.4.4.tar.gz]
+[2024-06-01 18:23:42] INFO root fetch - main [MainThread]: End processing [tuneapi]: success
+[2024-06-01 18:23:42] INFO root fetch - main [MainThread]: Store serial: [23481667]
