@@ -12542,3 +12542,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:00:26] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip]
 [2024-06-01 10:00:26] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-06-01 10:00:26] INFO root fetch - main [MainThread]: Store serial: [23478347]
+[2024-06-01 10:02:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478347]
+[2024-06-01 10:02:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 10:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: climetlab
+[2024-06-01 10:02:35] INFO root fetch - processPackages [climetlab]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 10:02:35] INFO root fetch - processPackages [climetlab]: Downloading https://files.pythonhosted.org/packages/db/6d/a65baa433c96d08ee4c6d1cfbe1c0a5763bc35da5ded747d4a8eddebb428/climetlab-0.9.8.tar.gz
+[2024-06-01 10:02:36] INFO root fetch - processPackages [climetlab]: Downloading https://files.pythonhosted.org/packages/83/c3/c4d839d84ba4b462b80d34c1f967286e0291e6a2bf10ae84af528abaff6f/climetlab-0.9.9.tar.gz
+[2024-06-01 10:02:36] INFO root fetch - processPackages [climetlab]: executing diffoscope
+[2024-06-01 10:02:36] INFO root fetch - processPackages [climetlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climetlab-0.9.8.tar.gz tmp/climetlab-0.9.9.tar.gz --markdown 20240601/c/climetlab/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 10:02:37] INFO root fetch - processPackages [climetlab]: Remove: archive file [/home/abi/fetcher/tmp/climetlab-0.9.8.tar.gz]
+[2024-06-01 10:02:37] INFO root fetch - processPackages [climetlab]: Remove: archive file [/home/abi/fetcher/tmp/climetlab-0.9.9.tar.gz]
+[2024-06-01 10:02:37] INFO root fetch - main [MainThread]: End processing [climetlab]: success
+[2024-06-01 10:02:37] INFO root fetch - main [MainThread]: Store serial: [23478350]
