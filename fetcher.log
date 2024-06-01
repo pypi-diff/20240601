@@ -17198,3 +17198,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:53:54] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a9.tar.gz]
 [2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
 [2024-06-01 15:53:54] INFO root fetch - main [MainThread]: Store serial: [23480583]
+[2024-06-01 15:55:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480583]
+[2024-06-01 15:56:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 15:56:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spark-column-analyzer
+[2024-06-01 15:56:04] INFO root fetch - processPackages [spark-column-analyzer]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-01 15:56:04] INFO root fetch - processPackages [spark-column-analyzer]: Downloading https://files.pythonhosted.org/packages/f0/97/ea7edb3c31e91d5d7cd1db4bbc8af771bbeed93b293cbc630abd7ac14bab/spark_column_analyzer-0.2.2.tar.gz
+[2024-06-01 15:56:05] INFO root fetch - processPackages [spark-column-analyzer]: Downloading https://files.pythonhosted.org/packages/f8/10/e529573c473ee6e805bfb353118238ad67ca7fea34d96f12962bac389450/spark-column-analyzer-0.2.3.tar.gz
+[2024-06-01 15:56:05] INFO root fetch - processPackages [spark-column-analyzer]: executing diffoscope
+[2024-06-01 15:56:05] INFO root fetch - processPackages [spark-column-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_column_analyzer-0.2.2.tar.gz tmp/spark-column-analyzer-0.2.3.tar.gz --markdown 20240601/s/spark-column-analyzer/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-01 15:56:06] INFO root fetch - processPackages [spark-column-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/spark_column_analyzer-0.2.2.tar.gz]
+[2024-06-01 15:56:06] INFO root fetch - processPackages [spark-column-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/spark-column-analyzer-0.2.3.tar.gz]
+[2024-06-01 15:56:06] INFO root fetch - main [MainThread]: End processing [spark-column-analyzer]: success
+[2024-06-01 15:56:06] INFO root fetch - main [MainThread]: Store serial: [23480587]
