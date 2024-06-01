@@ -17439,3 +17439,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:15:39] INFO root fetch - processPackages [chart_me]: Remove: archive file [/home/abi/fetcher/tmp/chart_me-0.2.0.tar.gz]
 [2024-06-01 16:15:39] INFO root fetch - main [MainThread]: End processing [chart_me]: success
 [2024-06-01 16:15:39] INFO root fetch - main [MainThread]: Store serial: [23480735]
+[2024-06-01 16:17:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480735]
+[2024-06-01 16:17:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 16:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msgpackr-python
+[2024-06-01 16:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Crackerjack
+[2024-06-01 16:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heaserver-keychain
+[2024-06-01 16:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atnclib
+[2024-06-01 16:17:48] INFO root fetch - processPackages [msgpackr-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 16:17:48] INFO root fetch - processPackages [Crackerjack]: New version: [0.8.0] Old Version: [0.7.9]
+[2024-06-01 16:17:48] WARNING root fetch - processPackages [atnclib]: Skipping, unable to determine old version
+[2024-06-01 16:17:48] INFO root fetch - main [MainThread]: End processing [atnclib] error
+[2024-06-01 16:17:48] INFO root fetch - processPackages [heaserver-keychain]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-06-01 16:17:48] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/c5/75/3568b19058277b8cd82499102cf3be7570336f14e93bacedeb931e7e18cd/crackerjack-0.7.9.tar.gz
+[2024-06-01 16:17:48] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/6f/ed/2654167c725d98590004bb1f6c66f7c80961616b5336f311bc80f89a7463/msgpackr_python-0.1.0.tar.gz
+[2024-06-01 16:17:48] INFO root fetch - processPackages [heaserver-keychain]: Downloading https://files.pythonhosted.org/packages/2d/83/bd03b551dc8dde219b8545e1f0c9c0e74586ddaacf2c692b41fe77c10dbd/heaserver_keychain-1.3.0.tar.gz
+[2024-06-01 16:17:49] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/e9/06/65e2cdbd8d8bb82dc9e31c575af31348084b71785c1b8f16e5c32f073651/crackerjack-0.8.0.tar.gz
+[2024-06-01 16:17:49] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/43/d2/f54e43f4d64179ad140b7bd4c44b7b906bc551ac68193c91c84dad3d8753/msgpackr_python-0.1.1.tar.gz
+[2024-06-01 16:17:49] INFO root fetch - processPackages [Crackerjack]: executing diffoscope
+[2024-06-01 16:17:49] INFO root fetch - processPackages [Crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.7.9.tar.gz tmp/crackerjack-0.8.0.tar.gz --markdown 20240601/C/Crackerjack/0.7.9-0.8.0/README.md --exclude *.pyd
+[2024-06-01 16:17:49] INFO root fetch - processPackages [msgpackr-python]: executing diffoscope
+[2024-06-01 16:17:49] INFO root fetch - processPackages [msgpackr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgpackr_python-0.1.0.tar.gz tmp/msgpackr_python-0.1.1.tar.gz --markdown 20240601/m/msgpackr-python/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 16:17:49] INFO root fetch - processPackages [heaserver-keychain]: Downloading https://files.pythonhosted.org/packages/58/9a/78acd537a900c731ff6bcfc02c775ded7f7e2a69f43975fbc0598facb1fc/heaserver_keychain-1.3.1.tar.gz
+[2024-06-01 16:17:49] INFO root fetch - processPackages [heaserver-keychain]: executing diffoscope
+[2024-06-01 16:17:49] INFO root fetch - processPackages [heaserver-keychain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver_keychain-1.3.0.tar.gz tmp/heaserver_keychain-1.3.1.tar.gz --markdown 20240601/h/heaserver-keychain/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-06-01 16:17:49] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.0.tar.gz]
+[2024-06-01 16:17:49] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.1.tar.gz]
+[2024-06-01 16:17:49] INFO root fetch - main [MainThread]: End processing [msgpackr-python]: success
+[2024-06-01 16:17:49] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
+[2024-06-01 16:17:49] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.8.0.tar.gz]
+[2024-06-01 16:17:49] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
+[2024-06-01 16:17:50] INFO root fetch - processPackages [heaserver-keychain]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_keychain-1.3.0.tar.gz]
+[2024-06-01 16:17:50] INFO root fetch - processPackages [heaserver-keychain]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_keychain-1.3.1.tar.gz]
+[2024-06-01 16:17:50] INFO root fetch - main [MainThread]: End processing [heaserver-keychain]: success
+[2024-06-01 16:17:50] INFO root fetch - main [MainThread]: Store serial: [23480750]
