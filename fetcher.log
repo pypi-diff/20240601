@@ -19327,3 +19327,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:23:42] INFO root fetch - processPackages [tuneapi]: Remove: archive file [/home/abi/fetcher/tmp/tuneapi-0.4.4.tar.gz]
 [2024-06-01 18:23:42] INFO root fetch - main [MainThread]: End processing [tuneapi]: success
 [2024-06-01 18:23:42] INFO root fetch - main [MainThread]: Store serial: [23481667]
+[2024-06-01 18:25:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481667]
+[2024-06-01 18:25:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 18:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alphafold3-pytorch
+[2024-06-01 18:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wolframalpha
+[2024-06-01 18:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdps
+[2024-06-01 18:25:50] INFO root fetch - processPackages [cdps]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 18:25:50] INFO root fetch - processPackages [wolframalpha]: New version: [5.1.0] Old Version: [5.0.1]
+[2024-06-01 18:25:50] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/22/73/8fd2176ba089f5ae55a93146109d271db9f9a6bdbd4b2fdf1eb3dccb5764/cdps-1.0.8.tar.gz
+[2024-06-01 18:25:50] INFO root fetch - processPackages [wolframalpha]: Downloading https://files.pythonhosted.org/packages/cd/2b/1c142808d1fa15818daeff047b70008458c36bdc12ec6880733766bdd5d4/wolframalpha-5.0.1.tar.gz
+[2024-06-01 18:25:50] INFO root fetch - processPackages [alphafold3-pytorch]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-01 18:25:51] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/d9/0b/e493f7660d3beb0aa4d207749979b3d9b256dcb4cc5bbc6b67f7db93071d/alphafold3_pytorch-0.1.7.tar.gz
+[2024-06-01 18:25:51] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/ca/0b/37cc4575f3f5f399fed1223fd57adb24c1f4d98d7b88c48aed9f872abc0c/cdps-1.0.9.tar.gz
+[2024-06-01 18:25:51] INFO root fetch - processPackages [wolframalpha]: Downloading https://files.pythonhosted.org/packages/72/9e/30afe8ca18b4a47cb8363d73840a94300712f7c266800ea4f1a5aa2064d6/wolframalpha-5.1.0.tar.gz
+[2024-06-01 18:25:51] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 18:25:51] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.8.tar.gz tmp/cdps-1.0.9.tar.gz --markdown 20240601/c/cdps/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 18:25:51] INFO root fetch - processPackages [wolframalpha]: executing diffoscope
+[2024-06-01 18:25:51] INFO root fetch - processPackages [wolframalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolframalpha-5.0.1.tar.gz tmp/wolframalpha-5.1.0.tar.gz --markdown 20240601/w/wolframalpha/5.0.1-5.1.0/README.md --exclude *.pyd
+[2024-06-01 18:25:51] INFO root fetch - processPackages [alphafold3-pytorch]: Downloading https://files.pythonhosted.org/packages/cc/d2/c39ecafade11ccfb71fa0cf5a7af109426893636c16321d47eb26391a78f/alphafold3_pytorch-0.1.9.tar.gz
+[2024-06-01 18:25:51] INFO root fetch - processPackages [alphafold3-pytorch]: executing diffoscope
+[2024-06-01 18:25:51] INFO root fetch - processPackages [alphafold3-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphafold3_pytorch-0.1.7.tar.gz tmp/alphafold3_pytorch-0.1.9.tar.gz --markdown 20240601/a/alphafold3-pytorch/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-01 18:25:51] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.8.tar.gz]
+[2024-06-01 18:25:51] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.9.tar.gz]
+[2024-06-01 18:25:51] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 18:25:51] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.0.1.tar.gz]
+[2024-06-01 18:25:51] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.1.0.tar.gz]
+[2024-06-01 18:25:51] INFO root fetch - main [MainThread]: End processing [wolframalpha]: success
+[2024-06-01 18:25:52] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.1.7.tar.gz]
+[2024-06-01 18:25:52] INFO root fetch - processPackages [alphafold3-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/alphafold3_pytorch-0.1.9.tar.gz]
+[2024-06-01 18:25:52] INFO root fetch - main [MainThread]: End processing [alphafold3-pytorch]: success
+[2024-06-01 18:25:52] INFO root fetch - main [MainThread]: Store serial: [23481676]
