@@ -22407,3 +22407,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:01:25] INFO root fetch - main [MainThread]: End processing [zenaura]: success
 [2024-06-01 22:01:25] INFO root fetch - main [MainThread]: End processing [zenaura]: success
 [2024-06-01 22:01:25] INFO root fetch - main [MainThread]: Store serial: [23483168]
+[2024-06-01 22:03:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483168]
+[2024-06-01 22:03:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 22:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OpenTTDLab
+[2024-06-01 22:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lambda-genai-util
+[2024-06-01 22:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clicksearch
+[2024-06-01 22:03:34] INFO root fetch - processPackages [lambda-genai-util]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 22:03:34] INFO root fetch - processPackages [lambda-genai-util]: Downloading https://files.pythonhosted.org/packages/0a/68/4e721c2ee86e538bb50b65b6139ad3c0d6e95abee5f329f6448d60bba0bf/lambda_genai_util-0.0.4.tar.gz
+[2024-06-01 22:03:34] WARNING root fetch - processPackages [clicksearch]: Skipping, unable to determine old version
+[2024-06-01 22:03:34] INFO root fetch - main [MainThread]: End processing [clicksearch] error
+[2024-06-01 22:03:34] INFO root fetch - processPackages [OpenTTDLab]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 22:03:34] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/1f/6e/f9d8e929738fb28f0cf285d806e9d1e0b273a3abd0c627b823c266f87274/openttdlab-0.0.8.tar.gz
+[2024-06-01 22:03:34] INFO root fetch - processPackages [lambda-genai-util]: Downloading https://files.pythonhosted.org/packages/d7/76/fcb3c2f5e043dd926d2ee99d639b1902f40b6f94e02184834ffc0cd8033d/lambda_genai_util-0.0.5.tar.gz
+[2024-06-01 22:03:35] INFO root fetch - processPackages [lambda-genai-util]: executing diffoscope
+[2024-06-01 22:03:35] INFO root fetch - processPackages [lambda-genai-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambda_genai_util-0.0.4.tar.gz tmp/lambda_genai_util-0.0.5.tar.gz --markdown 20240601/l/lambda-genai-util/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 22:03:35] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/c9/28/0b49734d3f0e2b039817ac8dbe0930487e1d1764bc5c7cc16063210352e0/openttdlab-0.0.9.tar.gz
+[2024-06-01 22:03:35] INFO root fetch - processPackages [OpenTTDLab]: executing diffoscope
+[2024-06-01 22:03:35] INFO root fetch - processPackages [OpenTTDLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openttdlab-0.0.8.tar.gz tmp/openttdlab-0.0.9.tar.gz --markdown 20240601/O/OpenTTDLab/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 22:03:35] INFO root fetch - processPackages [lambda-genai-util]: Remove: archive file [/home/abi/fetcher/tmp/lambda_genai_util-0.0.4.tar.gz]
+[2024-06-01 22:03:35] INFO root fetch - processPackages [lambda-genai-util]: Remove: archive file [/home/abi/fetcher/tmp/lambda_genai_util-0.0.5.tar.gz]
+[2024-06-01 22:03:35] INFO root fetch - main [MainThread]: End processing [lambda-genai-util]: success
+[2024-06-01 22:03:35] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.8.tar.gz]
+[2024-06-01 22:03:35] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.9.tar.gz]
+[2024-06-01 22:03:35] INFO root fetch - main [MainThread]: End processing [OpenTTDLab]: success
+[2024-06-01 22:03:35] INFO root fetch - main [MainThread]: Store serial: [23483179]
