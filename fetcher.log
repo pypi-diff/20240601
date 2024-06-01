@@ -12082,3 +12082,78 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:27:52] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a9.tar.gz]
 [2024-06-01 09:27:52] INFO root fetch - main [MainThread]: End processing [lckytools]: success
 [2024-06-01 09:27:52] INFO root fetch - main [MainThread]: Store serial: [23478103]
+[2024-06-01 09:29:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478103]
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatgpt-on-wechat
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HakObserverLinuxpy
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rchatgpt-on-wecom
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: khoj-assistant
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oahspe
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Chinese-Word-Vectors
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: basketball-reference-webscrapper
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: discontinuitypy
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ChuanhuChatGPT
+[2024-06-01 09:30:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: espy-contact
+[2024-06-01 09:30:01] INFO root fetch - processPackages [oahspe]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:30:01] INFO root fetch - processPackages [espy-contact]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-06-01 09:30:01] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-01 09:30:01] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/4b/74/d4e56352cf9c4bcbdb9def76baacfa0f8f561d2056675a7966bca54343aa/oahspe-0.0.8.tar.gz
+[2024-06-01 09:30:01] WARNING root fetch - processPackages [Chinese-Word-Vectors]: Skipping, unable to determine old version
+[2024-06-01 09:30:01] INFO root fetch - processPackages [Chinese-Word-Vectors]: Start processing: CloudPiece-wework
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: End processing [Chinese-Word-Vectors] error
+[2024-06-01 09:30:01] WARNING root fetch - processPackages [chatgpt-on-wechat]: Skipping, unable to determine old version
+[2024-06-01 09:30:01] INFO root fetch - processPackages [chatgpt-on-wechat]: Start processing: cn-stock-holidays-pro
+[2024-06-01 09:30:01] INFO root fetch - processPackages [HakObserverLinuxpy]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: End processing [chatgpt-on-wechat] error
+[2024-06-01 09:30:01] WARNING root fetch - processPackages [rchatgpt-on-wecom]: Skipping, unable to determine old version
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: End processing [rchatgpt-on-wecom] error
+[2024-06-01 09:30:01] WARNING root fetch - processPackages [ChuanhuChatGPT]: Skipping, unable to determine old version
+[2024-06-01 09:30:01] INFO root fetch - processPackages [discontinuitypy]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-06-01 09:30:01] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: End processing [ChuanhuChatGPT] error
+[2024-06-01 09:30:01] INFO root fetch - processPackages [basketball-reference-webscrapper]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-01 09:30:01] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/47/f3/1eb60a14e8d50f6755acf26fab6ac641e07a59774e6ba709f2668160ca2c/espy_contact-2.0.7.tar.gz
+[2024-06-01 09:30:01] WARNING root fetch - processPackages [CloudPiece-wework]: Skipping, unable to determine old version
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: End processing [CloudPiece-wework] error
+[2024-06-01 09:30:01] INFO root fetch - processPackages [HakObserverLinuxpy]: Downloading https://files.pythonhosted.org/packages/43/fc/a5dc54c38bb7be514d0674b41198632a66f3e343ef2951143da8bed0dde9/HakObserverLinuxpy-0.6.4.tar.gz
+[2024-06-01 09:30:01] WARNING root fetch - processPackages [cn-stock-holidays-pro]: Skipping, unable to determine old version
+[2024-06-01 09:30:01] INFO root fetch - main [MainThread]: End processing [cn-stock-holidays-pro] error
+[2024-06-01 09:30:01] INFO root fetch - processPackages [oahspe]: Downloading https://files.pythonhosted.org/packages/de/d5/1e822b9aa967a7cbfc30d1e9b77cb573842f5536e41ade896d0df136f0ee/oahspe-0.0.9.tar.gz
+[2024-06-01 09:30:01] INFO root fetch - processPackages [basketball-reference-webscrapper]: Downloading https://files.pythonhosted.org/packages/b4/e7/d63a5a32aa1b993a0ecfb1ab26dc5bdc655ec470b71a34e511b7471caf4b/basketball_reference_webscrapper-0.3.0.tar.gz
+[2024-06-01 09:30:01] INFO root fetch - processPackages [discontinuitypy]: Downloading https://files.pythonhosted.org/packages/17/38/bb850de7390a2ceb24e961e53321c0850157a8369f327d84a48f1993e255/discontinuitypy-0.0.1.tar.gz
+[2024-06-01 09:30:01] INFO root fetch - processPackages [oahspe]: executing diffoscope
+[2024-06-01 09:30:01] INFO root fetch - processPackages [oahspe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oahspe-0.0.8.tar.gz tmp/oahspe-0.0.9.tar.gz --markdown 20240601/o/oahspe/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:30:02] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/0e/45/386d301a7573988cfc80de5753544384a517e8794b4856e2bd8b36bea93d/espy_contact-2.0.8.tar.gz
+[2024-06-01 09:30:02] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-01 09:30:02] INFO root fetch - processPackages [HakObserverLinuxpy]: Downloading https://files.pythonhosted.org/packages/cb/fc/8ccd4bae2e3e3725f6dde883136114930ffbb7681e10c22fe723c7efbc90/HakObserverLinuxpy-0.6.5.tar.gz
+[2024-06-01 09:30:02] INFO root fetch - processPackages [discontinuitypy]: Downloading https://files.pythonhosted.org/packages/d7/1b/7cd09cbeddfdfe2aaab785f2e887879f7d2a5d9b7c715b2347db1e71f1b9/discontinuitypy-0.1.0.tar.gz
+[2024-06-01 09:30:02] INFO root fetch - processPackages [basketball-reference-webscrapper]: Downloading https://files.pythonhosted.org/packages/26/3c/c3db1f4d3fec04121414d731609b39a4917f4134111f0eac76edf1104c13/basketball_reference_webscrapper-0.4.0.tar.gz
+[2024-06-01 09:30:02] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-06-01 09:30:02] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.7.tar.gz tmp/espy_contact-2.0.8.tar.gz --markdown 20240601/e/espy-contact/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-06-01 09:30:02] INFO root fetch - processPackages [HakObserverLinuxpy]: executing diffoscope
+[2024-06-01 09:30:02] INFO root fetch - processPackages [HakObserverLinuxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HakObserverLinuxpy-0.6.4.tar.gz tmp/HakObserverLinuxpy-0.6.5.tar.gz --markdown 20240601/H/HakObserverLinuxpy/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-06-01 09:30:02] INFO root fetch - processPackages [discontinuitypy]: executing diffoscope
+[2024-06-01 09:30:02] INFO root fetch - processPackages [discontinuitypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discontinuitypy-0.0.1.tar.gz tmp/discontinuitypy-0.1.0.tar.gz --markdown 20240601/d/discontinuitypy/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-06-01 09:30:02] INFO root fetch - processPackages [basketball-reference-webscrapper]: executing diffoscope
+[2024-06-01 09:30:02] INFO root fetch - processPackages [basketball-reference-webscrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basketball_reference_webscrapper-0.3.0.tar.gz tmp/basketball_reference_webscrapper-0.4.0.tar.gz --markdown 20240601/b/basketball-reference-webscrapper/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-01 09:30:02] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-01 09:30:02] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240601/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-01 09:30:02] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.8.tar.gz]
+[2024-06-01 09:30:02] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.9.tar.gz]
+[2024-06-01 09:30:02] INFO root fetch - main [MainThread]: End processing [oahspe]: success
+[2024-06-01 09:30:02] INFO root fetch - processPackages [HakObserverLinuxpy]: Remove: archive file [/home/abi/fetcher/tmp/HakObserverLinuxpy-0.6.4.tar.gz]
+[2024-06-01 09:30:02] INFO root fetch - processPackages [HakObserverLinuxpy]: Remove: archive file [/home/abi/fetcher/tmp/HakObserverLinuxpy-0.6.5.tar.gz]
+[2024-06-01 09:30:02] INFO root fetch - main [MainThread]: End processing [HakObserverLinuxpy]: success
+[2024-06-01 09:30:02] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.7.tar.gz]
+[2024-06-01 09:30:02] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.8.tar.gz]
+[2024-06-01 09:30:02] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-06-01 09:30:03] INFO root fetch - processPackages [basketball-reference-webscrapper]: Remove: archive file [/home/abi/fetcher/tmp/basketball_reference_webscrapper-0.3.0.tar.gz]
+[2024-06-01 09:30:03] INFO root fetch - processPackages [basketball-reference-webscrapper]: Remove: archive file [/home/abi/fetcher/tmp/basketball_reference_webscrapper-0.4.0.tar.gz]
+[2024-06-01 09:30:03] INFO root fetch - main [MainThread]: End processing [basketball-reference-webscrapper]: success
+[2024-06-01 09:30:03] INFO root fetch - processPackages [discontinuitypy]: Remove: archive file [/home/abi/fetcher/tmp/discontinuitypy-0.0.1.tar.gz]
+[2024-06-01 09:30:03] INFO root fetch - processPackages [discontinuitypy]: Remove: archive file [/home/abi/fetcher/tmp/discontinuitypy-0.1.0.tar.gz]
+[2024-06-01 09:30:03] INFO root fetch - main [MainThread]: End processing [discontinuitypy]: success
+[2024-06-01 09:30:03] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-01 09:30:03] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-01 09:30:03] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-01 09:30:03] INFO root fetch - main [MainThread]: Store serial: [23478150]
