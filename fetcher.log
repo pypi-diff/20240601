@@ -10915,3 +10915,41 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:39:11] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240531-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-06-01 07:39:11] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-06-01 07:39:11] INFO root fetch - main [MainThread]: Store serial: [23477598]
+[2024-06-01 07:41:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477598]
+[2024-06-01 07:41:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-typer
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alphahunterpro
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-edge-torch-nightly
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybadger
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: discminer
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ai-edge-torch-nightly]: New version: [0.2.0.dev20240531] Old Version: [0.2.0.dev20240527]
+[2024-06-01 07:41:23] INFO root fetch - processPackages [django-typer]: New version: [2.0.0] Old Version: [1.1.2]
+[2024-06-01 07:41:23] INFO root fetch - processPackages [ai-edge-torch-nightly]: Downloading https://files.pythonhosted.org/packages/07/b3/c784e76f31cf285a953ace44a6f56f284d2f71f9e16dd117a5e96177e3a7/ai_edge_torch_nightly-0.2.0.dev20240527-py3-none-any.whl
+[2024-06-01 07:41:23] WARNING root fetch - processPackages [alphahunterpro]: Skipping, unable to determine old version
+[2024-06-01 07:41:23] INFO root fetch - main [MainThread]: End processing [alphahunterpro] error
+[2024-06-01 07:41:23] INFO root fetch - processPackages [honeybadger]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 07:41:23] INFO root fetch - processPackages [django-typer]: Downloading https://files.pythonhosted.org/packages/af/04/5501892718eaef17d9f9c55cbeec5a2fef6576438b2532153dd76cb2bdbb/django_typer-1.1.2.tar.gz
+[2024-06-01 07:41:23] INFO root fetch - processPackages [discminer]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 07:41:24] INFO root fetch - processPackages [django-typer]: Downloading https://files.pythonhosted.org/packages/1d/dc/a632e58e92dc915e2a6a0438239c7147317251b93049edaa726316b47644/django_typer-2.0.0.tar.gz
+[2024-06-01 07:41:24] INFO root fetch - processPackages [honeybadger]: Downloading https://files.pythonhosted.org/packages/22/48/5223fac00bea0837a044966dc5ef3a0b7033651eaf8cedc1335e814e0ec0/honeybadger-0.8.0-py3-none-any.whl
+[2024-06-01 07:41:24] INFO root fetch - processPackages [ai-edge-torch-nightly]: Downloading https://files.pythonhosted.org/packages/7c/22/2555f54e062a268c8f8b6b37241bb5fc34377efd288fbe99ce29c6b89112/ai_edge_torch_nightly-0.2.0.dev20240531-py3-none-any.whl
+[2024-06-01 07:41:24] INFO root fetch - processPackages [django-typer]: executing diffoscope
+[2024-06-01 07:41:24] INFO root fetch - processPackages [django-typer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_typer-1.1.2.tar.gz tmp/django_typer-2.0.0.tar.gz --markdown 20240601/d/django-typer/1.1.2-2.0.0/README.md --exclude *.pyd
+[2024-06-01 07:41:24] INFO root fetch - processPackages [ai-edge-torch-nightly]: executing diffoscope
+[2024-06-01 07:41:24] INFO root fetch - processPackages [ai-edge-torch-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_edge_torch_nightly-0.2.0.dev20240527-py3-none-any.whl.zip tmp/ai_edge_torch_nightly-0.2.0.dev20240531-py3-none-any.whl.zip --markdown 20240601/a/ai-edge-torch-nightly/0.2.0.dev20240527-0.2.0.dev20240531/README.md --exclude *.pyd
+[2024-06-01 07:41:24] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/82/25/c05cbcbaea7b51dcc80bf33dbe97400f612e7521d9e0a7c767f170087a8c/discminer-0.2.9.tar.gz
+[2024-06-01 07:41:24] WARNING root fetch - processPackages [discminer]: Skipping package: exceeds size limit 11323881>=10485760
+[2024-06-01 07:41:24] INFO root fetch - main [MainThread]: End processing [discminer] error
+[2024-06-01 07:41:24] INFO root fetch - processPackages [honeybadger]: Downloading https://files.pythonhosted.org/packages/6d/03/993109cf9c68d0cbe76f135f40070307650f9e125ec4da47b53cb65686ca/honeybadger-0.9.0-py3-none-any.whl
+[2024-06-01 07:41:24] INFO root fetch - processPackages [honeybadger]: executing diffoscope
+[2024-06-01 07:41:24] INFO root fetch - processPackages [honeybadger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybadger-0.8.0-py3-none-any.whl.zip tmp/honeybadger-0.9.0-py3-none-any.whl.zip --markdown 20240601/h/honeybadger/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 07:41:24] INFO root fetch - processPackages [django-typer]: Remove: archive file [/home/abi/fetcher/tmp/django_typer-1.1.2.tar.gz]
+[2024-06-01 07:41:24] INFO root fetch - processPackages [django-typer]: Remove: archive file [/home/abi/fetcher/tmp/django_typer-2.0.0.tar.gz]
+[2024-06-01 07:41:24] INFO root fetch - main [MainThread]: End processing [django-typer]: success
+[2024-06-01 07:41:25] INFO root fetch - processPackages [honeybadger]: Remove: archive file [/home/abi/fetcher/tmp/honeybadger-0.8.0-py3-none-any.whl.zip]
+[2024-06-01 07:41:25] INFO root fetch - processPackages [honeybadger]: Remove: archive file [/home/abi/fetcher/tmp/honeybadger-0.9.0-py3-none-any.whl.zip]
+[2024-06-01 07:41:25] INFO root fetch - main [MainThread]: End processing [honeybadger]: success
+[2024-06-01 07:41:25] INFO root fetch - processPackages [ai-edge-torch-nightly]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_torch_nightly-0.2.0.dev20240527-py3-none-any.whl.zip]
+[2024-06-01 07:41:25] INFO root fetch - processPackages [ai-edge-torch-nightly]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_torch_nightly-0.2.0.dev20240531-py3-none-any.whl.zip]
+[2024-06-01 07:41:25] INFO root fetch - main [MainThread]: End processing [ai-edge-torch-nightly]: success
+[2024-06-01 07:41:25] INFO root fetch - main [MainThread]: Store serial: [23477615]
