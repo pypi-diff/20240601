@@ -16111,3 +16111,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:36:43] INFO root fetch - processPackages [AudiooPy]: Remove: archive file [/home/abi/fetcher/tmp/AudiooPy-0.4-py3-none-any.whl.zip]
 [2024-06-01 14:36:43] INFO root fetch - main [MainThread]: End processing [AudiooPy]: success
 [2024-06-01 14:36:43] INFO root fetch - main [MainThread]: Store serial: [23480098]
+[2024-06-01 14:38:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480098]
+[2024-06-01 14:38:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 14:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openagents-node-sdk
+[2024-06-01 14:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: id-card-recognition
+[2024-06-01 14:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chattts-fork
+[2024-06-01 14:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bettermysql
+[2024-06-01 14:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: IDswapper
+[2024-06-01 14:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vht
+[2024-06-01 14:38:51] INFO root fetch - processPackages [id-card-recognition]: New version: [0.1.8] Old Version: [0.1.5]
+[2024-06-01 14:38:51] INFO root fetch - processPackages [vht]: New version: [0.3.996] Old Version: [0.3.99]
+[2024-06-01 14:38:52] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/52/d4/12d5329322874d921563de1734db2cb38b98d113d1853e054d41393f6f35/vht-0.3.99.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [chattts-fork]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 14:38:52] INFO root fetch - processPackages [IDswapper]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 14:38:52] WARNING root fetch - processPackages [bettermysql]: Skipping, unable to determine old version
+[2024-06-01 14:38:52] INFO root fetch - main [MainThread]: End processing [bettermysql] error
+[2024-06-01 14:38:52] INFO root fetch - processPackages [openagents-node-sdk]: New version: [0.4] Old Version: [0.3.5]
+[2024-06-01 14:38:52] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/f1/3a/bd0586fd2925169d5fc9f55aa37ad35b277618179bc50c4943ca000f2d15/id_card_recognition-0.1.5.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [chattts-fork]: Downloading https://files.pythonhosted.org/packages/d0/ba/9e62fb0b83af233230f41c6143fabd694e0fb8126bb5937db4e240432c91/chattts_fork-0.0.6.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [openagents-node-sdk]: Downloading https://files.pythonhosted.org/packages/4b/bf/174a6be9638bd655fc7222d16ac30311c911ee88978f4c894bacee936ae8/openagents_node_sdk-0.3.5.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/fe/88/313a4c2466ec8060ef2dd03c2f59eb82d89e8485531ac2d8fa4939850928/idswapper-0.1.7.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [id-card-recognition]: Downloading https://files.pythonhosted.org/packages/fa/1a/7ee03027d94d0445250134c973ad9b21b13fbd29c0ddac8e6f3f5f2f7039/id_card_recognition-0.1.8.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/61/c9/049e9369c80ca636b00c4c14932ef0ccfba15531f76a6d060b7f30d9532b/vht-0.3.996.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [id-card-recognition]: executing diffoscope
+[2024-06-01 14:38:52] INFO root fetch - processPackages [id-card-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/id_card_recognition-0.1.5.tar.gz tmp/id_card_recognition-0.1.8.tar.gz --markdown 20240601/i/id-card-recognition/0.1.5-0.1.8/README.md --exclude *.pyd
+[2024-06-01 14:38:52] INFO root fetch - processPackages [vht]: executing diffoscope
+[2024-06-01 14:38:52] INFO root fetch - processPackages [chattts-fork]: Downloading https://files.pythonhosted.org/packages/93/e9/04311669edf2bc13b4d083bbc81b5670ab0cbd4c5f9132c7011f82763a28/chattts_fork-0.0.7.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [vht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vht-0.3.99.tar.gz tmp/vht-0.3.996.tar.gz --markdown 20240601/v/vht/0.3.99-0.3.996/README.md --exclude *.pyd
+[2024-06-01 14:38:52] INFO root fetch - processPackages [openagents-node-sdk]: Downloading https://files.pythonhosted.org/packages/c9/98/c17e8342567927f519afc744236d784f1fe27eb20788587f4d23ef1e204b/openagents_node_sdk-0.4.tar.gz
+[2024-06-01 14:38:52] INFO root fetch - processPackages [openagents-node-sdk]: executing diffoscope
+[2024-06-01 14:38:52] INFO root fetch - processPackages [openagents-node-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openagents_node_sdk-0.3.5.tar.gz tmp/openagents_node_sdk-0.4.tar.gz --markdown 20240601/o/openagents-node-sdk/0.3.5-0.4/README.md --exclude *.pyd
+[2024-06-01 14:38:52] INFO root fetch - processPackages [chattts-fork]: executing diffoscope
+[2024-06-01 14:38:52] INFO root fetch - processPackages [chattts-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chattts_fork-0.0.6.tar.gz tmp/chattts_fork-0.0.7.tar.gz --markdown 20240601/c/chattts-fork/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 14:38:52] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/96/68/f893a8089adc7510dee88057095abfceaac784ff34a92d46beea6f8a6b5c/idswapper-0.1.8.tar.gz
+[2024-06-01 14:38:53] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.1.5.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - processPackages [id-card-recognition]: Remove: archive file [/home/abi/fetcher/tmp/id_card_recognition-0.1.8.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - main [MainThread]: End processing [id-card-recognition]: success
+[2024-06-01 14:38:53] INFO root fetch - processPackages [openagents-node-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openagents_node_sdk-0.3.5.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - processPackages [openagents-node-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openagents_node_sdk-0.4.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - main [MainThread]: End processing [openagents-node-sdk]: success
+[2024-06-01 14:38:53] INFO root fetch - processPackages [chattts-fork]: Remove: archive file [/home/abi/fetcher/tmp/chattts_fork-0.0.6.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - processPackages [chattts-fork]: Remove: archive file [/home/abi/fetcher/tmp/chattts_fork-0.0.7.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - main [MainThread]: End processing [chattts-fork]: success
+[2024-06-01 14:38:53] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.3.99.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.3.996.tar.gz]
+[2024-06-01 14:38:53] INFO root fetch - main [MainThread]: End processing [vht]: success
+[2024-06-01 14:38:53] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 14:38:53] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.1.7.tar.gz tmp/idswapper-0.1.8.tar.gz --markdown 20240601/I/IDswapper/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 14:38:54] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.7.tar.gz]
+[2024-06-01 14:38:54] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.8.tar.gz]
+[2024-06-01 14:38:54] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 14:38:54] INFO root fetch - main [MainThread]: Store serial: [23480124]
