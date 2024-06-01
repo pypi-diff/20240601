@@ -20606,3 +20606,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:49:10] INFO root fetch - processPackages [starred-astro]: Remove: archive file [/home/abi/fetcher/tmp/starred_astro-1.4.3.tar.gz]
 [2024-06-01 19:49:10] INFO root fetch - main [MainThread]: End processing [starred-astro]: success
 [2024-06-01 19:49:10] INFO root fetch - main [MainThread]: Store serial: [23482230]
+[2024-06-01 19:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482230]
+[2024-06-01 19:51:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bowtie-json-schema
+[2024-06-01 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sktime
+[2024-06-01 19:51:19] INFO root fetch - processPackages [bowtie-json-schema]: New version: [2024.6.2] Old Version: [2024.6.1]
+[2024-06-01 19:51:19] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/d4/69/b8b834cb600b997e0989fdfe2f14dfa8f89a6b6f25979c49111256a359f1/bowtie_json_schema-2024.6.1.tar.gz
+[2024-06-01 19:51:19] INFO root fetch - processPackages [sktime]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 19:51:19] INFO root fetch - processPackages [sktime]: Downloading https://files.pythonhosted.org/packages/14/3c/02b40dd3133f7607421dcc3c5b44747f5bc0f6af14cc7a14e83b686f1ed1/sktime-0.8.1.tar.gz
+[2024-06-01 19:51:19] INFO root fetch - processPackages [bowtie-json-schema]: Downloading https://files.pythonhosted.org/packages/24/71/1cb534e5638c60acdf5bc0806b0399b608e3d9b43bff95ce3d5e23c4d4fc/bowtie_json_schema-2024.6.2.tar.gz
+[2024-06-01 19:51:19] INFO root fetch - processPackages [bowtie-json-schema]: executing diffoscope
+[2024-06-01 19:51:19] INFO root fetch - processPackages [bowtie-json-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bowtie_json_schema-2024.6.1.tar.gz tmp/bowtie_json_schema-2024.6.2.tar.gz --markdown 20240601/b/bowtie-json-schema/2024.6.1-2024.6.2/README.md --exclude *.pyd
+[2024-06-01 19:51:20] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.6.1.tar.gz]
+[2024-06-01 19:51:20] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.6.2.tar.gz]
+[2024-06-01 19:51:20] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
+[2024-06-01 19:51:21] WARNING root fetch - processPackages [sktime]: Skipping package: exceeds size limit 11076866>=10485760
+[2024-06-01 19:51:21] INFO root fetch - main [MainThread]: End processing [sktime] error
+[2024-06-01 19:51:21] INFO root fetch - main [MainThread]: Store serial: [23482236]
