@@ -17210,3 +17210,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:56:06] INFO root fetch - processPackages [spark-column-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/spark-column-analyzer-0.2.3.tar.gz]
 [2024-06-01 15:56:06] INFO root fetch - main [MainThread]: End processing [spark-column-analyzer]: success
 [2024-06-01 15:56:06] INFO root fetch - main [MainThread]: Store serial: [23480587]
+[2024-06-01 15:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480587]
+[2024-06-01 15:58:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 15:58:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upstox-wrapper
+[2024-06-01 15:58:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rag4p
+[2024-06-01 15:58:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lenlp
+[2024-06-01 15:58:15] INFO root fetch - processPackages [rag4p]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-06-01 15:58:15] WARNING root fetch - processPackages [upstox-wrapper]: Skipping, unable to determine old version
+[2024-06-01 15:58:15] INFO root fetch - main [MainThread]: End processing [upstox-wrapper] error
+[2024-06-01 15:58:15] INFO root fetch - processPackages [lenlp]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 15:58:15] INFO root fetch - processPackages [rag4p]: Downloading https://files.pythonhosted.org/packages/60/c7/74c5a705120e5bea86be8a4de7022c6bd9a5a9b4b5645a883465bb61fdd5/rag4p-0.5.2.tar.gz
+[2024-06-01 15:58:15] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/cf/7e/e585a6e5932e4236d8e75f15e4c14a3e253c95118229a8b73ec5c082429b/lenlp-1.0.4.tar.gz
+[2024-06-01 15:58:15] INFO root fetch - processPackages [rag4p]: Downloading https://files.pythonhosted.org/packages/64/01/16b58b289312f0fb74d43487c584a767e91512795ebe92f5b545c6f95a18/rag4p-0.5.3.tar.gz
+[2024-06-01 15:58:15] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/51/54/eebdd632966698028b29faf2309977e88e00d425a4841959e70f822c2407/lenlp-1.0.5.tar.gz
+[2024-06-01 15:58:15] INFO root fetch - processPackages [rag4p]: executing diffoscope
+[2024-06-01 15:58:15] INFO root fetch - processPackages [rag4p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag4p-0.5.2.tar.gz tmp/rag4p-0.5.3.tar.gz --markdown 20240601/r/rag4p/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-06-01 15:58:15] INFO root fetch - processPackages [lenlp]: executing diffoscope
+[2024-06-01 15:58:15] INFO root fetch - processPackages [lenlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenlp-1.0.4.tar.gz tmp/lenlp-1.0.5.tar.gz --markdown 20240601/l/lenlp/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 15:58:16] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.4.tar.gz]
+[2024-06-01 15:58:16] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.5.tar.gz]
+[2024-06-01 15:58:16] INFO root fetch - main [MainThread]: End processing [lenlp]: success
+[2024-06-01 15:58:16] INFO root fetch - processPackages [rag4p]: Remove: archive file [/home/abi/fetcher/tmp/rag4p-0.5.2.tar.gz]
+[2024-06-01 15:58:16] INFO root fetch - processPackages [rag4p]: Remove: archive file [/home/abi/fetcher/tmp/rag4p-0.5.3.tar.gz]
+[2024-06-01 15:58:16] INFO root fetch - main [MainThread]: End processing [rag4p]: success
+[2024-06-01 15:58:16] INFO root fetch - main [MainThread]: Store serial: [23480608]
