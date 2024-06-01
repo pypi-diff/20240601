@@ -11200,3 +11200,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:03:49] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.5.tar.gz]
 [2024-06-01 08:03:49] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
 [2024-06-01 08:03:49] INFO root fetch - main [MainThread]: Store serial: [23477746]
+[2024-06-01 08:05:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477746]
+[2024-06-01 08:05:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 08:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terraform-backend-s3-bucket
+[2024-06-01 08:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecr-scan-notifier
+[2024-06-01 08:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-gradle-uploader
+[2024-06-01 08:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-fsx-lifecycle-status-monitor
+[2024-06-01 08:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-budget-notifier
+[2024-06-01 08:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: azure-devops-repository-archiver
+[2024-06-01 08:05:58] INFO root fetch - processPackages [cdk-gradle-uploader]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 08:05:58] INFO root fetch - processPackages [ecr-scan-notifier]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 08:05:58] INFO root fetch - processPackages [terraform-backend-s3-bucket]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 08:05:58] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 08:05:58] INFO root fetch - processPackages [cdk-budget-notifier]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-06-01 08:05:58] INFO root fetch - processPackages [azure-devops-repository-archiver]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-06-01 08:05:58] INFO root fetch - processPackages [terraform-backend-s3-bucket]: Downloading https://files.pythonhosted.org/packages/32/e1/0f92d89346af4f314821d553cf6cf0aa31865eb0e0ab90f5265a272f96e5/terraform-backend-s3-bucket-1.0.4.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [ecr-scan-notifier]: Downloading https://files.pythonhosted.org/packages/40/4d/1a1d0d9bc892c0dfb4d791a0884a59a8914a10d1e7da04c6b59517cf273f/ecr-scan-notifier-0.0.8.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [cdk-gradle-uploader]: Downloading https://files.pythonhosted.org/packages/b9/29/f32301fee9260349ce731b85106e9b41e74b86fbdeff47b4fbeb7cb06477/cdk-gradle-uploader-0.0.8.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: Downloading https://files.pythonhosted.org/packages/bc/36/a413b74496f05eea3b7b18f9285e79708bc28ddb7d80b6617acd3c4ec63e/aws-fsx-lifecycle-status-monitor-0.0.8.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [azure-devops-repository-archiver]: Downloading https://files.pythonhosted.org/packages/c8/31/f0a976729de802c1623de7ca9e36435c0303e4aa397d45b849fae30d93d8/azure-devops-repository-archiver-1.6.8.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [cdk-budget-notifier]: Downloading https://files.pythonhosted.org/packages/c4/54/64f3aabbfb5aaf7a4c140f15507aba3c02449c45bfc17f318adf221a35b2/cdk-budget-notifier-0.3.8.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [terraform-backend-s3-bucket]: Downloading https://files.pythonhosted.org/packages/4c/b7/4469ef9c1b43f5747fb8139b6fe15bf6bd6e639be2406a94a1204e69dc3e/terraform-backend-s3-bucket-1.0.5.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [ecr-scan-notifier]: Downloading https://files.pythonhosted.org/packages/d1/00/57fd90da8640eba9f4ecd18284a84eab9858fbc02e1cde2695b5c20f9967/ecr-scan-notifier-0.0.9.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [azure-devops-repository-archiver]: Downloading https://files.pythonhosted.org/packages/26/ea/0e43014c882095b1e474e9de597267a8a686ef2861eff793bce8d8b93933/azure-devops-repository-archiver-1.6.9.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: Downloading https://files.pythonhosted.org/packages/6b/27/234205cd8720eff88e275315f959b235c0615c8d312f06c97cf5738aa0a9/aws-fsx-lifecycle-status-monitor-0.0.9.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [terraform-backend-s3-bucket]: executing diffoscope
+[2024-06-01 08:05:58] INFO root fetch - processPackages [terraform-backend-s3-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terraform-backend-s3-bucket-1.0.4.tar.gz tmp/terraform-backend-s3-bucket-1.0.5.tar.gz --markdown 20240601/t/terraform-backend-s3-bucket/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 08:05:58] INFO root fetch - processPackages [cdk-budget-notifier]: Downloading https://files.pythonhosted.org/packages/e0/58/c599a41a4ea378adf0b120567f3f77768fbe70b9dee58c9c83be204555a7/cdk-budget-notifier-0.3.9.tar.gz
+[2024-06-01 08:05:58] INFO root fetch - processPackages [ecr-scan-notifier]: executing diffoscope
+[2024-06-01 08:05:58] INFO root fetch - processPackages [ecr-scan-notifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecr-scan-notifier-0.0.8.tar.gz tmp/ecr-scan-notifier-0.0.9.tar.gz --markdown 20240601/e/ecr-scan-notifier/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 08:05:58] INFO root fetch - processPackages [azure-devops-repository-archiver]: executing diffoscope
+[2024-06-01 08:05:58] INFO root fetch - processPackages [azure-devops-repository-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-devops-repository-archiver-1.6.8.tar.gz tmp/azure-devops-repository-archiver-1.6.9.tar.gz --markdown 20240601/a/azure-devops-repository-archiver/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-06-01 08:05:59] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: executing diffoscope
+[2024-06-01 08:05:59] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-fsx-lifecycle-status-monitor-0.0.8.tar.gz tmp/aws-fsx-lifecycle-status-monitor-0.0.9.tar.gz --markdown 20240601/a/aws-fsx-lifecycle-status-monitor/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 08:05:59] INFO root fetch - processPackages [cdk-budget-notifier]: executing diffoscope
+[2024-06-01 08:05:59] INFO root fetch - processPackages [cdk-budget-notifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budget-notifier-0.3.8.tar.gz tmp/cdk-budget-notifier-0.3.9.tar.gz --markdown 20240601/c/cdk-budget-notifier/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-06-01 08:05:59] INFO root fetch - processPackages [terraform-backend-s3-bucket]: Remove: archive file [/home/abi/fetcher/tmp/terraform-backend-s3-bucket-1.0.4.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - processPackages [terraform-backend-s3-bucket]: Remove: archive file [/home/abi/fetcher/tmp/terraform-backend-s3-bucket-1.0.5.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - main [MainThread]: End processing [terraform-backend-s3-bucket]: success
+[2024-06-01 08:05:59] INFO root fetch - processPackages [ecr-scan-notifier]: Remove: archive file [/home/abi/fetcher/tmp/ecr-scan-notifier-0.0.8.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - processPackages [ecr-scan-notifier]: Remove: archive file [/home/abi/fetcher/tmp/ecr-scan-notifier-0.0.9.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - main [MainThread]: End processing [ecr-scan-notifier]: success
+[2024-06-01 08:05:59] INFO root fetch - processPackages [azure-devops-repository-archiver]: Remove: archive file [/home/abi/fetcher/tmp/azure-devops-repository-archiver-1.6.8.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - processPackages [azure-devops-repository-archiver]: Remove: archive file [/home/abi/fetcher/tmp/azure-devops-repository-archiver-1.6.9.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - main [MainThread]: End processing [azure-devops-repository-archiver]: success
+[2024-06-01 08:05:59] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: Remove: archive file [/home/abi/fetcher/tmp/aws-fsx-lifecycle-status-monitor-0.0.8.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - processPackages [aws-fsx-lifecycle-status-monitor]: Remove: archive file [/home/abi/fetcher/tmp/aws-fsx-lifecycle-status-monitor-0.0.9.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - main [MainThread]: End processing [aws-fsx-lifecycle-status-monitor]: success
+[2024-06-01 08:05:59] INFO root fetch - processPackages [cdk-budget-notifier]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budget-notifier-0.3.8.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - processPackages [cdk-budget-notifier]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budget-notifier-0.3.9.tar.gz]
+[2024-06-01 08:05:59] INFO root fetch - main [MainThread]: End processing [cdk-budget-notifier]: success
+[2024-06-01 08:05:59] INFO root fetch - processPackages [cdk-gradle-uploader]: Downloading https://files.pythonhosted.org/packages/7f/8f/b334b3b2544d36b48968b7913c911e4bd013fed5071173d5b99dcf934962/cdk-gradle-uploader-0.0.9.tar.gz
+[2024-06-01 08:06:01] INFO root fetch - processPackages [cdk-gradle-uploader]: executing diffoscope
+[2024-06-01 08:06:01] INFO root fetch - processPackages [cdk-gradle-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gradle-uploader-0.0.8.tar.gz tmp/cdk-gradle-uploader-0.0.9.tar.gz --markdown 20240601/c/cdk-gradle-uploader/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 08:06:02] INFO root fetch - processPackages [cdk-gradle-uploader]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gradle-uploader-0.0.8.tar.gz]
+[2024-06-01 08:06:02] INFO root fetch - processPackages [cdk-gradle-uploader]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gradle-uploader-0.0.9.tar.gz]
+[2024-06-01 08:06:02] INFO root fetch - main [MainThread]: End processing [cdk-gradle-uploader]: success
+[2024-06-01 08:06:02] INFO root fetch - main [MainThread]: Store serial: [23477764]
