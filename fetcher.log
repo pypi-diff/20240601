@@ -23310,3 +23310,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:09:14] INFO root fetch - processPackages [aiootp]: Remove: archive file [/home/abi/fetcher/tmp/aiootp-0.9.3.tar.gz]
 [2024-06-01 23:09:14] INFO root fetch - main [MainThread]: End processing [aiootp]: success
 [2024-06-01 23:09:14] INFO root fetch - main [MainThread]: Store serial: [23483656]
+[2024-06-01 23:11:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483656]
+[2024-06-01 23:11:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 23:13:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483657]
+[2024-06-01 23:13:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 23:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenaura
+[2024-06-01 23:13:28] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 23:13:28] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 23:13:29] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 23:13:29] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 23:13:29] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 23:13:29] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.98.tar.gz]
+[2024-06-01 23:13:29] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
+[2024-06-01 23:13:29] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 23:13:29] INFO root fetch - main [MainThread]: Store serial: [23483661]
