@@ -16729,3 +16729,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:22:27] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-06-01 15:22:27] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-06-01 15:22:27] INFO root fetch - main [MainThread]: Store serial: [23480363]
+[2024-06-01 15:24:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480363]
+[2024-06-01 15:24:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lines-dataset
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upstox-wrapper
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seldom
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-skill-wikipedia
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ponytail-agents
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-skill-wikipedia
+[2024-06-01 15:24:36] WARNING root fetch - processPackages [ponytail-agents]: Skipping, unable to determine old version
+[2024-06-01 15:24:36] INFO root fetch - main [MainThread]: End processing [ponytail-agents] error
+[2024-06-01 15:24:36] INFO root fetch - processPackages [upstox-wrapper]: New version: [1] Old Version: [0.1]
+[2024-06-01 15:24:36] INFO root fetch - processPackages [lines-dataset]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-06-01 15:24:36] INFO root fetch - processPackages [seldom]: New version: [3.7.1] Old Version: [3.7.0]
+[2024-06-01 15:24:36] ERROR root fetch - processPackages [upstox-wrapper]: Unable to fetch info: No such project/version 'upstox-wrapper' 0.1
+[2024-06-01 15:24:36] INFO root fetch - main [MainThread]: End processing [upstox-wrapper] error
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ovos-skill-wikipedia]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ovos-skill-wikipedia]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2024-06-01 15:24:36] INFO root fetch - processPackages [lines-dataset]: Downloading https://files.pythonhosted.org/packages/16/96/7f096e8d2e5ceb0da5771759c48bd33911c3c068cf8834f0251298f12b64/lines_dataset-0.1.8.tar.gz
+[2024-06-01 15:24:36] INFO root fetch - processPackages [seldom]: Downloading https://files.pythonhosted.org/packages/18/be/b5ed5a157eee133cf4667c9e8249f0209051401f91c7462b80f71c2e94bc/seldom-3.7.0.tar.gz
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ovos-skill-wikipedia]: Downloading https://files.pythonhosted.org/packages/41/09/825b64b221ff9e392ecc8385b6655809570817660464e54667763117dc82/ovos-skill-wikipedia-0.0.2a2.tar.gz
+[2024-06-01 15:24:36] INFO root fetch - processPackages [ovos-skill-wikipedia]: Downloading https://files.pythonhosted.org/packages/41/09/825b64b221ff9e392ecc8385b6655809570817660464e54667763117dc82/ovos-skill-wikipedia-0.0.2a2.tar.gz
+[2024-06-01 15:24:36] INFO root fetch - processPackages [lines-dataset]: Downloading https://files.pythonhosted.org/packages/60/ac/854b3d323fa27b222cd6658bf5591e7525b7140eb32dd85d9e9a56b703d9/lines_dataset-0.2.0.tar.gz
+[2024-06-01 15:24:36] INFO root fetch - processPackages [seldom]: Downloading https://files.pythonhosted.org/packages/35/81/37894a3f258e322708bb0e2d96e64b221016f6e5cc93253948be6531a9fa/seldom-3.7.1.tar.gz
+[2024-06-01 15:24:36] INFO root fetch - processPackages [lines-dataset]: executing diffoscope
+[2024-06-01 15:24:36] INFO root fetch - processPackages [lines-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lines_dataset-0.1.8.tar.gz tmp/lines_dataset-0.2.0.tar.gz --markdown 20240601/l/lines-dataset/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-06-01 15:24:36] INFO root fetch - processPackages [seldom]: executing diffoscope
+[2024-06-01 15:24:36] INFO root fetch - processPackages [seldom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seldom-3.7.0.tar.gz tmp/seldom-3.7.1.tar.gz --markdown 20240601/s/seldom/3.7.0-3.7.1/README.md --exclude *.pyd
+[2024-06-01 15:24:37] INFO root fetch - processPackages [ovos-skill-wikipedia]: Downloading https://files.pythonhosted.org/packages/2e/ee/7f3f91d7c678360f9738f257354e0593732c3cd2a999c2a841f2b485e17f/ovos-skill-wikipedia-0.0.2a3.tar.gz
+[2024-06-01 15:24:37] INFO root fetch - processPackages [ovos-skill-wikipedia]: Downloading https://files.pythonhosted.org/packages/2e/ee/7f3f91d7c678360f9738f257354e0593732c3cd2a999c2a841f2b485e17f/ovos-skill-wikipedia-0.0.2a3.tar.gz
+[2024-06-01 15:24:37] INFO root fetch - processPackages [ovos-skill-wikipedia]: executing diffoscope
+[2024-06-01 15:24:37] INFO root fetch - processPackages [ovos-skill-wikipedia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-skill-wikipedia-0.0.2a2.tar.gz tmp/ovos-skill-wikipedia-0.0.2a3.tar.gz --markdown 20240601/o/ovos-skill-wikipedia/0.0.2a2-0.0.2a3/README.md --exclude *.pyd
+[2024-06-01 15:24:37] INFO root fetch - processPackages [ovos-skill-wikipedia]: executing diffoscope
+[2024-06-01 15:24:37] INFO root fetch - processPackages [ovos-skill-wikipedia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-skill-wikipedia-0.0.2a2.tar.gz tmp/ovos-skill-wikipedia-0.0.2a3.tar.gz --markdown 20240601/o/ovos-skill-wikipedia/0.0.2a2-0.0.2a3/README.md --exclude *.pyd
+[2024-06-01 15:24:37] INFO root fetch - processPackages [lines-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lines_dataset-0.1.8.tar.gz]
+[2024-06-01 15:24:37] INFO root fetch - processPackages [lines-dataset]: Remove: archive file [/home/abi/fetcher/tmp/lines_dataset-0.2.0.tar.gz]
+[2024-06-01 15:24:37] INFO root fetch - main [MainThread]: End processing [lines-dataset]: success
+[2024-06-01 15:24:37] INFO root fetch - processPackages [seldom]: Remove: archive file [/home/abi/fetcher/tmp/seldom-3.7.0.tar.gz]
+[2024-06-01 15:24:37] INFO root fetch - processPackages [seldom]: Remove: archive file [/home/abi/fetcher/tmp/seldom-3.7.1.tar.gz]
+[2024-06-01 15:24:37] INFO root fetch - main [MainThread]: End processing [seldom]: success
+[2024-06-01 15:24:38] INFO root fetch - processPackages [ovos-skill-wikipedia]: Remove: archive file [/home/abi/fetcher/tmp/ovos-skill-wikipedia-0.0.2a2.tar.gz]
+[2024-06-01 15:24:38] INFO root fetch - processPackages [ovos-skill-wikipedia]: Remove: archive file [/home/abi/fetcher/tmp/ovos-skill-wikipedia-0.0.2a3.tar.gz]
+[2024-06-01 15:24:38] INFO root fetch - main [MainThread]: End processing [ovos-skill-wikipedia]: success
+[2024-06-01 15:24:38] INFO root fetch - main [MainThread]: End processing [ovos-skill-wikipedia]: success
+[2024-06-01 15:24:38] INFO root fetch - main [MainThread]: Store serial: [23480395]
