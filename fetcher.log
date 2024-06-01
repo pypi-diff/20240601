@@ -21938,3 +21938,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:22:07] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011729.tar.gz]
 [2024-06-01 21:22:07] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
 [2024-06-01 21:22:07] INFO root fetch - main [MainThread]: Store serial: [23482955]
+[2024-06-01 21:24:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482955]
+[2024-06-01 21:24:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 21:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ampel-hu-astro
+[2024-06-01 21:24:17] INFO root fetch - processPackages [ampel-hu-astro]: New version: [0.8.4a4] Old Version: [0.8.4a3]
+[2024-06-01 21:24:17] INFO root fetch - processPackages [ampel-hu-astro]: Downloading https://files.pythonhosted.org/packages/6e/76/367a1a0b759640a3eab6bce82b959304bc1d715c0f15aa233c700719c6ff/ampel_hu_astro-0.8.4a3.tar.gz
+[2024-06-01 21:24:18] INFO root fetch - processPackages [ampel-hu-astro]: Downloading https://files.pythonhosted.org/packages/20/b0/a17f467ae0fad40e288972949daf5b437c15cea4275d8eaeea9404a2a7d8/ampel_hu_astro-0.8.4a4.tar.gz
+[2024-06-01 21:24:18] INFO root fetch - processPackages [ampel-hu-astro]: executing diffoscope
+[2024-06-01 21:24:18] INFO root fetch - processPackages [ampel-hu-astro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampel_hu_astro-0.8.4a3.tar.gz tmp/ampel_hu_astro-0.8.4a4.tar.gz --markdown 20240601/a/ampel-hu-astro/0.8.4a3-0.8.4a4/README.md --exclude *.pyd
+[2024-06-01 21:24:20] INFO root fetch - processPackages [ampel-hu-astro]: Remove: archive file [/home/abi/fetcher/tmp/ampel_hu_astro-0.8.4a3.tar.gz]
+[2024-06-01 21:24:20] INFO root fetch - processPackages [ampel-hu-astro]: Remove: archive file [/home/abi/fetcher/tmp/ampel_hu_astro-0.8.4a4.tar.gz]
+[2024-06-01 21:24:20] INFO root fetch - main [MainThread]: End processing [ampel-hu-astro]: success
+[2024-06-01 21:24:20] INFO root fetch - main [MainThread]: Store serial: [23482958]
