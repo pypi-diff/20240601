@@ -2676,3 +2676,69 @@
 [2024-06-01 02:25:22] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.9.0.tar.gz]
 [2024-06-01 02:25:22] INFO root fetch - main [MainThread]: End processing [burr]: success
 [2024-06-01 02:25:22] INFO root fetch - main [MainThread]: Store serial: [23474017]
+[2024-06-01 02:27:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474017]
+[2024-06-01 02:27:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: segmentation-skeleton-metrics
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: casanovogui
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ampapi
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-certbot-dns-route53
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyJONDB
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-serverless-clamscan
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: NMODL-nightly
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: foo-param
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: maitai-python
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ampapi]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-06-01 02:27:35] INFO root fetch - processPackages [segmentation-skeleton-metrics]: New version: [4.1.8] Old Version: [4.1.7]
+[2024-06-01 02:27:35] INFO root fetch - processPackages [maitai-python]: New version: [1.0.1b2] Old Version: [1.0.1b1]
+[2024-06-01 02:27:35] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-06-01 02:27:35] WARNING root fetch - processPackages [casanovogui]: Skipping, unable to determine old version
+[2024-06-01 02:27:35] INFO root fetch - main [MainThread]: End processing [casanovogui] error
+[2024-06-01 02:27:35] INFO root fetch - processPackages [ampapi]: Downloading https://files.pythonhosted.org/packages/d4/79/fe821dee368d4e438c5cb2e462b92eb15889b2ad18d1a7ab4f9b1047603b/ampapi-1.3.8.tar.gz
+[2024-06-01 02:27:35] WARNING root fetch - processPackages [PyJONDB]: Skipping, unable to determine old version
+[2024-06-01 02:27:35] INFO root fetch - main [MainThread]: End processing [PyJONDB] error
+[2024-06-01 02:27:35] WARNING root fetch - processPackages [foo-param]: Skipping, unable to determine old version
+[2024-06-01 02:27:35] INFO root fetch - main [MainThread]: End processing [foo-param] error
+[2024-06-01 02:27:35] INFO root fetch - processPackages [NMODL-nightly]: New version: [0.6.176] Old Version: [0.6.175]
+[2024-06-01 02:27:35] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.6.99] Old Version: [2.6.98]
+[2024-06-01 02:27:35] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/7c/4a/ea46529cfc2a70f30fee555efd126dc71da76b1a72821f8c39abf7524f95/segmentation_skeleton_metrics-4.1.7.tar.gz
+[2024-06-01 02:27:35] INFO root fetch - processPackages [maitai-python]: Downloading https://files.pythonhosted.org/packages/09/2b/d20519e9f78430acd42001df12a1cdb17e6d00d6c56f30d5992093580273/maitai_python-1.0.1b1.tar.gz
+[2024-06-01 02:27:35] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/e0/fd/cffd2f6aa46145b45c5c6e3c1ec7c5e5700a268fcadda57e4ed0785a5133/nmodl_nightly-0.6.175-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 02:27:36] INFO root fetch - processPackages [maitai-python]: Downloading https://files.pythonhosted.org/packages/59/4d/00ae27aa272607c17336c1d0bd2f6b5fa935de11ef4441e15d48434cce27/maitai_python-1.0.1b2.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/04/67/6fb0e00ee65986b766391e4327a7370cec35f8458c0c80507e3b56a79e57/cdk-serverless-clamscan-2.6.98.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [ampapi]: Downloading https://files.pythonhosted.org/packages/97/63/73b3825bb6ab9140b2805ede023d1651eccf2a4bc3e7f873c4f3d772edc5/ampapi-1.3.9.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/dd/99/f028186741d84f9466642b216efe6415a7629f2443b3d3f3885463d428a2/segmentation_skeleton_metrics-4.1.8.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [maitai-python]: executing diffoscope
+[2024-06-01 02:27:36] INFO root fetch - processPackages [maitai-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maitai_python-1.0.1b1.tar.gz tmp/maitai_python-1.0.1b2.tar.gz --markdown 20240601/m/maitai-python/1.0.1b1-1.0.1b2/README.md --exclude *.pyd
+[2024-06-01 02:27:36] INFO root fetch - processPackages [ampapi]: executing diffoscope
+[2024-06-01 02:27:36] INFO root fetch - processPackages [ampapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampapi-1.3.8.tar.gz tmp/ampapi-1.3.9.tar.gz --markdown 20240601/a/ampapi/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240601/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-06-01 02:27:36] INFO root fetch - processPackages [segmentation-skeleton-metrics]: executing diffoscope
+[2024-06-01 02:27:36] INFO root fetch - processPackages [segmentation-skeleton-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentation_skeleton_metrics-4.1.7.tar.gz tmp/segmentation_skeleton_metrics-4.1.8.tar.gz --markdown 20240601/s/segmentation-skeleton-metrics/4.1.7-4.1.8/README.md --exclude *.pyd
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/53/8f/ea40546b0f696761a1aaeee533ca8a5f53147131c3aa1f0aa1316112f44f/cdk-serverless-clamscan-2.6.99.tar.gz
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.6.98.tar.gz tmp/cdk-serverless-clamscan-2.6.99.tar.gz --markdown 20240601/c/cdk-serverless-clamscan/2.6.98-2.6.99/README.md --exclude *.pyd
+[2024-06-01 02:27:36] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/26/96/75957e1cf4dfa0b9223e914b09014b36334947a401c9b12cd580de4e8dd0/nmodl_nightly-0.6.176-cp39-cp39-macosx_10_15_x86_64.whl
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-06-01 02:27:36] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-06-01 02:27:36] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-06-01 02:27:37] INFO root fetch - processPackages [maitai-python]: Remove: archive file [/home/abi/fetcher/tmp/maitai_python-1.0.1b1.tar.gz]
+[2024-06-01 02:27:37] INFO root fetch - processPackages [maitai-python]: Remove: archive file [/home/abi/fetcher/tmp/maitai_python-1.0.1b2.tar.gz]
+[2024-06-01 02:27:37] INFO root fetch - main [MainThread]: End processing [maitai-python]: success
+[2024-06-01 02:27:37] INFO root fetch - processPackages [ampapi]: Remove: archive file [/home/abi/fetcher/tmp/ampapi-1.3.8.tar.gz]
+[2024-06-01 02:27:37] INFO root fetch - processPackages [ampapi]: Remove: archive file [/home/abi/fetcher/tmp/ampapi-1.3.9.tar.gz]
+[2024-06-01 02:27:37] INFO root fetch - main [MainThread]: End processing [ampapi]: success
+[2024-06-01 02:27:37] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.98.tar.gz]
+[2024-06-01 02:27:37] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.99.tar.gz]
+[2024-06-01 02:27:37] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2024-06-01 02:27:37] INFO root fetch - processPackages [NMODL-nightly]: executing diffoscope
+[2024-06-01 02:27:37] INFO root fetch - processPackages [NMODL-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmodl_nightly-0.6.175-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nmodl_nightly-0.6.176-cp39-cp39-macosx_10_15_x86_64.whl.zip --markdown 20240601/N/NMODL-nightly/0.6.175-0.6.176/README.md --exclude *.pyd
+[2024-06-01 02:27:38] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.7.tar.gz]
+[2024-06-01 02:27:38] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.8.tar.gz]
+[2024-06-01 02:27:38] INFO root fetch - main [MainThread]: End processing [segmentation-skeleton-metrics]: success
+[2024-06-01 02:27:40] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/nmodl_nightly-0.6.175-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 02:27:40] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/nmodl_nightly-0.6.176-cp39-cp39-macosx_10_15_x86_64.whl.zip]
+[2024-06-01 02:27:40] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
+[2024-06-01 02:27:40] INFO root fetch - main [MainThread]: Store serial: [23474058]
