@@ -21277,3 +21277,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:31:29] INFO root fetch - processPackages [rgrow]: Remove: archive file [/home/abi/fetcher/tmp/rgrow-0.13.1-cp310-cp310-macosx_11_0_arm64.whl.zip]
 [2024-06-01 20:31:29] INFO root fetch - main [MainThread]: End processing [rgrow]: success
 [2024-06-01 20:31:29] INFO root fetch - main [MainThread]: Store serial: [23482583]
+[2024-06-01 20:33:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482583]
+[2024-06-01 20:33:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 20:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moroccan-prayer-times
+[2024-06-01 20:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyDolarVenezuela
+[2024-06-01 20:33:38] INFO root fetch - processPackages [moroccan-prayer-times]: New version: [0.0.9] Old Version: [0.0.12]
+[2024-06-01 20:33:38] INFO root fetch - processPackages [pyDolarVenezuela]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-06-01 20:33:39] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/a6/54/ca7c3085c0d68a2d92410273eb152cdcdc8f7f0c9506acc3ed2b11366ed5/moroccan_prayer_times-0.0.12-py3-none-any.whl
+[2024-06-01 20:33:39] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/12/79/e6a20636f4061e21e601392a6f738b7bb15fe327df91e5ecd280ea1269fd/pydolarvenezuela-1.6.1.tar.gz
+[2024-06-01 20:33:39] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/6f/b6/974e7dd7973732bb57010d61ea7a49703337769a92389d6d635aa04aa355/moroccan_prayer_times-0.0.9-py3-none-any.whl
+[2024-06-01 20:33:39] INFO root fetch - processPackages [moroccan-prayer-times]: executing diffoscope
+[2024-06-01 20:33:39] INFO root fetch - processPackages [moroccan-prayer-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moroccan_prayer_times-0.0.12-py3-none-any.whl.zip tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip --markdown 20240601/m/moroccan-prayer-times/0.0.12-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:33:39] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/c6/68/79ba79517dcfa68d5b79caefb007f44cd7366d9371705ee15dc73a18415c/pydolarvenezuela-1.6.2.tar.gz
+[2024-06-01 20:33:39] INFO root fetch - processPackages [pyDolarVenezuela]: executing diffoscope
+[2024-06-01 20:33:39] INFO root fetch - processPackages [pyDolarVenezuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydolarvenezuela-1.6.1.tar.gz tmp/pydolarvenezuela-1.6.2.tar.gz --markdown 20240601/p/pyDolarVenezuela/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-06-01 20:33:39] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.12-py3-none-any.whl.zip]
+[2024-06-01 20:33:39] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip]
+[2024-06-01 20:33:39] INFO root fetch - main [MainThread]: End processing [moroccan-prayer-times]: success
+[2024-06-01 20:33:40] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.6.1.tar.gz]
+[2024-06-01 20:33:40] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.6.2.tar.gz]
+[2024-06-01 20:33:40] INFO root fetch - main [MainThread]: End processing [pyDolarVenezuela]: success
+[2024-06-01 20:33:40] INFO root fetch - main [MainThread]: Store serial: [23482589]
