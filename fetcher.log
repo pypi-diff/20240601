@@ -19235,3 +19235,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:17:05] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
 [2024-06-01 18:17:05] INFO root fetch - main [MainThread]: End processing [almax-common]: success
 [2024-06-01 18:17:05] INFO root fetch - main [MainThread]: Store serial: [23481632]
+[2024-06-01 18:19:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481632]
+[2024-06-01 18:19:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-cjkcms
+[2024-06-01 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyjpboatrace
+[2024-06-01 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: washpy
+[2024-06-01 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: extrautilities
+[2024-06-01 18:19:14] INFO root fetch - processPackages [extrautilities]: New version: [2.0] Old Version: [1.9]
+[2024-06-01 18:19:14] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/6f/1b/9c40487f80bc6cbd66b536805137f9443532085e1f6f149827991934d2e8/extrautilities-1.9.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [pyjpboatrace]: New version: [0.3.1a0] Old Version: [0.3.0a4]
+[2024-06-01 18:19:14] INFO root fetch - processPackages [washpy]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-06-01 18:19:14] INFO root fetch - processPackages [wagtail-cjkcms]: New version: [24.6.1] Old Version: [24.5.2]
+[2024-06-01 18:19:14] INFO root fetch - processPackages [pyjpboatrace]: Downloading https://files.pythonhosted.org/packages/9c/91/ecaf5df18a549dbe1d9b6e82eda654acfba194539c5845b04d03492ff06c/pyjpboatrace-0.3.0a4.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [washpy]: Downloading https://files.pythonhosted.org/packages/64/17/7109059c36dfc3d331e205c31ad0da39c5bea34e048581ec7758b293cfcc/washpy-0.4.0.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/c9/ba/12b3478bf1ce9a5e95e6a09dedbdac912f19a5b9b5477f3c261d1da05e1e/extrautilities-2.0.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/51/7a/b134296bc2c208ae5b4b834ddb631274dc42e08b53fb3869bd37f2d9481a/wagtail_cjkcms-24.5.2.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [extrautilities]: executing diffoscope
+[2024-06-01 18:19:14] INFO root fetch - processPackages [extrautilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extrautilities-1.9.tar.gz tmp/extrautilities-2.0.tar.gz --markdown 20240601/e/extrautilities/1.9-2.0/README.md --exclude *.pyd
+[2024-06-01 18:19:14] INFO root fetch - processPackages [pyjpboatrace]: Downloading https://files.pythonhosted.org/packages/bd/d2/e431692593b3b1ec1141a948e6d52f64d4bab3d520d3d72badd40345945a/pyjpboatrace-0.3.1a0.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [washpy]: Downloading https://files.pythonhosted.org/packages/45/f1/c872b38736ea777d7f5bbd13d6969e4284ce37394f76cf767e3df3bfeb30/washpy-0.5.0.tar.gz
+[2024-06-01 18:19:14] INFO root fetch - processPackages [washpy]: executing diffoscope
+[2024-06-01 18:19:14] INFO root fetch - processPackages [washpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/washpy-0.4.0.tar.gz tmp/washpy-0.5.0.tar.gz --markdown 20240601/w/washpy/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 18:19:14] INFO root fetch - processPackages [pyjpboatrace]: executing diffoscope
+[2024-06-01 18:19:14] INFO root fetch - processPackages [pyjpboatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjpboatrace-0.3.0a4.tar.gz tmp/pyjpboatrace-0.3.1a0.tar.gz --markdown 20240601/p/pyjpboatrace/0.3.0a4-0.3.1a0/README.md --exclude *.pyd
+[2024-06-01 18:19:15] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/a3/be/2900d59d59747528481b9e9952ed19b05bb1decea06c8d4e3b78702428e0/wagtail_cjkcms-24.6.1.tar.gz
+[2024-06-01 18:19:15] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.9.tar.gz]
+[2024-06-01 18:19:15] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-2.0.tar.gz]
+[2024-06-01 18:19:15] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
+[2024-06-01 18:19:15] INFO root fetch - processPackages [wagtail-cjkcms]: executing diffoscope
+[2024-06-01 18:19:15] INFO root fetch - processPackages [wagtail-cjkcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_cjkcms-24.5.2.tar.gz tmp/wagtail_cjkcms-24.6.1.tar.gz --markdown 20240601/w/wagtail-cjkcms/24.5.2-24.6.1/README.md --exclude *.pyd
+[2024-06-01 18:19:15] INFO root fetch - processPackages [pyjpboatrace]: Remove: archive file [/home/abi/fetcher/tmp/pyjpboatrace-0.3.0a4.tar.gz]
+[2024-06-01 18:19:15] INFO root fetch - processPackages [pyjpboatrace]: Remove: archive file [/home/abi/fetcher/tmp/pyjpboatrace-0.3.1a0.tar.gz]
+[2024-06-01 18:19:15] INFO root fetch - main [MainThread]: End processing [pyjpboatrace]: success
+[2024-06-01 18:19:15] INFO root fetch - processPackages [washpy]: Remove: archive file [/home/abi/fetcher/tmp/washpy-0.4.0.tar.gz]
+[2024-06-01 18:19:15] INFO root fetch - processPackages [washpy]: Remove: archive file [/home/abi/fetcher/tmp/washpy-0.5.0.tar.gz]
+[2024-06-01 18:19:15] INFO root fetch - main [MainThread]: End processing [washpy]: success
+[2024-06-01 18:19:20] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.5.2.tar.gz]
+[2024-06-01 18:19:20] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.6.1.tar.gz]
+[2024-06-01 18:19:20] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
+[2024-06-01 18:19:20] INFO root fetch - main [MainThread]: Store serial: [23481644]
