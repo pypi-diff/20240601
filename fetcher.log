@@ -11472,3 +11472,35 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:25:54] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
 [2024-06-01 08:25:54] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2024-06-01 08:25:54] INFO root fetch - main [MainThread]: Store serial: [23477882]
+[2024-06-01 08:27:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477882]
+[2024-06-01 08:28:04] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 08:30:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477882]
+[2024-06-01 08:30:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 08:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python3-commons
+[2024-06-01 08:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnijp
+[2024-06-01 08:30:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semchunk
+[2024-06-01 08:30:09] INFO root fetch - processPackages [omnijp]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-06-01 08:30:09] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/e0/00/f8f3aff9498694712b87aa6a726e0eefde9e2e61a2c4a3a37ec0cc068b8d/omnijp-2.4.0.tar.gz
+[2024-06-01 08:30:09] INFO root fetch - processPackages [semchunk]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-06-01 08:30:09] INFO root fetch - processPackages [python3-commons]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-06-01 08:30:09] INFO root fetch - processPackages [omnijp]: Downloading https://files.pythonhosted.org/packages/09/9c/bd6d1228971ae39528a1917b2b80a1f21d8d92505cc0d2c704f0c2ea44f4/omnijp-2.5.0.tar.gz
+[2024-06-01 08:30:09] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/c9/a5/d9d98e39523bbc08dba24bb424a29b704da638f73334520fa81c7fbee861/semchunk-0.3.1.tar.gz
+[2024-06-01 08:30:09] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/ec/1a/1a7a3492f50318c7cb8acd004e420b7118a20d87742e0800282fe848fe2b/python3_commons-0.5.6.tar.gz
+[2024-06-01 08:30:10] INFO root fetch - processPackages [omnijp]: executing diffoscope
+[2024-06-01 08:30:10] INFO root fetch - processPackages [omnijp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnijp-2.4.0.tar.gz tmp/omnijp-2.5.0.tar.gz --markdown 20240601/o/omnijp/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-06-01 08:30:10] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/45/05/8e2da0b9fafa43a0282eb3ad225fadff62e087ee71de4b6fed689b9d9942/semchunk-0.3.2.tar.gz
+[2024-06-01 08:30:10] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/a1/7a/b0464dd8f4e70a0259821c6dcab42bcaa80a606089c19c522ad16c50e8e7/python3_commons-0.5.7.tar.gz
+[2024-06-01 08:30:10] INFO root fetch - processPackages [python3-commons]: executing diffoscope
+[2024-06-01 08:30:10] INFO root fetch - processPackages [python3-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python3_commons-0.5.6.tar.gz tmp/python3_commons-0.5.7.tar.gz --markdown 20240601/p/python3-commons/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-06-01 08:30:10] INFO root fetch - processPackages [semchunk]: executing diffoscope
+[2024-06-01 08:30:10] INFO root fetch - processPackages [semchunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semchunk-0.3.1.tar.gz tmp/semchunk-0.3.2.tar.gz --markdown 20240601/s/semchunk/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-06-01 08:30:10] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.4.0.tar.gz]
+[2024-06-01 08:30:10] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.5.0.tar.gz]
+[2024-06-01 08:30:10] INFO root fetch - main [MainThread]: End processing [omnijp]: success
+[2024-06-01 08:30:10] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.6.tar.gz]
+[2024-06-01 08:30:10] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.7.tar.gz]
+[2024-06-01 08:30:10] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
+[2024-06-01 08:30:11] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.1.tar.gz]
+[2024-06-01 08:30:11] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.2.tar.gz]
+[2024-06-01 08:30:11] INFO root fetch - main [MainThread]: End processing [semchunk]: success
+[2024-06-01 08:30:11] INFO root fetch - main [MainThread]: Store serial: [23477892]
