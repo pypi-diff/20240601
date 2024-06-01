@@ -16015,3 +16015,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-06-01 14:25:51] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-batch-21] error
 [2024-06-01 14:25:51] INFO root fetch - main [MainThread]: Store serial: [23480035]
+[2024-06-01 14:27:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480035]
+[2024-06-01 14:28:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 14:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sim-solps
+[2024-06-01 14:28:00] INFO root fetch - processPackages [sim-solps]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-01 14:28:00] INFO root fetch - processPackages [sim-solps]: Downloading https://files.pythonhosted.org/packages/29/ee/7c1e98a078b7ad59746ff6361ab9c0ab2462c69c6574bb7c877dd3d4b42a/sim-solps-0.1.2.tar.gz
+[2024-06-01 14:28:00] INFO root fetch - processPackages [sim-solps]: Downloading https://files.pythonhosted.org/packages/77/26/1b74e9302436fc05ef329b76418edad207b2d6f40c19270a96980b9daed1/sim_solps-0.1.3.tar.gz
+[2024-06-01 14:28:00] INFO root fetch - processPackages [sim-solps]: executing diffoscope
+[2024-06-01 14:28:00] INFO root fetch - processPackages [sim-solps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim-solps-0.1.2.tar.gz tmp/sim_solps-0.1.3.tar.gz --markdown 20240601/s/sim-solps/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-01 14:28:01] INFO root fetch - processPackages [sim-solps]: Remove: archive file [/home/abi/fetcher/tmp/sim-solps-0.1.2.tar.gz]
+[2024-06-01 14:28:01] INFO root fetch - processPackages [sim-solps]: Remove: archive file [/home/abi/fetcher/tmp/sim_solps-0.1.3.tar.gz]
+[2024-06-01 14:28:01] INFO root fetch - main [MainThread]: End processing [sim-solps]: success
+[2024-06-01 14:28:01] INFO root fetch - main [MainThread]: Store serial: [23480038]
