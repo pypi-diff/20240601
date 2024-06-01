@@ -10619,3 +10619,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:12:41] INFO root fetch - processPackages [ape-vyper]: Remove: archive file [/home/abi/fetcher/tmp/ape-vyper-0.8.0.tar.gz]
 [2024-06-01 07:12:41] INFO root fetch - main [MainThread]: End processing [ape-vyper]: success
 [2024-06-01 07:12:41] INFO root fetch - main [MainThread]: Store serial: [23477458]
+[2024-06-01 07:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477458]
+[2024-06-01 07:14:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 07:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pass-operator
+[2024-06-01 07:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-ro-account-edi-ubl
+[2024-06-01 07:14:50] INFO root fetch - processPackages [pass-operator]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-06-01 07:14:50] INFO root fetch - processPackages [pass-operator]: Downloading https://files.pythonhosted.org/packages/86/1e/9c09e7183560a737162007b0bec304abdc3adb310ab5c038071fdf34ebf3/pass_operator-0.4.5.tar.gz
+[2024-06-01 07:14:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: New version: [16.0.1.51.0] Old Version: [16.0.1.50.0.1]
+[2024-06-01 07:14:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/dd/cc/a1dd2feafe19058b8f9fd9ebd7131dca063828d18678d47d3a700e95e12a/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl
+[2024-06-01 07:14:50] INFO root fetch - processPackages [pass-operator]: Downloading https://files.pythonhosted.org/packages/b0/fe/e3fdca0b23534e9da116b0ae87463aa2178080fabeeadec8b3d5efe971be/pass_operator-0.4.6.tar.gz
+[2024-06-01 07:14:50] INFO root fetch - processPackages [pass-operator]: executing diffoscope
+[2024-06-01 07:14:50] INFO root fetch - processPackages [pass-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pass_operator-0.4.5.tar.gz tmp/pass_operator-0.4.6.tar.gz --markdown 20240601/p/pass-operator/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-06-01 07:14:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/ff/f3/97603c6a4d645f4db454eebb5342cde476341568efa98de16ebbf2c9cbc1/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.51.0-py3-none-any.whl
+[2024-06-01 07:14:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2024-06-01 07:14:50] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.51.0-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-l10n-ro-account-edi-ubl/16.0.1.50.0.1-16.0.1.51.0/README.md --exclude *.pyd
+[2024-06-01 07:14:51] INFO root fetch - processPackages [pass-operator]: Remove: archive file [/home/abi/fetcher/tmp/pass_operator-0.4.5.tar.gz]
+[2024-06-01 07:14:51] INFO root fetch - processPackages [pass-operator]: Remove: archive file [/home/abi/fetcher/tmp/pass_operator-0.4.6.tar.gz]
+[2024-06-01 07:14:51] INFO root fetch - main [MainThread]: End processing [pass-operator]: success
+[2024-06-01 07:14:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.50.0.1-py3-none-any.whl.zip]
+[2024-06-01 07:14:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_edi_ubl-16.0.1.51.0-py3-none-any.whl.zip]
+[2024-06-01 07:14:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-edi-ubl]: success
+[2024-06-01 07:14:51] INFO root fetch - main [MainThread]: Store serial: [23477461]
