@@ -15427,3 +15427,33 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:40:16] INFO root fetch - processPackages [faostat]: Remove: archive file [/home/abi/fetcher/tmp/faostat-1.1.2.tar.gz]
 [2024-06-01 13:40:16] INFO root fetch - main [MainThread]: End processing [faostat]: success
 [2024-06-01 13:40:16] INFO root fetch - main [MainThread]: Store serial: [23479796]
+[2024-06-01 13:42:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479796]
+[2024-06-01 13:42:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 13:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: printmate
+[2024-06-01 13:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: manga-scrape
+[2024-06-01 13:42:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: internal
+[2024-06-01 13:42:26] INFO root fetch - processPackages [internal]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 13:42:26] INFO root fetch - processPackages [printmate]: New version: [1.3.5] Old Version: [1.3.3]
+[2024-06-01 13:42:26] INFO root fetch - processPackages [internal]: Downloading https://files.pythonhosted.org/packages/df/a1/94585b03319adf81dfc43d9782007d50eb12574a33175c6c6c473f328b54/internal-1.0.4.tar.gz
+[2024-06-01 13:42:26] INFO root fetch - processPackages [manga-scrape]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-06-01 13:42:26] INFO root fetch - processPackages [printmate]: Downloading https://files.pythonhosted.org/packages/e4/ba/aa290a2090d6da7518f4cefb6e40133ea2b094626cf85f062bff02aac234/printmate-1.3.3.tar.gz
+[2024-06-01 13:42:26] INFO root fetch - processPackages [manga-scrape]: Downloading https://files.pythonhosted.org/packages/bd/f8/0b1c4e019f16b186ed6cc5e5d90e416c4c610bdffb21fae5a0c787b18513/manga_scrape-4.8.0.tar.gz
+[2024-06-01 13:42:26] INFO root fetch - processPackages [internal]: Downloading https://files.pythonhosted.org/packages/8f/c6/db6d1ecdfa6d167c0e6b7c6304c3d37d42fc0c1a7519a2a3a54b6ab41a8e/internal-1.0.5.tar.gz
+[2024-06-01 13:42:26] INFO root fetch - processPackages [internal]: executing diffoscope
+[2024-06-01 13:42:26] INFO root fetch - processPackages [internal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internal-1.0.4.tar.gz tmp/internal-1.0.5.tar.gz --markdown 20240601/i/internal/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 13:42:26] INFO root fetch - processPackages [printmate]: Downloading https://files.pythonhosted.org/packages/6f/d3/eee8608019e1d1cbf8991a9ba914d8c8eba2aa87f34ccce52e104805c632/printmate-1.3.5.tar.gz
+[2024-06-01 13:42:26] INFO root fetch - processPackages [manga-scrape]: Downloading https://files.pythonhosted.org/packages/2b/c5/ce06b355f4b6a9087524a466a76eb5a124e0fe06d2a3d0326e3693d1f160/manga_scrape-4.9.0.tar.gz
+[2024-06-01 13:42:26] INFO root fetch - processPackages [printmate]: executing diffoscope
+[2024-06-01 13:42:26] INFO root fetch - processPackages [printmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printmate-1.3.3.tar.gz tmp/printmate-1.3.5.tar.gz --markdown 20240601/p/printmate/1.3.3-1.3.5/README.md --exclude *.pyd
+[2024-06-01 13:42:26] INFO root fetch - processPackages [manga-scrape]: executing diffoscope
+[2024-06-01 13:42:26] INFO root fetch - processPackages [manga-scrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manga_scrape-4.8.0.tar.gz tmp/manga_scrape-4.9.0.tar.gz --markdown 20240601/m/manga-scrape/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-06-01 13:42:27] INFO root fetch - processPackages [internal]: Remove: archive file [/home/abi/fetcher/tmp/internal-1.0.4.tar.gz]
+[2024-06-01 13:42:27] INFO root fetch - processPackages [internal]: Remove: archive file [/home/abi/fetcher/tmp/internal-1.0.5.tar.gz]
+[2024-06-01 13:42:27] INFO root fetch - main [MainThread]: End processing [internal]: success
+[2024-06-01 13:42:27] INFO root fetch - processPackages [printmate]: Remove: archive file [/home/abi/fetcher/tmp/printmate-1.3.3.tar.gz]
+[2024-06-01 13:42:27] INFO root fetch - processPackages [printmate]: Remove: archive file [/home/abi/fetcher/tmp/printmate-1.3.5.tar.gz]
+[2024-06-01 13:42:27] INFO root fetch - main [MainThread]: End processing [printmate]: success
+[2024-06-01 13:42:27] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.8.0.tar.gz]
+[2024-06-01 13:42:27] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.9.0.tar.gz]
+[2024-06-01 13:42:27] INFO root fetch - main [MainThread]: End processing [manga-scrape]: success
+[2024-06-01 13:42:27] INFO root fetch - main [MainThread]: Store serial: [23479805]
