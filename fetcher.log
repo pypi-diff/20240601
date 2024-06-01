@@ -9556,3 +9556,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:23:37] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024053103.tar.gz]
 [2024-06-01 05:23:37] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-06-01 05:23:37] INFO root fetch - main [MainThread]: Store serial: [23476920]
+[2024-06-01 05:25:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476920]
+[2024-06-01 05:25:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 05:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-langchain
+[2024-06-01 05:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mipkit
+[2024-06-01 05:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-lyzr
+[2024-06-01 05:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bipsea
+[2024-06-01 05:25:45] INFO root fetch - processPackages [composio-lyzr]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-01 05:25:45] INFO root fetch - processPackages [composio-langchain]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-01 05:25:45] INFO root fetch - processPackages [composio-lyzr]: Downloading https://files.pythonhosted.org/packages/c7/b9/f42640f037d12cd5485ddb9fec14abcfb6d8196f5ee62984b9e5f201c31a/composio_lyzr-0.3.5.tar.gz
+[2024-06-01 05:25:45] INFO root fetch - processPackages [bipsea]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-06-01 05:25:45] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/60/51/b4bc0b0caff8f3d7de7543b1fc3b2a14b7a2a17de1d6cda31a80cbe5e3a9/composio_langchain-0.3.5.tar.gz
+[2024-06-01 05:25:45] INFO root fetch - processPackages [mipkit]: New version: [1.7.0] Old Version: [1.6.4]
+[2024-06-01 05:25:45] INFO root fetch - processPackages [composio-lyzr]: Downloading https://files.pythonhosted.org/packages/dc/48/4b95008fe41b47428887341e0c095ca6593221ceec9264c6f83a1e4f3280/composio_lyzr-0.3.6.tar.gz
+[2024-06-01 05:25:46] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/b7/24/485d9ac0b265204cf440f13e9fa61bc8dc2d48715e817a5d58caa28bce90/bipsea-0.1.3.tar.gz
+[2024-06-01 05:25:46] INFO root fetch - processPackages [mipkit]: Downloading https://files.pythonhosted.org/packages/e9/5f/4ff2707ea8e47ed5f6cdfb4cdc55b8092c790a558e0afe7a97de7bf01fef/mipkit-1.6.4-py3-none-any.whl
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/e9/ed/ee0259500b4ec0c43ba73dc519358077b10742f54971b83de80edc307e05/composio_langchain-0.3.6.tar.gz
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-lyzr]: executing diffoscope
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-lyzr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_lyzr-0.3.5.tar.gz tmp/composio_lyzr-0.3.6.tar.gz --markdown 20240601/c/composio-lyzr/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.3.5.tar.gz tmp/composio_langchain-0.3.6.tar.gz --markdown 20240601/c/composio-langchain/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-01 05:25:46] INFO root fetch - processPackages [mipkit]: Downloading https://files.pythonhosted.org/packages/75/69/0a753b8562fa6bd4021a8d8c7c3d3933ee5bc6beee1e0984fb571f533ce7/mipkit-1.7.0-py3-none-any.whl
+[2024-06-01 05:25:46] INFO root fetch - processPackages [bipsea]: Downloading https://files.pythonhosted.org/packages/33/e9/3a9759ecde652ba83e26722fd27fbe694c923261325377aa56350ae7598f/bipsea-0.2.0.tar.gz
+[2024-06-01 05:25:46] INFO root fetch - processPackages [bipsea]: executing diffoscope
+[2024-06-01 05:25:46] INFO root fetch - processPackages [bipsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipsea-0.1.3.tar.gz tmp/bipsea-0.2.0.tar.gz --markdown 20240601/b/bipsea/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-06-01 05:25:46] INFO root fetch - processPackages [mipkit]: executing diffoscope
+[2024-06-01 05:25:46] INFO root fetch - processPackages [mipkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mipkit-1.6.4-py3-none-any.whl.zip tmp/mipkit-1.7.0-py3-none-any.whl.zip --markdown 20240601/m/mipkit/1.6.4-1.7.0/README.md --exclude *.pyd
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.5.tar.gz]
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.6.tar.gz]
+[2024-06-01 05:25:46] INFO root fetch - main [MainThread]: End processing [composio-lyzr]: success
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.3.5.tar.gz]
+[2024-06-01 05:25:46] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.3.6.tar.gz]
+[2024-06-01 05:25:46] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-06-01 05:25:47] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.1.3.tar.gz]
+[2024-06-01 05:25:47] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.2.0.tar.gz]
+[2024-06-01 05:25:47] INFO root fetch - main [MainThread]: End processing [bipsea]: success
+[2024-06-01 05:25:47] INFO root fetch - processPackages [mipkit]: Remove: archive file [/home/abi/fetcher/tmp/mipkit-1.6.4-py3-none-any.whl.zip]
+[2024-06-01 05:25:47] INFO root fetch - processPackages [mipkit]: Remove: archive file [/home/abi/fetcher/tmp/mipkit-1.7.0-py3-none-any.whl.zip]
+[2024-06-01 05:25:47] INFO root fetch - main [MainThread]: End processing [mipkit]: success
+[2024-06-01 05:25:47] INFO root fetch - main [MainThread]: Store serial: [23476933]
