@@ -17047,3 +17047,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:45:12] INFO root fetch - processPackages [pytest-xstress]: Remove: archive file [/home/abi/fetcher/tmp/pytest_xstress-1.0.1.tar.gz]
 [2024-06-01 15:45:12] INFO root fetch - main [MainThread]: End processing [pytest-xstress]: success
 [2024-06-01 15:45:12] INFO root fetch - main [MainThread]: Store serial: [23480506]
+[2024-06-01 15:47:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480506]
+[2024-06-01 15:47:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 15:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-06-01 15:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: voxelworldapi
+[2024-06-01 15:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: encoded-core
+[2024-06-01 15:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acquiring
+[2024-06-01 15:47:20] INFO root fetch - processPackages [voxelworldapi]: New version: [1.6.320240531] Old Version: [1.34.post20240601]
+[2024-06-01 15:47:20] INFO root fetch - processPackages [acquiring]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 15:47:20] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240531.16.26.119005] Old Version: [20240531.14.10.271955]
+[2024-06-01 15:47:20] INFO root fetch - processPackages [encoded-core]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-01 15:47:20] INFO root fetch - processPackages [acquiring]: Downloading https://files.pythonhosted.org/packages/b7/ab/f574b505bc4a82b705017d0457e5f9ccfad0a783ac3f5155f55d7e4807a9/acquiring-0.2.0.tar.gz
+[2024-06-01 15:47:20] INFO root fetch - processPackages [voxelworldapi]: Downloading https://files.pythonhosted.org/packages/b2/00/2926b2f253996dbe9a1bf4472a6c6978d43ce3c640d2d42328ea188b4f3e/voxelworldapi-1.34.post20240601.tar.gz
+[2024-06-01 15:47:20] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/00/e8/d0f87461f837e43efb0d6192a25702401f48bda60232954dcec4bedc437b/certora-cli-alpha-master-20240531.14.10.271955.tar.gz
+[2024-06-01 15:47:20] INFO root fetch - processPackages [encoded-core]: Downloading https://files.pythonhosted.org/packages/cb/14/726b7c6883db642cdbc0f6a712fdcb021a0bc18ad524045527687dfe7dd5/encoded_core-0.9.0.tar.gz
+[2024-06-01 15:47:20] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14611850>=10485760
+[2024-06-01 15:47:20] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-06-01 15:47:21] INFO root fetch - processPackages [voxelworldapi]: Downloading https://files.pythonhosted.org/packages/ea/a0/35e05e43452774767866586de1ed87db1e50ad2fdd2f4a6029e36493b9c9/voxelworldapi-1.6.320240531.tar.gz
+[2024-06-01 15:47:21] INFO root fetch - processPackages [acquiring]: Downloading https://files.pythonhosted.org/packages/d4/96/fb98ca21a661204cf5969817e08d3be08466ef1cb66050f1faca34647325/acquiring-0.3.0.tar.gz
+[2024-06-01 15:47:21] INFO root fetch - processPackages [encoded-core]: Downloading https://files.pythonhosted.org/packages/b3/96/966fe5d86d2275fa72c8919e305fc0fcf5ec3bd11301fb63354af1698f3c/encoded_core-0.9.1.tar.gz
+[2024-06-01 15:47:21] INFO root fetch - processPackages [voxelworldapi]: executing diffoscope
+[2024-06-01 15:47:21] INFO root fetch - processPackages [voxelworldapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voxelworldapi-1.34.post20240601.tar.gz tmp/voxelworldapi-1.6.320240531.tar.gz --markdown 20240601/v/voxelworldapi/1.34.post20240601-1.6.320240531/README.md --exclude *.pyd
+[2024-06-01 15:47:21] INFO root fetch - processPackages [acquiring]: executing diffoscope
+[2024-06-01 15:47:21] INFO root fetch - processPackages [acquiring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acquiring-0.2.0.tar.gz tmp/acquiring-0.3.0.tar.gz --markdown 20240601/a/acquiring/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 15:47:21] INFO root fetch - processPackages [encoded-core]: executing diffoscope
+[2024-06-01 15:47:21] INFO root fetch - processPackages [encoded-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encoded_core-0.9.0.tar.gz tmp/encoded_core-0.9.1.tar.gz --markdown 20240601/e/encoded-core/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-01 15:47:21] INFO root fetch - processPackages [voxelworldapi]: Remove: archive file [/home/abi/fetcher/tmp/voxelworldapi-1.34.post20240601.tar.gz]
+[2024-06-01 15:47:21] INFO root fetch - processPackages [voxelworldapi]: Remove: archive file [/home/abi/fetcher/tmp/voxelworldapi-1.6.320240531.tar.gz]
+[2024-06-01 15:47:21] INFO root fetch - main [MainThread]: End processing [voxelworldapi]: success
+[2024-06-01 15:47:21] INFO root fetch - processPackages [acquiring]: Remove: archive file [/home/abi/fetcher/tmp/acquiring-0.2.0.tar.gz]
+[2024-06-01 15:47:21] INFO root fetch - processPackages [acquiring]: Remove: archive file [/home/abi/fetcher/tmp/acquiring-0.3.0.tar.gz]
+[2024-06-01 15:47:22] INFO root fetch - main [MainThread]: End processing [acquiring]: success
+[2024-06-01 15:47:22] INFO root fetch - processPackages [encoded-core]: Remove: archive file [/home/abi/fetcher/tmp/encoded_core-0.9.0.tar.gz]
+[2024-06-01 15:47:22] INFO root fetch - processPackages [encoded-core]: Remove: archive file [/home/abi/fetcher/tmp/encoded_core-0.9.1.tar.gz]
+[2024-06-01 15:47:22] INFO root fetch - main [MainThread]: End processing [encoded-core]: success
+[2024-06-01 15:47:22] INFO root fetch - main [MainThread]: Store serial: [23480520]
