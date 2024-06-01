@@ -3128,3 +3128,45 @@
 [2024-06-01 02:47:18] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.5.dev202405310044.tar.gz]
 [2024-06-01 02:47:18] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-06-01 02:47:18] INFO root fetch - main [MainThread]: Store serial: [23474287]
+[2024-06-01 02:49:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474287]
+[2024-06-01 02:49:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 02:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-openai
+[2024-06-01 02:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reflex
+[2024-06-01 02:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: worldnewsapi
+[2024-06-01 02:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sparkdantic
+[2024-06-01 02:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nugen
+[2024-06-01 02:49:26] INFO root fetch - processPackages [composio-openai]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:49:26] INFO root fetch - processPackages [composio-openai]: Downloading https://files.pythonhosted.org/packages/e0/3d/a810b4d9e1a693ba4cbac17d2c0b1e3a13ae7779d0d7f308b9fd027b0742/composio_openai-0.3.2.tar.gz
+[2024-06-01 02:49:26] INFO root fetch - processPackages [sparkdantic]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-01 02:49:26] INFO root fetch - processPackages [worldnewsapi]: New version: [1.1.1] Old Version: [1.0.9]
+[2024-06-01 02:49:26] WARNING root fetch - processPackages [nugen]: Skipping, unable to determine old version
+[2024-06-01 02:49:26] INFO root fetch - main [MainThread]: End processing [nugen] error
+[2024-06-01 02:49:26] INFO root fetch - processPackages [reflex]: New version: [0.5.3a1] Old Version: [0.5.2a1]
+[2024-06-01 02:49:27] INFO root fetch - processPackages [worldnewsapi]: Downloading https://files.pythonhosted.org/packages/4a/ec/4c56ad7a81b4f6c829316f77ac9a42112ee2943d8786500932fffcd82f2c/worldnewsapi-1.0.9.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [reflex]: Downloading https://files.pythonhosted.org/packages/dc/18/cd466638e5894ebb4a479e5e407d02c1c0ed1df9a5c3b64407dd962a5a9f/reflex-0.5.2a1.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [sparkdantic]: Downloading https://files.pythonhosted.org/packages/95/86/2fa957f6cc385703d9d1e79c66cdd79cb28b5527780f27b2d2fd7fac418e/sparkdantic-0.9.2.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [composio-openai]: Downloading https://files.pythonhosted.org/packages/66/36/426c0d19e6ede0d7d1584c254e4d5a57138663f80d78b58d24665918f27c/composio_openai-0.3.3.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [composio-openai]: executing diffoscope
+[2024-06-01 02:49:27] INFO root fetch - processPackages [composio-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_openai-0.3.2.tar.gz tmp/composio_openai-0.3.3.tar.gz --markdown 20240601/c/composio-openai/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:49:27] INFO root fetch - processPackages [worldnewsapi]: Downloading https://files.pythonhosted.org/packages/ed/bf/0d6476a1fb2282a8ba53c70318ecbadd6bee5672685850668ff91adc9ea6/worldnewsapi-1.1.1.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [reflex]: Downloading https://files.pythonhosted.org/packages/0a/3e/2d2d4dbf9df0c88930d59b5d8c52eae5a664a58c710571a1edcab68c2f99/reflex-0.5.3a1.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [sparkdantic]: Downloading https://files.pythonhosted.org/packages/e2/2d/31a0581ff6d0736f484d2826f2ba07487c21c99e263e1910729a8bfc4ae2/sparkdantic-0.9.3.tar.gz
+[2024-06-01 02:49:27] INFO root fetch - processPackages [worldnewsapi]: executing diffoscope
+[2024-06-01 02:49:27] INFO root fetch - processPackages [worldnewsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worldnewsapi-1.0.9.tar.gz tmp/worldnewsapi-1.1.1.tar.gz --markdown 20240601/w/worldnewsapi/1.0.9-1.1.1/README.md --exclude *.pyd
+[2024-06-01 02:49:27] INFO root fetch - processPackages [sparkdantic]: executing diffoscope
+[2024-06-01 02:49:27] INFO root fetch - processPackages [sparkdantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkdantic-0.9.2.tar.gz tmp/sparkdantic-0.9.3.tar.gz --markdown 20240601/s/sparkdantic/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-01 02:49:27] INFO root fetch - processPackages [reflex]: executing diffoscope
+[2024-06-01 02:49:27] INFO root fetch - processPackages [reflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reflex-0.5.2a1.tar.gz tmp/reflex-0.5.3a1.tar.gz --markdown 20240601/r/reflex/0.5.2a1-0.5.3a1/README.md --exclude *.pyd
+[2024-06-01 02:49:27] INFO root fetch - processPackages [composio-openai]: Remove: archive file [/home/abi/fetcher/tmp/composio_openai-0.3.2.tar.gz]
+[2024-06-01 02:49:27] INFO root fetch - processPackages [composio-openai]: Remove: archive file [/home/abi/fetcher/tmp/composio_openai-0.3.3.tar.gz]
+[2024-06-01 02:49:27] INFO root fetch - main [MainThread]: End processing [composio-openai]: success
+[2024-06-01 02:49:28] INFO root fetch - processPackages [sparkdantic]: Remove: archive file [/home/abi/fetcher/tmp/sparkdantic-0.9.2.tar.gz]
+[2024-06-01 02:49:28] INFO root fetch - processPackages [sparkdantic]: Remove: archive file [/home/abi/fetcher/tmp/sparkdantic-0.9.3.tar.gz]
+[2024-06-01 02:49:28] INFO root fetch - main [MainThread]: End processing [sparkdantic]: success
+[2024-06-01 02:49:28] INFO root fetch - processPackages [worldnewsapi]: Remove: archive file [/home/abi/fetcher/tmp/worldnewsapi-1.0.9.tar.gz]
+[2024-06-01 02:49:28] INFO root fetch - processPackages [worldnewsapi]: Remove: archive file [/home/abi/fetcher/tmp/worldnewsapi-1.1.1.tar.gz]
+[2024-06-01 02:49:28] INFO root fetch - main [MainThread]: End processing [worldnewsapi]: success
+[2024-06-01 02:49:30] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.5.2a1.tar.gz]
+[2024-06-01 02:49:30] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.5.3a1.tar.gz]
+[2024-06-01 02:49:30] INFO root fetch - main [MainThread]: End processing [reflex]: success
+[2024-06-01 02:49:30] INFO root fetch - main [MainThread]: Store serial: [23474348]
