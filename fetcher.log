@@ -11439,3 +11439,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:21:33] INFO root fetch - processPackages [omnijp]: Remove: archive file [/home/abi/fetcher/tmp/omnijp-2.5.0.tar.gz]
 [2024-06-01 08:21:33] INFO root fetch - main [MainThread]: End processing [omnijp]: success
 [2024-06-01 08:21:33] INFO root fetch - main [MainThread]: Store serial: [23477873]
+[2024-06-01 08:23:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477873]
+[2024-06-01 08:23:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 08:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nftpy
+[2024-06-01 08:23:42] INFO root fetch - processPackages [nftpy]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-06-01 08:23:42] INFO root fetch - processPackages [nftpy]: Downloading https://files.pythonhosted.org/packages/6c/71/5113f857178f183ea7f7a13b308f531d453bc7ffb93da6b62ed8d94ece88/nftpy-1.1.4.tar.gz
+[2024-06-01 08:23:42] INFO root fetch - processPackages [nftpy]: Downloading https://files.pythonhosted.org/packages/ad/33/3c93f8a6d0c715fc002cfc10e22827c9404db618199332c7dcabfb5fa9a3/nftpy-1.1.5.tar.gz
+[2024-06-01 08:23:42] INFO root fetch - processPackages [nftpy]: executing diffoscope
+[2024-06-01 08:23:42] INFO root fetch - processPackages [nftpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nftpy-1.1.4.tar.gz tmp/nftpy-1.1.5.tar.gz --markdown 20240601/n/nftpy/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-06-01 08:23:43] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.4.tar.gz]
+[2024-06-01 08:23:43] INFO root fetch - processPackages [nftpy]: Remove: archive file [/home/abi/fetcher/tmp/nftpy-1.1.5.tar.gz]
+[2024-06-01 08:23:43] INFO root fetch - main [MainThread]: End processing [nftpy]: success
+[2024-06-01 08:23:43] INFO root fetch - main [MainThread]: Store serial: [23477876]
