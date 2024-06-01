@@ -14665,3 +14665,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.2.tar.gz]
 [2024-06-01 12:48:16] INFO root fetch - main [MainThread]: End processing [browserxt]: success
 [2024-06-01 12:48:16] INFO root fetch - main [MainThread]: Store serial: [23479455]
+[2024-06-01 12:50:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479455]
+[2024-06-01 12:50:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 12:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IDswapper
+[2024-06-01 12:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slurmtui
+[2024-06-01 12:50:26] INFO root fetch - processPackages [IDswapper]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-01 12:50:26] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/19/6e/f906ecd7976fb2039d062d58a59e95807806354fb33aa615d9390b642ffd/idswapper-0.0.5.tar.gz
+[2024-06-01 12:50:27] INFO root fetch - processPackages [slurmtui]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 12:50:27] INFO root fetch - processPackages [slurmtui]: Downloading https://files.pythonhosted.org/packages/ef/87/6a71d55cc8f85a9ebfdc8647355fafa423e93fbeac0512ce79b74d18f198/slurmtui-0.1.4.tar.gz
+[2024-06-01 12:50:27] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/f5/d1/3abeedecb4a2542061cd32109a6a90111d071b32083aab6842786ba9e6fe/idswapper-0.0.6.tar.gz
+[2024-06-01 12:50:27] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 12:50:27] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.5.tar.gz tmp/idswapper-0.0.6.tar.gz --markdown 20240601/I/IDswapper/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-01 12:50:27] INFO root fetch - processPackages [slurmtui]: Downloading https://files.pythonhosted.org/packages/6a/c7/f1b5f8cd984e56f949bd91c825015313b68beef90bc720f8daafe60e5aff/slurmtui-0.1.5.tar.gz
+[2024-06-01 12:50:27] INFO root fetch - processPackages [slurmtui]: executing diffoscope
+[2024-06-01 12:50:27] INFO root fetch - processPackages [slurmtui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurmtui-0.1.4.tar.gz tmp/slurmtui-0.1.5.tar.gz --markdown 20240601/s/slurmtui/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 12:50:28] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.5.tar.gz]
+[2024-06-01 12:50:28] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.6.tar.gz]
+[2024-06-01 12:50:28] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 12:50:28] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.4.tar.gz]
+[2024-06-01 12:50:28] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.5.tar.gz]
+[2024-06-01 12:50:28] INFO root fetch - main [MainThread]: End processing [slurmtui]: success
+[2024-06-01 12:50:28] INFO root fetch - main [MainThread]: Store serial: [23479459]
