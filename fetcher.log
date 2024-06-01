@@ -12488,3 +12488,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:56:07] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.9.tar.gz]
 [2024-06-01 09:56:07] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
 [2024-06-01 09:56:07] INFO root fetch - main [MainThread]: Store serial: [23478313]
+[2024-06-01 09:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478313]
+[2024-06-01 09:58:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 09:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: espy-contact
+[2024-06-01 09:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-moltrack
+[2024-06-01 09:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: popoll-backend
+[2024-06-01 09:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: get-eth-balance
+[2024-06-01 09:58:15] INFO root fetch - processPackages [napari-moltrack]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:58:15] INFO root fetch - processPackages [espy-contact]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-06-01 09:58:15] WARNING root fetch - processPackages [get-eth-balance]: Skipping, unable to determine old version
+[2024-06-01 09:58:15] INFO root fetch - main [MainThread]: End processing [get-eth-balance] error
+[2024-06-01 09:58:15] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/3e/66/69b21211c36fe9877d6b6aca0f9e74298ff59d664b31f46928ec680c1fe1/napari_moltrack-0.0.8.tar.gz
+[2024-06-01 09:58:15] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.63] Old Version: [0.0.62]
+[2024-06-01 09:58:15] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/0e/45/386d301a7573988cfc80de5753544384a517e8794b4856e2bd8b36bea93d/espy_contact-2.0.8.tar.gz
+[2024-06-01 09:58:15] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/5e/3a/826ad2871068c40778a13d581e563beb31bb861e7beaf3ea209a24050556/popoll_backend-0.0.62.tar.gz
+[2024-06-01 09:58:15] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/58/d3/f5342b21e4c78ea6e82e84ce53b20e95974612386583f4276df720f93274/espy_contact-2.0.9.tar.gz
+[2024-06-01 09:58:16] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/1b/cf/ba2a6f1ecc68e0d9a3ac986a3a9572bcf125a5b3390c40370ab9af954072/napari_moltrack-0.0.9.tar.gz
+[2024-06-01 09:58:16] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-06-01 09:58:16] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.8.tar.gz tmp/espy_contact-2.0.9.tar.gz --markdown 20240601/e/espy-contact/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-06-01 09:58:16] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/ba/c9/79912cba92a6168bbcd737846bfbe9b63014c15b381fe244e1a13773667a/popoll_backend-0.0.63.tar.gz
+[2024-06-01 09:58:16] INFO root fetch - processPackages [napari-moltrack]: executing diffoscope
+[2024-06-01 09:58:16] INFO root fetch - processPackages [napari-moltrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_moltrack-0.0.8.tar.gz tmp/napari_moltrack-0.0.9.tar.gz --markdown 20240601/n/napari-moltrack/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:58:16] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 09:58:16] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.62.tar.gz tmp/popoll_backend-0.0.63.tar.gz --markdown 20240601/p/popoll-backend/0.0.62-0.0.63/README.md --exclude *.pyd
+[2024-06-01 09:58:16] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.8.tar.gz]
+[2024-06-01 09:58:16] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.9.tar.gz]
+[2024-06-01 09:58:16] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-06-01 09:58:16] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.62.tar.gz]
+[2024-06-01 09:58:16] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.63.tar.gz]
+[2024-06-01 09:58:16] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 09:58:17] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.8.tar.gz]
+[2024-06-01 09:58:17] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.9.tar.gz]
+[2024-06-01 09:58:17] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
+[2024-06-01 09:58:17] INFO root fetch - main [MainThread]: Store serial: [23478327]
