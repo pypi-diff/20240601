@@ -9487,3 +9487,72 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:21:24] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
 [2024-06-01 05:21:24] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2024-06-01 05:21:24] INFO root fetch - main [MainThread]: Store serial: [23476899]
+[2024-06-01 05:23:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476899]
+[2024-06-01 05:23:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nsanic
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composio-griptape
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-dragonfly
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: schwabkit
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-nightly
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-julep
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: HuggingMouse
+[2024-06-01 05:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rag-assistant
+[2024-06-01 05:23:33] INFO root fetch - processPackages [composio-griptape]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-01 05:23:33] INFO root fetch - processPackages [composio-julep]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-01 05:23:33] INFO root fetch - processPackages [HuggingMouse]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-06-01 05:23:33] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 05:23:33] WARNING root fetch - processPackages [schwabkit]: Skipping, unable to determine old version
+[2024-06-01 05:23:33] INFO root fetch - main [MainThread]: End processing [schwabkit] error
+[2024-06-01 05:23:34] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 05:23:34] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024053103] Old Version: [3.3.3.dev2024052903]
+[2024-06-01 05:23:34] INFO root fetch - processPackages [nsanic]: New version: [2024.6.1] Old Version: [2024.5.30]
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-griptape]: Downloading https://files.pythonhosted.org/packages/77/eb/f08d918c34d208500dc6e22b0caf798e9e37deb64411384b8d6f709ccab1/composio_griptape-0.3.5.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-julep]: Downloading https://files.pythonhosted.org/packages/54/40/26887bb1cb8ba2539dbedf051f5343510b7b276a9991adebd1886af563bb/composio_julep-0.3.5.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/38/07/e55f0bcd4e19ad488065ee3de02d5f397a5375943c1bf1a2d3411cee493e/keras_nightly-3.3.3.dev2024052903.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [HuggingMouse]: Downloading https://files.pythonhosted.org/packages/d5/39/8cfbae4f29e0046282c476a43d5c84864771afce384002614c84bda0a581/HuggingMouse-0.0.2.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [nsanic]: Downloading https://files.pythonhosted.org/packages/da/88/d66ba40e2cc176ed2ddbcdd64dbd19a3b5d9fb7a6e4c2de9ae6c27ee23d3/nsanic-2024.5.30-py3-none-any.whl
+[2024-06-01 05:23:34] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [HuggingMouse]: Downloading https://files.pythonhosted.org/packages/90/d8/ad405b9fafbba3e5543bc5dcd7dadf8c4954788f5072f7f360c8f2a5cccd/HuggingMouse-0.1.0.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-griptape]: Downloading https://files.pythonhosted.org/packages/a8/94/c582fcf1852a015859c0958026ee46f09741c8a27fc05dab54bf3946c159/composio_griptape-0.3.6.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240601/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-julep]: Downloading https://files.pythonhosted.org/packages/a9/aa/29ed9ffadd92cac72ec4b8aa6d87e75ad38083d8e6f705417e62909c12f9/composio_julep-0.3.6.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 05:23:34] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/66/fc/199fbb20ecca93bf97cf7b969b438ee9920467a4dca0d3f040908f635dfa/keras_nightly-3.3.3.dev2024053103.tar.gz
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-griptape]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-griptape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_griptape-0.3.5.tar.gz tmp/composio_griptape-0.3.6.tar.gz --markdown 20240601/c/composio-griptape/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-01 05:23:34] INFO root fetch - processPackages [nsanic]: Downloading https://files.pythonhosted.org/packages/3a/4c/ae445d6c58c97a6086f2d957cf29063c8edf241be00cb13d1fb88dbe7f6f/nsanic-2024.6.1-py3-none-any.whl
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-julep]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [composio-julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_julep-0.3.5.tar.gz tmp/composio_julep-0.3.6.tar.gz --markdown 20240601/c/composio-julep/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-01 05:23:34] INFO root fetch - processPackages [nsanic]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [nsanic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsanic-2024.5.30-py3-none-any.whl.zip tmp/nsanic-2024.6.1-py3-none-any.whl.zip --markdown 20240601/n/nsanic/2024.5.30-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 05:23:34] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024052903.tar.gz tmp/keras_nightly-3.3.3.dev2024053103.tar.gz --markdown 20240601/k/keras-nightly/3.3.3.dev2024052903-3.3.3.dev2024053103/README.md --exclude *.pyd
+[2024-06-01 05:23:34] INFO root fetch - processPackages [HuggingMouse]: executing diffoscope
+[2024-06-01 05:23:34] INFO root fetch - processPackages [HuggingMouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HuggingMouse-0.0.2.tar.gz tmp/HuggingMouse-0.1.0.tar.gz --markdown 20240601/H/HuggingMouse/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-06-01 05:23:35] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 05:23:35] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-06-01 05:23:35] INFO root fetch - processPackages [composio-griptape]: Remove: archive file [/home/abi/fetcher/tmp/composio_griptape-0.3.5.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - processPackages [composio-griptape]: Remove: archive file [/home/abi/fetcher/tmp/composio_griptape-0.3.6.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - main [MainThread]: End processing [composio-griptape]: success
+[2024-06-01 05:23:35] INFO root fetch - processPackages [composio-julep]: Remove: archive file [/home/abi/fetcher/tmp/composio_julep-0.3.5.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - processPackages [composio-julep]: Remove: archive file [/home/abi/fetcher/tmp/composio_julep-0.3.6.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - main [MainThread]: End processing [composio-julep]: success
+[2024-06-01 05:23:35] INFO root fetch - processPackages [nsanic]: Remove: archive file [/home/abi/fetcher/tmp/nsanic-2024.5.30-py3-none-any.whl.zip]
+[2024-06-01 05:23:35] INFO root fetch - processPackages [nsanic]: Remove: archive file [/home/abi/fetcher/tmp/nsanic-2024.6.1-py3-none-any.whl.zip]
+[2024-06-01 05:23:35] INFO root fetch - main [MainThread]: End processing [nsanic]: success
+[2024-06-01 05:23:35] INFO root fetch - processPackages [HuggingMouse]: Remove: archive file [/home/abi/fetcher/tmp/HuggingMouse-0.0.2.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - processPackages [HuggingMouse]: Remove: archive file [/home/abi/fetcher/tmp/HuggingMouse-0.1.0.tar.gz]
+[2024-06-01 05:23:35] INFO root fetch - main [MainThread]: End processing [HuggingMouse]: success
+[2024-06-01 05:23:37] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024052903.tar.gz]
+[2024-06-01 05:23:37] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024053103.tar.gz]
+[2024-06-01 05:23:37] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-06-01 05:23:37] INFO root fetch - main [MainThread]: Store serial: [23476920]
