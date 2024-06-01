@@ -17352,3 +17352,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:11:17] INFO root fetch - processPackages [consoleiotools]: Remove: archive file [/home/abi/fetcher/tmp/consoleiotools-4.6.9.tar.gz]
 [2024-06-01 16:11:17] INFO root fetch - main [MainThread]: End processing [consoleiotools]: success
 [2024-06-01 16:11:17] INFO root fetch - main [MainThread]: Store serial: [23480698]
+[2024-06-01 16:13:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480698]
+[2024-06-01 16:13:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 16:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neural-cherche
+[2024-06-01 16:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-bibtex
+[2024-06-01 16:13:26] INFO root fetch - processPackages [neural-cherche]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-06-01 16:13:26] INFO root fetch - processPackages [mkdocs-bibtex]: New version: [2.9.0] Old Version: [2.8.9]
+[2024-06-01 16:13:26] INFO root fetch - processPackages [neural-cherche]: Downloading https://files.pythonhosted.org/packages/43/a9/d80e896433575cdae04f7205ba71bbffb02b9c1a41ffce4c619547525390/neural_cherche-1.3.0.tar.gz
+[2024-06-01 16:13:26] INFO root fetch - processPackages [mkdocs-bibtex]: Downloading https://files.pythonhosted.org/packages/89/38/add60c2ab123f43e47511fab2b1c62ff400bc057f4022e8ee09b1d2b04d3/mkdocs-bibtex-2.8.9.tar.gz
+[2024-06-01 16:13:26] INFO root fetch - processPackages [neural-cherche]: Downloading https://files.pythonhosted.org/packages/62/f1/dcbe5cacf00b7e760c26fd5fccb072c84e85a1182ca98e2744d2c644c19b/neural_cherche-1.3.1.tar.gz
+[2024-06-01 16:13:26] INFO root fetch - processPackages [mkdocs-bibtex]: Downloading https://files.pythonhosted.org/packages/45/ce/ced07dc0831f7673c1b875eab10064ac756bd5f216b9ef03690dd0fa2466/mkdocs-bibtex-2.9.0.tar.gz
+[2024-06-01 16:13:26] INFO root fetch - processPackages [neural-cherche]: executing diffoscope
+[2024-06-01 16:13:26] INFO root fetch - processPackages [neural-cherche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural_cherche-1.3.0.tar.gz tmp/neural_cherche-1.3.1.tar.gz --markdown 20240601/n/neural-cherche/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-06-01 16:13:26] INFO root fetch - processPackages [mkdocs-bibtex]: executing diffoscope
+[2024-06-01 16:13:26] INFO root fetch - processPackages [mkdocs-bibtex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-bibtex-2.8.9.tar.gz tmp/mkdocs-bibtex-2.9.0.tar.gz --markdown 20240601/m/mkdocs-bibtex/2.8.9-2.9.0/README.md --exclude *.pyd
+[2024-06-01 16:13:27] INFO root fetch - processPackages [mkdocs-bibtex]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-bibtex-2.8.9.tar.gz]
+[2024-06-01 16:13:27] INFO root fetch - processPackages [mkdocs-bibtex]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-bibtex-2.9.0.tar.gz]
+[2024-06-01 16:13:27] INFO root fetch - main [MainThread]: End processing [mkdocs-bibtex]: success
+[2024-06-01 16:13:27] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.3.0.tar.gz]
+[2024-06-01 16:13:27] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.3.1.tar.gz]
+[2024-06-01 16:13:27] INFO root fetch - main [MainThread]: End processing [neural-cherche]: success
+[2024-06-01 16:13:27] INFO root fetch - main [MainThread]: Store serial: [23480703]
