@@ -17141,3 +17141,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:51:42] INFO root fetch - processPackages [pyrevolut]: Remove: archive file [/home/abi/fetcher/tmp/pyrevolut-0.7.0.tar.gz]
 [2024-06-01 15:51:42] INFO root fetch - main [MainThread]: End processing [pyrevolut]: success
 [2024-06-01 15:51:42] INFO root fetch - main [MainThread]: Store serial: [23480561]
+[2024-06-01 15:53:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480561]
+[2024-06-01 15:53:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-new-launcher
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corpus-distance
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: WGSE-NG
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ponytail-agents
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensordict-nightly
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: micropython-stubber
+[2024-06-01 15:53:52] INFO root fetch - processPackages [WGSE-NG]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ponytail-agents]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-01 15:53:52] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/3f/89/4634313fc70bf7ef0052fffe85999ab1d6691d3fd213d6b737894eb12b36/wgse_ng-1.0.0a8.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [jupyterlab-new-launcher]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ponytail-agents]: Downloading https://files.pythonhosted.org/packages/da/2f/1681b77cfeb199a51fcda5964f94ef931fd1b5df810884dc4ec4bc81a738/ponytail-agents-0.1.3.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [corpus-distance]: New version: [0.4.0] Old Version: [0.3.3]
+[2024-06-01 15:53:52] INFO root fetch - processPackages [micropython-stubber]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-06-01 15:53:52] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.6.1] Old Version: [2024.5.9]
+[2024-06-01 15:53:52] INFO root fetch - processPackages [jupyterlab-new-launcher]: Downloading https://files.pythonhosted.org/packages/b3/4d/7ff3a110f867c07cdd0fb3f4ca27ca2007b181ead90673ab2bb0b024c45b/jupyterlab_new_launcher-0.4.1.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [corpus-distance]: Downloading https://files.pythonhosted.org/packages/d3/53/aefaf72d7905ed72be44c2c729ff1d19436fed130a5488140ff497e300ee/corpus_distance-0.3.3.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/b9/28/e296d4b168e87aedf19b6cf0d7e65b1474a3da33b8e5314b4a04050bda78/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-06-01 15:53:52] INFO root fetch - processPackages [micropython-stubber]: Downloading https://files.pythonhosted.org/packages/78/3f/36b65004d4ff3b3a983296b517281cbf6d52fa8a89ec3b97c060670cf600/micropython-stubber-1.9.8.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ponytail-agents]: Downloading https://files.pythonhosted.org/packages/c3/74/c313284bab0f4dda7774546c68026f1a23af8f172cfc779ad5333ea4192b/ponytail-agents-0.1.4.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ponytail-agents]: executing diffoscope
+[2024-06-01 15:53:52] INFO root fetch - processPackages [ponytail-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ponytail-agents-0.1.3.tar.gz tmp/ponytail-agents-0.1.4.tar.gz --markdown 20240601/p/ponytail-agents/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-01 15:53:52] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/15/4d/c9a515b0210f4f91d2909606ff889cc50487c3b067db9e503da7075956bb/wgse_ng-1.0.0a9.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [jupyterlab-new-launcher]: Downloading https://files.pythonhosted.org/packages/ee/e9/48f68efb9707d13f08c2ac102d9bf1ca74ea2d2b7b8156fd9e341f657307/jupyterlab_new_launcher-0.4.2.tar.gz
+[2024-06-01 15:53:52] INFO root fetch - processPackages [corpus-distance]: Downloading https://files.pythonhosted.org/packages/81/ad/3a2b8eceafbc224b220f352cc1b201a651f73f9cb691c1957afb113780d0/corpus_distance-0.4.0.tar.gz
+[2024-06-01 15:53:53] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/2e/6b/ab6fa663e359113b0c38639d575e7f02268501955aa622f2743cd0dc57fd/tensordict_nightly-2024.6.1-cp39-cp39-manylinux1_x86_64.whl
+[2024-06-01 15:53:53] INFO root fetch - processPackages [WGSE-NG]: executing diffoscope
+[2024-06-01 15:53:53] INFO root fetch - processPackages [WGSE-NG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgse_ng-1.0.0a8.tar.gz tmp/wgse_ng-1.0.0a9.tar.gz --markdown 20240601/W/WGSE-NG/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-06-01 15:53:53] INFO root fetch - processPackages [jupyterlab-new-launcher]: executing diffoscope
+[2024-06-01 15:53:53] INFO root fetch - processPackages [jupyterlab-new-launcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_new_launcher-0.4.1.tar.gz tmp/jupyterlab_new_launcher-0.4.2.tar.gz --markdown 20240601/j/jupyterlab-new-launcher/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-06-01 15:53:53] INFO root fetch - processPackages [corpus-distance]: executing diffoscope
+[2024-06-01 15:53:53] INFO root fetch - processPackages [corpus-distance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corpus_distance-0.3.3.tar.gz tmp/corpus_distance-0.4.0.tar.gz --markdown 20240601/c/corpus-distance/0.3.3-0.4.0/README.md --exclude *.pyd
+[2024-06-01 15:53:53] INFO root fetch - processPackages [micropython-stubber]: Downloading https://files.pythonhosted.org/packages/f2/43/e24fd55adda5672bfe5f6565a85bd6107e3d9a9339070e65d7a2e4fc652f/micropython-stubber-1.9.9.tar.gz
+[2024-06-01 15:53:53] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-06-01 15:53:53] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.6.1-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240601/t/tensordict-nightly/2024.5.9-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 15:53:53] INFO root fetch - processPackages [micropython-stubber]: executing diffoscope
+[2024-06-01 15:53:53] INFO root fetch - processPackages [micropython-stubber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython-stubber-1.9.8.tar.gz tmp/micropython-stubber-1.9.9.tar.gz --markdown 20240601/m/micropython-stubber/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-06-01 15:53:54] INFO root fetch - processPackages [corpus-distance]: Remove: archive file [/home/abi/fetcher/tmp/corpus_distance-0.3.3.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - processPackages [corpus-distance]: Remove: archive file [/home/abi/fetcher/tmp/corpus_distance-0.4.0.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [corpus-distance]: success
+[2024-06-01 15:53:54] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.3.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.4.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [ponytail-agents]: success
+[2024-06-01 15:53:54] INFO root fetch - processPackages [micropython-stubber]: Remove: archive file [/home/abi/fetcher/tmp/micropython-stubber-1.9.8.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - processPackages [micropython-stubber]: Remove: archive file [/home/abi/fetcher/tmp/micropython-stubber-1.9.9.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [micropython-stubber]: success
+[2024-06-01 15:53:54] INFO root fetch - processPackages [jupyterlab-new-launcher]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_new_launcher-0.4.1.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - processPackages [jupyterlab-new-launcher]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_new_launcher-0.4.2.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [jupyterlab-new-launcher]: success
+[2024-06-01 15:53:54] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 15:53:54] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.6.1-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-06-01 15:53:54] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a8.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a9.tar.gz]
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
+[2024-06-01 15:53:54] INFO root fetch - main [MainThread]: Store serial: [23480583]
