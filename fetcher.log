@@ -23485,3 +23485,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:22:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.8.tar.gz]
 [2024-06-01 23:22:42] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-01 23:22:42] INFO root fetch - main [MainThread]: Store serial: [23483781]
+[2024-06-01 23:24:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483781]
+[2024-06-01 23:24:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 23:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: civitdl
+[2024-06-01 23:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g3t-etl
+[2024-06-01 23:24:53] INFO root fetch - processPackages [civitdl]: New version: [2.1.0.dev3] Old Version: [2.1.0.dev2]
+[2024-06-01 23:24:53] INFO root fetch - processPackages [civitdl]: Downloading https://files.pythonhosted.org/packages/4f/dc/9b2615763346a0b6a85c13f805d7bc79a50c5d439e3ca621dbd71e303f3f/civitdl-2.1.0.dev2.tar.gz
+[2024-06-01 23:24:53] INFO root fetch - processPackages [g3t-etl]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2024-06-01 23:24:53] INFO root fetch - processPackages [civitdl]: Downloading https://files.pythonhosted.org/packages/44/3d/89d3e64f9805e34971d1fccc36d81f857ee68da872586260a8a055892a49/civitdl-2.1.0.dev3.tar.gz
+[2024-06-01 23:24:53] INFO root fetch - processPackages [g3t-etl]: Downloading https://files.pythonhosted.org/packages/32/76/ce754bc779c5eb463388d6d3d859d8030ffe935deff79ad257ffa8e9936d/g3t-etl-0.0.1rc8.tar.gz
+[2024-06-01 23:24:53] INFO root fetch - processPackages [civitdl]: executing diffoscope
+[2024-06-01 23:24:53] INFO root fetch - processPackages [civitdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/civitdl-2.1.0.dev2.tar.gz tmp/civitdl-2.1.0.dev3.tar.gz --markdown 20240601/c/civitdl/2.1.0.dev2-2.1.0.dev3/README.md --exclude *.pyd
+[2024-06-01 23:24:54] INFO root fetch - processPackages [g3t-etl]: Downloading https://files.pythonhosted.org/packages/df/bc/27dfb5d518ea6fd10642d599897af4dba0279179a2fe8f02957b8deab299/g3t-etl-0.0.1rc9.tar.gz
+[2024-06-01 23:24:54] INFO root fetch - processPackages [g3t-etl]: executing diffoscope
+[2024-06-01 23:24:54] INFO root fetch - processPackages [g3t-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g3t-etl-0.0.1rc8.tar.gz tmp/g3t-etl-0.0.1rc9.tar.gz --markdown 20240601/g/g3t-etl/0.0.1rc8-0.0.1rc9/README.md --exclude *.pyd
+[2024-06-01 23:24:54] INFO root fetch - processPackages [civitdl]: Remove: archive file [/home/abi/fetcher/tmp/civitdl-2.1.0.dev2.tar.gz]
+[2024-06-01 23:24:54] INFO root fetch - processPackages [civitdl]: Remove: archive file [/home/abi/fetcher/tmp/civitdl-2.1.0.dev3.tar.gz]
+[2024-06-01 23:24:54] INFO root fetch - main [MainThread]: End processing [civitdl]: success
+[2024-06-01 23:24:54] INFO root fetch - processPackages [g3t-etl]: Remove: archive file [/home/abi/fetcher/tmp/g3t-etl-0.0.1rc8.tar.gz]
+[2024-06-01 23:24:54] INFO root fetch - processPackages [g3t-etl]: Remove: archive file [/home/abi/fetcher/tmp/g3t-etl-0.0.1rc9.tar.gz]
+[2024-06-01 23:24:54] INFO root fetch - main [MainThread]: End processing [g3t-etl]: success
+[2024-06-01 23:24:54] INFO root fetch - main [MainThread]: Store serial: [23483788]
