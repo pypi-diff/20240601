@@ -16827,3 +16827,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:29:57] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
 [2024-06-01 15:29:57] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
 [2024-06-01 15:29:57] INFO root fetch - main [MainThread]: Store serial: [23480428]
+[2024-06-01 15:32:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480428]
+[2024-06-01 15:32:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 15:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-orange-book-theme
+[2024-06-01 15:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: commonX
+[2024-06-01 15:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: state-graph
+[2024-06-01 15:32:06] INFO root fetch - processPackages [state-graph]: New version: [0.1.2.4] Old Version: [0.1.2.3]
+[2024-06-01 15:32:06] INFO root fetch - processPackages [sphinx-orange-book-theme]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 15:32:06] INFO root fetch - processPackages [sphinx-orange-book-theme]: Downloading https://files.pythonhosted.org/packages/bb/24/c6c68f4bc3042f8a3346166071d710d939f31866f6a93de13aa5fd8820cd/sphinx_orange_book_theme-0.8.0.tar.gz
+[2024-06-01 15:32:06] INFO root fetch - processPackages [commonX]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-06-01 15:32:06] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/d1/3c/c7c0ac8b905b7e48bab5c0198036b0531623123df1df753b4dd87fbc9f3f/state_graph-0.1.2.3.tar.gz
+[2024-06-01 15:32:06] INFO root fetch - processPackages [sphinx-orange-book-theme]: Downloading https://files.pythonhosted.org/packages/73/4f/e5802a07a5cc06aabf412d841ff858fdedbf50438085d166513b3e3b07fe/sphinx_orange_book_theme-0.9.0.tar.gz
+[2024-06-01 15:32:06] INFO root fetch - processPackages [commonX]: Downloading https://files.pythonhosted.org/packages/93/06/b016f34f2917fd0f6f455ca31a9a51d500bed0d9f9a3ef5b0347a1e20987/commonX-0.6.8.tar.gz
+[2024-06-01 15:32:07] INFO root fetch - processPackages [sphinx-orange-book-theme]: executing diffoscope
+[2024-06-01 15:32:07] INFO root fetch - processPackages [sphinx-orange-book-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_orange_book_theme-0.8.0.tar.gz tmp/sphinx_orange_book_theme-0.9.0.tar.gz --markdown 20240601/s/sphinx-orange-book-theme/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 15:32:07] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/17/1c/82aa890e54b1b444c0aebaa31af459ce06f81691968c59d505f53b9f824e/state_graph-0.1.2.4.tar.gz
+[2024-06-01 15:32:07] INFO root fetch - processPackages [state-graph]: executing diffoscope
+[2024-06-01 15:32:07] INFO root fetch - processPackages [state-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state_graph-0.1.2.3.tar.gz tmp/state_graph-0.1.2.4.tar.gz --markdown 20240601/s/state-graph/0.1.2.3-0.1.2.4/README.md --exclude *.pyd
+[2024-06-01 15:32:07] INFO root fetch - processPackages [commonX]: Downloading https://files.pythonhosted.org/packages/22/5b/23b2f1d395988d177c31fc017d1e8270f793cd05333223e1cc122cdd9025/commonX-0.6.9.tar.gz
+[2024-06-01 15:32:07] INFO root fetch - processPackages [commonX]: executing diffoscope
+[2024-06-01 15:32:07] INFO root fetch - processPackages [commonX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commonX-0.6.8.tar.gz tmp/commonX-0.6.9.tar.gz --markdown 20240601/c/commonX/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-06-01 15:32:07] INFO root fetch - processPackages [sphinx-orange-book-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_orange_book_theme-0.8.0.tar.gz]
+[2024-06-01 15:32:07] INFO root fetch - processPackages [sphinx-orange-book-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_orange_book_theme-0.9.0.tar.gz]
+[2024-06-01 15:32:07] INFO root fetch - main [MainThread]: End processing [sphinx-orange-book-theme]: success
+[2024-06-01 15:32:07] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.2.3.tar.gz]
+[2024-06-01 15:32:07] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.2.4.tar.gz]
+[2024-06-01 15:32:07] INFO root fetch - main [MainThread]: End processing [state-graph]: success
+[2024-06-01 15:32:07] INFO root fetch - processPackages [commonX]: Remove: archive file [/home/abi/fetcher/tmp/commonX-0.6.8.tar.gz]
+[2024-06-01 15:32:07] INFO root fetch - processPackages [commonX]: Remove: archive file [/home/abi/fetcher/tmp/commonX-0.6.9.tar.gz]
+[2024-06-01 15:32:07] INFO root fetch - main [MainThread]: End processing [commonX]: success
+[2024-06-01 15:32:07] INFO root fetch - main [MainThread]: Store serial: [23480438]
