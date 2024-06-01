@@ -10953,3 +10953,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:41:25] INFO root fetch - processPackages [ai-edge-torch-nightly]: Remove: archive file [/home/abi/fetcher/tmp/ai_edge_torch_nightly-0.2.0.dev20240531-py3-none-any.whl.zip]
 [2024-06-01 07:41:25] INFO root fetch - main [MainThread]: End processing [ai-edge-torch-nightly]: success
 [2024-06-01 07:41:25] INFO root fetch - main [MainThread]: Store serial: [23477615]
+[2024-06-01 07:43:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477615]
+[2024-06-01 07:43:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 07:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awesome-systematic-trading
+[2024-06-01 07:43:34] WARNING root fetch - processPackages [awesome-systematic-trading]: Skipping, unable to determine old version
+[2024-06-01 07:43:34] INFO root fetch - main [MainThread]: End processing [awesome-systematic-trading] error
+[2024-06-01 07:43:34] INFO root fetch - main [MainThread]: Store serial: [23477620]
