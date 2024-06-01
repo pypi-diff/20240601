@@ -14209,3 +14209,55 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:13:36] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.3.tar.gz]
 [2024-06-01 12:13:36] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 12:13:36] INFO root fetch - main [MainThread]: Store serial: [23479270]
+[2024-06-01 12:15:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479270]
+[2024-06-01 12:15:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IDswapper
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simevopy
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: WinDirectInput
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: upstox-wrapper
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: WinDirectInput
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: protloc-mex1
+[2024-06-01 12:15:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: toufu
+[2024-06-01 12:15:45] INFO root fetch - processPackages [IDswapper]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 12:15:45] INFO root fetch - processPackages [protloc-mex1]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-06-01 12:15:45] WARNING root fetch - processPackages [upstox-wrapper]: Skipping, unable to determine old version
+[2024-06-01 12:15:45] INFO root fetch - main [MainThread]: End processing [upstox-wrapper] error
+[2024-06-01 12:15:45] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/b8/7f/dc9e0ab064ce7f68cc4956176ccc5663f67f2e7cd1742aaaef4e826febac/idswapper-0.0.2.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [simevopy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 12:15:45] WARNING root fetch - processPackages [toufu]: Skipping, unable to determine old version
+[2024-06-01 12:15:45] INFO root fetch - main [MainThread]: End processing [toufu] error
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: Downloading https://files.pythonhosted.org/packages/ad/e6/4ddcbc6519d99d72a853be7858cf7811b9dba6baf8808d48fc3fbc1afa96/WinDirectInput-1.1.0.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: Downloading https://files.pythonhosted.org/packages/ad/e6/4ddcbc6519d99d72a853be7858cf7811b9dba6baf8808d48fc3fbc1afa96/WinDirectInput-1.1.0.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [protloc-mex1]: Downloading https://files.pythonhosted.org/packages/f1/a6/b12a1d269d5bdf4475b5466ebbe2ad69d3f3521620e4e11b9debbfd08d62/protloc_mex1-0.0.8.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [simevopy]: Downloading https://files.pythonhosted.org/packages/a7/95/7b73e01221c239dbb21ad69e6e31e4bf710b1f289bd7cdb74c540f13b0c6/simevopy-0.1.8.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: Downloading https://files.pythonhosted.org/packages/27/fa/d844293015485b5abc9da7931cd7980b09a229b0982f8e4c72d8066c5a00/WinDirectInput-1.2.0.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/ce/b2/09193cf07f6533700002fb5c5fb46aca758532bd0dc90c00ae60af3b552d/idswapper-0.0.3.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: Downloading https://files.pythonhosted.org/packages/27/fa/d844293015485b5abc9da7931cd7980b09a229b0982f8e4c72d8066c5a00/WinDirectInput-1.2.0.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: executing diffoscope
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WinDirectInput-1.1.0.tar.gz tmp/WinDirectInput-1.2.0.tar.gz --markdown 20240601/W/WinDirectInput/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-06-01 12:15:45] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 12:15:45] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.2.tar.gz tmp/idswapper-0.0.3.tar.gz --markdown 20240601/I/IDswapper/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: executing diffoscope
+[2024-06-01 12:15:45] INFO root fetch - processPackages [WinDirectInput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WinDirectInput-1.1.0.tar.gz tmp/WinDirectInput-1.2.0.tar.gz --markdown 20240601/W/WinDirectInput/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-06-01 12:15:45] INFO root fetch - processPackages [simevopy]: Downloading https://files.pythonhosted.org/packages/22/53/31d63eb0aba745235ab86e254349ffc473dcf70538f3ab35a99fc2cf58ed/simevopy-0.1.9.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [protloc-mex1]: Downloading https://files.pythonhosted.org/packages/b1/ec/42aec6951104a9842e9ff6d86fc2cc4b4cce8658effe452817ca74f55dfe/protloc_mex1-0.0.9.tar.gz
+[2024-06-01 12:15:45] INFO root fetch - processPackages [protloc-mex1]: executing diffoscope
+[2024-06-01 12:15:45] INFO root fetch - processPackages [protloc-mex1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protloc_mex1-0.0.8.tar.gz tmp/protloc_mex1-0.0.9.tar.gz --markdown 20240601/p/protloc-mex1/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 12:15:45] INFO root fetch - processPackages [simevopy]: executing diffoscope
+[2024-06-01 12:15:45] INFO root fetch - processPackages [simevopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simevopy-0.1.8.tar.gz tmp/simevopy-0.1.9.tar.gz --markdown 20240601/s/simevopy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 12:15:46] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.2.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.3.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 12:15:46] INFO root fetch - processPackages [WinDirectInput]: Remove: archive file [/home/abi/fetcher/tmp/WinDirectInput-1.1.0.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - processPackages [WinDirectInput]: Remove: archive file [/home/abi/fetcher/tmp/WinDirectInput-1.2.0.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - main [MainThread]: End processing [WinDirectInput]: success
+[2024-06-01 12:15:46] INFO root fetch - main [MainThread]: End processing [WinDirectInput]: success
+[2024-06-01 12:15:46] INFO root fetch - processPackages [protloc-mex1]: Remove: archive file [/home/abi/fetcher/tmp/protloc_mex1-0.0.8.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - processPackages [protloc-mex1]: Remove: archive file [/home/abi/fetcher/tmp/protloc_mex1-0.0.9.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - main [MainThread]: End processing [protloc-mex1]: success
+[2024-06-01 12:15:46] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.8.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.9.tar.gz]
+[2024-06-01 12:15:46] INFO root fetch - main [MainThread]: End processing [simevopy]: success
+[2024-06-01 12:15:46] INFO root fetch - main [MainThread]: Store serial: [23479294]
