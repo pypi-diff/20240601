@@ -19578,3 +19578,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:38:56] INFO root fetch - processPackages [sh]: Remove: archive file [/home/abi/fetcher/tmp/sh-2.0.7.tar.gz]
 [2024-06-01 18:38:56] INFO root fetch - main [MainThread]: End processing [sh]: success
 [2024-06-01 18:38:56] INFO root fetch - main [MainThread]: Store serial: [23481823]
+[2024-06-01 18:41:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481823]
+[2024-06-01 18:41:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lb-authorization
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atpbar
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ok-script
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: breadslicer
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-06-01 18:41:06] WARNING root fetch - processPackages [lb-authorization]: Skipping, unable to determine old version
+[2024-06-01 18:41:06] INFO root fetch - main [MainThread]: End processing [lb-authorization] error
+[2024-06-01 18:41:06] INFO root fetch - processPackages [atpbar]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-06-01 18:41:06] WARNING root fetch - processPackages [breadslicer]: Skipping, unable to determine old version
+[2024-06-01 18:41:06] INFO root fetch - main [MainThread]: End processing [breadslicer] error
+[2024-06-01 18:41:06] INFO root fetch - processPackages [atpbar]: Downloading https://files.pythonhosted.org/packages/cb/1b/6acc8cb4cab1c86921427848e2edf3be851d0380a3756f6920449cf35112/atpbar-2.0.1.tar.gz
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-06-01 18:41:06] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240601/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 18:41:06] INFO root fetch - processPackages [atpbar]: Downloading https://files.pythonhosted.org/packages/7d/44/14ce5050cbb34d3b1f433140f93bd1e8b73eea49064c31252cf42d4df9c3/atpbar-2.0.2.tar.gz
+[2024-06-01 18:41:06] INFO root fetch - processPackages [atpbar]: executing diffoscope
+[2024-06-01 18:41:06] INFO root fetch - processPackages [atpbar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atpbar-2.0.1.tar.gz tmp/atpbar-2.0.2.tar.gz --markdown 20240601/a/atpbar/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-06-01 18:41:07] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-06-01 18:41:07] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-06-01 18:41:07] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-06-01 18:41:07] INFO root fetch - processPackages [atpbar]: Remove: archive file [/home/abi/fetcher/tmp/atpbar-2.0.1.tar.gz]
+[2024-06-01 18:41:07] INFO root fetch - processPackages [atpbar]: Remove: archive file [/home/abi/fetcher/tmp/atpbar-2.0.2.tar.gz]
+[2024-06-01 18:41:07] INFO root fetch - main [MainThread]: End processing [atpbar]: success
+[2024-06-01 18:41:07] INFO root fetch - main [MainThread]: Store serial: [23481839]
