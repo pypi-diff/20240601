@@ -13027,3 +13027,30 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:35:10] INFO root fetch - processPackages [chiecthuyenngoaixa]: Remove: archive file [/home/abi/fetcher/tmp/chiecthuyenngoaixa-0.2.1.tar.gz]
 [2024-06-01 10:35:10] INFO root fetch - main [MainThread]: End processing [chiecthuyenngoaixa]: success
 [2024-06-01 10:35:10] INFO root fetch - main [MainThread]: Store serial: [23478666]
+[2024-06-01 10:37:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478666]
+[2024-06-01 10:37:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 10:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Text-select-captcha
+[2024-06-01 10:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Titan-pro
+[2024-06-01 10:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvchecker
+[2024-06-01 10:37:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Crackerjack
+[2024-06-01 10:37:19] WARNING root fetch - processPackages [Titan-pro]: Skipping, unable to determine old version
+[2024-06-01 10:37:19] INFO root fetch - main [MainThread]: End processing [Titan-pro] error
+[2024-06-01 10:37:19] INFO root fetch - processPackages [nvchecker]: New version: [2.9] Old Version: [2.8.post1]
+[2024-06-01 10:37:19] WARNING root fetch - processPackages [Text-select-captcha]: Skipping, unable to determine old version
+[2024-06-01 10:37:19] INFO root fetch - main [MainThread]: End processing [Text-select-captcha] error
+[2024-06-01 10:37:19] INFO root fetch - processPackages [Crackerjack]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-06-01 10:37:19] INFO root fetch - processPackages [nvchecker]: Downloading https://files.pythonhosted.org/packages/7a/c0/61b7c2dab2e9d3526d8542ccab27577cf82fa5c4534ce661740dd2670beb/nvchecker-2.8.post1.tar.gz
+[2024-06-01 10:37:19] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/a7/40/682dbf1a6b1f3d3ad06a2cdda255b0e2c3c5397a8830e62ede4c0dd7a9ae/crackerjack-0.7.8.tar.gz
+[2024-06-01 10:37:19] INFO root fetch - processPackages [nvchecker]: Downloading https://files.pythonhosted.org/packages/c2/71/13c7c02602489b6187aca3bf833f577afc1e10501a3b394f8de5cf4f6ccb/nvchecker-2.9.tar.gz
+[2024-06-01 10:37:19] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/c5/75/3568b19058277b8cd82499102cf3be7570336f14e93bacedeb931e7e18cd/crackerjack-0.7.9.tar.gz
+[2024-06-01 10:37:19] INFO root fetch - processPackages [nvchecker]: executing diffoscope
+[2024-06-01 10:37:19] INFO root fetch - processPackages [nvchecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvchecker-2.8.post1.tar.gz tmp/nvchecker-2.9.tar.gz --markdown 20240601/n/nvchecker/2.8.post1-2.9/README.md --exclude *.pyd
+[2024-06-01 10:37:20] INFO root fetch - processPackages [Crackerjack]: executing diffoscope
+[2024-06-01 10:37:20] INFO root fetch - processPackages [Crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.7.8.tar.gz tmp/crackerjack-0.7.9.tar.gz --markdown 20240601/C/Crackerjack/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-06-01 10:37:20] INFO root fetch - processPackages [nvchecker]: Remove: archive file [/home/abi/fetcher/tmp/nvchecker-2.8.post1.tar.gz]
+[2024-06-01 10:37:20] INFO root fetch - processPackages [nvchecker]: Remove: archive file [/home/abi/fetcher/tmp/nvchecker-2.9.tar.gz]
+[2024-06-01 10:37:20] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.8.tar.gz]
+[2024-06-01 10:37:20] INFO root fetch - main [MainThread]: End processing [nvchecker]: success
+[2024-06-01 10:37:20] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
+[2024-06-01 10:37:20] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
+[2024-06-01 10:37:20] INFO root fetch - main [MainThread]: Store serial: [23478682]
