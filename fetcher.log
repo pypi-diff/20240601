@@ -16423,3 +16423,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:00:44] INFO root fetch - processPackages [heflwr]: Remove: archive file [/home/abi/fetcher/tmp/heflwr-0.1.6.tar.gz]
 [2024-06-01 15:00:44] INFO root fetch - main [MainThread]: End processing [heflwr]: success
 [2024-06-01 15:00:44] INFO root fetch - main [MainThread]: Store serial: [23480237]
+[2024-06-01 15:02:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480237]
+[2024-06-01 15:02:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 15:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: barcode-decoder
+[2024-06-01 15:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpbox
+[2024-06-01 15:02:52] INFO root fetch - processPackages [cpbox]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-06-01 15:02:52] INFO root fetch - processPackages [cpbox]: Downloading https://files.pythonhosted.org/packages/75/45/6ef0840c825ee7eb4ee3c2a9dee66074c07fb51beb612a5fff2307522d68/cpbox-1.5.8.tar.gz
+[2024-06-01 15:02:52] WARNING root fetch - processPackages [barcode-decoder]: Skipping, unable to determine old version
+[2024-06-01 15:02:52] INFO root fetch - main [MainThread]: End processing [barcode-decoder] error
+[2024-06-01 15:02:53] INFO root fetch - processPackages [cpbox]: Downloading https://files.pythonhosted.org/packages/41/1f/22d862402c9d4ab0eb4bc5ae216b82bff08b3fecf249b4f1b564e7a92a4f/cpbox-1.5.9.tar.gz
+[2024-06-01 15:02:53] INFO root fetch - processPackages [cpbox]: executing diffoscope
+[2024-06-01 15:02:53] INFO root fetch - processPackages [cpbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpbox-1.5.8.tar.gz tmp/cpbox-1.5.9.tar.gz --markdown 20240601/c/cpbox/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-06-01 15:02:53] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.8.tar.gz]
+[2024-06-01 15:02:53] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.9.tar.gz]
+[2024-06-01 15:02:53] INFO root fetch - main [MainThread]: End processing [cpbox]: success
+[2024-06-01 15:02:53] INFO root fetch - main [MainThread]: Store serial: [23480243]
