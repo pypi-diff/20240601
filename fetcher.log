@@ -8207,3 +8207,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:15:03] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.22.tar.gz]
 [2024-06-01 04:15:03] INFO root fetch - main [MainThread]: End processing [SkiBiDi-ORM]: success
 [2024-06-01 04:15:03] INFO root fetch - main [MainThread]: Store serial: [23476352]
+[2024-06-01 04:17:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476352]
+[2024-06-01 04:17:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 04:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emu-data-loader
+[2024-06-01 04:17:11] WARNING root fetch - processPackages [emu-data-loader]: Skipping, unable to determine old version
+[2024-06-01 04:17:11] INFO root fetch - main [MainThread]: End processing [emu-data-loader] error
+[2024-06-01 04:17:11] INFO root fetch - main [MainThread]: Store serial: [23476355]
