@@ -14147,3 +14147,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:05:02] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.2.tar.gz]
 [2024-06-01 12:05:02] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
 [2024-06-01 12:05:02] INFO root fetch - main [MainThread]: Store serial: [23479233]
+[2024-06-01 12:07:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479233]
+[2024-06-01 12:07:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 12:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IDswapper
+[2024-06-01 12:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protloc_mex_X
+[2024-06-01 12:07:11] INFO root fetch - processPackages [protloc_mex_X]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 12:07:11] INFO root fetch - processPackages [IDswapper]: New version: [1.0] Old Version: [0.0.2]
+[2024-06-01 12:07:11] INFO root fetch - processPackages [protloc_mex_X]: Downloading https://files.pythonhosted.org/packages/e9/17/3a4447588c6f69c4fa79ba5bbfafc33a219fb0e3ec5805530f23bc6d9d96/protloc_mex_x-0.0.8.tar.gz
+[2024-06-01 12:07:11] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/b8/7f/dc9e0ab064ce7f68cc4956176ccc5663f67f2e7cd1742aaaef4e826febac/idswapper-0.0.2.tar.gz
+[2024-06-01 12:07:11] INFO root fetch - processPackages [protloc_mex_X]: Downloading https://files.pythonhosted.org/packages/67/3a/dbc6fea60d0e376c4a868cdd0f3784bcc284901fc9c86ef4bbf3fc53e893/protloc_mex_x-0.0.9.tar.gz
+[2024-06-01 12:07:11] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/1a/5e/244e9576fa5bb0e85a482d1f4ddfd1bf8331f6a341535a549db62818c1ef/idswapper-1.0.tar.gz
+[2024-06-01 12:07:11] INFO root fetch - processPackages [protloc_mex_X]: executing diffoscope
+[2024-06-01 12:07:11] INFO root fetch - processPackages [protloc_mex_X]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protloc_mex_x-0.0.8.tar.gz tmp/protloc_mex_x-0.0.9.tar.gz --markdown 20240601/p/protloc_mex_X/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 12:07:12] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 12:07:12] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.2.tar.gz tmp/idswapper-1.0.tar.gz --markdown 20240601/I/IDswapper/0.0.2-1.0/README.md --exclude *.pyd
+[2024-06-01 12:07:12] INFO root fetch - processPackages [protloc_mex_X]: Remove: archive file [/home/abi/fetcher/tmp/protloc_mex_x-0.0.8.tar.gz]
+[2024-06-01 12:07:12] INFO root fetch - processPackages [protloc_mex_X]: Remove: archive file [/home/abi/fetcher/tmp/protloc_mex_x-0.0.9.tar.gz]
+[2024-06-01 12:07:12] INFO root fetch - main [MainThread]: End processing [protloc_mex_X]: success
+[2024-06-01 12:07:12] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.2.tar.gz]
+[2024-06-01 12:07:12] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-1.0.tar.gz]
+[2024-06-01 12:07:12] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 12:07:12] INFO root fetch - main [MainThread]: Store serial: [23479248]
