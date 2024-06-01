@@ -13363,3 +13363,72 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:03:47] INFO root fetch - processPackages [neural-insights]: Remove: archive file [/home/abi/fetcher/tmp/neural_insights-2.5.1.tar.gz]
 [2024-06-01 11:03:47] INFO root fetch - main [MainThread]: End processing [neural-insights]: success
 [2024-06-01 11:03:47] INFO root fetch - main [MainThread]: Store serial: [23478883]
+[2024-06-01 11:05:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478883]
+[2024-06-01 11:05:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kozmo-ai
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.common
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.core
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.features
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autogluon.tabular
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chatmemoryc
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rencrypt
+[2024-06-01 11:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.multimodal
+[2024-06-01 11:05:56] INFO root fetch - processPackages [rencrypt]: New version: [0.1.5] Old Version: [0.1.0]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [chatmemoryc]: New version: [0.1.4rc4] Old Version: [0.1.4rc3]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [chatmemoryc]: Downloading https://files.pythonhosted.org/packages/59/7e/2657ea5a3eb17f8773b2b39a7c58d0da9b73d4855ffe38264c62e869e33b/chatmemoryc-0.1.4rc3.tar.gz
+[2024-06-01 11:05:56] WARNING root fetch - processPackages [kozmo-ai]: Skipping, unable to determine old version
+[2024-06-01 11:05:56] INFO root fetch - main [MainThread]: End processing [kozmo-ai] error
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.features]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.multimodal]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/22/f7/7b970310bf56f172d1b3fefe59be455ea1214f1594e7e28a10c70feb0078/REncrypt-0.1.0.tar.gz
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.tabular]: New version: [1.1.1b20240601] Old Version: [1.1.1b20240530]
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/ec/6a/c11ccac3d6865340b503c763a602bfac6caac6c88f87d783a81ee823ab09/autogluon.features-1.1.1b20240530.tar.gz
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/90/a8/f533a2e164651fe08699ca0fbba60fbd571af5994332d0f85b2c2160943d/autogluon.common-1.1.1b20240530.tar.gz
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/66/cd/b9259e47b9f1e4022ad0c8377397d7f128ed2ae68614732117baf283401b/autogluon.multimodal-1.1.1b20240530.tar.gz
+[2024-06-01 11:05:56] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/f5/58/3462d18d784bbd589cf45113a7cf75b6c8c9b703b1858c9d26f4728a4ee8/autogluon.core-1.1.1b20240530.tar.gz
+[2024-06-01 11:05:56] INFO root fetch - processPackages [chatmemoryc]: Downloading https://files.pythonhosted.org/packages/c3/26/a505dcd72e2a4118d4098ef9641055b48ba80190bf8c42ba39d5095e83d5/chatmemoryc-0.1.4rc4.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/1c/66/6a99b7502799b50adbd85f71f6f3da08734a8ee0bebd493e17504de61552/autogluon.tabular-1.1.1b20240530.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/5e/dc/b73dad6da0bc332be54767905c464cbf3a382d66f714599a7d3ca2393d88/REncrypt-0.1.5.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [chatmemoryc]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [chatmemoryc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatmemoryc-0.1.4rc3.tar.gz tmp/chatmemoryc-0.1.4rc4.tar.gz --markdown 20240601/c/chatmemoryc/0.1.4rc3-0.1.4rc4/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/04/77/5f74813d1a95f1936a655e5ccf894fc1dd5ffad3aa11ffd419ad61f2d79a/autogluon.common-1.1.1b20240601.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/bd/98/1fb218e669bf09a2b74d6b02109d50e2752600304ed9643563adc2bdceaf/autogluon.features-1.1.1b20240601.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/3c/21/5f6c23a33db1a80cf109208066c2fba8cb608b1d3f44b0f229ee8ff21c47/autogluon.multimodal-1.1.1b20240601.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/44/62/edc25164f364859329968587f5b97c184c34126d86a2765e0387d04d9fa2/autogluon.core-1.1.1b20240601.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240530.tar.gz tmp/autogluon.common-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon.common/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/38/f5/edcc070f8348049c47c801963f4d7c635a69dc6bb8398af2c29874f2edf9/autogluon.tabular-1.1.1b20240601.tar.gz
+[2024-06-01 11:05:57] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.0.tar.gz tmp/REncrypt-0.1.5.tar.gz --markdown 20240601/r/rencrypt/0.1.0-0.1.5/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240530.tar.gz tmp/autogluon.core-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon.core/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-1.1.1b20240530.tar.gz tmp/autogluon.features-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon.features/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-1.1.1b20240530.tar.gz tmp/autogluon.multimodal-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon.multimodal/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc3.tar.gz]
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2024-06-01 11:05:57] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc4.tar.gz]
+[2024-06-01 11:05:57] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-1.1.1b20240530.tar.gz tmp/autogluon.tabular-1.1.1b20240601.tar.gz --markdown 20240601/a/autogluon.tabular/1.1.1b20240530-1.1.1b20240601/README.md --exclude *.pyd
+[2024-06-01 11:05:57] INFO root fetch - main [MainThread]: End processing [chatmemoryc]: success
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240530.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240601.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240530.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240601.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240530.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240601.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240530.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240601.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240530.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240601.tar.gz]
+[2024-06-01 11:05:58] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2024-06-01 11:05:59] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.0.tar.gz]
+[2024-06-01 11:05:59] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.5.tar.gz]
+[2024-06-01 11:05:59] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-01 11:05:59] INFO root fetch - main [MainThread]: Store serial: [23478909]
