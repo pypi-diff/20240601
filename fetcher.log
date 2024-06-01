@@ -22976,3 +22976,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:43:02] INFO root fetch - processPackages [dspy-ai]: Remove: archive file [/home/abi/fetcher/tmp/dspy_ai-2.5.0rc3.tar.gz]
 [2024-06-01 22:43:02] INFO root fetch - main [MainThread]: End processing [dspy-ai]: success
 [2024-06-01 22:43:02] INFO root fetch - main [MainThread]: Store serial: [23483419]
+[2024-06-01 22:45:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483419]
+[2024-06-01 22:45:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 22:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phase-puml
+[2024-06-01 22:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vmstate
+[2024-06-01 22:45:12] WARNING root fetch - processPackages [phase-puml]: Skipping, unable to determine old version
+[2024-06-01 22:45:12] INFO root fetch - processPackages [vmstate]: New version: [1.1] Old Version: [1.0]
+[2024-06-01 22:45:12] INFO root fetch - main [MainThread]: End processing [phase-puml] error
+[2024-06-01 22:45:12] INFO root fetch - processPackages [vmstate]: Downloading https://files.pythonhosted.org/packages/6b/77/cd24f298ed5cce3ce53e68dd0318d591c6c224b571727d09585cacdc780e/vmstate-1.0.tar.gz
+[2024-06-01 22:45:13] INFO root fetch - processPackages [vmstate]: Downloading https://files.pythonhosted.org/packages/c1/db/97cae45323ea1aaccc7d096d72c8836c8878e18c6718c0b610a1dab60fb5/vmstate-1.1.tar.gz
+[2024-06-01 22:45:13] INFO root fetch - processPackages [vmstate]: executing diffoscope
+[2024-06-01 22:45:13] INFO root fetch - processPackages [vmstate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmstate-1.0.tar.gz tmp/vmstate-1.1.tar.gz --markdown 20240601/v/vmstate/1.0-1.1/README.md --exclude *.pyd
+[2024-06-01 22:45:13] INFO root fetch - processPackages [vmstate]: Remove: archive file [/home/abi/fetcher/tmp/vmstate-1.0.tar.gz]
+[2024-06-01 22:45:13] INFO root fetch - processPackages [vmstate]: Remove: archive file [/home/abi/fetcher/tmp/vmstate-1.1.tar.gz]
+[2024-06-01 22:45:13] INFO root fetch - main [MainThread]: End processing [vmstate]: success
+[2024-06-01 22:45:13] INFO root fetch - main [MainThread]: Store serial: [23483424]
