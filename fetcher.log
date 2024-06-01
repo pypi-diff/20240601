@@ -21322,3 +21322,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:35:58] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.99.tar.gz]
 [2024-06-01 20:35:58] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-06-01 20:35:58] INFO root fetch - main [MainThread]: Store serial: [23482600]
+[2024-06-01 20:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482600]
+[2024-06-01 20:38:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 20:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hezar
+[2024-06-01 20:38:07] INFO root fetch - processPackages [hezar]: New version: [0.38.0] Old Version: [0.37.0]
+[2024-06-01 20:38:07] INFO root fetch - processPackages [hezar]: Downloading https://files.pythonhosted.org/packages/91/5e/033e56a31a9e80d7bd0a1f662fc7a9d2810cd49700e31aa9308ed1c9353b/hezar-0.37.0.tar.gz
+[2024-06-01 20:38:07] INFO root fetch - processPackages [hezar]: Downloading https://files.pythonhosted.org/packages/2b/f8/6e2619c56aa1799ad8f338dcb5baa934ca7c00a81fede68a0fa112f23634/hezar-0.38.0.tar.gz
+[2024-06-01 20:38:07] INFO root fetch - processPackages [hezar]: executing diffoscope
+[2024-06-01 20:38:07] INFO root fetch - processPackages [hezar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hezar-0.37.0.tar.gz tmp/hezar-0.38.0.tar.gz --markdown 20240601/h/hezar/0.37.0-0.38.0/README.md --exclude *.pyd
+[2024-06-01 20:38:08] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.37.0.tar.gz]
+[2024-06-01 20:38:08] INFO root fetch - processPackages [hezar]: Remove: archive file [/home/abi/fetcher/tmp/hezar-0.38.0.tar.gz]
+[2024-06-01 20:38:08] INFO root fetch - main [MainThread]: End processing [hezar]: success
+[2024-06-01 20:38:08] INFO root fetch - main [MainThread]: Store serial: [23482604]
