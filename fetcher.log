@@ -18456,3 +18456,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:26:46] INFO root fetch - processPackages [ipaacar-python]: Remove: archive file [/home/abi/fetcher/tmp/ipaacar_python-0.1.4.tar.gz]
 [2024-06-01 17:26:46] INFO root fetch - main [MainThread]: End processing [ipaacar-python]: success
 [2024-06-01 17:26:46] INFO root fetch - main [MainThread]: Store serial: [23481292]
+[2024-06-01 17:28:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481292]
+[2024-06-01 17:28:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cryptoguard
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almax-common
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdps
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: almax-common
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: httpx_request
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: extrautilities
+[2024-06-01 17:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SJRSdetects
+[2024-06-01 17:28:56] WARNING root fetch - processPackages [SJRSdetects]: Skipping, unable to determine old version
+[2024-06-01 17:28:56] INFO root fetch - main [MainThread]: End processing [SJRSdetects] error
+[2024-06-01 17:28:56] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:28:56] INFO root fetch - processPackages [cdps]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 17:28:56] WARNING root fetch - processPackages [cryptoguard]: Skipping, unable to determine old version
+[2024-06-01 17:28:56] INFO root fetch - main [MainThread]: End processing [cryptoguard] error
+[2024-06-01 17:28:56] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:28:56] INFO root fetch - processPackages [httpx_request]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 17:28:56] INFO root fetch - processPackages [extrautilities]: New version: [1.8] Old Version: [1.7]
+[2024-06-01 17:28:56] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:28:56] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:28:56] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/b6/2b/c3035943bb2cf5f55c3cda187fe434131dde469df77fec78eca19bbae4a5/cdps-1.0.4.tar.gz
+[2024-06-01 17:28:56] INFO root fetch - processPackages [httpx_request]: Downloading https://files.pythonhosted.org/packages/d7/0d/c664f1ca1e58076794008f09ebaf582d511e00538d493be2fe3b0c314107/httpx_request-0.0.4.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/ae/e0/a8787658b86dce9c0d51035e56ea60fc647217fbb56d09fa51615dd4cb5e/extrautilities-1.7.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/e7/23/436dd6ac59e48b74199371fc375daf1be31b2caf9042cd2af3d233292ff9/extrautilities-1.8.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [httpx_request]: Downloading https://files.pythonhosted.org/packages/d8/b7/95c21284c85327f0c24501b0f4efbf7d22363e77540d493af4d217bd23a6/httpx_request-0.0.5.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:28:57] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:28:57] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/b4/70/433e460fdab5ca3594dd97f60a12865ec644118b11978793a11ccb1f4b7a/cdps-1.0.5.tar.gz
+[2024-06-01 17:28:57] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:28:57] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:28:57] INFO root fetch - processPackages [extrautilities]: executing diffoscope
+[2024-06-01 17:28:57] INFO root fetch - processPackages [extrautilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extrautilities-1.7.tar.gz tmp/extrautilities-1.8.tar.gz --markdown 20240601/e/extrautilities/1.7-1.8/README.md --exclude *.pyd
+[2024-06-01 17:28:57] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:28:57] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.4.tar.gz tmp/cdps-1.0.5.tar.gz --markdown 20240601/c/cdps/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 17:28:57] INFO root fetch - processPackages [httpx_request]: executing diffoscope
+[2024-06-01 17:28:57] INFO root fetch - processPackages [httpx_request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpx_request-0.0.4.tar.gz tmp/httpx_request-0.0.5.tar.gz --markdown 20240601/h/httpx_request/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 17:28:58] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:28:58] INFO root fetch - processPackages [httpx_request]: Remove: archive file [/home/abi/fetcher/tmp/httpx_request-0.0.4.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - processPackages [httpx_request]: Remove: archive file [/home/abi/fetcher/tmp/httpx_request-0.0.5.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [httpx_request]: success
+[2024-06-01 17:28:58] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.4.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.5.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:28:58] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.7.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.8.tar.gz]
+[2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
+[2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:28:58] INFO root fetch - main [MainThread]: Store serial: [23481314]
