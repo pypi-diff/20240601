@@ -17373,3 +17373,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:13:27] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.3.1.tar.gz]
 [2024-06-01 16:13:27] INFO root fetch - main [MainThread]: End processing [neural-cherche]: success
 [2024-06-01 16:13:27] INFO root fetch - main [MainThread]: Store serial: [23480703]
+[2024-06-01 16:15:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480703]
+[2024-06-01 16:15:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chart_me
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weather-chatbot-phi3
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eventu
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: monstr-terminal
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: timeter
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: almax-common
+[2024-06-01 16:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: watchpower-api
+[2024-06-01 16:15:36] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 16:15:36] INFO root fetch - processPackages [eventu]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 16:15:36] INFO root fetch - processPackages [chart_me]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-06-01 16:15:36] WARNING root fetch - processPackages [watchpower-api]: Skipping, unable to determine old version
+[2024-06-01 16:15:36] INFO root fetch - main [MainThread]: End processing [watchpower-api] error
+[2024-06-01 16:15:36] WARNING root fetch - processPackages [weather-chatbot-phi3]: Skipping, unable to determine old version
+[2024-06-01 16:15:36] INFO root fetch - main [MainThread]: End processing [weather-chatbot-phi3] error
+[2024-06-01 16:15:36] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 16:15:36] WARNING root fetch - processPackages [timeter]: Skipping, unable to determine old version
+[2024-06-01 16:15:36] INFO root fetch - main [MainThread]: End processing [timeter] error
+[2024-06-01 16:15:36] INFO root fetch - processPackages [monstr-terminal]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 16:15:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-01 16:15:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-01 16:15:36] INFO root fetch - processPackages [chart_me]: Downloading https://files.pythonhosted.org/packages/5c/34/60e51bccd0d3a121d74c71a754ff7fa44a2f2485388043b0569c65913ee9/chart_me-0.1.5.tar.gz
+[2024-06-01 16:15:36] INFO root fetch - processPackages [eventu]: Downloading https://files.pythonhosted.org/packages/4d/cd/cfe1f5bff2771a72525684399ed522f45df7e321f8b765b6324ec83e65e6/eventu-0.1.0.tar.gz
+[2024-06-01 16:15:36] INFO root fetch - processPackages [monstr-terminal]: Downloading https://files.pythonhosted.org/packages/18/22/13409dacd7dce19e3713236798fab798ae8a60e970001898ad36743602d8/monstr_terminal-0.1.1.tar.gz
+[2024-06-01 16:15:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-01 16:15:36] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [chart_me]: Downloading https://files.pythonhosted.org/packages/4e/eb/674a426b8aa3eeb4934a8a31bed105130b312f15cf4516754cb57e28598c/chart_me-0.2.0.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [eventu]: Downloading https://files.pythonhosted.org/packages/17/13/7643029e91be41477d4a7a21155c44a2808d65322f8e45482c844a9b53da/eventu-0.1.1.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 16:15:37] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 16:15:37] INFO root fetch - processPackages [monstr-terminal]: Downloading https://files.pythonhosted.org/packages/06/99/a3ece6de577301222ce27de6c466ec4f25456a3e5e37b4e102118c336dc8/monstr_terminal-0.1.2.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-01 16:15:37] INFO root fetch - processPackages [eventu]: executing diffoscope
+[2024-06-01 16:15:37] INFO root fetch - processPackages [eventu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventu-0.1.0.tar.gz tmp/eventu-0.1.1.tar.gz --markdown 20240601/e/eventu/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 16:15:37] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-01 16:15:37] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240601/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-01 16:15:37] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-01 16:15:37] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240601/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-01 16:15:37] INFO root fetch - processPackages [chart_me]: executing diffoscope
+[2024-06-01 16:15:37] INFO root fetch - processPackages [chart_me]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chart_me-0.1.5.tar.gz tmp/chart_me-0.2.0.tar.gz --markdown 20240601/c/chart_me/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-06-01 16:15:37] INFO root fetch - processPackages [monstr-terminal]: executing diffoscope
+[2024-06-01 16:15:37] INFO root fetch - processPackages [monstr-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monstr_terminal-0.1.1.tar.gz tmp/monstr_terminal-0.1.2.tar.gz --markdown 20240601/m/monstr-terminal/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 16:15:37] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 16:15:37] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 16:15:37] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 16:15:37] INFO root fetch - processPackages [eventu]: Remove: archive file [/home/abi/fetcher/tmp/eventu-0.1.0.tar.gz]
+[2024-06-01 16:15:37] INFO root fetch - processPackages [eventu]: Remove: archive file [/home/abi/fetcher/tmp/eventu-0.1.1.tar.gz]
+[2024-06-01 16:15:37] INFO root fetch - main [MainThread]: End processing [eventu]: success
+[2024-06-01 16:15:38] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-01 16:15:38] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-01 16:15:38] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-06-01 16:15:38] WARNING root fetch - processPackages [spanishconjugator]: Unable to remove archive file: [[Errno 2] No such file or directory: '/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz']
+[2024-06-01 16:15:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-01 16:15:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-01 16:15:38] INFO root fetch - processPackages [monstr-terminal]: Remove: archive file [/home/abi/fetcher/tmp/monstr_terminal-0.1.1.tar.gz]
+[2024-06-01 16:15:38] INFO root fetch - processPackages [monstr-terminal]: Remove: archive file [/home/abi/fetcher/tmp/monstr_terminal-0.1.2.tar.gz]
+[2024-06-01 16:15:38] INFO root fetch - main [MainThread]: End processing [monstr-terminal]: success
+[2024-06-01 16:15:39] INFO root fetch - processPackages [chart_me]: Remove: archive file [/home/abi/fetcher/tmp/chart_me-0.1.5.tar.gz]
+[2024-06-01 16:15:39] INFO root fetch - processPackages [chart_me]: Remove: archive file [/home/abi/fetcher/tmp/chart_me-0.2.0.tar.gz]
+[2024-06-01 16:15:39] INFO root fetch - main [MainThread]: End processing [chart_me]: success
+[2024-06-01 16:15:39] INFO root fetch - main [MainThread]: Store serial: [23480735]
