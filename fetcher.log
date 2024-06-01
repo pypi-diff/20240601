@@ -22182,3 +22182,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:41:57] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-06-01 21:41:57] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-06-01 21:41:57] INFO root fetch - main [MainThread]: Store serial: [23483058]
+[2024-06-01 21:44:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483058]
+[2024-06-01 21:44:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 21:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fromager
+[2024-06-01 21:44:07] WARNING root fetch - processPackages [fromager]: Skipping, unable to determine old version
+[2024-06-01 21:44:07] INFO root fetch - main [MainThread]: End processing [fromager] error
+[2024-06-01 21:44:07] INFO root fetch - main [MainThread]: Store serial: [23483066]
