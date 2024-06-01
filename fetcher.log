@@ -15236,3 +15236,60 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:27:08] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.4.9.tar.gz]
 [2024-06-01 13:27:08] INFO root fetch - main [MainThread]: End processing [gadapt]: success
 [2024-06-01 13:27:08] INFO root fetch - main [MainThread]: Store serial: [23479731]
+[2024-06-01 13:29:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479731]
+[2024-06-01 13:29:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 13:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmflex
+[2024-06-01 13:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchrl-nightly
+[2024-06-01 13:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchtnt-nightly
+[2024-06-01 13:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gooeypie
+[2024-06-01 13:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MainServiceManager
+[2024-06-01 13:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchx-nightly
+[2024-06-01 13:29:16] INFO root fetch - processPackages [MainServiceManager]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 13:29:16] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-06-01 13:29:16] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/fe/5a/b57c01f5c8280fd501ca12f527df498c791d1adfd13143609fb9fe432ad5/mainservicemanager-0.0.4.tar.gz
+[2024-06-01 13:29:16] INFO root fetch - processPackages [llmflex]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 13:29:16] INFO root fetch - processPackages [gooeypie]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 13:29:16] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4f/2c/1b1fd11c1eb29345cef72d90c551ee6ca39cb1ca91dcb13a62e39d09d3e9/torchx_nightly-2024.5.8-py3-none-any.whl
+[2024-06-01 13:29:16] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2024.6.1] Old Version: [2024.5.31]
+[2024-06-01 13:29:16] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.6.1] Old Version: [2024.5.9]
+[2024-06-01 13:29:16] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/15/75/405ce5d57939b02d01f1aeb62f864fb6458f40b07802b19e74694f655a3c/llmflex-0.1.7.tar.gz
+[2024-06-01 13:29:17] INFO root fetch - processPackages [gooeypie]: Downloading https://files.pythonhosted.org/packages/ff/f1/63b890fc54abea546260d400937d4743228ccfff5ae2f92cb7b65b44c70f/gooeypie-0.8.1.tar.gz
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/c0/e1/1ff1a765357d7181f52f9ef48b54960e44360b280fe4e2004bc0d0a33152/torchtnt_nightly-2024.5.31-py3-none-any.whl
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/e9/e4/1d21a71adb0d6367cd81a5f47617cabf90f99ac96a421dda991f6aeefff2/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-06-01 13:29:17] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/b2/66/edf561500dffd526e2f68b72dad9ea866ecb3845bdff7b5b00b6d2975e6a/mainservicemanager-0.0.5.tar.gz
+[2024-06-01 13:29:17] INFO root fetch - processPackages [MainServiceManager]: executing diffoscope
+[2024-06-01 13:29:17] INFO root fetch - processPackages [MainServiceManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainservicemanager-0.0.4.tar.gz tmp/mainservicemanager-0.0.5.tar.gz --markdown 20240601/M/MainServiceManager/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240601/t/torchx-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-06-01 13:29:17] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/99/5f/4d3afeccc3bb2880986a999d89eb9c3c6f184bc38aa085f44f9e6f32b21d/llmflex-0.1.8.tar.gz
+[2024-06-01 13:29:17] INFO root fetch - processPackages [gooeypie]: Downloading https://files.pythonhosted.org/packages/34/12/46bdb22b969e23de04f798698be6c842b7551730e4b1ef0fa7e3865c48fc/gooeypie-0.9.0.tar.gz
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/e2/82/2e61fb55400936e7447735d7dde6d9c6a4e40f19c98fb9a7005654600234/torchtnt_nightly-2024.6.1.tar.gz
+[2024-06-01 13:29:17] INFO root fetch - processPackages [gooeypie]: executing diffoscope
+[2024-06-01 13:29:17] INFO root fetch - processPackages [gooeypie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gooeypie-0.8.1.tar.gz tmp/gooeypie-0.9.0.tar.gz --markdown 20240601/g/gooeypie/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 13:29:17] INFO root fetch - processPackages [llmflex]: executing diffoscope
+[2024-06-01 13:29:17] INFO root fetch - processPackages [llmflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmflex-0.1.7.tar.gz tmp/llmflex-0.1.8.tar.gz --markdown 20240601/l/llmflex/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/aa/3f/47d7d38690dfd5513281f58e73694174c650af90cf10ebb29a128501bdcb/torchrl_nightly-2024.6.1-cp39-cp39-manylinux1_x86_64.whl
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2024-06-01 13:29:17] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt_nightly-2024.5.31-py3-none-any.whl.zip tmp/torchtnt_nightly-2024.6.1.tar.gz --markdown 20240601/t/torchtnt-nightly/2024.5.31-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 13:29:17] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.4.tar.gz]
+[2024-06-01 13:29:17] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.5.tar.gz]
+[2024-06-01 13:29:17] INFO root fetch - main [MainThread]: End processing [MainServiceManager]: success
+[2024-06-01 13:29:18] INFO root fetch - processPackages [gooeypie]: Remove: archive file [/home/abi/fetcher/tmp/gooeypie-0.8.1.tar.gz]
+[2024-06-01 13:29:18] INFO root fetch - processPackages [gooeypie]: Remove: archive file [/home/abi/fetcher/tmp/gooeypie-0.9.0.tar.gz]
+[2024-06-01 13:29:18] INFO root fetch - main [MainThread]: End processing [gooeypie]: success
+[2024-06-01 13:29:18] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-06-01 13:29:18] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-06-01 13:29:18] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-06-01 13:29:18] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.5.31-py3-none-any.whl.zip]
+[2024-06-01 13:29:18] INFO root fetch - processPackages [torchtnt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchtnt_nightly-2024.6.1.tar.gz]
+[2024-06-01 13:29:18] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2024-06-01 13:29:18] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.7.tar.gz]
+[2024-06-01 13:29:18] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.8.tar.gz]
+[2024-06-01 13:29:18] INFO root fetch - main [MainThread]: End processing [llmflex]: success
+[2024-06-01 13:29:18] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-06-01 13:29:18] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.6.1-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240601/t/torchrl-nightly/2024.5.9-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 13:29:22] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 13:29:22] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.6.1-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-06-01 13:29:22] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-06-01 13:29:22] INFO root fetch - main [MainThread]: Store serial: [23479750]
