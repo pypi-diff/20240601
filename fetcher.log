@@ -3709,3 +3709,36 @@
 [2024-06-01 03:19:07] INFO root fetch - processPackages [viqi-api]: Remove: archive file [/home/abi/fetcher/tmp/viqi_api-0.6.4.9-py3-none-any.whl.zip]
 [2024-06-01 03:19:07] INFO root fetch - main [MainThread]: End processing [viqi-api]: success
 [2024-06-01 03:19:07] INFO root fetch - main [MainThread]: Store serial: [23474662]
+[2024-06-01 03:21:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474662]
+[2024-06-01 03:21:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 03:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composio-griptape
+[2024-06-01 03:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ga-scheduler
+[2024-06-01 03:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: viessmann-gridbox-connector
+[2024-06-01 03:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-julep
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-griptape]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-01 03:21:16] WARNING root fetch - processPackages [ga-scheduler]: Skipping, unable to determine old version
+[2024-06-01 03:21:16] INFO root fetch - main [MainThread]: End processing [ga-scheduler] error
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-julep]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-griptape]: Downloading https://files.pythonhosted.org/packages/f8/83/a461258709449b2df427127cc136940b48422f2798bd150c210f46516d40/composio_griptape-0.3.3.tar.gz
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-julep]: Downloading https://files.pythonhosted.org/packages/b5/c4/cb0793b87a17ad406e532554d8eb890569351cd6b75bc62243e582b76bec/composio_julep-0.3.3.tar.gz
+[2024-06-01 03:21:16] INFO root fetch - processPackages [viessmann-gridbox-connector]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-06-01 03:21:16] INFO root fetch - processPackages [viessmann-gridbox-connector]: Downloading https://files.pythonhosted.org/packages/4e/57/b29b4c7ce198d02f9fd5a795705774fd2d59ff1180d08faf035d33d52423/viessmann_gridbox_connector-1.3.9.tar.gz
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-griptape]: Downloading https://files.pythonhosted.org/packages/07/86/1f3aede259045bb7c0535177b2ee658e504bcc1e89c283bf6b8f68814533/composio_griptape-0.3.4.tar.gz
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-julep]: Downloading https://files.pythonhosted.org/packages/21/04/4df1f3dc6a01c9ef550bb6ef21bfb05ada7f6116e12d383c806afde62cab/composio_julep-0.3.4.tar.gz
+[2024-06-01 03:21:16] INFO root fetch - processPackages [viessmann-gridbox-connector]: Downloading https://files.pythonhosted.org/packages/44/39/afc7cc9ae30dd2b704ea1f4215167ad5ebc29d6afde18c7e6d1b399c55de/viessmann_gridbox_connector-1.4.0.tar.gz
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-griptape]: executing diffoscope
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-griptape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_griptape-0.3.3.tar.gz tmp/composio_griptape-0.3.4.tar.gz --markdown 20240601/c/composio-griptape/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-julep]: executing diffoscope
+[2024-06-01 03:21:16] INFO root fetch - processPackages [composio-julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_julep-0.3.3.tar.gz tmp/composio_julep-0.3.4.tar.gz --markdown 20240601/c/composio-julep/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-01 03:21:16] INFO root fetch - processPackages [viessmann-gridbox-connector]: executing diffoscope
+[2024-06-01 03:21:16] INFO root fetch - processPackages [viessmann-gridbox-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viessmann_gridbox_connector-1.3.9.tar.gz tmp/viessmann_gridbox_connector-1.4.0.tar.gz --markdown 20240601/v/viessmann-gridbox-connector/1.3.9-1.4.0/README.md --exclude *.pyd
+[2024-06-01 03:21:17] INFO root fetch - processPackages [composio-julep]: Remove: archive file [/home/abi/fetcher/tmp/composio_julep-0.3.3.tar.gz]
+[2024-06-01 03:21:17] INFO root fetch - processPackages [composio-julep]: Remove: archive file [/home/abi/fetcher/tmp/composio_julep-0.3.4.tar.gz]
+[2024-06-01 03:21:17] INFO root fetch - main [MainThread]: End processing [composio-julep]: success
+[2024-06-01 03:21:17] INFO root fetch - processPackages [composio-griptape]: Remove: archive file [/home/abi/fetcher/tmp/composio_griptape-0.3.3.tar.gz]
+[2024-06-01 03:21:17] INFO root fetch - processPackages [composio-griptape]: Remove: archive file [/home/abi/fetcher/tmp/composio_griptape-0.3.4.tar.gz]
+[2024-06-01 03:21:17] INFO root fetch - main [MainThread]: End processing [composio-griptape]: success
+[2024-06-01 03:21:17] INFO root fetch - processPackages [viessmann-gridbox-connector]: Remove: archive file [/home/abi/fetcher/tmp/viessmann_gridbox_connector-1.3.9.tar.gz]
+[2024-06-01 03:21:17] INFO root fetch - processPackages [viessmann-gridbox-connector]: Remove: archive file [/home/abi/fetcher/tmp/viessmann_gridbox_connector-1.4.0.tar.gz]
+[2024-06-01 03:21:17] INFO root fetch - main [MainThread]: End processing [viessmann-gridbox-connector]: success
+[2024-06-01 03:21:17] INFO root fetch - main [MainThread]: Store serial: [23474680]
