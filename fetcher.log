@@ -13213,3 +13213,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:50:31] INFO root fetch - processPackages [Simple-Space]: Remove: archive file [/home/abi/fetcher/tmp/simple_space-1.0.0.tar.gz]
 [2024-06-01 10:50:31] INFO root fetch - main [MainThread]: End processing [Simple-Space]: success
 [2024-06-01 10:50:31] INFO root fetch - main [MainThread]: Store serial: [23478829]
+[2024-06-01 10:52:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478829]
+[2024-06-01 10:52:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 10:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xklb
+[2024-06-01 10:52:41] INFO root fetch - processPackages [xklb]: New version: [2.8.9] Old Version: [2.8.7]
+[2024-06-01 10:52:41] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/d0/4c/dd8350e7201f303ad86c28ba6e4c3856a9aebf36175bf2091b4f223b9c8c/xklb-2.8.7.tar.gz
+[2024-06-01 10:52:42] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/79/9c/400b6a77dca189a0e6b267e0a874e85e6bc388a14703931b845294411c06/xklb-2.8.9.tar.gz
+[2024-06-01 10:52:42] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2024-06-01 10:52:42] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-2.8.7.tar.gz tmp/xklb-2.8.9.tar.gz --markdown 20240601/x/xklb/2.8.7-2.8.9/README.md --exclude *.pyd
+[2024-06-01 10:52:43] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.7.tar.gz]
+[2024-06-01 10:52:43] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.9.tar.gz]
+[2024-06-01 10:52:43] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2024-06-01 10:52:43] INFO root fetch - main [MainThread]: Store serial: [23478832]
