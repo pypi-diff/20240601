@@ -11720,3 +11720,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:56:45] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.35.1.dev20240530.tar.gz]
 [2024-06-01 08:56:45] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-06-01 08:56:45] INFO root fetch - main [MainThread]: Store serial: [23477953]
+[2024-06-01 08:58:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477953]
+[2024-06-01 08:58:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 08:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shifts
+[2024-06-01 08:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lapa-authentication
+[2024-06-01 08:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redcoffee
+[2024-06-01 08:58:53] INFO root fetch - processPackages [shifts]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 08:58:53] INFO root fetch - processPackages [redcoffee]: New version: [0.2] Old Version: [0.1]
+[2024-06-01 08:58:53] INFO root fetch - processPackages [redcoffee]: Downloading https://files.pythonhosted.org/packages/31/90/6841c49eec61041c993ee2883ef9baf875ab74a7c41427742b50c1321e3b/redcoffee-0.1.tar.gz
+[2024-06-01 08:58:53] INFO root fetch - processPackages [lapa-authentication]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 08:58:54] INFO root fetch - processPackages [shifts]: Downloading https://files.pythonhosted.org/packages/fa/a9/3e95637a83f4672161c04fa23eb3f48dfc849f633276fdad6b5a49a59cc8/shifts-0.0.2.tar.gz
+[2024-06-01 08:58:54] INFO root fetch - processPackages [redcoffee]: Downloading https://files.pythonhosted.org/packages/72/a0/2f190705c986369755e832fa65e6142402df7a9327885206d957329ebe86/redcoffee-0.2.tar.gz
+[2024-06-01 08:58:54] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/e4/81/0147afd631665625024e3fd8d46c8583702b5670db8ba001ee02e08e5bdd/lapa_authentication-0.0.8.tar.gz
+[2024-06-01 08:58:54] INFO root fetch - processPackages [redcoffee]: executing diffoscope
+[2024-06-01 08:58:54] INFO root fetch - processPackages [redcoffee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redcoffee-0.1.tar.gz tmp/redcoffee-0.2.tar.gz --markdown 20240601/r/redcoffee/0.1-0.2/README.md --exclude *.pyd
+[2024-06-01 08:58:54] INFO root fetch - processPackages [shifts]: Downloading https://files.pythonhosted.org/packages/32/80/a9a88e23a515c8656f8ae56bdbff4d8fd951e2a0359c12144671e16beef3/shifts-0.0.3.tar.gz
+[2024-06-01 08:58:54] INFO root fetch - processPackages [shifts]: executing diffoscope
+[2024-06-01 08:58:54] INFO root fetch - processPackages [shifts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shifts-0.0.2.tar.gz tmp/shifts-0.0.3.tar.gz --markdown 20240601/s/shifts/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 08:58:54] INFO root fetch - processPackages [lapa-authentication]: Downloading https://files.pythonhosted.org/packages/93/c0/03721c8dad872ab6d551fde61c36e0304a43fb6afe00c5037f5e7e16a865/lapa_authentication-0.0.9.tar.gz
+[2024-06-01 08:58:54] INFO root fetch - processPackages [lapa-authentication]: executing diffoscope
+[2024-06-01 08:58:54] INFO root fetch - processPackages [lapa-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_authentication-0.0.8.tar.gz tmp/lapa_authentication-0.0.9.tar.gz --markdown 20240601/l/lapa-authentication/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 08:58:54] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.1.tar.gz]
+[2024-06-01 08:58:54] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.2.tar.gz]
+[2024-06-01 08:58:54] INFO root fetch - main [MainThread]: End processing [redcoffee]: success
+[2024-06-01 08:58:54] INFO root fetch - processPackages [shifts]: Remove: archive file [/home/abi/fetcher/tmp/shifts-0.0.2.tar.gz]
+[2024-06-01 08:58:54] INFO root fetch - processPackages [shifts]: Remove: archive file [/home/abi/fetcher/tmp/shifts-0.0.3.tar.gz]
+[2024-06-01 08:58:54] INFO root fetch - main [MainThread]: End processing [shifts]: success
+[2024-06-01 08:58:55] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.8.tar.gz]
+[2024-06-01 08:58:55] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.9.tar.gz]
+[2024-06-01 08:58:55] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
+[2024-06-01 08:58:55] INFO root fetch - main [MainThread]: Store serial: [23477962]
