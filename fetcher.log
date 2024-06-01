@@ -10168,3 +10168,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:14:19] INFO root fetch - processPackages [qenerate-custom]: Remove: archive file [/home/abi/fetcher/tmp/qenerate_custom-0.6.5.tar.gz]
 [2024-06-01 06:14:19] INFO root fetch - main [MainThread]: End processing [qenerate-custom]: success
 [2024-06-01 06:14:19] INFO root fetch - main [MainThread]: Store serial: [23477211]
+[2024-06-01 06:16:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477211]
+[2024-06-01 06:16:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 06:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-edi
+[2024-06-01 06:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thoi
+[2024-06-01 06:16:28] INFO root fetch - processPackages [thoi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 06:16:28] INFO root fetch - processPackages [thoi]: Downloading https://files.pythonhosted.org/packages/2f/fd/a16a2e33ae12120330737a7c0556e6f2898a9500e578b508e061fdb3acdb/thoi-0.1.8.tar.gz
+[2024-06-01 06:16:28] INFO root fetch - processPackages [odoo-addons-oca-edi]: New version: [16.0.20240531.0] Old Version: [16.0.20240201.0]
+[2024-06-01 06:16:28] INFO root fetch - processPackages [odoo-addons-oca-edi]: Downloading https://files.pythonhosted.org/packages/04/31/69ca703252df28b50ca16e539622b19ddb6e9ca3cdfadb4c3852c6785556/odoo_addons_oca_edi-16.0.20240201.0-py3-none-any.whl
+[2024-06-01 06:16:29] INFO root fetch - processPackages [thoi]: Downloading https://files.pythonhosted.org/packages/aa/f1/8599f40c951f75c0744e49e1f877b105fd85a5648f46cfcbd165ab7d614a/thoi-0.1.9.tar.gz
+[2024-06-01 06:16:29] INFO root fetch - processPackages [thoi]: executing diffoscope
+[2024-06-01 06:16:29] INFO root fetch - processPackages [thoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thoi-0.1.8.tar.gz tmp/thoi-0.1.9.tar.gz --markdown 20240601/t/thoi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 06:16:29] INFO root fetch - processPackages [odoo-addons-oca-edi]: Downloading https://files.pythonhosted.org/packages/5c/db/c464d6af3d15ae97cf341396e5805a9d7187f6ba22e2429a0e685506ec8d/odoo_addons_oca_edi-16.0.20240531.0-py3-none-any.whl
+[2024-06-01 06:16:29] INFO root fetch - processPackages [odoo-addons-oca-edi]: executing diffoscope
+[2024-06-01 06:16:29] INFO root fetch - processPackages [odoo-addons-oca-edi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_edi-16.0.20240201.0-py3-none-any.whl.zip tmp/odoo_addons_oca_edi-16.0.20240531.0-py3-none-any.whl.zip --markdown 20240601/o/odoo-addons-oca-edi/16.0.20240201.0-16.0.20240531.0/README.md --exclude *.pyd
+[2024-06-01 06:16:29] INFO root fetch - processPackages [thoi]: Remove: archive file [/home/abi/fetcher/tmp/thoi-0.1.8.tar.gz]
+[2024-06-01 06:16:29] INFO root fetch - processPackages [thoi]: Remove: archive file [/home/abi/fetcher/tmp/thoi-0.1.9.tar.gz]
+[2024-06-01 06:16:29] INFO root fetch - main [MainThread]: End processing [thoi]: success
+[2024-06-01 06:16:29] INFO root fetch - processPackages [odoo-addons-oca-edi]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_edi-16.0.20240201.0-py3-none-any.whl.zip]
+[2024-06-01 06:16:29] INFO root fetch - processPackages [odoo-addons-oca-edi]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_edi-16.0.20240531.0-py3-none-any.whl.zip]
+[2024-06-01 06:16:29] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-edi]: success
+[2024-06-01 06:16:29] INFO root fetch - main [MainThread]: Store serial: [23477216]
