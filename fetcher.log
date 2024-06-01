@@ -19013,3 +19013,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:01:46] INFO root fetch - processPackages [hatchet-sdk]: Remove: archive file [/home/abi/fetcher/tmp/hatchet_sdk-0.9.4.tar.gz]
 [2024-06-01 18:01:46] INFO root fetch - main [MainThread]: End processing [hatchet-sdk]: success
 [2024-06-01 18:01:46] INFO root fetch - main [MainThread]: Store serial: [23481545]
+[2024-06-01 18:03:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481545]
+[2024-06-01 18:03:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 18:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metabolabpy
+[2024-06-01 18:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qtmetabolabpy
+[2024-06-01 18:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chaos-stratus
+[2024-06-01 18:03:56] INFO root fetch - processPackages [qtmetabolabpy]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 18:03:56] INFO root fetch - processPackages [chaos-stratus]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-06-01 18:03:56] INFO root fetch - processPackages [chaos-stratus]: Downloading https://files.pythonhosted.org/packages/0a/9f/6b3f06f560edb6cce05e6b8e88ac38f53f5ea542a6522d4e064c5b46f777/chaos_stratus-1.0.1.tar.gz
+[2024-06-01 18:03:56] INFO root fetch - processPackages [metabolabpy]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 18:03:56] INFO root fetch - processPackages [qtmetabolabpy]: Downloading https://files.pythonhosted.org/packages/fc/e2/f856056b07aa55a8d8a82bf8703c4191622708083a75f14b4916e6937e97/qtmetabolabpy-0.9.8.tar.gz
+[2024-06-01 18:03:57] WARNING root fetch - processPackages [qtmetabolabpy]: Skipping package: exceeds size limit 59150248>=10485760
+[2024-06-01 18:03:57] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy] error
+[2024-06-01 18:03:57] INFO root fetch - processPackages [chaos-stratus]: Downloading https://files.pythonhosted.org/packages/a1/bd/623068cfc2ab347f444961d5d5f2147dd30d2883b263600a3e673df58bc8/chaos_stratus-1.1.0.tar.gz
+[2024-06-01 18:03:57] INFO root fetch - processPackages [metabolabpy]: Downloading https://files.pythonhosted.org/packages/25/6b/78b78d5958823abcc755c49b830b5b3694bdfc0e0714f49c48e570d5d15a/metabolabpy-0.9.8.tar.gz
+[2024-06-01 18:03:57] WARNING root fetch - processPackages [metabolabpy]: Skipping package: exceeds size limit 11267341>=10485760
+[2024-06-01 18:03:57] INFO root fetch - main [MainThread]: End processing [metabolabpy] error
+[2024-06-01 18:03:57] INFO root fetch - processPackages [chaos-stratus]: executing diffoscope
+[2024-06-01 18:03:57] INFO root fetch - processPackages [chaos-stratus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaos_stratus-1.0.1.tar.gz tmp/chaos_stratus-1.1.0.tar.gz --markdown 20240601/c/chaos-stratus/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-06-01 18:03:57] INFO root fetch - processPackages [chaos-stratus]: Remove: archive file [/home/abi/fetcher/tmp/chaos_stratus-1.0.1.tar.gz]
+[2024-06-01 18:03:57] INFO root fetch - processPackages [chaos-stratus]: Remove: archive file [/home/abi/fetcher/tmp/chaos_stratus-1.1.0.tar.gz]
+[2024-06-01 18:03:57] INFO root fetch - main [MainThread]: End processing [chaos-stratus]: success
+[2024-06-01 18:03:57] INFO root fetch - main [MainThread]: Store serial: [23481553]
