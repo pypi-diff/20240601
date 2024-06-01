@@ -21244,3 +21244,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:29:17] INFO root fetch - processPackages [ampel-hu-astro]: Remove: archive file [/home/abi/fetcher/tmp/ampel_hu_astro-0.8.4a3.tar.gz]
 [2024-06-01 20:29:17] INFO root fetch - main [MainThread]: End processing [ampel-hu-astro]: success
 [2024-06-01 20:29:17] INFO root fetch - main [MainThread]: Store serial: [23482568]
+[2024-06-01 20:31:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482568]
+[2024-06-01 20:31:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 20:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: writer-log
+[2024-06-01 20:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vaul
+[2024-06-01 20:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rgrow
+[2024-06-01 20:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jjowl
+[2024-06-01 20:31:26] INFO root fetch - processPackages [vaul]: New version: [0.1.25] Old Version: [0.1.24]
+[2024-06-01 20:31:26] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/48/e0/6bbebda6c75b970ddcd47cace2b08ad828b5f647516c7194c03dff8e74ac/vaul-0.1.24.tar.gz
+[2024-06-01 20:31:26] INFO root fetch - processPackages [rgrow]: New version: [0.13.1] Old Version: [0.13.0a2]
+[2024-06-01 20:31:26] WARNING root fetch - processPackages [writer-log]: Skipping, unable to determine old version
+[2024-06-01 20:31:26] INFO root fetch - main [MainThread]: End processing [writer-log] error
+[2024-06-01 20:31:26] INFO root fetch - processPackages [jjowl]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 20:31:26] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/05/e6/3fe0cb730d26ef092e645f9db1df35a049ead5be3ecf88ee3e1478310eb9/vaul-0.1.25.tar.gz
+[2024-06-01 20:31:26] INFO root fetch - processPackages [rgrow]: Downloading https://files.pythonhosted.org/packages/e1/28/52f4866028e6736abd707450d17998c72b23b51c1aa7c7fc9e8b525baa33/rgrow-0.13.0a2.tar.gz
+[2024-06-01 20:31:26] INFO root fetch - processPackages [jjowl]: Downloading https://files.pythonhosted.org/packages/0e/bd/210d798965d7eec531ab54fefaace1d087cdd79ab1171b16509fcb14aca9/jjowl-0.2.7.tar.gz
+[2024-06-01 20:31:26] INFO root fetch - processPackages [vaul]: executing diffoscope
+[2024-06-01 20:31:26] INFO root fetch - processPackages [vaul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaul-0.1.24.tar.gz tmp/vaul-0.1.25.tar.gz --markdown 20240601/v/vaul/0.1.24-0.1.25/README.md --exclude *.pyd
+[2024-06-01 20:31:27] INFO root fetch - processPackages [rgrow]: Downloading https://files.pythonhosted.org/packages/f3/92/5e4d889d27936aba389f8b87f2d3991924478e72c5bd83c9befbcc031543/rgrow-0.13.1-cp310-cp310-macosx_11_0_arm64.whl
+[2024-06-01 20:31:27] INFO root fetch - processPackages [jjowl]: Downloading https://files.pythonhosted.org/packages/e0/3d/ff6d52957bb5f16c7225672fffb64d6e383f60208f13d839ca8203f68841/jjowl-0.2.8.tar.gz
+[2024-06-01 20:31:27] INFO root fetch - processPackages [jjowl]: executing diffoscope
+[2024-06-01 20:31:27] INFO root fetch - processPackages [jjowl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jjowl-0.2.7.tar.gz tmp/jjowl-0.2.8.tar.gz --markdown 20240601/j/jjowl/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 20:31:27] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.24.tar.gz]
+[2024-06-01 20:31:27] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.25.tar.gz]
+[2024-06-01 20:31:27] INFO root fetch - main [MainThread]: End processing [vaul]: success
+[2024-06-01 20:31:27] INFO root fetch - processPackages [jjowl]: Remove: archive file [/home/abi/fetcher/tmp/jjowl-0.2.7.tar.gz]
+[2024-06-01 20:31:27] INFO root fetch - processPackages [jjowl]: Remove: archive file [/home/abi/fetcher/tmp/jjowl-0.2.8.tar.gz]
+[2024-06-01 20:31:27] INFO root fetch - main [MainThread]: End processing [jjowl]: success
+[2024-06-01 20:31:28] INFO root fetch - processPackages [rgrow]: executing diffoscope
+[2024-06-01 20:31:28] INFO root fetch - processPackages [rgrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgrow-0.13.0a2.tar.gz tmp/rgrow-0.13.1-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240601/r/rgrow/0.13.0a2-0.13.1/README.md --exclude *.pyd
+[2024-06-01 20:31:29] INFO root fetch - processPackages [rgrow]: Remove: archive file [/home/abi/fetcher/tmp/rgrow-0.13.0a2.tar.gz]
+[2024-06-01 20:31:29] INFO root fetch - processPackages [rgrow]: Remove: archive file [/home/abi/fetcher/tmp/rgrow-0.13.1-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-06-01 20:31:29] INFO root fetch - main [MainThread]: End processing [rgrow]: success
+[2024-06-01 20:31:29] INFO root fetch - main [MainThread]: Store serial: [23482583]
