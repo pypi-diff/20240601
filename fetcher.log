@@ -13521,3 +13521,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:10:31] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.5.tar.gz]
 [2024-06-01 11:10:31] INFO root fetch - main [MainThread]: End processing [platypush]: success
 [2024-06-01 11:10:31] INFO root fetch - main [MainThread]: Store serial: [23478938]
+[2024-06-01 11:12:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478938]
+[2024-06-01 11:12:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 11:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joyrl
+[2024-06-01 11:12:40] INFO root fetch - processPackages [joyrl]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-06-01 11:12:40] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/12/50/a82f201abe8f3aa38a51e80dafaabc0ab50580e2e029354fe68ae6862d11/joyrl-0.5.2.tar.gz
+[2024-06-01 11:12:40] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/32/3d/0955ff3abdc7c5f7bfadff319a9bcb9a46ac98be71a8210151705542c441/joyrl-0.6.0.tar.gz
+[2024-06-01 11:12:41] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2024-06-01 11:12:41] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.5.2.tar.gz tmp/joyrl-0.6.0.tar.gz --markdown 20240601/j/joyrl/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-06-01 11:12:41] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.5.2.tar.gz]
+[2024-06-01 11:12:41] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.tar.gz]
+[2024-06-01 11:12:41] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2024-06-01 11:12:41] INFO root fetch - main [MainThread]: Store serial: [23478941]
