@@ -2234,3 +2234,33 @@
 [2024-06-01 02:02:15] INFO root fetch - processPackages [wmcore]: Remove: archive file [/home/abi/fetcher/tmp/wmcore-2.3.4rc7.tar.gz]
 [2024-06-01 02:02:15] INFO root fetch - main [MainThread]: End processing [wmcore]: success
 [2024-06-01 02:02:15] INFO root fetch - main [MainThread]: Store serial: [23473852]
+[2024-06-01 02:04:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473852]
+[2024-06-01 02:04:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 02:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnxscript
+[2024-06-01 02:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myfunctions-Adnan-IT
+[2024-06-01 02:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oaklib
+[2024-06-01 02:04:24] INFO root fetch - processPackages [myfunctions-Adnan-IT]: New version: [0.0.9] Old Version: [0.0.13]
+[2024-06-01 02:04:25] INFO root fetch - processPackages [oaklib]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-06-01 02:04:25] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240601] Old Version: [0.1.0.dev20240530]
+[2024-06-01 02:04:25] INFO root fetch - processPackages [myfunctions-Adnan-IT]: Downloading https://files.pythonhosted.org/packages/02/db/a2bc7d383eb583c4ad2a05f1531c8d21de88129564c6a53f7ac80b5e5b14/myfunctions_Adnan-IT-0.0.13.tar.gz
+[2024-06-01 02:04:25] INFO root fetch - processPackages [oaklib]: Downloading https://files.pythonhosted.org/packages/d2/04/ccad06a0ed69ad6285cef0c52dc091c520fc5df409943f50c00a05ed300c/oaklib-0.6.6.tar.gz
+[2024-06-01 02:04:25] INFO root fetch - processPackages [myfunctions-Adnan-IT]: Downloading https://files.pythonhosted.org/packages/32/b8/f8735a221c2a69ec9d07a8ece39bf93c2fee75cb66b427cc15cc4dcb919d/myfunctions_Adnan-IT-0.0.9.tar.gz
+[2024-06-01 02:04:25] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/84/47/289f7b7cd35adcb88a019ec8e5dae83ad3dc261c6fba33fed418337c4143/onnxscript-0.1.0.dev20240530.tar.gz
+[2024-06-01 02:04:25] INFO root fetch - processPackages [myfunctions-Adnan-IT]: executing diffoscope
+[2024-06-01 02:04:25] INFO root fetch - processPackages [myfunctions-Adnan-IT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_Adnan-IT-0.0.13.tar.gz tmp/myfunctions_Adnan-IT-0.0.9.tar.gz --markdown 20240601/m/myfunctions-Adnan-IT/0.0.13-0.0.9/README.md --exclude *.pyd
+[2024-06-01 02:04:25] INFO root fetch - processPackages [oaklib]: Downloading https://files.pythonhosted.org/packages/f9/43/2359a5fce18e7415fb60b6cf5508e5b7f415803d0862489e44bb792c7f08/oaklib-0.6.7.tar.gz
+[2024-06-01 02:04:25] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/ad/15/7dc1b969a8093453ee3fb1cde25ea963a136892ca52c961d0ae05a2ecfa3/onnxscript-0.1.0.dev20240601.tar.gz
+[2024-06-01 02:04:25] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-06-01 02:04:25] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240530.tar.gz tmp/onnxscript-0.1.0.dev20240601.tar.gz --markdown 20240601/o/onnxscript/0.1.0.dev20240530-0.1.0.dev20240601/README.md --exclude *.pyd
+[2024-06-01 02:04:25] INFO root fetch - processPackages [oaklib]: executing diffoscope
+[2024-06-01 02:04:25] INFO root fetch - processPackages [oaklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oaklib-0.6.6.tar.gz tmp/oaklib-0.6.7.tar.gz --markdown 20240601/o/oaklib/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-06-01 02:04:25] INFO root fetch - processPackages [myfunctions-Adnan-IT]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_Adnan-IT-0.0.13.tar.gz]
+[2024-06-01 02:04:25] INFO root fetch - processPackages [myfunctions-Adnan-IT]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_Adnan-IT-0.0.9.tar.gz]
+[2024-06-01 02:04:25] INFO root fetch - main [MainThread]: End processing [myfunctions-Adnan-IT]: success
+[2024-06-01 02:04:26] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240530.tar.gz]
+[2024-06-01 02:04:26] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240601.tar.gz]
+[2024-06-01 02:04:26] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-06-01 02:04:27] INFO root fetch - processPackages [oaklib]: Remove: archive file [/home/abi/fetcher/tmp/oaklib-0.6.6.tar.gz]
+[2024-06-01 02:04:27] INFO root fetch - processPackages [oaklib]: Remove: archive file [/home/abi/fetcher/tmp/oaklib-0.6.7.tar.gz]
+[2024-06-01 02:04:27] INFO root fetch - main [MainThread]: End processing [oaklib]: success
+[2024-06-01 02:04:27] INFO root fetch - main [MainThread]: Store serial: [23473861]
