@@ -22921,3 +22921,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:38:40] INFO root fetch - processPackages [cv2ext]: Remove: archive file [/home/abi/fetcher/tmp/cv2ext-0.0.9.tar.gz]
 [2024-06-01 22:38:40] INFO root fetch - main [MainThread]: End processing [cv2ext]: success
 [2024-06-01 22:38:40] INFO root fetch - main [MainThread]: Store serial: [23483400]
+[2024-06-01 22:40:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483400]
+[2024-06-01 22:40:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 22:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omicsdata
+[2024-06-01 22:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: network-diffusion
+[2024-06-01 22:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyhole
+[2024-06-01 22:40:50] INFO root fetch - processPackages [omicsdata]: New version: [1.3] Old Version: [1.2]
+[2024-06-01 22:40:50] INFO root fetch - processPackages [network-diffusion]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 22:40:50] INFO root fetch - processPackages [omicsdata]: Downloading https://files.pythonhosted.org/packages/c2/2e/e3400e27f29c8612fc19c5ae8b68a5e4dbd72960b70c02033a6a6d382447/omicsdata-1.2.tar.gz
+[2024-06-01 22:40:50] INFO root fetch - processPackages [cyhole]: New version: [0.0.1a1] Old Version: [0.0.1a0]
+[2024-06-01 22:40:50] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/31/07/8b415bbd0cce5d8c54f10ca2e9441fdbff6d9e3ce91e58f44843f41d2335/network_diffusion-0.8.0.tar.gz
+[2024-06-01 22:40:50] INFO root fetch - processPackages [cyhole]: Downloading https://files.pythonhosted.org/packages/85/6c/239c3780a3f63a3dcd869d94f15632f676d53ef90da63fb50b81a8704959/cyhole-0.0.1a0.tar.gz
+[2024-06-01 22:40:50] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/81/1a/b6692ce2d9c366a1672e75b7adbd512df91035714fadccd1a9f35515bd8e/network_diffusion-0.9.0.tar.gz
+[2024-06-01 22:40:50] INFO root fetch - processPackages [omicsdata]: Downloading https://files.pythonhosted.org/packages/68/b2/3a876e39a0e8e7dc432acf0584d56c87ce155aca2a8862957da6b28be0a9/omicsdata-1.3-py3-none-any.whl
+[2024-06-01 22:40:50] INFO root fetch - processPackages [network-diffusion]: executing diffoscope
+[2024-06-01 22:40:50] INFO root fetch - processPackages [network-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_diffusion-0.8.0.tar.gz tmp/network_diffusion-0.9.0.tar.gz --markdown 20240601/n/network-diffusion/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 22:40:51] INFO root fetch - processPackages [omicsdata]: executing diffoscope
+[2024-06-01 22:40:51] INFO root fetch - processPackages [omicsdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omicsdata-1.2.tar.gz tmp/omicsdata-1.3-py3-none-any.whl.zip --markdown 20240601/o/omicsdata/1.2-1.3/README.md --exclude *.pyd
+[2024-06-01 22:40:51] INFO root fetch - processPackages [cyhole]: Downloading https://files.pythonhosted.org/packages/cc/93/d6d141123c6ed7b856f2b580d36cd87268f11684e1de00d536c42a962164/cyhole-0.0.1a1.tar.gz
+[2024-06-01 22:40:51] INFO root fetch - processPackages [cyhole]: executing diffoscope
+[2024-06-01 22:40:51] INFO root fetch - processPackages [cyhole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyhole-0.0.1a0.tar.gz tmp/cyhole-0.0.1a1.tar.gz --markdown 20240601/c/cyhole/0.0.1a0-0.0.1a1/README.md --exclude *.pyd
+[2024-06-01 22:40:51] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.8.0.tar.gz]
+[2024-06-01 22:40:51] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
+[2024-06-01 22:40:51] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
+[2024-06-01 22:40:51] INFO root fetch - processPackages [omicsdata]: Remove: archive file [/home/abi/fetcher/tmp/omicsdata-1.2.tar.gz]
+[2024-06-01 22:40:51] INFO root fetch - processPackages [omicsdata]: Remove: archive file [/home/abi/fetcher/tmp/omicsdata-1.3-py3-none-any.whl.zip]
+[2024-06-01 22:40:51] INFO root fetch - main [MainThread]: End processing [omicsdata]: success
+[2024-06-01 22:40:51] INFO root fetch - processPackages [cyhole]: Remove: archive file [/home/abi/fetcher/tmp/cyhole-0.0.1a0.tar.gz]
+[2024-06-01 22:40:51] INFO root fetch - processPackages [cyhole]: Remove: archive file [/home/abi/fetcher/tmp/cyhole-0.0.1a1.tar.gz]
+[2024-06-01 22:40:51] INFO root fetch - main [MainThread]: End processing [cyhole]: success
+[2024-06-01 22:40:51] INFO root fetch - main [MainThread]: Store serial: [23483409]
