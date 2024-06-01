@@ -8132,3 +8132,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:03:02] WARNING root fetch - processPackages [emu-data-loader]: Skipping, unable to determine old version
 [2024-06-01 04:03:02] INFO root fetch - main [MainThread]: End processing [emu-data-loader] error
 [2024-06-01 04:03:02] INFO root fetch - main [MainThread]: Store serial: [23476326]
+[2024-06-01 04:05:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476326]
+[2024-06-01 04:05:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 04:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zonevu
+[2024-06-01 04:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: workercontext
+[2024-06-01 04:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xerenity
+[2024-06-01 04:05:10] INFO root fetch - processPackages [zonevu]: New version: [1.1.29] Old Version: [1.1.28]
+[2024-06-01 04:05:10] WARNING root fetch - processPackages [xerenity]: Skipping, unable to determine old version
+[2024-06-01 04:05:10] INFO root fetch - processPackages [workercontext]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-06-01 04:05:10] INFO root fetch - main [MainThread]: End processing [xerenity] error
+[2024-06-01 04:05:10] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/6e/34/be90070a05560aa2c1a5aa9d370815b1aaa96104a95af2c84012c3bd8a64/zonevu-1.1.28-py3-none-any.whl
+[2024-06-01 04:05:10] INFO root fetch - processPackages [workercontext]: Downloading https://files.pythonhosted.org/packages/2c/ae/6c018971dc59d1c59ed0078958f73323c73e4708ec6eba2f058111c6506b/workercontext-0.0.3.tar.gz
+[2024-06-01 04:05:10] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/aa/7e/4af53bfd82d27e6b8fb4b2267ec592994b52f68ab1a97f23119898836119/zonevu-1.1.29-py3-none-any.whl
+[2024-06-01 04:05:11] INFO root fetch - processPackages [workercontext]: Downloading https://files.pythonhosted.org/packages/69/32/6f4bd3e80c763dca50c6e31fafb0d49fd5d4444c3f8f1b83b578ac494090/workercontext-0.1.0.tar.gz
+[2024-06-01 04:05:11] INFO root fetch - processPackages [zonevu]: executing diffoscope
+[2024-06-01 04:05:11] INFO root fetch - processPackages [zonevu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonevu-1.1.28-py3-none-any.whl.zip tmp/zonevu-1.1.29-py3-none-any.whl.zip --markdown 20240601/z/zonevu/1.1.28-1.1.29/README.md --exclude *.pyd
+[2024-06-01 04:05:11] INFO root fetch - processPackages [workercontext]: executing diffoscope
+[2024-06-01 04:05:11] INFO root fetch - processPackages [workercontext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workercontext-0.0.3.tar.gz tmp/workercontext-0.1.0.tar.gz --markdown 20240601/w/workercontext/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-06-01 04:05:11] INFO root fetch - processPackages [workercontext]: Remove: archive file [/home/abi/fetcher/tmp/workercontext-0.0.3.tar.gz]
+[2024-06-01 04:05:11] INFO root fetch - processPackages [workercontext]: Remove: archive file [/home/abi/fetcher/tmp/workercontext-0.1.0.tar.gz]
+[2024-06-01 04:05:11] INFO root fetch - main [MainThread]: End processing [workercontext]: success
+[2024-06-01 04:05:11] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.28-py3-none-any.whl.zip]
+[2024-06-01 04:05:11] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.29-py3-none-any.whl.zip]
+[2024-06-01 04:05:11] INFO root fetch - main [MainThread]: End processing [zonevu]: success
+[2024-06-01 04:05:11] INFO root fetch - main [MainThread]: Store serial: [23476334]
