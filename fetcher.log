@@ -11923,3 +11923,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:19:07] INFO root fetch - processPackages [oahspe]: Remove: archive file [/home/abi/fetcher/tmp/oahspe-0.0.9.tar.gz]
 [2024-06-01 09:19:07] INFO root fetch - main [MainThread]: End processing [oahspe]: success
 [2024-06-01 09:19:07] INFO root fetch - main [MainThread]: Store serial: [23478057]
+[2024-06-01 09:21:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478057]
+[2024-06-01 09:21:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-06-01 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: group-remote
+[2024-06-01 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: napari-moltrack
+[2024-06-01 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-stock-picking-batch-print-invoices
+[2024-06-01 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-stock-picking-batch-print-pickings
+[2024-06-01 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: whotfis-py
+[2024-06-01 09:21:17] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.2.3]
+[2024-06-01 09:21:17] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.2.1]
+[2024-06-01 09:21:17] INFO root fetch - processPackages [napari-moltrack]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-01 09:21:17] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-01 09:21:17] INFO root fetch - processPackages [whotfis-py]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 09:21:17] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: Downloading https://files.pythonhosted.org/packages/7c/95/4a20bb6963711c815cea0b957467088a839c69d0a4430b2637c2f7297793/odoo_addon_stock_picking_batch_print_pickings-16.0.1.0.2.3-py3-none-any.whl
+[2024-06-01 09:21:17] INFO root fetch - processPackages [group-remote]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 09:21:17] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: Downloading https://files.pythonhosted.org/packages/69/a3/bab19e7091ae72fe6303740ca8e899ca3244789fe73e763646a94df8a8e3/odoo_addon_stock_picking_batch_print_invoices-16.0.1.0.2.1-py3-none-any.whl
+[2024-06-01 09:21:17] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/38/dc/54ecfa532b41e2634fafb14880548f5c18e07ceaffc567c1e976af59326e/napari_moltrack-0.0.5.tar.gz
+[2024-06-01 09:21:17] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-01 09:21:17] INFO root fetch - processPackages [group-remote]: Downloading https://files.pythonhosted.org/packages/57/b2/e7d8728abc3d7bb588f284b30365c7e85e9fa1916285d4bf7c5a924dbc7c/group-remote-0.0.98.tar.gz
+[2024-06-01 09:21:17] INFO root fetch - processPackages [whotfis-py]: Downloading https://files.pythonhosted.org/packages/28/36/2edd57013f5b75fb80bd86529ae108598cabd910f1f5b395a1995cb08613/whotfis_py-0.0.6.tar.gz
+[2024-06-01 09:21:17] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: Downloading https://files.pythonhosted.org/packages/92/88/62fd55118685ef236dd4d0d471b749f37e5b62dec9347c5dc5d53b5a7c20/odoo_addon_stock_picking_batch_print_pickings-16.0.1.1.0-py3-none-any.whl
+[2024-06-01 09:21:17] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: Downloading https://files.pythonhosted.org/packages/49/1a/73c0e64d678fe9744cd7dd21b3650237bb7c5348739b930f5f9822a4d3af/odoo_addon_stock_picking_batch_print_invoices-16.0.1.1.0-py3-none-any.whl
+[2024-06-01 09:21:18] INFO root fetch - processPackages [group-remote]: Downloading https://files.pythonhosted.org/packages/4e/14/cf27e0c722ebe422d5024cbe915929742b7cb62d1719b04518655523e11d/group-remote-0.0.99.tar.gz
+[2024-06-01 09:21:18] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: executing diffoscope
+[2024-06-01 09:21:18] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_picking_batch_print_pickings-16.0.1.0.2.3-py3-none-any.whl.zip tmp/odoo_addon_stock_picking_batch_print_pickings-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-stock-picking-batch-print-pickings/16.0.1.0.2.3-16.0.1.1.0/README.md --exclude *.pyd
+[2024-06-01 09:21:18] INFO root fetch - processPackages [napari-moltrack]: Downloading https://files.pythonhosted.org/packages/a4/0c/d446ed8bca79d2f22f29e7068a6279e0a0c799a73a64b937486dd50ae80e/napari_moltrack-0.0.6.tar.gz
+[2024-06-01 09:21:18] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: executing diffoscope
+[2024-06-01 09:21:18] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_picking_batch_print_invoices-16.0.1.0.2.1-py3-none-any.whl.zip tmp/odoo_addon_stock_picking_batch_print_invoices-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-stock-picking-batch-print-invoices/16.0.1.0.2.1-16.0.1.1.0/README.md --exclude *.pyd
+[2024-06-01 09:21:18] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-01 09:21:18] INFO root fetch - processPackages [group-remote]: executing diffoscope
+[2024-06-01 09:21:18] INFO root fetch - processPackages [group-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/group-remote-0.0.98.tar.gz tmp/group-remote-0.0.99.tar.gz --markdown 20240601/g/group-remote/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 09:21:18] INFO root fetch - processPackages [whotfis-py]: Downloading https://files.pythonhosted.org/packages/ed/da/52841290cbf65849997d1784fcf2ed2d854b2e74f18fa44c69025a00c0a6/whotfis_py-0.0.7.tar.gz
+[2024-06-01 09:21:18] INFO root fetch - processPackages [napari-moltrack]: executing diffoscope
+[2024-06-01 09:21:18] INFO root fetch - processPackages [napari-moltrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_moltrack-0.0.5.tar.gz tmp/napari_moltrack-0.0.6.tar.gz --markdown 20240601/n/napari-moltrack/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-01 09:21:18] INFO root fetch - processPackages [whotfis-py]: executing diffoscope
+[2024-06-01 09:21:18] INFO root fetch - processPackages [whotfis-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whotfis_py-0.0.6.tar.gz tmp/whotfis_py-0.0.7.tar.gz --markdown 20240601/w/whotfis-py/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 09:21:18] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-01 09:21:18] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240601/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-01 09:21:18] INFO root fetch - processPackages [group-remote]: Remove: archive file [/home/abi/fetcher/tmp/group-remote-0.0.98.tar.gz]
+[2024-06-01 09:21:18] INFO root fetch - processPackages [group-remote]: Remove: archive file [/home/abi/fetcher/tmp/group-remote-0.0.99.tar.gz]
+[2024-06-01 09:21:18] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_picking_batch_print_invoices-16.0.1.0.2.1-py3-none-any.whl.zip]
+[2024-06-01 09:21:18] INFO root fetch - main [MainThread]: End processing [group-remote]: success
+[2024-06-01 09:21:18] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-invoices]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_picking_batch_print_invoices-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-06-01 09:21:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-batch-print-invoices]: success
+[2024-06-01 09:21:19] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_picking_batch_print_pickings-16.0.1.0.2.3-py3-none-any.whl.zip]
+[2024-06-01 09:21:19] INFO root fetch - processPackages [odoo-addon-stock-picking-batch-print-pickings]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_picking_batch_print_pickings-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-06-01 09:21:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-batch-print-pickings]: success
+[2024-06-01 09:21:19] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.5.tar.gz]
+[2024-06-01 09:21:19] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.6.tar.gz]
+[2024-06-01 09:21:19] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
+[2024-06-01 09:21:19] INFO root fetch - processPackages [whotfis-py]: Remove: archive file [/home/abi/fetcher/tmp/whotfis_py-0.0.6.tar.gz]
+[2024-06-01 09:21:19] INFO root fetch - processPackages [whotfis-py]: Remove: archive file [/home/abi/fetcher/tmp/whotfis_py-0.0.7.tar.gz]
+[2024-06-01 09:21:19] INFO root fetch - main [MainThread]: End processing [whotfis-py]: success
+[2024-06-01 09:21:19] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-01 09:21:19] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-01 09:21:19] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-01 09:21:19] INFO root fetch - main [MainThread]: Store serial: [23478073]
