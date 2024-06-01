@@ -13777,3 +13777,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:32:31] INFO root fetch - processPackages [nwon_django_toolbox]: Remove: archive file [/home/abi/fetcher/tmp/nwon_django_toolbox-0.6.7.tar.gz]
 [2024-06-01 11:32:31] INFO root fetch - main [MainThread]: End processing [nwon_django_toolbox]: success
 [2024-06-01 11:32:31] INFO root fetch - main [MainThread]: Store serial: [23479070]
+[2024-06-01 11:34:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479070]
+[2024-06-01 11:34:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 11:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WGSE-NG
+[2024-06-01 11:34:41] INFO root fetch - processPackages [WGSE-NG]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-06-01 11:34:41] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/3f/89/4634313fc70bf7ef0052fffe85999ab1d6691d3fd213d6b737894eb12b36/wgse_ng-1.0.0a8.tar.gz
+[2024-06-01 11:34:43] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/15/4d/c9a515b0210f4f91d2909606ff889cc50487c3b067db9e503da7075956bb/wgse_ng-1.0.0a9.tar.gz
+[2024-06-01 11:34:43] INFO root fetch - processPackages [WGSE-NG]: executing diffoscope
+[2024-06-01 11:34:43] INFO root fetch - processPackages [WGSE-NG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgse_ng-1.0.0a8.tar.gz tmp/wgse_ng-1.0.0a9.tar.gz --markdown 20240601/W/WGSE-NG/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-06-01 11:34:45] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a8.tar.gz]
+[2024-06-01 11:34:45] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a9.tar.gz]
+[2024-06-01 11:34:45] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
+[2024-06-01 11:34:45] INFO root fetch - main [MainThread]: Store serial: [23479073]
