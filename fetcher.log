@@ -2264,3 +2264,51 @@
 [2024-06-01 02:04:27] INFO root fetch - processPackages [oaklib]: Remove: archive file [/home/abi/fetcher/tmp/oaklib-0.6.7.tar.gz]
 [2024-06-01 02:04:27] INFO root fetch - main [MainThread]: End processing [oaklib]: success
 [2024-06-01 02:04:27] INFO root fetch - main [MainThread]: Store serial: [23473861]
+[2024-06-01 02:06:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473861]
+[2024-06-01 02:06:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-nightly
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxkern-nightly
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notdiamond
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: corpus-distance
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alluxiocommon
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: replete
+[2024-06-01 02:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ipyweb
+[2024-06-01 02:06:36] WARNING root fetch - processPackages [ipyweb]: Skipping, unable to determine old version
+[2024-06-01 02:06:36] INFO root fetch - main [MainThread]: End processing [ipyweb] error
+[2024-06-01 02:06:36] INFO root fetch - processPackages [replete]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-06-01 02:06:36] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-06-01 02:06:36] INFO root fetch - processPackages [notdiamond]: New version: [0.2.1b0] Old Version: [0.1.9b0]
+[2024-06-01 02:06:36] ERROR root fetch - processPackages [corpus-distance]: Unable to get metadata: No such project 'corpus-distance'
+[2024-06-01 02:06:36] INFO root fetch - main [MainThread]: End processing [corpus-distance] error
+[2024-06-01 02:06:36] WARNING root fetch - processPackages [alluxiocommon]: Skipping, unable to determine old version
+[2024-06-01 02:06:36] INFO root fetch - main [MainThread]: End processing [alluxiocommon] error
+[2024-06-01 02:06:36] INFO root fetch - processPackages [replete]: Downloading https://files.pythonhosted.org/packages/50/7a/f3d9953a0fcbcb91386ca84967cf7f0d688ac53cf3c7ea15ffb902aff9ee/replete-2.3.0.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [mct-nightly]: New version: [2.1.0.20240601.434] Old Version: [2.1.0.20240530.440]
+[2024-06-01 02:06:36] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [notdiamond]: Downloading https://files.pythonhosted.org/packages/ca/a2/0af46e6cc03ef4f28da6e149a8e8f12458a7285f90b855a006e0726be24d/notdiamond-0.1.9b0.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/3f/21/6b09a6c546f962e63ad25b410c642926f049ee9671f61644144a3df1fad6/mct-nightly-2.1.0.20240530.440.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [replete]: Downloading https://files.pythonhosted.org/packages/bf/4a/2afd0140c39f78e0203a337a394306f092586846accbfb8e2f08be19a10e/replete-2.3.1.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-06-01 02:06:36] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240601/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-06-01 02:06:36] INFO root fetch - processPackages [replete]: executing diffoscope
+[2024-06-01 02:06:36] INFO root fetch - processPackages [replete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replete-2.3.0.tar.gz tmp/replete-2.3.1.tar.gz --markdown 20240601/r/replete/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-06-01 02:06:36] INFO root fetch - processPackages [notdiamond]: Downloading https://files.pythonhosted.org/packages/80/d1/df69bf72ebf24b18f61f15285e3682455d06d2c16d2e6de4ccd3d5339871/notdiamond-0.2.1b0.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [notdiamond]: executing diffoscope
+[2024-06-01 02:06:36] INFO root fetch - processPackages [notdiamond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notdiamond-0.1.9b0.tar.gz tmp/notdiamond-0.2.1b0.tar.gz --markdown 20240601/n/notdiamond/0.1.9b0-0.2.1b0/README.md --exclude *.pyd
+[2024-06-01 02:06:36] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/57/e7/017736f69e819433cb9fca009cc7fe5437ce7c1dc49e25d2c886cd413042/mct-nightly-2.1.0.20240601.434.tar.gz
+[2024-06-01 02:06:36] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-06-01 02:06:36] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.1.0.20240530.440.tar.gz tmp/mct-nightly-2.1.0.20240601.434.tar.gz --markdown 20240601/m/mct-nightly/2.1.0.20240530.440-2.1.0.20240601.434/README.md --exclude *.pyd
+[2024-06-01 02:06:37] INFO root fetch - processPackages [replete]: Remove: archive file [/home/abi/fetcher/tmp/replete-2.3.0.tar.gz]
+[2024-06-01 02:06:37] INFO root fetch - processPackages [replete]: Remove: archive file [/home/abi/fetcher/tmp/replete-2.3.1.tar.gz]
+[2024-06-01 02:06:37] INFO root fetch - main [MainThread]: End processing [replete]: success
+[2024-06-01 02:06:37] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-06-01 02:06:37] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-06-01 02:06:37] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-06-01 02:06:37] INFO root fetch - processPackages [notdiamond]: Remove: archive file [/home/abi/fetcher/tmp/notdiamond-0.1.9b0.tar.gz]
+[2024-06-01 02:06:37] INFO root fetch - processPackages [notdiamond]: Remove: archive file [/home/abi/fetcher/tmp/notdiamond-0.2.1b0.tar.gz]
+[2024-06-01 02:06:37] INFO root fetch - main [MainThread]: End processing [notdiamond]: success
+[2024-06-01 02:06:38] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.1.0.20240530.440.tar.gz]
+[2024-06-01 02:06:38] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.1.0.20240601.434.tar.gz]
+[2024-06-01 02:06:38] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-06-01 02:06:38] INFO root fetch - main [MainThread]: Store serial: [23473885]
