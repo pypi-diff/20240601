@@ -15107,3 +15107,15 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:17:57] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-06-01 13:17:57] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-06-01 13:17:57] INFO root fetch - main [MainThread]: Store serial: [23479657]
+[2024-06-01 13:20:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479657]
+[2024-06-01 13:20:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 13:20:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudstructs
+[2024-06-01 13:20:06] INFO root fetch - processPackages [cloudstructs]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-06-01 13:20:06] INFO root fetch - processPackages [cloudstructs]: Downloading https://files.pythonhosted.org/packages/53/6c/e840e66d0838772c81dea894c89248453a655c71a418ba615627e13a61ac/cloudstructs-0.9.7.tar.gz
+[2024-06-01 13:20:06] INFO root fetch - processPackages [cloudstructs]: Downloading https://files.pythonhosted.org/packages/ce/6b/d0ac6dd0e7e6a495a054a1a293a4e2c94c5f23fbba06f636eccfb9ce34a5/cloudstructs-0.9.8.tar.gz
+[2024-06-01 13:20:07] INFO root fetch - processPackages [cloudstructs]: executing diffoscope
+[2024-06-01 13:20:07] INFO root fetch - processPackages [cloudstructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudstructs-0.9.7.tar.gz tmp/cloudstructs-0.9.8.tar.gz --markdown 20240601/c/cloudstructs/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-06-01 13:20:07] INFO root fetch - processPackages [cloudstructs]: Remove: archive file [/home/abi/fetcher/tmp/cloudstructs-0.9.7.tar.gz]
+[2024-06-01 13:20:07] INFO root fetch - processPackages [cloudstructs]: Remove: archive file [/home/abi/fetcher/tmp/cloudstructs-0.9.8.tar.gz]
+[2024-06-01 13:20:07] INFO root fetch - main [MainThread]: End processing [cloudstructs]: success
+[2024-06-01 13:20:07] INFO root fetch - main [MainThread]: Store serial: [23479660]
