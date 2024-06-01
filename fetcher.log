@@ -3002,3 +3002,72 @@
 [2024-06-01 02:42:48] INFO root fetch - processPackages [mercoa]: Remove: archive file [/home/abi/fetcher/tmp/mercoa-0.3.8.tar.gz]
 [2024-06-01 02:42:48] INFO root fetch - main [MainThread]: End processing [mercoa]: success
 [2024-06-01 02:42:48] INFO root fetch - main [MainThread]: Store serial: [23474190]
+[2024-06-01 02:44:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474190]
+[2024-06-01 02:44:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: albucore
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composio-griptape
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metalarchivist
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chalkpy
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyarmor.cli.core
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-julep
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: devdock
+[2024-06-01 02:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ladybug-core
+[2024-06-01 02:44:57] INFO root fetch - processPackages [metalarchivist]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-griptape]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-julep]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:44:57] WARNING root fetch - processPackages [devdock]: Skipping, unable to determine old version
+[2024-06-01 02:44:57] INFO root fetch - main [MainThread]: End processing [devdock] error
+[2024-06-01 02:44:57] INFO root fetch - processPackages [chalkpy]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-06-01 02:44:57] INFO root fetch - processPackages [albucore]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 02:44:57] INFO root fetch - processPackages [ladybug-core]: New version: [0.42.9] Old Version: [0.42.8]
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-griptape]: Downloading https://files.pythonhosted.org/packages/3b/3b/ed2f534ec2da6bef1f151753a241d451c306c0dfa09edb3bf64f5250767d/composio_griptape-0.3.2.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-julep]: Downloading https://files.pythonhosted.org/packages/54/9f/bf00630786ffbbdbd7414c788e72ddeddc543d579a8254f0389a7da9bf9e/composio_julep-0.3.2.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/37/52/5c69a74a70d94d61d88e81cf17862496f7cd9ebd0725d75f357f252f3052/chalkpy-2.9.8.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [metalarchivist]: Downloading https://files.pythonhosted.org/packages/17/66/2f4d8ff0469fd6d41f60d21f537f38c6ed82afbe6d4552fcc40cb78a5e7a/metalarchivist-0.5.4.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [albucore]: Downloading https://files.pythonhosted.org/packages/aa/79/9dd6f678e85b9b998f235582377866efb71265dd8557f607394afca06193/albucore-0.0.6.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [ladybug-core]: Downloading https://files.pythonhosted.org/packages/65/39/440bbf73af1908ee08006a7a71b91e3c7ceb3e340f2a0334b9e091511de9/ladybug-core-0.42.8.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/f1/ff/9cdb492bac7076766dffbc16bbff1773bfc5635cfb81b130f720883912c7/chalkpy-2.9.9.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-griptape]: Downloading https://files.pythonhosted.org/packages/f8/83/a461258709449b2df427127cc136940b48422f2798bd150c210f46516d40/composio_griptape-0.3.3.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-julep]: Downloading https://files.pythonhosted.org/packages/b5/c4/cb0793b87a17ad406e532554d8eb890569351cd6b75bc62243e582b76bec/composio_julep-0.3.3.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:44:57] INFO root fetch - processPackages [metalarchivist]: Downloading https://files.pythonhosted.org/packages/e9/91/61fc24ea15c0dfbd7e99524d12f26a17c7454ced48199bc26b6930fa406b/metalarchivist-0.5.5.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2024-06-01 02:44:57] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.9.8.tar.gz tmp/chalkpy-2.9.9.tar.gz --markdown 20240601/c/chalkpy/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-griptape]: executing diffoscope
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-griptape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_griptape-0.3.2.tar.gz tmp/composio_griptape-0.3.3.tar.gz --markdown 20240601/c/composio-griptape/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:44:57] INFO root fetch - processPackages [albucore]: Downloading https://files.pythonhosted.org/packages/0d/db/9b5dae2fb2d827fb4cc5ff5c99f375f9e5c3b09b6d8dd0259a00ca6d08de/albucore-0.0.7.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [pyarmor.cli.core]: Downloading https://files.pythonhosted.org/packages/2b/f5/45bec196c64802394b43a18b6819c6a2f8276da70f93a065ec67b1ce3a6d/pyarmor.cli.core-6.5.1.zip
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-julep]: executing diffoscope
+[2024-06-01 02:44:57] INFO root fetch - processPackages [composio-julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_julep-0.3.2.tar.gz tmp/composio_julep-0.3.3.tar.gz --markdown 20240601/c/composio-julep/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:44:57] INFO root fetch - processPackages [metalarchivist]: executing diffoscope
+[2024-06-01 02:44:57] INFO root fetch - processPackages [metalarchivist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalarchivist-0.5.4.tar.gz tmp/metalarchivist-0.5.5.tar.gz --markdown 20240601/m/metalarchivist/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-06-01 02:44:57] INFO root fetch - processPackages [ladybug-core]: Downloading https://files.pythonhosted.org/packages/05/39/ad2de8ecb5085f93473c7a56fb92b7cbfad1ed03321c5209b36c5bf8bf3f/ladybug-core-0.42.9.tar.gz
+[2024-06-01 02:44:57] INFO root fetch - processPackages [albucore]: executing diffoscope
+[2024-06-01 02:44:57] INFO root fetch - processPackages [albucore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/albucore-0.0.6.tar.gz tmp/albucore-0.0.7.tar.gz --markdown 20240601/a/albucore/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 02:44:58] INFO root fetch - processPackages [pyarmor.cli.core]: Downloading https://files.pythonhosted.org/packages/68/bb/577360af3759f60de71c23a7b748f27e9e76b4caf00e729b488ca26302ed/pyarmor.cli.core-6.5.2.zip
+[2024-06-01 02:44:58] INFO root fetch - processPackages [ladybug-core]: executing diffoscope
+[2024-06-01 02:44:58] INFO root fetch - processPackages [ladybug-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-core-0.42.8.tar.gz tmp/ladybug-core-0.42.9.tar.gz --markdown 20240601/l/ladybug-core/0.42.8-0.42.9/README.md --exclude *.pyd
+[2024-06-01 02:44:58] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2024-06-01 02:44:58] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-6.5.1.zip tmp/pyarmor.cli.core-6.5.2.zip --markdown 20240601/p/pyarmor.cli.core/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:44:58] INFO root fetch - processPackages [composio-julep]: Remove: archive file [/home/abi/fetcher/tmp/composio_julep-0.3.2.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - processPackages [composio-julep]: Remove: archive file [/home/abi/fetcher/tmp/composio_julep-0.3.3.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - main [MainThread]: End processing [composio-julep]: success
+[2024-06-01 02:44:58] INFO root fetch - processPackages [metalarchivist]: Remove: archive file [/home/abi/fetcher/tmp/metalarchivist-0.5.4.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - processPackages [metalarchivist]: Remove: archive file [/home/abi/fetcher/tmp/metalarchivist-0.5.5.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - main [MainThread]: End processing [metalarchivist]: success
+[2024-06-01 02:44:58] INFO root fetch - processPackages [composio-griptape]: Remove: archive file [/home/abi/fetcher/tmp/composio_griptape-0.3.2.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - processPackages [composio-griptape]: Remove: archive file [/home/abi/fetcher/tmp/composio_griptape-0.3.3.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - main [MainThread]: End processing [composio-griptape]: success
+[2024-06-01 02:44:58] INFO root fetch - processPackages [albucore]: Remove: archive file [/home/abi/fetcher/tmp/albucore-0.0.6.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - processPackages [albucore]: Remove: archive file [/home/abi/fetcher/tmp/albucore-0.0.7.tar.gz]
+[2024-06-01 02:44:58] INFO root fetch - main [MainThread]: End processing [albucore]: success
+[2024-06-01 02:44:58] INFO root fetch - processPackages [pyarmor.cli.core]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core-6.5.1.zip]
+[2024-06-01 02:44:58] INFO root fetch - processPackages [pyarmor.cli.core]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core-6.5.2.zip]
+[2024-06-01 02:44:58] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core]: success
+[2024-06-01 02:44:59] INFO root fetch - processPackages [ladybug-core]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-core-0.42.8.tar.gz]
+[2024-06-01 02:44:59] INFO root fetch - processPackages [ladybug-core]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-core-0.42.9.tar.gz]
+[2024-06-01 02:44:59] INFO root fetch - main [MainThread]: End processing [ladybug-core]: success
+[2024-06-01 02:44:59] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.8.tar.gz]
+[2024-06-01 02:44:59] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
+[2024-06-01 02:44:59] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2024-06-01 02:44:59] INFO root fetch - main [MainThread]: Store serial: [23474246]
