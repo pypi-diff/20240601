@@ -23518,3 +23518,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:27:04] INFO root fetch - processPackages [easymp3]: Remove: archive file [/home/abi/fetcher/tmp/easymp3-1.1.tar.gz]
 [2024-06-01 23:27:04] INFO root fetch - main [MainThread]: End processing [easymp3]: success
 [2024-06-01 23:27:04] INFO root fetch - main [MainThread]: Store serial: [23483794]
+[2024-06-01 23:29:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483794]
+[2024-06-01 23:29:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 23:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-06-01 23:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: breadslicer
+[2024-06-01 23:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaynes
+[2024-06-01 23:29:13] INFO root fetch - processPackages [breadslicer]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 23:29:13] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-01 23:29:13] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-06-01 23:29:13] INFO root fetch - processPackages [jaynes]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 23:29:13] INFO root fetch - processPackages [breadslicer]: Downloading https://files.pythonhosted.org/packages/56/ca/bbd4bcc1009f4651ce05e7830c399a7fcd9256c3232248a831aacea605a8/breadslicer-0.0.1.tar.gz
+[2024-06-01 23:29:13] INFO root fetch - processPackages [jaynes]: Downloading https://files.pythonhosted.org/packages/a2/da/fc30e8cea39f8f1b0c57379aebce24715c520b688c6041443d06d14c212a/jaynes-0.9.8-py3-none-any.whl
+[2024-06-01 23:29:13] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-06-01 23:29:14] INFO root fetch - processPackages [breadslicer]: Downloading https://files.pythonhosted.org/packages/fd/83/34ca8087a2088b0bd166993aefe33ece9ad07823a62c7cf50bb8cd7246c2/breadslicer-0.0.2.tar.gz
+[2024-06-01 23:29:14] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-06-01 23:29:14] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240601/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-01 23:29:14] INFO root fetch - processPackages [breadslicer]: executing diffoscope
+[2024-06-01 23:29:14] INFO root fetch - processPackages [breadslicer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/breadslicer-0.0.1.tar.gz tmp/breadslicer-0.0.2.tar.gz --markdown 20240601/b/breadslicer/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 23:29:14] INFO root fetch - processPackages [jaynes]: Downloading https://files.pythonhosted.org/packages/84/ca/385daae4ad0aa46471c83b0f13b0040fb42a6abde7a4f092e9f881a7ab01/jaynes-0.9.9-py3-none-any.whl
+[2024-06-01 23:29:14] INFO root fetch - processPackages [jaynes]: executing diffoscope
+[2024-06-01 23:29:14] INFO root fetch - processPackages [jaynes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaynes-0.9.8-py3-none-any.whl.zip tmp/jaynes-0.9.9-py3-none-any.whl.zip --markdown 20240601/j/jaynes/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 23:29:14] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-06-01 23:29:14] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-06-01 23:29:14] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-06-01 23:29:14] INFO root fetch - processPackages [breadslicer]: Remove: archive file [/home/abi/fetcher/tmp/breadslicer-0.0.1.tar.gz]
+[2024-06-01 23:29:14] INFO root fetch - processPackages [breadslicer]: Remove: archive file [/home/abi/fetcher/tmp/breadslicer-0.0.2.tar.gz]
+[2024-06-01 23:29:14] INFO root fetch - main [MainThread]: End processing [breadslicer]: success
+[2024-06-01 23:29:15] INFO root fetch - processPackages [jaynes]: Remove: archive file [/home/abi/fetcher/tmp/jaynes-0.9.8-py3-none-any.whl.zip]
+[2024-06-01 23:29:15] INFO root fetch - processPackages [jaynes]: Remove: archive file [/home/abi/fetcher/tmp/jaynes-0.9.9-py3-none-any.whl.zip]
+[2024-06-01 23:29:15] INFO root fetch - main [MainThread]: End processing [jaynes]: success
+[2024-06-01 23:29:15] INFO root fetch - main [MainThread]: Store serial: [23483801]
