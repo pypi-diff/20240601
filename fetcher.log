@@ -18878,3 +18878,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:48:44] INFO root fetch - processPackages [ipaacar-python]: Remove: archive file [/home/abi/fetcher/tmp/ipaacar_python-0.1.5.tar.gz]
 [2024-06-01 17:48:44] INFO root fetch - main [MainThread]: End processing [ipaacar-python]: success
 [2024-06-01 17:48:44] INFO root fetch - main [MainThread]: Store serial: [23481506]
+[2024-06-01 17:50:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481506]
+[2024-06-01 17:50:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 17:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mns-common
+[2024-06-01 17:50:52] INFO root fetch - processPackages [mns-common]: New version: [1.1.3.8] Old Version: [1.1.3.7]
+[2024-06-01 17:50:52] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/3b/70/2e4e5a319c9d4259e43ac53163a87bb63cf08e114f459424efcda1cc2899/mns_common-1.1.3.7.tar.gz
+[2024-06-01 17:50:52] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/89/3a/efd065d68db2a586e37c513c8ad35f614982b5dc639a827da009237073a0/mns_common-1.1.3.8.tar.gz
+[2024-06-01 17:50:53] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-06-01 17:50:53] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.1.3.7.tar.gz tmp/mns_common-1.1.3.8.tar.gz --markdown 20240601/m/mns-common/1.1.3.7-1.1.3.8/README.md --exclude *.pyd
+[2024-06-01 17:50:53] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.3.7.tar.gz]
+[2024-06-01 17:50:53] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.1.3.8.tar.gz]
+[2024-06-01 17:50:53] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-06-01 17:50:53] INFO root fetch - main [MainThread]: Store serial: [23481509]
