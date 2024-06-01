@@ -3584,3 +3584,36 @@
 [2024-06-01 03:12:34] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
 [2024-06-01 03:12:34] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
 [2024-06-01 03:12:34] INFO root fetch - main [MainThread]: Store serial: [23474598]
+[2024-06-01 03:14:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474598]
+[2024-06-01 03:14:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 03:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dev-fancy-console
+[2024-06-01 03:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-ladybug
+[2024-06-01 03:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simply-math
+[2024-06-01 03:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcd-mapping
+[2024-06-01 03:14:42] WARNING root fetch - processPackages [dev-fancy-console]: Skipping, unable to determine old version
+[2024-06-01 03:14:42] INFO root fetch - main [MainThread]: End processing [dev-fancy-console] error
+[2024-06-01 03:14:42] INFO root fetch - processPackages [simply-math]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 03:14:42] INFO root fetch - processPackages [dcd-mapping]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 03:14:42] INFO root fetch - processPackages [lbt-ladybug]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 03:14:42] INFO root fetch - processPackages [simply-math]: Downloading https://files.pythonhosted.org/packages/b4/92/ecd036203d2bed3775b26d4ffbf89696895f480f5881d783cfdc4ecf7bce/simply-math-0.0.1.tar.gz
+[2024-06-01 03:14:42] INFO root fetch - processPackages [dcd-mapping]: Downloading https://files.pythonhosted.org/packages/fa/7f/aae0d4b5fd7e722c6fd7ff4f74f696208aaf99b54fe236a6b13553b1d81d/dcd_mapping-0.1.0.tar.gz
+[2024-06-01 03:14:42] INFO root fetch - processPackages [lbt-ladybug]: Downloading https://files.pythonhosted.org/packages/e4/ac/474c600d6f495b8d63c49d7689b2b076f0c5f94c22728fe795233852a9e1/lbt-ladybug-0.8.1.tar.gz
+[2024-06-01 03:14:42] INFO root fetch - processPackages [simply-math]: Downloading https://files.pythonhosted.org/packages/cb/f9/841a4d2d35908d28e48348eabfe1525a930a2d2e4b7ef24625bce63dcc91/simply-math-0.0.2.tar.gz
+[2024-06-01 03:14:43] INFO root fetch - processPackages [simply-math]: executing diffoscope
+[2024-06-01 03:14:43] INFO root fetch - processPackages [simply-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simply-math-0.0.1.tar.gz tmp/simply-math-0.0.2.tar.gz --markdown 20240601/s/simply-math/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 03:14:43] INFO root fetch - processPackages [dcd-mapping]: Downloading https://files.pythonhosted.org/packages/66/0c/affdbea47c8cb5a8cd5ff1f77433cc46cd4cbeb79c327c3796a41d420e6c/dcd_mapping-0.1.1.tar.gz
+[2024-06-01 03:14:43] INFO root fetch - processPackages [simply-math]: Remove: archive file [/home/abi/fetcher/tmp/simply-math-0.0.1.tar.gz]
+[2024-06-01 03:14:43] INFO root fetch - processPackages [simply-math]: Remove: archive file [/home/abi/fetcher/tmp/simply-math-0.0.2.tar.gz]
+[2024-06-01 03:14:43] INFO root fetch - main [MainThread]: End processing [simply-math]: success
+[2024-06-01 03:14:43] INFO root fetch - processPackages [dcd-mapping]: executing diffoscope
+[2024-06-01 03:14:43] INFO root fetch - processPackages [dcd-mapping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcd_mapping-0.1.0.tar.gz tmp/dcd_mapping-0.1.1.tar.gz --markdown 20240601/d/dcd-mapping/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 03:14:44] INFO root fetch - processPackages [lbt-ladybug]: Downloading https://files.pythonhosted.org/packages/6e/e7/a4e6dcfc6b2750475acd6dee9e849a991053471ff22a90aa8f986eaef25b/lbt-ladybug-0.9.0.tar.gz
+[2024-06-01 03:14:45] INFO root fetch - processPackages [dcd-mapping]: Remove: archive file [/home/abi/fetcher/tmp/dcd_mapping-0.1.0.tar.gz]
+[2024-06-01 03:14:45] INFO root fetch - processPackages [dcd-mapping]: Remove: archive file [/home/abi/fetcher/tmp/dcd_mapping-0.1.1.tar.gz]
+[2024-06-01 03:14:45] INFO root fetch - main [MainThread]: End processing [dcd-mapping]: success
+[2024-06-01 03:14:45] INFO root fetch - processPackages [lbt-ladybug]: executing diffoscope
+[2024-06-01 03:14:45] INFO root fetch - processPackages [lbt-ladybug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-ladybug-0.8.1.tar.gz tmp/lbt-ladybug-0.9.0.tar.gz --markdown 20240601/l/lbt-ladybug/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 03:14:46] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.8.1.tar.gz]
+[2024-06-01 03:14:46] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.9.0.tar.gz]
+[2024-06-01 03:14:46] INFO root fetch - main [MainThread]: End processing [lbt-ladybug]: success
+[2024-06-01 03:14:46] INFO root fetch - main [MainThread]: Store serial: [23474620]
