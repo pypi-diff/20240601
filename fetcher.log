@@ -12521,3 +12521,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:58:17] INFO root fetch - processPackages [napari-moltrack]: Remove: archive file [/home/abi/fetcher/tmp/napari_moltrack-0.0.9.tar.gz]
 [2024-06-01 09:58:17] INFO root fetch - main [MainThread]: End processing [napari-moltrack]: success
 [2024-06-01 09:58:17] INFO root fetch - main [MainThread]: Store serial: [23478327]
+[2024-06-01 10:00:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478327]
+[2024-06-01 10:00:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 10:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Github-Nuggests
+[2024-06-01 10:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hotel-spider
+[2024-06-01 10:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huobi-quick-in
+[2024-06-01 10:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly
+[2024-06-01 10:00:25] WARNING root fetch - processPackages [Github-Nuggests]: Skipping, unable to determine old version
+[2024-06-01 10:00:25] INFO root fetch - main [MainThread]: End processing [Github-Nuggests] error
+[2024-06-01 10:00:25] WARNING root fetch - processPackages [huobi-quick-in]: Skipping, unable to determine old version
+[2024-06-01 10:00:25] INFO root fetch - main [MainThread]: End processing [huobi-quick-in] error
+[2024-06-01 10:00:25] WARNING root fetch - processPackages [hotel-spider]: Skipping, unable to determine old version
+[2024-06-01 10:00:25] INFO root fetch - main [MainThread]: End processing [hotel-spider] error
+[2024-06-01 10:00:25] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240601] Old Version: [2.17.0.dev20240531]
+[2024-06-01 10:00:25] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/0c/9f/cf588b4a16dfa01794f04d90280c896b272a5e795c0547b00eb88467a1c4/tf_nightly-2.17.0.dev20240531-cp39-cp39-win_amd64.whl
+[2024-06-01 10:00:26] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/91/1d/8e8245ef7e097e6a757f71a4761ddff7586ad87218adb04e931af0570ab2/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl
+[2024-06-01 10:00:26] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-06-01 10:00:26] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240531-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip --markdown 20240601/t/tf-nightly/2.17.0.dev20240531-2.17.0.dev20240601/README.md --exclude *.pyd
+[2024-06-01 10:00:26] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240531-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 10:00:26] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 10:00:26] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-06-01 10:00:26] INFO root fetch - main [MainThread]: Store serial: [23478347]
