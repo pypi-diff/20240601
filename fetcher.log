@@ -17117,3 +17117,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:49:32] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.7-py3-none-any.whl.zip]
 [2024-06-01 15:49:32] INFO root fetch - main [MainThread]: End processing [intellipandora]: success
 [2024-06-01 15:49:32] INFO root fetch - main [MainThread]: Store serial: [23480550]
+[2024-06-01 15:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480550]
+[2024-06-01 15:51:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrevolut
+[2024-06-01 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromadbx
+[2024-06-01 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-01 15:51:41] INFO root fetch - processPackages [almax-common]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-06-01 15:51:41] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/35/c3/97a228637a27c6dc312f7719873be0849f42ff25f96a6f0f525d7be98932/almax_common-0.9.4.tar.gz
+[2024-06-01 15:51:41] WARNING root fetch - processPackages [chromadbx]: Skipping, unable to determine old version
+[2024-06-01 15:51:41] INFO root fetch - main [MainThread]: End processing [chromadbx] error
+[2024-06-01 15:51:41] INFO root fetch - processPackages [pyrevolut]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-06-01 15:51:41] INFO root fetch - processPackages [pyrevolut]: Downloading https://files.pythonhosted.org/packages/92/49/9176de29f6da1ee9c9812da76c7ad9c9b338b273a77b05fdec4413c9a406/pyrevolut-0.6.2.tar.gz
+[2024-06-01 15:51:41] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 15:51:41] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 15:51:41] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.4.tar.gz tmp/almax_common-0.9.5.tar.gz --markdown 20240601/a/almax-common/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-06-01 15:51:41] INFO root fetch - processPackages [pyrevolut]: Downloading https://files.pythonhosted.org/packages/92/70/dc0947bf4bff020b716e2e9cf86c0f0054cac4edaa35fc1d747ec4bc2dc2/pyrevolut-0.7.0.tar.gz
+[2024-06-01 15:51:42] INFO root fetch - processPackages [pyrevolut]: executing diffoscope
+[2024-06-01 15:51:42] INFO root fetch - processPackages [pyrevolut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrevolut-0.6.2.tar.gz tmp/pyrevolut-0.7.0.tar.gz --markdown 20240601/p/pyrevolut/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-06-01 15:51:42] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.4.tar.gz]
+[2024-06-01 15:51:42] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 15:51:42] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 15:51:42] INFO root fetch - processPackages [pyrevolut]: Remove: archive file [/home/abi/fetcher/tmp/pyrevolut-0.6.2.tar.gz]
+[2024-06-01 15:51:42] INFO root fetch - processPackages [pyrevolut]: Remove: archive file [/home/abi/fetcher/tmp/pyrevolut-0.7.0.tar.gz]
+[2024-06-01 15:51:42] INFO root fetch - main [MainThread]: End processing [pyrevolut]: success
+[2024-06-01 15:51:42] INFO root fetch - main [MainThread]: Store serial: [23480561]
