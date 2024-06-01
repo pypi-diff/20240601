@@ -10959,3 +10959,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:43:34] WARNING root fetch - processPackages [awesome-systematic-trading]: Skipping, unable to determine old version
 [2024-06-01 07:43:34] INFO root fetch - main [MainThread]: End processing [awesome-systematic-trading] error
 [2024-06-01 07:43:34] INFO root fetch - main [MainThread]: Store serial: [23477620]
+[2024-06-01 07:45:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477620]
+[2024-06-01 07:45:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 07:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Edge-Detection-Images
+[2024-06-01 07:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beautifulsouppro
+[2024-06-01 07:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfunvice
+[2024-06-01 07:45:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygame-scrollbar
+[2024-06-01 07:45:43] INFO root fetch - processPackages [pyfunvice]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-01 07:45:43] INFO root fetch - processPackages [pyfunvice]: Downloading https://files.pythonhosted.org/packages/14/fa/9a1b420d08ee2a2f2e43a2666568b166c67d13e84455f8a2908055e150ed/pyfunvice-0.1.6.tar.gz
+[2024-06-01 07:45:43] WARNING root fetch - processPackages [pygame-scrollbar]: Skipping, unable to determine old version
+[2024-06-01 07:45:43] WARNING root fetch - processPackages [Edge-Detection-Images]: Skipping, unable to determine old version
+[2024-06-01 07:45:43] INFO root fetch - main [MainThread]: End processing [pygame-scrollbar] error
+[2024-06-01 07:45:43] INFO root fetch - main [MainThread]: End processing [Edge-Detection-Images] error
+[2024-06-01 07:45:43] WARNING root fetch - processPackages [beautifulsouppro]: Skipping, unable to determine old version
+[2024-06-01 07:45:43] INFO root fetch - main [MainThread]: End processing [beautifulsouppro] error
+[2024-06-01 07:45:43] INFO root fetch - processPackages [pyfunvice]: Downloading https://files.pythonhosted.org/packages/e5/50/90683515a8282875a41577fad396cf2ad8e80acdc8cc3b6dd48b5e434c2f/pyfunvice-0.1.7.tar.gz
+[2024-06-01 07:45:43] INFO root fetch - processPackages [pyfunvice]: executing diffoscope
+[2024-06-01 07:45:43] INFO root fetch - processPackages [pyfunvice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfunvice-0.1.6.tar.gz tmp/pyfunvice-0.1.7.tar.gz --markdown 20240601/p/pyfunvice/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-01 07:45:44] INFO root fetch - processPackages [pyfunvice]: Remove: archive file [/home/abi/fetcher/tmp/pyfunvice-0.1.6.tar.gz]
+[2024-06-01 07:45:44] INFO root fetch - processPackages [pyfunvice]: Remove: archive file [/home/abi/fetcher/tmp/pyfunvice-0.1.7.tar.gz]
+[2024-06-01 07:45:44] INFO root fetch - main [MainThread]: End processing [pyfunvice]: success
+[2024-06-01 07:45:44] INFO root fetch - main [MainThread]: Store serial: [23477638]
