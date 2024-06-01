@@ -14686,3 +14686,45 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:50:28] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.5.tar.gz]
 [2024-06-01 12:50:28] INFO root fetch - main [MainThread]: End processing [slurmtui]: success
 [2024-06-01 12:50:28] INFO root fetch - main [MainThread]: Store serial: [23479459]
+[2024-06-01 12:52:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479459]
+[2024-06-01 12:52:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 12:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slurmtui
+[2024-06-01 12:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEDM
+[2024-06-01 12:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-nsfw
+[2024-06-01 12:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indipydriver
+[2024-06-01 12:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sigmacode
+[2024-06-01 12:52:37] INFO root fetch - processPackages [slurmtui]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 12:52:37] INFO root fetch - processPackages [pyEDM]: New version: [2.0.1] Old Version: [1.9.3.0]
+[2024-06-01 12:52:37] INFO root fetch - processPackages [indipydriver]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-06-01 12:52:37] INFO root fetch - processPackages [nonebot-plugin-nsfw]: New version: [0.9] Old Version: [0.8]
+[2024-06-01 12:52:37] INFO root fetch - processPackages [slurmtui]: Downloading https://files.pythonhosted.org/packages/ef/87/6a71d55cc8f85a9ebfdc8647355fafa423e93fbeac0512ce79b74d18f198/slurmtui-0.1.4.tar.gz
+[2024-06-01 12:52:37] WARNING root fetch - processPackages [sigmacode]: Skipping, unable to determine old version
+[2024-06-01 12:52:37] INFO root fetch - main [MainThread]: End processing [sigmacode] error
+[2024-06-01 12:52:37] INFO root fetch - processPackages [pyEDM]: Downloading https://files.pythonhosted.org/packages/18/f3/0adc520b0cea523618217c3e5c52d56c9a6020c7954c157e036e99420925/pyEDM-1.9.3.0-cp39-cp39-win_amd64.whl
+[2024-06-01 12:52:37] INFO root fetch - processPackages [nonebot-plugin-nsfw]: Downloading https://files.pythonhosted.org/packages/77/aa/eb058d5c3bf0aad35ca15316e4ba8d74ed69b035f19fc804748133ee3f07/nonebot_plugin_nsfw-0.8.tar.gz
+[2024-06-01 12:52:37] INFO root fetch - processPackages [indipydriver]: Downloading https://files.pythonhosted.org/packages/6e/d7/f4dec29edf6146ad595c9aabfca8dda219761f5fcee548f1f28762456cf2/indipydriver-1.2.2.tar.gz
+[2024-06-01 12:52:37] INFO root fetch - processPackages [slurmtui]: Downloading https://files.pythonhosted.org/packages/6a/c7/f1b5f8cd984e56f949bd91c825015313b68beef90bc720f8daafe60e5aff/slurmtui-0.1.5.tar.gz
+[2024-06-01 12:52:37] INFO root fetch - processPackages [slurmtui]: executing diffoscope
+[2024-06-01 12:52:37] INFO root fetch - processPackages [slurmtui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurmtui-0.1.4.tar.gz tmp/slurmtui-0.1.5.tar.gz --markdown 20240601/s/slurmtui/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 12:52:38] INFO root fetch - processPackages [nonebot-plugin-nsfw]: Downloading https://files.pythonhosted.org/packages/56/c1/95124655c39b2a1842be354500cc61be12e3c13b5b6300d1252d59ee77c7/nonebot_plugin_nsfw-0.9.tar.gz
+[2024-06-01 12:52:38] INFO root fetch - processPackages [indipydriver]: Downloading https://files.pythonhosted.org/packages/8d/3c/7a44fd3078362beff7ae13b17865c516c3bdcf331e6fc4d846a290b982c2/indipydriver-1.3.0.tar.gz
+[2024-06-01 12:52:38] INFO root fetch - processPackages [nonebot-plugin-nsfw]: executing diffoscope
+[2024-06-01 12:52:38] INFO root fetch - processPackages [nonebot-plugin-nsfw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nsfw-0.8.tar.gz tmp/nonebot_plugin_nsfw-0.9.tar.gz --markdown 20240601/n/nonebot-plugin-nsfw/0.8-0.9/README.md --exclude *.pyd
+[2024-06-01 12:52:38] INFO root fetch - processPackages [pyEDM]: Downloading https://files.pythonhosted.org/packages/91/71/33dacfaf7f4626779e18590ad4ddc65fa26befefc662bf246d25bd6d7a4c/pyedm-2.0.1.tar.gz
+[2024-06-01 12:52:38] INFO root fetch - processPackages [indipydriver]: executing diffoscope
+[2024-06-01 12:52:38] INFO root fetch - processPackages [indipydriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipydriver-1.2.2.tar.gz tmp/indipydriver-1.3.0.tar.gz --markdown 20240601/i/indipydriver/1.2.2-1.3.0/README.md --exclude *.pyd
+[2024-06-01 12:52:38] INFO root fetch - processPackages [pyEDM]: executing diffoscope
+[2024-06-01 12:52:38] INFO root fetch - processPackages [pyEDM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyEDM-1.9.3.0-cp39-cp39-win_amd64.whl.zip tmp/pyedm-2.0.1.tar.gz --markdown 20240601/p/pyEDM/1.9.3.0-2.0.1/README.md --exclude *.pyd
+[2024-06-01 12:52:38] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.4.tar.gz]
+[2024-06-01 12:52:38] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.5.tar.gz]
+[2024-06-01 12:52:38] INFO root fetch - main [MainThread]: End processing [slurmtui]: success
+[2024-06-01 12:52:38] INFO root fetch - processPackages [nonebot-plugin-nsfw]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nsfw-0.8.tar.gz]
+[2024-06-01 12:52:38] INFO root fetch - processPackages [nonebot-plugin-nsfw]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nsfw-0.9.tar.gz]
+[2024-06-01 12:52:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nsfw]: success
+[2024-06-01 12:52:38] INFO root fetch - processPackages [indipydriver]: Remove: archive file [/home/abi/fetcher/tmp/indipydriver-1.2.2.tar.gz]
+[2024-06-01 12:52:38] INFO root fetch - processPackages [indipydriver]: Remove: archive file [/home/abi/fetcher/tmp/indipydriver-1.3.0.tar.gz]
+[2024-06-01 12:52:38] INFO root fetch - main [MainThread]: End processing [indipydriver]: success
+[2024-06-01 12:52:41] INFO root fetch - processPackages [pyEDM]: Remove: archive file [/home/abi/fetcher/tmp/pyEDM-1.9.3.0-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 12:52:41] INFO root fetch - processPackages [pyEDM]: Remove: archive file [/home/abi/fetcher/tmp/pyedm-2.0.1.tar.gz]
+[2024-06-01 12:52:41] INFO root fetch - main [MainThread]: End processing [pyEDM]: success
+[2024-06-01 12:52:41] INFO root fetch - main [MainThread]: Store serial: [23479479]
