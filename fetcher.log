@@ -9875,3 +9875,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:50:02] INFO root fetch - processPackages [ComfyUI-EasyNodes]: Remove: archive file [/home/abi/fetcher/tmp/comfyui_easynodes-1.0.5.tar.gz]
 [2024-06-01 05:50:02] INFO root fetch - main [MainThread]: End processing [ComfyUI-EasyNodes]: success
 [2024-06-01 05:50:02] INFO root fetch - main [MainThread]: Store serial: [23477107]
+[2024-06-01 05:52:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477107]
+[2024-06-01 05:52:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 05:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pucoti
+[2024-06-01 05:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyQt6-Fluent-Widgets
+[2024-06-01 05:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-assistant
+[2024-06-01 05:52:11] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 05:52:11] INFO root fetch - processPackages [pucoti]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-01 05:52:11] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 05:52:11] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/5e/3d/48cf28b9cf56647503f8a54011d44092e6d69abe2147ca13171d38dd6e0a/pucoti-0.1.3.tar.gz
+[2024-06-01 05:52:11] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-01 05:52:11] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 05:52:12] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/2a/89/60bfd7d0f88cd2f60f2da0cd8625cb492684c548708200dffbd0b38aeab6/PyQt6-Fluent-Widgets-1.5.6.tar.gz
+[2024-06-01 05:52:12] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 05:52:12] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 05:52:12] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/a6/50/bd004b6faf9f785850c0f5016eeb433b3b8abb82e33c042bbf77e21df266/pucoti-0.1.4.tar.gz
+[2024-06-01 05:52:12] INFO root fetch - processPackages [pucoti]: executing diffoscope
+[2024-06-01 05:52:12] INFO root fetch - processPackages [pucoti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pucoti-0.1.3.tar.gz tmp/pucoti-0.1.4.tar.gz --markdown 20240601/p/pucoti/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-01 05:52:12] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/31/4b/fba2066ec8f649017c7b326f509c87a3532fd7acac37dd0625c825956995/PyQt6-Fluent-Widgets-1.5.7.tar.gz
+[2024-06-01 05:52:12] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 05:52:12] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 05:52:12] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 05:52:12] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2024-06-01 05:52:12] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-1.5.6.tar.gz tmp/PyQt6-Fluent-Widgets-1.5.7.tar.gz --markdown 20240601/P/PyQt6-Fluent-Widgets/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-01 05:52:12] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.1.3.tar.gz]
+[2024-06-01 05:52:12] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.1.4.tar.gz]
+[2024-06-01 05:52:12] INFO root fetch - main [MainThread]: End processing [pucoti]: success
+[2024-06-01 05:52:13] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6-Fluent-Widgets-1.5.6.tar.gz]
+[2024-06-01 05:52:13] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6-Fluent-Widgets-1.5.7.tar.gz]
+[2024-06-01 05:52:13] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
+[2024-06-01 05:52:13] INFO root fetch - main [MainThread]: Store serial: [23477115]
