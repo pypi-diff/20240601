@@ -23930,3 +23930,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:51:49] INFO root fetch - processPackages [mimesis]: Remove: archive file [/home/abi/fetcher/tmp/mimesis-9.0.0.tar.gz]
 [2024-06-01 23:51:49] INFO root fetch - main [MainThread]: End processing [mimesis]: success
 [2024-06-01 23:51:49] INFO root fetch - main [MainThread]: Store serial: [23483977]
+[2024-06-01 23:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483977]
+[2024-06-01 23:53:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 23:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-honeybee
+[2024-06-01 23:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Tooldelta
+[2024-06-01 23:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydantic-mongo-document
+[2024-06-01 23:53:59] INFO root fetch - processPackages [pydantic-mongo-document]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 23:53:59] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-06-01 23:53:59] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/cc/de/bda9b4502f57f0706d2165b6bfbbf5edeabbcb382c2e13870c5512942999/pydantic_mongo_document-0.1.7.tar.gz
+[2024-06-01 23:53:59] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-06-01 23:53:59] INFO root fetch - processPackages [Tooldelta]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-06-01 23:53:59] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/f3/18/2efab79c31c9bfb2dc4445e1f05f325d3d5a4354c1f367a6d162926a0716/pydantic_mongo_document-0.1.8.tar.gz
+[2024-06-01 23:53:59] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-06-01 23:53:59] INFO root fetch - processPackages [pydantic-mongo-document]: executing diffoscope
+[2024-06-01 23:53:59] INFO root fetch - processPackages [pydantic-mongo-document]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_mongo_document-0.1.7.tar.gz tmp/pydantic_mongo_document-0.1.8.tar.gz --markdown 20240601/p/pydantic-mongo-document/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 23:53:59] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-06-01 23:53:59] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240601/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-06-01 23:53:59] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/0c/c0/fe42180692ffa21b119f2aadf1eeff7caae12d0c8751d60b23ca55721695/tooldelta-0.6.2.tar.gz
+[2024-06-01 23:53:59] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/78/4d/37d4f722fedeb19815bb4fae08e0d180172ec5da0b1fe472c7b2815a1f1c/tooldelta-0.7.0.tar.gz
+[2024-06-01 23:54:00] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-06-01 23:54:00] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.6.2.tar.gz tmp/tooldelta-0.7.0.tar.gz --markdown 20240601/T/Tooldelta/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-06-01 23:54:00] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.7.tar.gz]
+[2024-06-01 23:54:00] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.8.tar.gz]
+[2024-06-01 23:54:00] INFO root fetch - main [MainThread]: End processing [pydantic-mongo-document]: success
+[2024-06-01 23:54:00] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-06-01 23:54:00] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-06-01 23:54:00] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-06-01 23:54:00] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.6.2.tar.gz]
+[2024-06-01 23:54:00] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.7.0.tar.gz]
+[2024-06-01 23:54:00] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-06-01 23:54:01] INFO root fetch - main [MainThread]: Store serial: [23483986]
