@@ -8369,3 +8369,39 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:28:32] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-06-01 04:28:32] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-06-01 04:28:32] INFO root fetch - main [MainThread]: Store serial: [23476422]
+[2024-06-01 04:30:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476422]
+[2024-06-01 04:30:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 04:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NEMO-publications
+[2024-06-01 04:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAibote
+[2024-06-01 04:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iam-actions
+[2024-06-01 04:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: update-or-erase-your-esp32-for-linux-and-windows2
+[2024-06-01 04:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: update-or-erase-your-esp32-for-linux-and-windows
+[2024-06-01 04:30:48] INFO root fetch - processPackages [NEMO-publications]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-06-01 04:30:48] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240531] Old Version: [1.2.20240530]
+[2024-06-01 04:30:48] INFO root fetch - processPackages [NEMO-publications]: Downloading https://files.pythonhosted.org/packages/69/c8/8fc8f14a471c7c8c2a4c02066947b9db6ca1c38abf33029cc5e8a1f58ab7/NEMO_publications-1.2.1-py3-none-any.whl
+[2024-06-01 04:30:48] WARNING root fetch - processPackages [update-or-erase-your-esp32-for-linux-and-windows]: Skipping, unable to determine old version
+[2024-06-01 04:30:48] INFO root fetch - main [MainThread]: End processing [update-or-erase-your-esp32-for-linux-and-windows] error
+[2024-06-01 04:30:48] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/45/bf/cc2814fea74b3a0c95b355a17876dd6381d9332d81f92f20dafafe7b604f/iam_actions-1.2.20240530.tar.gz
+[2024-06-01 04:30:48] WARNING root fetch - processPackages [update-or-erase-your-esp32-for-linux-and-windows2]: Skipping, unable to determine old version
+[2024-06-01 04:30:48] INFO root fetch - main [MainThread]: End processing [update-or-erase-your-esp32-for-linux-and-windows2] error
+[2024-06-01 04:30:48] INFO root fetch - processPackages [PyAibote]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-06-01 04:30:48] INFO root fetch - processPackages [NEMO-publications]: Downloading https://files.pythonhosted.org/packages/00/05/a1b1edaa662aa0be069cc7923ad926f890a823e79e0eeb9fccf463762446/NEMO_publications-1.2.2-py3-none-any.whl
+[2024-06-01 04:30:48] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/07/c7/2f821a49f01317a227bee366a6d93d361a9a0629d9bdb9d8400febd74820/PyAibote-1.5.1.tar.gz
+[2024-06-01 04:30:48] INFO root fetch - processPackages [NEMO-publications]: executing diffoscope
+[2024-06-01 04:30:48] INFO root fetch - processPackages [NEMO-publications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_publications-1.2.1-py3-none-any.whl.zip tmp/NEMO_publications-1.2.2-py3-none-any.whl.zip --markdown 20240601/N/NEMO-publications/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-06-01 04:30:48] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/81/95/6b5b43c7c0a962cbf7ed16394883030fb811d6bd717777b0ec3f6fd1fbc4/iam_actions-1.2.20240531.tar.gz
+[2024-06-01 04:30:49] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/95/2d/eb9e1b197d68fc6b96790adf286d1c0b2cabbffeff1f52e93e670068dd01/PyAibote-1.5.2.tar.gz
+[2024-06-01 04:30:49] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-06-01 04:30:49] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240530.tar.gz tmp/iam_actions-1.2.20240531.tar.gz --markdown 20240601/i/iam-actions/1.2.20240530-1.2.20240531/README.md --exclude *.pyd
+[2024-06-01 04:30:49] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-06-01 04:30:49] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.5.1.tar.gz tmp/PyAibote-1.5.2.tar.gz --markdown 20240601/P/PyAibote/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-06-01 04:30:49] INFO root fetch - processPackages [NEMO-publications]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_publications-1.2.1-py3-none-any.whl.zip]
+[2024-06-01 04:30:49] INFO root fetch - processPackages [NEMO-publications]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_publications-1.2.2-py3-none-any.whl.zip]
+[2024-06-01 04:30:49] INFO root fetch - main [MainThread]: End processing [NEMO-publications]: success
+[2024-06-01 04:30:49] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.5.1.tar.gz]
+[2024-06-01 04:30:49] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.5.2.tar.gz]
+[2024-06-01 04:30:49] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-06-01 04:30:54] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240530.tar.gz]
+[2024-06-01 04:30:54] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240531.tar.gz]
+[2024-06-01 04:30:54] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-06-01 04:30:54] INFO root fetch - main [MainThread]: Store serial: [23476447]
