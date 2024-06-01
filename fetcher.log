@@ -11858,3 +11858,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:10:29] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
 [2024-06-01 09:10:29] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2024-06-01 09:10:29] INFO root fetch - main [MainThread]: Store serial: [23478012]
+[2024-06-01 09:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478012]
+[2024-06-01 09:12:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 09:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text-block-local
+[2024-06-01 09:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aedat
+[2024-06-01 09:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PACMAN-charge
+[2024-06-01 09:12:38] INFO root fetch - processPackages [text-block-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 09:12:38] INFO root fetch - processPackages [PACMAN-charge]: New version: [1.1.0] Old Version: [0.2.1]
+[2024-06-01 09:12:38] INFO root fetch - processPackages [aedat]: New version: [2.1.0] Old Version: [2.0.3]
+[2024-06-01 09:12:38] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/70/2c/1e2d2d092952d9578a3bd66ea8d19829b2cdcb307254112a3b482d4403bd/text-block-local-0.0.8.tar.gz
+[2024-06-01 09:12:38] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/17/44/390ce552994039d46edf5049a93510da4f69343888769f0adb9f1778b4de/PACMAN-charge-0.2.1.tar.gz
+[2024-06-01 09:12:38] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/71/bc/24522c5007f2452a7e32a445163d898233d9b0cc266aed587c5f36dc2bc9/text-block-local-0.0.9.tar.gz
+[2024-06-01 09:12:38] INFO root fetch - processPackages [aedat]: Downloading https://files.pythonhosted.org/packages/f0/b7/df519cab9e70e21c3933ac11546b3575c5c50d8e8aafd8a9a0cb2ab34d7e/aedat-2.0.3.tar.gz
+[2024-06-01 09:12:38] INFO root fetch - processPackages [text-block-local]: executing diffoscope
+[2024-06-01 09:12:38] INFO root fetch - processPackages [text-block-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-block-local-0.0.8.tar.gz tmp/text-block-local-0.0.9.tar.gz --markdown 20240601/t/text-block-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 09:12:38] INFO root fetch - processPackages [PACMAN-charge]: Downloading https://files.pythonhosted.org/packages/90/f5/6e02389ca827016678fd77f2fa059fcad4ba57f561906632dbc2651b49c0/PACMAN-charge-1.1.0.tar.gz
+[2024-06-01 09:12:39] INFO root fetch - processPackages [PACMAN-charge]: executing diffoscope
+[2024-06-01 09:12:39] INFO root fetch - processPackages [PACMAN-charge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PACMAN-charge-0.2.1.tar.gz tmp/PACMAN-charge-1.1.0.tar.gz --markdown 20240601/P/PACMAN-charge/0.2.1-1.1.0/README.md --exclude *.pyd
+[2024-06-01 09:12:39] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.8.tar.gz]
+[2024-06-01 09:12:39] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
+[2024-06-01 09:12:39] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
+[2024-06-01 09:12:39] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-0.2.1.tar.gz]
+[2024-06-01 09:12:39] INFO root fetch - processPackages [PACMAN-charge]: Remove: archive file [/home/abi/fetcher/tmp/PACMAN-charge-1.1.0.tar.gz]
+[2024-06-01 09:12:39] INFO root fetch - main [MainThread]: End processing [PACMAN-charge]: success
+[2024-06-01 09:12:39] INFO root fetch - processPackages [aedat]: Downloading https://files.pythonhosted.org/packages/b2/2b/bc7c7e8be48a40033bbc3ac1aa0eeed2eef924db9ad521fbdacc21194eb3/aedat-2.1.0-cp311-cp311-macosx_10_12_x86_64.whl
+[2024-06-01 09:12:40] INFO root fetch - processPackages [aedat]: executing diffoscope
+[2024-06-01 09:12:40] INFO root fetch - processPackages [aedat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aedat-2.0.3.tar.gz tmp/aedat-2.1.0-cp311-cp311-macosx_10_12_x86_64.whl.zip --markdown 20240601/a/aedat/2.0.3-2.1.0/README.md --exclude *.pyd
+[2024-06-01 09:12:41] INFO root fetch - processPackages [aedat]: Remove: archive file [/home/abi/fetcher/tmp/aedat-2.0.3.tar.gz]
+[2024-06-01 09:12:41] INFO root fetch - processPackages [aedat]: Remove: archive file [/home/abi/fetcher/tmp/aedat-2.1.0-cp311-cp311-macosx_10_12_x86_64.whl.zip]
+[2024-06-01 09:12:41] INFO root fetch - main [MainThread]: End processing [aedat]: success
+[2024-06-01 09:12:41] INFO root fetch - main [MainThread]: Store serial: [23478024]
