@@ -3170,3 +3170,60 @@
 [2024-06-01 02:49:30] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.5.3a1.tar.gz]
 [2024-06-01 02:49:30] INFO root fetch - main [MainThread]: End processing [reflex]: success
 [2024-06-01 02:49:30] INFO root fetch - main [MainThread]: Store serial: [23474348]
+[2024-06-01 02:51:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474348]
+[2024-06-01 02:51:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 02:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyarmor.cli.core.alpine
+[2024-06-01 02:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intelliterm
+[2024-06-01 02:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tikhub
+[2024-06-01 02:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyJONDB
+[2024-06-01 02:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-databrew-cicd
+[2024-06-01 02:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyarmor.cli.core.android
+[2024-06-01 02:51:38] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-01 02:51:38] INFO root fetch - processPackages [intelliterm]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-06-01 02:51:38] INFO root fetch - processPackages [PyJONDB]: New version: [1.2] Old Version: [1.1]
+[2024-06-01 02:51:38] INFO root fetch - processPackages [pyarmor.cli.core.android]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:51:38] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-06-01 02:51:38] INFO root fetch - processPackages [intelliterm]: Downloading https://files.pythonhosted.org/packages/90/83/a92900afe94181927de48b478cfe28315281d5f016a66d8432f62e8b1983/intelliterm-0.4.1.tar.gz
+[2024-06-01 02:51:38] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/5f/2f/efaf8d2899de165f3d8905ff67e9333492857d34880a5eace408956c1f97/pyjondb-1.1.tar.gz
+[2024-06-01 02:51:38] INFO root fetch - processPackages [tikhub]: New version: [1.10.2] Old Version: [1.10.1]
+[2024-06-01 02:51:38] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:51:39] INFO root fetch - processPackages [intelliterm]: Downloading https://files.pythonhosted.org/packages/37/c0/687e7ffb468665ff2775097a0bd611744f4487139e4255716c915b00ae3c/intelliterm-0.5.0.tar.gz
+[2024-06-01 02:51:39] INFO root fetch - processPackages [tikhub]: Downloading https://files.pythonhosted.org/packages/24/14/4b3c1e9952c313b85aa5f2a7517274c562b5f8a4b97b64c0031590b63041/tikhub-1.10.1.tar.gz
+[2024-06-01 02:51:39] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: Downloading https://files.pythonhosted.org/packages/b2/bf/b7fb598d8cee41e2b5e78bf2d2b06e5bf41220516feb85aa4848dbfbe832/pyarmor.cli.core.alpine-6.5.1-cp39-none-any.whl
+[2024-06-01 02:51:39] INFO root fetch - processPackages [pyarmor.cli.core.android]: Downloading https://files.pythonhosted.org/packages/5e/81/4a07a6f9fbd44b6e40d7177d1ba46f5cec619f226b55653bb92cccfa5ca1/pyarmor.cli.core.android-6.5.1-cp39-none-any.whl
+[2024-06-01 02:51:39] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/01/52/af31d9d31c64630ef9568698c8aec691867caf684af80ae9c718fd0712a2/pyjondb-1.2.tar.gz
+[2024-06-01 02:51:39] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-06-01 02:51:39] INFO root fetch - processPackages [intelliterm]: executing diffoscope
+[2024-06-01 02:51:39] INFO root fetch - processPackages [intelliterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelliterm-0.4.1.tar.gz tmp/intelliterm-0.5.0.tar.gz --markdown 20240601/i/intelliterm/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-06-01 02:51:39] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 02:51:39] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.1.tar.gz tmp/pyjondb-1.2.tar.gz --markdown 20240601/P/PyJONDB/1.1-1.2/README.md --exclude *.pyd
+[2024-06-01 02:51:39] INFO root fetch - processPackages [tikhub]: Downloading https://files.pythonhosted.org/packages/f4/94/5a5604404454fdfa40fd22aabd5ce59670b6c0335b5ea113c094b71c2ce0/tikhub-1.10.2.tar.gz
+[2024-06-01 02:51:39] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-06-01 02:51:39] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240601/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-01 02:51:39] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: Downloading https://files.pythonhosted.org/packages/ab/93/f45e59043bd85fcbc462b596829f22a5954ed936d7a8e504e7f78d664db3/pyarmor.cli.core.alpine-6.5.2-cp39-none-any.whl
+[2024-06-01 02:51:39] INFO root fetch - processPackages [pyarmor.cli.core.android]: Downloading https://files.pythonhosted.org/packages/c9/bb/f44d8fd5b8fff93fb0a935186658c791ab39a6b3c8f2f9e44ed3fd7fc46d/pyarmor.cli.core.android-6.5.2-cp37-none-any.whl
+[2024-06-01 02:51:39] INFO root fetch - processPackages [tikhub]: executing diffoscope
+[2024-06-01 02:51:39] INFO root fetch - processPackages [tikhub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tikhub-1.10.1.tar.gz tmp/tikhub-1.10.2.tar.gz --markdown 20240601/t/tikhub/1.10.1-1.10.2/README.md --exclude *.pyd
+[2024-06-01 02:51:39] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.1.tar.gz]
+[2024-06-01 02:51:39] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.2.tar.gz]
+[2024-06-01 02:51:39] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 02:51:39] INFO root fetch - processPackages [intelliterm]: Remove: archive file [/home/abi/fetcher/tmp/intelliterm-0.4.1.tar.gz]
+[2024-06-01 02:51:39] INFO root fetch - processPackages [intelliterm]: Remove: archive file [/home/abi/fetcher/tmp/intelliterm-0.5.0.tar.gz]
+[2024-06-01 02:51:39] INFO root fetch - main [MainThread]: End processing [intelliterm]: success
+[2024-06-01 02:51:40] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-06-01 02:51:40] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-06-01 02:51:40] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-06-01 02:51:40] INFO root fetch - processPackages [tikhub]: Remove: archive file [/home/abi/fetcher/tmp/tikhub-1.10.1.tar.gz]
+[2024-06-01 02:51:40] INFO root fetch - processPackages [tikhub]: Remove: archive file [/home/abi/fetcher/tmp/tikhub-1.10.2.tar.gz]
+[2024-06-01 02:51:40] INFO root fetch - main [MainThread]: End processing [tikhub]: success
+[2024-06-01 02:51:40] INFO root fetch - processPackages [pyarmor.cli.core.android]: executing diffoscope
+[2024-06-01 02:51:40] INFO root fetch - processPackages [pyarmor.cli.core.android]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core.android-6.5.1-cp39-none-any.whl.zip tmp/pyarmor.cli.core.android-6.5.2-cp37-none-any.whl.zip --markdown 20240601/p/pyarmor.cli.core.android/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:51:40] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: executing diffoscope
+[2024-06-01 02:51:40] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core.alpine-6.5.1-cp39-none-any.whl.zip tmp/pyarmor.cli.core.alpine-6.5.2-cp39-none-any.whl.zip --markdown 20240601/p/pyarmor.cli.core.alpine/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:51:49] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.alpine-6.5.1-cp39-none-any.whl.zip]
+[2024-06-01 02:51:49] INFO root fetch - processPackages [pyarmor.cli.core.alpine]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.alpine-6.5.2-cp39-none-any.whl.zip]
+[2024-06-01 02:51:49] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.alpine]: success
+[2024-06-01 02:52:03] INFO root fetch - processPackages [pyarmor.cli.core.android]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.android-6.5.1-cp39-none-any.whl.zip]
+[2024-06-01 02:52:03] INFO root fetch - processPackages [pyarmor.cli.core.android]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.android-6.5.2-cp37-none-any.whl.zip]
+[2024-06-01 02:52:03] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.android]: success
+[2024-06-01 02:52:03] INFO root fetch - main [MainThread]: Store serial: [23474379]
