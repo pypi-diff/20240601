@@ -21037,3 +21037,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:16:10] INFO root fetch - processPackages [cdk-ecr-deployment]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecr-deployment-3.0.9.tar.gz]
 [2024-06-01 20:16:10] INFO root fetch - main [MainThread]: End processing [cdk-ecr-deployment]: success
 [2024-06-01 20:16:10] INFO root fetch - main [MainThread]: Store serial: [23482441]
+[2024-06-01 20:18:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482441]
+[2024-06-01 20:18:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stable-ts-whisperless
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ampel-ztf
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: EDAeasy
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sharemyai-utils
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pucoti
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blockchain-data-subnet-shared-libs
+[2024-06-01 20:18:19] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: New version: [1.0.0] Old Version: [0.0.6]
+[2024-06-01 20:18:19] INFO root fetch - processPackages [pucoti]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-01 20:18:19] INFO root fetch - processPackages [ampel-ztf]: New version: [0.9.1a0] Old Version: [0.9.0]
+[2024-06-01 20:18:19] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 20:18:19] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/38/bd/8eccdce4dc7ab29d42cfce322617496e1ad8b6e0e2b64754444c567fe5c6/pucoti-0.3.0.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [sharemyai-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 20:18:20] INFO root fetch - processPackages [stable-ts-whisperless]: New version: [2.17.3] Old Version: [2.17.2]
+[2024-06-01 20:18:20] INFO root fetch - processPackages [EDAeasy]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-06-01 20:18:20] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [ampel-ztf]: Downloading https://files.pythonhosted.org/packages/7a/61/3ef95337f4996d8918d61035f11c37eaca24960c92bd5aa5e82aa4821568/ampel_ztf-0.9.0.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/0d/b5/65f4f8c8e46f6507116d4349888020bd8fd4c4d374b41795a2476a546c43/blockchain_data_subnet_shared_libs-0.0.6.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [EDAeasy]: Downloading https://files.pythonhosted.org/packages/b4/5c/89f451cc71d5314f4955d0788b67ac0040318bec6deb1236e6f55279b2e9/edaeasy-1.1.1.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [stable-ts-whisperless]: Downloading https://files.pythonhosted.org/packages/c0/7b/3a847520596d02f57864082bc37c05cc45474899531236503656eb21b508/stable-ts-whisperless-2.17.2.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/f9/85/4d1a239d5b2310753e3641b585d5e4ca024697cf417a14227d8f78c0763c/sharemyai_utils-0.1.8.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [ampel-ztf]: Downloading https://files.pythonhosted.org/packages/f1/19/e297fff6330fd0891d8cedbebd8eeb6f58bb59145e44c9c9348e6ba36fd8/ampel_ztf-0.9.1a0.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/03/c9/86bc6e13af1d5f56a5bfb1e36182ee3e6fd4a0caae01abf35f710817c2ff/blockchain_data_subnet_shared_libs-1.0.0.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/89/eb/eb2714cdadf39f4d15ebbe15775b3438440fa0b553fb6de48a0c200f91ae/pucoti-0.4.0.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: executing diffoscope
+[2024-06-01 20:18:20] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockchain_data_subnet_shared_libs-0.0.6.tar.gz tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz --markdown 20240601/b/blockchain-data-subnet-shared-libs/0.0.6-1.0.0/README.md --exclude *.pyd
+[2024-06-01 20:18:20] INFO root fetch - processPackages [EDAeasy]: Downloading https://files.pythonhosted.org/packages/17/93/f9816f6e16511d2949b519f0904eb79b6e2eb0026ad58198d02daee472b5/edaeasy-1.1.2.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [stable-ts-whisperless]: Downloading https://files.pythonhosted.org/packages/4b/2b/581e14488f035b6ff4960d4ca94a6d9e53a471cd353a753ff144345dfa76/stable-ts-whisperless-2.17.3.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [ampel-ztf]: executing diffoscope
+[2024-06-01 20:18:20] INFO root fetch - processPackages [ampel-ztf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampel_ztf-0.9.0.tar.gz tmp/ampel_ztf-0.9.1a0.tar.gz --markdown 20240601/a/ampel-ztf/0.9.0-0.9.1a0/README.md --exclude *.pyd
+[2024-06-01 20:18:20] INFO root fetch - processPackages [pucoti]: executing diffoscope
+[2024-06-01 20:18:20] INFO root fetch - processPackages [pucoti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pucoti-0.3.0.tar.gz tmp/pucoti-0.4.0.tar.gz --markdown 20240601/p/pucoti/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-01 20:18:20] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [EDAeasy]: executing diffoscope
+[2024-06-01 20:18:20] INFO root fetch - processPackages [EDAeasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaeasy-1.1.1.tar.gz tmp/edaeasy-1.1.2.tar.gz --markdown 20240601/E/EDAeasy/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-06-01 20:18:20] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/9b/8a/3c94dcbf0855c714ac43b9bfa2461fc9c88133f4787553d6fd263b38cfc6/sharemyai_utils-0.1.9.tar.gz
+[2024-06-01 20:18:20] INFO root fetch - processPackages [stable-ts-whisperless]: executing diffoscope
+[2024-06-01 20:18:20] INFO root fetch - processPackages [stable-ts-whisperless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable-ts-whisperless-2.17.2.tar.gz tmp/stable-ts-whisperless-2.17.3.tar.gz --markdown 20240601/s/stable-ts-whisperless/2.17.2-2.17.3/README.md --exclude *.pyd
+[2024-06-01 20:18:20] INFO root fetch - processPackages [sharemyai-utils]: executing diffoscope
+[2024-06-01 20:18:20] INFO root fetch - processPackages [sharemyai-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharemyai_utils-0.1.8.tar.gz tmp/sharemyai_utils-0.1.9.tar.gz --markdown 20240601/s/sharemyai-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 20:18:21] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-06-01 20:18:21] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240601/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 20:18:21] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-0.0.6.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - main [MainThread]: End processing [blockchain-data-subnet-shared-libs]: success
+[2024-06-01 20:18:21] INFO root fetch - processPackages [EDAeasy]: Remove: archive file [/home/abi/fetcher/tmp/edaeasy-1.1.1.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - processPackages [EDAeasy]: Remove: archive file [/home/abi/fetcher/tmp/edaeasy-1.1.2.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - main [MainThread]: End processing [EDAeasy]: success
+[2024-06-01 20:18:21] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.3.0.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.4.0.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - main [MainThread]: End processing [pucoti]: success
+[2024-06-01 20:18:21] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.8.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.9.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - main [MainThread]: End processing [sharemyai-utils]: success
+[2024-06-01 20:18:21] INFO root fetch - processPackages [ampel-ztf]: Remove: archive file [/home/abi/fetcher/tmp/ampel_ztf-0.9.0.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - processPackages [ampel-ztf]: Remove: archive file [/home/abi/fetcher/tmp/ampel_ztf-0.9.1a0.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - main [MainThread]: End processing [ampel-ztf]: success
+[2024-06-01 20:18:21] INFO root fetch - processPackages [stable-ts-whisperless]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-whisperless-2.17.2.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - processPackages [stable-ts-whisperless]: Remove: archive file [/home/abi/fetcher/tmp/stable-ts-whisperless-2.17.3.tar.gz]
+[2024-06-01 20:18:21] INFO root fetch - main [MainThread]: End processing [stable-ts-whisperless]: success
+[2024-06-01 20:18:22] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-06-01 20:18:22] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-06-01 20:18:22] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-06-01 20:18:22] INFO root fetch - main [MainThread]: Store serial: [23482462]
