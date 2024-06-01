@@ -2877,3 +2877,62 @@
 [2024-06-01 02:36:21] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240531.tar.gz]
 [2024-06-01 02:36:21] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2024-06-01 02:36:21] INFO root fetch - main [MainThread]: Store serial: [23474112]
+[2024-06-01 02:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474112]
+[2024-06-01 02:38:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 02:40:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474124]
+[2024-06-01 02:40:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 02:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openllm
+[2024-06-01 02:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openllm-client
+[2024-06-01 02:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openllm-core
+[2024-06-01 02:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-core
+[2024-06-01 02:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: forwardkinematics
+[2024-06-01 02:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-autogen
+[2024-06-01 02:40:35] INFO root fetch - processPackages [composio-autogen]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:40:35] INFO root fetch - processPackages [composio-core]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:40:35] INFO root fetch - processPackages [openllm-core]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-06-01 02:40:35] INFO root fetch - processPackages [forwardkinematics]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-06-01 02:40:35] INFO root fetch - processPackages [openllm-client]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-06-01 02:40:35] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/13/5b/ab7c84e8ddcef6c8fb8af5a481ba6f67e25f93d4c58a814b94626f7983b2/composio_autogen-0.3.2.tar.gz
+[2024-06-01 02:40:35] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/de/24/cb4358883abe187169815965431bf028ac1a633be9f36a68346a2dd91857/composio_core-0.3.2.tar.gz
+[2024-06-01 02:40:35] INFO root fetch - processPackages [openllm]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-06-01 02:40:35] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/c4/35/ebc689c028eacad5799dfbdc60b6a962b8da7d278284e0cfd51f18b26279/openllm-0.5.3.tar.gz
+[2024-06-01 02:40:35] INFO root fetch - processPackages [openllm-core]: Downloading https://files.pythonhosted.org/packages/a1/36/1195174f53b19b08f9ee1f0234573c76680425920a8259993e72a1472af4/openllm_core-0.5.3.tar.gz
+[2024-06-01 02:40:35] INFO root fetch - processPackages [openllm-client]: Downloading https://files.pythonhosted.org/packages/a0/c8/11daed344301ba4d6d01b3c0f1b62835526642ce2284f821131f5ea94248/openllm_client-0.5.3.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [forwardkinematics]: Downloading https://files.pythonhosted.org/packages/46/f2/0bd29318c847f9832d38b284dea261999c4a8c135f22c925ccb4aad028e8/forwardkinematics-1.2.2.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/42/88/a36f3dcc41445f9bae8df280acf7967bc181f13e7c926a87f671fba1c45e/composio_autogen-0.3.3.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/64/9c/d8c89364a93ff721fc5d3ef02721e9a3fd07f9915d5ab062f0ccee2519e7/composio_core-0.3.3.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.3.2.tar.gz tmp/composio_autogen-0.3.3.tar.gz --markdown 20240601/c/composio-autogen/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/a2/3f/14a30b976f2ce8734661ab2ea6feb4941f1e4550593d4e04a3be244981b7/openllm-0.5.4.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.3.2.tar.gz tmp/composio_core-0.3.3.tar.gz --markdown 20240601/c/composio-core/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm-core]: Downloading https://files.pythonhosted.org/packages/95/d2/01e1fe2813f568d3493a9c65088b7d4fd75cf07c316b035416c86a020b71/openllm_core-0.5.4.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm-client]: Downloading https://files.pythonhosted.org/packages/15/7e/82b440e92ac9f581a50e8201bc13af15a24a32ccb442e275446bc388edca/openllm_client-0.5.4.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [forwardkinematics]: Downloading https://files.pythonhosted.org/packages/52/1b/38de7f6b2823e02f89824c56880d609ea17254a095654faabdad879066c7/forwardkinematics-1.2.3.tar.gz
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm-client]: executing diffoscope
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openllm_client-0.5.3.tar.gz tmp/openllm_client-0.5.4.tar.gz --markdown 20240601/o/openllm-client/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm]: executing diffoscope
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openllm-0.5.3.tar.gz tmp/openllm-0.5.4.tar.gz --markdown 20240601/o/openllm/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm-core]: executing diffoscope
+[2024-06-01 02:40:36] INFO root fetch - processPackages [openllm-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openllm_core-0.5.3.tar.gz tmp/openllm_core-0.5.4.tar.gz --markdown 20240601/o/openllm-core/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-06-01 02:40:36] INFO root fetch - processPackages [forwardkinematics]: executing diffoscope
+[2024-06-01 02:40:36] INFO root fetch - processPackages [forwardkinematics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forwardkinematics-1.2.2.tar.gz tmp/forwardkinematics-1.2.3.tar.gz --markdown 20240601/f/forwardkinematics/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.3.2.tar.gz]
+[2024-06-01 02:40:36] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.3.3.tar.gz]
+[2024-06-01 02:40:36] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-06-01 02:40:37] INFO root fetch - processPackages [openllm-client]: Remove: archive file [/home/abi/fetcher/tmp/openllm_client-0.5.3.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - processPackages [openllm-client]: Remove: archive file [/home/abi/fetcher/tmp/openllm_client-0.5.4.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - main [MainThread]: End processing [openllm-client]: success
+[2024-06-01 02:40:37] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.2.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.3.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-06-01 02:40:37] INFO root fetch - processPackages [forwardkinematics]: Remove: archive file [/home/abi/fetcher/tmp/forwardkinematics-1.2.2.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - processPackages [forwardkinematics]: Remove: archive file [/home/abi/fetcher/tmp/forwardkinematics-1.2.3.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - main [MainThread]: End processing [forwardkinematics]: success
+[2024-06-01 02:40:37] INFO root fetch - processPackages [openllm-core]: Remove: archive file [/home/abi/fetcher/tmp/openllm_core-0.5.3.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - processPackages [openllm-core]: Remove: archive file [/home/abi/fetcher/tmp/openllm_core-0.5.4.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - main [MainThread]: End processing [openllm-core]: success
+[2024-06-01 02:40:37] INFO root fetch - processPackages [openllm]: Remove: archive file [/home/abi/fetcher/tmp/openllm-0.5.3.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - processPackages [openllm]: Remove: archive file [/home/abi/fetcher/tmp/openllm-0.5.4.tar.gz]
+[2024-06-01 02:40:37] INFO root fetch - main [MainThread]: End processing [openllm]: success
+[2024-06-01 02:40:37] INFO root fetch - main [MainThread]: Store serial: [23474142]
