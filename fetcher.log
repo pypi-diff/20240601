@@ -2160,3 +2160,77 @@
 [2024-06-01 01:59:58] INFO root fetch - processPackages [reqmgr2]: Remove: archive file [/home/abi/fetcher/tmp/reqmgr2-2.3.4rc7.tar.gz]
 [2024-06-01 01:59:58] INFO root fetch - main [MainThread]: End processing [reqmgr2]: success
 [2024-06-01 01:59:58] INFO root fetch - main [MainThread]: Store serial: [23473832]
+[2024-06-01 02:02:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23473832]
+[2024-06-01 02:02:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: global-workqueue
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wmagent
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wmagent-devtools
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reqmon
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: acdcserver
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wmcore
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: reqmgr2ms-output
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ncsim
+[2024-06-01 02:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: meshgpt-pytorch
+[2024-06-01 02:02:07] INFO root fetch - processPackages [global-workqueue]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:07] WARNING root fetch - processPackages [ncsim]: Skipping, unable to determine old version
+[2024-06-01 02:02:07] INFO root fetch - main [MainThread]: End processing [ncsim] error
+[2024-06-01 02:02:07] INFO root fetch - processPackages [meshgpt-pytorch]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-06-01 02:02:07] INFO root fetch - processPackages [global-workqueue]: Downloading https://files.pythonhosted.org/packages/1d/03/055e9d7b2ebaee6157ef9de073019a501dc5f9eb44b5b60546ce39bd8085/global-workqueue-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmcore]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmon]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent-devtools]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:08] INFO root fetch - processPackages [acdcserver]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmgr2ms-output]: New version: [2.3.4rc7] Old Version: [2.3.4rc6]
+[2024-06-01 02:02:08] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/e6/e6/5e104eec1eb21f489c52779fc74d03a0626188dd5caa15c8753c4231f182/meshgpt_pytorch-1.2.8.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmcore]: Downloading https://files.pythonhosted.org/packages/7e/29/74f119af854f5db2b5834d5110fb1e908ae83bfd532536809e5157773067/wmcore-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent-devtools]: Downloading https://files.pythonhosted.org/packages/ba/39/7ff4425484d910f1f793f65eef2c1fe0b59ed645a101f36b45a9cf43e39e/wmagent-devtools-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmgr2ms-output]: Downloading https://files.pythonhosted.org/packages/ca/6f/c7883f88df7e2519b02a631ee0550cfe8b45717f0eec8dcff9c287886538/reqmgr2ms-output-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent]: Downloading https://files.pythonhosted.org/packages/5c/57/fae1f2544da91c0849a50e7ea8568cc0e73e7935b02aec72ce155ff9ca63/wmagent-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [global-workqueue]: Downloading https://files.pythonhosted.org/packages/be/62/42f442983e323107c25449bbcef93827a6bb1cbc752078c0bb1d1989e20a/global-workqueue-2.3.4rc7.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [acdcserver]: Downloading https://files.pythonhosted.org/packages/60/20/5a20f5f6ce5438d1312667aebd2bd7a8f7881cb057033cb51e26250bcbcf/acdcserver-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/b7/42/de3c528397bdf2a685f41788fac33822fa61c5a82896e8cebca0aa55d17d/meshgpt_pytorch-1.2.9.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmon]: Downloading https://files.pythonhosted.org/packages/47/2f/b0cf2841eaad2620e5c043426a9e0a9dcf37437b82f1147bb3ed105aee33/reqmon-2.3.4rc6.tar.gz
+[2024-06-01 02:02:08] WARNING root fetch - processPackages [wmagent-devtools]: Skipping package: exceeds size limit 17838050>=10485760
+[2024-06-01 02:02:08] INFO root fetch - main [MainThread]: End processing [wmagent-devtools] error
+[2024-06-01 02:02:08] INFO root fetch - processPackages [meshgpt-pytorch]: executing diffoscope
+[2024-06-01 02:02:08] INFO root fetch - processPackages [meshgpt-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshgpt_pytorch-1.2.8.tar.gz tmp/meshgpt_pytorch-1.2.9.tar.gz --markdown 20240601/m/meshgpt-pytorch/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-06-01 02:02:08] INFO root fetch - processPackages [global-workqueue]: executing diffoscope
+[2024-06-01 02:02:08] INFO root fetch - processPackages [global-workqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/global-workqueue-2.3.4rc6.tar.gz tmp/global-workqueue-2.3.4rc7.tar.gz --markdown 20240601/g/global-workqueue/2.3.4rc6-2.3.4rc7/README.md --exclude *.pyd
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmgr2ms-output]: Downloading https://files.pythonhosted.org/packages/a4/ef/5840d90e369ae789fdda9b1c7f2741e9d2a93659258b76d70652841f4b18/reqmgr2ms-output-2.3.4rc7.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [acdcserver]: Downloading https://files.pythonhosted.org/packages/b4/22/4e929970c1a707edd96b03bec07d878ef12804e12abc4c7ee78d8ba7d16b/acdcserver-2.3.4rc7.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent]: Downloading https://files.pythonhosted.org/packages/39/2a/1dfc2c9eaf30f65c0c8d9bc5787ded761620e9eb71e17773a7b433da71db/wmagent-2.3.4rc7.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmcore]: Downloading https://files.pythonhosted.org/packages/e5/c8/f7d21e9e8277d99c17dd2bfef95f36e2d498b43c09eeb7d38f799ffe0728/wmcore-2.3.4rc7.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmgr2ms-output]: executing diffoscope
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmgr2ms-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqmgr2ms-output-2.3.4rc6.tar.gz tmp/reqmgr2ms-output-2.3.4rc7.tar.gz --markdown 20240601/r/reqmgr2ms-output/2.3.4rc6-2.3.4rc7/README.md --exclude *.pyd
+[2024-06-01 02:02:08] INFO root fetch - processPackages [reqmon]: Downloading https://files.pythonhosted.org/packages/b2/ed/040f32950a10a48442ba07ef75403385d9f9ad33e2c2947c5c23d97c1a37/reqmon-2.3.4rc7.tar.gz
+[2024-06-01 02:02:08] INFO root fetch - processPackages [acdcserver]: executing diffoscope
+[2024-06-01 02:02:08] INFO root fetch - processPackages [acdcserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acdcserver-2.3.4rc6.tar.gz tmp/acdcserver-2.3.4rc7.tar.gz --markdown 20240601/a/acdcserver/2.3.4rc6-2.3.4rc7/README.md --exclude *.pyd
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent]: executing diffoscope
+[2024-06-01 02:02:08] INFO root fetch - processPackages [wmagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmagent-2.3.4rc6.tar.gz tmp/wmagent-2.3.4rc7.tar.gz --markdown 20240601/w/wmagent/2.3.4rc6-2.3.4rc7/README.md --exclude *.pyd
+[2024-06-01 02:02:09] INFO root fetch - processPackages [wmcore]: executing diffoscope
+[2024-06-01 02:02:09] INFO root fetch - processPackages [wmcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmcore-2.3.4rc6.tar.gz tmp/wmcore-2.3.4rc7.tar.gz --markdown 20240601/w/wmcore/2.3.4rc6-2.3.4rc7/README.md --exclude *.pyd
+[2024-06-01 02:02:09] INFO root fetch - processPackages [reqmon]: executing diffoscope
+[2024-06-01 02:02:09] INFO root fetch - processPackages [reqmon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqmon-2.3.4rc6.tar.gz tmp/reqmon-2.3.4rc7.tar.gz --markdown 20240601/r/reqmon/2.3.4rc6-2.3.4rc7/README.md --exclude *.pyd
+[2024-06-01 02:02:09] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.8.tar.gz]
+[2024-06-01 02:02:09] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.9.tar.gz]
+[2024-06-01 02:02:09] INFO root fetch - main [MainThread]: End processing [meshgpt-pytorch]: success
+[2024-06-01 02:02:09] INFO root fetch - processPackages [acdcserver]: Remove: archive file [/home/abi/fetcher/tmp/acdcserver-2.3.4rc6.tar.gz]
+[2024-06-01 02:02:09] INFO root fetch - processPackages [acdcserver]: Remove: archive file [/home/abi/fetcher/tmp/acdcserver-2.3.4rc7.tar.gz]
+[2024-06-01 02:02:10] INFO root fetch - main [MainThread]: End processing [acdcserver]: success
+[2024-06-01 02:02:10] INFO root fetch - processPackages [global-workqueue]: Remove: archive file [/home/abi/fetcher/tmp/global-workqueue-2.3.4rc6.tar.gz]
+[2024-06-01 02:02:10] INFO root fetch - processPackages [global-workqueue]: Remove: archive file [/home/abi/fetcher/tmp/global-workqueue-2.3.4rc7.tar.gz]
+[2024-06-01 02:02:10] INFO root fetch - main [MainThread]: End processing [global-workqueue]: success
+[2024-06-01 02:02:10] INFO root fetch - processPackages [reqmgr2ms-output]: Remove: archive file [/home/abi/fetcher/tmp/reqmgr2ms-output-2.3.4rc6.tar.gz]
+[2024-06-01 02:02:10] INFO root fetch - processPackages [reqmgr2ms-output]: Remove: archive file [/home/abi/fetcher/tmp/reqmgr2ms-output-2.3.4rc7.tar.gz]
+[2024-06-01 02:02:10] INFO root fetch - main [MainThread]: End processing [reqmgr2ms-output]: success
+[2024-06-01 02:02:11] INFO root fetch - processPackages [reqmon]: Remove: archive file [/home/abi/fetcher/tmp/reqmon-2.3.4rc6.tar.gz]
+[2024-06-01 02:02:11] INFO root fetch - processPackages [reqmon]: Remove: archive file [/home/abi/fetcher/tmp/reqmon-2.3.4rc7.tar.gz]
+[2024-06-01 02:02:11] INFO root fetch - main [MainThread]: End processing [reqmon]: success
+[2024-06-01 02:02:13] INFO root fetch - processPackages [wmagent]: Remove: archive file [/home/abi/fetcher/tmp/wmagent-2.3.4rc6.tar.gz]
+[2024-06-01 02:02:13] INFO root fetch - processPackages [wmagent]: Remove: archive file [/home/abi/fetcher/tmp/wmagent-2.3.4rc7.tar.gz]
+[2024-06-01 02:02:13] INFO root fetch - main [MainThread]: End processing [wmagent]: success
+[2024-06-01 02:02:15] INFO root fetch - processPackages [wmcore]: Remove: archive file [/home/abi/fetcher/tmp/wmcore-2.3.4rc6.tar.gz]
+[2024-06-01 02:02:15] INFO root fetch - processPackages [wmcore]: Remove: archive file [/home/abi/fetcher/tmp/wmcore-2.3.4rc7.tar.gz]
+[2024-06-01 02:02:15] INFO root fetch - main [MainThread]: End processing [wmcore]: success
+[2024-06-01 02:02:15] INFO root fetch - main [MainThread]: Store serial: [23473852]
