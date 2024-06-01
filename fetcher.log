@@ -16081,3 +16081,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:34:32] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.9.tar.gz]
 [2024-06-01 14:34:32] INFO root fetch - main [MainThread]: End processing [cpbox]: success
 [2024-06-01 14:34:32] INFO root fetch - main [MainThread]: Store serial: [23480074]
+[2024-06-01 14:36:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480074]
+[2024-06-01 14:36:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 14:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AudiooPy
+[2024-06-01 14:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rest-solace
+[2024-06-01 14:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plegui
+[2024-06-01 14:36:41] INFO root fetch - processPackages [rest-solace]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-01 14:36:41] INFO root fetch - processPackages [AudiooPy]: New version: [0.4] Old Version: [0.3]
+[2024-06-01 14:36:41] INFO root fetch - processPackages [plegui]: New version: [1.2.4] Old Version: [1.1.9]
+[2024-06-01 14:36:41] INFO root fetch - processPackages [rest-solace]: Downloading https://files.pythonhosted.org/packages/da/68/e524260ae56b6114d1ebae6c5636f7467c156eb877fab1aaf5d08e015752/rest_solace-0.2.3.tar.gz
+[2024-06-01 14:36:41] INFO root fetch - processPackages [AudiooPy]: Downloading https://files.pythonhosted.org/packages/48/5d/6d7001ca7305444ac797a1f66c8ac968316c31190eda95398fd3d17e35a4/AudiooPy-0.3-py3-none-any.whl
+[2024-06-01 14:36:41] INFO root fetch - processPackages [plegui]: Downloading https://files.pythonhosted.org/packages/6d/66/b72e83693335f954e9b461add676aa25351962e53255eb6f5de17f37c4c9/plegui-1.1.9.tar.gz
+[2024-06-01 14:36:42] INFO root fetch - processPackages [rest-solace]: Downloading https://files.pythonhosted.org/packages/d4/3f/0ebb3d4a4c83320dfb6400b1fadfd997cd1c643cebf19b75710d9e08687e/rest_solace-0.2.4.tar.gz
+[2024-06-01 14:36:42] INFO root fetch - processPackages [plegui]: Downloading https://files.pythonhosted.org/packages/1b/ba/015fa7d7d72cf02b24a45ff4d5c23f425bde36fafa35ace6c82a416d5819/plegui-1.2.4.tar.gz
+[2024-06-01 14:36:42] INFO root fetch - processPackages [AudiooPy]: Downloading https://files.pythonhosted.org/packages/8c/50/7be9ce832e084a094cdced062c8d5f07033f7472403979209596f0aede28/AudiooPy-0.4-py3-none-any.whl
+[2024-06-01 14:36:42] INFO root fetch - processPackages [AudiooPy]: executing diffoscope
+[2024-06-01 14:36:42] INFO root fetch - processPackages [AudiooPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AudiooPy-0.3-py3-none-any.whl.zip tmp/AudiooPy-0.4-py3-none-any.whl.zip --markdown 20240601/A/AudiooPy/0.3-0.4/README.md --exclude *.pyd
+[2024-06-01 14:36:42] INFO root fetch - processPackages [rest-solace]: executing diffoscope
+[2024-06-01 14:36:42] INFO root fetch - processPackages [rest-solace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_solace-0.2.3.tar.gz tmp/rest_solace-0.2.4.tar.gz --markdown 20240601/r/rest-solace/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-01 14:36:42] INFO root fetch - processPackages [plegui]: executing diffoscope
+[2024-06-01 14:36:42] INFO root fetch - processPackages [plegui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plegui-1.1.9.tar.gz tmp/plegui-1.2.4.tar.gz --markdown 20240601/p/plegui/1.1.9-1.2.4/README.md --exclude *.pyd
+[2024-06-01 14:36:42] INFO root fetch - processPackages [plegui]: Remove: archive file [/home/abi/fetcher/tmp/plegui-1.1.9.tar.gz]
+[2024-06-01 14:36:43] INFO root fetch - processPackages [plegui]: Remove: archive file [/home/abi/fetcher/tmp/plegui-1.2.4.tar.gz]
+[2024-06-01 14:36:43] INFO root fetch - main [MainThread]: End processing [plegui]: success
+[2024-06-01 14:36:43] INFO root fetch - processPackages [rest-solace]: Remove: archive file [/home/abi/fetcher/tmp/rest_solace-0.2.3.tar.gz]
+[2024-06-01 14:36:43] INFO root fetch - processPackages [rest-solace]: Remove: archive file [/home/abi/fetcher/tmp/rest_solace-0.2.4.tar.gz]
+[2024-06-01 14:36:43] INFO root fetch - main [MainThread]: End processing [rest-solace]: success
+[2024-06-01 14:36:43] INFO root fetch - processPackages [AudiooPy]: Remove: archive file [/home/abi/fetcher/tmp/AudiooPy-0.3-py3-none-any.whl.zip]
+[2024-06-01 14:36:43] INFO root fetch - processPackages [AudiooPy]: Remove: archive file [/home/abi/fetcher/tmp/AudiooPy-0.4-py3-none-any.whl.zip]
+[2024-06-01 14:36:43] INFO root fetch - main [MainThread]: End processing [AudiooPy]: success
+[2024-06-01 14:36:43] INFO root fetch - main [MainThread]: Store serial: [23480098]
