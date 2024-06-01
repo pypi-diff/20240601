@@ -16390,3 +16390,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:56:23] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.9.tar.gz]
 [2024-06-01 14:56:23] INFO root fetch - main [MainThread]: End processing [sunholo]: success
 [2024-06-01 14:56:23] INFO root fetch - main [MainThread]: Store serial: [23480226]
+[2024-06-01 14:58:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480226]
+[2024-06-01 14:58:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 14:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genshin
+[2024-06-01 14:58:32] INFO root fetch - processPackages [genshin]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-06-01 14:58:32] INFO root fetch - processPackages [genshin]: Downloading https://files.pythonhosted.org/packages/a6/de/a4ccc24f5100d4c406de46943fa45b875c4964c1e29598b9ea8139a3dfbb/genshin-1.7.0.tar.gz
+[2024-06-01 14:58:33] INFO root fetch - processPackages [genshin]: Downloading https://files.pythonhosted.org/packages/56/ca/8285d6fe09a8565c7f244534196ae2dbcab60add29db9cca3a69341b35dc/genshin-1.7.1.tar.gz
+[2024-06-01 14:58:33] INFO root fetch - processPackages [genshin]: executing diffoscope
+[2024-06-01 14:58:33] INFO root fetch - processPackages [genshin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genshin-1.7.0.tar.gz tmp/genshin-1.7.1.tar.gz --markdown 20240601/g/genshin/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-06-01 14:58:34] INFO root fetch - processPackages [genshin]: Remove: archive file [/home/abi/fetcher/tmp/genshin-1.7.0.tar.gz]
+[2024-06-01 14:58:34] INFO root fetch - processPackages [genshin]: Remove: archive file [/home/abi/fetcher/tmp/genshin-1.7.1.tar.gz]
+[2024-06-01 14:58:34] INFO root fetch - main [MainThread]: End processing [genshin]: success
+[2024-06-01 14:58:34] INFO root fetch - main [MainThread]: Store serial: [23480229]
