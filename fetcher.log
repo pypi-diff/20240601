@@ -17772,3 +17772,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:35:29] INFO root fetch - processPackages [creosote]: Remove: archive file [/home/abi/fetcher/tmp/creosote-3.0.1-py3-none-any.whl.zip]
 [2024-06-01 16:35:29] INFO root fetch - main [MainThread]: End processing [creosote]: success
 [2024-06-01 16:35:29] INFO root fetch - main [MainThread]: Store serial: [23480968]
+[2024-06-01 16:37:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480968]
+[2024-06-01 16:37:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 16:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: req-update
+[2024-06-01 16:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cryptoguard
+[2024-06-01 16:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-priming
+[2024-06-01 16:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: droombot
+[2024-06-01 16:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaicodingcube
+[2024-06-01 16:37:38] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 16:37:38] WARNING root fetch - processPackages [cryptoguard]: Skipping, unable to determine old version
+[2024-06-01 16:37:38] INFO root fetch - main [MainThread]: End processing [cryptoguard] error
+[2024-06-01 16:37:38] INFO root fetch - processPackages [droombot]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-01 16:37:38] INFO root fetch - processPackages [req-update]: New version: [2.7.0] Old Version: [2.6.0]
+[2024-06-01 16:37:38] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-01 16:37:39] INFO root fetch - processPackages [pyaicodingcube]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 16:37:39] INFO root fetch - processPackages [req-update]: Downloading https://files.pythonhosted.org/packages/ae/5f/42e49ae7909578f5f79ce0c5916ed0b39f45a74a2e3149f72c4c2d533677/req_update-2.6.0.tar.gz
+[2024-06-01 16:37:39] INFO root fetch - processPackages [droombot]: Downloading https://files.pythonhosted.org/packages/be/a2/55a4c8d1748e723f9a7ba6dc74299fc7bfbe32c05d3e2418359894e14cb7/droombot-0.1.0.tar.gz
+[2024-06-01 16:37:39] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/f8/be/3f389d0b417a910b914d5ba23638dbc40ac1965fa6e4493444f09bb46d67/pyaicodingcube-0.0.6.tar.gz
+[2024-06-01 16:37:39] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-01 16:37:39] INFO root fetch - processPackages [req-update]: Downloading https://files.pythonhosted.org/packages/22/e9/8bb5299799058f4b358e430561b92c3b3c4125f5d363290b1d51897dc695/req_update-2.7.0.tar.gz
+[2024-06-01 16:37:39] INFO root fetch - processPackages [droombot]: Downloading https://files.pythonhosted.org/packages/7b/58/44719d3c488a73ddb07aa670a17501478cdeac99819a471d6578eb42430b/droombot-0.2.0.tar.gz
+[2024-06-01 16:37:39] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/62/e8/d8105d854aba9b3f9413c49e1ffc4ed6dfe28c613003fbae2530bc53645f/pyaicodingcube-0.0.7.tar.gz
+[2024-06-01 16:37:39] INFO root fetch - processPackages [droombot]: executing diffoscope
+[2024-06-01 16:37:39] INFO root fetch - processPackages [droombot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/droombot-0.1.0.tar.gz tmp/droombot-0.2.0.tar.gz --markdown 20240601/d/droombot/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-01 16:37:39] INFO root fetch - processPackages [req-update]: executing diffoscope
+[2024-06-01 16:37:39] INFO root fetch - processPackages [req-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/req_update-2.6.0.tar.gz tmp/req_update-2.7.0.tar.gz --markdown 20240601/r/req-update/2.6.0-2.7.0/README.md --exclude *.pyd
+[2024-06-01 16:37:39] INFO root fetch - processPackages [pyaicodingcube]: executing diffoscope
+[2024-06-01 16:37:39] INFO root fetch - processPackages [pyaicodingcube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaicodingcube-0.0.6.tar.gz tmp/pyaicodingcube-0.0.7.tar.gz --markdown 20240601/p/pyaicodingcube/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 16:37:39] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-01 16:37:39] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240601/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 16:37:40] INFO root fetch - processPackages [droombot]: Remove: archive file [/home/abi/fetcher/tmp/droombot-0.1.0.tar.gz]
+[2024-06-01 16:37:40] INFO root fetch - processPackages [droombot]: Remove: archive file [/home/abi/fetcher/tmp/droombot-0.2.0.tar.gz]
+[2024-06-01 16:37:40] INFO root fetch - main [MainThread]: End processing [droombot]: success
+[2024-06-01 16:37:40] INFO root fetch - processPackages [req-update]: Remove: archive file [/home/abi/fetcher/tmp/req_update-2.6.0.tar.gz]
+[2024-06-01 16:37:40] INFO root fetch - processPackages [req-update]: Remove: archive file [/home/abi/fetcher/tmp/req_update-2.7.0.tar.gz]
+[2024-06-01 16:37:40] INFO root fetch - main [MainThread]: End processing [req-update]: success
+[2024-06-01 16:37:40] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.6.tar.gz]
+[2024-06-01 16:37:40] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.7.tar.gz]
+[2024-06-01 16:37:40] INFO root fetch - main [MainThread]: End processing [pyaicodingcube]: success
+[2024-06-01 16:37:40] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-01 16:37:40] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-01 16:37:40] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-01 16:37:40] INFO root fetch - main [MainThread]: Store serial: [23480993]
