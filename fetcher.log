@@ -22600,3 +22600,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:12:18] INFO root fetch - processPackages [c2cgeoportal-geoportal]: Remove: archive file [/home/abi/fetcher/tmp/c2cgeoportal_geoportal-2.8.1.96-py2.py3-none-any.whl.zip]
 [2024-06-01 22:12:18] INFO root fetch - main [MainThread]: End processing [c2cgeoportal-geoportal]: success
 [2024-06-01 22:12:18] INFO root fetch - main [MainThread]: Store serial: [23483260]
+[2024-06-01 22:14:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483260]
+[2024-06-01 22:14:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 22:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpy-cross-multi
+[2024-06-01 22:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EasyFileOps
+[2024-06-01 22:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-06-01 22:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: diaspora-event-sdk
+[2024-06-01 22:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: puml2url
+[2024-06-01 22:14:28] INFO root fetch - processPackages [EasyFileOps]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 22:14:28] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-06-01 22:14:28] WARNING root fetch - processPackages [puml2url]: Skipping, unable to determine old version
+[2024-06-01 22:14:28] INFO root fetch - processPackages [mpy-cross-multi]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-06-01 22:14:28] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-06-01 22:14:28] INFO root fetch - main [MainThread]: End processing [puml2url] error
+[2024-06-01 22:14:28] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/df/6b/6b315b8d4252c7dea5a759e412104e862147cc40fff49823957797ad6930/easyfileops-0.1.1.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [mpy-cross-multi]: Downloading https://files.pythonhosted.org/packages/50/9d/f2076e0ddcec9891d9e16c8a9fb8b4edbdb82e0f7add0e9b8c2f1e326f6d/mpy_cross_multi-1.0.0.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/2f/41/b7989039edf316706b1756a4b8e790fa9133c608d55db4e18563197b813b/diaspora-event-sdk-0.2.9.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/41/11/1d7fa9373d37e990c6e3872fb4a172cb8dea9f4b8eb6efa164f54e98107c/easyfileops-0.1.2.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-06-01 22:14:28] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240601/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-06-01 22:14:28] INFO root fetch - processPackages [EasyFileOps]: executing diffoscope
+[2024-06-01 22:14:28] INFO root fetch - processPackages [EasyFileOps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyfileops-0.1.1.tar.gz tmp/easyfileops-0.1.2.tar.gz --markdown 20240601/E/EasyFileOps/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 22:14:28] INFO root fetch - processPackages [mpy-cross-multi]: Downloading https://files.pythonhosted.org/packages/ee/89/91940fa6113243833996ed30c0308d3519ac2a4ffae160a8e6b15cde0506/mpy_cross_multi-1.1.0.tar.gz
+[2024-06-01 22:14:28] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/44/da/98b64deabe12c1e3931201e40573c8c44869bd73537970d89ef746220209/diaspora_event_sdk-0.3.0-py3-none-any.whl
+[2024-06-01 22:14:28] INFO root fetch - processPackages [mpy-cross-multi]: executing diffoscope
+[2024-06-01 22:14:28] INFO root fetch - processPackages [mpy-cross-multi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpy_cross_multi-1.0.0.tar.gz tmp/mpy_cross_multi-1.1.0.tar.gz --markdown 20240601/m/mpy-cross-multi/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-06-01 22:14:29] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-06-01 22:14:29] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.2.9.tar.gz tmp/diaspora_event_sdk-0.3.0-py3-none-any.whl.zip --markdown 20240601/d/diaspora-event-sdk/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-06-01 22:14:29] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-06-01 22:14:29] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.1.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.2.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - main [MainThread]: End processing [EasyFileOps]: success
+[2024-06-01 22:14:29] INFO root fetch - processPackages [mpy-cross-multi]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_multi-1.0.0.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - processPackages [mpy-cross-multi]: Remove: archive file [/home/abi/fetcher/tmp/mpy_cross_multi-1.1.0.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - main [MainThread]: End processing [mpy-cross-multi]: success
+[2024-06-01 22:14:29] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.9.tar.gz]
+[2024-06-01 22:14:29] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora_event_sdk-0.3.0-py3-none-any.whl.zip]
+[2024-06-01 22:14:29] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-06-01 22:14:29] INFO root fetch - main [MainThread]: Store serial: [23483278]
