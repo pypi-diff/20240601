@@ -14261,3 +14261,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:15:46] INFO root fetch - processPackages [simevopy]: Remove: archive file [/home/abi/fetcher/tmp/simevopy-0.1.9.tar.gz]
 [2024-06-01 12:15:46] INFO root fetch - main [MainThread]: End processing [simevopy]: success
 [2024-06-01 12:15:46] INFO root fetch - main [MainThread]: Store serial: [23479294]
+[2024-06-01 12:17:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479294]
+[2024-06-01 12:17:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 12:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CVE-2024-24919
+[2024-06-01 12:17:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HakObserverpy
+[2024-06-01 12:17:55] INFO root fetch - processPackages [HakObserverpy]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-06-01 12:17:55] INFO root fetch - processPackages [HakObserverpy]: Downloading https://files.pythonhosted.org/packages/13/da/5a581c8a2a7b4f03fc1fe55b4c0610e0bc443db9908facb634767a4fdbb7/HakObserverpy-0.6.4.tar.gz
+[2024-06-01 12:17:55] WARNING root fetch - processPackages [CVE-2024-24919]: Skipping, unable to determine old version
+[2024-06-01 12:17:55] INFO root fetch - main [MainThread]: End processing [CVE-2024-24919] error
+[2024-06-01 12:17:55] INFO root fetch - processPackages [HakObserverpy]: Downloading https://files.pythonhosted.org/packages/20/d9/702e5c8e2d3da356bdeab7c50a639541352a175609cb30131287bda5b533/HakObserverpy-0.6.5.tar.gz
+[2024-06-01 12:17:55] INFO root fetch - processPackages [HakObserverpy]: executing diffoscope
+[2024-06-01 12:17:55] INFO root fetch - processPackages [HakObserverpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HakObserverpy-0.6.4.tar.gz tmp/HakObserverpy-0.6.5.tar.gz --markdown 20240601/H/HakObserverpy/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-06-01 12:17:56] INFO root fetch - processPackages [HakObserverpy]: Remove: archive file [/home/abi/fetcher/tmp/HakObserverpy-0.6.4.tar.gz]
+[2024-06-01 12:17:56] INFO root fetch - processPackages [HakObserverpy]: Remove: archive file [/home/abi/fetcher/tmp/HakObserverpy-0.6.5.tar.gz]
+[2024-06-01 12:17:56] INFO root fetch - main [MainThread]: End processing [HakObserverpy]: success
+[2024-06-01 12:17:56] INFO root fetch - main [MainThread]: Store serial: [23479304]
