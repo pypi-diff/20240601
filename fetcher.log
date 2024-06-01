@@ -10992,3 +10992,64 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:47:55] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
 [2024-06-01 07:47:55] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2024-06-01 07:47:55] INFO root fetch - main [MainThread]: Store serial: [23477643]
+[2024-06-01 07:49:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477643]
+[2024-06-01 07:50:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ebook2text
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ebook2text
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rockai-cli-app
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BeraChainToolsPro
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rwmapeditor-exgcdwu
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-codenerix
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: InvManagement
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shgpt
+[2024-06-01 07:50:03] INFO root fetch - processPackages [shgpt]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-01 07:50:03] INFO root fetch - processPackages [django-codenerix]: New version: [4.0.9] Old Version: [4.0.83]
+[2024-06-01 07:50:03] INFO root fetch - processPackages [shgpt]: Downloading https://files.pythonhosted.org/packages/11/cd/a1df105352dce65fdf4e57a944570c9da0e4f8aa0817086bbae6c10873bd/shgpt-0.2.0.tar.gz
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ebook2text]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ebook2text]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-01 07:50:03] WARNING root fetch - processPackages [InvManagement]: Skipping, unable to determine old version
+[2024-06-01 07:50:03] INFO root fetch - main [MainThread]: End processing [InvManagement] error
+[2024-06-01 07:50:03] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 07:50:03] WARNING root fetch - processPackages [BeraChainToolsPro]: Skipping, unable to determine old version
+[2024-06-01 07:50:03] INFO root fetch - main [MainThread]: End processing [BeraChainToolsPro] error
+[2024-06-01 07:50:03] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-06-01 07:50:03] INFO root fetch - processPackages [django-codenerix]: Downloading https://files.pythonhosted.org/packages/37/92/e1864971c7861b8873f8e8ea8ed53f5b1da3c37d233be6d593f316571f32/django-codenerix-4.0.83.tar.gz
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ebook2text]: Downloading https://files.pythonhosted.org/packages/53/fd/5ba6698cdd786f4dc20bcb8a81b9e3788472b46b4cbfd8f504062ee4a1f7/ebook2text-1.1.0.tar.gz
+[2024-06-01 07:50:03] INFO root fetch - processPackages [ebook2text]: Downloading https://files.pythonhosted.org/packages/53/fd/5ba6698cdd786f4dc20bcb8a81b9e3788472b46b4cbfd8f504062ee4a1f7/ebook2text-1.1.0.tar.gz
+[2024-06-01 07:50:03] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/1c/42/91a4602cf19e2be5252bdb82bb8b4b2df6493d2d6975aee03068925276ce/rwmapeditor_exgcdwu-1.4.2.tar.gz
+[2024-06-01 07:50:03] INFO root fetch - processPackages [shgpt]: Downloading https://files.pythonhosted.org/packages/59/ea/750a6505dc8ca46086dfb4693baf492c60de7ffcd9d6329fa64b992e9728/shgpt-0.2.1.tar.gz
+[2024-06-01 07:50:03] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 07:50:04] INFO root fetch - processPackages [shgpt]: executing diffoscope
+[2024-06-01 07:50:04] INFO root fetch - processPackages [shgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shgpt-0.2.0.tar.gz tmp/shgpt-0.2.1.tar.gz --markdown 20240601/s/shgpt/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-01 07:50:04] INFO root fetch - processPackages [django-codenerix]: Downloading https://files.pythonhosted.org/packages/fa/74/5c81cb6c9cd40266d8845b61025400c9db3344b5ed8063c6b29f18d4574e/django-codenerix-4.0.9.tar.gz
+[2024-06-01 07:50:04] INFO root fetch - processPackages [ebook2text]: Downloading https://files.pythonhosted.org/packages/55/6c/3ec2b19f80e118988a45e8557a1f86473c74db4d1ae606744932d357fe61/ebook2text-1.1.1.tar.gz
+[2024-06-01 07:50:04] INFO root fetch - processPackages [ebook2text]: Downloading https://files.pythonhosted.org/packages/55/6c/3ec2b19f80e118988a45e8557a1f86473c74db4d1ae606744932d357fe61/ebook2text-1.1.1.tar.gz
+[2024-06-01 07:50:04] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 07:50:04] INFO root fetch - processPackages [ebook2text]: executing diffoscope
+[2024-06-01 07:50:04] INFO root fetch - processPackages [ebook2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebook2text-1.1.0.tar.gz tmp/ebook2text-1.1.1.tar.gz --markdown 20240601/e/ebook2text/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-01 07:50:04] INFO root fetch - processPackages [ebook2text]: executing diffoscope
+[2024-06-01 07:50:04] INFO root fetch - processPackages [ebook2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebook2text-1.1.0.tar.gz tmp/ebook2text-1.1.1.tar.gz --markdown 20240601/e/ebook2text/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-01 07:50:04] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Downloading https://files.pythonhosted.org/packages/7d/90/d8ed292ae8f21286ffbd297e66b937e45e3142eb548b4dc67aaa0b07eca0/rwmapeditor_exgcdwu-1.4.3.tar.gz
+[2024-06-01 07:50:04] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 07:50:04] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 07:50:04] INFO root fetch - processPackages [django-codenerix]: executing diffoscope
+[2024-06-01 07:50:04] INFO root fetch - processPackages [django-codenerix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-codenerix-4.0.83.tar.gz tmp/django-codenerix-4.0.9.tar.gz --markdown 20240601/d/django-codenerix/4.0.83-4.0.9/README.md --exclude *.pyd
+[2024-06-01 07:50:04] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: executing diffoscope
+[2024-06-01 07:50:04] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rwmapeditor_exgcdwu-1.4.2.tar.gz tmp/rwmapeditor_exgcdwu-1.4.3.tar.gz --markdown 20240601/r/rwmapeditor-exgcdwu/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-06-01 07:50:04] INFO root fetch - processPackages [shgpt]: Remove: archive file [/home/abi/fetcher/tmp/shgpt-0.2.0.tar.gz]
+[2024-06-01 07:50:04] INFO root fetch - processPackages [shgpt]: Remove: archive file [/home/abi/fetcher/tmp/shgpt-0.2.1.tar.gz]
+[2024-06-01 07:50:04] INFO root fetch - main [MainThread]: End processing [shgpt]: success
+[2024-06-01 07:50:05] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 07:50:05] INFO root fetch - processPackages [ebook2text]: Remove: archive file [/home/abi/fetcher/tmp/ebook2text-1.1.0.tar.gz]
+[2024-06-01 07:50:05] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 07:50:05] INFO root fetch - processPackages [ebook2text]: Remove: archive file [/home/abi/fetcher/tmp/ebook2text-1.1.1.tar.gz]
+[2024-06-01 07:50:05] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 07:50:05] INFO root fetch - main [MainThread]: End processing [ebook2text]: success
+[2024-06-01 07:50:05] INFO root fetch - main [MainThread]: End processing [ebook2text]: success
+[2024-06-01 07:50:05] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.4.2.tar.gz]
+[2024-06-01 07:50:05] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.4.3.tar.gz]
+[2024-06-01 07:50:05] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
+[2024-06-01 07:50:44] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.83.tar.gz]
+[2024-06-01 07:50:44] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
+[2024-06-01 07:50:44] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
+[2024-06-01 07:50:44] INFO root fetch - main [MainThread]: Store serial: [23477679]
