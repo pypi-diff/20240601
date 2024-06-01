@@ -15060,3 +15060,50 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:15:37] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-06-01 13:15:37] INFO root fetch - main [MainThread]: End processing [python-moss]: success
 [2024-06-01 13:15:37] INFO root fetch - main [MainThread]: Store serial: [23479641]
+[2024-06-01 13:17:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479641]
+[2024-06-01 13:17:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 13:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-cpp
+[2024-06-01 13:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sigmacode
+[2024-06-01 13:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: censusdis
+[2024-06-01 13:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tb-nightly
+[2024-06-01 13:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-core-xe-21
+[2024-06-01 13:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sigmacode
+[2024-06-01 13:17:54] INFO root fetch - processPackages [sigmacode]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 13:17:55] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/bd/d8/434f85635475f67b2530f5b98154325063ffa600a24688c0f0794fe65bc2/sigmacode-0.0.3.tar.gz
+[2024-06-01 13:17:55] INFO root fetch - processPackages [censusdis]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-06-01 13:17:55] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240601] Old Version: [2.5.0b20240531]
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/bd/d8/434f85635475f67b2530f5b98154325063ffa600a24688c0f0794fe65bc2/sigmacode-0.0.3.tar.gz
+[2024-06-01 13:17:55] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240601] Old Version: [2.5.0b20240531]
+[2024-06-01 13:17:55] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-06-01 13:17:55] INFO root fetch - processPackages [censusdis]: Downloading https://files.pythonhosted.org/packages/fe/65/40a80a3c28d218ed60241f48f362ba487b4ed8c6c1a19683ff275aa903ff/censusdis-1.1.8.tar.gz
+[2024-06-01 13:17:55] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/57/5b/405b28a061ff85bed4c8e402eb8a35715499b7d2700adaae3760ef264690/bigdl_core_cpp-2.5.0b20240531-py3-none-win_amd64.whl
+[2024-06-01 13:17:55] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/24/ec/01418f58a0e2028bd86990eef7f96d1609d472fed1020578081ca7e7ea5b/bigdl_core_xe_21-2.5.0b20240531-cp39-cp39-win_amd64.whl
+[2024-06-01 13:17:55] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 22942492>=10485760
+[2024-06-01 13:17:55] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/d7/ab/a145b7e8422457514dad3eb01a965fb837ce785b65970d5b0fc2977782d5/sigmacode-0.0.4.tar.gz
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/d7/ab/a145b7e8422457514dad3eb01a965fb837ce785b65970d5b0fc2977782d5/sigmacode-0.0.4.tar.gz
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: executing diffoscope
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmacode-0.0.3.tar.gz tmp/sigmacode-0.0.4.tar.gz --markdown 20240601/s/sigmacode/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: executing diffoscope
+[2024-06-01 13:17:55] INFO root fetch - processPackages [sigmacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmacode-0.0.3.tar.gz tmp/sigmacode-0.0.4.tar.gz --markdown 20240601/s/sigmacode/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 13:17:55] INFO root fetch - processPackages [censusdis]: Downloading https://files.pythonhosted.org/packages/8b/1f/42df948b8b5b1ebe9fa47e8a349853b5aa38385d4282bb8ae4cc9fa02b81/censusdis-1.1.9.tar.gz
+[2024-06-01 13:17:55] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-06-01 13:17:55] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 33964904>=10485760
+[2024-06-01 13:17:55] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-06-01 13:17:55] INFO root fetch - processPackages [censusdis]: executing diffoscope
+[2024-06-01 13:17:55] INFO root fetch - processPackages [censusdis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censusdis-1.1.8.tar.gz tmp/censusdis-1.1.9.tar.gz --markdown 20240601/c/censusdis/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-06-01 13:17:56] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.3.tar.gz]
+[2024-06-01 13:17:56] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.4.tar.gz]
+[2024-06-01 13:17:56] INFO root fetch - main [MainThread]: End processing [sigmacode]: success
+[2024-06-01 13:17:56] INFO root fetch - main [MainThread]: End processing [sigmacode]: success
+[2024-06-01 13:17:56] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-06-01 13:17:56] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240601/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-06-01 13:17:56] INFO root fetch - processPackages [censusdis]: Remove: archive file [/home/abi/fetcher/tmp/censusdis-1.1.8.tar.gz]
+[2024-06-01 13:17:56] INFO root fetch - processPackages [censusdis]: Remove: archive file [/home/abi/fetcher/tmp/censusdis-1.1.9.tar.gz]
+[2024-06-01 13:17:56] INFO root fetch - main [MainThread]: End processing [censusdis]: success
+[2024-06-01 13:17:57] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-06-01 13:17:57] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-06-01 13:17:57] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-06-01 13:17:57] INFO root fetch - main [MainThread]: Store serial: [23479657]
