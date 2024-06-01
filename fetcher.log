@@ -22241,3 +22241,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:50:33] INFO root fetch - processPackages [llama-index-graph-stores-neo4j]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_graph_stores_neo4j-0.2.1.tar.gz]
 [2024-06-01 21:50:33] INFO root fetch - main [MainThread]: End processing [llama-index-graph-stores-neo4j]: success
 [2024-06-01 21:50:33] INFO root fetch - main [MainThread]: Store serial: [23483086]
+[2024-06-01 21:52:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483086]
+[2024-06-01 21:52:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 21:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vmstate
+[2024-06-01 21:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unthermal
+[2024-06-01 21:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vdist-solver-fortran
+[2024-06-01 21:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codejudge-common-utils
+[2024-06-01 21:52:42] WARNING root fetch - processPackages [vmstate]: Skipping, unable to determine old version
+[2024-06-01 21:52:42] INFO root fetch - main [MainThread]: End processing [vmstate] error
+[2024-06-01 21:52:42] INFO root fetch - processPackages [unthermal]: New version: [0.1001] Old Version: [0.1.dev1]
+[2024-06-01 21:52:42] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/f5/f8/d07227a2c3d141fb8d9790c5141cdcd1a3cef178b6d77f2c0185cba50086/unthermal-0.1.dev1.tar.gz
+[2024-06-01 21:52:42] WARNING root fetch - processPackages [vdist-solver-fortran]: Skipping, unable to determine old version
+[2024-06-01 21:52:42] INFO root fetch - main [MainThread]: End processing [vdist-solver-fortran] error
+[2024-06-01 21:52:42] INFO root fetch - processPackages [codejudge-common-utils]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 21:52:43] INFO root fetch - processPackages [codejudge-common-utils]: Downloading https://files.pythonhosted.org/packages/a9/6c/04e7d02fa321e39e1a52b87f14de5e67ee15bbcb0350d46223d5a2233047/codejudge-common-utils-0.0.3.tar.gz
+[2024-06-01 21:52:43] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/d5/81/664671b86da1a5bcd349280ea890d75f32be93c4daadc3b562edf311352c/unthermal-0.1001.tar.gz
+[2024-06-01 21:52:43] INFO root fetch - processPackages [unthermal]: executing diffoscope
+[2024-06-01 21:52:43] INFO root fetch - processPackages [unthermal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unthermal-0.1.dev1.tar.gz tmp/unthermal-0.1001.tar.gz --markdown 20240601/u/unthermal/0.1.dev1-0.1001/README.md --exclude *.pyd
+[2024-06-01 21:52:43] INFO root fetch - processPackages [codejudge-common-utils]: Downloading https://files.pythonhosted.org/packages/2e/3b/cb06ff5a3864a4cfee84288a643be491447f507eecb8e00ee4a7adca08d4/codejudge-common-utils-0.0.4.tar.gz
+[2024-06-01 21:52:43] INFO root fetch - processPackages [codejudge-common-utils]: executing diffoscope
+[2024-06-01 21:52:43] INFO root fetch - processPackages [codejudge-common-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codejudge-common-utils-0.0.3.tar.gz tmp/codejudge-common-utils-0.0.4.tar.gz --markdown 20240601/c/codejudge-common-utils/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 21:52:43] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1.dev1.tar.gz]
+[2024-06-01 21:52:43] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1001.tar.gz]
+[2024-06-01 21:52:43] INFO root fetch - main [MainThread]: End processing [unthermal]: success
+[2024-06-01 21:52:44] INFO root fetch - processPackages [codejudge-common-utils]: Remove: archive file [/home/abi/fetcher/tmp/codejudge-common-utils-0.0.3.tar.gz]
+[2024-06-01 21:52:44] INFO root fetch - processPackages [codejudge-common-utils]: Remove: archive file [/home/abi/fetcher/tmp/codejudge-common-utils-0.0.4.tar.gz]
+[2024-06-01 21:52:44] INFO root fetch - main [MainThread]: End processing [codejudge-common-utils]: success
+[2024-06-01 21:52:44] INFO root fetch - main [MainThread]: Store serial: [23483100]
