@@ -9639,3 +9639,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:28:01] INFO root fetch - processPackages [cdktf-cdktf-provider-mongodbatlas]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-mongodbatlas-7.2.2.tar.gz]
 [2024-06-01 05:28:01] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-mongodbatlas]: success
 [2024-06-01 05:28:01] INFO root fetch - main [MainThread]: Store serial: [23476948]
+[2024-06-01 05:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476948]
+[2024-06-01 05:30:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ParticlePhaseSpace
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HuggingMouse
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quarkstudio
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thoi
+[2024-06-01 05:30:11] INFO root fetch - processPackages [quarkstudio]: New version: [6.6.7.5] Old Version: [6.6.7.4]
+[2024-06-01 05:30:11] WARNING root fetch - processPackages [thoi]: Skipping, unable to determine old version
+[2024-06-01 05:30:11] INFO root fetch - main [MainThread]: End processing [thoi] error
+[2024-06-01 05:30:11] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/5f/56/d3249a98db30c2495afdbb3a176d9c9c3d037a2d82812efc6ce44a2dfb60/quarkstudio-6.6.7.4-cp312-none-win_amd64.whl
+[2024-06-01 05:30:11] INFO root fetch - processPackages [HuggingMouse]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ParticlePhaseSpace]: New version: [0.6.0] Old Version: [0.5.5]
+[2024-06-01 05:30:11] INFO root fetch - processPackages [HuggingMouse]: Downloading https://files.pythonhosted.org/packages/de/96/b4396be6ed88b73c8ec2d6067a6f6ab6fc9c35fa71fffc0845d1a8b6da57/HuggingMouse-0.1.1.tar.gz
+[2024-06-01 05:30:11] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/a9/e7/6464c688e1fc0941f71f581d759cff6d5262134752a24ae45b1e900b9209/quarkstudio-6.6.7.5-cp312-none-win_amd64.whl
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ParticlePhaseSpace]: Downloading https://files.pythonhosted.org/packages/95/f9/da6a7bdbf4c9c37fe1cc4c8bd018aaa33fcb83daff396c512b8c443574f2/ParticlePhaseSpace-0.5.5.tar.gz
+[2024-06-01 05:30:11] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2024-06-01 05:30:11] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.6.7.4-cp312-none-win_amd64.whl.zip tmp/quarkstudio-6.6.7.5-cp312-none-win_amd64.whl.zip --markdown 20240601/q/quarkstudio/6.6.7.4-6.6.7.5/README.md --exclude *.pyd
+[2024-06-01 05:30:11] INFO root fetch - processPackages [ParticlePhaseSpace]: Downloading https://files.pythonhosted.org/packages/95/0c/54e57c60dd55079bdc9aa8f04445bc8f2a6038b70fb8caeb8275e1da1a59/particlephasespace-0.6.0.tar.gz
+[2024-06-01 05:30:11] INFO root fetch - processPackages [HuggingMouse]: Downloading https://files.pythonhosted.org/packages/a7/b2/32de82982aba07b9a3a6ad80726c9b8c532cea1001a17edea34d41de6dc7/HuggingMouse-0.2.0.tar.gz
+[2024-06-01 05:30:12] INFO root fetch - processPackages [ParticlePhaseSpace]: executing diffoscope
+[2024-06-01 05:30:12] INFO root fetch - processPackages [ParticlePhaseSpace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ParticlePhaseSpace-0.5.5.tar.gz tmp/particlephasespace-0.6.0.tar.gz --markdown 20240601/P/ParticlePhaseSpace/0.5.5-0.6.0/README.md --exclude *.pyd
+[2024-06-01 05:30:12] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.7.4-cp312-none-win_amd64.whl.zip]
+[2024-06-01 05:30:12] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.7.5-cp312-none-win_amd64.whl.zip]
+[2024-06-01 05:30:12] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2024-06-01 05:30:12] INFO root fetch - processPackages [HuggingMouse]: executing diffoscope
+[2024-06-01 05:30:12] INFO root fetch - processPackages [HuggingMouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HuggingMouse-0.1.1.tar.gz tmp/HuggingMouse-0.2.0.tar.gz --markdown 20240601/H/HuggingMouse/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-06-01 05:30:12] INFO root fetch - processPackages [ParticlePhaseSpace]: Remove: archive file [/home/abi/fetcher/tmp/ParticlePhaseSpace-0.5.5.tar.gz]
+[2024-06-01 05:30:12] INFO root fetch - processPackages [ParticlePhaseSpace]: Remove: archive file [/home/abi/fetcher/tmp/particlephasespace-0.6.0.tar.gz]
+[2024-06-01 05:30:12] INFO root fetch - main [MainThread]: End processing [ParticlePhaseSpace]: success
+[2024-06-01 05:30:13] INFO root fetch - processPackages [HuggingMouse]: Remove: archive file [/home/abi/fetcher/tmp/HuggingMouse-0.1.1.tar.gz]
+[2024-06-01 05:30:13] INFO root fetch - processPackages [HuggingMouse]: Remove: archive file [/home/abi/fetcher/tmp/HuggingMouse-0.2.0.tar.gz]
+[2024-06-01 05:30:13] INFO root fetch - main [MainThread]: End processing [HuggingMouse]: success
+[2024-06-01 05:30:13] INFO root fetch - main [MainThread]: Store serial: [23476967]
