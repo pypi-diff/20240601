@@ -14482,3 +14482,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:37:20] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.0.1.tar.gz]
 [2024-06-01 12:37:20] INFO root fetch - main [MainThread]: End processing [wolframalpha]: success
 [2024-06-01 12:37:20] INFO root fetch - main [MainThread]: Store serial: [23479386]
+[2024-06-01 12:39:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479386]
+[2024-06-01 12:39:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python3-commons
+[2024-06-01 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aurum-hikari
+[2024-06-01 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skypilot-nightly
+[2024-06-01 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vicodepy
+[2024-06-01 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama3-package
+[2024-06-01 12:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymemgpt-nightly
+[2024-06-01 12:39:30] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev2024053101] Old Version: [1.0.0.dev20240531]
+[2024-06-01 12:39:30] INFO root fetch - processPackages [python3-commons]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-01 12:39:30] INFO root fetch - processPackages [llama3-package]: New version: [0.5.0] Old Version: [0.3.0]
+[2024-06-01 12:39:30] INFO root fetch - processPackages [aurum-hikari]: New version: [0.1.5.6] Old Version: [0.1.5.5]
+[2024-06-01 12:39:30] INFO root fetch - processPackages [vicodepy]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-06-01 12:39:30] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/15/11/d96949eae0ff5b76180622ff010caa89bba42211fd55dbef4d09db5ff462/skypilot_nightly-1.0.0.dev20240531.tar.gz
+[2024-06-01 12:39:30] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/78/7a/a07b20c0edccdb172e4b62c76ef23fa909378796f5c9de0957b8ddfb80b3/python3_commons-0.5.8.tar.gz
+[2024-06-01 12:39:30] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-06-01 12:39:30] INFO root fetch - processPackages [vicodepy]: Downloading https://files.pythonhosted.org/packages/7d/1b/889afbea6f914ffe1533e3fa077fe959cb6a6738761ed66eeb0575533f0c/vicodepy-0.4.1.tar.gz
+[2024-06-01 12:39:30] INFO root fetch - processPackages [aurum-hikari]: Downloading https://files.pythonhosted.org/packages/64/d1/d55aa2cd8782ce04e44fea554bc88d3ede5fd4b4b3b4167ce78a2bf221d2/aurum_hikari-0.1.5.5.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [llama3-package]: Downloading https://files.pythonhosted.org/packages/d9/7a/02a408a924ba9316eaea7a0c46ca2d4d2161d88eb305ed8c597a4bb3fad3/llama3_package-0.3.0.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/11/35/b353c6e9fb49ef089fcb645c3e1794bb907055a8b3de18a6b509abb9ecfc/python3_commons-0.5.9.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/0f/55/90fc538b4eb5313c2e315792159b63309a55fea219709e0d2e542fa6c4e1/skypilot_nightly-1.0.0.dev2024053101.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [python3-commons]: executing diffoscope
+[2024-06-01 12:39:31] INFO root fetch - processPackages [python3-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python3_commons-0.5.8.tar.gz tmp/python3_commons-0.5.9.tar.gz --markdown 20240601/p/python3-commons/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-01 12:39:31] INFO root fetch - processPackages [vicodepy]: Downloading https://files.pythonhosted.org/packages/a1/87/b0a2da857a895634c42cf8c4b41ca9cb70e96eb0ee82e4bb8d904fdc7cc1/vicodepy-0.4.2.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [aurum-hikari]: Downloading https://files.pythonhosted.org/packages/23/35/1c18a5dd50baed13fa19361361cfe88437597344e5a38050a4a6ada25463/aurum_hikari-0.1.5.6.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [llama3-package]: Downloading https://files.pythonhosted.org/packages/ae/25/a3e34a39c94586f387215cff20ff760d6b2dd51c5ba18d1b531172a976b2/llama3_package-0.5.0.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-06-01 12:39:31] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240531.tar.gz tmp/skypilot_nightly-1.0.0.dev2024053101.tar.gz --markdown 20240601/s/skypilot-nightly/1.0.0.dev20240531-1.0.0.dev2024053101/README.md --exclude *.pyd
+[2024-06-01 12:39:31] INFO root fetch - processPackages [vicodepy]: executing diffoscope
+[2024-06-01 12:39:31] INFO root fetch - processPackages [vicodepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vicodepy-0.4.1.tar.gz tmp/vicodepy-0.4.2.tar.gz --markdown 20240601/v/vicodepy/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-06-01 12:39:31] INFO root fetch - processPackages [aurum-hikari]: executing diffoscope
+[2024-06-01 12:39:31] INFO root fetch - processPackages [aurum-hikari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aurum_hikari-0.1.5.5.tar.gz tmp/aurum_hikari-0.1.5.6.tar.gz --markdown 20240601/a/aurum-hikari/0.1.5.5-0.1.5.6/README.md --exclude *.pyd
+[2024-06-01 12:39:31] INFO root fetch - processPackages [llama3-package]: executing diffoscope
+[2024-06-01 12:39:31] INFO root fetch - processPackages [llama3-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama3_package-0.3.0.tar.gz tmp/llama3_package-0.5.0.tar.gz --markdown 20240601/l/llama3-package/0.3.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 12:39:31] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-06-01 12:39:31] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-06-01 12:39:31] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240601/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-06-01 12:39:31] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.8.tar.gz]
+[2024-06-01 12:39:31] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.9.tar.gz]
+[2024-06-01 12:39:31] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
+[2024-06-01 12:39:32] INFO root fetch - processPackages [vicodepy]: Remove: archive file [/home/abi/fetcher/tmp/vicodepy-0.4.1.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - processPackages [vicodepy]: Remove: archive file [/home/abi/fetcher/tmp/vicodepy-0.4.2.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - main [MainThread]: End processing [vicodepy]: success
+[2024-06-01 12:39:32] INFO root fetch - processPackages [llama3-package]: Remove: archive file [/home/abi/fetcher/tmp/llama3_package-0.3.0.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - processPackages [llama3-package]: Remove: archive file [/home/abi/fetcher/tmp/llama3_package-0.5.0.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - main [MainThread]: End processing [llama3-package]: success
+[2024-06-01 12:39:32] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.5.5.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - processPackages [aurum-hikari]: Remove: archive file [/home/abi/fetcher/tmp/aurum_hikari-0.1.5.6.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - main [MainThread]: End processing [aurum-hikari]: success
+[2024-06-01 12:39:32] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-06-01 12:39:32] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240531.tar.gz]
+[2024-06-01 12:39:32] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev2024053101.tar.gz]
+[2024-06-01 12:39:33] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-06-01 12:39:33] INFO root fetch - main [MainThread]: Store serial: [23479404]
