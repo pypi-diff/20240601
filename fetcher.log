@@ -20273,3 +20273,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:18:52] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.4.tar.gz]
 [2024-06-01 19:18:52] INFO root fetch - main [MainThread]: End processing [nostr-dvm]: success
 [2024-06-01 19:18:52] INFO root fetch - main [MainThread]: Store serial: [23482108]
+[2024-06-01 19:20:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482108]
+[2024-06-01 19:21:00] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 19:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482108]
+[2024-06-01 19:23:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 19:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bettermysql
+[2024-06-01 19:23:06] INFO root fetch - processPackages [bettermysql]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 19:23:06] INFO root fetch - processPackages [bettermysql]: Downloading https://files.pythonhosted.org/packages/d6/ce/c9aab7c71144265555dbbd0f81f200e0ec14c8b942c9ac35d79f1dcf2cd6/bettermysql-0.0.1.tar.gz
+[2024-06-01 19:23:06] INFO root fetch - processPackages [bettermysql]: Downloading https://files.pythonhosted.org/packages/45/9a/8f0b085417c75eaa5d2757edfb953bcc328ece9f82b27962311cf2274157/bettermysql-0.0.2.tar.gz
+[2024-06-01 19:23:06] INFO root fetch - processPackages [bettermysql]: executing diffoscope
+[2024-06-01 19:23:06] INFO root fetch - processPackages [bettermysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettermysql-0.0.1.tar.gz tmp/bettermysql-0.0.2.tar.gz --markdown 20240601/b/bettermysql/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 19:23:07] INFO root fetch - processPackages [bettermysql]: Remove: archive file [/home/abi/fetcher/tmp/bettermysql-0.0.1.tar.gz]
+[2024-06-01 19:23:07] INFO root fetch - processPackages [bettermysql]: Remove: archive file [/home/abi/fetcher/tmp/bettermysql-0.0.2.tar.gz]
+[2024-06-01 19:23:07] INFO root fetch - main [MainThread]: End processing [bettermysql]: success
+[2024-06-01 19:23:07] INFO root fetch - main [MainThread]: Store serial: [23482111]
