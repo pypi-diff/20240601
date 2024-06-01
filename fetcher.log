@@ -20745,3 +20745,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:00:02] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.3.tar.gz]
 [2024-06-01 20:00:02] INFO root fetch - main [MainThread]: End processing [drf-cookie-jwtauth]: success
 [2024-06-01 20:00:02] INFO root fetch - main [MainThread]: Store serial: [23482303]
+[2024-06-01 20:02:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482303]
+[2024-06-01 20:02:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 20:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MAIAI
+[2024-06-01 20:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-topo
+[2024-06-01 20:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai-voicestream
+[2024-06-01 20:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyGeodesy
+[2024-06-01 20:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geostructures
+[2024-06-01 20:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dexter-cqa
+[2024-06-01 20:02:11] INFO root fetch - processPackages [pytest-topo]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-06-01 20:02:11] WARNING root fetch - processPackages [MAIAI]: Skipping, unable to determine old version
+[2024-06-01 20:02:11] INFO root fetch - main [MainThread]: End processing [MAIAI] error
+[2024-06-01 20:02:11] WARNING root fetch - processPackages [openai-voicestream]: Skipping, unable to determine old version
+[2024-06-01 20:02:11] INFO root fetch - main [MainThread]: End processing [openai-voicestream] error
+[2024-06-01 20:02:11] INFO root fetch - processPackages [pytest-topo]: Downloading https://files.pythonhosted.org/packages/5c/37/5bb324ed8acc333a1bba6dade827204672d0859a40f5e77a172606e296b6/pytest_topo-0.0.4.tar.gz
+[2024-06-01 20:02:11] INFO root fetch - processPackages [geostructures]: New version: [0.9.1] Old Version: [0.8.1]
+[2024-06-01 20:02:11] WARNING root fetch - processPackages [dexter-cqa]: Skipping, unable to determine old version
+[2024-06-01 20:02:11] INFO root fetch - main [MainThread]: End processing [dexter-cqa] error
+[2024-06-01 20:02:11] INFO root fetch - processPackages [PyGeodesy]: New version: [24.6.1] Old Version: [24.5.8]
+[2024-06-01 20:02:11] INFO root fetch - processPackages [pytest-topo]: Downloading https://files.pythonhosted.org/packages/b7/4e/56a0b4e75ca94ebaec833f9cf7b37dabdbd26a43948695550d192e027e84/pytest_topo-1.0.0.tar.gz
+[2024-06-01 20:02:11] INFO root fetch - processPackages [geostructures]: Downloading https://files.pythonhosted.org/packages/ed/46/79f68204bf6e2ff601a4fe91c4c2b936c7b936e99fb0505c9883bd5d1fe5/geostructures-0.8.1.tar.gz
+[2024-06-01 20:02:11] INFO root fetch - processPackages [pytest-topo]: executing diffoscope
+[2024-06-01 20:02:11] INFO root fetch - processPackages [pytest-topo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_topo-0.0.4.tar.gz tmp/pytest_topo-1.0.0.tar.gz --markdown 20240601/p/pytest-topo/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-06-01 20:02:11] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/b2/dc/07ee226e2c74d0aaf12033ad93d0fa078dfeec228ae5b05a705a07be7705/PyGeodesy-24.5.8.zip
+[2024-06-01 20:02:12] INFO root fetch - processPackages [geostructures]: Downloading https://files.pythonhosted.org/packages/7d/2c/2f317cf9b0c9019dd610569ac15938fa6225a5f03cb8a6dfa32869947d11/geostructures-0.9.1.tar.gz
+[2024-06-01 20:02:12] INFO root fetch - processPackages [geostructures]: executing diffoscope
+[2024-06-01 20:02:12] INFO root fetch - processPackages [geostructures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geostructures-0.8.1.tar.gz tmp/geostructures-0.9.1.tar.gz --markdown 20240601/g/geostructures/0.8.1-0.9.1/README.md --exclude *.pyd
+[2024-06-01 20:02:12] INFO root fetch - processPackages [pytest-topo]: Remove: archive file [/home/abi/fetcher/tmp/pytest_topo-0.0.4.tar.gz]
+[2024-06-01 20:02:12] INFO root fetch - processPackages [pytest-topo]: Remove: archive file [/home/abi/fetcher/tmp/pytest_topo-1.0.0.tar.gz]
+[2024-06-01 20:02:12] INFO root fetch - main [MainThread]: End processing [pytest-topo]: success
+[2024-06-01 20:02:13] INFO root fetch - processPackages [geostructures]: Remove: archive file [/home/abi/fetcher/tmp/geostructures-0.8.1.tar.gz]
+[2024-06-01 20:02:13] INFO root fetch - processPackages [geostructures]: Remove: archive file [/home/abi/fetcher/tmp/geostructures-0.9.1.tar.gz]
+[2024-06-01 20:02:13] INFO root fetch - main [MainThread]: End processing [geostructures]: success
+[2024-06-01 20:02:13] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/35/72/42632e294796d1779629b09d24d8b5c2e345f3406c66f82ee59ca68e41d2/PyGeodesy-24.6.1.zip
+[2024-06-01 20:02:13] INFO root fetch - processPackages [PyGeodesy]: executing diffoscope
+[2024-06-01 20:02:13] INFO root fetch - processPackages [PyGeodesy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGeodesy-24.5.8.zip tmp/PyGeodesy-24.6.1.zip --markdown 20240601/P/PyGeodesy/24.5.8-24.6.1/README.md --exclude *.pyd
+[2024-06-01 20:02:48] INFO root fetch - processPackages [PyGeodesy]: Remove: archive file [/home/abi/fetcher/tmp/PyGeodesy-24.5.8.zip]
+[2024-06-01 20:02:48] INFO root fetch - processPackages [PyGeodesy]: Remove: archive file [/home/abi/fetcher/tmp/PyGeodesy-24.6.1.zip]
+[2024-06-01 20:02:48] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
+[2024-06-01 20:02:48] INFO root fetch - main [MainThread]: Store serial: [23482326]
