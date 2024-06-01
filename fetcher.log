@@ -15797,3 +15797,33 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:14:57] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.99-py3-none-any.whl.zip]
 [2024-06-01 14:14:57] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
 [2024-06-01 14:14:57] INFO root fetch - main [MainThread]: Store serial: [23479985]
+[2024-06-01 14:17:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479985]
+[2024-06-01 14:17:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 14:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: correct-hours
+[2024-06-01 14:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IDswapper
+[2024-06-01 14:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syngen
+[2024-06-01 14:17:07] INFO root fetch - processPackages [IDswapper]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 14:17:07] INFO root fetch - processPackages [correct-hours]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-06-01 14:17:07] INFO root fetch - processPackages [syngen]: New version: [0.9.0] Old Version: [0.8.5]
+[2024-06-01 14:17:07] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/73/36/ccab24e7d8a08926d8d313985e248966533b741908c61391c812b2104292/idswapper-0.1.4.tar.gz
+[2024-06-01 14:17:07] INFO root fetch - processPackages [correct-hours]: Downloading https://files.pythonhosted.org/packages/f5/3e/6a7461dbf5f59cb762abf7fa6820d0ab7901ecb51c9fd3d036aa941a9481/correct-hours-1.2.0.tar.gz
+[2024-06-01 14:17:07] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/61/b0/314019356cf03ae5c10b7e2beae442ef95cc9b43d8e0c27c13d67919abd2/syngen-0.8.5.tar.gz
+[2024-06-01 14:17:07] INFO root fetch - processPackages [correct-hours]: Downloading https://files.pythonhosted.org/packages/0d/05/6a0899dd293794061b9f7ef29a47283b3de1966e2c74f9d29e06c35f7898/correct_hours-2.0.0.tar.gz
+[2024-06-01 14:17:08] INFO root fetch - processPackages [correct-hours]: executing diffoscope
+[2024-06-01 14:17:08] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/7e/a4/af5255fa7d54d9ed715410f759429c9d7a306ea8757a0296dd7be532d608/syngen-0.9.0.tar.gz
+[2024-06-01 14:17:08] INFO root fetch - processPackages [correct-hours]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/correct-hours-1.2.0.tar.gz tmp/correct_hours-2.0.0.tar.gz --markdown 20240601/c/correct-hours/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-06-01 14:17:08] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2024-06-01 14:17:08] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.8.5.tar.gz tmp/syngen-0.9.0.tar.gz --markdown 20240601/s/syngen/0.8.5-0.9.0/README.md --exclude *.pyd
+[2024-06-01 14:17:08] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/96/46/d5c4dbb8dca19bb4c751a950768c383a67bbf18714ca1c33becee6a9c8f3/idswapper-0.1.5.tar.gz
+[2024-06-01 14:17:08] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 14:17:08] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.1.4.tar.gz tmp/idswapper-0.1.5.tar.gz --markdown 20240601/I/IDswapper/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 14:17:08] INFO root fetch - processPackages [correct-hours]: Remove: archive file [/home/abi/fetcher/tmp/correct-hours-1.2.0.tar.gz]
+[2024-06-01 14:17:08] INFO root fetch - processPackages [correct-hours]: Remove: archive file [/home/abi/fetcher/tmp/correct_hours-2.0.0.tar.gz]
+[2024-06-01 14:17:08] INFO root fetch - main [MainThread]: End processing [correct-hours]: success
+[2024-06-01 14:17:09] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.4.tar.gz]
+[2024-06-01 14:17:09] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.5.tar.gz]
+[2024-06-01 14:17:09] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 14:17:09] INFO root fetch - processPackages [syngen]: Remove: archive file [/home/abi/fetcher/tmp/syngen-0.8.5.tar.gz]
+[2024-06-01 14:17:09] INFO root fetch - processPackages [syngen]: Remove: archive file [/home/abi/fetcher/tmp/syngen-0.9.0.tar.gz]
+[2024-06-01 14:17:09] INFO root fetch - main [MainThread]: End processing [syngen]: success
+[2024-06-01 14:17:09] INFO root fetch - main [MainThread]: Store serial: [23479996]
