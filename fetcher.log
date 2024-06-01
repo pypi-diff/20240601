@@ -18586,3 +18586,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:33:20] INFO root fetch - processPackages [dcnum]: Remove: archive file [/home/abi/fetcher/tmp/dcnum-0.21.0.tar.gz]
 [2024-06-01 17:33:20] INFO root fetch - main [MainThread]: End processing [dcnum]: success
 [2024-06-01 17:33:20] INFO root fetch - main [MainThread]: Store serial: [23481346]
+[2024-06-01 17:35:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481346]
+[2024-06-01 17:35:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 17:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic-mongo-document
+[2024-06-01 17:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SJRSdetects
+[2024-06-01 17:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unic
+[2024-06-01 17:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdps
+[2024-06-01 17:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-azure-native
+[2024-06-01 17:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: meshgpt-pytorch
+[2024-06-01 17:35:28] INFO root fetch - processPackages [cdps]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-01 17:35:28] INFO root fetch - processPackages [pydantic-mongo-document]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 17:35:28] INFO root fetch - processPackages [SJRSdetects]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 17:35:28] INFO root fetch - processPackages [pulumi-azure-native]: New version: [2.9.1a1696416212] Old Version: [2.9.1a1696411987]
+[2024-06-01 17:35:28] INFO root fetch - processPackages [meshgpt-pytorch]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-06-01 17:35:28] INFO root fetch - processPackages [unic]: New version: [1.0.0] Old Version: [0.4.7]
+[2024-06-01 17:35:28] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/d6/40/3de4c151182a679b7064e627deeb4b1bd1175ed558da4f2c741efc05fa29/cdps-1.0.6.tar.gz
+[2024-06-01 17:35:28] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/7c/39/23e88d5a9a544cb9a75a9c0b077f73c9c90cb756d8e32766dfffb90f8833/pulumi_azure_native-2.9.1a1696411987.tar.gz
+[2024-06-01 17:35:28] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/e6/e6/5e104eec1eb21f489c52779fc74d03a0626188dd5caa15c8753c4231f182/meshgpt_pytorch-1.2.8.tar.gz
+[2024-06-01 17:35:29] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 27430128>=10485760
+[2024-06-01 17:35:29] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2024-06-01 17:35:29] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/8c/f8/5b40f8a7dcbbca7e14f37f987d370cfda5e9cc4730c3f931cb598b692433/pydantic_mongo_document-0.1.4.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [SJRSdetects]: Downloading https://files.pythonhosted.org/packages/0e/1f/814a9a90daed46e26d4c137ac9b7cc8db0943fc19beb91819fcf2276c02b/sjrsdetects-1.0.0.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [unic]: Downloading https://files.pythonhosted.org/packages/de/d4/e36aa1deffecd194657d33a93f0d40ddc102b0abaa55f9f4af0da7b4362a/unic-0.4.7.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/b7/42/de3c528397bdf2a685f41788fac33822fa61c5a82896e8cebca0aa55d17d/meshgpt_pytorch-1.2.9.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/ba/9c/ad9bf11824edca078f38c114db370957dc5b7177c6a6cbd1c118feee68cf/cdps-1.0.7.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/e7/3c/05a69371855168eeefafc750509822cac9abdb3e751aec4e946ff65574e0/pydantic_mongo_document-0.1.5.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [meshgpt-pytorch]: executing diffoscope
+[2024-06-01 17:35:29] INFO root fetch - processPackages [meshgpt-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshgpt_pytorch-1.2.8.tar.gz tmp/meshgpt_pytorch-1.2.9.tar.gz --markdown 20240601/m/meshgpt-pytorch/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-06-01 17:35:29] INFO root fetch - processPackages [SJRSdetects]: Downloading https://files.pythonhosted.org/packages/8f/d5/731b4656db1be97ae245f278c774137e6c09be84e8388e115bd0a9f0104c/sjrsdetects-1.0.1.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:35:29] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.6.tar.gz tmp/cdps-1.0.7.tar.gz --markdown 20240601/c/cdps/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-01 17:35:29] INFO root fetch - processPackages [unic]: Downloading https://files.pythonhosted.org/packages/20/80/d5721912ded09565987c231a1d15662be91f00f10b4e24094e8fb553ad0b/unic-1.0.0.tar.gz
+[2024-06-01 17:35:29] INFO root fetch - processPackages [pydantic-mongo-document]: executing diffoscope
+[2024-06-01 17:35:29] INFO root fetch - processPackages [pydantic-mongo-document]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_mongo_document-0.1.4.tar.gz tmp/pydantic_mongo_document-0.1.5.tar.gz --markdown 20240601/p/pydantic-mongo-document/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 17:35:29] INFO root fetch - processPackages [SJRSdetects]: executing diffoscope
+[2024-06-01 17:35:29] INFO root fetch - processPackages [SJRSdetects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sjrsdetects-1.0.0.tar.gz tmp/sjrsdetects-1.0.1.tar.gz --markdown 20240601/S/SJRSdetects/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 17:35:29] INFO root fetch - processPackages [unic]: executing diffoscope
+[2024-06-01 17:35:29] INFO root fetch - processPackages [unic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unic-0.4.7.tar.gz tmp/unic-1.0.0.tar.gz --markdown 20240601/u/unic/0.4.7-1.0.0/README.md --exclude *.pyd
+[2024-06-01 17:35:30] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.6.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.8.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.7.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.9.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:35:30] INFO root fetch - main [MainThread]: End processing [meshgpt-pytorch]: success
+[2024-06-01 17:35:30] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.4.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.5.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - main [MainThread]: End processing [pydantic-mongo-document]: success
+[2024-06-01 17:35:30] INFO root fetch - processPackages [SJRSdetects]: Remove: archive file [/home/abi/fetcher/tmp/sjrsdetects-1.0.0.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - processPackages [SJRSdetects]: Remove: archive file [/home/abi/fetcher/tmp/sjrsdetects-1.0.1.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - main [MainThread]: End processing [SJRSdetects]: success
+[2024-06-01 17:35:30] INFO root fetch - processPackages [unic]: Remove: archive file [/home/abi/fetcher/tmp/unic-0.4.7.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - processPackages [unic]: Remove: archive file [/home/abi/fetcher/tmp/unic-1.0.0.tar.gz]
+[2024-06-01 17:35:30] INFO root fetch - main [MainThread]: End processing [unic]: success
+[2024-06-01 17:35:30] INFO root fetch - main [MainThread]: Store serial: [23481365]
