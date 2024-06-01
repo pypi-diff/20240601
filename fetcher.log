@@ -16048,3 +16048,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:30:13] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.99-py3-none-any.whl.zip]
 [2024-06-01 14:30:13] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
 [2024-06-01 14:30:13] INFO root fetch - main [MainThread]: Store serial: [23480058]
+[2024-06-01 14:32:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480058]
+[2024-06-01 14:32:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 14:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jobQuery
+[2024-06-01 14:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symmetria
+[2024-06-01 14:32:21] INFO root fetch - processPackages [jobQuery]: New version: [1.0.1] Old Version: [0.0.1]
+[2024-06-01 14:32:21] INFO root fetch - processPackages [symmetria]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 14:32:21] INFO root fetch - processPackages [jobQuery]: Downloading https://files.pythonhosted.org/packages/a0/82/e39178b3d5bc83885c1e6c40ceb3c23807a5123a9acbbb3539349e5b118f/jobquery-0.0.1.tar.gz
+[2024-06-01 14:32:21] INFO root fetch - processPackages [symmetria]: Downloading https://files.pythonhosted.org/packages/a4/ab/bf629c38953c0acf22f27d5b3c4c7c02f496a73f375ea7183dfc856262c5/symmetria-0.0.4.tar.gz
+[2024-06-01 14:32:22] INFO root fetch - processPackages [jobQuery]: Downloading https://files.pythonhosted.org/packages/70/61/fe49ccd0c9843653cbf1938f8789a2bafb64be9b975c4bc2ae51cb6537e0/jobquery-1.0.1.tar.gz
+[2024-06-01 14:32:22] INFO root fetch - processPackages [symmetria]: Downloading https://files.pythonhosted.org/packages/e4/58/a28383391628aa118a744d5becbe0916d8f55664b0e8691ec02339f07b34/symmetria-0.0.5.tar.gz
+[2024-06-01 14:32:22] INFO root fetch - processPackages [jobQuery]: executing diffoscope
+[2024-06-01 14:32:22] INFO root fetch - processPackages [jobQuery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobquery-0.0.1.tar.gz tmp/jobquery-1.0.1.tar.gz --markdown 20240601/j/jobQuery/0.0.1-1.0.1/README.md --exclude *.pyd
+[2024-06-01 14:32:22] INFO root fetch - processPackages [symmetria]: executing diffoscope
+[2024-06-01 14:32:22] INFO root fetch - processPackages [symmetria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symmetria-0.0.4.tar.gz tmp/symmetria-0.0.5.tar.gz --markdown 20240601/s/symmetria/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 14:32:22] INFO root fetch - processPackages [jobQuery]: Remove: archive file [/home/abi/fetcher/tmp/jobquery-0.0.1.tar.gz]
+[2024-06-01 14:32:22] INFO root fetch - processPackages [jobQuery]: Remove: archive file [/home/abi/fetcher/tmp/jobquery-1.0.1.tar.gz]
+[2024-06-01 14:32:22] INFO root fetch - main [MainThread]: End processing [jobQuery]: success
+[2024-06-01 14:32:22] INFO root fetch - processPackages [symmetria]: Remove: archive file [/home/abi/fetcher/tmp/symmetria-0.0.4.tar.gz]
+[2024-06-01 14:32:22] INFO root fetch - processPackages [symmetria]: Remove: archive file [/home/abi/fetcher/tmp/symmetria-0.0.5.tar.gz]
+[2024-06-01 14:32:22] INFO root fetch - main [MainThread]: End processing [symmetria]: success
+[2024-06-01 14:32:22] INFO root fetch - main [MainThread]: Store serial: [23480071]
