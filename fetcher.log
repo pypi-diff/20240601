@@ -2832,3 +2832,18 @@
 [2024-06-01 02:32:01] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.9.tar.gz]
 [2024-06-01 02:32:01] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
 [2024-06-01 02:32:01] INFO root fetch - main [MainThread]: Store serial: [23474097]
+[2024-06-01 02:34:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474097]
+[2024-06-01 02:34:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 02:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyJONDB
+[2024-06-01 02:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enigma-workflow-14
+[2024-06-01 02:34:10] WARNING root fetch - processPackages [PyJONDB]: Skipping, unable to determine old version
+[2024-06-01 02:34:10] INFO root fetch - main [MainThread]: End processing [PyJONDB] error
+[2024-06-01 02:34:10] INFO root fetch - processPackages [enigma-workflow-14]: New version: [14.0.9] Old Version: [14.0.8]
+[2024-06-01 02:34:10] INFO root fetch - processPackages [enigma-workflow-14]: Downloading https://files.pythonhosted.org/packages/67/d9/c2d1a7e296fca7354a18d7f1481b1b669740620d62ce07266f15f9eb89a7/enigma_workflow_14-14.0.8-cp39-cp39-win_amd64.whl
+[2024-06-01 02:34:11] INFO root fetch - processPackages [enigma-workflow-14]: Downloading https://files.pythonhosted.org/packages/a6/c4/6195d9d718b4cd23e0b51f38623efcdd21c09a9ff6103adcdc8c3a04262a/enigma_workflow_14-14.0.9-cp39-cp39-macosx_11_0_arm64.whl
+[2024-06-01 02:34:11] INFO root fetch - processPackages [enigma-workflow-14]: executing diffoscope
+[2024-06-01 02:34:11] INFO root fetch - processPackages [enigma-workflow-14]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enigma_workflow_14-14.0.8-cp39-cp39-win_amd64.whl.zip tmp/enigma_workflow_14-14.0.9-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240601/e/enigma-workflow-14/14.0.8-14.0.9/README.md --exclude *.pyd
+[2024-06-01 02:34:11] INFO root fetch - processPackages [enigma-workflow-14]: Remove: archive file [/home/abi/fetcher/tmp/enigma_workflow_14-14.0.8-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 02:34:11] INFO root fetch - processPackages [enigma-workflow-14]: Remove: archive file [/home/abi/fetcher/tmp/enigma_workflow_14-14.0.9-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-06-01 02:34:11] INFO root fetch - main [MainThread]: End processing [enigma-workflow-14]: success
+[2024-06-01 02:34:11] INFO root fetch - main [MainThread]: Store serial: [23474103]
