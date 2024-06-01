@@ -17649,3 +17649,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:26:33] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-3.0b0.tar.gz]
 [2024-06-01 16:26:33] INFO root fetch - main [MainThread]: End processing [webscout]: success
 [2024-06-01 16:26:33] INFO root fetch - main [MainThread]: Store serial: [23480846]
+[2024-06-01 16:28:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480846]
+[2024-06-01 16:28:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joppy
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MobileInventoryCLI
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyroexalt
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maialib
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: msgpackr-python
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CTkKeyboard
+[2024-06-01 16:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: event-outbox
+[2024-06-01 16:28:44] INFO root fetch - processPackages [msgpackr-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 16:28:44] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-01 16:28:44] WARNING root fetch - processPackages [pyroexalt]: Skipping, unable to determine old version
+[2024-06-01 16:28:44] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/6f/ed/2654167c725d98590004bb1f6c66f7c80961616b5336f311bc80f89a7463/msgpackr_python-0.1.0.tar.gz
+[2024-06-01 16:28:44] INFO root fetch - main [MainThread]: End processing [pyroexalt] error
+[2024-06-01 16:28:44] INFO root fetch - processPackages [joppy]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-01 16:28:44] WARNING root fetch - processPackages [CTkKeyboard]: Skipping, unable to determine old version
+[2024-06-01 16:28:44] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 16:28:44] INFO root fetch - processPackages [maialib]: New version: [1.4.8] Old Version: [1.4.6]
+[2024-06-01 16:28:44] WARNING root fetch - processPackages [event-outbox]: Skipping, unable to determine old version
+[2024-06-01 16:28:44] INFO root fetch - main [MainThread]: End processing [event-outbox] error
+[2024-06-01 16:28:44] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-06-01 16:28:44] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 16:28:44] INFO root fetch - processPackages [joppy]: Downloading https://files.pythonhosted.org/packages/1b/57/cbe65913dfee03efed73ed585775fbf430156ad64bfb8ddadfb7f9c102e4/joppy-0.2.2.tar.gz
+[2024-06-01 16:28:44] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/43/d2/f54e43f4d64179ad140b7bd4c44b7b906bc551ac68193c91c84dad3d8753/msgpackr_python-0.1.1.tar.gz
+[2024-06-01 16:28:44] INFO root fetch - processPackages [maialib]: Downloading https://files.pythonhosted.org/packages/20/e9/6d3ceca407d14f31b8b201454d1e0e9eeaaddbc089bcc007558158558d9e/maialib-1.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 16:28:44] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-01 16:28:44] INFO root fetch - processPackages [msgpackr-python]: executing diffoscope
+[2024-06-01 16:28:44] INFO root fetch - processPackages [msgpackr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgpackr_python-0.1.0.tar.gz tmp/msgpackr_python-0.1.1.tar.gz --markdown 20240601/m/msgpackr-python/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 16:28:44] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-06-01 16:28:44] INFO root fetch - processPackages [joppy]: Downloading https://files.pythonhosted.org/packages/cc/64/797ad4fed7bb79e24f21933eb8704298fd24fed2e1bbdb854eec1a981979/joppy-0.2.3.tar.gz
+[2024-06-01 16:28:45] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-06-01 16:28:45] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240601/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-01 16:28:45] INFO root fetch - processPackages [joppy]: executing diffoscope
+[2024-06-01 16:28:45] INFO root fetch - processPackages [joppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joppy-0.2.2.tar.gz tmp/joppy-0.2.3.tar.gz --markdown 20240601/j/joppy/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-01 16:28:45] INFO root fetch - processPackages [maialib]: Downloading https://files.pythonhosted.org/packages/8d/02/5f69aeb1882f9a210c5d7f67abd2819b3618e7fe0cc96204be2175f212f7/maialib-1.4.8-pp39-pypy39_pp73-win_amd64.whl
+[2024-06-01 16:28:45] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.0.tar.gz]
+[2024-06-01 16:28:45] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.1.tar.gz]
+[2024-06-01 16:28:45] INFO root fetch - main [MainThread]: End processing [msgpackr-python]: success
+[2024-06-01 16:28:45] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-01 16:28:45] INFO root fetch - processPackages [joppy]: Remove: archive file [/home/abi/fetcher/tmp/joppy-0.2.2.tar.gz]
+[2024-06-01 16:28:45] INFO root fetch - processPackages [joppy]: Remove: archive file [/home/abi/fetcher/tmp/joppy-0.2.3.tar.gz]
+[2024-06-01 16:28:45] INFO root fetch - main [MainThread]: End processing [joppy]: success
+[2024-06-01 16:28:45] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-06-01 16:28:45] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-06-01 16:28:45] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-06-01 16:28:45] INFO root fetch - processPackages [maialib]: executing diffoscope
+[2024-06-01 16:28:45] INFO root fetch - processPackages [maialib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maialib-1.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/maialib-1.4.8-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20240601/m/maialib/1.4.6-1.4.8/README.md --exclude *.pyd
+[2024-06-01 16:28:46] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-01 16:28:46] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240601/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 16:28:46] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-01 16:28:46] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-01 16:28:46] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-01 16:28:52] INFO root fetch - processPackages [maialib]: Remove: archive file [/home/abi/fetcher/tmp/maialib-1.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 16:28:52] INFO root fetch - processPackages [maialib]: Remove: archive file [/home/abi/fetcher/tmp/maialib-1.4.8-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-06-01 16:28:52] INFO root fetch - main [MainThread]: End processing [maialib]: success
+[2024-06-01 16:28:52] INFO root fetch - main [MainThread]: Store serial: [23480912]
