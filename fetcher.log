@@ -10248,3 +10248,38 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:27:14] INFO root fetch - processPackages [pyfilecache]: Remove: archive file [/home/abi/fetcher/tmp/pyfilecache-0.1.4.tar.gz]
 [2024-06-01 06:27:14] INFO root fetch - main [MainThread]: End processing [pyfilecache]: success
 [2024-06-01 06:27:14] INFO root fetch - main [MainThread]: Store serial: [23477230]
+[2024-06-01 06:29:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477230]
+[2024-06-01 06:29:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ape-polygon-zkevm
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-cdktf-provider-azurerm
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vstutils
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rag-assistant
+[2024-06-01 06:29:23] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 06:29:23] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ape-polygon-zkevm]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-06-01 06:29:23] INFO root fetch - processPackages [vstutils]: New version: [5.9.4] Old Version: [5.9.3]
+[2024-06-01 06:29:23] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [9.0.8] Old Version: [9.0.7]
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ape-polygon-zkevm]: Downloading https://files.pythonhosted.org/packages/ba/4b/16a4271634d44476022ca9c02887268264e9acf1ddb2ae10e36f4d5e3107/ape-polygon-zkevm-0.7.2.tar.gz
+[2024-06-01 06:29:23] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 06:29:23] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/bf/17/c9386b4842b68525aae4b3da38fa0030881fa08061804f556c93dd424cda/cdktf-cdktf-provider-azurerm-9.0.7.tar.gz
+[2024-06-01 06:29:23] INFO root fetch - processPackages [vstutils]: Downloading https://files.pythonhosted.org/packages/96/84/08228f4e0354019caf09963bd8b603b3ebda6c95fd447afbf541758dbfb5/vstutils-5.9.3.tar.gz
+[2024-06-01 06:29:23] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 06:29:23] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 06:29:23] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
+[2024-06-01 06:29:23] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ape-polygon-zkevm]: Downloading https://files.pythonhosted.org/packages/bb/55/e65a55790e8dd770286f6e3644c4f912e2ca748e02797ab60fbeb0dc3646/ape-polygon-zkevm-0.8.0.tar.gz
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ape-polygon-zkevm]: executing diffoscope
+[2024-06-01 06:29:23] INFO root fetch - processPackages [ape-polygon-zkevm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-polygon-zkevm-0.7.2.tar.gz tmp/ape-polygon-zkevm-0.8.0.tar.gz --markdown 20240601/a/ape-polygon-zkevm/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-06-01 06:29:24] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 06:29:24] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 06:29:24] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 06:29:24] INFO root fetch - processPackages [vstutils]: Downloading https://files.pythonhosted.org/packages/18/eb/fb4a18b0b44bac84f9863e5cbfab84a911efed665400098a6221dbc507e4/vstutils-5.9.4.tar.gz
+[2024-06-01 06:29:24] INFO root fetch - processPackages [ape-polygon-zkevm]: Remove: archive file [/home/abi/fetcher/tmp/ape-polygon-zkevm-0.7.2.tar.gz]
+[2024-06-01 06:29:24] INFO root fetch - processPackages [ape-polygon-zkevm]: Remove: archive file [/home/abi/fetcher/tmp/ape-polygon-zkevm-0.8.0.tar.gz]
+[2024-06-01 06:29:24] INFO root fetch - main [MainThread]: End processing [ape-polygon-zkevm]: success
+[2024-06-01 06:29:24] INFO root fetch - processPackages [vstutils]: executing diffoscope
+[2024-06-01 06:29:24] INFO root fetch - processPackages [vstutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vstutils-5.9.3.tar.gz tmp/vstutils-5.9.4.tar.gz --markdown 20240601/v/vstutils/5.9.3-5.9.4/README.md --exclude *.pyd
+[2024-06-01 06:29:25] INFO root fetch - processPackages [vstutils]: Remove: archive file [/home/abi/fetcher/tmp/vstutils-5.9.3.tar.gz]
+[2024-06-01 06:29:25] INFO root fetch - processPackages [vstutils]: Remove: archive file [/home/abi/fetcher/tmp/vstutils-5.9.4.tar.gz]
+[2024-06-01 06:29:25] INFO root fetch - main [MainThread]: End processing [vstutils]: success
+[2024-06-01 06:29:25] INFO root fetch - main [MainThread]: Store serial: [23477244]
