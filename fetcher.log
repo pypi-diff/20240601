@@ -21205,3 +21205,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:27:05] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.25.tar.gz]
 [2024-06-01 20:27:05] INFO root fetch - main [MainThread]: End processing [vaul]: success
 [2024-06-01 20:27:05] INFO root fetch - main [MainThread]: Store serial: [23482542]
+[2024-06-01 20:29:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482542]
+[2024-06-01 20:29:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 20:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aifs
+[2024-06-01 20:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opencf-core
+[2024-06-01 20:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ampel-hu-astro
+[2024-06-01 20:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetry-import-plugin
+[2024-06-01 20:29:15] INFO root fetch - processPackages [aifs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 20:29:15] INFO root fetch - processPackages [aifs]: Downloading https://files.pythonhosted.org/packages/77/4d/e645f0a6d50f78803115feca3770a5addb80c837b0d0da0c7c2459d44d9c/aifs-0.0.8.tar.gz
+[2024-06-01 20:29:15] INFO root fetch - processPackages [opencf-core]: New version: [0.3.1a2] Old Version: [0.3.1a1]
+[2024-06-01 20:29:15] INFO root fetch - processPackages [poetry-import-plugin]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-06-01 20:29:15] INFO root fetch - processPackages [ampel-hu-astro]: New version: [0.8.4a3] Old Version: [0.8.4a2]
+[2024-06-01 20:29:15] INFO root fetch - processPackages [ampel-hu-astro]: Downloading https://files.pythonhosted.org/packages/96/e3/7926a1f5b092f0ee481cb8bc3dc6f366b39c16bc59ccab0014d1fd825d0f/ampel_hu_astro-0.8.4a2.tar.gz
+[2024-06-01 20:29:15] INFO root fetch - processPackages [opencf-core]: Downloading https://files.pythonhosted.org/packages/cd/38/2ee1960eb955e3e159237478dd075cd203434d94862c4a3ef21c88ea48b2/opencf_core-0.3.1a1.tar.gz
+[2024-06-01 20:29:16] INFO root fetch - processPackages [poetry-import-plugin]: Downloading https://files.pythonhosted.org/packages/55/db/417a0757ae16719d9e42ade46631168eb612a5792508c233e63c8050909e/poetry_import_plugin-2.1.0.tar.gz
+[2024-06-01 20:29:16] INFO root fetch - processPackages [aifs]: Downloading https://files.pythonhosted.org/packages/66/12/f6096bda96f1e804b208056fd0f824c3afe2dbb038bd18876a378c41a3d1/aifs-0.0.9.tar.gz
+[2024-06-01 20:29:16] INFO root fetch - processPackages [ampel-hu-astro]: Downloading https://files.pythonhosted.org/packages/6e/76/367a1a0b759640a3eab6bce82b959304bc1d715c0f15aa233c700719c6ff/ampel_hu_astro-0.8.4a3.tar.gz
+[2024-06-01 20:29:16] INFO root fetch - processPackages [aifs]: executing diffoscope
+[2024-06-01 20:29:16] INFO root fetch - processPackages [aifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifs-0.0.8.tar.gz tmp/aifs-0.0.9.tar.gz --markdown 20240601/a/aifs/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:29:16] INFO root fetch - processPackages [opencf-core]: Downloading https://files.pythonhosted.org/packages/09/6f/004fc8c78791c1c2ac7b632876e6207348c3cf723dcfdaab034e79c4e4ff/opencf_core-0.3.1a2.tar.gz
+[2024-06-01 20:29:16] INFO root fetch - processPackages [poetry-import-plugin]: Downloading https://files.pythonhosted.org/packages/6e/9e/fc19550eed2abecabbc686f6c7b2268f3e91d51fd52abf38d4f26717745a/poetry_import_plugin-2.1.1.tar.gz
+[2024-06-01 20:29:16] INFO root fetch - processPackages [ampel-hu-astro]: executing diffoscope
+[2024-06-01 20:29:16] INFO root fetch - processPackages [ampel-hu-astro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampel_hu_astro-0.8.4a2.tar.gz tmp/ampel_hu_astro-0.8.4a3.tar.gz --markdown 20240601/a/ampel-hu-astro/0.8.4a2-0.8.4a3/README.md --exclude *.pyd
+[2024-06-01 20:29:16] INFO root fetch - processPackages [opencf-core]: executing diffoscope
+[2024-06-01 20:29:16] INFO root fetch - processPackages [opencf-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencf_core-0.3.1a1.tar.gz tmp/opencf_core-0.3.1a2.tar.gz --markdown 20240601/o/opencf-core/0.3.1a1-0.3.1a2/README.md --exclude *.pyd
+[2024-06-01 20:29:16] INFO root fetch - processPackages [poetry-import-plugin]: executing diffoscope
+[2024-06-01 20:29:16] INFO root fetch - processPackages [poetry-import-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_import_plugin-2.1.0.tar.gz tmp/poetry_import_plugin-2.1.1.tar.gz --markdown 20240601/p/poetry-import-plugin/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-06-01 20:29:16] INFO root fetch - processPackages [aifs]: Remove: archive file [/home/abi/fetcher/tmp/aifs-0.0.8.tar.gz]
+[2024-06-01 20:29:16] INFO root fetch - processPackages [aifs]: Remove: archive file [/home/abi/fetcher/tmp/aifs-0.0.9.tar.gz]
+[2024-06-01 20:29:16] INFO root fetch - main [MainThread]: End processing [aifs]: success
+[2024-06-01 20:29:17] INFO root fetch - processPackages [opencf-core]: Remove: archive file [/home/abi/fetcher/tmp/opencf_core-0.3.1a1.tar.gz]
+[2024-06-01 20:29:17] INFO root fetch - processPackages [opencf-core]: Remove: archive file [/home/abi/fetcher/tmp/opencf_core-0.3.1a2.tar.gz]
+[2024-06-01 20:29:17] INFO root fetch - main [MainThread]: End processing [opencf-core]: success
+[2024-06-01 20:29:17] INFO root fetch - processPackages [poetry-import-plugin]: Remove: archive file [/home/abi/fetcher/tmp/poetry_import_plugin-2.1.0.tar.gz]
+[2024-06-01 20:29:17] INFO root fetch - processPackages [poetry-import-plugin]: Remove: archive file [/home/abi/fetcher/tmp/poetry_import_plugin-2.1.1.tar.gz]
+[2024-06-01 20:29:17] INFO root fetch - main [MainThread]: End processing [poetry-import-plugin]: success
+[2024-06-01 20:29:17] INFO root fetch - processPackages [ampel-hu-astro]: Remove: archive file [/home/abi/fetcher/tmp/ampel_hu_astro-0.8.4a2.tar.gz]
+[2024-06-01 20:29:17] INFO root fetch - processPackages [ampel-hu-astro]: Remove: archive file [/home/abi/fetcher/tmp/ampel_hu_astro-0.8.4a3.tar.gz]
+[2024-06-01 20:29:17] INFO root fetch - main [MainThread]: End processing [ampel-hu-astro]: success
+[2024-06-01 20:29:17] INFO root fetch - main [MainThread]: Store serial: [23482568]
