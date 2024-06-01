@@ -10774,3 +10774,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:32:10] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.6.1.0.tar.gz]
 [2024-06-01 07:32:10] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2024-06-01 07:32:10] INFO root fetch - main [MainThread]: Store serial: [23477518]
+[2024-06-01 07:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477518]
+[2024-06-01 07:34:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 07:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-quality-control-oca
+[2024-06-01 07:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdflib-extended
+[2024-06-01 07:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: 58
+[2024-06-01 07:34:18] INFO root fetch - processPackages [pdflib-extended]: New version: [2024.5.31.2] Old Version: [2024.5.31.1]
+[2024-06-01 07:34:19] INFO root fetch - processPackages [pdflib-extended]: Downloading https://files.pythonhosted.org/packages/f9/5d/d6668b3af855a7b2175993d5003e07491e37a3623bb89bc44711914ca755/pdflib_extended-2024.5.31.1.tar.gz
+[2024-06-01 07:34:19] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.2.0.1]
+[2024-06-01 07:34:19] WARNING root fetch - processPackages [58]: Skipping, unable to determine old version
+[2024-06-01 07:34:19] INFO root fetch - main [MainThread]: End processing [58] error
+[2024-06-01 07:34:19] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Downloading https://files.pythonhosted.org/packages/8a/74/98e199f30dc34ae8cd418d2a3f4bd651da27d87a617d918b24d2867fdf9d/odoo_addon_quality_control_oca-16.0.1.2.0.1-py3-none-any.whl
+[2024-06-01 07:34:19] INFO root fetch - processPackages [pdflib-extended]: Downloading https://files.pythonhosted.org/packages/e6/ce/240a11baf5e1635329ceefa3f56720882ed1ec6c48bef4087adb3301f56f/pdflib_extended-2024.5.31.2.tar.gz
+[2024-06-01 07:34:19] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Downloading https://files.pythonhosted.org/packages/28/ca/3c97c9dfe414db8131ca88f41995a8483f2467ccdadbd45099c7eb8c19a6/odoo_addon_quality_control_oca-17.0.1.0.0.2-py3-none-any.whl
+[2024-06-01 07:34:19] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: executing diffoscope
+[2024-06-01 07:34:19] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_quality_control_oca-16.0.1.2.0.1-py3-none-any.whl.zip tmp/odoo_addon_quality_control_oca-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-quality-control-oca/16.0.1.2.0.1-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-06-01 07:34:20] INFO root fetch - processPackages [pdflib-extended]: executing diffoscope
+[2024-06-01 07:34:20] INFO root fetch - processPackages [pdflib-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdflib_extended-2024.5.31.1.tar.gz tmp/pdflib_extended-2024.5.31.2.tar.gz --markdown 20240601/p/pdflib-extended/2024.5.31.1-2024.5.31.2/README.md --exclude *.pyd
+[2024-06-01 07:34:20] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_quality_control_oca-16.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-06-01 07:34:20] INFO root fetch - processPackages [odoo-addon-quality-control-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_quality_control_oca-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-06-01 07:34:20] INFO root fetch - main [MainThread]: End processing [odoo-addon-quality-control-oca]: success
+[2024-06-01 07:34:21] INFO root fetch - processPackages [pdflib-extended]: Remove: archive file [/home/abi/fetcher/tmp/pdflib_extended-2024.5.31.1.tar.gz]
+[2024-06-01 07:34:21] INFO root fetch - processPackages [pdflib-extended]: Remove: archive file [/home/abi/fetcher/tmp/pdflib_extended-2024.5.31.2.tar.gz]
+[2024-06-01 07:34:21] INFO root fetch - main [MainThread]: End processing [pdflib-extended]: success
+[2024-06-01 07:34:21] INFO root fetch - main [MainThread]: Store serial: [23477530]
