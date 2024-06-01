@@ -15623,3 +15623,36 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:01:54] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.2.tar.gz]
 [2024-06-01 14:01:54] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 14:01:54] INFO root fetch - main [MainThread]: Store serial: [23479890]
+[2024-06-01 14:03:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479890]
+[2024-06-01 14:04:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 14:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: async-pymongo
+[2024-06-01 14:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rexapi
+[2024-06-01 14:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eatb
+[2024-06-01 14:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mbapy
+[2024-06-01 14:04:03] INFO root fetch - processPackages [eatb]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-06-01 14:04:03] INFO root fetch - processPackages [async-pymongo]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 14:04:03] INFO root fetch - processPackages [eatb]: Downloading https://files.pythonhosted.org/packages/42/43/dbf593185b219bac2594d78b3421dbeca507a55b102b0301dc0da6112012/eatb-0.2.2.tar.gz
+[2024-06-01 14:04:03] WARNING root fetch - processPackages [rexapi]: Skipping, unable to determine old version
+[2024-06-01 14:04:03] INFO root fetch - main [MainThread]: End processing [rexapi] error
+[2024-06-01 14:04:03] INFO root fetch - processPackages [mbapy]: New version: [0.8.0] Old Version: [0.7.4]
+[2024-06-01 14:04:03] INFO root fetch - processPackages [async-pymongo]: Downloading https://files.pythonhosted.org/packages/33/61/04d956ce2733641793c6baec230b1963a0e1b202db83fcd4c189e12afc60/async_pymongo-0.1.4.tar.gz
+[2024-06-01 14:04:03] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/4e/ae/2eb09dfd0b4d8d7d218f32c1f89e1c1f620f93bc8560af68f27a8aee3d7d/mbapy-0.7.4.tar.gz
+[2024-06-01 14:04:03] INFO root fetch - processPackages [eatb]: Downloading https://files.pythonhosted.org/packages/80/29/3e8c9ca7d2067f5bfe9ac773d336c869b0bba7a2bb87debce0e24dee7d0b/eatb-0.2.3.tar.gz
+[2024-06-01 14:04:03] INFO root fetch - processPackages [eatb]: executing diffoscope
+[2024-06-01 14:04:03] INFO root fetch - processPackages [eatb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eatb-0.2.2.tar.gz tmp/eatb-0.2.3.tar.gz --markdown 20240601/e/eatb/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-06-01 14:04:03] INFO root fetch - processPackages [async-pymongo]: Downloading https://files.pythonhosted.org/packages/1b/24/c46523144ed0cf5d93add273348caae9dc134cea5ba46d6fb7e7c0e7c45f/async_pymongo-0.1.5.tar.gz
+[2024-06-01 14:04:03] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/03/a4/0189cdcc630ffb52b0c4f4fa047a8d062e14a8d1f8ab497765331f6d6218/mbapy-0.8.0.tar.gz
+[2024-06-01 14:04:03] INFO root fetch - processPackages [async-pymongo]: executing diffoscope
+[2024-06-01 14:04:03] INFO root fetch - processPackages [async-pymongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_pymongo-0.1.4.tar.gz tmp/async_pymongo-0.1.5.tar.gz --markdown 20240601/a/async-pymongo/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 14:04:03] INFO root fetch - processPackages [mbapy]: executing diffoscope
+[2024-06-01 14:04:03] INFO root fetch - processPackages [mbapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbapy-0.7.4.tar.gz tmp/mbapy-0.8.0.tar.gz --markdown 20240601/m/mbapy/0.7.4-0.8.0/README.md --exclude *.pyd
+[2024-06-01 14:04:04] INFO root fetch - processPackages [async-pymongo]: Remove: archive file [/home/abi/fetcher/tmp/async_pymongo-0.1.4.tar.gz]
+[2024-06-01 14:04:04] INFO root fetch - processPackages [async-pymongo]: Remove: archive file [/home/abi/fetcher/tmp/async_pymongo-0.1.5.tar.gz]
+[2024-06-01 14:04:04] INFO root fetch - main [MainThread]: End processing [async-pymongo]: success
+[2024-06-01 14:04:04] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.2.tar.gz]
+[2024-06-01 14:04:04] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.3.tar.gz]
+[2024-06-01 14:04:04] INFO root fetch - main [MainThread]: End processing [eatb]: success
+[2024-06-01 14:04:04] INFO root fetch - processPackages [mbapy]: Remove: archive file [/home/abi/fetcher/tmp/mbapy-0.7.4.tar.gz]
+[2024-06-01 14:04:04] INFO root fetch - processPackages [mbapy]: Remove: archive file [/home/abi/fetcher/tmp/mbapy-0.8.0.tar.gz]
+[2024-06-01 14:04:04] INFO root fetch - main [MainThread]: End processing [mbapy]: success
+[2024-06-01 14:04:04] INFO root fetch - main [MainThread]: Store serial: [23479904]
