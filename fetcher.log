@@ -18247,3 +18247,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:13:47] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.94.5.tar.gz]
 [2024-06-01 17:13:47] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-06-01 17:13:47] INFO root fetch - main [MainThread]: Store serial: [23481198]
+[2024-06-01 17:15:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481198]
+[2024-06-01 17:15:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 17:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: entsoe-py
+[2024-06-01 17:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bgutils-hddly
+[2024-06-01 17:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: featree
+[2024-06-01 17:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdps
+[2024-06-01 17:15:55] INFO root fetch - processPackages [cdps]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-01 17:15:55] WARNING root fetch - processPackages [featree]: Skipping, unable to determine old version
+[2024-06-01 17:15:55] INFO root fetch - main [MainThread]: End processing [featree] error
+[2024-06-01 17:15:55] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-06-01 17:15:55] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/dc/b3/85fdeecc362378d5ea72208fad137d172940aef960c3784467c8346ca9f2/cdps-1.0.1.tar.gz
+[2024-06-01 17:15:55] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-06-01 17:15:55] INFO root fetch - processPackages [entsoe-py]: New version: [0.6.8] Old Version: [0.6.7]
+[2024-06-01 17:15:55] INFO root fetch - processPackages [entsoe-py]: Downloading https://files.pythonhosted.org/packages/e2/f2/bb2972693bc83e29e0567279d92482533f0c550b5d107ccdc078c5845f46/entsoe-py-0.6.7.tar.gz
+[2024-06-01 17:15:55] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-06-01 17:15:56] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/14/45/029ac69b41a35dbf5c98bd5f0f6396ba4539fa8d02e6c519c515d5822d3b/cdps-1.0.2.tar.gz
+[2024-06-01 17:15:56] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-06-01 17:15:56] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240601/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-06-01 17:15:56] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:15:56] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.1.tar.gz tmp/cdps-1.0.2.tar.gz --markdown 20240601/c/cdps/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-01 17:15:56] INFO root fetch - processPackages [entsoe-py]: Downloading https://files.pythonhosted.org/packages/62/b0/ac901c0e83dbed04aea086a68ccc788d0028d11e075c4f903490a7184278/entsoe_py-0.6.8.tar.gz
+[2024-06-01 17:15:56] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-06-01 17:15:56] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-06-01 17:15:56] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-06-01 17:15:56] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.1.tar.gz]
+[2024-06-01 17:15:56] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.2.tar.gz]
+[2024-06-01 17:15:56] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:15:56] INFO root fetch - processPackages [entsoe-py]: executing diffoscope
+[2024-06-01 17:15:56] INFO root fetch - processPackages [entsoe-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entsoe-py-0.6.7.tar.gz tmp/entsoe_py-0.6.8.tar.gz --markdown 20240601/e/entsoe-py/0.6.7-0.6.8/README.md --exclude *.pyd
+[2024-06-01 17:15:57] INFO root fetch - processPackages [entsoe-py]: Remove: archive file [/home/abi/fetcher/tmp/entsoe-py-0.6.7.tar.gz]
+[2024-06-01 17:15:57] INFO root fetch - processPackages [entsoe-py]: Remove: archive file [/home/abi/fetcher/tmp/entsoe_py-0.6.8.tar.gz]
+[2024-06-01 17:15:57] INFO root fetch - main [MainThread]: End processing [entsoe-py]: success
+[2024-06-01 17:15:57] INFO root fetch - main [MainThread]: Store serial: [23481210]
