@@ -8474,3 +8474,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:35:44] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a3.tar.gz]
 [2024-06-01 04:35:44] INFO root fetch - main [MainThread]: End processing [pygwalker]: success
 [2024-06-01 04:35:44] INFO root fetch - main [MainThread]: Store serial: [23476472]
+[2024-06-01 04:37:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476472]
+[2024-06-01 04:37:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 04:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zonevu
+[2024-06-01 04:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-pos-analytic-by-config
+[2024-06-01 04:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pucoti
+[2024-06-01 04:37:53] INFO root fetch - processPackages [zonevu]: New version: [1.1.29] Old Version: [1.1.28]
+[2024-06-01 04:37:53] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/6e/34/be90070a05560aa2c1a5aa9d370815b1aaa96104a95af2c84012c3bd8a64/zonevu-1.1.28-py3-none-any.whl
+[2024-06-01 04:37:53] WARNING root fetch - processPackages [pucoti]: Skipping, unable to determine old version
+[2024-06-01 04:37:53] INFO root fetch - main [MainThread]: End processing [pucoti] error
+[2024-06-01 04:37:53] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.7]
+[2024-06-01 04:37:53] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/aa/7e/4af53bfd82d27e6b8fb4b2267ec592994b52f68ab1a97f23119898836119/zonevu-1.1.29-py3-none-any.whl
+[2024-06-01 04:37:53] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: Downloading https://files.pythonhosted.org/packages/c8/9d/f932af267fd91faabb40de74c92cfa10d3e4f67d99ea74243d2c2a200358/odoo_addon_pos_analytic_by_config-16.0.1.0.0.7-py3-none-any.whl
+[2024-06-01 04:37:53] INFO root fetch - processPackages [zonevu]: executing diffoscope
+[2024-06-01 04:37:53] INFO root fetch - processPackages [zonevu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonevu-1.1.28-py3-none-any.whl.zip tmp/zonevu-1.1.29-py3-none-any.whl.zip --markdown 20240601/z/zonevu/1.1.28-1.1.29/README.md --exclude *.pyd
+[2024-06-01 04:37:53] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: Downloading https://files.pythonhosted.org/packages/4e/21/920c1c31c92f53b185dda11ae071ff482a8bd19d2b3cee7e39e7d3de8239/odoo_addon_pos_analytic_by_config-16.0.1.0.0.9-py3-none-any.whl
+[2024-06-01 04:37:53] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: executing diffoscope
+[2024-06-01 04:37:53] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_analytic_by_config-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_pos_analytic_by_config-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-pos-analytic-by-config/16.0.1.0.0.7-16.0.1.0.0.9/README.md --exclude *.pyd
+[2024-06-01 04:37:54] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.28-py3-none-any.whl.zip]
+[2024-06-01 04:37:54] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.29-py3-none-any.whl.zip]
+[2024-06-01 04:37:54] INFO root fetch - main [MainThread]: End processing [zonevu]: success
+[2024-06-01 04:37:54] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_analytic_by_config-16.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-06-01 04:37:54] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_analytic_by_config-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-06-01 04:37:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-analytic-by-config]: success
+[2024-06-01 04:37:54] INFO root fetch - main [MainThread]: Store serial: [23476481]
