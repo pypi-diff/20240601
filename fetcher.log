@@ -14174,3 +14174,38 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:09:21] WARNING root fetch - processPackages [ipv4v6]: Skipping, unable to determine old version
 [2024-06-01 12:09:21] INFO root fetch - main [MainThread]: End processing [ipv4v6] error
 [2024-06-01 12:09:21] INFO root fetch - main [MainThread]: Store serial: [23479256]
+[2024-06-01 12:11:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479256]
+[2024-06-01 12:11:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 12:13:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479256]
+[2024-06-01 12:13:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 12:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IDswapper
+[2024-06-01 12:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysgf
+[2024-06-01 12:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sc3dg
+[2024-06-01 12:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Devansh-Topsis-Python
+[2024-06-01 12:13:35] INFO root fetch - processPackages [sc3dg]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 12:13:35] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/ee/ef/2ba85a8873593d87ec9a40da2034046ba07f2106b475cfa46c25f7550587/sc3dg-0.0.2.tar.gz
+[2024-06-01 12:13:35] INFO root fetch - processPackages [pysgf]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 12:13:35] WARNING root fetch - processPackages [Devansh-Topsis-Python]: Skipping, unable to determine old version
+[2024-06-01 12:13:35] INFO root fetch - main [MainThread]: End processing [Devansh-Topsis-Python] error
+[2024-06-01 12:13:35] INFO root fetch - processPackages [IDswapper]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 12:13:35] INFO root fetch - processPackages [pysgf]: Downloading https://files.pythonhosted.org/packages/76/41/91ca25cdfc46f68a30f1177c0a6e114915f8ee7a3804fbc1cb8201293d42/pysgf-0.8.0.tar.gz
+[2024-06-01 12:13:35] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/b8/7f/dc9e0ab064ce7f68cc4956176ccc5663f67f2e7cd1742aaaef4e826febac/idswapper-0.0.2.tar.gz
+[2024-06-01 12:13:35] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/72/c7/3e4d80a24fd6f43704d8311b7fb87223d271f5dc8ada2cb833cfa753b5da/sc3dg-0.0.3.tar.gz
+[2024-06-01 12:13:35] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-01 12:13:35] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.2.tar.gz tmp/sc3dg-0.0.3.tar.gz --markdown 20240601/s/sc3dg/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 12:13:35] INFO root fetch - processPackages [pysgf]: Downloading https://files.pythonhosted.org/packages/4f/f9/69e89a008d39214ba15b832a0a8732d41e46200174fd081497284de48d02/pysgf-0.9.0.tar.gz
+[2024-06-01 12:13:35] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/ce/b2/09193cf07f6533700002fb5c5fb46aca758532bd0dc90c00ae60af3b552d/idswapper-0.0.3.tar.gz
+[2024-06-01 12:13:35] INFO root fetch - processPackages [pysgf]: executing diffoscope
+[2024-06-01 12:13:35] INFO root fetch - processPackages [pysgf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysgf-0.8.0.tar.gz tmp/pysgf-0.9.0.tar.gz --markdown 20240601/p/pysgf/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 12:13:35] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 12:13:35] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.2.tar.gz tmp/idswapper-0.0.3.tar.gz --markdown 20240601/I/IDswapper/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 12:13:36] INFO root fetch - processPackages [pysgf]: Remove: archive file [/home/abi/fetcher/tmp/pysgf-0.8.0.tar.gz]
+[2024-06-01 12:13:36] INFO root fetch - processPackages [pysgf]: Remove: archive file [/home/abi/fetcher/tmp/pysgf-0.9.0.tar.gz]
+[2024-06-01 12:13:36] INFO root fetch - main [MainThread]: End processing [pysgf]: success
+[2024-06-01 12:13:36] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.2.tar.gz]
+[2024-06-01 12:13:36] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.3.tar.gz]
+[2024-06-01 12:13:36] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-01 12:13:36] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.2.tar.gz]
+[2024-06-01 12:13:36] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.3.tar.gz]
+[2024-06-01 12:13:36] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 12:13:36] INFO root fetch - main [MainThread]: Store serial: [23479270]
