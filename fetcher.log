@@ -10331,3 +10331,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:31:38] INFO root fetch - processPackages [vllm]: Remove: archive file [/home/abi/fetcher/tmp/vllm-0.4.3.tar.gz]
 [2024-06-01 06:31:38] INFO root fetch - main [MainThread]: End processing [vllm]: success
 [2024-06-01 06:31:38] INFO root fetch - main [MainThread]: Store serial: [23477261]
+[2024-06-01 06:33:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477261]
+[2024-06-01 06:33:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 06:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simplelogincmd
+[2024-06-01 06:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psykit
+[2024-06-01 06:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thoi
+[2024-06-01 06:33:48] INFO root fetch - processPackages [thoi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 06:33:48] INFO root fetch - processPackages [thoi]: Downloading https://files.pythonhosted.org/packages/2f/fd/a16a2e33ae12120330737a7c0556e6f2898a9500e578b508e061fdb3acdb/thoi-0.1.8.tar.gz
+[2024-06-01 06:33:48] WARNING root fetch - processPackages [psykit]: Skipping, unable to determine old version
+[2024-06-01 06:33:48] INFO root fetch - main [MainThread]: End processing [psykit] error
+[2024-06-01 06:33:48] INFO root fetch - processPackages [simplelogincmd]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-06-01 06:33:48] INFO root fetch - processPackages [simplelogincmd]: Downloading https://files.pythonhosted.org/packages/2d/03/5449da446cffd2efc3d5dcf64a2713e51bbd85f88ac97d4d3502b1633ee3/simplelogincmd-0.2.0.tar.gz
+[2024-06-01 06:33:48] INFO root fetch - processPackages [thoi]: Downloading https://files.pythonhosted.org/packages/aa/f1/8599f40c951f75c0744e49e1f877b105fd85a5648f46cfcbd165ab7d614a/thoi-0.1.9.tar.gz
+[2024-06-01 06:33:49] INFO root fetch - processPackages [thoi]: executing diffoscope
+[2024-06-01 06:33:49] INFO root fetch - processPackages [thoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thoi-0.1.8.tar.gz tmp/thoi-0.1.9.tar.gz --markdown 20240601/t/thoi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 06:33:49] INFO root fetch - processPackages [simplelogincmd]: Downloading https://files.pythonhosted.org/packages/17/92/7d888b57e1bbc713760d5223ad5b07a165fb9e6cf0aba961d3b75e5da8da/simplelogincmd-0.2.1.tar.gz
+[2024-06-01 06:33:49] INFO root fetch - processPackages [simplelogincmd]: executing diffoscope
+[2024-06-01 06:33:49] INFO root fetch - processPackages [simplelogincmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplelogincmd-0.2.0.tar.gz tmp/simplelogincmd-0.2.1.tar.gz --markdown 20240601/s/simplelogincmd/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-06-01 06:33:49] INFO root fetch - processPackages [thoi]: Remove: archive file [/home/abi/fetcher/tmp/thoi-0.1.8.tar.gz]
+[2024-06-01 06:33:49] INFO root fetch - processPackages [thoi]: Remove: archive file [/home/abi/fetcher/tmp/thoi-0.1.9.tar.gz]
+[2024-06-01 06:33:49] INFO root fetch - main [MainThread]: End processing [thoi]: success
+[2024-06-01 06:33:49] INFO root fetch - processPackages [simplelogincmd]: Remove: archive file [/home/abi/fetcher/tmp/simplelogincmd-0.2.0.tar.gz]
+[2024-06-01 06:33:49] INFO root fetch - processPackages [simplelogincmd]: Remove: archive file [/home/abi/fetcher/tmp/simplelogincmd-0.2.1.tar.gz]
+[2024-06-01 06:33:49] INFO root fetch - main [MainThread]: End processing [simplelogincmd]: success
+[2024-06-01 06:33:49] INFO root fetch - main [MainThread]: Store serial: [23477272]
