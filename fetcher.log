@@ -21175,3 +21175,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:24:54] WARNING root fetch - processPackages [rapidstats]: Skipping package: exceeds size limit 12362398>=10485760
 [2024-06-01 20:24:54] INFO root fetch - main [MainThread]: End processing [rapidstats] error
 [2024-06-01 20:24:54] INFO root fetch - main [MainThread]: Store serial: [23482494]
+[2024-06-01 20:26:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482494]
+[2024-06-01 20:27:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vaul
+[2024-06-01 20:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moroccan-prayer-times
+[2024-06-01 20:27:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aifs
+[2024-06-01 20:27:04] INFO root fetch - processPackages [moroccan-prayer-times]: New version: [0.0.9] Old Version: [0.0.11]
+[2024-06-01 20:27:04] INFO root fetch - processPackages [vaul]: New version: [0.1.25] Old Version: [0.1.24]
+[2024-06-01 20:27:04] INFO root fetch - processPackages [aifs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 20:27:04] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/10/6a/3892d8f1070f2e0b348957c5a6600b61d641ba9bc353d92ca2a0bf9580d3/moroccan_prayer_times-0.0.11-py3-none-any.whl
+[2024-06-01 20:27:04] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/48/e0/6bbebda6c75b970ddcd47cace2b08ad828b5f647516c7194c03dff8e74ac/vaul-0.1.24.tar.gz
+[2024-06-01 20:27:04] INFO root fetch - processPackages [moroccan-prayer-times]: Downloading https://files.pythonhosted.org/packages/6f/b6/974e7dd7973732bb57010d61ea7a49703337769a92389d6d635aa04aa355/moroccan_prayer_times-0.0.9-py3-none-any.whl
+[2024-06-01 20:27:04] INFO root fetch - processPackages [aifs]: Downloading https://files.pythonhosted.org/packages/77/4d/e645f0a6d50f78803115feca3770a5addb80c837b0d0da0c7c2459d44d9c/aifs-0.0.8.tar.gz
+[2024-06-01 20:27:04] INFO root fetch - processPackages [moroccan-prayer-times]: executing diffoscope
+[2024-06-01 20:27:04] INFO root fetch - processPackages [moroccan-prayer-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moroccan_prayer_times-0.0.11-py3-none-any.whl.zip tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip --markdown 20240601/m/moroccan-prayer-times/0.0.11-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:27:04] INFO root fetch - processPackages [vaul]: Downloading https://files.pythonhosted.org/packages/05/e6/3fe0cb730d26ef092e645f9db1df35a049ead5be3ecf88ee3e1478310eb9/vaul-0.1.25.tar.gz
+[2024-06-01 20:27:04] INFO root fetch - processPackages [aifs]: Downloading https://files.pythonhosted.org/packages/66/12/f6096bda96f1e804b208056fd0f824c3afe2dbb038bd18876a378c41a3d1/aifs-0.0.9.tar.gz
+[2024-06-01 20:27:04] INFO root fetch - processPackages [vaul]: executing diffoscope
+[2024-06-01 20:27:04] INFO root fetch - processPackages [vaul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaul-0.1.24.tar.gz tmp/vaul-0.1.25.tar.gz --markdown 20240601/v/vaul/0.1.24-0.1.25/README.md --exclude *.pyd
+[2024-06-01 20:27:04] INFO root fetch - processPackages [aifs]: executing diffoscope
+[2024-06-01 20:27:04] INFO root fetch - processPackages [aifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifs-0.0.8.tar.gz tmp/aifs-0.0.9.tar.gz --markdown 20240601/a/aifs/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 20:27:05] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.11-py3-none-any.whl.zip]
+[2024-06-01 20:27:05] INFO root fetch - processPackages [moroccan-prayer-times]: Remove: archive file [/home/abi/fetcher/tmp/moroccan_prayer_times-0.0.9-py3-none-any.whl.zip]
+[2024-06-01 20:27:05] INFO root fetch - main [MainThread]: End processing [moroccan-prayer-times]: success
+[2024-06-01 20:27:05] INFO root fetch - processPackages [aifs]: Remove: archive file [/home/abi/fetcher/tmp/aifs-0.0.8.tar.gz]
+[2024-06-01 20:27:05] INFO root fetch - processPackages [aifs]: Remove: archive file [/home/abi/fetcher/tmp/aifs-0.0.9.tar.gz]
+[2024-06-01 20:27:05] INFO root fetch - main [MainThread]: End processing [aifs]: success
+[2024-06-01 20:27:05] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.24.tar.gz]
+[2024-06-01 20:27:05] INFO root fetch - processPackages [vaul]: Remove: archive file [/home/abi/fetcher/tmp/vaul-0.1.25.tar.gz]
+[2024-06-01 20:27:05] INFO root fetch - main [MainThread]: End processing [vaul]: success
+[2024-06-01 20:27:05] INFO root fetch - main [MainThread]: Store serial: [23482542]
