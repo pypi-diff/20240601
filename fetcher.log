@@ -3617,3 +3617,42 @@
 [2024-06-01 03:14:46] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.9.0.tar.gz]
 [2024-06-01 03:14:46] INFO root fetch - main [MainThread]: End processing [lbt-ladybug]: success
 [2024-06-01 03:14:46] INFO root fetch - main [MainThread]: Store serial: [23474620]
+[2024-06-01 03:16:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474620]
+[2024-06-01 03:16:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 03:16:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-honeybee
+[2024-06-01 03:16:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ape-foundry
+[2024-06-01 03:16:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-core
+[2024-06-01 03:16:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-curl
+[2024-06-01 03:16:55] INFO root fetch - processPackages [composio-core]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-06-01 03:16:55] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-06-01 03:16:55] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/64/9c/d8c89364a93ff721fc5d3ef02721e9a3fd07f9915d5ab062f0ccee2519e7/composio_core-0.3.3.tar.gz
+[2024-06-01 03:16:55] INFO root fetch - processPackages [ape-foundry]: New version: [0.8.0] Old Version: [0.7.5]
+[2024-06-01 03:16:55] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-06-01 03:16:55] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-06-01 03:16:55] INFO root fetch - processPackages [ape-foundry]: Downloading https://files.pythonhosted.org/packages/60/d9/f183ac742abb137f37dc87a1872e86e2ae6a7476548d25554e6686f8f79f/ape-foundry-0.7.5.tar.gz
+[2024-06-01 03:16:55] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-06-01 03:16:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-06-01 03:16:56] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/84/c2/c6d50bfce3dc4d722e64df831896b00dae451ccb8d5d07fbe9e8b1c4bdaf/composio_core-0.3.4.tar.gz
+[2024-06-01 03:16:56] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-06-01 03:16:56] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.3.3.tar.gz tmp/composio_core-0.3.4.tar.gz --markdown 20240601/c/composio-core/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-06-01 03:16:56] INFO root fetch - processPackages [ape-foundry]: Downloading https://files.pythonhosted.org/packages/b2/7b/23da7508782be6ea9d9f842a69ab4cac74105850aa15af55945f17dfbd2b/ape-foundry-0.8.0.tar.gz
+[2024-06-01 03:16:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-06-01 03:16:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240601/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-06-01 03:16:56] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-06-01 03:16:56] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-06-01 03:16:56] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240601/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-06-01 03:16:56] INFO root fetch - processPackages [ape-foundry]: executing diffoscope
+[2024-06-01 03:16:56] INFO root fetch - processPackages [ape-foundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-foundry-0.7.5.tar.gz tmp/ape-foundry-0.8.0.tar.gz --markdown 20240601/a/ape-foundry/0.7.5-0.8.0/README.md --exclude *.pyd
+[2024-06-01 03:16:57] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-06-01 03:16:57] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.3.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.3.4.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-06-01 03:16:57] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-06-01 03:16:57] INFO root fetch - processPackages [ape-foundry]: Remove: archive file [/home/abi/fetcher/tmp/ape-foundry-0.7.5.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - processPackages [ape-foundry]: Remove: archive file [/home/abi/fetcher/tmp/ape-foundry-0.8.0.tar.gz]
+[2024-06-01 03:16:57] INFO root fetch - main [MainThread]: End processing [ape-foundry]: success
+[2024-06-01 03:16:57] INFO root fetch - main [MainThread]: Store serial: [23474643]
