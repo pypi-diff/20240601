@@ -17835,3 +17835,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:39:51] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-06-01 16:39:51] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-06-01 16:39:51] INFO root fetch - main [MainThread]: Store serial: [23481004]
+[2024-06-01 16:41:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481004]
+[2024-06-01 16:41:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 16:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481006]
+[2024-06-01 16:44:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 16:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaicodingcube
+[2024-06-01 16:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: burr
+[2024-06-01 16:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CTkKeyboard
+[2024-06-01 16:44:06] INFO root fetch - processPackages [burr]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 16:44:06] INFO root fetch - processPackages [pyaicodingcube]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 16:44:06] ERROR root fetch - processPackages [CTkKeyboard]: Unable to get metadata: No such project 'CTkKeyboard'
+[2024-06-01 16:44:06] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 16:44:06] INFO root fetch - processPackages [burr]: Downloading https://files.pythonhosted.org/packages/87/83/f7356070de16e070dbc68373d02f5b3677c417c21359630b2007a8b027df/burr-0.8.1.tar.gz
+[2024-06-01 16:44:06] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/f8/be/3f389d0b417a910b914d5ba23638dbc40ac1965fa6e4493444f09bb46d67/pyaicodingcube-0.0.6.tar.gz
+[2024-06-01 16:44:07] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/62/e8/d8105d854aba9b3f9413c49e1ffc4ed6dfe28c613003fbae2530bc53645f/pyaicodingcube-0.0.7.tar.gz
+[2024-06-01 16:44:07] INFO root fetch - processPackages [pyaicodingcube]: executing diffoscope
+[2024-06-01 16:44:07] INFO root fetch - processPackages [pyaicodingcube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaicodingcube-0.0.6.tar.gz tmp/pyaicodingcube-0.0.7.tar.gz --markdown 20240601/p/pyaicodingcube/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 16:44:07] INFO root fetch - processPackages [burr]: Downloading https://files.pythonhosted.org/packages/65/38/00b44d54c37f35813232167f5745ca37eac9ad13574e81e1f4e685acf5d5/burr-0.9.0.tar.gz
+[2024-06-01 16:44:07] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.6.tar.gz]
+[2024-06-01 16:44:07] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.7.tar.gz]
+[2024-06-01 16:44:07] INFO root fetch - main [MainThread]: End processing [pyaicodingcube]: success
+[2024-06-01 16:44:07] INFO root fetch - processPackages [burr]: executing diffoscope
+[2024-06-01 16:44:07] INFO root fetch - processPackages [burr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burr-0.8.1.tar.gz tmp/burr-0.9.0.tar.gz --markdown 20240601/b/burr/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 16:44:43] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.8.1.tar.gz]
+[2024-06-01 16:44:43] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.9.0.tar.gz]
+[2024-06-01 16:44:43] INFO root fetch - main [MainThread]: End processing [burr]: success
+[2024-06-01 16:44:43] INFO root fetch - main [MainThread]: Store serial: [23481014]
