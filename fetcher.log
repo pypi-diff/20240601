@@ -22687,3 +22687,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:18:50] INFO root fetch - processPackages [opsgeniecli]: Remove: archive file [/home/abi/fetcher/tmp/opsgeniecli-0.2.0.tar.gz]
 [2024-06-01 22:18:50] INFO root fetch - main [MainThread]: End processing [opsgeniecli]: success
 [2024-06-01 22:18:50] INFO root fetch - main [MainThread]: Store serial: [23483302]
+[2024-06-01 22:20:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483302]
+[2024-06-01 22:21:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 22:21:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lensepy
+[2024-06-01 22:21:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nnetsauce
+[2024-06-01 22:21:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wolframalpha
+[2024-06-01 22:21:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymimir
+[2024-06-01 22:21:01] INFO root fetch - processPackages [wolframalpha]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-06-01 22:21:01] INFO root fetch - processPackages [wolframalpha]: Downloading https://files.pythonhosted.org/packages/d8/cb/12cd1b6a827c8055a9328a1d0ca4d6ac635e18491c7e170057a082c5630c/wolframalpha-5.1.1.tar.gz
+[2024-06-01 22:21:01] WARNING root fetch - processPackages [lensepy]: Skipping, unable to determine old version
+[2024-06-01 22:21:01] INFO root fetch - main [MainThread]: End processing [lensepy] error
+[2024-06-01 22:21:01] WARNING root fetch - processPackages [pymimir]: Skipping, unable to determine old version
+[2024-06-01 22:21:01] INFO root fetch - main [MainThread]: End processing [pymimir] error
+[2024-06-01 22:21:01] INFO root fetch - processPackages [nnetsauce]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 22:21:02] INFO root fetch - processPackages [nnetsauce]: Downloading https://files.pythonhosted.org/packages/e4/c1/c099d0aaf9dd67f11d6704ca840f18bc30e5bc6bc8610951c94cafda6620/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl
+[2024-06-01 22:21:02] INFO root fetch - processPackages [wolframalpha]: Downloading https://files.pythonhosted.org/packages/3a/42/7998765d709b800fd66c276166fec217eddaa9099036029a02cb00c470bc/wolframalpha-5.1.2.tar.gz
+[2024-06-01 22:21:02] INFO root fetch - processPackages [wolframalpha]: executing diffoscope
+[2024-06-01 22:21:02] INFO root fetch - processPackages [wolframalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolframalpha-5.1.1.tar.gz tmp/wolframalpha-5.1.2.tar.gz --markdown 20240601/w/wolframalpha/5.1.1-5.1.2/README.md --exclude *.pyd
+[2024-06-01 22:21:02] INFO root fetch - processPackages [nnetsauce]: Downloading https://files.pythonhosted.org/packages/5d/3d/2c1ea2226e34b252e89b11951ff2d62c9dd12ea4a6a66be92a58b378f9de/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl
+[2024-06-01 22:21:02] INFO root fetch - processPackages [nnetsauce]: executing diffoscope
+[2024-06-01 22:21:02] INFO root fetch - processPackages [nnetsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl.zip tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip --markdown 20240601/n/nnetsauce/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 22:21:02] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.1.1.tar.gz]
+[2024-06-01 22:21:02] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.1.2.tar.gz]
+[2024-06-01 22:21:02] INFO root fetch - main [MainThread]: End processing [wolframalpha]: success
+[2024-06-01 22:21:09] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.5-cp38-cp38-macosx_10_15_x86_64.whl.zip]
+[2024-06-01 22:21:09] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
+[2024-06-01 22:21:09] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
+[2024-06-01 22:21:09] INFO root fetch - main [MainThread]: Store serial: [23483317]
