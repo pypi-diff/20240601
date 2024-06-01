@@ -20784,3 +20784,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:02:48] INFO root fetch - processPackages [PyGeodesy]: Remove: archive file [/home/abi/fetcher/tmp/PyGeodesy-24.6.1.zip]
 [2024-06-01 20:02:48] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
 [2024-06-01 20:02:48] INFO root fetch - main [MainThread]: Store serial: [23482326]
+[2024-06-01 20:05:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482326]
+[2024-06-01 20:05:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 20:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embedded-utils
+[2024-06-01 20:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MAIAI
+[2024-06-01 20:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blockchain-data-subnet-shared-libs
+[2024-06-01 20:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vectorvision
+[2024-06-01 20:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lensepy
+[2024-06-01 20:05:12] WARNING root fetch - processPackages [MAIAI]: Skipping, unable to determine old version
+[2024-06-01 20:05:12] INFO root fetch - main [MainThread]: End processing [MAIAI] error
+[2024-06-01 20:05:12] INFO root fetch - processPackages [vectorvision]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 20:05:12] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: New version: [1.0.0] Old Version: [0.0.5]
+[2024-06-01 20:05:12] INFO root fetch - processPackages [vectorvision]: Downloading https://files.pythonhosted.org/packages/43/05/55724786568d889b0c19684063c22c2b81e0ff98fe5a537afa39e286eb2b/vectorvision-0.1.0.tar.gz
+[2024-06-01 20:05:12] WARNING root fetch - processPackages [lensepy]: Skipping, unable to determine old version
+[2024-06-01 20:05:12] INFO root fetch - main [MainThread]: End processing [lensepy] error
+[2024-06-01 20:05:12] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/e7/fa/499b0707a6250e5488d6a1b2432e8ae73d6b781ec865d5bac683d6a5541d/blockchain_data_subnet_shared_libs-0.0.5.tar.gz
+[2024-06-01 20:05:12] WARNING root fetch - processPackages [embedded-utils]: Skipping, unable to determine old version
+[2024-06-01 20:05:12] INFO root fetch - main [MainThread]: End processing [embedded-utils] error
+[2024-06-01 20:05:12] INFO root fetch - processPackages [vectorvision]: Downloading https://files.pythonhosted.org/packages/21/b9/2420172da64f95feeeb9161f560809bba6d393a43641636649d94bfe2cbe/vectorvision-0.1.1.tar.gz
+[2024-06-01 20:05:12] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/03/c9/86bc6e13af1d5f56a5bfb1e36182ee3e6fd4a0caae01abf35f710817c2ff/blockchain_data_subnet_shared_libs-1.0.0.tar.gz
+[2024-06-01 20:05:12] INFO root fetch - processPackages [vectorvision]: executing diffoscope
+[2024-06-01 20:05:12] INFO root fetch - processPackages [vectorvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectorvision-0.1.0.tar.gz tmp/vectorvision-0.1.1.tar.gz --markdown 20240601/v/vectorvision/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 20:05:12] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: executing diffoscope
+[2024-06-01 20:05:12] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockchain_data_subnet_shared_libs-0.0.5.tar.gz tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz --markdown 20240601/b/blockchain-data-subnet-shared-libs/0.0.5-1.0.0/README.md --exclude *.pyd
+[2024-06-01 20:05:13] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-0.0.5.tar.gz]
+[2024-06-01 20:05:13] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz]
+[2024-06-01 20:05:13] INFO root fetch - main [MainThread]: End processing [blockchain-data-subnet-shared-libs]: success
+[2024-06-01 20:05:13] INFO root fetch - processPackages [vectorvision]: Remove: archive file [/home/abi/fetcher/tmp/vectorvision-0.1.0.tar.gz]
+[2024-06-01 20:05:13] INFO root fetch - processPackages [vectorvision]: Remove: archive file [/home/abi/fetcher/tmp/vectorvision-0.1.1.tar.gz]
+[2024-06-01 20:05:13] INFO root fetch - main [MainThread]: End processing [vectorvision]: success
+[2024-06-01 20:05:13] INFO root fetch - main [MainThread]: Store serial: [23482348]
