@@ -23631,3 +23631,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:35:41] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-06-01 23:35:41] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-06-01 23:35:41] INFO root fetch - main [MainThread]: Store serial: [23483834]
+[2024-06-01 23:37:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483834]
+[2024-06-01 23:37:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 23:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rekker
+[2024-06-01 23:37:50] INFO root fetch - processPackages [rekker]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 23:37:51] INFO root fetch - processPackages [rekker]: Downloading https://files.pythonhosted.org/packages/38/3b/0c09eee7987d3e76313c98616bdc29c51bd3ac88076d17ce4e63a616c5f0/rekker-0.1.1.tar.gz
+[2024-06-01 23:37:51] INFO root fetch - processPackages [rekker]: Downloading https://files.pythonhosted.org/packages/c1/88/5b63c52c693e2427f72eacbd84a97dc83fcdc081ba8a18aafed0f28fc778/rekker-0.1.2.tar.gz
+[2024-06-01 23:37:51] INFO root fetch - processPackages [rekker]: executing diffoscope
+[2024-06-01 23:37:51] INFO root fetch - processPackages [rekker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rekker-0.1.1.tar.gz tmp/rekker-0.1.2.tar.gz --markdown 20240601/r/rekker/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 23:37:52] INFO root fetch - processPackages [rekker]: Remove: archive file [/home/abi/fetcher/tmp/rekker-0.1.1.tar.gz]
+[2024-06-01 23:37:52] INFO root fetch - processPackages [rekker]: Remove: archive file [/home/abi/fetcher/tmp/rekker-0.1.2.tar.gz]
+[2024-06-01 23:37:52] INFO root fetch - main [MainThread]: End processing [rekker]: success
+[2024-06-01 23:37:52] INFO root fetch - main [MainThread]: Store serial: [23483837]
