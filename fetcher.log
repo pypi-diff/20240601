@@ -20538,3 +20538,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:40:32] WARNING root fetch - processPackages [dt-pdf]: Skipping, unable to determine old version
 [2024-06-01 19:40:32] INFO root fetch - main [MainThread]: End processing [dt-pdf] error
 [2024-06-01 19:40:32] INFO root fetch - main [MainThread]: Store serial: [23482212]
+[2024-06-01 19:42:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482212]
+[2024-06-01 19:42:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 19:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tabgan
+[2024-06-01 19:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tui-dsmt
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tui-dsmt]: New version: [202406011619] Old Version: [202406011525]
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/97/cf/462c95ed99a9b0df3ca77f01f2e8443387ec550da6ba439bbd52e06e227a/tui_dsmt-202406011525.tar.gz
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tabgan]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tabgan]: Downloading https://files.pythonhosted.org/packages/70/66/585d0ece5233b2583d477682887bd15da7b6f74b36fbd074007899d7df9a/tabgan-2.2.0-py2.py3-none-any.whl
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tabgan]: Downloading https://files.pythonhosted.org/packages/38/b0/0b1ba45ca2b035c96885d350cf773fc05d26f7387ff450f37ee39a24db23/tabgan-2.2.1-py2.py3-none-any.whl
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tabgan]: executing diffoscope
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tabgan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabgan-2.2.0-py2.py3-none-any.whl.zip tmp/tabgan-2.2.1-py2.py3-none-any.whl.zip --markdown 20240601/t/tabgan/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-06-01 19:42:41] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/65/0c/c47722e9e8a826954ef1e662514c9ef33dddb3f2fec248601426e0a0d36b/tui_dsmt-202406011619.tar.gz
+[2024-06-01 19:42:42] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-06-01 19:42:42] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202406011525.tar.gz tmp/tui_dsmt-202406011619.tar.gz --markdown 20240601/t/tui-dsmt/202406011525-202406011619/README.md --exclude *.pyd
+[2024-06-01 19:42:42] INFO root fetch - processPackages [tabgan]: Remove: archive file [/home/abi/fetcher/tmp/tabgan-2.2.0-py2.py3-none-any.whl.zip]
+[2024-06-01 19:42:42] INFO root fetch - processPackages [tabgan]: Remove: archive file [/home/abi/fetcher/tmp/tabgan-2.2.1-py2.py3-none-any.whl.zip]
+[2024-06-01 19:42:42] INFO root fetch - main [MainThread]: End processing [tabgan]: success
+[2024-06-01 19:42:43] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011525.tar.gz]
+[2024-06-01 19:42:43] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011619.tar.gz]
+[2024-06-01 19:42:43] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-06-01 19:42:43] INFO root fetch - main [MainThread]: Store serial: [23482217]
