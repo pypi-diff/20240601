@@ -17255,3 +17255,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:00:26] INFO root fetch - processPackages [ReverseBox]: Remove: archive file [/home/abi/fetcher/tmp/ReverseBox-0.9.9.tar.gz]
 [2024-06-01 16:00:26] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
 [2024-06-01 16:00:26] INFO root fetch - main [MainThread]: Store serial: [23480612]
+[2024-06-01 16:02:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480612]
+[2024-06-01 16:02:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 16:04:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480612]
+[2024-06-01 16:04:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 16:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-06-01 16:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eventu
+[2024-06-01 16:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyaicodingcube
+[2024-06-01 16:04:41] INFO root fetch - processPackages [pyaicodingcube]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 16:04:41] WARNING root fetch - processPackages [eventu]: Skipping, unable to determine old version
+[2024-06-01 16:04:41] INFO root fetch - main [MainThread]: End processing [eventu] error
+[2024-06-01 16:04:41] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/00/97/d79de1b65e4fc3b823dfe0cb892c8a8fcf1783b324f200dcbd29ef72b2ba/pyaicodingcube-0.0.2.tar.gz
+[2024-06-01 16:04:41] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-06-01 16:04:41] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-06-01 16:04:42] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/de/cf/4c2304b64934c3c306995a68bbf44928497bd78fb1b970149492ae3ab1d0/pyaicodingcube-0.0.3.tar.gz
+[2024-06-01 16:04:42] INFO root fetch - processPackages [pyaicodingcube]: executing diffoscope
+[2024-06-01 16:04:42] INFO root fetch - processPackages [pyaicodingcube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaicodingcube-0.0.2.tar.gz tmp/pyaicodingcube-0.0.3.tar.gz --markdown 20240601/p/pyaicodingcube/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 16:04:42] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-06-01 16:04:42] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-06-01 16:04:42] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240601/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-06-01 16:04:42] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.2.tar.gz]
+[2024-06-01 16:04:42] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.3.tar.gz]
+[2024-06-01 16:04:42] INFO root fetch - main [MainThread]: End processing [pyaicodingcube]: success
+[2024-06-01 16:04:45] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-06-01 16:04:45] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-06-01 16:04:45] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-06-01 16:04:45] INFO root fetch - main [MainThread]: Store serial: [23480621]
