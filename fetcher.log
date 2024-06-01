@@ -23155,3 +23155,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:58:17] INFO root fetch - processPackages [civitdl]: Remove: archive file [/home/abi/fetcher/tmp/civitdl-2.1.0.dev3.tar.gz]
 [2024-06-01 22:58:17] INFO root fetch - main [MainThread]: End processing [civitdl]: success
 [2024-06-01 22:58:17] INFO root fetch - main [MainThread]: Store serial: [23483544]
+[2024-06-01 23:00:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483544]
+[2024-06-01 23:00:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 23:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stashconnect
+[2024-06-01 23:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yay-automation
+[2024-06-01 23:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-box-gui
+[2024-06-01 23:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smp
+[2024-06-01 23:00:26] INFO root fetch - processPackages [stashconnect]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-06-01 23:00:26] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/d7/93/4fabe19de4e3dda213e0461f3d85d7f09922081fde3e198a5ed26cde8a55/stashconnect-0.7.6.tar.gz
+[2024-06-01 23:00:26] INFO root fetch - processPackages [smp]: New version: [2.0.0] Old Version: [1.0.3]
+[2024-06-01 23:00:26] WARNING root fetch - processPackages [yay-automation]: Skipping, unable to determine old version
+[2024-06-01 23:00:26] INFO root fetch - main [MainThread]: End processing [yay-automation] error
+[2024-06-01 23:00:26] INFO root fetch - processPackages [flet-box-gui]: New version: [0.1.2.2] Old Version: [0.1.2.1]
+[2024-06-01 23:00:26] INFO root fetch - processPackages [smp]: Downloading https://files.pythonhosted.org/packages/b3/82/aecb057884b85962675385d58485dbbd5f8cdb976eef10657dd151c7ec4c/smp-1.0.3.tar.gz
+[2024-06-01 23:00:26] INFO root fetch - processPackages [flet-box-gui]: Downloading https://files.pythonhosted.org/packages/ac/eb/176f1ef894d2705f297382cfab7c5e3059ea679956edacd50872a0c5ef7c/flet-box-gui-0.1.2.1.tar.gz
+[2024-06-01 23:00:26] INFO root fetch - processPackages [stashconnect]: Downloading https://files.pythonhosted.org/packages/f0/8a/7a77df63ec553f40a43e243a40776489daeca242790911dbecddd910aad9/stashconnect-0.7.7.tar.gz
+[2024-06-01 23:00:26] INFO root fetch - processPackages [stashconnect]: executing diffoscope
+[2024-06-01 23:00:26] INFO root fetch - processPackages [stashconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stashconnect-0.7.6.tar.gz tmp/stashconnect-0.7.7.tar.gz --markdown 20240601/s/stashconnect/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-06-01 23:00:27] INFO root fetch - processPackages [smp]: Downloading https://files.pythonhosted.org/packages/4c/fd/17827bff9015c2e94747541426325382fb1ac3bb7a46c8d214d6dd8fc60c/smp-2.0.0.tar.gz
+[2024-06-01 23:00:27] INFO root fetch - processPackages [smp]: executing diffoscope
+[2024-06-01 23:00:27] INFO root fetch - processPackages [smp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smp-1.0.3.tar.gz tmp/smp-2.0.0.tar.gz --markdown 20240601/s/smp/1.0.3-2.0.0/README.md --exclude *.pyd
+[2024-06-01 23:00:27] INFO root fetch - processPackages [flet-box-gui]: Downloading https://files.pythonhosted.org/packages/ba/77/6817b3f287e08a28f2c129faba7333c40f9bc8788fc168d8bc413e0086c5/flet-box-gui-0.1.2.2.tar.gz
+[2024-06-01 23:00:27] INFO root fetch - processPackages [flet-box-gui]: executing diffoscope
+[2024-06-01 23:00:27] INFO root fetch - processPackages [flet-box-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-box-gui-0.1.2.1.tar.gz tmp/flet-box-gui-0.1.2.2.tar.gz --markdown 20240601/f/flet-box-gui/0.1.2.1-0.1.2.2/README.md --exclude *.pyd
+[2024-06-01 23:00:27] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.6.tar.gz]
+[2024-06-01 23:00:27] INFO root fetch - processPackages [stashconnect]: Remove: archive file [/home/abi/fetcher/tmp/stashconnect-0.7.7.tar.gz]
+[2024-06-01 23:00:27] INFO root fetch - main [MainThread]: End processing [stashconnect]: success
+[2024-06-01 23:00:27] INFO root fetch - processPackages [smp]: Remove: archive file [/home/abi/fetcher/tmp/smp-1.0.3.tar.gz]
+[2024-06-01 23:00:27] INFO root fetch - processPackages [smp]: Remove: archive file [/home/abi/fetcher/tmp/smp-2.0.0.tar.gz]
+[2024-06-01 23:00:27] INFO root fetch - main [MainThread]: End processing [smp]: success
+[2024-06-01 23:00:28] INFO root fetch - processPackages [flet-box-gui]: Remove: archive file [/home/abi/fetcher/tmp/flet-box-gui-0.1.2.1.tar.gz]
+[2024-06-01 23:00:28] INFO root fetch - processPackages [flet-box-gui]: Remove: archive file [/home/abi/fetcher/tmp/flet-box-gui-0.1.2.2.tar.gz]
+[2024-06-01 23:00:28] INFO root fetch - main [MainThread]: End processing [flet-box-gui]: success
+[2024-06-01 23:00:28] INFO root fetch - main [MainThread]: Store serial: [23483557]
