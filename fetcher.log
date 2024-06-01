@@ -22125,3 +22125,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:35:19] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
 [2024-06-01 21:35:19] INFO root fetch - main [MainThread]: End processing [stefutils]: success
 [2024-06-01 21:35:19] INFO root fetch - main [MainThread]: Store serial: [23483034]
+[2024-06-01 21:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483034]
+[2024-06-01 21:37:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 21:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foreverbull
+[2024-06-01 21:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wagtail-cjkcms
+[2024-06-01 21:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdss-hal
+[2024-06-01 21:37:28] INFO root fetch - processPackages [wagtail-cjkcms]: New version: [24.6.1] Old Version: [24.5.2]
+[2024-06-01 21:37:28] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/51/7a/b134296bc2c208ae5b4b834ddb631274dc42e08b53fb3869bd37f2d9481a/wagtail_cjkcms-24.5.2.tar.gz
+[2024-06-01 21:37:28] INFO root fetch - processPackages [sdss-hal]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-06-01 21:37:28] INFO root fetch - processPackages [foreverbull]: New version: [0.0.0.99.20230610094209] Old Version: [0.0.0.92]
+[2024-06-01 21:37:28] INFO root fetch - processPackages [sdss-hal]: Downloading https://files.pythonhosted.org/packages/5a/f8/4595e6995f48235ce6683aa8112c66e955240e87ae5e9200fce716b780fa/sdss_hal-1.3.2.tar.gz
+[2024-06-01 21:37:28] INFO root fetch - processPackages [foreverbull]: Downloading https://files.pythonhosted.org/packages/83/5e/402b3d8e197a33b59ae5994459465f8027f487cad42df3747b300fe53dc4/foreverbull-0.0.0.92.tar.gz
+[2024-06-01 21:37:28] INFO root fetch - processPackages [wagtail-cjkcms]: Downloading https://files.pythonhosted.org/packages/a3/be/2900d59d59747528481b9e9952ed19b05bb1decea06c8d4e3b78702428e0/wagtail_cjkcms-24.6.1.tar.gz
+[2024-06-01 21:37:28] INFO root fetch - processPackages [sdss-hal]: Downloading https://files.pythonhosted.org/packages/1a/89/94026652813d665eb366a398e3d6ed27b16ab0159e4fdd008ddb742c6601/sdss_hal-1.3.3.tar.gz
+[2024-06-01 21:37:29] INFO root fetch - processPackages [wagtail-cjkcms]: executing diffoscope
+[2024-06-01 21:37:29] INFO root fetch - processPackages [wagtail-cjkcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_cjkcms-24.5.2.tar.gz tmp/wagtail_cjkcms-24.6.1.tar.gz --markdown 20240601/w/wagtail-cjkcms/24.5.2-24.6.1/README.md --exclude *.pyd
+[2024-06-01 21:37:29] INFO root fetch - processPackages [sdss-hal]: executing diffoscope
+[2024-06-01 21:37:29] INFO root fetch - processPackages [sdss-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss_hal-1.3.2.tar.gz tmp/sdss_hal-1.3.3.tar.gz --markdown 20240601/s/sdss-hal/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-06-01 21:37:29] INFO root fetch - processPackages [foreverbull]: Downloading https://files.pythonhosted.org/packages/6e/c3/cf13499a255fd30c5d6ccd05686ba0af46cbde2f1cb23b7a4e121a7e23ee/foreverbull-0.0.0.99.20230610094209.tar.gz
+[2024-06-01 21:37:29] INFO root fetch - processPackages [foreverbull]: executing diffoscope
+[2024-06-01 21:37:29] INFO root fetch - processPackages [foreverbull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foreverbull-0.0.0.92.tar.gz tmp/foreverbull-0.0.0.99.20230610094209.tar.gz --markdown 20240601/f/foreverbull/0.0.0.92-0.0.0.99.20230610094209/README.md --exclude *.pyd
+[2024-06-01 21:37:29] INFO root fetch - processPackages [sdss-hal]: Remove: archive file [/home/abi/fetcher/tmp/sdss_hal-1.3.2.tar.gz]
+[2024-06-01 21:37:29] INFO root fetch - processPackages [sdss-hal]: Remove: archive file [/home/abi/fetcher/tmp/sdss_hal-1.3.3.tar.gz]
+[2024-06-01 21:37:29] INFO root fetch - main [MainThread]: End processing [sdss-hal]: success
+[2024-06-01 21:37:29] INFO root fetch - processPackages [foreverbull]: Remove: archive file [/home/abi/fetcher/tmp/foreverbull-0.0.0.92.tar.gz]
+[2024-06-01 21:37:29] INFO root fetch - processPackages [foreverbull]: Remove: archive file [/home/abi/fetcher/tmp/foreverbull-0.0.0.99.20230610094209.tar.gz]
+[2024-06-01 21:37:29] INFO root fetch - main [MainThread]: End processing [foreverbull]: success
+[2024-06-01 21:37:33] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.5.2.tar.gz]
+[2024-06-01 21:37:33] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.6.1.tar.gz]
+[2024-06-01 21:37:33] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
+[2024-06-01 21:37:33] INFO root fetch - main [MainThread]: Store serial: [23483046]
