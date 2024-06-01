@@ -9672,3 +9672,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:30:13] INFO root fetch - processPackages [HuggingMouse]: Remove: archive file [/home/abi/fetcher/tmp/HuggingMouse-0.2.0.tar.gz]
 [2024-06-01 05:30:13] INFO root fetch - main [MainThread]: End processing [HuggingMouse]: success
 [2024-06-01 05:30:13] INFO root fetch - main [MainThread]: Store serial: [23476967]
+[2024-06-01 05:32:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476967]
+[2024-06-01 05:32:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 05:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-orange-book-theme
+[2024-06-01 05:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mosstool
+[2024-06-01 05:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konfuzio-sdk
+[2024-06-01 05:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PySide6-Fluent-Widgets
+[2024-06-01 05:32:22] INFO root fetch - processPackages [mosstool]: New version: [0.2.5] Old Version: [0.2.3]
+[2024-06-01 05:32:22] INFO root fetch - processPackages [sphinx-orange-book-theme]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 05:32:22] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-06-01 05:32:22] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.3.7.dev20240531080207] Old Version: [0.3.7.dev20240529214133]
+[2024-06-01 05:32:22] INFO root fetch - processPackages [mosstool]: Downloading https://files.pythonhosted.org/packages/25/f8/098574c1252a8162897e96c4cab26f7e36c8202ef97ee8eeee7e8f36a2ba/mosstool-0.2.3.tar.gz
+[2024-06-01 05:32:22] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/4a/34/a5a1b6801d62504e1d8c280e88c4eafb322823602e02ff224e2af77126e9/PySide6-Fluent-Widgets-1.5.6.tar.gz
+[2024-06-01 05:32:22] INFO root fetch - processPackages [sphinx-orange-book-theme]: Downloading https://files.pythonhosted.org/packages/bb/24/c6c68f4bc3042f8a3346166071d710d939f31866f6a93de13aa5fd8820cd/sphinx_orange_book_theme-0.8.0.tar.gz
+[2024-06-01 05:32:22] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/d7/fe/8e8961215969335cd564fc6939eb6b7858b85e46f177b2727de48223ab7e/konfuzio_sdk-0.3.7.dev20240529214133.tar.gz
+[2024-06-01 05:32:23] INFO root fetch - processPackages [mosstool]: Downloading https://files.pythonhosted.org/packages/7d/22/0e6f4f730557baee8b20e29f33bfedfdd6e69d005562e9e64cbc661cf97f/mosstool-0.2.5.tar.gz
+[2024-06-01 05:32:23] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/12/4f/ad6fceaccc2f97682214afd127413b1fd966e7508622f70973ecba833182/konfuzio_sdk-0.3.7.dev20240531080207.tar.gz
+[2024-06-01 05:32:23] INFO root fetch - processPackages [sphinx-orange-book-theme]: Downloading https://files.pythonhosted.org/packages/73/4f/e5802a07a5cc06aabf412d841ff858fdedbf50438085d166513b3e3b07fe/sphinx_orange_book_theme-0.9.0.tar.gz
+[2024-06-01 05:32:23] INFO root fetch - processPackages [mosstool]: executing diffoscope
+[2024-06-01 05:32:23] INFO root fetch - processPackages [mosstool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosstool-0.2.3.tar.gz tmp/mosstool-0.2.5.tar.gz --markdown 20240601/m/mosstool/0.2.3-0.2.5/README.md --exclude *.pyd
+[2024-06-01 05:32:23] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/82/a0/1449a5e546b78a5dc50ad1290f30b3d8bec243106abff5957ee6c610d0f3/PySide6-Fluent-Widgets-1.5.7.tar.gz
+[2024-06-01 05:32:23] INFO root fetch - processPackages [sphinx-orange-book-theme]: executing diffoscope
+[2024-06-01 05:32:23] INFO root fetch - processPackages [sphinx-orange-book-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_orange_book_theme-0.8.0.tar.gz tmp/sphinx_orange_book_theme-0.9.0.tar.gz --markdown 20240601/s/sphinx-orange-book-theme/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 05:32:23] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2024-06-01 05:32:23] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.3.7.dev20240529214133.tar.gz tmp/konfuzio_sdk-0.3.7.dev20240531080207.tar.gz --markdown 20240601/k/konfuzio-sdk/0.3.7.dev20240529214133-0.3.7.dev20240531080207/README.md --exclude *.pyd
+[2024-06-01 05:32:23] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2024-06-01 05:32:23] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-1.5.6.tar.gz tmp/PySide6-Fluent-Widgets-1.5.7.tar.gz --markdown 20240601/P/PySide6-Fluent-Widgets/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-06-01 05:32:23] INFO root fetch - processPackages [sphinx-orange-book-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_orange_book_theme-0.8.0.tar.gz]
+[2024-06-01 05:32:23] INFO root fetch - processPackages [sphinx-orange-book-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_orange_book_theme-0.9.0.tar.gz]
+[2024-06-01 05:32:23] INFO root fetch - main [MainThread]: End processing [sphinx-orange-book-theme]: success
+[2024-06-01 05:32:24] INFO root fetch - processPackages [mosstool]: Remove: archive file [/home/abi/fetcher/tmp/mosstool-0.2.3.tar.gz]
+[2024-06-01 05:32:24] INFO root fetch - processPackages [mosstool]: Remove: archive file [/home/abi/fetcher/tmp/mosstool-0.2.5.tar.gz]
+[2024-06-01 05:32:24] INFO root fetch - main [MainThread]: End processing [mosstool]: success
+[2024-06-01 05:32:24] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.7.dev20240529214133.tar.gz]
+[2024-06-01 05:32:24] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.7.dev20240531080207.tar.gz]
+[2024-06-01 05:32:24] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2024-06-01 05:32:25] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide6-Fluent-Widgets-1.5.6.tar.gz]
+[2024-06-01 05:32:25] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide6-Fluent-Widgets-1.5.7.tar.gz]
+[2024-06-01 05:32:25] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
+[2024-06-01 05:32:25] INFO root fetch - main [MainThread]: Store serial: [23476980]
