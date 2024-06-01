@@ -18508,3 +18508,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
 [2024-06-01 17:28:58] INFO root fetch - main [MainThread]: End processing [almax-common]: success
 [2024-06-01 17:28:58] INFO root fetch - main [MainThread]: Store serial: [23481314]
+[2024-06-01 17:31:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481314]
+[2024-06-01 17:31:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 17:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imspy
+[2024-06-01 17:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTkKeyboard
+[2024-06-01 17:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-01 17:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: almax-common
+[2024-06-01 17:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: econnect-python
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:31:08] WARNING root fetch - processPackages [CTkKeyboard]: Skipping, unable to determine old version
+[2024-06-01 17:31:08] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 17:31:08] INFO root fetch - processPackages [imspy]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:31:08] INFO root fetch - processPackages [econnect-python]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-06-01 17:31:08] INFO root fetch - processPackages [imspy]: Downloading https://files.pythonhosted.org/packages/31/98/6857709f354252ff4f3c3dabf032ae7429b2b42675f781a44a0af4ccd5a9/imspy-0.2.8.tar.gz
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:31:08] INFO root fetch - processPackages [econnect-python]: Downloading https://files.pythonhosted.org/packages/99/ca/65a2f8556e0ea3ec989849cbf22ec10c19849899cc915964039eb6ef3b7e/econnect_python-0.9.1.tar.gz
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:31:08] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:31:09] WARNING root fetch - processPackages [imspy]: Skipping package: exceeds size limit 14822664>=10485760
+[2024-06-01 17:31:09] INFO root fetch - main [MainThread]: End processing [imspy] error
+[2024-06-01 17:31:09] INFO root fetch - processPackages [econnect-python]: Downloading https://files.pythonhosted.org/packages/53/8d/939b3694d26843ec0ed928235d2e246af7432d2d275c8c317ba5c2cd0e96/econnect_python-0.9.2.tar.gz
+[2024-06-01 17:31:09] INFO root fetch - processPackages [econnect-python]: executing diffoscope
+[2024-06-01 17:31:09] INFO root fetch - processPackages [econnect-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econnect_python-0.9.1.tar.gz tmp/econnect_python-0.9.2.tar.gz --markdown 20240601/e/econnect-python/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-06-01 17:31:09] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 17:31:09] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 17:31:09] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:31:09] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:31:09] INFO root fetch - processPackages [econnect-python]: Remove: archive file [/home/abi/fetcher/tmp/econnect_python-0.9.1.tar.gz]
+[2024-06-01 17:31:09] INFO root fetch - processPackages [econnect-python]: Remove: archive file [/home/abi/fetcher/tmp/econnect_python-0.9.2.tar.gz]
+[2024-06-01 17:31:09] INFO root fetch - main [MainThread]: End processing [econnect-python]: success
+[2024-06-01 17:31:09] INFO root fetch - main [MainThread]: Store serial: [23481328]
