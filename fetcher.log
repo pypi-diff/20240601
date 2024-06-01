@@ -17508,3 +17508,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:20:00] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.4.tar.gz]
 [2024-06-01 16:20:00] INFO root fetch - main [MainThread]: End processing [vht]: success
 [2024-06-01 16:20:00] INFO root fetch - main [MainThread]: Store serial: [23480768]
+[2024-06-01 16:22:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480768]
+[2024-06-01 16:22:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydrawise
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ngstrefftz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ponytail-agents
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eventu
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: WGSE-NG
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unthermal
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pgn-clis
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bgutils-hddly
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ponytail-agents]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [WGSE-NG]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [eventu]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [unthermal]: New version: [0.1001] Old Version: [0.1]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ngstrefftz]: New version: [0.3.2403.dev5] Old Version: [0.3.2402.dev35]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [pydrawise]: New version: [2024.6.1] Old Version: [2024.4.1]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/3f/89/4634313fc70bf7ef0052fffe85999ab1d6691d3fd213d6b737894eb12b36/wgse_ng-1.0.0a8.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [eventu]: Downloading https://files.pythonhosted.org/packages/17/13/7643029e91be41477d4a7a21155c44a2808d65322f8e45482c844a9b53da/eventu-0.1.1.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [pgn-clis]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ponytail-agents]: Downloading https://files.pythonhosted.org/packages/c3/74/c313284bab0f4dda7774546c68026f1a23af8f172cfc779ad5333ea4192b/ponytail-agents-0.1.4.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/ed/b5/bc90d9c1a53f7cd963cb8b156d24b5bdba960444354fe5c9dda78003a861/unthermal-0.1.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [pydrawise]: Downloading https://files.pythonhosted.org/packages/02/3f/c79f47f2d948d4c590f00baa17a85e30fa770d7f85f11728b77b0ebae2ba/pydrawise-2024.4.1.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ngstrefftz]: Downloading https://files.pythonhosted.org/packages/44/7d/44aa826889bd95b815df52f2e4f41261bb32933951d52bd761ae418110fa/ngstrefftz-0.3.2402.dev35.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/44/3c/e19eb232037dd98c9146865a34e22ea5333d8ca0b0f7d7f1bd6b13566f18/pgn_clis-0.1.7.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-06-01 16:22:09] INFO root fetch - processPackages [eventu]: Downloading https://files.pythonhosted.org/packages/cd/5f/516250d611a8cc17b4db34ab9b0c6a4ba84c3fadfa95ada6abcd99e1b974/eventu-0.1.2.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/d5/81/664671b86da1a5bcd349280ea890d75f32be93c4daadc3b562edf311352c/unthermal-0.1001.tar.gz
+[2024-06-01 16:22:09] INFO root fetch - processPackages [ponytail-agents]: Downloading https://files.pythonhosted.org/packages/97/93/51311ac349c52963e05950bfd99a4ba399588611fc9397df32f10883408b/ponytail-agents-0.1.5.tar.gz
+[2024-06-01 16:22:10] INFO root fetch - processPackages [eventu]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [eventu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventu-0.1.1.tar.gz tmp/eventu-0.1.2.tar.gz --markdown 20240601/e/eventu/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [pydrawise]: Downloading https://files.pythonhosted.org/packages/3a/65/dfef62fcd13a32339e64a717dbe424a2e4f1246f617bcba8216ae1108a7b/pydrawise-2024.6.1.tar.gz
+[2024-06-01 16:22:10] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/89/d5/1ab48ea4e65547bf52f440d5509e10c877616541956047cb21790eb9ccd8/pgn_clis-0.1.9.tar.gz
+[2024-06-01 16:22:10] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/15/4d/c9a515b0210f4f91d2909606ff889cc50487c3b067db9e503da7075956bb/wgse_ng-1.0.0a9.tar.gz
+[2024-06-01 16:22:10] INFO root fetch - processPackages [unthermal]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [unthermal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unthermal-0.1.tar.gz tmp/unthermal-0.1001.tar.gz --markdown 20240601/u/unthermal/0.1-0.1001/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [ponytail-agents]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [ponytail-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ponytail-agents-0.1.4.tar.gz tmp/ponytail-agents-0.1.5.tar.gz --markdown 20240601/p/ponytail-agents/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [ngstrefftz]: Downloading https://files.pythonhosted.org/packages/66/dc/5eecb876d44aca94f2789695f5a2111a5cc2bffc86d4d31eabd3b996579f/ngstrefftz-0.3.2403.dev5.tar.gz
+[2024-06-01 16:22:10] INFO root fetch - processPackages [pydrawise]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [pydrawise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydrawise-2024.4.1.tar.gz tmp/pydrawise-2024.6.1.tar.gz --markdown 20240601/p/pydrawise/2024.4.1-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-06-01 16:22:10] INFO root fetch - processPackages [pgn-clis]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [pgn-clis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgn_clis-0.1.7.tar.gz tmp/pgn_clis-0.1.9.tar.gz --markdown 20240601/p/pgn-clis/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240601/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [WGSE-NG]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [WGSE-NG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgse_ng-1.0.0a8.tar.gz tmp/wgse_ng-1.0.0a9.tar.gz --markdown 20240601/W/WGSE-NG/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [ngstrefftz]: executing diffoscope
+[2024-06-01 16:22:10] INFO root fetch - processPackages [ngstrefftz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngstrefftz-0.3.2402.dev35.tar.gz tmp/ngstrefftz-0.3.2403.dev5.tar.gz --markdown 20240601/n/ngstrefftz/0.3.2402.dev35-0.3.2403.dev5/README.md --exclude *.pyd
+[2024-06-01 16:22:10] INFO root fetch - processPackages [eventu]: Remove: archive file [/home/abi/fetcher/tmp/eventu-0.1.1.tar.gz]
+[2024-06-01 16:22:10] INFO root fetch - processPackages [eventu]: Remove: archive file [/home/abi/fetcher/tmp/eventu-0.1.2.tar.gz]
+[2024-06-01 16:22:10] INFO root fetch - main [MainThread]: End processing [eventu]: success
+[2024-06-01 16:22:10] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1.tar.gz]
+[2024-06-01 16:22:10] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1001.tar.gz]
+[2024-06-01 16:22:10] INFO root fetch - main [MainThread]: End processing [unthermal]: success
+[2024-06-01 16:22:11] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-06-01 16:22:11] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-06-01 16:22:11] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.7.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.9.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - main [MainThread]: End processing [pgn-clis]: success
+[2024-06-01 16:22:11] INFO root fetch - processPackages [pydrawise]: Remove: archive file [/home/abi/fetcher/tmp/pydrawise-2024.4.1.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - processPackages [pydrawise]: Remove: archive file [/home/abi/fetcher/tmp/pydrawise-2024.6.1.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - main [MainThread]: End processing [pydrawise]: success
+[2024-06-01 16:22:11] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.4.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.5.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - main [MainThread]: End processing [ponytail-agents]: success
+[2024-06-01 16:22:11] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2402.dev35.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2403.dev5.tar.gz]
+[2024-06-01 16:22:11] INFO root fetch - main [MainThread]: End processing [ngstrefftz]: success
+[2024-06-01 16:22:12] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a8.tar.gz]
+[2024-06-01 16:22:12] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a9.tar.gz]
+[2024-06-01 16:22:12] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
+[2024-06-01 16:22:12] INFO root fetch - main [MainThread]: Store serial: [23480807]
