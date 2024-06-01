@@ -15546,3 +15546,20 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:51:08] INFO root fetch - processPackages [atproto]: Remove: archive file [/home/abi/fetcher/tmp/atproto-0.0.9.tar.gz]
 [2024-06-01 13:51:08] INFO root fetch - main [MainThread]: End processing [atproto]: success
 [2024-06-01 13:51:08] INFO root fetch - main [MainThread]: Store serial: [23479845]
+[2024-06-01 13:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479845]
+[2024-06-01 13:53:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 13:55:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479850]
+[2024-06-01 13:55:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 13:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sidcli
+[2024-06-01 13:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyreball
+[2024-06-01 13:55:23] INFO root fetch - processPackages [pyreball]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-06-01 13:55:23] WARNING root fetch - processPackages [sidcli]: Skipping, unable to determine old version
+[2024-06-01 13:55:23] INFO root fetch - main [MainThread]: End processing [sidcli] error
+[2024-06-01 13:55:23] INFO root fetch - processPackages [pyreball]: Downloading https://files.pythonhosted.org/packages/58/6d/2a12e28a3dd312efa9918e9a2ac4dcf9c7b807002d035f019474f52c11be/pyreball-2.1.0.tar.gz
+[2024-06-01 13:55:24] INFO root fetch - processPackages [pyreball]: Downloading https://files.pythonhosted.org/packages/ca/70/71c96ddd4508af4a3026d3405e74fd61ce9119f6362e6f73c1fda54058d4/pyreball-2.1.1.tar.gz
+[2024-06-01 13:55:24] INFO root fetch - processPackages [pyreball]: executing diffoscope
+[2024-06-01 13:55:24] INFO root fetch - processPackages [pyreball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreball-2.1.0.tar.gz tmp/pyreball-2.1.1.tar.gz --markdown 20240601/p/pyreball/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-06-01 13:55:24] INFO root fetch - processPackages [pyreball]: Remove: archive file [/home/abi/fetcher/tmp/pyreball-2.1.0.tar.gz]
+[2024-06-01 13:55:24] INFO root fetch - processPackages [pyreball]: Remove: archive file [/home/abi/fetcher/tmp/pyreball-2.1.1.tar.gz]
+[2024-06-01 13:55:24] INFO root fetch - main [MainThread]: End processing [pyreball]: success
+[2024-06-01 13:55:24] INFO root fetch - main [MainThread]: Store serial: [23479861]
