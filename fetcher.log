@@ -3227,3 +3227,84 @@
 [2024-06-01 02:52:03] INFO root fetch - processPackages [pyarmor.cli.core.android]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.android-6.5.2-cp37-none-any.whl.zip]
 [2024-06-01 02:52:03] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.android]: success
 [2024-06-01 02:52:03] INFO root fetch - main [MainThread]: Store serial: [23474379]
+[2024-06-01 02:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474379]
+[2024-06-01 02:54:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyarmor.cli.core.darwin
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: distyll-info
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-alpaca-api
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyarmor.cli.core.freebsd
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyJONDB
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dcd-mapping
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyarmor.cli.core.linux
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mechanism
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nugen
+[2024-06-01 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyarmor.cli.core.themida
+[2024-06-01 02:54:18] INFO root fetch - processPackages [PyJONDB]: New version: [1.3] Old Version: [1.2]
+[2024-06-01 02:54:18] WARNING root fetch - processPackages [nugen]: Skipping, unable to determine old version
+[2024-06-01 02:54:18] INFO root fetch - main [MainThread]: End processing [nugen] error
+[2024-06-01 02:54:18] INFO root fetch - processPackages [distyll-info]: New version: [0.3.0] Old Version: [0.2.4]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/01/52/af31d9d31c64630ef9568698c8aec691867caf684af80ae9c718fd0712a2/pyjondb-1.2.tar.gz
+[2024-06-01 02:54:18] WARNING root fetch - processPackages [dcd-mapping]: Skipping, unable to determine old version
+[2024-06-01 02:54:18] INFO root fetch - main [MainThread]: End processing [dcd-mapping] error
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.linux]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [mechanism]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.themida]: New version: [6.5.2] Old Version: [6.5.1]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [distyll-info]: Downloading https://files.pythonhosted.org/packages/87/c9/2c3107b264cb8723abdd71160be3193dd302f5a27c2e2b50ead2b4d31df6/distyll_info-0.2.4.tar.gz
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: Downloading https://files.pythonhosted.org/packages/ed/f6/a6cefccd566d7867eabcb446560ff4107359d4efd45168a5817709aa0cec/pyarmor.cli.core.darwin-6.5.1-cp39-none-any.whl
+[2024-06-01 02:54:18] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.linux]: Downloading https://files.pythonhosted.org/packages/47/13/43520eb97c1eed233d10003bb8499e7859e66f4a6ec72c43b602488a883f/pyarmor.cli.core.linux-6.5.1-cp39-none-any.whl
+[2024-06-01 02:54:18] INFO root fetch - processPackages [mechanism]: Downloading https://files.pythonhosted.org/packages/47/6b/1de53ac53a2ba3569be8ea56c5dba5a3052678d32d0a0c7b7bde8fa36caf/mechanism-1.1.7.tar.gz
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: Downloading https://files.pythonhosted.org/packages/bd/6d/9553379f3ec1c32a0295b6cf62b8251233ca685c150c555c0e3ab0d34590/pyarmor.cli.core.freebsd-6.5.1-cp39-none-any.whl
+[2024-06-01 02:54:18] INFO root fetch - processPackages [pyarmor.cli.core.themida]: Downloading https://files.pythonhosted.org/packages/4b/ee/1a244a6a3298ead19006950a48cc29440bcd65bd2180d37b2f9449f829a1/pyarmor.cli.core.themida-6.5.1-cp39-none-any.whl
+[2024-06-01 02:54:18] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/87/ba/6fa4439cef5fcb24c4cf30f5a4cdf57bdb6613d1c4ea6d828a0902337200/py_alpaca_api-0.6.3.tar.gz
+[2024-06-01 02:54:18] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/ca/7a/f5b7ee753dd74d2ade19c1305261b2f44f396441407aa7b8dea02b163b44/pyjondb-1.3.tar.gz
+[2024-06-01 02:54:18] INFO root fetch - processPackages [distyll-info]: Downloading https://files.pythonhosted.org/packages/81/17/7d51dab33b36006f9ee4885c5767f5b6cf9e43f31788eda9a878c5d58ff2/distyll_info-0.3.0.tar.gz
+[2024-06-01 02:54:19] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 02:54:19] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.2.tar.gz tmp/pyjondb-1.3.tar.gz --markdown 20240601/P/PyJONDB/1.2-1.3/README.md --exclude *.pyd
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: Downloading https://files.pythonhosted.org/packages/c8/00/924107dd178967ebe77abb10cf1dce2f944059e9e22287dc63e5606ef8c0/pyarmor.cli.core.darwin-6.5.2-cp39-none-any.whl
+[2024-06-01 02:54:19] INFO root fetch - processPackages [mechanism]: Downloading https://files.pythonhosted.org/packages/57/b9/16bc82fd64baabb53566993b512ae297f770cefe5be35248d1467de1dae9/mechanism-1.1.8.tar.gz
+[2024-06-01 02:54:19] INFO root fetch - processPackages [distyll-info]: executing diffoscope
+[2024-06-01 02:54:19] INFO root fetch - processPackages [distyll-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/distyll_info-0.2.4.tar.gz tmp/distyll_info-0.3.0.tar.gz --markdown 20240601/d/distyll-info/0.2.4-0.3.0/README.md --exclude *.pyd
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: Downloading https://files.pythonhosted.org/packages/6a/05/52caf4550462f5b33e6d5a51194632123eb32d4a575221002964fbe90d55/pyarmor.cli.core.freebsd-6.5.2-cp39-none-any.whl
+[2024-06-01 02:54:19] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/d3/60/6ce4fe3222a09e5451bd67e9d86cd09cbc8327ceec5b283b125278d2072f/py_alpaca_api-0.6.4.tar.gz
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.linux]: Downloading https://files.pythonhosted.org/packages/57/96/77b14175509b22bf91af0dfd1c6283728d2236c40d3b3952e8ee3958076a/pyarmor.cli.core.linux-6.5.2-cp39-none-any.whl
+[2024-06-01 02:54:19] INFO root fetch - processPackages [mechanism]: executing diffoscope
+[2024-06-01 02:54:19] INFO root fetch - processPackages [mechanism]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanism-1.1.7.tar.gz tmp/mechanism-1.1.8.tar.gz --markdown 20240601/m/mechanism/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: executing diffoscope
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core.darwin-6.5.1-cp39-none-any.whl.zip tmp/pyarmor.cli.core.darwin-6.5.2-cp39-none-any.whl.zip --markdown 20240601/p/pyarmor.cli.core.darwin/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:54:19] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-06-01 02:54:19] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.6.3.tar.gz tmp/py_alpaca_api-0.6.4.tar.gz --markdown 20240601/p/py-alpaca-api/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.themida]: Downloading https://files.pythonhosted.org/packages/81/9a/3065be46f43a8c96c4c6c8d5576fd0ae5b9350fb1341bf535a57e45bfaba/pyarmor.cli.core.themida-6.5.2-cp37-none-any.whl
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: executing diffoscope
+[2024-06-01 02:54:19] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core.freebsd-6.5.1-cp39-none-any.whl.zip tmp/pyarmor.cli.core.freebsd-6.5.2-cp39-none-any.whl.zip --markdown 20240601/p/pyarmor.cli.core.freebsd/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:54:19] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.2.tar.gz]
+[2024-06-01 02:54:19] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.3.tar.gz]
+[2024-06-01 02:54:19] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 02:54:19] INFO root fetch - processPackages [distyll-info]: Remove: archive file [/home/abi/fetcher/tmp/distyll_info-0.2.4.tar.gz]
+[2024-06-01 02:54:19] INFO root fetch - processPackages [distyll-info]: Remove: archive file [/home/abi/fetcher/tmp/distyll_info-0.3.0.tar.gz]
+[2024-06-01 02:54:19] INFO root fetch - main [MainThread]: End processing [distyll-info]: success
+[2024-06-01 02:54:20] INFO root fetch - processPackages [mechanism]: Remove: archive file [/home/abi/fetcher/tmp/mechanism-1.1.7.tar.gz]
+[2024-06-01 02:54:20] INFO root fetch - processPackages [mechanism]: Remove: archive file [/home/abi/fetcher/tmp/mechanism-1.1.8.tar.gz]
+[2024-06-01 02:54:20] INFO root fetch - main [MainThread]: End processing [mechanism]: success
+[2024-06-01 02:54:20] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.6.3.tar.gz]
+[2024-06-01 02:54:20] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.6.4.tar.gz]
+[2024-06-01 02:54:20] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-06-01 02:54:20] INFO root fetch - processPackages [pyarmor.cli.core.linux]: executing diffoscope
+[2024-06-01 02:54:20] INFO root fetch - processPackages [pyarmor.cli.core.linux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core.linux-6.5.1-cp39-none-any.whl.zip tmp/pyarmor.cli.core.linux-6.5.2-cp39-none-any.whl.zip --markdown 20240601/p/pyarmor.cli.core.linux/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:54:20] INFO root fetch - processPackages [pyarmor.cli.core.themida]: executing diffoscope
+[2024-06-01 02:54:20] INFO root fetch - processPackages [pyarmor.cli.core.themida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core.themida-6.5.1-cp39-none-any.whl.zip tmp/pyarmor.cli.core.themida-6.5.2-cp37-none-any.whl.zip --markdown 20240601/p/pyarmor.cli.core.themida/6.5.1-6.5.2/README.md --exclude *.pyd
+[2024-06-01 02:54:21] INFO root fetch - processPackages [pyarmor.cli.core.themida]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.themida-6.5.1-cp39-none-any.whl.zip]
+[2024-06-01 02:54:21] INFO root fetch - processPackages [pyarmor.cli.core.themida]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.themida-6.5.2-cp37-none-any.whl.zip]
+[2024-06-01 02:54:21] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.themida]: success
+[2024-06-01 02:54:24] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.freebsd-6.5.1-cp39-none-any.whl.zip]
+[2024-06-01 02:54:24] INFO root fetch - processPackages [pyarmor.cli.core.freebsd]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.freebsd-6.5.2-cp39-none-any.whl.zip]
+[2024-06-01 02:54:24] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.freebsd]: success
+[2024-06-01 02:54:26] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.darwin-6.5.1-cp39-none-any.whl.zip]
+[2024-06-01 02:54:26] INFO root fetch - processPackages [pyarmor.cli.core.darwin]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.darwin-6.5.2-cp39-none-any.whl.zip]
+[2024-06-01 02:54:26] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.darwin]: success
+[2024-06-01 02:54:47] INFO root fetch - processPackages [pyarmor.cli.core.linux]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.linux-6.5.1-cp39-none-any.whl.zip]
+[2024-06-01 02:54:47] INFO root fetch - processPackages [pyarmor.cli.core.linux]: Remove: archive file [/home/abi/fetcher/tmp/pyarmor.cli.core.linux-6.5.2-cp39-none-any.whl.zip]
+[2024-06-01 02:54:47] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core.linux]: success
+[2024-06-01 02:54:47] INFO root fetch - main [MainThread]: Store serial: [23474448]
