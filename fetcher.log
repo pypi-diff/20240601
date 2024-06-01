@@ -19497,3 +19497,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:34:35] INFO root fetch - processPackages [uvpipx]: Remove: archive file [/home/abi/fetcher/tmp/uvpipx-0.4.0.tar.gz]
 [2024-06-01 18:34:35] INFO root fetch - main [MainThread]: End processing [uvpipx]: success
 [2024-06-01 18:34:35] INFO root fetch - main [MainThread]: Store serial: [23481789]
+[2024-06-01 18:36:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481789]
+[2024-06-01 18:36:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 18:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lb-database
+[2024-06-01 18:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2024-06-01 18:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: joyrl
+[2024-06-01 18:36:43] INFO root fetch - processPackages [lb-database]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-06-01 18:36:43] INFO root fetch - processPackages [joyrl]: New version: [0.6.1] Old Version: [0.6.0.2]
+[2024-06-01 18:36:43] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 18:36:43] INFO root fetch - processPackages [lb-database]: Downloading https://files.pythonhosted.org/packages/a2/a4/000ae865effd627251f268f430a04ec47a5e4e9fd8075004e084c58f517e/lb_database-1.1.6.tar.gz
+[2024-06-01 18:36:43] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/ad/b0/7e160d1fd3efbe6083c718a45e34af3ead0cf69b6a9097d7ceedad790185/joyrl-0.6.0.2.tar.gz
+[2024-06-01 18:36:43] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-01 18:36:44] INFO root fetch - processPackages [lb-database]: Downloading https://files.pythonhosted.org/packages/b5/6c/4e3a0d39b3b7c14131533da451efa89bd27812d2eb034a7bf2b0532a1a31/lb_database-1.1.7.tar.gz
+[2024-06-01 18:36:44] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/c3/16/1edcdffbb37818c42c803d9ae0f04b9f299d218c635685fda4da4ab367af/joyrl-0.6.1.tar.gz
+[2024-06-01 18:36:44] INFO root fetch - processPackages [lb-database]: executing diffoscope
+[2024-06-01 18:36:44] INFO root fetch - processPackages [lb-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lb_database-1.1.6.tar.gz tmp/lb_database-1.1.7.tar.gz --markdown 20240601/l/lb-database/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-06-01 18:36:44] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-01 18:36:44] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2024-06-01 18:36:44] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.6.0.2.tar.gz tmp/joyrl-0.6.1.tar.gz --markdown 20240601/j/joyrl/0.6.0.2-0.6.1/README.md --exclude *.pyd
+[2024-06-01 18:36:44] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-01 18:36:44] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240601/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 18:36:44] INFO root fetch - processPackages [lb-database]: Remove: archive file [/home/abi/fetcher/tmp/lb_database-1.1.6.tar.gz]
+[2024-06-01 18:36:44] INFO root fetch - processPackages [lb-database]: Remove: archive file [/home/abi/fetcher/tmp/lb_database-1.1.7.tar.gz]
+[2024-06-01 18:36:44] INFO root fetch - main [MainThread]: End processing [lb-database]: success
+[2024-06-01 18:36:45] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.2.tar.gz]
+[2024-06-01 18:36:45] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.1.tar.gz]
+[2024-06-01 18:36:45] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2024-06-01 18:36:45] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-01 18:36:45] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-01 18:36:45] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-01 18:36:45] INFO root fetch - main [MainThread]: Store serial: [23481803]
