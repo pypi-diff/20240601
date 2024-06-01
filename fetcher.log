@@ -20040,3 +20040,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:05:42] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.2.0.tar.gz]
 [2024-06-01 19:05:42] INFO root fetch - main [MainThread]: End processing [cherche]: success
 [2024-06-01 19:05:42] INFO root fetch - main [MainThread]: Store serial: [23482021]
+[2024-06-01 19:07:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482021]
+[2024-06-01 19:07:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 19:07:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-express-components
+[2024-06-01 19:07:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: khoj-assistant
+[2024-06-01 19:07:51] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-01 19:07:51] INFO root fetch - processPackages [dash-express-components]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 19:07:51] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-01 19:07:51] INFO root fetch - processPackages [dash-express-components]: Downloading https://files.pythonhosted.org/packages/4e/b3/c3e8c4c5ce0728cc183f583d30f62816b7a3c3c638dd1272588349dd0d28/dash_express_components-0.0.98.tar.gz
+[2024-06-01 19:07:51] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-01 19:07:51] INFO root fetch - processPackages [dash-express-components]: Downloading https://files.pythonhosted.org/packages/0c/7f/05cda1bca10b2978c33b14d0a7201a355c92df7e5493dddda332ce1c9204/dash_express_components-0.0.99.tar.gz
+[2024-06-01 19:07:51] INFO root fetch - processPackages [dash-express-components]: executing diffoscope
+[2024-06-01 19:07:51] INFO root fetch - processPackages [dash-express-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_express_components-0.0.98.tar.gz tmp/dash_express_components-0.0.99.tar.gz --markdown 20240601/d/dash-express-components/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 19:07:51] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-01 19:07:51] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240601/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-01 19:07:53] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-01 19:07:53] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-01 19:07:53] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-01 19:07:57] INFO root fetch - processPackages [dash-express-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_express_components-0.0.98.tar.gz]
+[2024-06-01 19:07:57] INFO root fetch - processPackages [dash-express-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_express_components-0.0.99.tar.gz]
+[2024-06-01 19:07:57] INFO root fetch - main [MainThread]: End processing [dash-express-components]: success
+[2024-06-01 19:07:57] INFO root fetch - main [MainThread]: Store serial: [23482026]
