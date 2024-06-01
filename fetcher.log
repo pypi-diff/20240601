@@ -8621,3 +8621,54 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:48:44] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
 [2024-06-01 04:48:44] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
 [2024-06-01 04:48:44] INFO root fetch - main [MainThread]: Store serial: [23476530]
+[2024-06-01 04:50:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476530]
+[2024-06-01 04:50:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 04:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pucoti
+[2024-06-01 04:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schwab-client
+[2024-06-01 04:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-asset-management
+[2024-06-01 04:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-moss
+[2024-06-01 04:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notebooks-and-scripts
+[2024-06-01 04:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pina-mathlab
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pucoti]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pina-mathlab]: New version: [0.1.1] Old Version: [0.1.0.post2403]
+[2024-06-01 04:50:53] INFO root fetch - processPackages [odoo-addon-account-asset-management]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.2.3]
+[2024-06-01 04:50:53] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.495.1] Old Version: [4.494.1]
+[2024-06-01 04:50:53] WARNING root fetch - processPackages [schwab-client]: Skipping, unable to determine old version
+[2024-06-01 04:50:53] INFO root fetch - main [MainThread]: End processing [schwab-client] error
+[2024-06-01 04:50:53] INFO root fetch - processPackages [python-moss]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-06-01 04:50:53] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/93/74/b6ed230c14cadf2d4a3469c36ac1b576dda579a4129bd2acf5c2a354070a/notebooks_and_scripts-4.494.1.tar.gz
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/1c/17/3f266d33aa9800b220efc2f57dd4b4fbfda7c86d76e1d2cc694702714ef1/pucoti-0.1.0.tar.gz
+[2024-06-01 04:50:53] INFO root fetch - processPackages [odoo-addon-account-asset-management]: Downloading https://files.pythonhosted.org/packages/09/93/21a80a0acfe503bfd7738792d22b120ae574b976af52e288d496470b4a1e/odoo_addon_account_asset_management-16.0.1.2.3-py3-none-any.whl
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pina-mathlab]: Downloading https://files.pythonhosted.org/packages/7d/ff/04f1e46b54cff697a905065f02f351e4413af28657ef01d89b5a3953993b/pina-mathlab-0.1.0.post2403.tar.gz
+[2024-06-01 04:50:53] INFO root fetch - processPackages [python-moss]: Downloading https://files.pythonhosted.org/packages/bb/a5/72da86df351c8a2971f5ba781e2e7b6e2256a5c243f64595a127845cc2a9/python_moss-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 04:50:53] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/88/7b/131053f5ec93443618b4f65c9643f7caa9a2cf7d4ba45e74d09c381855b6/notebooks_and_scripts-4.495.1.tar.gz
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/e8/82/42c2f34e645399e8e48523b21379c24fdd1c481dc274323a58e5b742d454/pucoti-0.1.2.tar.gz
+[2024-06-01 04:50:53] INFO root fetch - processPackages [odoo-addon-account-asset-management]: Downloading https://files.pythonhosted.org/packages/d6/3e/a1c714d5af46fa32c4b1ec11de90213e2d95b7ecfb5267e162d19bea9604/odoo_addon_account_asset_management-17.0.1.0.0.2-py3-none-any.whl
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pina-mathlab]: Downloading https://files.pythonhosted.org/packages/2f/9d/aa34a71df393647adca0901955bb912f0fe783513b5699b898d11e0c0ed8/pina-mathlab-0.1.1.tar.gz
+[2024-06-01 04:50:53] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-06-01 04:50:53] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.494.1.tar.gz tmp/notebooks_and_scripts-4.495.1.tar.gz --markdown 20240601/n/notebooks-and-scripts/4.494.1-4.495.1/README.md --exclude *.pyd
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pucoti]: executing diffoscope
+[2024-06-01 04:50:53] INFO root fetch - processPackages [pucoti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pucoti-0.1.0.tar.gz tmp/pucoti-0.1.2.tar.gz --markdown 20240601/p/pucoti/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-06-01 04:50:53] INFO root fetch - processPackages [python-moss]: Downloading https://files.pythonhosted.org/packages/18/f5/2d720cd8e78db0aa3b097c04fd840e6460352d5044a32d6421bb28a9920d/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 04:50:54] INFO root fetch - processPackages [odoo-addon-account-asset-management]: executing diffoscope
+[2024-06-01 04:50:54] INFO root fetch - processPackages [odoo-addon-account-asset-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_asset_management-16.0.1.2.3-py3-none-any.whl.zip tmp/odoo_addon_account_asset_management-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-account-asset-management/16.0.1.2.3-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-06-01 04:50:54] INFO root fetch - processPackages [pina-mathlab]: executing diffoscope
+[2024-06-01 04:50:54] INFO root fetch - processPackages [pina-mathlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pina-mathlab-0.1.0.post2403.tar.gz tmp/pina-mathlab-0.1.1.tar.gz --markdown 20240601/p/pina-mathlab/0.1.0.post2403-0.1.1/README.md --exclude *.pyd
+[2024-06-01 04:50:54] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.1.0.tar.gz]
+[2024-06-01 04:50:54] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.1.2.tar.gz]
+[2024-06-01 04:50:54] INFO root fetch - main [MainThread]: End processing [pucoti]: success
+[2024-06-01 04:50:54] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.494.1.tar.gz]
+[2024-06-01 04:50:54] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.495.1.tar.gz]
+[2024-06-01 04:50:54] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-06-01 04:50:54] INFO root fetch - processPackages [pina-mathlab]: Remove: archive file [/home/abi/fetcher/tmp/pina-mathlab-0.1.0.post2403.tar.gz]
+[2024-06-01 04:50:54] INFO root fetch - processPackages [pina-mathlab]: Remove: archive file [/home/abi/fetcher/tmp/pina-mathlab-0.1.1.tar.gz]
+[2024-06-01 04:50:54] INFO root fetch - main [MainThread]: End processing [pina-mathlab]: success
+[2024-06-01 04:50:55] INFO root fetch - processPackages [python-moss]: executing diffoscope
+[2024-06-01 04:50:55] INFO root fetch - processPackages [python-moss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_moss-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/p/python-moss/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-06-01 04:50:57] INFO root fetch - processPackages [odoo-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_asset_management-16.0.1.2.3-py3-none-any.whl.zip]
+[2024-06-01 04:50:57] INFO root fetch - processPackages [odoo-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_asset_management-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-06-01 04:50:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-asset-management]: success
+[2024-06-01 04:51:49] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 04:51:49] INFO root fetch - processPackages [python-moss]: Remove: archive file [/home/abi/fetcher/tmp/python_moss-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 04:51:49] INFO root fetch - main [MainThread]: End processing [python-moss]: success
+[2024-06-01 04:51:49] INFO root fetch - main [MainThread]: Store serial: [23476553]
