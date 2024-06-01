@@ -8729,3 +8729,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:56:22] INFO root fetch - processPackages [tach]: Remove: archive file [/home/abi/fetcher/tmp/tach-0.3.6-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.whl.zip]
 [2024-06-01 04:56:22] INFO root fetch - main [MainThread]: End processing [tach]: success
 [2024-06-01 04:56:22] INFO root fetch - main [MainThread]: Store serial: [23476614]
+[2024-06-01 04:58:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476614]
+[2024-06-01 04:58:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 04:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opvious
+[2024-06-01 04:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viser
+[2024-06-01 04:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-assistant
+[2024-06-01 04:58:32] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 04:58:32] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 04:58:32] INFO root fetch - processPackages [viser]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 04:58:32] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 04:58:32] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 04:58:32] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/43/1c/d574f1040f257213ab3e861ee33711d900666dbbaf4a2be7b1e32213f27b/viser-0.1.8.tar.gz
+[2024-06-01 04:58:32] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-06-01 04:58:32] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 04:58:32] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 04:58:33] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 04:58:33] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 04:58:33] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 04:58:33] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-06-01 04:58:33] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-06-01 04:58:33] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240601/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 04:58:33] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-06-01 04:58:33] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-06-01 04:58:33] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-06-01 04:58:34] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/c6/11/037d11188de9d326de379226a46229a7f59bdf1b4f74bf70f34d7d278638/viser-0.1.9.tar.gz
+[2024-06-01 04:58:35] INFO root fetch - processPackages [viser]: executing diffoscope
+[2024-06-01 04:58:35] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.1.8.tar.gz tmp/viser-0.1.9.tar.gz --markdown 20240601/v/viser/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 04:58:36] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.8.tar.gz]
+[2024-06-01 04:58:36] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
+[2024-06-01 04:58:36] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2024-06-01 04:58:36] INFO root fetch - main [MainThread]: Store serial: [23476650]
