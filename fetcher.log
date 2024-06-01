@@ -19035,3 +19035,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:03:57] INFO root fetch - processPackages [chaos-stratus]: Remove: archive file [/home/abi/fetcher/tmp/chaos_stratus-1.1.0.tar.gz]
 [2024-06-01 18:03:57] INFO root fetch - main [MainThread]: End processing [chaos-stratus]: success
 [2024-06-01 18:03:57] INFO root fetch - main [MainThread]: Store serial: [23481553]
+[2024-06-01 18:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481553]
+[2024-06-01 18:06:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 18:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyconfig-util
+[2024-06-01 18:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: etextedit
+[2024-06-01 18:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-priming
+[2024-06-01 18:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RabiBridge
+[2024-06-01 18:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: func-bk
+[2024-06-01 18:06:07] INFO root fetch - processPackages [pyconfig-util]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-01 18:06:07] INFO root fetch - processPackages [func-bk]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-06-01 18:06:07] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 18:06:07] INFO root fetch - processPackages [etextedit]: New version: [0.6] Old Version: [0.5]
+[2024-06-01 18:06:07] WARNING root fetch - processPackages [RabiBridge]: Skipping, unable to determine old version
+[2024-06-01 18:06:07] INFO root fetch - main [MainThread]: End processing [RabiBridge] error
+[2024-06-01 18:06:08] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-01 18:06:08] INFO root fetch - processPackages [pyconfig-util]: Downloading https://files.pythonhosted.org/packages/c7/07/d0d7652f356e710ce52e01f6dffa99c6d0743f63f8c55a6d3ceafdb3e448/pyconfig_util-1.0.1.tar.gz
+[2024-06-01 18:06:08] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/78/d7/e096dc92b34fd272aa91a00c6cad96a1c505bd956a662174fa21862f6948/func_bk-1.5.3.tar.gz
+[2024-06-01 18:06:08] INFO root fetch - processPackages [etextedit]: Downloading https://files.pythonhosted.org/packages/19/1e/6887b77745ec55df60fa056a2e0e68d085663c20dcc5391625300255c0be/etextedit-0.5.tar.gz
+[2024-06-01 18:06:08] INFO root fetch - processPackages [pyconfig-util]: Downloading https://files.pythonhosted.org/packages/2a/0a/05f6722137e3d1c08677e8615cda134d08d0514248e726f8351340dc9b9f/pyconfig_util-1.0.2.tar.gz
+[2024-06-01 18:06:08] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/15/46/752a1c0e2ddb3f4b8cab630d1ff0ac55a2627f9c44906b4314297f060400/func_bk-1.5.4.tar.gz
+[2024-06-01 18:06:08] INFO root fetch - processPackages [etextedit]: Downloading https://files.pythonhosted.org/packages/b4/e5/e5874edb76ae4c03ddfd8b97280ce95fb130ce12fb130adbb9ff20b2653e/etextedit-0.6.tar.gz
+[2024-06-01 18:06:08] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-01 18:06:08] INFO root fetch - processPackages [pyconfig-util]: executing diffoscope
+[2024-06-01 18:06:08] INFO root fetch - processPackages [pyconfig-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyconfig_util-1.0.1.tar.gz tmp/pyconfig_util-1.0.2.tar.gz --markdown 20240601/p/pyconfig-util/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-01 18:06:08] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-06-01 18:06:08] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.5.3.tar.gz tmp/func_bk-1.5.4.tar.gz --markdown 20240601/f/func-bk/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-06-01 18:06:08] INFO root fetch - processPackages [etextedit]: executing diffoscope
+[2024-06-01 18:06:08] INFO root fetch - processPackages [etextedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etextedit-0.5.tar.gz tmp/etextedit-0.6.tar.gz --markdown 20240601/e/etextedit/0.5-0.6/README.md --exclude *.pyd
+[2024-06-01 18:06:08] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-01 18:06:08] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240601/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 18:06:09] INFO root fetch - processPackages [pyconfig-util]: Remove: archive file [/home/abi/fetcher/tmp/pyconfig_util-1.0.1.tar.gz]
+[2024-06-01 18:06:09] INFO root fetch - processPackages [pyconfig-util]: Remove: archive file [/home/abi/fetcher/tmp/pyconfig_util-1.0.2.tar.gz]
+[2024-06-01 18:06:09] INFO root fetch - main [MainThread]: End processing [pyconfig-util]: success
+[2024-06-01 18:06:09] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.3.tar.gz]
+[2024-06-01 18:06:09] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.4.tar.gz]
+[2024-06-01 18:06:09] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-06-01 18:06:09] INFO root fetch - processPackages [etextedit]: Remove: archive file [/home/abi/fetcher/tmp/etextedit-0.5.tar.gz]
+[2024-06-01 18:06:09] INFO root fetch - processPackages [etextedit]: Remove: archive file [/home/abi/fetcher/tmp/etextedit-0.6.tar.gz]
+[2024-06-01 18:06:09] INFO root fetch - main [MainThread]: End processing [etextedit]: success
+[2024-06-01 18:06:09] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-01 18:06:09] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-01 18:06:09] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-01 18:06:09] INFO root fetch - main [MainThread]: Store serial: [23481569]
