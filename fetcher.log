@@ -23759,3 +23759,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:45:01] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-06-01 23:45:01] INFO root fetch - main [MainThread]: End processing [composabl-train-dev]: success
 [2024-06-01 23:45:01] INFO root fetch - main [MainThread]: Store serial: [23483920]
+[2024-06-01 23:47:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483920]
+[2024-06-01 23:47:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zenaura
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monaco-qt
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whataspp-message-inforu-local
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aixhello
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: protoc-polyglot
+[2024-06-01 23:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zenaura
+[2024-06-01 23:47:17] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 23:47:17] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-01 23:47:17] INFO root fetch - processPackages [whataspp-message-inforu-local]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-06-01 23:47:17] INFO root fetch - processPackages [aixhello]: New version: [2.0] Old Version: [1.9]
+[2024-06-01 23:47:17] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 23:47:17] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-06-01 23:47:18] INFO root fetch - processPackages [monaco-qt]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 23:47:18] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/c2/ab/bcf459eeb0ffeb3abdc19717b1a01a83200553fc2e6affb342394fe34c37/aixhello-1.9.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [whataspp-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/e4/b1/3464a1535b46310db8d334f657d1d35502910cf00110b5fbaef961986868/whataspp_message_inforu_local-0.0.17.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [monaco-qt]: Downloading https://files.pythonhosted.org/packages/0f/f0/dece02b940e5b6ad47041f7e87d86c381eb9b439932e0398a0bbe3093f9f/monaco-qt-0.1.7.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [whataspp-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/1a/d7/3e42e21ea08e3f83521f2f2a072a8b8a9d11fb40b2d2e44ec006be8f2da2/whataspp_message_inforu_local-0.0.18.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/fd/b0/5bec15689352a13cd5ba6058e345437de6a606f3bde61984bb3a70257dd8/aixhello-2.0.tar.gz
+[2024-06-01 23:47:18] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-01 23:47:18] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240601/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-01 23:47:18] INFO root fetch - processPackages [whataspp-message-inforu-local]: executing diffoscope
+[2024-06-01 23:47:18] INFO root fetch - processPackages [whataspp-message-inforu-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whataspp_message_inforu_local-0.0.17.tar.gz tmp/whataspp_message_inforu_local-0.0.18.tar.gz --markdown 20240601/w/whataspp-message-inforu-local/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 23:47:18] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 23:47:18] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-01 23:47:18] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-1.9.tar.gz tmp/aixhello-2.0.tar.gz --markdown 20240601/a/aixhello/1.9-2.0/README.md --exclude *.pyd
+[2024-06-01 23:47:18] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-06-01 23:47:18] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240601/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-06-01 23:47:19] INFO root fetch - processPackages [monaco-qt]: Downloading https://files.pythonhosted.org/packages/80/30/7fb968d86347d9e8c05c1589bed68eadf112cb372dec575930abc83b2ed3/monaco_qt-0.1.8.tar.gz
+[2024-06-01 23:47:19] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-01 23:47:19] INFO root fetch - processPackages [whataspp-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/whataspp_message_inforu_local-0.0.17.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - processPackages [whataspp-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/whataspp_message_inforu_local-0.0.18.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - main [MainThread]: End processing [whataspp-message-inforu-local]: success
+[2024-06-01 23:47:19] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.9.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-2.0.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-01 23:47:19] INFO root fetch - processPackages [monaco-qt]: executing diffoscope
+[2024-06-01 23:47:19] INFO root fetch - processPackages [monaco-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monaco-qt-0.1.7.tar.gz tmp/monaco_qt-0.1.8.tar.gz --markdown 20240601/m/monaco-qt/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 23:47:19] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.98.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 23:47:19] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-06-01 23:47:19] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-06-01 23:47:19] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 23:47:22] INFO root fetch - processPackages [monaco-qt]: Remove: archive file [/home/abi/fetcher/tmp/monaco-qt-0.1.7.tar.gz]
+[2024-06-01 23:47:22] INFO root fetch - processPackages [monaco-qt]: Remove: archive file [/home/abi/fetcher/tmp/monaco_qt-0.1.8.tar.gz]
+[2024-06-01 23:47:22] INFO root fetch - main [MainThread]: End processing [monaco-qt]: success
+[2024-06-01 23:47:22] INFO root fetch - main [MainThread]: Store serial: [23483941]
