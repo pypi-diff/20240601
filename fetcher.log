@@ -19527,3 +19527,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:36:45] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-06-01 18:36:45] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-06-01 18:36:45] INFO root fetch - main [MainThread]: Store serial: [23481803]
+[2024-06-01 18:38:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481803]
+[2024-06-01 18:38:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 18:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unthermal
+[2024-06-01 18:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyjpboatrace
+[2024-06-01 18:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sh
+[2024-06-01 18:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: css-colors-stats
+[2024-06-01 18:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyFairylandFuture
+[2024-06-01 18:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myfunctions-ysakova90
+[2024-06-01 18:38:54] INFO root fetch - processPackages [myfunctions-ysakova90]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 18:38:54] INFO root fetch - processPackages [unthermal]: New version: [0.1001] Old Version: [0.1.dev1]
+[2024-06-01 18:38:54] INFO root fetch - processPackages [pyjpboatrace]: New version: [0.3.1a0] Old Version: [0.3.0a4]
+[2024-06-01 18:38:54] INFO root fetch - processPackages [myfunctions-ysakova90]: Downloading https://files.pythonhosted.org/packages/8f/ad/98aac49624378f876138b36856e15f3606349c9bdd6dda2a71b8b139dac9/myfunctions_ysakova90-0.0.2.tar.gz
+[2024-06-01 18:38:54] INFO root fetch - processPackages [sh]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-06-01 18:38:54] INFO root fetch - processPackages [PyFairylandFuture]: New version: [1.0.0a90.post20240602] Old Version: [1.0.0a55.post20240512]
+[2024-06-01 18:38:54] WARNING root fetch - processPackages [css-colors-stats]: Skipping, unable to determine old version
+[2024-06-01 18:38:54] INFO root fetch - main [MainThread]: End processing [css-colors-stats] error
+[2024-06-01 18:38:54] INFO root fetch - processPackages [pyjpboatrace]: Downloading https://files.pythonhosted.org/packages/9c/91/ecaf5df18a549dbe1d9b6e82eda654acfba194539c5845b04d03492ff06c/pyjpboatrace-0.3.0a4.tar.gz
+[2024-06-01 18:38:54] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/f5/f8/d07227a2c3d141fb8d9790c5141cdcd1a3cef178b6d77f2c0185cba50086/unthermal-0.1.dev1.tar.gz
+[2024-06-01 18:38:54] INFO root fetch - processPackages [sh]: Downloading https://files.pythonhosted.org/packages/cd/51/7355831d8e1cee8348157d769ccda8a31ca9fa0548e7f93d87837d83866d/sh-2.0.6.tar.gz
+[2024-06-01 18:38:54] INFO root fetch - processPackages [PyFairylandFuture]: Downloading https://files.pythonhosted.org/packages/1d/bd/a783c97bc9892cb69ef431886c890d3855f8367d9db4c11a961783216bcc/pyfairylandfuture-1.0.0a55.post20240512.tar.gz
+[2024-06-01 18:38:54] INFO root fetch - processPackages [pyjpboatrace]: Downloading https://files.pythonhosted.org/packages/bd/d2/e431692593b3b1ec1141a948e6d52f64d4bab3d520d3d72badd40345945a/pyjpboatrace-0.3.1a0.tar.gz
+[2024-06-01 18:38:54] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/d5/81/664671b86da1a5bcd349280ea890d75f32be93c4daadc3b562edf311352c/unthermal-0.1001.tar.gz
+[2024-06-01 18:38:55] INFO root fetch - processPackages [myfunctions-ysakova90]: Downloading https://files.pythonhosted.org/packages/44/ba/b7a954ee91cce1244322ac93badf61bd5a82f5d3cc4952c132fa90da895f/myfunctions_ysakova90-0.0.3.tar.gz
+[2024-06-01 18:38:55] INFO root fetch - processPackages [pyjpboatrace]: executing diffoscope
+[2024-06-01 18:38:55] INFO root fetch - processPackages [pyjpboatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjpboatrace-0.3.0a4.tar.gz tmp/pyjpboatrace-0.3.1a0.tar.gz --markdown 20240601/p/pyjpboatrace/0.3.0a4-0.3.1a0/README.md --exclude *.pyd
+[2024-06-01 18:38:55] INFO root fetch - processPackages [unthermal]: executing diffoscope
+[2024-06-01 18:38:55] INFO root fetch - processPackages [unthermal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unthermal-0.1.dev1.tar.gz tmp/unthermal-0.1001.tar.gz --markdown 20240601/u/unthermal/0.1.dev1-0.1001/README.md --exclude *.pyd
+[2024-06-01 18:38:55] INFO root fetch - processPackages [myfunctions-ysakova90]: executing diffoscope
+[2024-06-01 18:38:55] INFO root fetch - processPackages [myfunctions-ysakova90]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_ysakova90-0.0.2.tar.gz tmp/myfunctions_ysakova90-0.0.3.tar.gz --markdown 20240601/m/myfunctions-ysakova90/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 18:38:55] INFO root fetch - processPackages [PyFairylandFuture]: Downloading https://files.pythonhosted.org/packages/03/16/5472d70699b8587d9e2a22e9c40138ad6405ec103f59c804aed1d7c0e4d7/pyfairylandfuture-1.0.0a90.post20240602.tar.gz
+[2024-06-01 18:38:55] INFO root fetch - processPackages [sh]: Downloading https://files.pythonhosted.org/packages/14/7a/5148402146d360a6d15922814a3b065b52be3a5fe878a8834d3ce4e7d33f/sh-2.0.7.tar.gz
+[2024-06-01 18:38:55] INFO root fetch - processPackages [PyFairylandFuture]: executing diffoscope
+[2024-06-01 18:38:55] INFO root fetch - processPackages [PyFairylandFuture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfairylandfuture-1.0.0a55.post20240512.tar.gz tmp/pyfairylandfuture-1.0.0a90.post20240602.tar.gz --markdown 20240601/P/PyFairylandFuture/1.0.0a55.post20240512-1.0.0a90.post20240602/README.md --exclude *.pyd
+[2024-06-01 18:38:55] INFO root fetch - processPackages [sh]: executing diffoscope
+[2024-06-01 18:38:55] INFO root fetch - processPackages [sh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh-2.0.6.tar.gz tmp/sh-2.0.7.tar.gz --markdown 20240601/s/sh/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-06-01 18:38:55] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1.dev1.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1001.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - main [MainThread]: End processing [unthermal]: success
+[2024-06-01 18:38:55] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.2.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.3.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - main [MainThread]: End processing [myfunctions-ysakova90]: success
+[2024-06-01 18:38:55] INFO root fetch - processPackages [pyjpboatrace]: Remove: archive file [/home/abi/fetcher/tmp/pyjpboatrace-0.3.0a4.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - processPackages [pyjpboatrace]: Remove: archive file [/home/abi/fetcher/tmp/pyjpboatrace-0.3.1a0.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - main [MainThread]: End processing [pyjpboatrace]: success
+[2024-06-01 18:38:55] INFO root fetch - processPackages [PyFairylandFuture]: Remove: archive file [/home/abi/fetcher/tmp/pyfairylandfuture-1.0.0a55.post20240512.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - processPackages [PyFairylandFuture]: Remove: archive file [/home/abi/fetcher/tmp/pyfairylandfuture-1.0.0a90.post20240602.tar.gz]
+[2024-06-01 18:38:55] INFO root fetch - main [MainThread]: End processing [PyFairylandFuture]: success
+[2024-06-01 18:38:56] INFO root fetch - processPackages [sh]: Remove: archive file [/home/abi/fetcher/tmp/sh-2.0.6.tar.gz]
+[2024-06-01 18:38:56] INFO root fetch - processPackages [sh]: Remove: archive file [/home/abi/fetcher/tmp/sh-2.0.7.tar.gz]
+[2024-06-01 18:38:56] INFO root fetch - main [MainThread]: End processing [sh]: success
+[2024-06-01 18:38:56] INFO root fetch - main [MainThread]: Store serial: [23481823]
