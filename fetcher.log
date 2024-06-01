@@ -10980,3 +10980,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:45:44] INFO root fetch - processPackages [pyfunvice]: Remove: archive file [/home/abi/fetcher/tmp/pyfunvice-0.1.7.tar.gz]
 [2024-06-01 07:45:44] INFO root fetch - main [MainThread]: End processing [pyfunvice]: success
 [2024-06-01 07:45:44] INFO root fetch - main [MainThread]: Store serial: [23477638]
+[2024-06-01 07:47:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477638]
+[2024-06-01 07:47:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 07:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalkpy
+[2024-06-01 07:47:52] INFO root fetch - processPackages [chalkpy]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-06-01 07:47:52] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/37/52/5c69a74a70d94d61d88e81cf17862496f7cd9ebd0725d75f357f252f3052/chalkpy-2.9.8.tar.gz
+[2024-06-01 07:47:52] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/f1/ff/9cdb492bac7076766dffbc16bbff1773bfc5635cfb81b130f720883912c7/chalkpy-2.9.9.tar.gz
+[2024-06-01 07:47:53] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2024-06-01 07:47:53] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.9.8.tar.gz tmp/chalkpy-2.9.9.tar.gz --markdown 20240601/c/chalkpy/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-06-01 07:47:55] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.8.tar.gz]
+[2024-06-01 07:47:55] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
+[2024-06-01 07:47:55] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2024-06-01 07:47:55] INFO root fetch - main [MainThread]: Store serial: [23477643]
