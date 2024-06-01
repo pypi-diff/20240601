@@ -12554,3 +12554,66 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:02:37] INFO root fetch - processPackages [climetlab]: Remove: archive file [/home/abi/fetcher/tmp/climetlab-0.9.9.tar.gz]
 [2024-06-01 10:02:37] INFO root fetch - main [MainThread]: End processing [climetlab]: success
 [2024-06-01 10:02:37] INFO root fetch - main [MainThread]: Store serial: [23478350]
+[2024-06-01 10:04:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478350]
+[2024-06-01 10:04:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lokzzpylib
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vht
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: khoj-assistant
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: create-reactpy-app
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mafengwo-crawlers
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: freedom-pay
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langfun
+[2024-06-01 10:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: popoll-backend
+[2024-06-01 10:04:45] INFO root fetch - processPackages [vht]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 10:04:45] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.63] Old Version: [0.0.62]
+[2024-06-01 10:04:45] INFO root fetch - processPackages [lokzzpylib]: New version: [0.2.dev92] Old Version: [0.2.dev90]
+[2024-06-01 10:04:45] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240531] Old Version: [0.0.2.dev20240530]
+[2024-06-01 10:04:45] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-06-01 10:04:45] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/8b/25/c6f8d22df42cbcbd7bbd97d2c6be0e180f8d1f8410604b6aa533dfb64ac5/vht-0.3.98.tar.gz
+[2024-06-01 10:04:45] WARNING root fetch - processPackages [mafengwo-crawlers]: Skipping, unable to determine old version
+[2024-06-01 10:04:45] INFO root fetch - main [MainThread]: End processing [mafengwo-crawlers] error
+[2024-06-01 10:04:45] WARNING root fetch - processPackages [create-reactpy-app]: Skipping, unable to determine old version
+[2024-06-01 10:04:45] INFO root fetch - main [MainThread]: End processing [create-reactpy-app] error
+[2024-06-01 10:04:45] INFO root fetch - processPackages [freedom-pay]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 10:04:45] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/5e/3a/826ad2871068c40778a13d581e563beb31bb861e7beaf3ea209a24050556/popoll_backend-0.0.62.tar.gz
+[2024-06-01 10:04:45] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/a2/8f/932015856154d69caa80f91c6cd4f3de898e1dad6fa8374e2480ad1e96ea/lokzzpylib-0.2.dev90.tar.gz
+[2024-06-01 10:04:45] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/2e/e7/3afad4b2c789cd6de5b4ca94dd0c042310d7cfe7f129f858cd4beaf12a01/langfun-0.0.2.dev20240530.tar.gz
+[2024-06-01 10:04:45] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/ba/c9/79912cba92a6168bbcd737846bfbe9b63014c15b381fe244e1a13773667a/popoll_backend-0.0.63.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [freedom-pay]: Downloading https://files.pythonhosted.org/packages/12/71/0789aef78b88da64b3b17c54c74f32469199fd49b02d97eeb8f4df6da24a/freedom_pay-0.0.3.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/cd/90/53d36375038c2bade718b9537cabedacb739eef255ea73603e0fd5b0c19c/lokzzpylib-0.2.dev92-py3-none-any.whl
+[2024-06-01 10:04:46] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/52/d4/12d5329322874d921563de1734db2cb38b98d113d1853e054d41393f6f35/vht-0.3.99.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 10:04:46] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.62.tar.gz tmp/popoll_backend-0.0.63.tar.gz --markdown 20240601/p/popoll-backend/0.0.62-0.0.63/README.md --exclude *.pyd
+[2024-06-01 10:04:46] INFO root fetch - processPackages [lokzzpylib]: executing diffoscope
+[2024-06-01 10:04:46] INFO root fetch - processPackages [lokzzpylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokzzpylib-0.2.dev90.tar.gz tmp/lokzzpylib-0.2.dev92-py3-none-any.whl.zip --markdown 20240601/l/lokzzpylib/0.2.dev90-0.2.dev92/README.md --exclude *.pyd
+[2024-06-01 10:04:46] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/23/0d/90aa50bfd178e3d8723d773822deb8750638baf062ba4b9434c83565cf55/langfun-0.0.2.dev20240531.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [vht]: executing diffoscope
+[2024-06-01 10:04:46] INFO root fetch - processPackages [vht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vht-0.3.98.tar.gz tmp/vht-0.3.99.tar.gz --markdown 20240601/v/vht/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 10:04:46] INFO root fetch - processPackages [freedom-pay]: Downloading https://files.pythonhosted.org/packages/5b/f5/a82bddc72878f1eac26ddf1ea8549a509873a3684fe2868a96c77615ecd4/freedom_pay-0.0.4.tar.gz
+[2024-06-01 10:04:46] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-06-01 10:04:46] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240530.tar.gz tmp/langfun-0.0.2.dev20240531.tar.gz --markdown 20240601/l/langfun/0.0.2.dev20240530-0.0.2.dev20240531/README.md --exclude *.pyd
+[2024-06-01 10:04:46] INFO root fetch - processPackages [freedom-pay]: executing diffoscope
+[2024-06-01 10:04:46] INFO root fetch - processPackages [freedom-pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freedom_pay-0.0.3.tar.gz tmp/freedom_pay-0.0.4.tar.gz --markdown 20240601/f/freedom-pay/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 10:04:46] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-06-01 10:04:46] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240601/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-06-01 10:04:46] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev90.tar.gz]
+[2024-06-01 10:04:46] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev92-py3-none-any.whl.zip]
+[2024-06-01 10:04:46] INFO root fetch - main [MainThread]: End processing [lokzzpylib]: success
+[2024-06-01 10:04:47] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.62.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.63.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 10:04:47] INFO root fetch - processPackages [freedom-pay]: Remove: archive file [/home/abi/fetcher/tmp/freedom_pay-0.0.3.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - processPackages [freedom-pay]: Remove: archive file [/home/abi/fetcher/tmp/freedom_pay-0.0.4.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - main [MainThread]: End processing [freedom-pay]: success
+[2024-06-01 10:04:47] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.3.98.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.3.99.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - main [MainThread]: End processing [vht]: success
+[2024-06-01 10:04:47] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240530.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240531.tar.gz]
+[2024-06-01 10:04:47] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-06-01 10:04:48] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-06-01 10:04:48] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-06-01 10:04:48] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-06-01 10:04:48] INFO root fetch - main [MainThread]: Store serial: [23478375]
