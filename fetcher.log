@@ -8555,3 +8555,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:42:15] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
 [2024-06-01 04:42:15] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
 [2024-06-01 04:42:15] INFO root fetch - main [MainThread]: Store serial: [23476509]
+[2024-06-01 04:44:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476509]
+[2024-06-01 04:44:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 04:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notebooks-and-scripts
+[2024-06-01 04:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-repository-loader
+[2024-06-01 04:44:24] INFO root fetch - processPackages [gpt-repository-loader]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-01 04:44:24] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.493.1] Old Version: [4.492.1]
+[2024-06-01 04:44:24] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/88/96/25db4596cb234bc71cab498f774064887ab3f1e2f2efee07e9d0f29eeabe/notebooks_and_scripts-4.492.1.tar.gz
+[2024-06-01 04:44:24] INFO root fetch - processPackages [gpt-repository-loader]: Downloading https://files.pythonhosted.org/packages/11/e9/116c32640d996873bf96e809c8fe7dc54de57b2c417931a6649569ebd6a9/gpt-repository-loader-0.9.2.tar.gz
+[2024-06-01 04:44:25] INFO root fetch - processPackages [gpt-repository-loader]: Downloading https://files.pythonhosted.org/packages/5b/8e/dacf6dcfcda14e1be185b3f8e726b61447afbce79f7101fcb0197d2e31ff/gpt-repository-loader-0.9.3.tar.gz
+[2024-06-01 04:44:25] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/ae/6e/a4abc4e1501737197930723d52a9dd4bcb7de3c445693a24a0055ecfc677/notebooks_and_scripts-4.493.1.tar.gz
+[2024-06-01 04:44:25] INFO root fetch - processPackages [gpt-repository-loader]: executing diffoscope
+[2024-06-01 04:44:25] INFO root fetch - processPackages [gpt-repository-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-repository-loader-0.9.2.tar.gz tmp/gpt-repository-loader-0.9.3.tar.gz --markdown 20240601/g/gpt-repository-loader/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-01 04:44:25] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-06-01 04:44:25] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.492.1.tar.gz tmp/notebooks_and_scripts-4.493.1.tar.gz --markdown 20240601/n/notebooks-and-scripts/4.492.1-4.493.1/README.md --exclude *.pyd
+[2024-06-01 04:44:25] INFO root fetch - processPackages [gpt-repository-loader]: Remove: archive file [/home/abi/fetcher/tmp/gpt-repository-loader-0.9.2.tar.gz]
+[2024-06-01 04:44:25] INFO root fetch - processPackages [gpt-repository-loader]: Remove: archive file [/home/abi/fetcher/tmp/gpt-repository-loader-0.9.3.tar.gz]
+[2024-06-01 04:44:25] INFO root fetch - main [MainThread]: End processing [gpt-repository-loader]: success
+[2024-06-01 04:44:25] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.492.1.tar.gz]
+[2024-06-01 04:44:25] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.493.1.tar.gz]
+[2024-06-01 04:44:25] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-06-01 04:44:25] INFO root fetch - main [MainThread]: Store serial: [23476516]
