@@ -21725,3 +21725,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:04:33] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2403.dev5.tar.gz]
 [2024-06-01 21:04:33] INFO root fetch - main [MainThread]: End processing [ngstrefftz]: success
 [2024-06-01 21:04:33] INFO root fetch - main [MainThread]: Store serial: [23482810]
+[2024-06-01 21:06:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482810]
+[2024-06-01 21:06:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 21:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fudstop
+[2024-06-01 21:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starlette-async-jinja
+[2024-06-01 21:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-gigachat
+[2024-06-01 21:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pvapy
+[2024-06-01 21:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: freegenius
+[2024-06-01 21:06:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: document-transformer
+[2024-06-01 21:06:42] INFO root fetch - processPackages [fudstop]: New version: [2.8.8] Old Version: [2.8.7]
+[2024-06-01 21:06:42] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 21:06:42] INFO root fetch - processPackages [pvapy]: New version: [5.4.0] Old Version: [5.3.1]
+[2024-06-01 21:06:42] WARNING root fetch - processPackages [llm-gigachat]: Skipping, unable to determine old version
+[2024-06-01 21:06:42] INFO root fetch - main [MainThread]: End processing [llm-gigachat] error
+[2024-06-01 21:06:42] INFO root fetch - processPackages [starlette-async-jinja]: New version: [1.7.7] Old Version: [1.7.6]
+[2024-06-01 21:06:42] WARNING root fetch - processPackages [document-transformer]: Skipping, unable to determine old version
+[2024-06-01 21:06:42] INFO root fetch - main [MainThread]: End processing [document-transformer] error
+[2024-06-01 21:06:42] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/4b/f4/57166028222a260946baa2fc0c9b663097a45120b8a35f3d349857343570/fudstop-2.8.7.tar.gz
+[2024-06-01 21:06:42] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-06-01 21:06:42] INFO root fetch - processPackages [starlette-async-jinja]: Downloading https://files.pythonhosted.org/packages/49/ee/672095329e6aaabbee820a2a89ffd79dce1186012913d07802290117c3b2/starlette_async_jinja-1.7.6.tar.gz
+[2024-06-01 21:06:42] INFO root fetch - processPackages [pvapy]: Downloading https://files.pythonhosted.org/packages/d1/c7/2545b8ea5bb39f8b4642e3beff1cba1fb7a4620b4e5e9c1c0f13be59709f/pvapy-5.3.1-cp39-cp39-win_amd64.whl
+[2024-06-01 21:06:42] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/68/eb/67aa73ff5ba940d4a4902031b414f6fb3e8be6bb8abf3f1060ab339fc165/fudstop-2.8.8.tar.gz
+[2024-06-01 21:06:42] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-06-01 21:06:42] INFO root fetch - processPackages [starlette-async-jinja]: Downloading https://files.pythonhosted.org/packages/a4/c3/7f8b82dd6d2e2f4c164b3d5ca8503fa7e99de62d1e32cb6d8527da3e19c4/starlette_async_jinja-1.7.7.tar.gz
+[2024-06-01 21:06:42] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-06-01 21:06:42] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.8.7.tar.gz tmp/fudstop-2.8.8.tar.gz --markdown 20240601/f/fudstop/2.8.7-2.8.8/README.md --exclude *.pyd
+[2024-06-01 21:06:42] INFO root fetch - processPackages [starlette-async-jinja]: executing diffoscope
+[2024-06-01 21:06:42] INFO root fetch - processPackages [starlette-async-jinja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starlette_async_jinja-1.7.6.tar.gz tmp/starlette_async_jinja-1.7.7.tar.gz --markdown 20240601/s/starlette-async-jinja/1.7.6-1.7.7/README.md --exclude *.pyd
+[2024-06-01 21:06:42] INFO root fetch - processPackages [pvapy]: Downloading https://files.pythonhosted.org/packages/0d/f0/3d60081762e555dad7ccc724abe36d1f6f686ecb0fb55c61f34f3534abcc/pvapy-5.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 21:06:42] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-06-01 21:06:42] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240601/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 21:06:43] INFO root fetch - processPackages [starlette-async-jinja]: Remove: archive file [/home/abi/fetcher/tmp/starlette_async_jinja-1.7.6.tar.gz]
+[2024-06-01 21:06:43] INFO root fetch - processPackages [starlette-async-jinja]: Remove: archive file [/home/abi/fetcher/tmp/starlette_async_jinja-1.7.7.tar.gz]
+[2024-06-01 21:06:43] INFO root fetch - main [MainThread]: End processing [starlette-async-jinja]: success
+[2024-06-01 21:06:44] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.7.tar.gz]
+[2024-06-01 21:06:44] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.8.tar.gz]
+[2024-06-01 21:06:44] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-06-01 21:06:44] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-06-01 21:06:44] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-06-01 21:06:44] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-06-01 21:06:45] INFO root fetch - processPackages [pvapy]: executing diffoscope
+[2024-06-01 21:06:45] INFO root fetch - processPackages [pvapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvapy-5.3.1-cp39-cp39-win_amd64.whl.zip tmp/pvapy-5.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/p/pvapy/5.3.1-5.4.0/README.md --exclude *.pyd
+[2024-06-01 21:06:47] INFO root fetch - processPackages [pvapy]: Remove: archive file [/home/abi/fetcher/tmp/pvapy-5.3.1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 21:06:47] INFO root fetch - processPackages [pvapy]: Remove: archive file [/home/abi/fetcher/tmp/pvapy-5.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 21:06:47] INFO root fetch - main [MainThread]: End processing [pvapy]: success
+[2024-06-01 21:06:47] INFO root fetch - main [MainThread]: Store serial: [23482849]
