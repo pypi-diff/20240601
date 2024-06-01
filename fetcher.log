@@ -15182,3 +15182,18 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:22:31] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.9.tar.gz]
 [2024-06-01 13:22:31] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2024-06-01 13:22:31] INFO root fetch - main [MainThread]: Store serial: [23479695]
+[2024-06-01 13:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479695]
+[2024-06-01 13:24:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-spectacular-sidecar
+[2024-06-01 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Devansh-Topsis-Package
+[2024-06-01 13:24:41] INFO root fetch - processPackages [drf-spectacular-sidecar]: New version: [2024.6.1] Old Version: [2024.5.1]
+[2024-06-01 13:24:41] WARNING root fetch - processPackages [Devansh-Topsis-Package]: Skipping, unable to determine old version
+[2024-06-01 13:24:41] INFO root fetch - main [MainThread]: End processing [Devansh-Topsis-Package] error
+[2024-06-01 13:24:41] INFO root fetch - processPackages [drf-spectacular-sidecar]: Downloading https://files.pythonhosted.org/packages/a7/ef/60918b7cc673912f2180121bfc79950c67cccba8f0046606662577e35147/drf_spectacular_sidecar-2024.5.1.tar.gz
+[2024-06-01 13:24:42] INFO root fetch - processPackages [drf-spectacular-sidecar]: Downloading https://files.pythonhosted.org/packages/61/ad/ad5a1074b310e2482939c392afe38a7071a1adb40ca7060bba469aba0493/drf_spectacular_sidecar-2024.6.1.tar.gz
+[2024-06-01 13:24:42] INFO root fetch - processPackages [drf-spectacular-sidecar]: executing diffoscope
+[2024-06-01 13:24:42] INFO root fetch - processPackages [drf-spectacular-sidecar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_spectacular_sidecar-2024.5.1.tar.gz tmp/drf_spectacular_sidecar-2024.6.1.tar.gz --markdown 20240601/d/drf-spectacular-sidecar/2024.5.1-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 13:24:56] INFO root fetch - processPackages [drf-spectacular-sidecar]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_sidecar-2024.5.1.tar.gz]
+[2024-06-01 13:24:56] INFO root fetch - processPackages [drf-spectacular-sidecar]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_sidecar-2024.6.1.tar.gz]
+[2024-06-01 13:24:56] INFO root fetch - main [MainThread]: End processing [drf-spectacular-sidecar]: success
+[2024-06-01 13:24:56] INFO root fetch - main [MainThread]: Store serial: [23479703]
