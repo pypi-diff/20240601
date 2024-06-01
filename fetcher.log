@@ -17814,3 +17814,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:37:40] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-06-01 16:37:40] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-06-01 16:37:40] INFO root fetch - main [MainThread]: Store serial: [23480993]
+[2024-06-01 16:39:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480993]
+[2024-06-01 16:39:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 16:39:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-priming
+[2024-06-01 16:39:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lantana
+[2024-06-01 16:39:49] INFO root fetch - processPackages [lantana]: New version: [2.9.8.7] Old Version: [2.9.8.6]
+[2024-06-01 16:39:49] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-06-01 16:39:49] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/73/70/08f4a4f702b46b7cc99e2fa9281328cb631ad80652b34334bd66fec5fe7f/lantana-2.9.8.6.tar.gz
+[2024-06-01 16:39:49] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-06-01 16:39:50] INFO root fetch - processPackages [lantana]: Downloading https://files.pythonhosted.org/packages/09/70/f00e4c6a30fd78d3c3419450b0ded5b659aa485a7d31c6c413333941cfc4/lantana-2.9.8.7.tar.gz
+[2024-06-01 16:39:50] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-06-01 16:39:50] INFO root fetch - processPackages [lantana]: executing diffoscope
+[2024-06-01 16:39:50] INFO root fetch - processPackages [lantana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lantana-2.9.8.6.tar.gz tmp/lantana-2.9.8.7.tar.gz --markdown 20240601/l/lantana/2.9.8.6-2.9.8.7/README.md --exclude *.pyd
+[2024-06-01 16:39:50] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-06-01 16:39:50] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240601/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-06-01 16:39:50] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.6.tar.gz]
+[2024-06-01 16:39:50] INFO root fetch - processPackages [lantana]: Remove: archive file [/home/abi/fetcher/tmp/lantana-2.9.8.7.tar.gz]
+[2024-06-01 16:39:50] INFO root fetch - main [MainThread]: End processing [lantana]: success
+[2024-06-01 16:39:51] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-06-01 16:39:51] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-06-01 16:39:51] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-06-01 16:39:51] INFO root fetch - main [MainThread]: Store serial: [23481004]
