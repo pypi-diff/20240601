@@ -14752,3 +14752,28 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:55:02] INFO root fetch - processPackages [quick-xmltodict]: Remove: archive file [/home/abi/fetcher/tmp/quick_xmltodict-0.1.2-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.whl.zip]
 [2024-06-01 12:55:02] INFO root fetch - main [MainThread]: End processing [quick-xmltodict]: success
 [2024-06-01 12:55:02] INFO root fetch - main [MainThread]: Store serial: [23479513]
+[2024-06-01 12:57:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479513]
+[2024-06-01 12:57:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 12:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Model-Trainer
+[2024-06-01 12:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama3-package
+[2024-06-01 12:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anne
+[2024-06-01 12:57:11] INFO root fetch - processPackages [Model-Trainer]: New version: [1.1] Old Version: [1.0]
+[2024-06-01 12:57:11] INFO root fetch - processPackages [llama3-package]: New version: [0.5.0] Old Version: [0.3.0]
+[2024-06-01 12:57:11] INFO root fetch - processPackages [anne]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-01 12:57:11] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/43/3d/f43c17e81010874fa356eb26a14b085a88e33e75fd80d959e3b7f1aa3aff/anne-1.1.0.tar.gz
+[2024-06-01 12:57:11] INFO root fetch - processPackages [llama3-package]: Downloading https://files.pythonhosted.org/packages/d9/7a/02a408a924ba9316eaea7a0c46ca2d4d2161d88eb305ed8c597a4bb3fad3/llama3_package-0.3.0.tar.gz
+[2024-06-01 12:57:11] ERROR root fetch - processPackages [Model-Trainer]: Unable to fetch info: No such project/version 'Model-Trainer' 1.0
+[2024-06-01 12:57:11] INFO root fetch - main [MainThread]: End processing [Model-Trainer] error
+[2024-06-01 12:57:11] INFO root fetch - processPackages [llama3-package]: Downloading https://files.pythonhosted.org/packages/ae/25/a3e34a39c94586f387215cff20ff760d6b2dd51c5ba18d1b531172a976b2/llama3_package-0.5.0.tar.gz
+[2024-06-01 12:57:11] INFO root fetch - processPackages [llama3-package]: executing diffoscope
+[2024-06-01 12:57:11] INFO root fetch - processPackages [llama3-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama3_package-0.3.0.tar.gz tmp/llama3_package-0.5.0.tar.gz --markdown 20240601/l/llama3-package/0.3.0-0.5.0/README.md --exclude *.pyd
+[2024-06-01 12:57:11] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/6b/bf/e5711a47453b0825a38dce9474949fc6e9dc8fac9400dfb00787bb80a911/anne-1.1.1.tar.gz
+[2024-06-01 12:57:11] INFO root fetch - processPackages [anne]: executing diffoscope
+[2024-06-01 12:57:11] INFO root fetch - processPackages [anne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anne-1.1.0.tar.gz tmp/anne-1.1.1.tar.gz --markdown 20240601/a/anne/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-01 12:57:12] INFO root fetch - processPackages [llama3-package]: Remove: archive file [/home/abi/fetcher/tmp/llama3_package-0.3.0.tar.gz]
+[2024-06-01 12:57:12] INFO root fetch - processPackages [llama3-package]: Remove: archive file [/home/abi/fetcher/tmp/llama3_package-0.5.0.tar.gz]
+[2024-06-01 12:57:12] INFO root fetch - main [MainThread]: End processing [llama3-package]: success
+[2024-06-01 12:57:12] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.0.tar.gz]
+[2024-06-01 12:57:12] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.1.tar.gz]
+[2024-06-01 12:57:12] INFO root fetch - main [MainThread]: End processing [anne]: success
+[2024-06-01 12:57:12] INFO root fetch - main [MainThread]: Store serial: [23479531]
