@@ -11283,3 +11283,30 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:08:16] INFO root fetch - processPackages [souJpg-diffusers]: Remove: archive file [/home/abi/fetcher/tmp/souJpg_diffusers-0.29.0.dev0-py3-none-any.whl.zip]
 [2024-06-01 08:08:16] INFO root fetch - main [MainThread]: End processing [souJpg-diffusers]: success
 [2024-06-01 08:08:16] INFO root fetch - main [MainThread]: Store serial: [23477802]
+[2024-06-01 08:10:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477802]
+[2024-06-01 08:10:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 08:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toyai
+[2024-06-01 08:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rmediator
+[2024-06-01 08:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyg-nightly
+[2024-06-01 08:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ebook2text
+[2024-06-01 08:10:26] WARNING root fetch - processPackages [toyai]: Skipping, unable to determine old version
+[2024-06-01 08:10:26] INFO root fetch - main [MainThread]: End processing [toyai] error
+[2024-06-01 08:10:26] INFO root fetch - processPackages [ebook2text]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-06-01 08:10:26] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240531] Old Version: [2.6.0.dev20240530]
+[2024-06-01 08:10:26] INFO root fetch - processPackages [ebook2text]: Downloading https://files.pythonhosted.org/packages/53/fd/5ba6698cdd786f4dc20bcb8a81b9e3788472b46b4cbfd8f504062ee4a1f7/ebook2text-1.1.0.tar.gz
+[2024-06-01 08:10:26] WARNING root fetch - processPackages [rmediator]: Skipping, unable to determine old version
+[2024-06-01 08:10:26] INFO root fetch - main [MainThread]: End processing [rmediator] error
+[2024-06-01 08:10:26] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/e9/f7/895ecf14984a184486f39a3b5c4b78c3e5477a7157d526701134ddbcc472/pyg_nightly-2.6.0.dev20240530.tar.gz
+[2024-06-01 08:10:27] INFO root fetch - processPackages [ebook2text]: Downloading https://files.pythonhosted.org/packages/55/6c/3ec2b19f80e118988a45e8557a1f86473c74db4d1ae606744932d357fe61/ebook2text-1.1.1.tar.gz
+[2024-06-01 08:10:27] INFO root fetch - processPackages [ebook2text]: executing diffoscope
+[2024-06-01 08:10:27] INFO root fetch - processPackages [ebook2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebook2text-1.1.0.tar.gz tmp/ebook2text-1.1.1.tar.gz --markdown 20240601/e/ebook2text/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-06-01 08:10:27] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/00/75/6b8e50ce5e9e8c3a6d1276583da993d5d207cd466f4ca5b7bc83f9cbf899/pyg_nightly-2.6.0.dev20240531.tar.gz
+[2024-06-01 08:10:27] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-06-01 08:10:27] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240530.tar.gz tmp/pyg_nightly-2.6.0.dev20240531.tar.gz --markdown 20240601/p/pyg-nightly/2.6.0.dev20240530-2.6.0.dev20240531/README.md --exclude *.pyd
+[2024-06-01 08:10:27] INFO root fetch - processPackages [ebook2text]: Remove: archive file [/home/abi/fetcher/tmp/ebook2text-1.1.0.tar.gz]
+[2024-06-01 08:10:27] INFO root fetch - processPackages [ebook2text]: Remove: archive file [/home/abi/fetcher/tmp/ebook2text-1.1.1.tar.gz]
+[2024-06-01 08:10:27] INFO root fetch - main [MainThread]: End processing [ebook2text]: success
+[2024-06-01 08:10:29] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240530.tar.gz]
+[2024-06-01 08:10:29] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240531.tar.gz]
+[2024-06-01 08:10:29] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-06-01 08:10:29] INFO root fetch - main [MainThread]: Store serial: [23477830]
