@@ -7762,3 +7762,87 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 03:45:36] INFO root fetch - processPackages [Geode-Background]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl.zip]
 [2024-06-01 03:45:36] INFO root fetch - main [MainThread]: End processing [Geode-Background]: success
 [2024-06-01 03:45:36] INFO root fetch - main [MainThread]: Store serial: [23475778]
+[2024-06-01 03:47:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23475778]
+[2024-06-01 03:47:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gink
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bokeh
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-typer
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easytl
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clonellm
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tikhub
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ourskyai_astro_api
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ourskyai_sda_api
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ourskyai_platform_api
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_astro_api]: New version: [1.3.3703] Old Version: [1.3.3700]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_platform_api]: New version: [1.3.3703] Old Version: [1.3.3700]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [tikhub]: New version: [1.10.2] Old Version: [1.10.1]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [bokeh]: New version: [3.5.0.dev4] Old Version: [3.5.0.dev3]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_sda_api]: New version: [1.3.3703] Old Version: [1.3.3700]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [easytl]: New version: [0.4.1] Old Version: [0.4.0b0]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [django-typer]: New version: [2.0.0] Old Version: [1.1.2]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [gink]: New version: [0.20240601.1717206271] Old Version: [0.20240523.1716450705]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [clonellm]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_platform_api]: Downloading https://files.pythonhosted.org/packages/bc/b6/d52c85a3c49d57fd6f2ce353323306858b902599d104ba6bf1852762d23f/ourskyai_platform_api-1.3.3700.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_sda_api]: Downloading https://files.pythonhosted.org/packages/66/28/2af9a00d765031487e2e6023ccfc168768d6234d2aff93c12643142f90a3/ourskyai_sda_api-1.3.3700.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [tikhub]: Downloading https://files.pythonhosted.org/packages/24/14/4b3c1e9952c313b85aa5f2a7517274c562b5f8a4b97b64c0031590b63041/tikhub-1.10.1.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_astro_api]: Downloading https://files.pythonhosted.org/packages/61/75/3f19c49bf58fe69e46f84308d3f9daf99dd1b3246a5ee4e5cf6ce3b8cabb/ourskyai_astro_api-1.3.3700.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [bokeh]: Downloading https://files.pythonhosted.org/packages/5a/c4/77a0b32fa34a10bd3b1b0693dbb7c12d69b4c3e73d3eb90f5b5fb2355148/bokeh-3.5.0.dev3.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/6a/69/8cc8bde2204a61d677ccbde97f73c7d1edd59610d8c990479f5d519228cb/easytl-0.4.0b0.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [django-typer]: Downloading https://files.pythonhosted.org/packages/af/04/5501892718eaef17d9f9c55cbeec5a2fef6576438b2532153dd76cb2bdbb/django_typer-1.1.2.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [clonellm]: Downloading https://files.pythonhosted.org/packages/ee/62/0112159e79fb366ffb11db5ca4bb0f9e5aeb4913905cf642d6b7ebaaf65b/clonellm-0.0.2.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/16/d0/e6805ca12dba24b7a6f91f53a5e813c918782e2946b709fc6a79717b9dbc/gink-0.20240523.1716450705.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [tikhub]: Downloading https://files.pythonhosted.org/packages/f4/94/5a5604404454fdfa40fd22aabd5ce59670b6c0335b5ea113c094b71c2ce0/tikhub-1.10.2.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_platform_api]: Downloading https://files.pythonhosted.org/packages/80/c5/b107f909ede5e7a9d58b0050d89cb63a9cb939776bd18b35f8923be9edcb/ourskyai_platform_api-1.3.3703.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_sda_api]: Downloading https://files.pythonhosted.org/packages/3b/64/8d2e903372078954c4050304b634ea6f7e391a975e937edfa5a36d4c62f2/ourskyai_sda_api-1.3.3703.tar.gz
+[2024-06-01 03:47:58] INFO root fetch - processPackages [ourskyai_astro_api]: Downloading https://files.pythonhosted.org/packages/d7/ca/4883965a680dac6df0ca506a34e71fea7674b89e1bd9cd7f53eee665bc3c/ourskyai_astro_api-1.3.3703.tar.gz
+[2024-06-01 03:47:59] INFO root fetch - processPackages [tikhub]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [tikhub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tikhub-1.10.1.tar.gz tmp/tikhub-1.10.2.tar.gz --markdown 20240601/t/tikhub/1.10.1-1.10.2/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [ourskyai_platform_api]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [ourskyai_platform_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_platform_api-1.3.3700.tar.gz tmp/ourskyai_platform_api-1.3.3703.tar.gz --markdown 20240601/o/ourskyai_platform_api/1.3.3700-1.3.3703/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [django-typer]: Downloading https://files.pythonhosted.org/packages/1d/dc/a632e58e92dc915e2a6a0438239c7147317251b93049edaa726316b47644/django_typer-2.0.0.tar.gz
+[2024-06-01 03:47:59] INFO root fetch - processPackages [clonellm]: Downloading https://files.pythonhosted.org/packages/8c/9b/f12c1fa08b79e79d64d58489bd072bed25116268e839f7c127a40e34d06e/clonellm-0.0.3.tar.gz
+[2024-06-01 03:47:59] INFO root fetch - processPackages [ourskyai_sda_api]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [ourskyai_sda_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_sda_api-1.3.3700.tar.gz tmp/ourskyai_sda_api-1.3.3703.tar.gz --markdown 20240601/o/ourskyai_sda_api/1.3.3700-1.3.3703/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [ourskyai_astro_api]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [ourskyai_astro_api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourskyai_astro_api-1.3.3700.tar.gz tmp/ourskyai_astro_api-1.3.3703.tar.gz --markdown 20240601/o/ourskyai_astro_api/1.3.3700-1.3.3703/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/b8/65/2fd0786404bdcce0a4e7a6ca0ff8a71be076349d376eb8179ff36d17d129/gink-0.20240601.1717206271.tar.gz
+[2024-06-01 03:47:59] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/92/43/82eca234238c70d1525bbc5dd4cd5d0051e1d8688ea7d9b049a9f2aeaba6/easytl-0.4.1.tar.gz
+[2024-06-01 03:47:59] INFO root fetch - processPackages [clonellm]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [clonellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clonellm-0.0.2.tar.gz tmp/clonellm-0.0.3.tar.gz --markdown 20240601/c/clonellm/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [django-typer]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [django-typer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_typer-1.1.2.tar.gz tmp/django_typer-2.0.0.tar.gz --markdown 20240601/d/django-typer/1.1.2-2.0.0/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240523.1716450705.tar.gz tmp/gink-0.20240601.1717206271.tar.gz --markdown 20240601/g/gink/0.20240523.1716450705-0.20240601.1717206271/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [easytl]: executing diffoscope
+[2024-06-01 03:47:59] INFO root fetch - processPackages [easytl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytl-0.4.0b0.tar.gz tmp/easytl-0.4.1.tar.gz --markdown 20240601/e/easytl/0.4.0b0-0.4.1/README.md --exclude *.pyd
+[2024-06-01 03:47:59] INFO root fetch - processPackages [bokeh]: Downloading https://files.pythonhosted.org/packages/4a/a8/5ba4b8be8f30bc7407a870e9dd62384bd3a9c30da9ed5b13e537235664aa/bokeh-3.5.0.dev4.tar.gz
+[2024-06-01 03:48:00] INFO root fetch - processPackages [bokeh]: executing diffoscope
+[2024-06-01 03:48:00] INFO root fetch - processPackages [bokeh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bokeh-3.5.0.dev3.tar.gz tmp/bokeh-3.5.0.dev4.tar.gz --markdown 20240601/b/bokeh/3.5.0.dev3-3.5.0.dev4/README.md --exclude *.pyd
+[2024-06-01 03:48:00] INFO root fetch - processPackages [tikhub]: Remove: archive file [/home/abi/fetcher/tmp/tikhub-1.10.1.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [tikhub]: Remove: archive file [/home/abi/fetcher/tmp/tikhub-1.10.2.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [tikhub]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [clonellm]: Remove: archive file [/home/abi/fetcher/tmp/clonellm-0.0.2.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [clonellm]: Remove: archive file [/home/abi/fetcher/tmp/clonellm-0.0.3.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [clonellm]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [django-typer]: Remove: archive file [/home/abi/fetcher/tmp/django_typer-1.1.2.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [django-typer]: Remove: archive file [/home/abi/fetcher/tmp/django_typer-2.0.0.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [django-typer]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240523.1716450705.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240601.1717206271.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.4.0b0.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.4.1.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [easytl]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [ourskyai_platform_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_platform_api-1.3.3700.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [ourskyai_platform_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_platform_api-1.3.3703.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [ourskyai_platform_api]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [ourskyai_sda_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_sda_api-1.3.3700.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [ourskyai_sda_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_sda_api-1.3.3703.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [ourskyai_sda_api]: success
+[2024-06-01 03:48:00] INFO root fetch - processPackages [ourskyai_astro_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_astro_api-1.3.3700.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - processPackages [ourskyai_astro_api]: Remove: archive file [/home/abi/fetcher/tmp/ourskyai_astro_api-1.3.3703.tar.gz]
+[2024-06-01 03:48:00] INFO root fetch - main [MainThread]: End processing [ourskyai_astro_api]: success
+[2024-06-01 03:48:51] INFO root fetch - processPackages [bokeh]: Remove: archive file [/home/abi/fetcher/tmp/bokeh-3.5.0.dev3.tar.gz]
+[2024-06-01 03:48:51] INFO root fetch - processPackages [bokeh]: Remove: archive file [/home/abi/fetcher/tmp/bokeh-3.5.0.dev4.tar.gz]
+[2024-06-01 03:48:51] INFO root fetch - main [MainThread]: End processing [bokeh]: success
+[2024-06-01 03:48:51] INFO root fetch - main [MainThread]: Store serial: [23475891]
