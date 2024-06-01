@@ -19987,3 +19987,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:03:31] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.2.dev20240601170049.tar.gz]
 [2024-06-01 19:03:31] INFO root fetch - main [MainThread]: End processing [almax-common]: success
 [2024-06-01 19:03:31] INFO root fetch - main [MainThread]: Store serial: [23482004]
+[2024-06-01 19:05:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482004]
+[2024-06-01 19:05:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 19:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 19:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alabamaEncoder
+[2024-06-01 19:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scriptmaker
+[2024-06-01 19:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cherche
+[2024-06-01 19:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: peakrdl-python
+[2024-06-01 19:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: camera-ui-python-types
+[2024-06-01 19:05:40] INFO root fetch - processPackages [almax-common]: New version: [1.0.2.dev20240601170049] Old Version: [1.0.1.dev20240601164303]
+[2024-06-01 19:05:40] INFO root fetch - processPackages [cherche]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-06-01 19:05:40] INFO root fetch - processPackages [peakrdl-python]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-06-01 19:05:40] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 19:05:40] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/5c/e3/0f77c25418c199a841f9483f7448fffcf2ad7531402d33e94d21e805642e/almax_common-1.0.1.dev20240601164303.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [cherche]: Downloading https://files.pythonhosted.org/packages/51/79/f932d06dcc2b13e0a665219d0926cf76673d8579797ce392351f5e3bf130/cherche-2.1.1.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [alabamaEncoder]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-06-01 19:05:40] INFO root fetch - processPackages [scriptmaker]: New version: [1.5.0] Old Version: [1.4.6]
+[2024-06-01 19:05:40] INFO root fetch - processPackages [alabamaEncoder]: Downloading https://files.pythonhosted.org/packages/8d/29/be624625a6349b61c6b94a6f1871cb397bfd50fd2be1c5dc3666dc81866e/alabamaencoder-0.5.0.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [peakrdl-python]: Downloading https://files.pythonhosted.org/packages/68/55/210fad59ce807d97aa684fb2b2282a0ece5b1ab52d3a577432aeeced3637/peakrdl-python-0.7.4.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/ec/a7/ffc16df7d52006bf46a6d6f2d40faf0a75e158fa23c81bf15af175a4d164/almax_common-1.0.2.dev20240601170049.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [scriptmaker]: Downloading https://files.pythonhosted.org/packages/87/69/a977a371b7d6a4ecee32dab4dd62f94923df778f22ded330f78af18f0ec2/scriptmaker-1.4.6.tar.gz
+[2024-06-01 19:05:40] WARNING root fetch - processPackages [scriptmaker]: Skipping package: exceeds size limit 32093730>=10485760
+[2024-06-01 19:05:40] INFO root fetch - main [MainThread]: End processing [scriptmaker] error
+[2024-06-01 19:05:40] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 19:05:40] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.1.dev20240601164303.tar.gz tmp/almax_common-1.0.2.dev20240601170049.tar.gz --markdown 20240601/a/almax-common/1.0.1.dev20240601164303-1.0.2.dev20240601170049/README.md --exclude *.pyd
+[2024-06-01 19:05:40] INFO root fetch - processPackages [cherche]: Downloading https://files.pythonhosted.org/packages/08/77/438fafb1f2eb8466e22c85fab2e44e5980bc5ef846f6a8484103c0ae2f8c/cherche-2.2.0.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [alabamaEncoder]: Downloading https://files.pythonhosted.org/packages/16/59/f4fb01403e283636f1fe1166cd241f7cdc10e048c5bacbb88e022428cf6a/alabamaencoder-0.5.1.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [peakrdl-python]: Downloading https://files.pythonhosted.org/packages/79/d1/346f8cadfe9f66ec6ae6a969a05fb87eae2d9e2bd80333d1ef8610d2e35c/peakrdl_python-0.7.5.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-06-01 19:05:40] INFO root fetch - processPackages [alabamaEncoder]: executing diffoscope
+[2024-06-01 19:05:40] INFO root fetch - processPackages [alabamaEncoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alabamaencoder-0.5.0.tar.gz tmp/alabamaencoder-0.5.1.tar.gz --markdown 20240601/a/alabamaEncoder/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-06-01 19:05:40] INFO root fetch - processPackages [peakrdl-python]: executing diffoscope
+[2024-06-01 19:05:40] INFO root fetch - processPackages [peakrdl-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakrdl-python-0.7.4.tar.gz tmp/peakrdl_python-0.7.5.tar.gz --markdown 20240601/p/peakrdl-python/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-06-01 19:05:40] INFO root fetch - processPackages [cherche]: executing diffoscope
+[2024-06-01 19:05:40] INFO root fetch - processPackages [cherche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cherche-2.1.1.tar.gz tmp/cherche-2.2.0.tar.gz --markdown 20240601/c/cherche/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-06-01 19:05:40] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-06-01 19:05:40] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240601/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 19:05:41] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.1.dev20240601164303.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.2.dev20240601170049.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 19:05:41] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-06-01 19:05:41] INFO root fetch - processPackages [alabamaEncoder]: Remove: archive file [/home/abi/fetcher/tmp/alabamaencoder-0.5.0.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - processPackages [alabamaEncoder]: Remove: archive file [/home/abi/fetcher/tmp/alabamaencoder-0.5.1.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - main [MainThread]: End processing [alabamaEncoder]: success
+[2024-06-01 19:05:41] INFO root fetch - processPackages [peakrdl-python]: Remove: archive file [/home/abi/fetcher/tmp/peakrdl-python-0.7.4.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - processPackages [peakrdl-python]: Remove: archive file [/home/abi/fetcher/tmp/peakrdl_python-0.7.5.tar.gz]
+[2024-06-01 19:05:41] INFO root fetch - main [MainThread]: End processing [peakrdl-python]: success
+[2024-06-01 19:05:42] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.1.1.tar.gz]
+[2024-06-01 19:05:42] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.2.0.tar.gz]
+[2024-06-01 19:05:42] INFO root fetch - main [MainThread]: End processing [cherche]: success
+[2024-06-01 19:05:42] INFO root fetch - main [MainThread]: Store serial: [23482021]
