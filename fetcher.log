@@ -23548,3 +23548,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:29:15] INFO root fetch - processPackages [jaynes]: Remove: archive file [/home/abi/fetcher/tmp/jaynes-0.9.9-py3-none-any.whl.zip]
 [2024-06-01 23:29:15] INFO root fetch - main [MainThread]: End processing [jaynes]: success
 [2024-06-01 23:29:15] INFO root fetch - main [MainThread]: Store serial: [23483801]
+[2024-06-01 23:31:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483801]
+[2024-06-01 23:31:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 23:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protoc-polyglot
+[2024-06-01 23:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whataspp-message-inforu-local
+[2024-06-01 23:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zenaura
+[2024-06-01 23:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VRE-Repository-Connector
+[2024-06-01 23:31:23] INFO root fetch - processPackages [VRE-Repository-Connector]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-01 23:31:23] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 23:31:23] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/08/ac/40326ba6bbddcf553f83f046e7c0cc411fba1a3cfdd794eb3834e8df6bcd/vre_repository_connector-0.2.1.tar.gz
+[2024-06-01 23:31:23] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 23:31:23] INFO root fetch - processPackages [whataspp-message-inforu-local]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-06-01 23:31:23] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-01 23:31:23] INFO root fetch - processPackages [whataspp-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/e4/b1/3464a1535b46310db8d334f657d1d35502910cf00110b5fbaef961986868/whataspp_message_inforu_local-0.0.17.tar.gz
+[2024-06-01 23:31:24] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-01 23:31:24] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 23:31:24] INFO root fetch - processPackages [VRE-Repository-Connector]: Downloading https://files.pythonhosted.org/packages/be/91/0be6f2d044d674b60559c1a262de7c8a15fbba1981e1078240e8709c9130/vre_repository_connector-0.2.2.tar.gz
+[2024-06-01 23:31:24] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 23:31:24] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 23:31:24] INFO root fetch - processPackages [VRE-Repository-Connector]: executing diffoscope
+[2024-06-01 23:31:24] INFO root fetch - processPackages [VRE-Repository-Connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vre_repository_connector-0.2.1.tar.gz tmp/vre_repository_connector-0.2.2.tar.gz --markdown 20240601/V/VRE-Repository-Connector/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-01 23:31:24] INFO root fetch - processPackages [whataspp-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/1a/d7/3e42e21ea08e3f83521f2f2a072a8b8a9d11fb40b2d2e44ec006be8f2da2/whataspp_message_inforu_local-0.0.18.tar.gz
+[2024-06-01 23:31:24] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-01 23:31:24] INFO root fetch - processPackages [whataspp-message-inforu-local]: executing diffoscope
+[2024-06-01 23:31:24] INFO root fetch - processPackages [whataspp-message-inforu-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whataspp_message_inforu_local-0.0.17.tar.gz tmp/whataspp_message_inforu_local-0.0.18.tar.gz --markdown 20240601/w/whataspp-message-inforu-local/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-06-01 23:31:24] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-01 23:31:24] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240601/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-01 23:31:24] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.2.1.tar.gz]
+[2024-06-01 23:31:24] INFO root fetch - processPackages [VRE-Repository-Connector]: Remove: archive file [/home/abi/fetcher/tmp/vre_repository_connector-0.2.2.tar.gz]
+[2024-06-01 23:31:24] INFO root fetch - main [MainThread]: End processing [VRE-Repository-Connector]: success
+[2024-06-01 23:31:24] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.98.tar.gz]
+[2024-06-01 23:31:24] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
+[2024-06-01 23:31:24] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 23:31:25] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-01 23:31:25] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-01 23:31:25] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-01 23:31:25] INFO root fetch - processPackages [whataspp-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/whataspp_message_inforu_local-0.0.17.tar.gz]
+[2024-06-01 23:31:25] INFO root fetch - processPackages [whataspp-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/whataspp_message_inforu_local-0.0.18.tar.gz]
+[2024-06-01 23:31:25] INFO root fetch - main [MainThread]: End processing [whataspp-message-inforu-local]: success
+[2024-06-01 23:31:25] INFO root fetch - main [MainThread]: Store serial: [23483817]
