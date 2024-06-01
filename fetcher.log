@@ -15371,3 +15371,15 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:35:55] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.1.tar.gz]
 [2024-06-01 13:35:55] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 13:35:55] INFO root fetch - main [MainThread]: Store serial: [23479781]
+[2024-06-01 13:38:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479781]
+[2024-06-01 13:38:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 13:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: internal
+[2024-06-01 13:38:05] INFO root fetch - processPackages [internal]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 13:38:05] INFO root fetch - processPackages [internal]: Downloading https://files.pythonhosted.org/packages/e7/62/f729e2f746eb52acc2016ea7df473391b17335f69465919554514e604ef6/internal-1.0.3.tar.gz
+[2024-06-01 13:38:05] INFO root fetch - processPackages [internal]: Downloading https://files.pythonhosted.org/packages/df/a1/94585b03319adf81dfc43d9782007d50eb12574a33175c6c6c473f328b54/internal-1.0.4.tar.gz
+[2024-06-01 13:38:05] INFO root fetch - processPackages [internal]: executing diffoscope
+[2024-06-01 13:38:05] INFO root fetch - processPackages [internal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internal-1.0.3.tar.gz tmp/internal-1.0.4.tar.gz --markdown 20240601/i/internal/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 13:38:06] INFO root fetch - processPackages [internal]: Remove: archive file [/home/abi/fetcher/tmp/internal-1.0.3.tar.gz]
+[2024-06-01 13:38:06] INFO root fetch - processPackages [internal]: Remove: archive file [/home/abi/fetcher/tmp/internal-1.0.4.tar.gz]
+[2024-06-01 13:38:06] INFO root fetch - main [MainThread]: End processing [internal]: success
+[2024-06-01 13:38:06] INFO root fetch - main [MainThread]: Store serial: [23479784]
