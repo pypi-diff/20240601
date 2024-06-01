@@ -17994,3 +17994,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:53:31] INFO root fetch - processPackages [pyaedt]: Remove: archive file [/home/abi/fetcher/tmp/pyaedt-0.9.3.tar.gz]
 [2024-06-01 16:53:31] INFO root fetch - main [MainThread]: End processing [pyaedt]: success
 [2024-06-01 16:53:31] INFO root fetch - main [MainThread]: Store serial: [23481061]
+[2024-06-01 16:55:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481061]
+[2024-06-01 16:55:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 16:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bitdust
+[2024-06-01 16:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hscitorchutil
+[2024-06-01 16:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datastew
+[2024-06-01 16:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: upstox-wrapper
+[2024-06-01 16:55:40] WARNING root fetch - processPackages [upstox-wrapper]: Skipping, unable to determine old version
+[2024-06-01 16:55:40] INFO root fetch - main [MainThread]: End processing [upstox-wrapper] error
+[2024-06-01 16:55:40] INFO root fetch - processPackages [datastew]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 16:55:40] INFO root fetch - processPackages [bitdust]: New version: [0.1.9.241] Old Version: [0.1.8.234]
+[2024-06-01 16:55:40] INFO root fetch - processPackages [hscitorchutil]: New version: [0.1.69] Old Version: [0.1.67]
+[2024-06-01 16:55:40] INFO root fetch - processPackages [datastew]: Downloading https://files.pythonhosted.org/packages/fb/6c/00120f4bceac7e601edead636ba0630e716a22d0381ff24b9005bf28654e/datastew-0.1.5.tar.gz
+[2024-06-01 16:55:40] INFO root fetch - processPackages [hscitorchutil]: Downloading https://files.pythonhosted.org/packages/4a/50/f8655462640405140d88b7b8d74d15759878520be25854cc181770baab5f/hscitorchutil-0.1.67.tar.gz
+[2024-06-01 16:55:40] INFO root fetch - processPackages [bitdust]: Downloading https://files.pythonhosted.org/packages/08/3e/89cc5945e31bfff70239ee0aa082f8064cdd66457c649eaae712882ee879/bitdust-0.1.8.234.tar.gz
+[2024-06-01 16:55:40] INFO root fetch - processPackages [datastew]: Downloading https://files.pythonhosted.org/packages/2c/f3/b881ecedbc0c349c7ac403776a7d7127c991e5b7ffeb1aef124572f2a808/datastew-0.1.6.tar.gz
+[2024-06-01 16:55:40] INFO root fetch - processPackages [hscitorchutil]: Downloading https://files.pythonhosted.org/packages/c7/7a/b87f90699002267a0f5c8b22dbe419b697c9f62489a16fc973a8b18ab67f/hscitorchutil-0.1.69.tar.gz
+[2024-06-01 16:55:41] INFO root fetch - processPackages [hscitorchutil]: executing diffoscope
+[2024-06-01 16:55:41] INFO root fetch - processPackages [hscitorchutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hscitorchutil-0.1.67.tar.gz tmp/hscitorchutil-0.1.69.tar.gz --markdown 20240601/h/hscitorchutil/0.1.67-0.1.69/README.md --exclude *.pyd
+[2024-06-01 16:55:41] INFO root fetch - processPackages [datastew]: executing diffoscope
+[2024-06-01 16:55:41] INFO root fetch - processPackages [datastew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastew-0.1.5.tar.gz tmp/datastew-0.1.6.tar.gz --markdown 20240601/d/datastew/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 16:55:41] INFO root fetch - processPackages [bitdust]: Downloading https://files.pythonhosted.org/packages/9f/8d/1dc6a2965d1c2747f67a584ab22c6b17f99773b7eb451d3efa87bd70ed90/bitdust-0.1.9.241.tar.gz
+[2024-06-01 16:55:41] INFO root fetch - processPackages [bitdust]: executing diffoscope
+[2024-06-01 16:55:41] INFO root fetch - processPackages [bitdust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitdust-0.1.8.234.tar.gz tmp/bitdust-0.1.9.241.tar.gz --markdown 20240601/b/bitdust/0.1.8.234-0.1.9.241/README.md --exclude *.pyd
+[2024-06-01 16:55:41] INFO root fetch - processPackages [hscitorchutil]: Remove: archive file [/home/abi/fetcher/tmp/hscitorchutil-0.1.67.tar.gz]
+[2024-06-01 16:55:41] INFO root fetch - processPackages [hscitorchutil]: Remove: archive file [/home/abi/fetcher/tmp/hscitorchutil-0.1.69.tar.gz]
+[2024-06-01 16:55:41] INFO root fetch - main [MainThread]: End processing [hscitorchutil]: success
+[2024-06-01 16:55:41] INFO root fetch - processPackages [datastew]: Remove: archive file [/home/abi/fetcher/tmp/datastew-0.1.5.tar.gz]
+[2024-06-01 16:55:41] INFO root fetch - processPackages [datastew]: Remove: archive file [/home/abi/fetcher/tmp/datastew-0.1.6.tar.gz]
+[2024-06-01 16:55:41] INFO root fetch - main [MainThread]: End processing [datastew]: success
+[2024-06-01 16:55:44] INFO root fetch - processPackages [bitdust]: Remove: archive file [/home/abi/fetcher/tmp/bitdust-0.1.8.234.tar.gz]
+[2024-06-01 16:55:44] INFO root fetch - processPackages [bitdust]: Remove: archive file [/home/abi/fetcher/tmp/bitdust-0.1.9.241.tar.gz]
+[2024-06-01 16:55:44] INFO root fetch - main [MainThread]: End processing [bitdust]: success
+[2024-06-01 16:55:44] INFO root fetch - main [MainThread]: Store serial: [23481074]
