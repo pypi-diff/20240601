@@ -22077,3 +22077,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:30:56] INFO root fetch - processPackages [slumpy]: Remove: archive file [/home/abi/fetcher/tmp/slumpy-0.1.0.tar.gz]
 [2024-06-01 21:30:56] INFO root fetch - main [MainThread]: End processing [slumpy]: success
 [2024-06-01 21:30:56] INFO root fetch - main [MainThread]: Store serial: [23483016]
+[2024-06-01 21:33:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483016]
+[2024-06-01 21:33:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 21:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blaze-double-bot
+[2024-06-01 21:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scim2-models
+[2024-06-01 21:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anydi
+[2024-06-01 21:33:05] WARNING root fetch - processPackages [scim2-models]: Skipping, unable to determine old version
+[2024-06-01 21:33:05] INFO root fetch - main [MainThread]: End processing [scim2-models] error
+[2024-06-01 21:33:05] INFO root fetch - processPackages [blaze-double-bot]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-06-01 21:33:05] INFO root fetch - processPackages [anydi]: New version: [0.27.0a0] Old Version: [0.26.1]
+[2024-06-01 21:33:05] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/4c/66/cfe49a176ed7ce87d91d77ca283ade56446f08b0ad504e3a8ddc98ec01c0/anydi-0.26.1.tar.gz
+[2024-06-01 21:33:05] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/57/52/7b650360589f313c19ae2211aa94dbd3f837ed35ee3d1157747e217661a7/blaze_double_bot-1.1.0.tar.gz
+[2024-06-01 21:33:07] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/6c/f7/570fd705f6eb6cf2f71bdb2694df19fc1cbc64eda599cf2fe4efd2872698/blaze_double_bot-1.2.0.tar.gz
+[2024-06-01 21:33:07] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/fc/76/2c036fb9463fd91799470293bf9caeb9fb3b353728492ccde1a6d912ca15/anydi-0.27.0a0.tar.gz
+[2024-06-01 21:33:07] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-06-01 21:33:07] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-1.1.0.tar.gz tmp/blaze_double_bot-1.2.0.tar.gz --markdown 20240601/b/blaze-double-bot/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-06-01 21:33:07] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-06-01 21:33:07] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.26.1.tar.gz tmp/anydi-0.27.0a0.tar.gz --markdown 20240601/a/anydi/0.26.1-0.27.0a0/README.md --exclude *.pyd
+[2024-06-01 21:33:08] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.1.0.tar.gz]
+[2024-06-01 21:33:08] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.2.0.tar.gz]
+[2024-06-01 21:33:08] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-06-01 21:33:08] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.26.1.tar.gz]
+[2024-06-01 21:33:08] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
+[2024-06-01 21:33:08] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-06-01 21:33:08] INFO root fetch - main [MainThread]: Store serial: [23483024]
