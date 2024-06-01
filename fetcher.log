@@ -8093,3 +8093,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 03:58:32] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.6.tar.gz]
 [2024-06-01 03:58:32] INFO root fetch - main [MainThread]: End processing [composio-lyzr]: success
 [2024-06-01 03:58:32] INFO root fetch - main [MainThread]: Store serial: [23476300]
+[2024-06-01 04:00:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476300]
+[2024-06-01 04:00:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 04:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Geode-Hybrid
+[2024-06-01 04:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cubecoders-amp-api-wrapper
+[2024-06-01 04:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: espy-pay
+[2024-06-01 04:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tapescript
+[2024-06-01 04:00:40] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: New version: [0.1.1] Old Version: [0.1.0.post0]
+[2024-06-01 04:00:40] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Downloading https://files.pythonhosted.org/packages/d1/3b/68c5a43ec9c3a1c7085d5cc8f5e4324a7153a6d27a2b202e79c515c9b8a6/cubecoders_amp_api_wrapper-0.1.0.post0.tar.gz
+[2024-06-01 04:00:40] WARNING root fetch - processPackages [espy-pay]: Skipping, unable to determine old version
+[2024-06-01 04:00:40] INFO root fetch - main [MainThread]: End processing [espy-pay] error
+[2024-06-01 04:00:40] INFO root fetch - processPackages [tapescript]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-06-01 04:00:40] INFO root fetch - processPackages [Geode-Hybrid]: New version: [2.4.4rc1] Old Version: [2.4.4]
+[2024-06-01 04:00:40] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Downloading https://files.pythonhosted.org/packages/71/03/d715f6de851a2ea7cb329972d59c26758f0a41fc847841de67867e37f0c2/cubecoders_amp_api_wrapper-0.1.1.tar.gz
+[2024-06-01 04:00:40] INFO root fetch - processPackages [Geode-Hybrid]: Downloading https://files.pythonhosted.org/packages/97/de/f5056c3b57b897a62fa7652c0487b823e79a0603f5c1be306ec71c50d00f/Geode_Hybrid-2.4.4-cp39-cp39-win_amd64.whl
+[2024-06-01 04:00:40] INFO root fetch - processPackages [tapescript]: Downloading https://files.pythonhosted.org/packages/96/ff/7b85ee395d17ab867ffeb54b1898e8dcfacb41f982a6cd18eb4fd1da60bd/tapescript-0.4.1.tar.gz
+[2024-06-01 04:00:41] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: executing diffoscope
+[2024-06-01 04:00:41] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubecoders_amp_api_wrapper-0.1.0.post0.tar.gz tmp/cubecoders_amp_api_wrapper-0.1.1.tar.gz --markdown 20240601/c/cubecoders-amp-api-wrapper/0.1.0.post0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 04:00:41] INFO root fetch - processPackages [tapescript]: Downloading https://files.pythonhosted.org/packages/ec/ff/f882573d3117959fb81c890b89a2d477d3b565864000612a848df35a5e6b/tapescript-0.5.0.tar.gz
+[2024-06-01 04:00:41] INFO root fetch - processPackages [tapescript]: executing diffoscope
+[2024-06-01 04:00:41] INFO root fetch - processPackages [tapescript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapescript-0.4.1.tar.gz tmp/tapescript-0.5.0.tar.gz --markdown 20240601/t/tapescript/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-06-01 04:00:41] INFO root fetch - processPackages [Geode-Hybrid]: Downloading https://files.pythonhosted.org/packages/b3/df/c3ccdda209f34ce5d4757815889272f537664294de9101d1806d58f5114b/Geode_Hybrid-2.4.4rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 04:00:41] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/cubecoders_amp_api_wrapper-0.1.0.post0.tar.gz]
+[2024-06-01 04:00:41] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/cubecoders_amp_api_wrapper-0.1.1.tar.gz]
+[2024-06-01 04:00:41] INFO root fetch - main [MainThread]: End processing [cubecoders-amp-api-wrapper]: success
+[2024-06-01 04:00:41] INFO root fetch - processPackages [Geode-Hybrid]: executing diffoscope
+[2024-06-01 04:00:41] INFO root fetch - processPackages [Geode-Hybrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Hybrid-2.4.4-cp39-cp39-win_amd64.whl.zip tmp/Geode_Hybrid-2.4.4rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Hybrid/2.4.4-2.4.4rc1/README.md --exclude *.pyd
+[2024-06-01 04:00:42] INFO root fetch - processPackages [tapescript]: Remove: archive file [/home/abi/fetcher/tmp/tapescript-0.4.1.tar.gz]
+[2024-06-01 04:00:42] INFO root fetch - processPackages [tapescript]: Remove: archive file [/home/abi/fetcher/tmp/tapescript-0.5.0.tar.gz]
+[2024-06-01 04:00:42] INFO root fetch - main [MainThread]: End processing [tapescript]: success
+[2024-06-01 04:00:53] INFO root fetch - processPackages [Geode-Hybrid]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Hybrid-2.4.4-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 04:00:53] INFO root fetch - processPackages [Geode-Hybrid]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Hybrid-2.4.4rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 04:00:53] INFO root fetch - main [MainThread]: End processing [Geode-Hybrid]: success
+[2024-06-01 04:00:53] INFO root fetch - main [MainThread]: Store serial: [23476321]
