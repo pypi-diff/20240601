@@ -19163,3 +19163,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:12:42] INFO root fetch - processPackages [kbodata]: Remove: archive file [/home/abi/fetcher/tmp/kbodata-0.2.0.tar.gz]
 [2024-06-01 18:12:42] INFO root fetch - main [MainThread]: End processing [kbodata]: success
 [2024-06-01 18:12:42] INFO root fetch - main [MainThread]: Store serial: [23481602]
+[2024-06-01 18:14:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481602]
+[2024-06-01 18:14:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 18:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anemoi-datasets
+[2024-06-01 18:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyoauth2-util
+[2024-06-01 18:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-01 18:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-bk
+[2024-06-01 18:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moroccan-prayer-times
+[2024-06-01 18:14:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: teedoc
+[2024-06-01 18:14:52] INFO root fetch - processPackages [teedoc]: New version: [1.9.0] Old Version: [1.8.4]
+[2024-06-01 18:14:52] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 18:14:52] INFO root fetch - processPackages [func-bk]: New version: [1.5.6] Old Version: [1.5.4]
+[2024-06-01 18:14:52] WARNING root fetch - processPackages [moroccan-prayer-times]: Skipping, unable to determine old version
+[2024-06-01 18:14:52] INFO root fetch - main [MainThread]: End processing [moroccan-prayer-times] error
+[2024-06-01 18:14:52] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/15/46/752a1c0e2ddb3f4b8cab630d1ff0ac55a2627f9c44906b4314297f060400/func_bk-1.5.4.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [anemoi-datasets]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-01 18:14:52] INFO root fetch - processPackages [pyoauth2-util]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-06-01 18:14:52] INFO root fetch - processPackages [anemoi-datasets]: Downloading https://files.pythonhosted.org/packages/d2/76/f96bee5b452f814f960df7c43920c4ddf6702a7ea9612229c94662396733/anemoi_datasets-0.3.0.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [teedoc]: Downloading https://files.pythonhosted.org/packages/40/e6/f440b5b7c8647d60703605cf066361fa5aad1286531f577d551c46c901fd/teedoc-1.8.4.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [pyoauth2-util]: Downloading https://files.pythonhosted.org/packages/d0/14/0258a65487300e1986efeaa7fd71bfe3104ff1ead05f070d0465eb3a077d/pyoauth2_util-1.0.7.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 18:14:52] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 18:14:52] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/29/9a/c4e542c5fe9d6ddc1d6cc201bbb76f702a004bc19c2bc6982a180f5fe542/func_bk-1.5.6.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-06-01 18:14:52] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.5.4.tar.gz tmp/func_bk-1.5.6.tar.gz --markdown 20240601/f/func-bk/1.5.4-1.5.6/README.md --exclude *.pyd
+[2024-06-01 18:14:52] INFO root fetch - processPackages [pyoauth2-util]: Downloading https://files.pythonhosted.org/packages/9b/58/a62de3d2b68db9d51120818376fc9dc5de58e90cb42c483f87ed1efeed82/pyoauth2_util-1.0.8.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [anemoi-datasets]: Downloading https://files.pythonhosted.org/packages/aa/1d/ad6913417bb7153fba3bfd0b5bf6966a6b6378da356b1ec8b418ab9d3f4f/anemoi_datasets-0.3.1.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [pyoauth2-util]: executing diffoscope
+[2024-06-01 18:14:52] INFO root fetch - processPackages [pyoauth2-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoauth2_util-1.0.7.tar.gz tmp/pyoauth2_util-1.0.8.tar.gz --markdown 20240601/p/pyoauth2-util/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-06-01 18:14:52] INFO root fetch - processPackages [teedoc]: Downloading https://files.pythonhosted.org/packages/b9/47/c97bd2ae7057d340408dbb4d6c9e42354b2857e54438a3b8954cf8c0a21f/teedoc-1.9.0.tar.gz
+[2024-06-01 18:14:52] INFO root fetch - processPackages [anemoi-datasets]: executing diffoscope
+[2024-06-01 18:14:52] INFO root fetch - processPackages [anemoi-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anemoi_datasets-0.3.0.tar.gz tmp/anemoi_datasets-0.3.1.tar.gz --markdown 20240601/a/anemoi-datasets/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-01 18:14:53] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 18:14:53] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.4.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.6.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-06-01 18:14:53] INFO root fetch - processPackages [teedoc]: executing diffoscope
+[2024-06-01 18:14:53] INFO root fetch - processPackages [teedoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teedoc-1.8.4.tar.gz tmp/teedoc-1.9.0.tar.gz --markdown 20240601/t/teedoc/1.8.4-1.9.0/README.md --exclude *.pyd
+[2024-06-01 18:14:53] INFO root fetch - processPackages [pyoauth2-util]: Remove: archive file [/home/abi/fetcher/tmp/pyoauth2_util-1.0.7.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - processPackages [pyoauth2-util]: Remove: archive file [/home/abi/fetcher/tmp/pyoauth2_util-1.0.8.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - main [MainThread]: End processing [pyoauth2-util]: success
+[2024-06-01 18:14:53] INFO root fetch - processPackages [teedoc]: Remove: archive file [/home/abi/fetcher/tmp/teedoc-1.8.4.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - processPackages [teedoc]: Remove: archive file [/home/abi/fetcher/tmp/teedoc-1.9.0.tar.gz]
+[2024-06-01 18:14:53] INFO root fetch - main [MainThread]: End processing [teedoc]: success
+[2024-06-01 18:14:54] INFO root fetch - processPackages [anemoi-datasets]: Remove: archive file [/home/abi/fetcher/tmp/anemoi_datasets-0.3.0.tar.gz]
+[2024-06-01 18:14:54] INFO root fetch - processPackages [anemoi-datasets]: Remove: archive file [/home/abi/fetcher/tmp/anemoi_datasets-0.3.1.tar.gz]
+[2024-06-01 18:14:54] INFO root fetch - main [MainThread]: End processing [anemoi-datasets]: success
+[2024-06-01 18:14:54] INFO root fetch - main [MainThread]: Store serial: [23481627]
