@@ -13300,3 +13300,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:59:26] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
 [2024-06-01 10:59:26] INFO root fetch - main [MainThread]: End processing [swibots]: success
 [2024-06-01 10:59:26] INFO root fetch - main [MainThread]: Store serial: [23478861]
+[2024-06-01 11:01:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478861]
+[2024-06-01 11:01:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 11:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vf-portalytics
+[2024-06-01 11:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reloader.py
+[2024-06-01 11:01:34] INFO root fetch - processPackages [vf-portalytics]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-06-01 11:01:34] INFO root fetch - processPackages [reloader.py]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-01 11:01:35] INFO root fetch - processPackages [reloader.py]: Downloading https://files.pythonhosted.org/packages/46/61/8c51c05aa76f44386cf1d04f45cbd8d29faa97a0205a7e69233cc248f13d/reloader_py-0.9.0.tar.gz
+[2024-06-01 11:01:35] INFO root fetch - processPackages [vf-portalytics]: Downloading https://files.pythonhosted.org/packages/96/de/d5442e7270ec131d3eb63ef5e0b83a029b959a1f8e09379a666801072f71/vf_portalytics-1.1.4.tar.gz
+[2024-06-01 11:01:35] INFO root fetch - processPackages [reloader.py]: Downloading https://files.pythonhosted.org/packages/95/38/d6e5aef5543064890ba471b655f8265e562ff65f2d654db6f0d00429e3f8/reloader_py-0.9.1.tar.gz
+[2024-06-01 11:01:35] INFO root fetch - processPackages [vf-portalytics]: Downloading https://files.pythonhosted.org/packages/0a/09/d8f3b499d7fd06c214d92dd782c8279f90238f2bbee15dc5307214d2379d/vf_portalytics-1.1.5.tar.gz
+[2024-06-01 11:01:35] INFO root fetch - processPackages [vf-portalytics]: executing diffoscope
+[2024-06-01 11:01:35] INFO root fetch - processPackages [vf-portalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vf_portalytics-1.1.4.tar.gz tmp/vf_portalytics-1.1.5.tar.gz --markdown 20240601/v/vf-portalytics/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-06-01 11:01:35] INFO root fetch - processPackages [reloader.py]: executing diffoscope
+[2024-06-01 11:01:35] INFO root fetch - processPackages [reloader.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reloader_py-0.9.0.tar.gz tmp/reloader_py-0.9.1.tar.gz --markdown 20240601/r/reloader.py/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-01 11:01:36] INFO root fetch - processPackages [vf-portalytics]: Remove: archive file [/home/abi/fetcher/tmp/vf_portalytics-1.1.4.tar.gz]
+[2024-06-01 11:01:36] INFO root fetch - processPackages [vf-portalytics]: Remove: archive file [/home/abi/fetcher/tmp/vf_portalytics-1.1.5.tar.gz]
+[2024-06-01 11:01:36] INFO root fetch - main [MainThread]: End processing [vf-portalytics]: success
+[2024-06-01 11:01:36] INFO root fetch - processPackages [reloader.py]: Remove: archive file [/home/abi/fetcher/tmp/reloader_py-0.9.0.tar.gz]
+[2024-06-01 11:01:36] INFO root fetch - processPackages [reloader.py]: Remove: archive file [/home/abi/fetcher/tmp/reloader_py-0.9.1.tar.gz]
+[2024-06-01 11:01:36] INFO root fetch - main [MainThread]: End processing [reloader.py]: success
+[2024-06-01 11:01:36] INFO root fetch - main [MainThread]: Store serial: [23478867]
