@@ -16402,3 +16402,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 14:58:34] INFO root fetch - processPackages [genshin]: Remove: archive file [/home/abi/fetcher/tmp/genshin-1.7.1.tar.gz]
 [2024-06-01 14:58:34] INFO root fetch - main [MainThread]: End processing [genshin]: success
 [2024-06-01 14:58:34] INFO root fetch - main [MainThread]: Store serial: [23480229]
+[2024-06-01 15:00:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480229]
+[2024-06-01 15:00:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 15:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heflwr
+[2024-06-01 15:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func-bk
+[2024-06-01 15:00:42] INFO root fetch - processPackages [func-bk]: New version: [1.5.0] Old Version: [1.3.7]
+[2024-06-01 15:00:42] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/e0/7c/0a7be0033c49dce45b666776d743fc10c8d1b66f1be5041f6782bd6f7452/func_bk-1.3.7.tar.gz
+[2024-06-01 15:00:42] INFO root fetch - processPackages [heflwr]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 15:00:43] INFO root fetch - processPackages [heflwr]: Downloading https://files.pythonhosted.org/packages/c1/7b/207afe05da369686df3d90046e1ab5a5761c856e72ddc1fad76fefb14af9/heflwr-0.1.5.tar.gz
+[2024-06-01 15:00:43] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/f4/23/3a57849367522f15f19cf56b5e89c44639315e5a8f6f2a339e8c738394f7/func_bk-1.5.0.tar.gz
+[2024-06-01 15:00:43] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-06-01 15:00:43] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.3.7.tar.gz tmp/func_bk-1.5.0.tar.gz --markdown 20240601/f/func-bk/1.3.7-1.5.0/README.md --exclude *.pyd
+[2024-06-01 15:00:43] INFO root fetch - processPackages [heflwr]: Downloading https://files.pythonhosted.org/packages/ff/d1/711071a08942c6d3683c2143decdec6e12cd29721e9df83b91681be0ee00/heflwr-0.1.6.tar.gz
+[2024-06-01 15:00:43] INFO root fetch - processPackages [heflwr]: executing diffoscope
+[2024-06-01 15:00:43] INFO root fetch - processPackages [heflwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heflwr-0.1.5.tar.gz tmp/heflwr-0.1.6.tar.gz --markdown 20240601/h/heflwr/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 15:00:43] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.3.7.tar.gz]
+[2024-06-01 15:00:43] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.0.tar.gz]
+[2024-06-01 15:00:43] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-06-01 15:00:44] INFO root fetch - processPackages [heflwr]: Remove: archive file [/home/abi/fetcher/tmp/heflwr-0.1.5.tar.gz]
+[2024-06-01 15:00:44] INFO root fetch - processPackages [heflwr]: Remove: archive file [/home/abi/fetcher/tmp/heflwr-0.1.6.tar.gz]
+[2024-06-01 15:00:44] INFO root fetch - main [MainThread]: End processing [heflwr]: success
+[2024-06-01 15:00:44] INFO root fetch - main [MainThread]: Store serial: [23480237]
