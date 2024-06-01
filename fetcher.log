@@ -13891,3 +13891,17 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:41:19] INFO root fetch - processPackages [menuchoice]: Remove: archive file [/home/abi/fetcher/tmp/menuchoice-0.5.tar.gz]
 [2024-06-01 11:41:19] INFO root fetch - main [MainThread]: End processing [menuchoice]: success
 [2024-06-01 11:41:19] INFO root fetch - main [MainThread]: Store serial: [23479115]
+[2024-06-01 11:43:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479115]
+[2024-06-01 11:43:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 11:45:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479115]
+[2024-06-01 11:45:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 11:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tanjiro
+[2024-06-01 11:45:34] INFO root fetch - processPackages [tanjiro]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-06-01 11:45:34] INFO root fetch - processPackages [tanjiro]: Downloading https://files.pythonhosted.org/packages/a4/29/9bf286627233def81ab1192e5529cfeae82cabba9071255c41860a5032ee/tanjiro-0.2.0.tar.gz
+[2024-06-01 11:45:35] INFO root fetch - processPackages [tanjiro]: Downloading https://files.pythonhosted.org/packages/be/00/626e16ccc243999d79e3cdfac963d2164e6020048d68694b22fc992ef4d1/tanjiro-0.2.2.tar.gz
+[2024-06-01 11:45:35] INFO root fetch - processPackages [tanjiro]: executing diffoscope
+[2024-06-01 11:45:35] INFO root fetch - processPackages [tanjiro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tanjiro-0.2.0.tar.gz tmp/tanjiro-0.2.2.tar.gz --markdown 20240601/t/tanjiro/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-06-01 11:45:35] INFO root fetch - processPackages [tanjiro]: Remove: archive file [/home/abi/fetcher/tmp/tanjiro-0.2.0.tar.gz]
+[2024-06-01 11:45:35] INFO root fetch - processPackages [tanjiro]: Remove: archive file [/home/abi/fetcher/tmp/tanjiro-0.2.2.tar.gz]
+[2024-06-01 11:45:35] INFO root fetch - main [MainThread]: End processing [tanjiro]: success
+[2024-06-01 11:45:35] INFO root fetch - main [MainThread]: Store serial: [23479118]
