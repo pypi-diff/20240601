@@ -18783,3 +18783,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:42:10] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.8.tar.gz]
 [2024-06-01 17:42:10] INFO root fetch - main [MainThread]: End processing [cdps]: success
 [2024-06-01 17:42:10] INFO root fetch - main [MainThread]: Store serial: [23481457]
+[2024-06-01 17:44:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481457]
+[2024-06-01 17:44:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 17:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrotgfork
+[2024-06-01 17:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-out
+[2024-06-01 17:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pucoti
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pucoti]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/0f/0a/4f3292fdcdbabdfa61f31a9dcbc6759e87285e17a2da47e14cea8a004bb3/pucoti-0.2.0.tar.gz
+[2024-06-01 17:44:19] INFO root fetch - processPackages [simple-out]: New version: [0.3] Old Version: [0.1]
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pyrotgfork]: New version: [2.1.32.3] Old Version: [2.1.32.2]
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/5e/7d/f2724f245934321e7ebf1263179c3a1942f59e40619371f24da94a8d8d36/pyrotgfork-2.1.32.2.tar.gz
+[2024-06-01 17:44:19] INFO root fetch - processPackages [simple-out]: Downloading https://files.pythonhosted.org/packages/50/7e/6dc1ea3e83fb4aea7bd291497d9e46111d4e7954e2aff9fb5eeabbb36168/simple_out-0.1.tar.gz
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/38/bd/8eccdce4dc7ab29d42cfce322617496e1ad8b6e0e2b64754444c567fe5c6/pucoti-0.3.0.tar.gz
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pucoti]: executing diffoscope
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pucoti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pucoti-0.2.0.tar.gz tmp/pucoti-0.3.0.tar.gz --markdown 20240601/p/pucoti/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 17:44:19] INFO root fetch - processPackages [simple-out]: Downloading https://files.pythonhosted.org/packages/70/fa/3e87f74830a5ebed3d62342c512d0a06ca9b53f53dda8916a51ae07aee8d/simple_out-0.3.tar.gz
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/6e/e0/9b79e04927b542b50b1413845349b4f7a8d6195afca48268b409e12ab7b0/pyrotgfork-2.1.32.3.tar.gz
+[2024-06-01 17:44:19] INFO root fetch - processPackages [simple-out]: executing diffoscope
+[2024-06-01 17:44:19] INFO root fetch - processPackages [simple-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_out-0.1.tar.gz tmp/simple_out-0.3.tar.gz --markdown 20240601/s/simple-out/0.1-0.3/README.md --exclude *.pyd
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pyrotgfork]: executing diffoscope
+[2024-06-01 17:44:19] INFO root fetch - processPackages [pyrotgfork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotgfork-2.1.32.2.tar.gz tmp/pyrotgfork-2.1.32.3.tar.gz --markdown 20240601/p/pyrotgfork/2.1.32.2-2.1.32.3/README.md --exclude *.pyd
+[2024-06-01 17:44:20] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.2.0.tar.gz]
+[2024-06-01 17:44:20] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.3.0.tar.gz]
+[2024-06-01 17:44:20] INFO root fetch - main [MainThread]: End processing [pucoti]: success
+[2024-06-01 17:44:20] INFO root fetch - processPackages [simple-out]: Remove: archive file [/home/abi/fetcher/tmp/simple_out-0.1.tar.gz]
+[2024-06-01 17:44:20] INFO root fetch - processPackages [simple-out]: Remove: archive file [/home/abi/fetcher/tmp/simple_out-0.3.tar.gz]
+[2024-06-01 17:44:20] INFO root fetch - main [MainThread]: End processing [simple-out]: success
+[2024-06-01 17:44:22] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.32.2.tar.gz]
+[2024-06-01 17:44:22] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.32.3.tar.gz]
+[2024-06-01 17:44:22] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
+[2024-06-01 17:44:22] INFO root fetch - main [MainThread]: Store serial: [23481483]
