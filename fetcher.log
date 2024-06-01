@@ -8045,3 +8045,51 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 03:56:11] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-06-01 03:56:11] INFO root fetch - main [MainThread]: End processing [composabl-train-dev]: success
 [2024-06-01 03:56:11] INFO root fetch - main [MainThread]: Store serial: [23476215]
+[2024-06-01 03:58:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476215]
+[2024-06-01 03:58:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eppo-server-sdk
+[2024-06-01 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composio-lyzr
+[2024-06-01 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: event-stream
+[2024-06-01 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-loom
+[2024-06-01 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-openai
+[2024-06-01 03:58:30] INFO root fetch - processPackages [dbt-loom]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-06-01 03:58:30] INFO root fetch - processPackages [composio-lyzr]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-01 03:58:30] INFO root fetch - processPackages [eppo-server-sdk]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-06-01 03:58:30] INFO root fetch - processPackages [event-stream]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-06-01 03:58:30] INFO root fetch - processPackages [composio-openai]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-06-01 03:58:30] INFO root fetch - processPackages [dbt-loom]: Downloading https://files.pythonhosted.org/packages/63/34/3d9713592f921fa43874416adf3489a5878a001afa9a888c50ac3f83313d/dbt_loom-0.5.3.tar.gz
+[2024-06-01 03:58:30] INFO root fetch - processPackages [composio-lyzr]: Downloading https://files.pythonhosted.org/packages/c7/b9/f42640f037d12cd5485ddb9fec14abcfb6d8196f5ee62984b9e5f201c31a/composio_lyzr-0.3.5.tar.gz
+[2024-06-01 03:58:30] INFO root fetch - processPackages [composio-openai]: Downloading https://files.pythonhosted.org/packages/03/7c/a427ed416decd57fc3cd23096f90dacabc2b3fc23b827955bba8e23961f9/composio_openai-0.3.5.tar.gz
+[2024-06-01 03:58:30] INFO root fetch - processPackages [event-stream]: Downloading https://files.pythonhosted.org/packages/2b/75/0d11951fb1a37fe61fc37b884ba3b1df8de373fcfd0d4c9976c542ff0daa/event_stream-1.6.0.tar.gz
+[2024-06-01 03:58:30] INFO root fetch - processPackages [eppo-server-sdk]: Downloading https://files.pythonhosted.org/packages/66/f3/2217bd47d385920dac48508e2d3f8a8a60c7f836be1a35534a00f1212a1c/eppo_server_sdk-3.1.0.tar.gz
+[2024-06-01 03:58:31] INFO root fetch - processPackages [dbt-loom]: Downloading https://files.pythonhosted.org/packages/83/e2/554b90eb5c65715a3756ccdcdc77bc6724f03c1064ea20b7a6d050f4d32f/dbt_loom-0.5.4.tar.gz
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-lyzr]: Downloading https://files.pythonhosted.org/packages/dc/48/4b95008fe41b47428887341e0c095ca6593221ceec9264c6f83a1e4f3280/composio_lyzr-0.3.6.tar.gz
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-openai]: Downloading https://files.pythonhosted.org/packages/b9/f4/3f94885826710f80ddceaab04b18266b286c16013a64816bd10fe8bb55fe/composio_openai-0.3.6.tar.gz
+[2024-06-01 03:58:31] INFO root fetch - processPackages [eppo-server-sdk]: Downloading https://files.pythonhosted.org/packages/6b/1a/3873b299606489ae587f1aca494bc79f1430d0d1fe7b1aaf2eeeaf0ec902/eppo_server_sdk-3.1.1.tar.gz
+[2024-06-01 03:58:31] INFO root fetch - processPackages [event-stream]: Downloading https://files.pythonhosted.org/packages/e2/fd/71c30395fcd91199acf00f0a96dbaa838def2c3e2717f0cae0e265d3d943/event_stream-1.6.1.tar.gz
+[2024-06-01 03:58:31] INFO root fetch - processPackages [dbt-loom]: executing diffoscope
+[2024-06-01 03:58:31] INFO root fetch - processPackages [dbt-loom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_loom-0.5.3.tar.gz tmp/dbt_loom-0.5.4.tar.gz --markdown 20240601/d/dbt-loom/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-lyzr]: executing diffoscope
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-lyzr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_lyzr-0.3.5.tar.gz tmp/composio_lyzr-0.3.6.tar.gz --markdown 20240601/c/composio-lyzr/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-openai]: executing diffoscope
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_openai-0.3.5.tar.gz tmp/composio_openai-0.3.6.tar.gz --markdown 20240601/c/composio-openai/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-06-01 03:58:31] INFO root fetch - processPackages [eppo-server-sdk]: executing diffoscope
+[2024-06-01 03:58:31] INFO root fetch - processPackages [eppo-server-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eppo_server_sdk-3.1.0.tar.gz tmp/eppo_server_sdk-3.1.1.tar.gz --markdown 20240601/e/eppo-server-sdk/3.1.0-3.1.1/README.md --exclude *.pyd
+[2024-06-01 03:58:31] INFO root fetch - processPackages [event-stream]: executing diffoscope
+[2024-06-01 03:58:31] INFO root fetch - processPackages [event-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/event_stream-1.6.0.tar.gz tmp/event_stream-1.6.1.tar.gz --markdown 20240601/e/event-stream/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-openai]: Remove: archive file [/home/abi/fetcher/tmp/composio_openai-0.3.5.tar.gz]
+[2024-06-01 03:58:31] INFO root fetch - processPackages [composio-openai]: Remove: archive file [/home/abi/fetcher/tmp/composio_openai-0.3.6.tar.gz]
+[2024-06-01 03:58:31] INFO root fetch - main [MainThread]: End processing [composio-openai]: success
+[2024-06-01 03:58:31] INFO root fetch - processPackages [dbt-loom]: Remove: archive file [/home/abi/fetcher/tmp/dbt_loom-0.5.3.tar.gz]
+[2024-06-01 03:58:31] INFO root fetch - processPackages [dbt-loom]: Remove: archive file [/home/abi/fetcher/tmp/dbt_loom-0.5.4.tar.gz]
+[2024-06-01 03:58:31] INFO root fetch - main [MainThread]: End processing [dbt-loom]: success
+[2024-06-01 03:58:32] INFO root fetch - processPackages [event-stream]: Remove: archive file [/home/abi/fetcher/tmp/event_stream-1.6.0.tar.gz]
+[2024-06-01 03:58:32] INFO root fetch - processPackages [event-stream]: Remove: archive file [/home/abi/fetcher/tmp/event_stream-1.6.1.tar.gz]
+[2024-06-01 03:58:32] INFO root fetch - main [MainThread]: End processing [event-stream]: success
+[2024-06-01 03:58:32] INFO root fetch - processPackages [eppo-server-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eppo_server_sdk-3.1.0.tar.gz]
+[2024-06-01 03:58:32] INFO root fetch - processPackages [eppo-server-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eppo_server_sdk-3.1.1.tar.gz]
+[2024-06-01 03:58:32] INFO root fetch - main [MainThread]: End processing [eppo-server-sdk]: success
+[2024-06-01 03:58:32] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.5.tar.gz]
+[2024-06-01 03:58:32] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.6.tar.gz]
+[2024-06-01 03:58:32] INFO root fetch - main [MainThread]: End processing [composio-lyzr]: success
+[2024-06-01 03:58:32] INFO root fetch - main [MainThread]: Store serial: [23476300]
