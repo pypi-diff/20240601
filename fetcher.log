@@ -16905,3 +16905,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:34:18] INFO root fetch - processPackages [remayn]: Remove: archive file [/home/abi/fetcher/tmp/remayn-1.0.5.tar.gz]
 [2024-06-01 15:34:18] INFO root fetch - main [MainThread]: End processing [remayn]: success
 [2024-06-01 15:34:18] INFO root fetch - main [MainThread]: Store serial: [23480452]
+[2024-06-01 15:36:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480452]
+[2024-06-01 15:36:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 15:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VisionKAN
+[2024-06-01 15:36:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: voxelworldapi
+[2024-06-01 15:36:27] INFO root fetch - processPackages [voxelworldapi]: New version: [1.6.320240531] Old Version: [1.31.post20240601]
+[2024-06-01 15:36:27] INFO root fetch - processPackages [VisionKAN]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 15:36:27] INFO root fetch - processPackages [voxelworldapi]: Downloading https://files.pythonhosted.org/packages/ce/35/f8ea5577c9ba60f171878e110cc0b45c8f0d0e90cb5b6013a0be0de504d5/voxelworldapi-1.31.post20240601.tar.gz
+[2024-06-01 15:36:27] INFO root fetch - processPackages [VisionKAN]: Downloading https://files.pythonhosted.org/packages/50/a5/deaf55ed3018fc431cb127cddcc61d8e946f1dd9f085cb1c8efbcc2ac282/visionkan-0.0.6.tar.gz
+[2024-06-01 15:36:27] INFO root fetch - processPackages [voxelworldapi]: Downloading https://files.pythonhosted.org/packages/ea/a0/35e05e43452774767866586de1ed87db1e50ad2fdd2f4a6029e36493b9c9/voxelworldapi-1.6.320240531.tar.gz
+[2024-06-01 15:36:27] INFO root fetch - processPackages [voxelworldapi]: executing diffoscope
+[2024-06-01 15:36:27] INFO root fetch - processPackages [voxelworldapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voxelworldapi-1.31.post20240601.tar.gz tmp/voxelworldapi-1.6.320240531.tar.gz --markdown 20240601/v/voxelworldapi/1.31.post20240601-1.6.320240531/README.md --exclude *.pyd
+[2024-06-01 15:36:28] INFO root fetch - processPackages [VisionKAN]: Downloading https://files.pythonhosted.org/packages/13/35/b7a6eefa67c9d7393f6af82c04ed774ed401dfeb07c76cda68a467fbc63e/visionkan-0.0.7.tar.gz
+[2024-06-01 15:36:28] INFO root fetch - processPackages [VisionKAN]: executing diffoscope
+[2024-06-01 15:36:28] INFO root fetch - processPackages [VisionKAN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visionkan-0.0.6.tar.gz tmp/visionkan-0.0.7.tar.gz --markdown 20240601/V/VisionKAN/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 15:36:28] INFO root fetch - processPackages [voxelworldapi]: Remove: archive file [/home/abi/fetcher/tmp/voxelworldapi-1.31.post20240601.tar.gz]
+[2024-06-01 15:36:28] INFO root fetch - processPackages [voxelworldapi]: Remove: archive file [/home/abi/fetcher/tmp/voxelworldapi-1.6.320240531.tar.gz]
+[2024-06-01 15:36:28] INFO root fetch - main [MainThread]: End processing [voxelworldapi]: success
+[2024-06-01 15:36:28] INFO root fetch - processPackages [VisionKAN]: Remove: archive file [/home/abi/fetcher/tmp/visionkan-0.0.6.tar.gz]
+[2024-06-01 15:36:28] INFO root fetch - processPackages [VisionKAN]: Remove: archive file [/home/abi/fetcher/tmp/visionkan-0.0.7.tar.gz]
+[2024-06-01 15:36:28] INFO root fetch - main [MainThread]: End processing [VisionKAN]: success
+[2024-06-01 15:36:28] INFO root fetch - main [MainThread]: Store serial: [23480458]
