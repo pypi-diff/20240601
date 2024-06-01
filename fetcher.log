@@ -13276,3 +13276,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:57:13] INFO root fetch - processPackages [xnote-web]: Remove: archive file [/home/abi/fetcher/tmp/xnote-web-0.1.1.tar.gz]
 [2024-06-01 10:57:13] INFO root fetch - main [MainThread]: End processing [xnote-web]: success
 [2024-06-01 10:57:13] INFO root fetch - main [MainThread]: Store serial: [23478850]
+[2024-06-01 10:59:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478850]
+[2024-06-01 10:59:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 10:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rencrypt
+[2024-06-01 10:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swibots
+[2024-06-01 10:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: XTestRunner
+[2024-06-01 10:59:24] INFO root fetch - processPackages [swibots]: New version: [1.4.9b0] Old Version: [1.4.9]
+[2024-06-01 10:59:24] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/ab/ad/e9fb4e6104646710bdb7ad640c25bec37453f90d223979930a44f7c8f72e/swibots-1.4.9-py3-none-any.whl
+[2024-06-01 10:59:24] WARNING root fetch - processPackages [rencrypt]: Skipping, unable to determine old version
+[2024-06-01 10:59:24] INFO root fetch - main [MainThread]: End processing [rencrypt] error
+[2024-06-01 10:59:24] INFO root fetch - processPackages [XTestRunner]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-06-01 10:59:24] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/1a/29/9d4e43dad7e195938372caf1ec2d82ce234bb157328ce98870071d36f923/swibots-1.4.9b0-py3-none-any.whl
+[2024-06-01 10:59:24] INFO root fetch - processPackages [swibots]: executing diffoscope
+[2024-06-01 10:59:24] INFO root fetch - processPackages [swibots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swibots-1.4.9-py3-none-any.whl.zip tmp/swibots-1.4.9b0-py3-none-any.whl.zip --markdown 20240601/s/swibots/1.4.9-1.4.9b0/README.md --exclude *.pyd
+[2024-06-01 10:59:24] INFO root fetch - processPackages [XTestRunner]: Downloading https://files.pythonhosted.org/packages/95/d3/6c956d135b0a4ff064a9820b06184e95039520b988158bb0466cddf9bfc7/xtestrunner-1.7.1.tar.gz
+[2024-06-01 10:59:25] INFO root fetch - processPackages [XTestRunner]: Downloading https://files.pythonhosted.org/packages/4e/8f/884d96f72d27645b9b190f375110639c91ac50943e20107dad7a69298b57/xtestrunner-1.7.2.tar.gz
+[2024-06-01 10:59:25] INFO root fetch - processPackages [XTestRunner]: executing diffoscope
+[2024-06-01 10:59:25] INFO root fetch - processPackages [XTestRunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtestrunner-1.7.1.tar.gz tmp/xtestrunner-1.7.2.tar.gz --markdown 20240601/X/XTestRunner/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-06-01 10:59:26] INFO root fetch - processPackages [XTestRunner]: Remove: archive file [/home/abi/fetcher/tmp/xtestrunner-1.7.1.tar.gz]
+[2024-06-01 10:59:26] INFO root fetch - processPackages [XTestRunner]: Remove: archive file [/home/abi/fetcher/tmp/xtestrunner-1.7.2.tar.gz]
+[2024-06-01 10:59:26] INFO root fetch - main [MainThread]: End processing [XTestRunner]: success
+[2024-06-01 10:59:26] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9-py3-none-any.whl.zip]
+[2024-06-01 10:59:26] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
+[2024-06-01 10:59:26] INFO root fetch - main [MainThread]: End processing [swibots]: success
+[2024-06-01 10:59:26] INFO root fetch - main [MainThread]: Store serial: [23478861]
