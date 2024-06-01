@@ -19771,3 +19771,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:49:50] INFO root fetch - processPackages [Flask-Inputs]: Remove: archive file [/home/abi/fetcher/tmp/flask_inputs-1.0.0.tar.gz]
 [2024-06-01 18:49:50] INFO root fetch - main [MainThread]: End processing [Flask-Inputs]: success
 [2024-06-01 18:49:50] INFO root fetch - main [MainThread]: Store serial: [23481903]
+[2024-06-01 18:51:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481903]
+[2024-06-01 18:51:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 18:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myfunctions-ysakova90
+[2024-06-01 18:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mintlemon-turkish-nlp
+[2024-06-01 18:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: picoquake
+[2024-06-01 18:51:59] INFO root fetch - processPackages [myfunctions-ysakova90]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-01 18:51:59] INFO root fetch - processPackages [mintlemon-turkish-nlp]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-06-01 18:51:59] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/08/01/1632651f21af57f6b0cd3e694f8682f8f7696228b8885dcbdf936fb1e1c6/mintlemon-turkish-nlp-0.3.0.tar.gz
+[2024-06-01 18:51:59] INFO root fetch - processPackages [myfunctions-ysakova90]: Downloading https://files.pythonhosted.org/packages/36/67/26196e9fc4556e62d94cfecb8893f5624669815ba3ae181969a07bb71561/myfunctions_ysakova90-0.0.5.tar.gz
+[2024-06-01 18:51:59] INFO root fetch - processPackages [picoquake]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 18:51:59] INFO root fetch - processPackages [picoquake]: Downloading https://files.pythonhosted.org/packages/85/bb/374df0a85baf736570c6342c7bd89ee08e9cc8ccdbdb51635df0de7a8cb0/picoquake-1.0.3.tar.gz
+[2024-06-01 18:51:59] INFO root fetch - processPackages [myfunctions-ysakova90]: Downloading https://files.pythonhosted.org/packages/70/f2/2292da9440c21c2b7d2362533e6db7fedd9762ac8427fe7c098e71794a38/myfunctions_ysakova90-0.0.6.tar.gz
+[2024-06-01 18:51:59] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/3f/41/1e0e5d0f7d95db4aa83b118561f08c411123b54b85434fe30272aa131770/mintlemon-turkish-nlp-0.3.1.tar.gz
+[2024-06-01 18:51:59] INFO root fetch - processPackages [myfunctions-ysakova90]: executing diffoscope
+[2024-06-01 18:51:59] INFO root fetch - processPackages [myfunctions-ysakova90]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_ysakova90-0.0.5.tar.gz tmp/myfunctions_ysakova90-0.0.6.tar.gz --markdown 20240601/m/myfunctions-ysakova90/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-01 18:51:59] INFO root fetch - processPackages [mintlemon-turkish-nlp]: executing diffoscope
+[2024-06-01 18:51:59] INFO root fetch - processPackages [mintlemon-turkish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mintlemon-turkish-nlp-0.3.0.tar.gz tmp/mintlemon-turkish-nlp-0.3.1.tar.gz --markdown 20240601/m/mintlemon-turkish-nlp/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-06-01 18:51:59] INFO root fetch - processPackages [picoquake]: Downloading https://files.pythonhosted.org/packages/08/13/a44927d01f343fc3500bea155463e6366a54249c441271c0b4026d18276a/picoquake-1.0.4.tar.gz
+[2024-06-01 18:51:59] INFO root fetch - processPackages [picoquake]: executing diffoscope
+[2024-06-01 18:51:59] INFO root fetch - processPackages [picoquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picoquake-1.0.3.tar.gz tmp/picoquake-1.0.4.tar.gz --markdown 20240601/p/picoquake/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 18:52:00] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.5.tar.gz]
+[2024-06-01 18:52:00] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.6.tar.gz]
+[2024-06-01 18:52:00] INFO root fetch - main [MainThread]: End processing [myfunctions-ysakova90]: success
+[2024-06-01 18:52:00] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.3.0.tar.gz]
+[2024-06-01 18:52:00] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.3.1.tar.gz]
+[2024-06-01 18:52:00] INFO root fetch - main [MainThread]: End processing [mintlemon-turkish-nlp]: success
+[2024-06-01 18:52:00] INFO root fetch - processPackages [picoquake]: Remove: archive file [/home/abi/fetcher/tmp/picoquake-1.0.3.tar.gz]
+[2024-06-01 18:52:00] INFO root fetch - processPackages [picoquake]: Remove: archive file [/home/abi/fetcher/tmp/picoquake-1.0.4.tar.gz]
+[2024-06-01 18:52:00] INFO root fetch - main [MainThread]: End processing [picoquake]: success
+[2024-06-01 18:52:00] INFO root fetch - main [MainThread]: Store serial: [23481914]
