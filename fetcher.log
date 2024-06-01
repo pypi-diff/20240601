@@ -16959,3 +16959,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:38:40] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.1.tar.gz]
 [2024-06-01 15:38:40] INFO root fetch - main [MainThread]: End processing [ponytail-agents]: success
 [2024-06-01 15:38:40] INFO root fetch - main [MainThread]: Store serial: [23480472]
+[2024-06-01 15:40:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480472]
+[2024-06-01 15:40:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voxelworldapi
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ponytail-agents
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: browserxt
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyaicodingcube
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ponytail-agents]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 15:40:50] INFO root fetch - processPackages [pyaicodingcube]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 15:40:50] INFO root fetch - processPackages [browserxt]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-06-01 15:40:50] INFO root fetch - processPackages [voxelworldapi]: New version: [1.6.320240531] Old Version: [1.32.post20240601]
+[2024-06-01 15:40:50] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/05/1c/a2fd49fae179229acf7eac6542e27a862b9cdf5adf934bfe24837ab1700f/pyaicodingcube-0.0.1.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ponytail-agents]: Downloading https://files.pythonhosted.org/packages/39/55/a22fe28bf596217c0f3ad013eee5d0c227101f531a8f5f6aa5bd5b6abca1/ponytail-agents-0.1.1.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [voxelworldapi]: Downloading https://files.pythonhosted.org/packages/fe/d9/18333d3ea735f7bf8a8629bc203971c7af0d21dcb9eba0f8a66eb8cf0732/voxelworldapi-1.32.post20240601.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/75/9b/387f2601505bc2abc795218c90af0b147d9793bbdfac57cbfbbe03caa081/browserxt-0.1.2.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/00/97/d79de1b65e4fc3b823dfe0cb892c8a8fcf1783b324f200dcbd29ef72b2ba/pyaicodingcube-0.0.2.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [voxelworldapi]: Downloading https://files.pythonhosted.org/packages/ea/a0/35e05e43452774767866586de1ed87db1e50ad2fdd2f4a6029e36493b9c9/voxelworldapi-1.6.320240531.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ponytail-agents]: Downloading https://files.pythonhosted.org/packages/1a/45/2eec4bd5662352cec96f7c168eadd0a8922fc3c21756b2f7f0b95376f0c9/ponytail-agents-0.1.2.tar.gz
+[2024-06-01 15:40:50] INFO root fetch - processPackages [pyaicodingcube]: executing diffoscope
+[2024-06-01 15:40:50] INFO root fetch - processPackages [pyaicodingcube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaicodingcube-0.0.1.tar.gz tmp/pyaicodingcube-0.0.2.tar.gz --markdown 20240601/p/pyaicodingcube/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 15:40:50] INFO root fetch - processPackages [voxelworldapi]: executing diffoscope
+[2024-06-01 15:40:50] INFO root fetch - processPackages [voxelworldapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voxelworldapi-1.32.post20240601.tar.gz tmp/voxelworldapi-1.6.320240531.tar.gz --markdown 20240601/v/voxelworldapi/1.32.post20240601-1.6.320240531/README.md --exclude *.pyd
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ponytail-agents]: executing diffoscope
+[2024-06-01 15:40:50] INFO root fetch - processPackages [ponytail-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ponytail-agents-0.1.1.tar.gz tmp/ponytail-agents-0.1.2.tar.gz --markdown 20240601/p/ponytail-agents/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 15:40:50] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/04/c7/b5912231e83da583a4c8ebe411ce500755539bafb7835f7ce4af6a6c24d3/browserxt-0.1.4.tar.gz
+[2024-06-01 15:40:51] INFO root fetch - processPackages [browserxt]: executing diffoscope
+[2024-06-01 15:40:51] INFO root fetch - processPackages [browserxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserxt-0.1.2.tar.gz tmp/browserxt-0.1.4.tar.gz --markdown 20240601/b/browserxt/0.1.2-0.1.4/README.md --exclude *.pyd
+[2024-06-01 15:40:51] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.1.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.2.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - main [MainThread]: End processing [pyaicodingcube]: success
+[2024-06-01 15:40:51] INFO root fetch - processPackages [voxelworldapi]: Remove: archive file [/home/abi/fetcher/tmp/voxelworldapi-1.32.post20240601.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - processPackages [voxelworldapi]: Remove: archive file [/home/abi/fetcher/tmp/voxelworldapi-1.6.320240531.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - main [MainThread]: End processing [voxelworldapi]: success
+[2024-06-01 15:40:51] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.2.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.4.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - main [MainThread]: End processing [browserxt]: success
+[2024-06-01 15:40:51] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.1.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - processPackages [ponytail-agents]: Remove: archive file [/home/abi/fetcher/tmp/ponytail-agents-0.1.2.tar.gz]
+[2024-06-01 15:40:51] INFO root fetch - main [MainThread]: End processing [ponytail-agents]: success
+[2024-06-01 15:40:51] INFO root fetch - main [MainThread]: Store serial: [23480483]
