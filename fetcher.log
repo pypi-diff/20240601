@@ -11667,3 +11667,26 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:49:48] INFO root fetch - processPackages [redcoffee]: Remove: archive file [/home/abi/fetcher/tmp/redcoffee-0.2.tar.gz]
 [2024-06-01 08:49:48] INFO root fetch - main [MainThread]: End processing [redcoffee]: success
 [2024-06-01 08:49:48] INFO root fetch - main [MainThread]: Store serial: [23477938]
+[2024-06-01 08:51:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477938]
+[2024-06-01 08:51:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 08:53:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477938]
+[2024-06-01 08:54:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 08:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: espy-contact
+[2024-06-01 08:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lckytools
+[2024-06-01 08:54:04] INFO root fetch - processPackages [espy-contact]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-06-01 08:54:04] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/44/26/00cdd114fc57f9755eb2a7404fdbac1b49b6ded9f2e3d6815f6319ffe03d/espy_contact-2.0.6.tar.gz
+[2024-06-01 08:54:05] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/47/f3/1eb60a14e8d50f6755acf26fab6ac641e07a59774e6ba709f2668160ca2c/espy_contact-2.0.7.tar.gz
+[2024-06-01 08:54:05] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-06-01 08:54:05] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.6.tar.gz tmp/espy_contact-2.0.7.tar.gz --markdown 20240601/e/espy-contact/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-06-01 08:54:05] INFO root fetch - processPackages [lckytools]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-06-01 08:54:05] INFO root fetch - processPackages [lckytools]: Downloading https://files.pythonhosted.org/packages/32/87/6919f602b2d930da1130e471770541db40ed561db6cf403688f591ee289c/lckytools-0.0.0a8.tar.gz
+[2024-06-01 08:54:05] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.6.tar.gz]
+[2024-06-01 08:54:05] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.7.tar.gz]
+[2024-06-01 08:54:05] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-06-01 08:54:05] INFO root fetch - processPackages [lckytools]: Downloading https://files.pythonhosted.org/packages/58/b4/76a808942400823f951edef5f1ed63b459873a985a8544794218b4f273ee/lckytools-0.0.0a9.tar.gz
+[2024-06-01 08:54:05] INFO root fetch - processPackages [lckytools]: executing diffoscope
+[2024-06-01 08:54:05] INFO root fetch - processPackages [lckytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lckytools-0.0.0a8.tar.gz tmp/lckytools-0.0.0a9.tar.gz --markdown 20240601/l/lckytools/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-06-01 08:54:06] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a8.tar.gz]
+[2024-06-01 08:54:06] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a9.tar.gz]
+[2024-06-01 08:54:06] INFO root fetch - main [MainThread]: End processing [lckytools]: success
+[2024-06-01 08:54:06] INFO root fetch - main [MainThread]: Store serial: [23477943]
