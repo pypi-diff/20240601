@@ -16582,3 +16582,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 15:11:34] INFO root fetch - processPackages [wwpdb.apps.ann-tasks-v2]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_ann_tasks_v2-0.37.5.tar.gz]
 [2024-06-01 15:11:34] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.ann-tasks-v2]: success
 [2024-06-01 15:11:34] INFO root fetch - main [MainThread]: Store serial: [23480298]
+[2024-06-01 15:13:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480298]
+[2024-06-01 15:13:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 15:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipenv-poetry-migrate
+[2024-06-01 15:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upstage
+[2024-06-01 15:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FLUTE-LLM
+[2024-06-01 15:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zabbix-cachet
+[2024-06-01 15:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wwpdb.apps.editormodule
+[2024-06-01 15:13:43] INFO root fetch - processPackages [pipenv-poetry-migrate]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-06-01 15:13:43] INFO root fetch - processPackages [FLUTE-LLM]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-06-01 15:13:43] INFO root fetch - processPackages [zabbix-cachet]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-06-01 15:13:43] WARNING root fetch - processPackages [upstage]: Skipping, unable to determine old version
+[2024-06-01 15:13:43] INFO root fetch - main [MainThread]: End processing [upstage] error
+[2024-06-01 15:13:43] INFO root fetch - processPackages [wwpdb.apps.editormodule]: New version: [0.19] Old Version: [0.18.1]
+[2024-06-01 15:13:43] INFO root fetch - processPackages [FLUTE-LLM]: Downloading https://files.pythonhosted.org/packages/a4/cf/1faee26ad712dc334721af1bb916dc4197958ba772f098bee62936df5f63/FLUTE-LLM-0.1.4.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [pipenv-poetry-migrate]: Downloading https://files.pythonhosted.org/packages/8c/38/967ca64a64c020a68b21f65c40560fbb0fa2fad1838f37d0ae9c49199e5f/pipenv_poetry_migrate-0.5.6.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [zabbix-cachet]: Downloading https://files.pythonhosted.org/packages/9c/47/7fcfa5553a6dd6b2b826458d9940b1747d3fffd9b1e24d577d4a31b3709c/zabbix_cachet-2.1.1.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Downloading https://files.pythonhosted.org/packages/c2/dd/4c57be01a58f88327d3013dab7eb7e27ef6e13d2faed81d72c86b7462094/wwpdb_apps_editormodule-0.18.1.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [FLUTE-LLM]: Downloading https://files.pythonhosted.org/packages/ac/00/44d6e314c87a1a4d0b32f2175ee2df61899de193709c1385e381b459ecac/FLUTE-LLM-0.1.5.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [pipenv-poetry-migrate]: Downloading https://files.pythonhosted.org/packages/e1/ad/b1b8b15c3e43ceb34b79886de3b5bfa803408bab377010ba205dc0dbe902/pipenv_poetry_migrate-0.5.7.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [zabbix-cachet]: Downloading https://files.pythonhosted.org/packages/1b/19/83aa2d1682a671566e525f62cd2d9de6418ef2532dbd8e7fbe1925ea7c89/zabbix_cachet-2.1.2.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [FLUTE-LLM]: executing diffoscope
+[2024-06-01 15:13:43] INFO root fetch - processPackages [FLUTE-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FLUTE-LLM-0.1.4.tar.gz tmp/FLUTE-LLM-0.1.5.tar.gz --markdown 20240601/F/FLUTE-LLM/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-06-01 15:13:43] INFO root fetch - processPackages [pipenv-poetry-migrate]: executing diffoscope
+[2024-06-01 15:13:43] INFO root fetch - processPackages [pipenv-poetry-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipenv_poetry_migrate-0.5.6.tar.gz tmp/pipenv_poetry_migrate-0.5.7.tar.gz --markdown 20240601/p/pipenv-poetry-migrate/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-06-01 15:13:43] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Downloading https://files.pythonhosted.org/packages/3b/31/e7407150b7f936e4d17f7cedb52996d9d7a6b13245cdc57fa28af3ab529b/wwpdb_apps_editormodule-0.19.tar.gz
+[2024-06-01 15:13:43] INFO root fetch - processPackages [zabbix-cachet]: executing diffoscope
+[2024-06-01 15:13:43] INFO root fetch - processPackages [zabbix-cachet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zabbix_cachet-2.1.1.tar.gz tmp/zabbix_cachet-2.1.2.tar.gz --markdown 20240601/z/zabbix-cachet/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-06-01 15:13:44] INFO root fetch - processPackages [wwpdb.apps.editormodule]: executing diffoscope
+[2024-06-01 15:13:44] INFO root fetch - processPackages [wwpdb.apps.editormodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb_apps_editormodule-0.18.1.tar.gz tmp/wwpdb_apps_editormodule-0.19.tar.gz --markdown 20240601/w/wwpdb.apps.editormodule/0.18.1-0.19/README.md --exclude *.pyd
+[2024-06-01 15:13:44] INFO root fetch - processPackages [pipenv-poetry-migrate]: Remove: archive file [/home/abi/fetcher/tmp/pipenv_poetry_migrate-0.5.6.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - processPackages [pipenv-poetry-migrate]: Remove: archive file [/home/abi/fetcher/tmp/pipenv_poetry_migrate-0.5.7.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - main [MainThread]: End processing [pipenv-poetry-migrate]: success
+[2024-06-01 15:13:44] INFO root fetch - processPackages [zabbix-cachet]: Remove: archive file [/home/abi/fetcher/tmp/zabbix_cachet-2.1.1.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - processPackages [zabbix-cachet]: Remove: archive file [/home/abi/fetcher/tmp/zabbix_cachet-2.1.2.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - main [MainThread]: End processing [zabbix-cachet]: success
+[2024-06-01 15:13:44] INFO root fetch - processPackages [FLUTE-LLM]: Remove: archive file [/home/abi/fetcher/tmp/FLUTE-LLM-0.1.4.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - processPackages [FLUTE-LLM]: Remove: archive file [/home/abi/fetcher/tmp/FLUTE-LLM-0.1.5.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - main [MainThread]: End processing [FLUTE-LLM]: success
+[2024-06-01 15:13:44] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_editormodule-0.18.1.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_apps_editormodule-0.19.tar.gz]
+[2024-06-01 15:13:44] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.editormodule]: success
+[2024-06-01 15:13:44] INFO root fetch - main [MainThread]: Store serial: [23480312]
