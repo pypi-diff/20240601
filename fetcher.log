@@ -20287,3 +20287,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:23:07] INFO root fetch - processPackages [bettermysql]: Remove: archive file [/home/abi/fetcher/tmp/bettermysql-0.0.2.tar.gz]
 [2024-06-01 19:23:07] INFO root fetch - main [MainThread]: End processing [bettermysql]: success
 [2024-06-01 19:23:07] INFO root fetch - main [MainThread]: Store serial: [23482111]
+[2024-06-01 19:25:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482111]
+[2024-06-01 19:25:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c2cciutils
+[2024-06-01 19:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coordinax
+[2024-06-01 19:25:16] INFO root fetch - processPackages [c2cciutils]: New version: [1.7.0.dev99] Old Version: [1.7.0.dev98]
+[2024-06-01 19:25:16] INFO root fetch - processPackages [coordinax]: New version: [0.5] Old Version: [0.4.3]
+[2024-06-01 19:25:16] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/62/aa/080c37692bc6af730809e32f5cb82932c00c5513d164349ff96537069e82/c2cciutils-1.7.0.dev98.tar.gz
+[2024-06-01 19:25:16] INFO root fetch - processPackages [coordinax]: Downloading https://files.pythonhosted.org/packages/41/42/79077b74778769a929e7e79717fa0e7512ceb8cb5b5d659434211025e62d/coordinax-0.4.3.tar.gz
+[2024-06-01 19:25:16] INFO root fetch - processPackages [c2cciutils]: Downloading https://files.pythonhosted.org/packages/0b/33/b4f2b2d1c9a7ae924ddcc8b7cbf69f1ed37a1a5f0faa155ac94becd05a90/c2cciutils-1.7.0.dev99.tar.gz
+[2024-06-01 19:25:16] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2024-06-01 19:25:16] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.7.0.dev98.tar.gz tmp/c2cciutils-1.7.0.dev99.tar.gz --markdown 20240601/c/c2cciutils/1.7.0.dev98-1.7.0.dev99/README.md --exclude *.pyd
+[2024-06-01 19:25:16] INFO root fetch - processPackages [coordinax]: Downloading https://files.pythonhosted.org/packages/c5/18/00b1e997aa17420f5353a44b021a0ca313f3e3de072305051b993ee8b15a/coordinax-0.5.tar.gz
+[2024-06-01 19:25:16] INFO root fetch - processPackages [coordinax]: executing diffoscope
+[2024-06-01 19:25:16] INFO root fetch - processPackages [coordinax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coordinax-0.4.3.tar.gz tmp/coordinax-0.5.tar.gz --markdown 20240601/c/coordinax/0.4.3-0.5/README.md --exclude *.pyd
+[2024-06-01 19:25:17] INFO root fetch - processPackages [c2cciutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cciutils-1.7.0.dev98.tar.gz]
+[2024-06-01 19:25:17] INFO root fetch - processPackages [c2cciutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cciutils-1.7.0.dev99.tar.gz]
+[2024-06-01 19:25:17] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2024-06-01 19:25:17] INFO root fetch - processPackages [coordinax]: Remove: archive file [/home/abi/fetcher/tmp/coordinax-0.4.3.tar.gz]
+[2024-06-01 19:25:17] INFO root fetch - processPackages [coordinax]: Remove: archive file [/home/abi/fetcher/tmp/coordinax-0.5.tar.gz]
+[2024-06-01 19:25:17] INFO root fetch - main [MainThread]: End processing [coordinax]: success
+[2024-06-01 19:25:17] INFO root fetch - main [MainThread]: Store serial: [23482117]
