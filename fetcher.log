@@ -12327,3 +12327,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:40:54] WARNING root fetch - processPackages [etherscan-pro]: Skipping, unable to determine old version
 [2024-06-01 09:40:54] INFO root fetch - main [MainThread]: End processing [etherscan-pro] error
 [2024-06-01 09:40:54] INFO root fetch - main [MainThread]: Store serial: [23478256]
+[2024-06-01 09:42:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478256]
+[2024-06-01 09:43:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 09:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freqtrade-pro
+[2024-06-01 09:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wetterdienst
+[2024-06-01 09:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: galxe-bind-twitter
+[2024-06-01 09:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GeeTestCrack
+[2024-06-01 09:43:03] WARNING root fetch - processPackages [galxe-bind-twitter]: Skipping, unable to determine old version
+[2024-06-01 09:43:03] INFO root fetch - main [MainThread]: End processing [galxe-bind-twitter] error
+[2024-06-01 09:43:03] INFO root fetch - processPackages [wetterdienst]: New version: [0.9.0] Old Version: [0.86.0]
+[2024-06-01 09:43:03] WARNING root fetch - processPackages [freqtrade-pro]: Skipping, unable to determine old version
+[2024-06-01 09:43:03] WARNING root fetch - processPackages [GeeTestCrack]: Skipping, unable to determine old version
+[2024-06-01 09:43:03] INFO root fetch - main [MainThread]: End processing [freqtrade-pro] error
+[2024-06-01 09:43:03] INFO root fetch - main [MainThread]: End processing [GeeTestCrack] error
+[2024-06-01 09:43:03] INFO root fetch - processPackages [wetterdienst]: Downloading https://files.pythonhosted.org/packages/8c/7f/26d22cb982d6f82ff255afc930940ea971a8698a4bff39610f6f60a4385e/wetterdienst-0.86.0.tar.gz
+[2024-06-01 09:43:03] INFO root fetch - processPackages [wetterdienst]: Downloading https://files.pythonhosted.org/packages/93/c1/a193d03f936306ba30a17b6df7557fb21eb06ece6da61b94796737ad977a/wetterdienst-0.9.0.tar.gz
+[2024-06-01 09:43:03] INFO root fetch - processPackages [wetterdienst]: executing diffoscope
+[2024-06-01 09:43:03] INFO root fetch - processPackages [wetterdienst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wetterdienst-0.86.0.tar.gz tmp/wetterdienst-0.9.0.tar.gz --markdown 20240601/w/wetterdienst/0.86.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 09:43:04] INFO root fetch - processPackages [wetterdienst]: Remove: archive file [/home/abi/fetcher/tmp/wetterdienst-0.86.0.tar.gz]
+[2024-06-01 09:43:04] INFO root fetch - processPackages [wetterdienst]: Remove: archive file [/home/abi/fetcher/tmp/wetterdienst-0.9.0.tar.gz]
+[2024-06-01 09:43:04] INFO root fetch - main [MainThread]: End processing [wetterdienst]: success
+[2024-06-01 09:43:04] INFO root fetch - main [MainThread]: Store serial: [23478274]
