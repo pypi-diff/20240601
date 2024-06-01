@@ -11310,3 +11310,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:10:29] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240531.tar.gz]
 [2024-06-01 08:10:29] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-06-01 08:10:29] INFO root fetch - main [MainThread]: Store serial: [23477830]
+[2024-06-01 08:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477830]
+[2024-06-01 08:12:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 08:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: komo
+[2024-06-01 08:12:38] INFO root fetch - processPackages [komo]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 08:12:38] INFO root fetch - processPackages [komo]: Downloading https://files.pythonhosted.org/packages/e5/e8/cf20243d164ff9c48e03fd5ff4c7107c6dd965947ee156ca5fb9a7b15e8b/komo-0.2.8.tar.gz
+[2024-06-01 08:12:39] INFO root fetch - processPackages [komo]: Downloading https://files.pythonhosted.org/packages/f5/f7/2ea58820646d37f896447b9e3d7ec9129d961b11ece4c7fe38608a77a70c/komo-0.2.9.tar.gz
+[2024-06-01 08:12:39] INFO root fetch - processPackages [komo]: executing diffoscope
+[2024-06-01 08:12:39] INFO root fetch - processPackages [komo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/komo-0.2.8.tar.gz tmp/komo-0.2.9.tar.gz --markdown 20240601/k/komo/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 08:12:39] INFO root fetch - processPackages [komo]: Remove: archive file [/home/abi/fetcher/tmp/komo-0.2.8.tar.gz]
+[2024-06-01 08:12:39] INFO root fetch - processPackages [komo]: Remove: archive file [/home/abi/fetcher/tmp/komo-0.2.9.tar.gz]
+[2024-06-01 08:12:39] INFO root fetch - main [MainThread]: End processing [komo]: success
+[2024-06-01 08:12:39] INFO root fetch - main [MainThread]: Store serial: [23477833]
