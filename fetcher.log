@@ -21623,3 +21623,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:55:37] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.7.tar.gz]
 [2024-06-01 20:55:37] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-06-01 20:55:37] INFO root fetch - main [MainThread]: Store serial: [23482760]
+[2024-06-01 20:57:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482760]
+[2024-06-01 20:57:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webull-options
+[2024-06-01 20:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinja2-async-environment
+[2024-06-01 20:57:46] INFO root fetch - processPackages [webull-options]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-06-01 20:57:46] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/b3/54/fa291fdf730a7d4efeba09a8c9c05580b7cece0bc2ec3c1e78e3166d4e93/webull_options-0.6.4.tar.gz
+[2024-06-01 20:57:46] INFO root fetch - processPackages [jinja2-async-environment]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-06-01 20:57:46] INFO root fetch - processPackages [jinja2-async-environment]: Downloading https://files.pythonhosted.org/packages/bd/09/d9b8181d825e10bd13de0b3a5203181e0f23872c2e651076239aa2203373/jinja2_async_environment-0.7.5.tar.gz
+[2024-06-01 20:57:46] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/03/cb/4c4f52e1eeda86014b94ed15f7735483c33ceaae19f2bd7e88625d16f6c1/webull_options-0.6.5.tar.gz
+[2024-06-01 20:57:46] INFO root fetch - processPackages [webull-options]: executing diffoscope
+[2024-06-01 20:57:46] INFO root fetch - processPackages [webull-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_options-0.6.4.tar.gz tmp/webull_options-0.6.5.tar.gz --markdown 20240601/w/webull-options/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-06-01 20:57:46] INFO root fetch - processPackages [jinja2-async-environment]: Downloading https://files.pythonhosted.org/packages/a2/86/652b4bf4cb7659cfa9cb3bb5199d255b58e9ac790877732c5fa60ff9ad7c/jinja2_async_environment-0.7.6.tar.gz
+[2024-06-01 20:57:46] INFO root fetch - processPackages [jinja2-async-environment]: executing diffoscope
+[2024-06-01 20:57:46] INFO root fetch - processPackages [jinja2-async-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinja2_async_environment-0.7.5.tar.gz tmp/jinja2_async_environment-0.7.6.tar.gz --markdown 20240601/j/jinja2-async-environment/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-06-01 20:57:47] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.4.tar.gz]
+[2024-06-01 20:57:47] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.5.tar.gz]
+[2024-06-01 20:57:47] INFO root fetch - main [MainThread]: End processing [webull-options]: success
+[2024-06-01 20:57:47] INFO root fetch - processPackages [jinja2-async-environment]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_async_environment-0.7.5.tar.gz]
+[2024-06-01 20:57:47] INFO root fetch - processPackages [jinja2-async-environment]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_async_environment-0.7.6.tar.gz]
+[2024-06-01 20:57:47] INFO root fetch - main [MainThread]: End processing [jinja2-async-environment]: success
+[2024-06-01 20:57:47] INFO root fetch - main [MainThread]: Store serial: [23482766]
