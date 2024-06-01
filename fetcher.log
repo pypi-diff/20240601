@@ -11807,3 +11807,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:03:54] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
 [2024-06-01 09:03:54] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
 [2024-06-01 09:03:54] INFO root fetch - main [MainThread]: Store serial: [23477987]
+[2024-06-01 09:06:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477987]
+[2024-06-01 09:06:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 09:06:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beforerr
+[2024-06-01 09:06:05] INFO root fetch - processPackages [beforerr]: New version: [2024.6.1] Old Version: [2024.5.30]
+[2024-06-01 09:06:05] INFO root fetch - processPackages [beforerr]: Downloading https://files.pythonhosted.org/packages/e7/a4/6df85058db2010758d8458bad07b08a54e8151048092d9b68251947cf2a3/beforerr-2024.5.30.tar.gz
+[2024-06-01 09:06:05] INFO root fetch - processPackages [beforerr]: Downloading https://files.pythonhosted.org/packages/37/51/512c69927d3939e3cd8b6e821de23ad5c9a00ea53aff79332e761638e90b/beforerr-2024.6.1.tar.gz
+[2024-06-01 09:06:06] INFO root fetch - processPackages [beforerr]: executing diffoscope
+[2024-06-01 09:06:06] INFO root fetch - processPackages [beforerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beforerr-2024.5.30.tar.gz tmp/beforerr-2024.6.1.tar.gz --markdown 20240601/b/beforerr/2024.5.30-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 09:06:06] INFO root fetch - processPackages [beforerr]: Remove: archive file [/home/abi/fetcher/tmp/beforerr-2024.5.30.tar.gz]
+[2024-06-01 09:06:06] INFO root fetch - processPackages [beforerr]: Remove: archive file [/home/abi/fetcher/tmp/beforerr-2024.6.1.tar.gz]
+[2024-06-01 09:06:06] INFO root fetch - main [MainThread]: End processing [beforerr]: success
+[2024-06-01 09:06:06] INFO root fetch - main [MainThread]: Store serial: [23477991]
