@@ -20676,3 +20676,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:55:41] INFO root fetch - processPackages [xata]: Remove: archive file [/home/abi/fetcher/tmp/xata-1.3.4.tar.gz]
 [2024-06-01 19:55:41] INFO root fetch - main [MainThread]: End processing [xata]: success
 [2024-06-01 19:55:41] INFO root fetch - main [MainThread]: Store serial: [23482264]
+[2024-06-01 19:57:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482264]
+[2024-06-01 19:57:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 19:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: demetric
+[2024-06-01 19:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenaura
+[2024-06-01 19:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genvarloader
+[2024-06-01 19:57:50] INFO root fetch - processPackages [demetric]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-06-01 19:57:50] INFO root fetch - processPackages [zenaura]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-06-01 19:57:50] INFO root fetch - processPackages [genvarloader]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 19:57:50] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ae/cb/61c50ad42061c242bf754e7652d208e0db573a3c78b88a9dc4ab2501a3c9/zenaura-0.9.96.tar.gz
+[2024-06-01 19:57:50] INFO root fetch - processPackages [demetric]: Downloading https://files.pythonhosted.org/packages/09/57/37f9203beae6e155ead86f26ac3e77edb28a158194585773416674eb2f2f/demetric-0.1.6.tar.gz
+[2024-06-01 19:57:50] INFO root fetch - processPackages [genvarloader]: Downloading https://files.pythonhosted.org/packages/07/ce/37f4d063e0bf14cacd102380dda368b44894c9baa7ea96c951cac2e3694a/genvarloader-0.3.2.tar.gz
+[2024-06-01 19:57:50] INFO root fetch - processPackages [demetric]: Downloading https://files.pythonhosted.org/packages/e9/b1/6b698ce5f99958ad34ecb5bbc917edb6e954cf1dd6ad3372ae7235fe3349/demetric-0.1.7.tar.gz
+[2024-06-01 19:57:50] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/0a/36/6c6c313edffa3cf60260ab81fa50d9c4ef93a716990423ab3ca654a380a5/zenaura-0.9.97.tar.gz
+[2024-06-01 19:57:50] INFO root fetch - processPackages [genvarloader]: Downloading https://files.pythonhosted.org/packages/96/a8/a49c0172bf1c8a2dff13caecf6040055d14691c0c3947c37b37c03a2ec96/genvarloader-0.3.3.tar.gz
+[2024-06-01 19:57:50] INFO root fetch - processPackages [demetric]: executing diffoscope
+[2024-06-01 19:57:50] INFO root fetch - processPackages [demetric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demetric-0.1.6.tar.gz tmp/demetric-0.1.7.tar.gz --markdown 20240601/d/demetric/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-06-01 19:57:50] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 19:57:50] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.96.tar.gz tmp/zenaura-0.9.97.tar.gz --markdown 20240601/z/zenaura/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-06-01 19:57:51] INFO root fetch - processPackages [genvarloader]: executing diffoscope
+[2024-06-01 19:57:51] INFO root fetch - processPackages [genvarloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genvarloader-0.3.2.tar.gz tmp/genvarloader-0.3.3.tar.gz --markdown 20240601/g/genvarloader/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 19:57:51] INFO root fetch - processPackages [demetric]: Remove: archive file [/home/abi/fetcher/tmp/demetric-0.1.6.tar.gz]
+[2024-06-01 19:57:51] INFO root fetch - processPackages [demetric]: Remove: archive file [/home/abi/fetcher/tmp/demetric-0.1.7.tar.gz]
+[2024-06-01 19:57:51] INFO root fetch - main [MainThread]: End processing [demetric]: success
+[2024-06-01 19:57:51] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.96.tar.gz]
+[2024-06-01 19:57:51] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.97.tar.gz]
+[2024-06-01 19:57:51] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 19:57:51] INFO root fetch - processPackages [genvarloader]: Remove: archive file [/home/abi/fetcher/tmp/genvarloader-0.3.2.tar.gz]
+[2024-06-01 19:57:51] INFO root fetch - processPackages [genvarloader]: Remove: archive file [/home/abi/fetcher/tmp/genvarloader-0.3.3.tar.gz]
+[2024-06-01 19:57:51] INFO root fetch - main [MainThread]: End processing [genvarloader]: success
+[2024-06-01 19:57:51] INFO root fetch - main [MainThread]: Store serial: [23482280]
