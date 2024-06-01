@@ -22268,3 +22268,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:52:44] INFO root fetch - processPackages [codejudge-common-utils]: Remove: archive file [/home/abi/fetcher/tmp/codejudge-common-utils-0.0.4.tar.gz]
 [2024-06-01 21:52:44] INFO root fetch - main [MainThread]: End processing [codejudge-common-utils]: success
 [2024-06-01 21:52:44] INFO root fetch - main [MainThread]: Store serial: [23483100]
+[2024-06-01 21:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483100]
+[2024-06-01 21:54:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SFlock2
+[2024-06-01 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redbacktechpy
+[2024-06-01 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dirty-json-py
+[2024-06-01 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blaze-double-bot
+[2024-06-01 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zenaura
+[2024-06-01 21:54:52] INFO root fetch - processPackages [redbacktechpy]: New version: [2024.5.1b1] Old Version: [2024.5.0b4]
+[2024-06-01 21:54:52] INFO root fetch - processPackages [zenaura]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-06-01 21:54:52] INFO root fetch - processPackages [blaze-double-bot]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-06-01 21:54:52] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/36/3a/ec5581bf8c297b84b189c7358cb0ab3c9ab14e834b3d2bb4ad19e092043a/redbacktechpy-2024.5.0b4.tar.gz
+[2024-06-01 21:54:52] WARNING root fetch - processPackages [dirty-json-py]: Skipping, unable to determine old version
+[2024-06-01 21:54:52] INFO root fetch - main [MainThread]: End processing [dirty-json-py] error
+[2024-06-01 21:54:52] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/6c/23/a7e9c6b1625f83d23dc557d927e1cbee97b882660642d49c71d6516cc1c6/zenaura-0.9.98.tar.gz
+[2024-06-01 21:54:52] INFO root fetch - processPackages [SFlock2]: New version: [0.3.58] Old Version: [0.3.57]
+[2024-06-01 21:54:52] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/57/52/7b650360589f313c19ae2211aa94dbd3f837ed35ee3d1157747e217661a7/blaze_double_bot-1.1.0.tar.gz
+[2024-06-01 21:54:53] INFO root fetch - processPackages [SFlock2]: Downloading https://files.pythonhosted.org/packages/fe/14/0212a8676f96f5d06e629c1c874a42fcef8ac22f5058bfa080e11736e8d6/SFlock2-0.3.57.tar.gz
+[2024-06-01 21:54:53] INFO root fetch - processPackages [blaze-double-bot]: Downloading https://files.pythonhosted.org/packages/6c/f7/570fd705f6eb6cf2f71bdb2694df19fc1cbc64eda599cf2fe4efd2872698/blaze_double_bot-1.2.0.tar.gz
+[2024-06-01 21:54:53] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/48/5f/138d9d4a002245e615a071d74851b3a830153c2ad20c2879fb6a95f0e116/redbacktechpy-2024.5.1b1.tar.gz
+[2024-06-01 21:54:53] INFO root fetch - processPackages [blaze-double-bot]: executing diffoscope
+[2024-06-01 21:54:53] INFO root fetch - processPackages [blaze-double-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blaze_double_bot-1.1.0.tar.gz tmp/blaze_double_bot-1.2.0.tar.gz --markdown 20240601/b/blaze-double-bot/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-06-01 21:54:53] INFO root fetch - processPackages [zenaura]: Downloading https://files.pythonhosted.org/packages/ab/72/2fac2763e4b45f6f2d197fe9ca13ae9951353a671aea7ee3f96f69393810/zenaura-0.9.99.tar.gz
+[2024-06-01 21:54:53] INFO root fetch - processPackages [redbacktechpy]: executing diffoscope
+[2024-06-01 21:54:53] INFO root fetch - processPackages [redbacktechpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbacktechpy-2024.5.0b4.tar.gz tmp/redbacktechpy-2024.5.1b1.tar.gz --markdown 20240601/r/redbacktechpy/2024.5.0b4-2024.5.1b1/README.md --exclude *.pyd
+[2024-06-01 21:54:53] INFO root fetch - processPackages [zenaura]: executing diffoscope
+[2024-06-01 21:54:53] INFO root fetch - processPackages [zenaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenaura-0.9.98.tar.gz tmp/zenaura-0.9.99.tar.gz --markdown 20240601/z/zenaura/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-06-01 21:54:53] INFO root fetch - processPackages [SFlock2]: Downloading https://files.pythonhosted.org/packages/cf/df/9ac7edc418aa00162db93084a7be8f3a925ecb7723f3514756692c55cbdd/SFlock2-0.3.58.tar.gz
+[2024-06-01 21:54:53] INFO root fetch - processPackages [SFlock2]: executing diffoscope
+[2024-06-01 21:54:53] INFO root fetch - processPackages [SFlock2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SFlock2-0.3.57.tar.gz tmp/SFlock2-0.3.58.tar.gz --markdown 20240601/S/SFlock2/0.3.57-0.3.58/README.md --exclude *.pyd
+[2024-06-01 21:54:53] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.1.0.tar.gz]
+[2024-06-01 21:54:53] INFO root fetch - processPackages [blaze-double-bot]: Remove: archive file [/home/abi/fetcher/tmp/blaze_double_bot-1.2.0.tar.gz]
+[2024-06-01 21:54:53] INFO root fetch - main [MainThread]: End processing [blaze-double-bot]: success
+[2024-06-01 21:54:53] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.0b4.tar.gz]
+[2024-06-01 21:54:53] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.1b1.tar.gz]
+[2024-06-01 21:54:53] INFO root fetch - main [MainThread]: End processing [redbacktechpy]: success
+[2024-06-01 21:54:54] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.98.tar.gz]
+[2024-06-01 21:54:54] INFO root fetch - processPackages [zenaura]: Remove: archive file [/home/abi/fetcher/tmp/zenaura-0.9.99.tar.gz]
+[2024-06-01 21:54:54] INFO root fetch - main [MainThread]: End processing [zenaura]: success
+[2024-06-01 21:54:55] INFO root fetch - processPackages [SFlock2]: Remove: archive file [/home/abi/fetcher/tmp/SFlock2-0.3.57.tar.gz]
+[2024-06-01 21:54:55] INFO root fetch - processPackages [SFlock2]: Remove: archive file [/home/abi/fetcher/tmp/SFlock2-0.3.58.tar.gz]
+[2024-06-01 21:54:55] INFO root fetch - main [MainThread]: End processing [SFlock2]: success
+[2024-06-01 21:54:55] INFO root fetch - main [MainThread]: Store serial: [23483115]
