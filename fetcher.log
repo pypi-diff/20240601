@@ -12348,3 +12348,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:43:04] INFO root fetch - processPackages [wetterdienst]: Remove: archive file [/home/abi/fetcher/tmp/wetterdienst-0.9.0.tar.gz]
 [2024-06-01 09:43:04] INFO root fetch - main [MainThread]: End processing [wetterdienst]: success
 [2024-06-01 09:43:04] INFO root fetch - main [MainThread]: Store serial: [23478274]
+[2024-06-01 09:45:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478274]
+[2024-06-01 09:45:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: espy-contact
+[2024-06-01 09:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arcparse
+[2024-06-01 09:45:14] INFO root fetch - processPackages [espy-contact]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-06-01 09:45:14] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/0e/45/386d301a7573988cfc80de5753544384a517e8794b4856e2bd8b36bea93d/espy_contact-2.0.8.tar.gz
+[2024-06-01 09:45:14] INFO root fetch - processPackages [arcparse]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-06-01 09:45:14] INFO root fetch - processPackages [arcparse]: Downloading https://files.pythonhosted.org/packages/c1/f4/9fa6e4609a9589de54fca1abb72359803b2b1bdf894687a948abf63311bb/arcparse-0.6.8.tar.gz
+[2024-06-01 09:45:14] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/58/d3/f5342b21e4c78ea6e82e84ce53b20e95974612386583f4276df720f93274/espy_contact-2.0.9.tar.gz
+[2024-06-01 09:45:14] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-06-01 09:45:14] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.8.tar.gz tmp/espy_contact-2.0.9.tar.gz --markdown 20240601/e/espy-contact/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-06-01 09:45:15] INFO root fetch - processPackages [arcparse]: Downloading https://files.pythonhosted.org/packages/91/74/45dd9d08496f4a819ba1621e0dc2208355e206937898685a46913782129c/arcparse-0.6.9.tar.gz
+[2024-06-01 09:45:15] INFO root fetch - processPackages [arcparse]: executing diffoscope
+[2024-06-01 09:45:15] INFO root fetch - processPackages [arcparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcparse-0.6.8.tar.gz tmp/arcparse-0.6.9.tar.gz --markdown 20240601/a/arcparse/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-06-01 09:45:15] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.8.tar.gz]
+[2024-06-01 09:45:15] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.9.tar.gz]
+[2024-06-01 09:45:15] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-06-01 09:45:15] INFO root fetch - processPackages [arcparse]: Remove: archive file [/home/abi/fetcher/tmp/arcparse-0.6.8.tar.gz]
+[2024-06-01 09:45:15] INFO root fetch - processPackages [arcparse]: Remove: archive file [/home/abi/fetcher/tmp/arcparse-0.6.9.tar.gz]
+[2024-06-01 09:45:15] INFO root fetch - main [MainThread]: End processing [arcparse]: success
+[2024-06-01 09:45:15] INFO root fetch - main [MainThread]: Store serial: [23478280]
