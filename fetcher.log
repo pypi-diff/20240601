@@ -18280,3 +18280,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:15:57] INFO root fetch - processPackages [entsoe-py]: Remove: archive file [/home/abi/fetcher/tmp/entsoe_py-0.6.8.tar.gz]
 [2024-06-01 17:15:57] INFO root fetch - main [MainThread]: End processing [entsoe-py]: success
 [2024-06-01 17:15:57] INFO root fetch - main [MainThread]: Store serial: [23481210]
+[2024-06-01 17:18:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481210]
+[2024-06-01 17:18:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 17:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HeaderUtils
+[2024-06-01 17:18:06] WARNING root fetch - processPackages [HeaderUtils]: Skipping, unable to determine old version
+[2024-06-01 17:18:06] INFO root fetch - main [MainThread]: End processing [HeaderUtils] error
+[2024-06-01 17:18:06] INFO root fetch - main [MainThread]: Store serial: [23481215]
