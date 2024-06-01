@@ -23119,3 +23119,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:53:55] INFO root fetch - processPackages [neura-library]: Remove: archive file [/home/abi/fetcher/tmp/neura_library-0.0.7.tar.gz]
 [2024-06-01 22:53:55] INFO root fetch - main [MainThread]: End processing [neura-library]: success
 [2024-06-01 22:53:55] INFO root fetch - main [MainThread]: Store serial: [23483530]
+[2024-06-01 22:55:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483530]
+[2024-06-01 22:56:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 22:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PQAnalysis
+[2024-06-01 22:56:04] INFO root fetch - processPackages [PQAnalysis]: New version: [1.0.9] Old Version: [1.0.8.1]
+[2024-06-01 22:56:04] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/83/2f/4ccd1518d7be2929aebe1ed681017d830a629896a187b19e7e65f816acb1/pqanalysis-1.0.8.1.tar.gz
+[2024-06-01 22:56:04] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/0d/d7/e839d99d88637ec141477f283ed6cbe60db1184aa811529035b9d75f4ef8/pqanalysis-1.0.9.tar.gz
+[2024-06-01 22:56:05] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-06-01 22:56:05] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqanalysis-1.0.8.1.tar.gz tmp/pqanalysis-1.0.9.tar.gz --markdown 20240601/P/PQAnalysis/1.0.8.1-1.0.9/README.md --exclude *.pyd
+[2024-06-01 22:56:07] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.8.1.tar.gz]
+[2024-06-01 22:56:07] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-1.0.9.tar.gz]
+[2024-06-01 22:56:07] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-06-01 22:56:07] INFO root fetch - main [MainThread]: Store serial: [23483533]
