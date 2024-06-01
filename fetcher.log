@@ -13126,3 +13126,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:43:55] WARNING root fetch - processPackages [weibo-scrapy]: Skipping, unable to determine old version
 [2024-06-01 10:43:55] INFO root fetch - main [MainThread]: End processing [weibo-scrapy] error
 [2024-06-01 10:43:55] INFO root fetch - main [MainThread]: Store serial: [23478768]
+[2024-06-01 10:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478768]
+[2024-06-01 10:46:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 10:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: structuretoolkit
+[2024-06-01 10:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: XieChengLogin
+[2024-06-01 10:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatmemoryc
+[2024-06-01 10:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: XtQuant-pro
+[2024-06-01 10:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-cpu
+[2024-06-01 10:46:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: XueQiuSuperSpider
+[2024-06-01 10:46:05] INFO root fetch - processPackages [chatmemoryc]: New version: [0.1.4rc3] Old Version: [0.1.4rc2]
+[2024-06-01 10:46:05] WARNING root fetch - processPackages [XieChengLogin]: Skipping, unable to determine old version
+[2024-06-01 10:46:05] INFO root fetch - main [MainThread]: End processing [XieChengLogin] error
+[2024-06-01 10:46:05] INFO root fetch - processPackages [chatmemoryc]: Downloading https://files.pythonhosted.org/packages/7a/29/f09e07adce9b010c7d1e3cfac2385322587d1a71c0ae3b0f4853838fb6af/chatmemoryc-0.1.4rc2.tar.gz
+[2024-06-01 10:46:05] INFO root fetch - processPackages [structuretoolkit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 10:46:05] WARNING root fetch - processPackages [XtQuant-pro]: Skipping, unable to determine old version
+[2024-06-01 10:46:05] INFO root fetch - main [MainThread]: End processing [XtQuant-pro] error
+[2024-06-01 10:46:05] WARNING root fetch - processPackages [XueQiuSuperSpider]: Skipping, unable to determine old version
+[2024-06-01 10:46:05] INFO root fetch - main [MainThread]: End processing [XueQiuSuperSpider] error
+[2024-06-01 10:46:05] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240601] Old Version: [2.17.0.dev20240531]
+[2024-06-01 10:46:05] INFO root fetch - processPackages [structuretoolkit]: Downloading https://files.pythonhosted.org/packages/54/fc/f90a860819662c6f95612689af4b3dc2eb2eff9319440645756e3ab0a49e/structuretoolkit-0.0.8.tar.gz
+[2024-06-01 10:46:05] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/8b/c9/f09541828f02a512e8632cbf0f69aa9e3f18605f7ee51322ac2f79a5b71a/tf_nightly_cpu-2.17.0.dev20240531-cp39-cp39-win_amd64.whl
+[2024-06-01 10:46:05] INFO root fetch - processPackages [chatmemoryc]: Downloading https://files.pythonhosted.org/packages/59/7e/2657ea5a3eb17f8773b2b39a7c58d0da9b73d4855ffe38264c62e869e33b/chatmemoryc-0.1.4rc3.tar.gz
+[2024-06-01 10:46:05] INFO root fetch - processPackages [chatmemoryc]: executing diffoscope
+[2024-06-01 10:46:05] INFO root fetch - processPackages [chatmemoryc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatmemoryc-0.1.4rc2.tar.gz tmp/chatmemoryc-0.1.4rc3.tar.gz --markdown 20240601/c/chatmemoryc/0.1.4rc2-0.1.4rc3/README.md --exclude *.pyd
+[2024-06-01 10:46:06] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/e2/2e/ec34b2c453234fbf0f8d5cad52989210c9f3af5e2db2698b34cce7e7197f/tf_nightly_cpu-2.17.0.dev20240601-cp39-cp39-win_amd64.whl
+[2024-06-01 10:46:06] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-06-01 10:46:06] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240531-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip --markdown 20240601/t/tf-nightly-cpu/2.17.0.dev20240531-2.17.0.dev20240601/README.md --exclude *.pyd
+[2024-06-01 10:46:06] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc2.tar.gz]
+[2024-06-01 10:46:06] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc3.tar.gz]
+[2024-06-01 10:46:06] INFO root fetch - main [MainThread]: End processing [chatmemoryc]: success
+[2024-06-01 10:46:06] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240531-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 10:46:06] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240601-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 10:46:06] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-06-01 10:46:07] INFO root fetch - processPackages [structuretoolkit]: Downloading https://files.pythonhosted.org/packages/e6/6f/c5cea6ae9188606fb31d72e694dda281b0bdd891888f8f2e55ae54a2d501/structuretoolkit-0.0.9.tar.gz
+[2024-06-01 10:46:07] INFO root fetch - processPackages [structuretoolkit]: executing diffoscope
+[2024-06-01 10:46:07] INFO root fetch - processPackages [structuretoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structuretoolkit-0.0.8.tar.gz tmp/structuretoolkit-0.0.9.tar.gz --markdown 20240601/s/structuretoolkit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 10:46:08] INFO root fetch - processPackages [structuretoolkit]: Remove: archive file [/home/abi/fetcher/tmp/structuretoolkit-0.0.8.tar.gz]
+[2024-06-01 10:46:08] INFO root fetch - processPackages [structuretoolkit]: Remove: archive file [/home/abi/fetcher/tmp/structuretoolkit-0.0.9.tar.gz]
+[2024-06-01 10:46:08] INFO root fetch - main [MainThread]: End processing [structuretoolkit]: success
+[2024-06-01 10:46:08] INFO root fetch - main [MainThread]: Store serial: [23478796]
