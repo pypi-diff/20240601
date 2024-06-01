@@ -19632,3 +19632,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:43:18] INFO root fetch - processPackages [lbt-ladybug]: Remove: archive file [/home/abi/fetcher/tmp/lbt-ladybug-0.9.0.tar.gz]
 [2024-06-01 18:43:18] INFO root fetch - main [MainThread]: End processing [lbt-ladybug]: success
 [2024-06-01 18:43:18] INFO root fetch - main [MainThread]: Store serial: [23481852]
+[2024-06-01 18:45:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481852]
+[2024-06-01 18:45:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 18:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 18:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uwrapper
+[2024-06-01 18:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-honeybee
+[2024-06-01 18:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytximport
+[2024-06-01 18:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myfunctions-ysakova90
+[2024-06-01 18:45:27] INFO root fetch - processPackages [uwrapper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 18:45:27] INFO root fetch - processPackages [almax-common]: New version: [1.0.0.dev20240601161442] Old Version: [0.9.6]
+[2024-06-01 18:45:27] INFO root fetch - processPackages [myfunctions-ysakova90]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 18:45:27] INFO root fetch - processPackages [uwrapper]: Downloading https://files.pythonhosted.org/packages/e0/d6/d7ea85135e75c873e8fc16047aa5aafbe49e5a94d03d83c3f586b02880c7/uwrapper-0.0.6.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [myfunctions-ysakova90]: Downloading https://files.pythonhosted.org/packages/44/ba/b7a954ee91cce1244322ac93badf61bd5a82f5d3cc4952c132fa90da895f/myfunctions_ysakova90-0.0.3.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [pytximport]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-06-01 18:45:27] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-06-01 18:45:27] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [pytximport]: Downloading https://files.pythonhosted.org/packages/aa/a5/c22a62387717ebf68241a1d1916e8d882f1f4d809e50826e024b71debe60/pytximport-0.1.2.tar.gz
+[2024-06-01 18:45:27] WARNING root fetch - processPackages [pytximport]: Skipping package: exceeds size limit 32917786>=10485760
+[2024-06-01 18:45:27] INFO root fetch - main [MainThread]: End processing [pytximport] error
+[2024-06-01 18:45:27] INFO root fetch - processPackages [myfunctions-ysakova90]: Downloading https://files.pythonhosted.org/packages/cd/7a/87b86a8fd2ca69d000a3d978f33d833060bb93d45a8435bc3d28fd08f606/myfunctions_ysakova90-0.0.4.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/96/dd/b669e3ac876d1d0d75f55d933a2d728c19514a18bcad40e7403ff408ec45/almax_common-1.0.0.dev20240601161442.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [uwrapper]: Downloading https://files.pythonhosted.org/packages/95/71/796bb049d74fdd1563984285c67dc664e578441e178cc298f34adae8ff08/uwrapper-0.0.7.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-06-01 18:45:27] INFO root fetch - processPackages [myfunctions-ysakova90]: executing diffoscope
+[2024-06-01 18:45:27] INFO root fetch - processPackages [myfunctions-ysakova90]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfunctions_ysakova90-0.0.3.tar.gz tmp/myfunctions_ysakova90-0.0.4.tar.gz --markdown 20240601/m/myfunctions-ysakova90/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 18:45:27] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 18:45:27] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.6.tar.gz tmp/almax_common-1.0.0.dev20240601161442.tar.gz --markdown 20240601/a/almax-common/0.9.6-1.0.0.dev20240601161442/README.md --exclude *.pyd
+[2024-06-01 18:45:27] INFO root fetch - processPackages [uwrapper]: executing diffoscope
+[2024-06-01 18:45:27] INFO root fetch - processPackages [uwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwrapper-0.0.6.tar.gz tmp/uwrapper-0.0.7.tar.gz --markdown 20240601/u/uwrapper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 18:45:27] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-06-01 18:45:27] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240601/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-06-01 18:45:28] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.3.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - processPackages [myfunctions-ysakova90]: Remove: archive file [/home/abi/fetcher/tmp/myfunctions_ysakova90-0.0.4.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - main [MainThread]: End processing [myfunctions-ysakova90]: success
+[2024-06-01 18:45:28] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.6.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.7.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - main [MainThread]: End processing [uwrapper]: success
+[2024-06-01 18:45:28] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-06-01 18:45:28] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.0.dev20240601161442.tar.gz]
+[2024-06-01 18:45:28] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 18:45:28] INFO root fetch - main [MainThread]: Store serial: [23481867]
