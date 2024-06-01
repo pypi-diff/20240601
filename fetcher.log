@@ -11537,3 +11537,37 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:34:30] INFO root fetch - processPackages [toyai]: Remove: archive file [/home/abi/fetcher/tmp/toyai-0.2.tar.gz]
 [2024-06-01 08:34:30] INFO root fetch - main [MainThread]: End processing [toyai]: success
 [2024-06-01 08:34:30] INFO root fetch - main [MainThread]: Store serial: [23477900]
+[2024-06-01 08:36:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477900]
+[2024-06-01 08:36:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 08:38:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477900]
+[2024-06-01 08:38:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 08:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477900]
+[2024-06-01 08:40:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 08:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sf-hamilton
+[2024-06-01 08:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: komo
+[2024-06-01 08:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HOPYBOX
+[2024-06-01 08:40:49] INFO root fetch - processPackages [HOPYBOX]: New version: [1.7.0] Old Version: [1.6.7]
+[2024-06-01 08:40:49] INFO root fetch - processPackages [komo]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 08:40:49] INFO root fetch - processPackages [komo]: Downloading https://files.pythonhosted.org/packages/e5/e8/cf20243d164ff9c48e03fd5ff4c7107c6dd965947ee156ca5fb9a7b15e8b/komo-0.2.8.tar.gz
+[2024-06-01 08:40:49] INFO root fetch - processPackages [HOPYBOX]: Downloading https://files.pythonhosted.org/packages/ef/ac/44b08f2f47e159ac16f12ec54baca661e59eb2d9ec09427c8f0b16384a9c/HOPYBOX-1.6.7.tar.gz
+[2024-06-01 08:40:49] INFO root fetch - processPackages [sf-hamilton]: New version: [1.9.0rc0] Old Version: [1.9.0]
+[2024-06-01 08:40:49] INFO root fetch - processPackages [komo]: Downloading https://files.pythonhosted.org/packages/f5/f7/2ea58820646d37f896447b9e3d7ec9129d961b11ece4c7fe38608a77a70c/komo-0.2.9.tar.gz
+[2024-06-01 08:40:49] INFO root fetch - processPackages [HOPYBOX]: Downloading https://files.pythonhosted.org/packages/7e/83/d32f39070d324f6a9f408db89629c424c646e2deb8f6493d60a3b288b2b2/hopybox-1.7.0.tar.gz
+[2024-06-01 08:40:49] INFO root fetch - processPackages [sf-hamilton]: Downloading https://files.pythonhosted.org/packages/d4/83/0202dcc740cf2448539aeb1ff959afb2dcb25e6b450e1ef9cca750253bda/sf-hamilton-1.9.0.tar.gz
+[2024-06-01 08:40:49] INFO root fetch - processPackages [komo]: executing diffoscope
+[2024-06-01 08:40:49] INFO root fetch - processPackages [komo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/komo-0.2.8.tar.gz tmp/komo-0.2.9.tar.gz --markdown 20240601/k/komo/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 08:40:49] INFO root fetch - processPackages [HOPYBOX]: executing diffoscope
+[2024-06-01 08:40:49] INFO root fetch - processPackages [HOPYBOX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HOPYBOX-1.6.7.tar.gz tmp/hopybox-1.7.0.tar.gz --markdown 20240601/H/HOPYBOX/1.6.7-1.7.0/README.md --exclude *.pyd
+[2024-06-01 08:40:50] INFO root fetch - processPackages [sf-hamilton]: Downloading https://files.pythonhosted.org/packages/0e/64/cbed9bd614006aa69c7944b12cf92ee3daa8c7cf116669988c00b6e00ce7/sf-hamilton-1.9.0rc0.tar.gz
+[2024-06-01 08:40:50] INFO root fetch - processPackages [sf-hamilton]: executing diffoscope
+[2024-06-01 08:40:50] INFO root fetch - processPackages [sf-hamilton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sf-hamilton-1.9.0.tar.gz tmp/sf-hamilton-1.9.0rc0.tar.gz --markdown 20240601/s/sf-hamilton/1.9.0-1.9.0rc0/README.md --exclude *.pyd
+[2024-06-01 08:40:50] INFO root fetch - processPackages [komo]: Remove: archive file [/home/abi/fetcher/tmp/komo-0.2.8.tar.gz]
+[2024-06-01 08:40:50] INFO root fetch - processPackages [komo]: Remove: archive file [/home/abi/fetcher/tmp/komo-0.2.9.tar.gz]
+[2024-06-01 08:40:50] INFO root fetch - main [MainThread]: End processing [komo]: success
+[2024-06-01 08:40:50] INFO root fetch - processPackages [HOPYBOX]: Remove: archive file [/home/abi/fetcher/tmp/HOPYBOX-1.6.7.tar.gz]
+[2024-06-01 08:40:50] INFO root fetch - processPackages [HOPYBOX]: Remove: archive file [/home/abi/fetcher/tmp/hopybox-1.7.0.tar.gz]
+[2024-06-01 08:40:50] INFO root fetch - main [MainThread]: End processing [HOPYBOX]: success
+[2024-06-01 08:40:51] INFO root fetch - processPackages [sf-hamilton]: Remove: archive file [/home/abi/fetcher/tmp/sf-hamilton-1.9.0.tar.gz]
+[2024-06-01 08:40:51] INFO root fetch - processPackages [sf-hamilton]: Remove: archive file [/home/abi/fetcher/tmp/sf-hamilton-1.9.0rc0.tar.gz]
+[2024-06-01 08:40:51] INFO root fetch - main [MainThread]: End processing [sf-hamilton]: success
+[2024-06-01 08:40:51] INFO root fetch - main [MainThread]: Store serial: [23477908]
