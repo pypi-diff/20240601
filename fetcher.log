@@ -13120,3 +13120,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:41:47] WARNING root fetch - processPackages [wechat-admin]: Skipping, unable to determine old version
 [2024-06-01 10:41:47] INFO root fetch - main [MainThread]: End processing [wechat-admin] error
 [2024-06-01 10:41:47] INFO root fetch - main [MainThread]: Store serial: [23478763]
+[2024-06-01 10:43:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478763]
+[2024-06-01 10:43:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 10:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weibo-scrapy
+[2024-06-01 10:43:55] WARNING root fetch - processPackages [weibo-scrapy]: Skipping, unable to determine old version
+[2024-06-01 10:43:55] INFO root fetch - main [MainThread]: End processing [weibo-scrapy] error
+[2024-06-01 10:43:55] INFO root fetch - main [MainThread]: Store serial: [23478768]
