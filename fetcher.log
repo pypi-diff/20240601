@@ -12794,3 +12794,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:15:39] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.64.tar.gz]
 [2024-06-01 10:15:39] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
 [2024-06-01 10:15:39] INFO root fetch - main [MainThread]: Store serial: [23478502]
+[2024-06-01 10:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478502]
+[2024-06-01 10:17:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: squarecloud-api
+[2024-06-01 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: popoll-backend
+[2024-06-01 10:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boj-cli
+[2024-06-01 10:17:49] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.65] Old Version: [0.0.64]
+[2024-06-01 10:17:49] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/61/be/516f45a1baed868d686caa1822fc6ed33c3fdf66e135f0d37ce4eadcf2bf/popoll_backend-0.0.64.tar.gz
+[2024-06-01 10:17:49] INFO root fetch - processPackages [squarecloud-api]: New version: [3.4.0] Old Version: [3.3.2]
+[2024-06-01 10:17:49] INFO root fetch - processPackages [boj-cli]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-06-01 10:17:49] INFO root fetch - processPackages [squarecloud-api]: Downloading https://files.pythonhosted.org/packages/d8/db/b805460c9599d36182bc039f646f90d97641ea66e823b71adf67c22aaae3/squarecloud_api-3.3.2.tar.gz
+[2024-06-01 10:17:49] INFO root fetch - processPackages [boj-cli]: Downloading https://files.pythonhosted.org/packages/50/c1/7b9ca6a4ca98466ac2db01f9c40f9412fcb190c2ed656e29166fc998a7dc/boj-cli-1.2.2.tar.gz
+[2024-06-01 10:17:49] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/a5/d3/fef032319dd48aeb26f51ba14e3bc20a9b2293267b123f5f1e80eeca4491/popoll_backend-0.0.65.tar.gz
+[2024-06-01 10:17:49] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 10:17:49] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.64.tar.gz tmp/popoll_backend-0.0.65.tar.gz --markdown 20240601/p/popoll-backend/0.0.64-0.0.65/README.md --exclude *.pyd
+[2024-06-01 10:17:50] INFO root fetch - processPackages [squarecloud-api]: Downloading https://files.pythonhosted.org/packages/11/20/bdc32430b2a299d320f283b3f0da4f7115e1224377cd7d103295fe67e7ea/squarecloud_api-3.4.0.tar.gz
+[2024-06-01 10:17:50] INFO root fetch - processPackages [boj-cli]: Downloading https://files.pythonhosted.org/packages/51/d8/eeaa056c98d47b135516a5faf1b9bb470a74403ebd35bda23ed55d7da712/boj-cli-1.2.3.tar.gz
+[2024-06-01 10:17:50] INFO root fetch - processPackages [squarecloud-api]: executing diffoscope
+[2024-06-01 10:17:50] INFO root fetch - processPackages [squarecloud-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squarecloud_api-3.3.2.tar.gz tmp/squarecloud_api-3.4.0.tar.gz --markdown 20240601/s/squarecloud-api/3.3.2-3.4.0/README.md --exclude *.pyd
+[2024-06-01 10:17:50] INFO root fetch - processPackages [boj-cli]: executing diffoscope
+[2024-06-01 10:17:50] INFO root fetch - processPackages [boj-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boj-cli-1.2.2.tar.gz tmp/boj-cli-1.2.3.tar.gz --markdown 20240601/b/boj-cli/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-06-01 10:17:50] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.64.tar.gz]
+[2024-06-01 10:17:50] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.65.tar.gz]
+[2024-06-01 10:17:50] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 10:17:50] INFO root fetch - processPackages [squarecloud-api]: Remove: archive file [/home/abi/fetcher/tmp/squarecloud_api-3.3.2.tar.gz]
+[2024-06-01 10:17:50] INFO root fetch - processPackages [squarecloud-api]: Remove: archive file [/home/abi/fetcher/tmp/squarecloud_api-3.4.0.tar.gz]
+[2024-06-01 10:17:50] INFO root fetch - main [MainThread]: End processing [squarecloud-api]: success
+[2024-06-01 10:17:51] INFO root fetch - processPackages [boj-cli]: Remove: archive file [/home/abi/fetcher/tmp/boj-cli-1.2.2.tar.gz]
+[2024-06-01 10:17:51] INFO root fetch - processPackages [boj-cli]: Remove: archive file [/home/abi/fetcher/tmp/boj-cli-1.2.3.tar.gz]
+[2024-06-01 10:17:51] INFO root fetch - main [MainThread]: End processing [boj-cli]: success
+[2024-06-01 10:17:51] INFO root fetch - main [MainThread]: Store serial: [23478511]
