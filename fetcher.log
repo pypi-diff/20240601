@@ -19732,3 +19732,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:47:40] INFO root fetch - processPackages [drf-cookie-jwtauth]: Remove: archive file [/home/abi/fetcher/tmp/drf_cookie_jwtauth-0.0.2.tar.gz]
 [2024-06-01 18:47:40] INFO root fetch - main [MainThread]: End processing [drf-cookie-jwtauth]: success
 [2024-06-01 18:47:40] INFO root fetch - main [MainThread]: Store serial: [23481890]
+[2024-06-01 18:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481890]
+[2024-06-01 18:49:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finclaw
+[2024-06-01 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Flask-Inputs
+[2024-06-01 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: islabtech-upw-sensor-v1-mock-api
+[2024-06-01 18:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neural-cherche
+[2024-06-01 18:49:49] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 18:49:49] INFO root fetch - processPackages [neural-cherche]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-06-01 18:49:49] INFO root fetch - processPackages [Flask-Inputs]: New version: [1.0.0] Old Version: [0.3.0]
+[2024-06-01 18:49:49] INFO root fetch - processPackages [finclaw]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 18:49:49] INFO root fetch - processPackages [neural-cherche]: Downloading https://files.pythonhosted.org/packages/43/a9/d80e896433575cdae04f7205ba71bbffb02b9c1a41ffce4c619547525390/neural_cherche-1.3.0.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: Downloading https://files.pythonhosted.org/packages/4f/75/9fc47c9a7fabbaed53496f232edf445d2cb9a7585677b7e276f3f30216e5/islabtech_upw_sensor_v1_mock_api-0.1.1.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [finclaw]: Downloading https://files.pythonhosted.org/packages/4f/0e/9da1d0611243b8207b91a2d9b5cdc982d421ed5920b33f0c2176e2684dd1/finclaw-0.0.2.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [Flask-Inputs]: Downloading https://files.pythonhosted.org/packages/fa/61/0bb73f4d9531a72c237e3ea7a2448a310a03e39c660e9955cccb5f4a842a/Flask-Inputs-0.3.0.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [neural-cherche]: Downloading https://files.pythonhosted.org/packages/62/f1/dcbe5cacf00b7e760c26fd5fccb072c84e85a1182ca98e2744d2c644c19b/neural_cherche-1.3.1.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [finclaw]: Downloading https://files.pythonhosted.org/packages/82/0f/7ea4b13da7f3418989b4b069b9656ecee2d1140edbb073ca72e491f24005/finclaw-0.0.3.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: Downloading https://files.pythonhosted.org/packages/a1/42/38887d7b8f34fe4db1f893c0726f462ef7d146baa9a417b33dda278fd818/islabtech_upw_sensor_v1_mock_api-0.1.2.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [neural-cherche]: executing diffoscope
+[2024-06-01 18:49:49] INFO root fetch - processPackages [neural-cherche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural_cherche-1.3.0.tar.gz tmp/neural_cherche-1.3.1.tar.gz --markdown 20240601/n/neural-cherche/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-06-01 18:49:49] INFO root fetch - processPackages [Flask-Inputs]: Downloading https://files.pythonhosted.org/packages/11/47/58d4db2dab8c9179d96866cfa6e1e14f4ca6cc3f9b5143f2e7029d3233e7/flask_inputs-1.0.0.tar.gz
+[2024-06-01 18:49:49] INFO root fetch - processPackages [finclaw]: executing diffoscope
+[2024-06-01 18:49:49] INFO root fetch - processPackages [finclaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finclaw-0.0.2.tar.gz tmp/finclaw-0.0.3.tar.gz --markdown 20240601/f/finclaw/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 18:49:49] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: executing diffoscope
+[2024-06-01 18:49:49] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/islabtech_upw_sensor_v1_mock_api-0.1.1.tar.gz tmp/islabtech_upw_sensor_v1_mock_api-0.1.2.tar.gz --markdown 20240601/i/islabtech-upw-sensor-v1-mock-api/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 18:49:49] INFO root fetch - processPackages [Flask-Inputs]: executing diffoscope
+[2024-06-01 18:49:49] INFO root fetch - processPackages [Flask-Inputs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Inputs-0.3.0.tar.gz tmp/flask_inputs-1.0.0.tar.gz --markdown 20240601/F/Flask-Inputs/0.3.0-1.0.0/README.md --exclude *.pyd
+[2024-06-01 18:49:50] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: Remove: archive file [/home/abi/fetcher/tmp/islabtech_upw_sensor_v1_mock_api-0.1.1.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - processPackages [islabtech-upw-sensor-v1-mock-api]: Remove: archive file [/home/abi/fetcher/tmp/islabtech_upw_sensor_v1_mock_api-0.1.2.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - main [MainThread]: End processing [islabtech-upw-sensor-v1-mock-api]: success
+[2024-06-01 18:49:50] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.3.0.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - processPackages [neural-cherche]: Remove: archive file [/home/abi/fetcher/tmp/neural_cherche-1.3.1.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - main [MainThread]: End processing [neural-cherche]: success
+[2024-06-01 18:49:50] INFO root fetch - processPackages [finclaw]: Remove: archive file [/home/abi/fetcher/tmp/finclaw-0.0.2.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - processPackages [finclaw]: Remove: archive file [/home/abi/fetcher/tmp/finclaw-0.0.3.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - main [MainThread]: End processing [finclaw]: success
+[2024-06-01 18:49:50] INFO root fetch - processPackages [Flask-Inputs]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Inputs-0.3.0.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - processPackages [Flask-Inputs]: Remove: archive file [/home/abi/fetcher/tmp/flask_inputs-1.0.0.tar.gz]
+[2024-06-01 18:49:50] INFO root fetch - main [MainThread]: End processing [Flask-Inputs]: success
+[2024-06-01 18:49:50] INFO root fetch - main [MainThread]: Store serial: [23481903]
