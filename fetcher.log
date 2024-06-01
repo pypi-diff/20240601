@@ -14539,3 +14539,63 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:39:32] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev2024053101.tar.gz]
 [2024-06-01 12:39:33] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-06-01 12:39:33] INFO root fetch - main [MainThread]: Store serial: [23479404]
+[2024-06-01 12:41:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479404]
+[2024-06-01 12:41:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rockai-cli-app
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freqtrade-pro
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: IDswapper
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xclone
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rencrypt
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-models
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dj-shop-cart
+[2024-06-01 12:41:42] WARNING root fetch - processPackages [freqtrade-pro]: Skipping, unable to determine old version
+[2024-06-01 12:41:42] INFO root fetch - main [MainThread]: End processing [freqtrade-pro] error
+[2024-06-01 12:41:42] INFO root fetch - processPackages [IDswapper]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 12:41:42] INFO root fetch - processPackages [xclone]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rencrypt]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ai-models]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-06-01 12:41:42] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/4c/9c/c33b80ca417d5e45072b7901fd2a48dec0b114ebefcd62231eaac6f899af/idswapper-0.0.4.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [dj-shop-cart]: New version: [7.1.0] Old Version: [7.0.3]
+[2024-06-01 12:41:42] INFO root fetch - processPackages [xclone]: Downloading https://files.pythonhosted.org/packages/24/87/453d0dc9c571a61cecfd12c60c4745817ff37f945736c94e4adb8f32a828/xclone-0.3.4.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/a6/25/8242ff2eb1086921ce695d7e231562ff3852dfaf31c497aea971e084b365/REncrypt-0.1.8.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ai-models]: Downloading https://files.pythonhosted.org/packages/3f/49/f6f3c70ba757c7b1cc9eeabcdba4ca747410bc6a84112539501e19f45212/ai_models-0.6.0.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [dj-shop-cart]: Downloading https://files.pythonhosted.org/packages/0d/0a/efc10cc3b69bd9d010fc039dd3791f13e8a8b3bc1c35907933842a45f1c0/dj_shop_cart-7.0.3.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/19/6e/f906ecd7976fb2039d062d58a59e95807806354fb33aa615d9390b642ffd/idswapper-0.0.5.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 12:41:42] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 12:41:42] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 12:41:42] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.4.tar.gz tmp/idswapper-0.0.5.tar.gz --markdown 20240601/I/IDswapper/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 12:41:42] INFO root fetch - processPackages [ai-models]: Downloading https://files.pythonhosted.org/packages/16/b5/0d18d096018129be77b6851a30f036171d6e5150fc986c6336aa9e89713f/ai_models-0.6.1.tar.gz
+[2024-06-01 12:41:42] INFO root fetch - processPackages [xclone]: Downloading https://files.pythonhosted.org/packages/2c/53/a11687ef7229b6d1b1f45ae9d6a339a8eaf829f287066c1b693154668ce0/xclone-0.3.5.tar.gz
+[2024-06-01 12:41:43] INFO root fetch - processPackages [dj-shop-cart]: Downloading https://files.pythonhosted.org/packages/2d/0d/d644627fd41e05c1c31d490da130fde46ba8f0b5ea561a0f46d96140a431/dj_shop_cart-7.1.0.tar.gz
+[2024-06-01 12:41:43] INFO root fetch - processPackages [ai-models]: executing diffoscope
+[2024-06-01 12:41:43] INFO root fetch - processPackages [ai-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_models-0.6.0.tar.gz tmp/ai_models-0.6.1.tar.gz --markdown 20240601/a/ai-models/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-06-01 12:41:43] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/05/a0/d8093ea3b8c7cffd668f46310034f7690d20e23a1a2e2c643fe41a9d9e9c/REncrypt-0.1.9.tar.gz
+[2024-06-01 12:41:43] INFO root fetch - processPackages [dj-shop-cart]: executing diffoscope
+[2024-06-01 12:41:43] INFO root fetch - processPackages [dj-shop-cart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_shop_cart-7.0.3.tar.gz tmp/dj_shop_cart-7.1.0.tar.gz --markdown 20240601/d/dj-shop-cart/7.0.3-7.1.0/README.md --exclude *.pyd
+[2024-06-01 12:41:43] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 12:41:43] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.4.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.5.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 12:41:43] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-01 12:41:43] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.8.tar.gz tmp/REncrypt-0.1.9.tar.gz --markdown 20240601/r/rencrypt/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 12:41:43] INFO root fetch - processPackages [ai-models]: Remove: archive file [/home/abi/fetcher/tmp/ai_models-0.6.0.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - processPackages [ai-models]: Remove: archive file [/home/abi/fetcher/tmp/ai_models-0.6.1.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - main [MainThread]: End processing [ai-models]: success
+[2024-06-01 12:41:43] INFO root fetch - processPackages [xclone]: executing diffoscope
+[2024-06-01 12:41:43] INFO root fetch - processPackages [xclone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xclone-0.3.4.tar.gz tmp/xclone-0.3.5.tar.gz --markdown 20240601/x/xclone/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 12:41:43] INFO root fetch - processPackages [dj-shop-cart]: Remove: archive file [/home/abi/fetcher/tmp/dj_shop_cart-7.0.3.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - processPackages [dj-shop-cart]: Remove: archive file [/home/abi/fetcher/tmp/dj_shop_cart-7.1.0.tar.gz]
+[2024-06-01 12:41:43] INFO root fetch - main [MainThread]: End processing [dj-shop-cart]: success
+[2024-06-01 12:41:44] INFO root fetch - processPackages [xclone]: Remove: archive file [/home/abi/fetcher/tmp/xclone-0.3.4.tar.gz]
+[2024-06-01 12:41:44] INFO root fetch - processPackages [xclone]: Remove: archive file [/home/abi/fetcher/tmp/xclone-0.3.5.tar.gz]
+[2024-06-01 12:41:44] INFO root fetch - main [MainThread]: End processing [xclone]: success
+[2024-06-01 12:41:45] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.8.tar.gz]
+[2024-06-01 12:41:45] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
+[2024-06-01 12:41:45] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-01 12:41:45] INFO root fetch - main [MainThread]: Store serial: [23479423]
