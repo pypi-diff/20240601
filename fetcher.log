@@ -21457,3 +21457,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:46:53] INFO root fetch - processPackages [uWSGI]: Remove: archive file [/home/abi/fetcher/tmp/uwsgi-2.0.9.tar.gz]
 [2024-06-01 20:46:53] INFO root fetch - main [MainThread]: End processing [uWSGI]: success
 [2024-06-01 20:46:53] INFO root fetch - main [MainThread]: Store serial: [23482657]
+[2024-06-01 20:48:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482657]
+[2024-06-01 20:49:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webull-options
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htag
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meshtastic
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fudstop
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: c2cwsgiutils
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ambient-backend-api-client
+[2024-06-01 20:49:03] INFO root fetch - processPackages [webull-options]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-06-01 20:49:03] INFO root fetch - processPackages [fudstop]: New version: [2.8.5] Old Version: [2.8.4]
+[2024-06-01 20:49:03] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/c3/27/8d98ac5980ff2a63b57843dfb7ad95f33d74fde5c9d5628a904b05af244a/fudstop-2.8.4.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [meshtastic]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-06-01 20:49:03] INFO root fetch - processPackages [htag]: New version: [0.91.1] Old Version: [0.91.0]
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 20:49:03] INFO root fetch - processPackages [c2cwsgiutils]: New version: [6.1.0.dev99] Old Version: [6.1.0.dev97]
+[2024-06-01 20:49:03] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/c9/23/4ac9757b38f8ae5984753fe5bfb7d2c452f9d80bf41559c39ef9ccf5c958/webull_options-0.6.3.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [htag]: Downloading https://files.pythonhosted.org/packages/69/30/41edaf3730cedd18d12e7b18a435b664bbcd7af0932f2eb1d9c568bd851d/htag-0.91.0.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/b8/0e/24d20d3d39d0b4663c7bd87b29c40c8617874b149f3a5bd620a49ee0d29e/meshtastic-2.3.8.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/70/82/1062250c5f8b684273f1f576ab49863eb71b99aedcf0e638b7d18af727dc/c2cwsgiutils-6.1.0.dev97.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/b3/54/fa291fdf730a7d4efeba09a8c9c05580b7cece0bc2ec3c1e78e3166d4e93/webull_options-0.6.4.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/f6/eb/59da8ec681d918996a898f98dd992f0dd01c4e66248583c87fd5d597e6bb/ambient_backend_api_client-0.1.8.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d3/75/526867ca3dad58585f90fecfe0bda81c52c534e5bd681bd093e9e9ba6a88/fudstop-2.8.5.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [webull-options]: executing diffoscope
+[2024-06-01 20:49:03] INFO root fetch - processPackages [webull-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_options-0.6.3.tar.gz tmp/webull_options-0.6.4.tar.gz --markdown 20240601/w/webull-options/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-06-01 20:49:03] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/84/59/4c5315ca7fdc77296ead46b0dc59eab5d1e46d264e13b5cc7a3e4d3b976c/meshtastic-2.3.9.tar.gz
+[2024-06-01 20:49:03] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-06-01 20:49:03] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.8.4.tar.gz tmp/fudstop-2.8.5.tar.gz --markdown 20240601/f/fudstop/2.8.4-2.8.5/README.md --exclude *.pyd
+[2024-06-01 20:49:04] INFO root fetch - processPackages [htag]: Downloading https://files.pythonhosted.org/packages/54/32/acda25f04edeeea3eee048861986da83c5b857103448388398f4da37d65d/htag-0.91.1.tar.gz
+[2024-06-01 20:49:04] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/ab/62/7a161c456f1828f37b18431d8f5cf1bbda9dfe8ef509b1c94d8dad7c8da1/c2cwsgiutils-6.1.0.dev99.tar.gz
+[2024-06-01 20:49:04] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/0b/1f/b717fb08cbd4446f6c3ef2f503b2b7cf7489a90af64d9e8982283ae67928/ambient_backend_api_client-0.1.9.tar.gz
+[2024-06-01 20:49:04] INFO root fetch - processPackages [meshtastic]: executing diffoscope
+[2024-06-01 20:49:04] INFO root fetch - processPackages [meshtastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshtastic-2.3.8.tar.gz tmp/meshtastic-2.3.9.tar.gz --markdown 20240601/m/meshtastic/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-06-01 20:49:04] INFO root fetch - processPackages [c2cwsgiutils]: executing diffoscope
+[2024-06-01 20:49:04] INFO root fetch - processPackages [c2cwsgiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cwsgiutils-6.1.0.dev97.tar.gz tmp/c2cwsgiutils-6.1.0.dev99.tar.gz --markdown 20240601/c/c2cwsgiutils/6.1.0.dev97-6.1.0.dev99/README.md --exclude *.pyd
+[2024-06-01 20:49:04] INFO root fetch - processPackages [htag]: executing diffoscope
+[2024-06-01 20:49:04] INFO root fetch - processPackages [htag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htag-0.91.0.tar.gz tmp/htag-0.91.1.tar.gz --markdown 20240601/h/htag/0.91.0-0.91.1/README.md --exclude *.pyd
+[2024-06-01 20:49:04] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-06-01 20:49:04] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.8.tar.gz tmp/ambient_backend_api_client-0.1.9.tar.gz --markdown 20240601/a/ambient-backend-api-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 20:49:04] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.3.tar.gz]
+[2024-06-01 20:49:04] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.4.tar.gz]
+[2024-06-01 20:49:04] INFO root fetch - main [MainThread]: End processing [webull-options]: success
+[2024-06-01 20:49:04] INFO root fetch - processPackages [htag]: Remove: archive file [/home/abi/fetcher/tmp/htag-0.91.0.tar.gz]
+[2024-06-01 20:49:04] INFO root fetch - processPackages [htag]: Remove: archive file [/home/abi/fetcher/tmp/htag-0.91.1.tar.gz]
+[2024-06-01 20:49:04] INFO root fetch - main [MainThread]: End processing [htag]: success
+[2024-06-01 20:49:04] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev97.tar.gz]
+[2024-06-01 20:49:04] INFO root fetch - processPackages [c2cwsgiutils]: Remove: archive file [/home/abi/fetcher/tmp/c2cwsgiutils-6.1.0.dev99.tar.gz]
+[2024-06-01 20:49:04] INFO root fetch - main [MainThread]: End processing [c2cwsgiutils]: success
+[2024-06-01 20:49:05] INFO root fetch - processPackages [meshtastic]: Remove: archive file [/home/abi/fetcher/tmp/meshtastic-2.3.8.tar.gz]
+[2024-06-01 20:49:05] INFO root fetch - processPackages [meshtastic]: Remove: archive file [/home/abi/fetcher/tmp/meshtastic-2.3.9.tar.gz]
+[2024-06-01 20:49:05] INFO root fetch - main [MainThread]: End processing [meshtastic]: success
+[2024-06-01 20:49:05] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.8.tar.gz]
+[2024-06-01 20:49:05] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.9.tar.gz]
+[2024-06-01 20:49:05] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-06-01 20:49:05] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.4.tar.gz]
+[2024-06-01 20:49:05] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.5.tar.gz]
+[2024-06-01 20:49:05] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-06-01 20:49:05] INFO root fetch - main [MainThread]: Store serial: [23482686]
