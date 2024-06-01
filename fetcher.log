@@ -21514,3 +21514,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:49:05] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.8.5.tar.gz]
 [2024-06-01 20:49:05] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-06-01 20:49:05] INFO root fetch - main [MainThread]: Store serial: [23482686]
+[2024-06-01 20:51:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482686]
+[2024-06-01 20:51:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webull-options
+[2024-06-01 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aa-ledger
+[2024-06-01 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sunholo
+[2024-06-01 20:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: model-registry
+[2024-06-01 20:51:14] INFO root fetch - processPackages [aa-ledger]: New version: [0.5.0b1] Old Version: [0.5.0a1]
+[2024-06-01 20:51:14] INFO root fetch - processPackages [webull-options]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-06-01 20:51:14] INFO root fetch - processPackages [sunholo]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-06-01 20:51:14] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/c9/23/4ac9757b38f8ae5984753fe5bfb7d2c452f9d80bf41559c39ef9ccf5c958/webull_options-0.6.3.tar.gz
+[2024-06-01 20:51:14] INFO root fetch - processPackages [model-registry]: New version: [0.2.1a1] Old Version: [0.2.0a1]
+[2024-06-01 20:51:14] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/cc/35/0cc2a83f59b1ddd740a568e10894833a89bedfc91b8ebd172a427676694a/sunholo-0.8.8.tar.gz
+[2024-06-01 20:51:14] INFO root fetch - processPackages [aa-ledger]: Downloading https://files.pythonhosted.org/packages/77/80/a24f320b7bfd7facb161a9894b0d4153b24141fbf654a2b105c92a50e4a9/aa_ledger-0.5.0a1.tar.gz
+[2024-06-01 20:51:14] INFO root fetch - processPackages [sunholo]: Downloading https://files.pythonhosted.org/packages/f4/84/78248df3236e593119b75003e77cf5b5bd0761e53dc91c6a148cb0571cf9/sunholo-0.8.9.tar.gz
+[2024-06-01 20:51:14] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/b3/54/fa291fdf730a7d4efeba09a8c9c05580b7cece0bc2ec3c1e78e3166d4e93/webull_options-0.6.4.tar.gz
+[2024-06-01 20:51:14] INFO root fetch - processPackages [model-registry]: Downloading https://files.pythonhosted.org/packages/7b/f9/9d810fb4e6b5ea9eab0a3d1e1ac976babc2d28783643808ff3e7c97e8fb2/model_registry-0.2.0a1.tar.gz
+[2024-06-01 20:51:15] INFO root fetch - processPackages [sunholo]: executing diffoscope
+[2024-06-01 20:51:15] INFO root fetch - processPackages [sunholo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunholo-0.8.8.tar.gz tmp/sunholo-0.8.9.tar.gz --markdown 20240601/s/sunholo/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-06-01 20:51:15] INFO root fetch - processPackages [webull-options]: executing diffoscope
+[2024-06-01 20:51:15] INFO root fetch - processPackages [webull-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_options-0.6.3.tar.gz tmp/webull_options-0.6.4.tar.gz --markdown 20240601/w/webull-options/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-06-01 20:51:15] INFO root fetch - processPackages [aa-ledger]: Downloading https://files.pythonhosted.org/packages/b5/b2/64634a7b5147d28c9d2eb9fe86f7a58f966ed337b4e734bf1d08bfc93397/aa_ledger-0.5.0b1.tar.gz
+[2024-06-01 20:51:15] INFO root fetch - processPackages [model-registry]: Downloading https://files.pythonhosted.org/packages/f2/32/f1ce1c017d6b3027cbb513915ccaa87390a11326d91561e228e88f4dc2c9/model_registry-0.2.1a1.tar.gz
+[2024-06-01 20:51:15] INFO root fetch - processPackages [aa-ledger]: executing diffoscope
+[2024-06-01 20:51:15] INFO root fetch - processPackages [aa-ledger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_ledger-0.5.0a1.tar.gz tmp/aa_ledger-0.5.0b1.tar.gz --markdown 20240601/a/aa-ledger/0.5.0a1-0.5.0b1/README.md --exclude *.pyd
+[2024-06-01 20:51:15] INFO root fetch - processPackages [model-registry]: executing diffoscope
+[2024-06-01 20:51:15] INFO root fetch - processPackages [model-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_registry-0.2.0a1.tar.gz tmp/model_registry-0.2.1a1.tar.gz --markdown 20240601/m/model-registry/0.2.0a1-0.2.1a1/README.md --exclude *.pyd
+[2024-06-01 20:51:15] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.3.tar.gz]
+[2024-06-01 20:51:15] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.4.tar.gz]
+[2024-06-01 20:51:15] INFO root fetch - main [MainThread]: End processing [webull-options]: success
+[2024-06-01 20:51:16] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.8.tar.gz]
+[2024-06-01 20:51:16] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.9.tar.gz]
+[2024-06-01 20:51:16] INFO root fetch - main [MainThread]: End processing [sunholo]: success
+[2024-06-01 20:51:16] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.5.0a1.tar.gz]
+[2024-06-01 20:51:16] INFO root fetch - processPackages [aa-ledger]: Remove: archive file [/home/abi/fetcher/tmp/aa_ledger-0.5.0b1.tar.gz]
+[2024-06-01 20:51:16] INFO root fetch - main [MainThread]: End processing [aa-ledger]: success
+[2024-06-01 20:51:16] INFO root fetch - processPackages [model-registry]: Remove: archive file [/home/abi/fetcher/tmp/model_registry-0.2.0a1.tar.gz]
+[2024-06-01 20:51:16] INFO root fetch - processPackages [model-registry]: Remove: archive file [/home/abi/fetcher/tmp/model_registry-0.2.1a1.tar.gz]
+[2024-06-01 20:51:16] INFO root fetch - main [MainThread]: End processing [model-registry]: success
+[2024-06-01 20:51:16] INFO root fetch - main [MainThread]: Store serial: [23482702]
