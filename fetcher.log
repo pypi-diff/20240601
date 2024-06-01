@@ -3071,3 +3071,60 @@
 [2024-06-01 02:44:59] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
 [2024-06-01 02:44:59] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2024-06-01 02:44:59] INFO root fetch - main [MainThread]: Store serial: [23474246]
+[2024-06-01 02:47:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474246]
+[2024-06-01 02:47:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 02:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2024-06-01 02:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-06-01 02:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-langchain
+[2024-06-01 02:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: intelliterm
+[2024-06-01 02:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-lyzr
+[2024-06-01 02:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fabrics
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-lyzr]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-langchain]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-06-01 02:47:08] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.5.dev202405310044] Old Version: [4.9.4.dev202405300044]
+[2024-06-01 02:47:08] INFO root fetch - processPackages [intelliterm]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-lyzr]: Downloading https://files.pythonhosted.org/packages/59/58/3dab1d508b93a6419b8a0db30c312027322aaa81c51b95e5eb75e5f22748/composio_lyzr-0.3.2.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-06-01 02:47:08] INFO root fetch - processPackages [fabrics]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/bc/b7/97cba50bba1efa838672acc97a292d9e766925dcccf222d5bf466dbce074/composio_langchain-0.3.2.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/1d/6d/7e0162cec593c7ca18d6ba991b0d0b437ae4697aaccacb827c655090f88e/tfds-nightly-4.9.4.dev202405300044.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [intelliterm]: Downloading https://files.pythonhosted.org/packages/90/83/a92900afe94181927de48b478cfe28315281d5f016a66d8432f62e8b1983/intelliterm-0.4.1.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [fabrics]: Downloading https://files.pythonhosted.org/packages/38/fd/0d619c39ec535cf74e9d37eddd369340f6ca172d819330d721b8e8cdf6e3/fabrics-0.9.4.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-lyzr]: Downloading https://files.pythonhosted.org/packages/67/63/59d9682c5069c166c94c033e398d10a19f22ab4343f7409148f5e0fc6d4d/composio_lyzr-0.3.3.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/d3/4b/c32b9e668b9be96f94ccd40954fdbc8ca5a9166b95a8154a6985de3f090c/composio_langchain-0.3.3.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-lyzr]: executing diffoscope
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-lyzr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_lyzr-0.3.2.tar.gz tmp/composio_lyzr-0.3.3.tar.gz --markdown 20240601/c/composio-lyzr/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-06-01 02:47:08] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.3.2.tar.gz tmp/composio_langchain-0.3.3.tar.gz --markdown 20240601/c/composio-langchain/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-06-01 02:47:08] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-06-01 02:47:08] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240601/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-06-01 02:47:08] INFO root fetch - processPackages [fabrics]: Downloading https://files.pythonhosted.org/packages/20/36/2ece1207fbffb36a11ddf06dfa18ce25a57c22ba78ef7cba64a99e3de3b9/fabrics-0.9.5.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [intelliterm]: Downloading https://files.pythonhosted.org/packages/37/c0/687e7ffb468665ff2775097a0bd611744f4487139e4255716c915b00ae3c/intelliterm-0.5.0.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/9c/16/0c85fa08b4fb534709d9bb1bdc1a835ce1c6b5cb7481dc720e98caf7c0e5/tfds-nightly-4.9.5.dev202405310044.tar.gz
+[2024-06-01 02:47:08] INFO root fetch - processPackages [intelliterm]: executing diffoscope
+[2024-06-01 02:47:08] INFO root fetch - processPackages [intelliterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelliterm-0.4.1.tar.gz tmp/intelliterm-0.5.0.tar.gz --markdown 20240601/i/intelliterm/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-06-01 02:47:08] INFO root fetch - processPackages [fabrics]: executing diffoscope
+[2024-06-01 02:47:08] INFO root fetch - processPackages [fabrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrics-0.9.4.tar.gz tmp/fabrics-0.9.5.tar.gz --markdown 20240601/f/fabrics/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-06-01 02:47:09] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-06-01 02:47:09] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405300044.tar.gz tmp/tfds-nightly-4.9.5.dev202405310044.tar.gz --markdown 20240601/t/tfds-nightly/4.9.4.dev202405300044-4.9.5.dev202405310044/README.md --exclude *.pyd
+[2024-06-01 02:47:09] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.3.2.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.3.3.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-06-01 02:47:09] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.2.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - processPackages [composio-lyzr]: Remove: archive file [/home/abi/fetcher/tmp/composio_lyzr-0.3.3.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - main [MainThread]: End processing [composio-lyzr]: success
+[2024-06-01 02:47:09] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-06-01 02:47:09] INFO root fetch - processPackages [intelliterm]: Remove: archive file [/home/abi/fetcher/tmp/intelliterm-0.4.1.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - processPackages [intelliterm]: Remove: archive file [/home/abi/fetcher/tmp/intelliterm-0.5.0.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - main [MainThread]: End processing [intelliterm]: success
+[2024-06-01 02:47:09] INFO root fetch - processPackages [fabrics]: Remove: archive file [/home/abi/fetcher/tmp/fabrics-0.9.4.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - processPackages [fabrics]: Remove: archive file [/home/abi/fetcher/tmp/fabrics-0.9.5.tar.gz]
+[2024-06-01 02:47:09] INFO root fetch - main [MainThread]: End processing [fabrics]: success
+[2024-06-01 02:47:18] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405300044.tar.gz]
+[2024-06-01 02:47:18] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.5.dev202405310044.tar.gz]
+[2024-06-01 02:47:18] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-06-01 02:47:18] INFO root fetch - main [MainThread]: Store serial: [23474287]
