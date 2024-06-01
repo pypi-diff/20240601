@@ -8405,3 +8405,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:30:54] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240531.tar.gz]
 [2024-06-01 04:30:54] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-06-01 04:30:54] INFO root fetch - main [MainThread]: Store serial: [23476447]
+[2024-06-01 04:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476447]
+[2024-06-01 04:33:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 04:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ros-glint
+[2024-06-01 04:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notebooks-and-scripts
+[2024-06-01 04:33:02] INFO root fetch - processPackages [notebooks-and-scripts]: New version: [4.492.1] Old Version: [4.480.1]
+[2024-06-01 04:33:02] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/ac/51/4fdb6787ad89af39982ededca2bf25c1995a4b14568abe38f8aab649b90b/notebooks_and_scripts-4.480.1.tar.gz
+[2024-06-01 04:33:02] INFO root fetch - processPackages [ros-glint]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-01 04:33:02] INFO root fetch - processPackages [ros-glint]: Downloading https://files.pythonhosted.org/packages/dc/05/26f03256bf392e593fa5ce135a3a62344bccf753efafdc292420a8fcf42b/ros_glint-0.1.0.tar.gz
+[2024-06-01 04:33:02] INFO root fetch - processPackages [notebooks-and-scripts]: Downloading https://files.pythonhosted.org/packages/88/96/25db4596cb234bc71cab498f774064887ab3f1e2f2efee07e9d0f29eeabe/notebooks_and_scripts-4.492.1.tar.gz
+[2024-06-01 04:33:02] INFO root fetch - processPackages [notebooks-and-scripts]: executing diffoscope
+[2024-06-01 04:33:02] INFO root fetch - processPackages [notebooks-and-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebooks_and_scripts-4.480.1.tar.gz tmp/notebooks_and_scripts-4.492.1.tar.gz --markdown 20240601/n/notebooks-and-scripts/4.480.1-4.492.1/README.md --exclude *.pyd
+[2024-06-01 04:33:03] INFO root fetch - processPackages [ros-glint]: Downloading https://files.pythonhosted.org/packages/5d/b3/7aecdddfff70a7810083c7a5eadce3c4914e33cf70cc8d79da2b1012c600/ros_glint-0.2.0.tar.gz
+[2024-06-01 04:33:03] INFO root fetch - processPackages [ros-glint]: executing diffoscope
+[2024-06-01 04:33:03] INFO root fetch - processPackages [ros-glint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ros_glint-0.1.0.tar.gz tmp/ros_glint-0.2.0.tar.gz --markdown 20240601/r/ros-glint/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-01 04:33:03] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.480.1.tar.gz]
+[2024-06-01 04:33:03] INFO root fetch - processPackages [notebooks-and-scripts]: Remove: archive file [/home/abi/fetcher/tmp/notebooks_and_scripts-4.492.1.tar.gz]
+[2024-06-01 04:33:03] INFO root fetch - main [MainThread]: End processing [notebooks-and-scripts]: success
+[2024-06-01 04:33:04] INFO root fetch - processPackages [ros-glint]: Remove: archive file [/home/abi/fetcher/tmp/ros_glint-0.1.0.tar.gz]
+[2024-06-01 04:33:04] INFO root fetch - processPackages [ros-glint]: Remove: archive file [/home/abi/fetcher/tmp/ros_glint-0.2.0.tar.gz]
+[2024-06-01 04:33:04] INFO root fetch - main [MainThread]: End processing [ros-glint]: success
+[2024-06-01 04:33:04] INFO root fetch - main [MainThread]: Store serial: [23476456]
