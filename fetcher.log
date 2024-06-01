@@ -11182,3 +11182,9 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:59:31] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.4.2.tar.gz]
 [2024-06-01 07:59:31] INFO root fetch - main [MainThread]: End processing [athina]: success
 [2024-06-01 07:59:31] INFO root fetch - main [MainThread]: Store serial: [23477739]
+[2024-06-01 08:01:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477739]
+[2024-06-01 08:01:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 08:01:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toyai
+[2024-06-01 08:01:39] WARNING root fetch - processPackages [toyai]: Skipping, unable to determine old version
+[2024-06-01 08:01:39] INFO root fetch - main [MainThread]: End processing [toyai] error
+[2024-06-01 08:01:39] INFO root fetch - main [MainThread]: Store serial: [23477744]
