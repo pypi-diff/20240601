@@ -13497,3 +13497,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:08:14] INFO root fetch - processPackages [wasmpy-build]: Remove: archive file [/home/abi/fetcher/tmp/wasmpy_build-0.5.2.tar.gz]
 [2024-06-01 11:08:14] INFO root fetch - main [MainThread]: End processing [wasmpy-build]: success
 [2024-06-01 11:08:14] INFO root fetch - main [MainThread]: Store serial: [23478930]
+[2024-06-01 11:10:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478930]
+[2024-06-01 11:10:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opea-eval
+[2024-06-01 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: platypush
+[2024-06-01 11:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiogram-broadcaster
+[2024-06-01 11:10:22] INFO root fetch - processPackages [platypush]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 11:10:22] WARNING root fetch - processPackages [opea-eval]: Skipping, unable to determine old version
+[2024-06-01 11:10:22] INFO root fetch - main [MainThread]: End processing [opea-eval] error
+[2024-06-01 11:10:22] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/60/47/d46ade9fd40d0c0bfd456f4a0e6d327a71901489b4768b39944e9cf06401/platypush-1.0.4.tar.gz
+[2024-06-01 11:10:22] INFO root fetch - processPackages [aiogram-broadcaster]: New version: [0.5.0] Old Version: [0.4.7]
+[2024-06-01 11:10:23] INFO root fetch - processPackages [aiogram-broadcaster]: Downloading https://files.pythonhosted.org/packages/9b/54/46709d7d07cf1c1381df666f9bf966cb2f5e00a469c1cc975aa4419ac11d/aiogram_broadcaster-0.4.7.tar.gz
+[2024-06-01 11:10:23] INFO root fetch - processPackages [aiogram-broadcaster]: Downloading https://files.pythonhosted.org/packages/a4/04/8c7f19cf904806e2419b1039e2323070c20be7484996015685fc21a0a0c3/aiogram_broadcaster-0.5.0.tar.gz
+[2024-06-01 11:10:23] INFO root fetch - processPackages [aiogram-broadcaster]: executing diffoscope
+[2024-06-01 11:10:23] INFO root fetch - processPackages [aiogram-broadcaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram_broadcaster-0.4.7.tar.gz tmp/aiogram_broadcaster-0.5.0.tar.gz --markdown 20240601/a/aiogram-broadcaster/0.4.7-0.5.0/README.md --exclude *.pyd
+[2024-06-01 11:10:23] INFO root fetch - processPackages [platypush]: Downloading https://files.pythonhosted.org/packages/bf/22/d1eb18e1fe42ac83f10ac17b1a6639554929b662ead173b61593b5d47baa/platypush-1.0.5.tar.gz
+[2024-06-01 11:10:23] INFO root fetch - processPackages [platypush]: executing diffoscope
+[2024-06-01 11:10:23] INFO root fetch - processPackages [platypush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platypush-1.0.4.tar.gz tmp/platypush-1.0.5.tar.gz --markdown 20240601/p/platypush/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 11:10:24] INFO root fetch - processPackages [aiogram-broadcaster]: Remove: archive file [/home/abi/fetcher/tmp/aiogram_broadcaster-0.4.7.tar.gz]
+[2024-06-01 11:10:24] INFO root fetch - processPackages [aiogram-broadcaster]: Remove: archive file [/home/abi/fetcher/tmp/aiogram_broadcaster-0.5.0.tar.gz]
+[2024-06-01 11:10:24] INFO root fetch - main [MainThread]: End processing [aiogram-broadcaster]: success
+[2024-06-01 11:10:31] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.4.tar.gz]
+[2024-06-01 11:10:31] INFO root fetch - processPackages [platypush]: Remove: archive file [/home/abi/fetcher/tmp/platypush-1.0.5.tar.gz]
+[2024-06-01 11:10:31] INFO root fetch - main [MainThread]: End processing [platypush]: success
+[2024-06-01 11:10:31] INFO root fetch - main [MainThread]: Store serial: [23478938]
