@@ -22822,3 +22822,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:32:02] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.7.tar.gz]
 [2024-06-01 22:32:02] INFO root fetch - main [MainThread]: End processing [cdk-fck-nat]: success
 [2024-06-01 22:32:02] INFO root fetch - main [MainThread]: Store serial: [23483352]
+[2024-06-01 22:34:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483352]
+[2024-06-01 22:34:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 22:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bonch-schedule
+[2024-06-01 22:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lambda-genai-builder
+[2024-06-01 22:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cz-bitbucket-jira-plugin
+[2024-06-01 22:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scim2-client
+[2024-06-01 22:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: redbacktechpy
+[2024-06-01 22:34:10] WARNING root fetch - processPackages [lambda-genai-builder]: Skipping, unable to determine old version
+[2024-06-01 22:34:10] INFO root fetch - main [MainThread]: End processing [lambda-genai-builder] error
+[2024-06-01 22:34:10] INFO root fetch - processPackages [redbacktechpy]: New version: [2024.5.1b3] Old Version: [2024.5.1b1]
+[2024-06-01 22:34:10] WARNING root fetch - processPackages [scim2-client]: Skipping, unable to determine old version
+[2024-06-01 22:34:10] INFO root fetch - main [MainThread]: End processing [scim2-client] error
+[2024-06-01 22:34:10] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/48/5f/138d9d4a002245e615a071d74851b3a830153c2ad20c2879fb6a95f0e116/redbacktechpy-2024.5.1b1.tar.gz
+[2024-06-01 22:34:10] WARNING root fetch - processPackages [cz-bitbucket-jira-plugin]: Skipping, unable to determine old version
+[2024-06-01 22:34:10] INFO root fetch - main [MainThread]: End processing [cz-bitbucket-jira-plugin] error
+[2024-06-01 22:34:10] WARNING root fetch - processPackages [bonch-schedule]: Skipping, unable to determine old version
+[2024-06-01 22:34:10] INFO root fetch - main [MainThread]: End processing [bonch-schedule] error
+[2024-06-01 22:34:11] INFO root fetch - processPackages [redbacktechpy]: Downloading https://files.pythonhosted.org/packages/3f/68/38808de8abcb04274d8a29576861d91fced259e334d33453b01a34ea8149/redbacktechpy-2024.5.1b3.tar.gz
+[2024-06-01 22:34:11] INFO root fetch - processPackages [redbacktechpy]: executing diffoscope
+[2024-06-01 22:34:11] INFO root fetch - processPackages [redbacktechpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbacktechpy-2024.5.1b1.tar.gz tmp/redbacktechpy-2024.5.1b3.tar.gz --markdown 20240601/r/redbacktechpy/2024.5.1b1-2024.5.1b3/README.md --exclude *.pyd
+[2024-06-01 22:34:11] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.1b1.tar.gz]
+[2024-06-01 22:34:11] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.1b3.tar.gz]
+[2024-06-01 22:34:11] INFO root fetch - main [MainThread]: End processing [redbacktechpy]: success
+[2024-06-01 22:34:11] INFO root fetch - main [MainThread]: Store serial: [23483371]
