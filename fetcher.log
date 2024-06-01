@@ -21124,3 +21124,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:20:32] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.3.dev20240601181343.tar.gz]
 [2024-06-01 20:20:32] INFO root fetch - main [MainThread]: End processing [almax-common]: success
 [2024-06-01 20:20:32] INFO root fetch - main [MainThread]: Store serial: [23482468]
+[2024-06-01 20:22:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482468]
+[2024-06-01 20:22:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-voicestream
+[2024-06-01 20:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-mongo-document
+[2024-06-01 20:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: network-diffusion
+[2024-06-01 20:22:41] INFO root fetch - processPackages [openai-voicestream]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 20:22:41] INFO root fetch - processPackages [network-diffusion]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 20:22:41] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/31/07/8b415bbd0cce5d8c54f10ca2e9441fdbff6d9e3ce91e58f44843f41d2335/network_diffusion-0.8.0.tar.gz
+[2024-06-01 20:22:41] INFO root fetch - processPackages [pydantic-mongo-document]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 20:22:41] INFO root fetch - processPackages [openai-voicestream]: Downloading https://files.pythonhosted.org/packages/25/9c/be2bea879d181e57c0c54d8e490ce897027c9358f36290d256d60cf8391a/openai_voicestream-0.1.0.tar.gz
+[2024-06-01 20:22:41] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/cc/de/bda9b4502f57f0706d2165b6bfbbf5edeabbcb382c2e13870c5512942999/pydantic_mongo_document-0.1.7.tar.gz
+[2024-06-01 20:22:41] INFO root fetch - processPackages [network-diffusion]: Downloading https://files.pythonhosted.org/packages/81/1a/b6692ce2d9c366a1672e75b7adbd512df91035714fadccd1a9f35515bd8e/network_diffusion-0.9.0.tar.gz
+[2024-06-01 20:22:42] INFO root fetch - processPackages [network-diffusion]: executing diffoscope
+[2024-06-01 20:22:42] INFO root fetch - processPackages [network-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/network_diffusion-0.8.0.tar.gz tmp/network_diffusion-0.9.0.tar.gz --markdown 20240601/n/network-diffusion/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 20:22:42] INFO root fetch - processPackages [openai-voicestream]: Downloading https://files.pythonhosted.org/packages/d7/bd/8a8e63b26f439a8e7ce6b15ea78f281e6389bf589e6fb38a9096b5fb32a7/openai_voicestream-0.1.1.tar.gz
+[2024-06-01 20:22:42] INFO root fetch - processPackages [pydantic-mongo-document]: Downloading https://files.pythonhosted.org/packages/f3/18/2efab79c31c9bfb2dc4445e1f05f325d3d5a4354c1f367a6d162926a0716/pydantic_mongo_document-0.1.8.tar.gz
+[2024-06-01 20:22:42] INFO root fetch - processPackages [openai-voicestream]: executing diffoscope
+[2024-06-01 20:22:42] INFO root fetch - processPackages [openai-voicestream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_voicestream-0.1.0.tar.gz tmp/openai_voicestream-0.1.1.tar.gz --markdown 20240601/o/openai-voicestream/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 20:22:42] INFO root fetch - processPackages [pydantic-mongo-document]: executing diffoscope
+[2024-06-01 20:22:42] INFO root fetch - processPackages [pydantic-mongo-document]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_mongo_document-0.1.7.tar.gz tmp/pydantic_mongo_document-0.1.8.tar.gz --markdown 20240601/p/pydantic-mongo-document/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 20:22:42] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.8.0.tar.gz]
+[2024-06-01 20:22:42] INFO root fetch - processPackages [network-diffusion]: Remove: archive file [/home/abi/fetcher/tmp/network_diffusion-0.9.0.tar.gz]
+[2024-06-01 20:22:42] INFO root fetch - main [MainThread]: End processing [network-diffusion]: success
+[2024-06-01 20:22:42] INFO root fetch - processPackages [openai-voicestream]: Remove: archive file [/home/abi/fetcher/tmp/openai_voicestream-0.1.0.tar.gz]
+[2024-06-01 20:22:42] INFO root fetch - processPackages [openai-voicestream]: Remove: archive file [/home/abi/fetcher/tmp/openai_voicestream-0.1.1.tar.gz]
+[2024-06-01 20:22:42] INFO root fetch - main [MainThread]: End processing [openai-voicestream]: success
+[2024-06-01 20:22:42] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.7.tar.gz]
+[2024-06-01 20:22:42] INFO root fetch - processPackages [pydantic-mongo-document]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_mongo_document-0.1.8.tar.gz]
+[2024-06-01 20:22:42] INFO root fetch - main [MainThread]: End processing [pydantic-mongo-document]: success
+[2024-06-01 20:22:42] INFO root fetch - main [MainThread]: Store serial: [23482479]
