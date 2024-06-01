@@ -15602,3 +15602,24 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:59:43] INFO root fetch - processPackages [dve-lumipy-testing]: Remove: archive file [/home/abi/fetcher/tmp/dve_lumipy_testing-1.0.99-py3-none-any.whl.zip]
 [2024-06-01 13:59:43] INFO root fetch - main [MainThread]: End processing [dve-lumipy-testing]: success
 [2024-06-01 13:59:43] INFO root fetch - main [MainThread]: Store serial: [23479883]
+[2024-06-01 14:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479883]
+[2024-06-01 14:01:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 14:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libschrodinger
+[2024-06-01 14:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IDswapper
+[2024-06-01 14:01:52] INFO root fetch - processPackages [IDswapper]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 14:01:52] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/cf/97/9c5528503232e075f2301ec8b367a8a218dd78cf782f997f82097c00e807/idswapper-0.1.1.tar.gz
+[2024-06-01 14:01:52] INFO root fetch - processPackages [libschrodinger]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-06-01 14:01:52] INFO root fetch - processPackages [libschrodinger]: Downloading https://files.pythonhosted.org/packages/df/6b/5ce422240c3d7b002da996664cff0fa436f6ec18b230bf0e0f697692f739/libschrodinger-1.2.2.tar.gz
+[2024-06-01 14:01:53] INFO root fetch - processPackages [libschrodinger]: Downloading https://files.pythonhosted.org/packages/ad/17/9e909865b20e7189370e1c33f212601b92c49ae17a40e678a82fb8d20e03/libschrodinger-1.2.3.tar.gz
+[2024-06-01 14:01:53] INFO root fetch - processPackages [libschrodinger]: executing diffoscope
+[2024-06-01 14:01:53] INFO root fetch - processPackages [libschrodinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libschrodinger-1.2.2.tar.gz tmp/libschrodinger-1.2.3.tar.gz --markdown 20240601/l/libschrodinger/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-06-01 14:01:53] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/a2/13/cf2349e91e5f03fb7ae875a28e84cd4182e8db27d45b5d3cfec232678ddb/idswapper-0.1.2.tar.gz
+[2024-06-01 14:01:53] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 14:01:53] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.1.1.tar.gz tmp/idswapper-0.1.2.tar.gz --markdown 20240601/I/IDswapper/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 14:01:53] INFO root fetch - processPackages [libschrodinger]: Remove: archive file [/home/abi/fetcher/tmp/libschrodinger-1.2.2.tar.gz]
+[2024-06-01 14:01:53] INFO root fetch - processPackages [libschrodinger]: Remove: archive file [/home/abi/fetcher/tmp/libschrodinger-1.2.3.tar.gz]
+[2024-06-01 14:01:53] INFO root fetch - main [MainThread]: End processing [libschrodinger]: success
+[2024-06-01 14:01:54] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.1.tar.gz]
+[2024-06-01 14:01:54] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.2.tar.gz]
+[2024-06-01 14:01:54] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 14:01:54] INFO root fetch - main [MainThread]: Store serial: [23479890]
