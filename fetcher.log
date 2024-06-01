@@ -13321,3 +13321,45 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:01:36] INFO root fetch - processPackages [reloader.py]: Remove: archive file [/home/abi/fetcher/tmp/reloader_py-0.9.1.tar.gz]
 [2024-06-01 11:01:36] INFO root fetch - main [MainThread]: End processing [reloader.py]: success
 [2024-06-01 11:01:36] INFO root fetch - main [MainThread]: Store serial: [23478867]
+[2024-06-01 11:03:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478867]
+[2024-06-01 11:03:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 11:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ltasg
+[2024-06-01 11:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neural-insights
+[2024-06-01 11:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neural-solution
+[2024-06-01 11:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eatb
+[2024-06-01 11:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rencrypt
+[2024-06-01 11:03:44] WARNING root fetch - processPackages [rencrypt]: Skipping, unable to determine old version
+[2024-06-01 11:03:44] INFO root fetch - main [MainThread]: End processing [rencrypt] error
+[2024-06-01 11:03:44] INFO root fetch - processPackages [eatb]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-06-01 11:03:44] INFO root fetch - processPackages [eatb]: Downloading https://files.pythonhosted.org/packages/0d/53/d00137f695574e3ddc739f6182bdcee34793983e7f459721fab2a98ee8ae/eatb-0.2.1.tar.gz
+[2024-06-01 11:03:44] INFO root fetch - processPackages [neural-solution]: New version: [2.5.1] Old Version: [2.4]
+[2024-06-01 11:03:44] INFO root fetch - processPackages [ltasg]: New version: [0.0.6.post1] Old Version: [0.0.6]
+[2024-06-01 11:03:44] INFO root fetch - processPackages [neural-insights]: New version: [2.5.1] Old Version: [2.4]
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-solution]: Downloading https://files.pythonhosted.org/packages/73/c6/6cca6d6c9095dc31a71118d01998cd73e71809ada4403d6ace20b47c0456/neural_solution-2.4.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [ltasg]: Downloading https://files.pythonhosted.org/packages/36/a5/32883b8273ea1ce4187c5d203cbf5bae5adaafc9ca72b18ae7ae834fa845/ltasg-0.0.6.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-insights]: Downloading https://files.pythonhosted.org/packages/fe/f8/e432908abea70f8ef78d72f1ea820be94222ef1730b04d735dcb0091ccd8/neural_insights-2.4.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [eatb]: Downloading https://files.pythonhosted.org/packages/42/43/dbf593185b219bac2594d78b3421dbeca507a55b102b0301dc0da6112012/eatb-0.2.2.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [eatb]: executing diffoscope
+[2024-06-01 11:03:45] INFO root fetch - processPackages [eatb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eatb-0.2.1.tar.gz tmp/eatb-0.2.2.tar.gz --markdown 20240601/e/eatb/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-solution]: Downloading https://files.pythonhosted.org/packages/eb/e8/81c1504cd78d60d2b5b5f0eac365d2f28038cc9fd8e8f10fb12cfb7ff6ae/neural_solution-2.5.1.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [ltasg]: Downloading https://files.pythonhosted.org/packages/d8/69/aa0dd8818d14b8a2777a815f24e462298b270a14319ac9e75d63e6efba8f/ltasg-0.0.6.post1.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [ltasg]: executing diffoscope
+[2024-06-01 11:03:45] INFO root fetch - processPackages [ltasg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ltasg-0.0.6.tar.gz tmp/ltasg-0.0.6.post1.tar.gz --markdown 20240601/l/ltasg/0.0.6-0.0.6.post1/README.md --exclude *.pyd
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-insights]: Downloading https://files.pythonhosted.org/packages/14/bd/c91cb6a90e06bc68965e3b740538a740e8ae2d167928dad2d2d5ae0a65cd/neural_insights-2.5.1.tar.gz
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-solution]: executing diffoscope
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-solution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural_solution-2.4.tar.gz tmp/neural_solution-2.5.1.tar.gz --markdown 20240601/n/neural-solution/2.4-2.5.1/README.md --exclude *.pyd
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-insights]: executing diffoscope
+[2024-06-01 11:03:45] INFO root fetch - processPackages [neural-insights]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural_insights-2.4.tar.gz tmp/neural_insights-2.5.1.tar.gz --markdown 20240601/n/neural-insights/2.4-2.5.1/README.md --exclude *.pyd
+[2024-06-01 11:03:46] INFO root fetch - processPackages [ltasg]: Remove: archive file [/home/abi/fetcher/tmp/ltasg-0.0.6.tar.gz]
+[2024-06-01 11:03:46] INFO root fetch - processPackages [ltasg]: Remove: archive file [/home/abi/fetcher/tmp/ltasg-0.0.6.post1.tar.gz]
+[2024-06-01 11:03:46] INFO root fetch - main [MainThread]: End processing [ltasg]: success
+[2024-06-01 11:03:46] INFO root fetch - processPackages [neural-solution]: Remove: archive file [/home/abi/fetcher/tmp/neural_solution-2.4.tar.gz]
+[2024-06-01 11:03:46] INFO root fetch - processPackages [neural-solution]: Remove: archive file [/home/abi/fetcher/tmp/neural_solution-2.5.1.tar.gz]
+[2024-06-01 11:03:46] INFO root fetch - main [MainThread]: End processing [neural-solution]: success
+[2024-06-01 11:03:46] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.1.tar.gz]
+[2024-06-01 11:03:46] INFO root fetch - processPackages [eatb]: Remove: archive file [/home/abi/fetcher/tmp/eatb-0.2.2.tar.gz]
+[2024-06-01 11:03:46] INFO root fetch - main [MainThread]: End processing [eatb]: success
+[2024-06-01 11:03:47] INFO root fetch - processPackages [neural-insights]: Remove: archive file [/home/abi/fetcher/tmp/neural_insights-2.4.tar.gz]
+[2024-06-01 11:03:47] INFO root fetch - processPackages [neural-insights]: Remove: archive file [/home/abi/fetcher/tmp/neural_insights-2.5.1.tar.gz]
+[2024-06-01 11:03:47] INFO root fetch - main [MainThread]: End processing [neural-insights]: success
+[2024-06-01 11:03:47] INFO root fetch - main [MainThread]: Store serial: [23478883]
