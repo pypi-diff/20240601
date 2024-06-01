@@ -13612,3 +13612,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:19:13] INFO root fetch - processPackages [vortexpy]: Remove: archive file [/home/abi/fetcher/tmp/vortexpy-4.0.8.tar.gz]
 [2024-06-01 11:19:13] INFO root fetch - main [MainThread]: End processing [vortexpy]: success
 [2024-06-01 11:19:13] INFO root fetch - main [MainThread]: Store serial: [23478976]
+[2024-06-01 11:21:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478976]
+[2024-06-01 11:21:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 11:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warskald
+[2024-06-01 11:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wakepy
+[2024-06-01 11:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diagralhomekit
+[2024-06-01 11:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: joyrl
+[2024-06-01 11:21:23] INFO root fetch - processPackages [joyrl]: New version: [0.6.0.1] Old Version: [0.6.0]
+[2024-06-01 11:21:23] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/32/3d/0955ff3abdc7c5f7bfadff319a9bcb9a46ac98be71a8210151705542c441/joyrl-0.6.0.tar.gz
+[2024-06-01 11:21:23] INFO root fetch - processPackages [wakepy]: New version: [0.9.0.post1] Old Version: [0.9.0]
+[2024-06-01 11:21:23] INFO root fetch - processPackages [diagralhomekit]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 11:21:23] INFO root fetch - processPackages [warskald]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 11:21:23] INFO root fetch - processPackages [diagralhomekit]: Downloading https://files.pythonhosted.org/packages/e2/f4/0314e286926dc0990ae6710a6f2b7aec31e70c23e07f9c6848bba12f2bf2/diagralhomekit-0.9.8.tar.gz
+[2024-06-01 11:21:23] INFO root fetch - processPackages [warskald]: Downloading https://files.pythonhosted.org/packages/86/a7/fdf44f966fab4cbd9c675ff351f1f7baced1f13edd727ccf76bd7ed99d57/warskald-0.0.8-py3-none-any.whl
+[2024-06-01 11:21:23] INFO root fetch - processPackages [wakepy]: Downloading https://files.pythonhosted.org/packages/c9/83/2734b77dc72e944abb15a7eef744ccb7b801257f5960876892059d081ded/wakepy-0.9.0.tar.gz
+[2024-06-01 11:21:23] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/fe/4a/6f8c953826fc34d3e248dc200db9337f713dfb29a05ea150032f0997272e/joyrl-0.6.0.1.tar.gz
+[2024-06-01 11:21:23] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2024-06-01 11:21:23] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.6.0.tar.gz tmp/joyrl-0.6.0.1.tar.gz --markdown 20240601/j/joyrl/0.6.0-0.6.0.1/README.md --exclude *.pyd
+[2024-06-01 11:21:23] INFO root fetch - processPackages [warskald]: Downloading https://files.pythonhosted.org/packages/d7/10/c13e2047f69a69094aea1d1d44f31f8401de9e536c7a3a530050194a958e/warskald-0.0.9-py3-none-any.whl
+[2024-06-01 11:21:23] INFO root fetch - processPackages [diagralhomekit]: Downloading https://files.pythonhosted.org/packages/11/e4/846ad6badc90b6fe745f3875b96c2995aa3c0f58af08162803f716721f06/diagralhomekit-0.9.9.tar.gz
+[2024-06-01 11:21:23] INFO root fetch - processPackages [wakepy]: Downloading https://files.pythonhosted.org/packages/a0/d3/42eca16422976ca29540ce67ce5a9d98ec32ad99750b4714143b1b84416e/wakepy-0.9.0.post1.tar.gz
+[2024-06-01 11:21:23] INFO root fetch - processPackages [warskald]: executing diffoscope
+[2024-06-01 11:21:23] INFO root fetch - processPackages [warskald]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warskald-0.0.8-py3-none-any.whl.zip tmp/warskald-0.0.9-py3-none-any.whl.zip --markdown 20240601/w/warskald/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 11:21:23] INFO root fetch - processPackages [diagralhomekit]: executing diffoscope
+[2024-06-01 11:21:23] INFO root fetch - processPackages [diagralhomekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diagralhomekit-0.9.8.tar.gz tmp/diagralhomekit-0.9.9.tar.gz --markdown 20240601/d/diagralhomekit/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 11:21:24] INFO root fetch - processPackages [wakepy]: executing diffoscope
+[2024-06-01 11:21:24] INFO root fetch - processPackages [wakepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wakepy-0.9.0.tar.gz tmp/wakepy-0.9.0.post1.tar.gz --markdown 20240601/w/wakepy/0.9.0-0.9.0.post1/README.md --exclude *.pyd
+[2024-06-01 11:21:24] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.tar.gz]
+[2024-06-01 11:21:24] INFO root fetch - processPackages [joyrl]: Remove: archive file [/home/abi/fetcher/tmp/joyrl-0.6.0.1.tar.gz]
+[2024-06-01 11:21:24] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2024-06-01 11:21:24] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.8-py3-none-any.whl.zip]
+[2024-06-01 11:21:24] INFO root fetch - processPackages [warskald]: Remove: archive file [/home/abi/fetcher/tmp/warskald-0.0.9-py3-none-any.whl.zip]
+[2024-06-01 11:21:24] INFO root fetch - main [MainThread]: End processing [warskald]: success
+[2024-06-01 11:21:24] INFO root fetch - processPackages [diagralhomekit]: Remove: archive file [/home/abi/fetcher/tmp/diagralhomekit-0.9.8.tar.gz]
+[2024-06-01 11:21:24] INFO root fetch - processPackages [diagralhomekit]: Remove: archive file [/home/abi/fetcher/tmp/diagralhomekit-0.9.9.tar.gz]
+[2024-06-01 11:21:24] INFO root fetch - main [MainThread]: End processing [diagralhomekit]: success
+[2024-06-01 11:21:24] INFO root fetch - processPackages [wakepy]: Remove: archive file [/home/abi/fetcher/tmp/wakepy-0.9.0.tar.gz]
+[2024-06-01 11:21:24] INFO root fetch - processPackages [wakepy]: Remove: archive file [/home/abi/fetcher/tmp/wakepy-0.9.0.post1.tar.gz]
+[2024-06-01 11:21:24] INFO root fetch - main [MainThread]: End processing [wakepy]: success
+[2024-06-01 11:21:24] INFO root fetch - main [MainThread]: Store serial: [23478989]
