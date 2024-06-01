@@ -14043,3 +14043,35 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:56:26] INFO root fetch - processPackages [qwantz-metadata]: Remove: archive file [/home/abi/fetcher/tmp/qwantz_metadata-2024.6.1.tar.gz]
 [2024-06-01 11:56:26] INFO root fetch - main [MainThread]: End processing [qwantz-metadata]: success
 [2024-06-01 11:56:26] INFO root fetch - main [MainThread]: Store serial: [23479191]
+[2024-06-01 11:58:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479191]
+[2024-06-01 11:58:34] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 12:00:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479193]
+[2024-06-01 12:00:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 12:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HakObserverpy
+[2024-06-01 12:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-keras-nightly
+[2024-06-01 12:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-pydantic-form
+[2024-06-01 12:00:40] INFO root fetch - processPackages [dash-pydantic-form]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 12:00:40] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024053109] Old Version: [2.17.0.dev2024053009]
+[2024-06-01 12:00:40] INFO root fetch - processPackages [dash-pydantic-form]: Downloading https://files.pythonhosted.org/packages/5d/79/f2446a74a0647d97f1ed631fb51aac1114a2235ba75271a8e7912a8c0ae8/dash_pydantic_form-0.1.8.tar.gz
+[2024-06-01 12:00:40] INFO root fetch - processPackages [HakObserverpy]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-06-01 12:00:40] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/a7/6f/78ebb906d7b57dec5de1411a4fc1c5fe5daf061b5fb2b450731ddf3804f4/tf_keras_nightly-2.17.0.dev2024053009.tar.gz
+[2024-06-01 12:00:40] INFO root fetch - processPackages [HakObserverpy]: Downloading https://files.pythonhosted.org/packages/13/da/5a581c8a2a7b4f03fc1fe55b4c0610e0bc443db9908facb634767a4fdbb7/HakObserverpy-0.6.4.tar.gz
+[2024-06-01 12:00:40] INFO root fetch - processPackages [dash-pydantic-form]: Downloading https://files.pythonhosted.org/packages/27/6d/ebcc7cd94582252583d5ed56864691c7d23afa009ca5100c21ab9f8bb15d/dash_pydantic_form-0.1.9.tar.gz
+[2024-06-01 12:00:40] INFO root fetch - processPackages [dash-pydantic-form]: executing diffoscope
+[2024-06-01 12:00:40] INFO root fetch - processPackages [dash-pydantic-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_pydantic_form-0.1.8.tar.gz tmp/dash_pydantic_form-0.1.9.tar.gz --markdown 20240601/d/dash-pydantic-form/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 12:00:40] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/8c/d0/d74977e6fcaa02645fffdd4ed5e26fa436cb99f01963fcb0a716acc5e022/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl
+[2024-06-01 12:00:40] INFO root fetch - processPackages [HakObserverpy]: Downloading https://files.pythonhosted.org/packages/20/d9/702e5c8e2d3da356bdeab7c50a639541352a175609cb30131287bda5b533/HakObserverpy-0.6.5.tar.gz
+[2024-06-01 12:00:41] INFO root fetch - processPackages [HakObserverpy]: executing diffoscope
+[2024-06-01 12:00:41] INFO root fetch - processPackages [HakObserverpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HakObserverpy-0.6.4.tar.gz tmp/HakObserverpy-0.6.5.tar.gz --markdown 20240601/H/HakObserverpy/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-06-01 12:00:41] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-06-01 12:00:41] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024053009.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl.zip --markdown 20240601/t/tf-keras-nightly/2.17.0.dev2024053009-2.17.0.dev2024053109/README.md --exclude *.pyd
+[2024-06-01 12:00:41] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.8.tar.gz]
+[2024-06-01 12:00:41] INFO root fetch - processPackages [dash-pydantic-form]: Remove: archive file [/home/abi/fetcher/tmp/dash_pydantic_form-0.1.9.tar.gz]
+[2024-06-01 12:00:41] INFO root fetch - main [MainThread]: End processing [dash-pydantic-form]: success
+[2024-06-01 12:00:41] INFO root fetch - processPackages [HakObserverpy]: Remove: archive file [/home/abi/fetcher/tmp/HakObserverpy-0.6.4.tar.gz]
+[2024-06-01 12:00:41] INFO root fetch - processPackages [HakObserverpy]: Remove: archive file [/home/abi/fetcher/tmp/HakObserverpy-0.6.5.tar.gz]
+[2024-06-01 12:00:41] INFO root fetch - main [MainThread]: End processing [HakObserverpy]: success
+[2024-06-01 12:00:41] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024053009.tar.gz]
+[2024-06-01 12:00:41] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl.zip]
+[2024-06-01 12:00:41] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-06-01 12:00:41] INFO root fetch - main [MainThread]: Store serial: [23479204]
