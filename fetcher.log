@@ -8195,3 +8195,15 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:12:52] INFO root fetch - processPackages [zoho-analytics-connector]: Remove: archive file [/home/abi/fetcher/tmp/zoho_analytics_connector-1.4.5.tar.gz]
 [2024-06-01 04:12:52] INFO root fetch - main [MainThread]: End processing [zoho-analytics-connector]: success
 [2024-06-01 04:12:52] INFO root fetch - main [MainThread]: Store serial: [23476347]
+[2024-06-01 04:14:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476347]
+[2024-06-01 04:15:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 04:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SkiBiDi-ORM
+[2024-06-01 04:15:01] INFO root fetch - processPackages [SkiBiDi-ORM]: New version: [0.1.22] Old Version: [0.1.21]
+[2024-06-01 04:15:01] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/28/27/cc07cc49198524404d4c0fbefff554bbbcccf9a38cb0568d0a840648da38/skibidi_orm-0.1.21.tar.gz
+[2024-06-01 04:15:02] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/2b/ee/53061d6db172aed60287acaf6aee19862e8883d821dd5a67df7a2d77f9c7/skibidi_orm-0.1.22.tar.gz
+[2024-06-01 04:15:02] INFO root fetch - processPackages [SkiBiDi-ORM]: executing diffoscope
+[2024-06-01 04:15:02] INFO root fetch - processPackages [SkiBiDi-ORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skibidi_orm-0.1.21.tar.gz tmp/skibidi_orm-0.1.22.tar.gz --markdown 20240601/S/SkiBiDi-ORM/0.1.21-0.1.22/README.md --exclude *.pyd
+[2024-06-01 04:15:03] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.21.tar.gz]
+[2024-06-01 04:15:03] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.22.tar.gz]
+[2024-06-01 04:15:03] INFO root fetch - main [MainThread]: End processing [SkiBiDi-ORM]: success
+[2024-06-01 04:15:03] INFO root fetch - main [MainThread]: Store serial: [23476352]
