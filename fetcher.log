@@ -14075,3 +14075,45 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:00:41] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024053109-py3-none-any.whl.zip]
 [2024-06-01 12:00:41] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-06-01 12:00:41] INFO root fetch - main [MainThread]: Store serial: [23479204]
+[2024-06-01 12:02:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479204]
+[2024-06-01 12:02:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 12:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: canu
+[2024-06-01 12:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwpdb.utils.dp
+[2024-06-01 12:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tortoise-orm
+[2024-06-01 12:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: WinDirectInput
+[2024-06-01 12:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mcdreforged
+[2024-06-01 12:02:50] INFO root fetch - processPackages [WinDirectInput]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-06-01 12:02:50] WARNING root fetch - processPackages [canu]: Skipping, unable to determine old version
+[2024-06-01 12:02:50] INFO root fetch - main [MainThread]: End processing [canu] error
+[2024-06-01 12:02:50] INFO root fetch - processPackages [wwpdb.utils.dp]: New version: [0.51.2] Old Version: [0.51.1.dev1]
+[2024-06-01 12:02:50] INFO root fetch - processPackages [mcdreforged]: New version: [2.9.1] Old Version: [2.9.0]
+[2024-06-01 12:02:50] INFO root fetch - processPackages [tortoise-orm]: New version: [0.9.4] Old Version: [0.9.2]
+[2024-06-01 12:02:50] INFO root fetch - processPackages [WinDirectInput]: Downloading https://files.pythonhosted.org/packages/ad/e6/4ddcbc6519d99d72a853be7858cf7811b9dba6baf8808d48fc3fbc1afa96/WinDirectInput-1.1.0.tar.gz
+[2024-06-01 12:02:50] INFO root fetch - processPackages [wwpdb.utils.dp]: Downloading https://files.pythonhosted.org/packages/2e/ec/1f95eb32283dbf1bcf546adcc23a2685d64613ed65e5d82a361a9397e583/wwpdb_utils_dp-0.51.1.dev1.tar.gz
+[2024-06-01 12:02:50] INFO root fetch - processPackages [tortoise-orm]: Downloading https://files.pythonhosted.org/packages/39/9f/ffdf1109a315712cb2789ec9ac282a403e6a76725952ac8d91fe32ae2918/tortoise-orm-0.9.2.tar.gz
+[2024-06-01 12:02:50] INFO root fetch - processPackages [mcdreforged]: Downloading https://files.pythonhosted.org/packages/75/53/a346eb7689cbc1032930b9a817225a4dc9e01755ffb033fb0a82263d4010/mcdreforged-2.9.0.tar.gz
+[2024-06-01 12:02:51] INFO root fetch - processPackages [WinDirectInput]: Downloading https://files.pythonhosted.org/packages/27/fa/d844293015485b5abc9da7931cd7980b09a229b0982f8e4c72d8066c5a00/WinDirectInput-1.2.0.tar.gz
+[2024-06-01 12:02:51] INFO root fetch - processPackages [WinDirectInput]: executing diffoscope
+[2024-06-01 12:02:51] INFO root fetch - processPackages [WinDirectInput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WinDirectInput-1.1.0.tar.gz tmp/WinDirectInput-1.2.0.tar.gz --markdown 20240601/W/WinDirectInput/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-06-01 12:02:51] INFO root fetch - processPackages [wwpdb.utils.dp]: Downloading https://files.pythonhosted.org/packages/71/31/a606dc15c31d16b7341f4b46b770902cc094cbe1908dca38c6d797fe249b/wwpdb_utils_dp-0.51.2.tar.gz
+[2024-06-01 12:02:51] INFO root fetch - processPackages [tortoise-orm]: Downloading https://files.pythonhosted.org/packages/b8/f3/f3dea97fd4265ef0a33714eaef79fd8e25334636fad1e4c470eb64224a62/tortoise-orm-0.9.4.tar.gz
+[2024-06-01 12:02:51] INFO root fetch - processPackages [mcdreforged]: Downloading https://files.pythonhosted.org/packages/3e/f6/db6ffb8fec6ee9309f7904881212702f31265d6ca756379b76309a83e03f/mcdreforged-2.9.1.tar.gz
+[2024-06-01 12:02:51] INFO root fetch - processPackages [wwpdb.utils.dp]: executing diffoscope
+[2024-06-01 12:02:51] INFO root fetch - processPackages [wwpdb.utils.dp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb_utils_dp-0.51.1.dev1.tar.gz tmp/wwpdb_utils_dp-0.51.2.tar.gz --markdown 20240601/w/wwpdb.utils.dp/0.51.1.dev1-0.51.2/README.md --exclude *.pyd
+[2024-06-01 12:02:51] INFO root fetch - processPackages [mcdreforged]: executing diffoscope
+[2024-06-01 12:02:51] INFO root fetch - processPackages [mcdreforged]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcdreforged-2.9.0.tar.gz tmp/mcdreforged-2.9.1.tar.gz --markdown 20240601/m/mcdreforged/2.9.0-2.9.1/README.md --exclude *.pyd
+[2024-06-01 12:02:51] INFO root fetch - processPackages [tortoise-orm]: executing diffoscope
+[2024-06-01 12:02:51] INFO root fetch - processPackages [tortoise-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tortoise-orm-0.9.2.tar.gz tmp/tortoise-orm-0.9.4.tar.gz --markdown 20240601/t/tortoise-orm/0.9.2-0.9.4/README.md --exclude *.pyd
+[2024-06-01 12:02:52] INFO root fetch - processPackages [WinDirectInput]: Remove: archive file [/home/abi/fetcher/tmp/WinDirectInput-1.1.0.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - processPackages [WinDirectInput]: Remove: archive file [/home/abi/fetcher/tmp/WinDirectInput-1.2.0.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - main [MainThread]: End processing [WinDirectInput]: success
+[2024-06-01 12:02:52] INFO root fetch - processPackages [wwpdb.utils.dp]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_utils_dp-0.51.1.dev1.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - processPackages [wwpdb.utils.dp]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_utils_dp-0.51.2.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.dp]: success
+[2024-06-01 12:02:52] INFO root fetch - processPackages [mcdreforged]: Remove: archive file [/home/abi/fetcher/tmp/mcdreforged-2.9.0.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - processPackages [mcdreforged]: Remove: archive file [/home/abi/fetcher/tmp/mcdreforged-2.9.1.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - main [MainThread]: End processing [mcdreforged]: success
+[2024-06-01 12:02:52] INFO root fetch - processPackages [tortoise-orm]: Remove: archive file [/home/abi/fetcher/tmp/tortoise-orm-0.9.2.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - processPackages [tortoise-orm]: Remove: archive file [/home/abi/fetcher/tmp/tortoise-orm-0.9.4.tar.gz]
+[2024-06-01 12:02:52] INFO root fetch - main [MainThread]: End processing [tortoise-orm]: success
+[2024-06-01 12:02:52] INFO root fetch - main [MainThread]: Store serial: [23479221]
