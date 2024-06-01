@@ -21358,3 +21358,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:40:19] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.1.2-py3-none-any.whl.zip]
 [2024-06-01 20:40:19] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
 [2024-06-01 20:40:19] INFO root fetch - main [MainThread]: Store serial: [23482612]
+[2024-06-01 20:42:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482612]
+[2024-06-01 20:42:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exllamav2
+[2024-06-01 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mezcla
+[2024-06-01 20:42:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: madrin
+[2024-06-01 20:42:27] INFO root fetch - processPackages [exllamav2]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 20:42:28] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/60/94/6af0d7d7e310adaeb55ec445e70cc89c801948b3c283ba62f7b61d5a6c89/exllamav2-0.1.1-py3-none-any.whl
+[2024-06-01 20:42:28] WARNING root fetch - processPackages [madrin]: Skipping, unable to determine old version
+[2024-06-01 20:42:28] INFO root fetch - main [MainThread]: End processing [madrin] error
+[2024-06-01 20:42:28] INFO root fetch - processPackages [mezcla]: New version: [1.4.0.2] Old Version: [1.4.0.1]
+[2024-06-01 20:42:28] INFO root fetch - processPackages [mezcla]: Downloading https://files.pythonhosted.org/packages/28/b1/4caf111acdf4083ce21885d4f8501e5eeb329dab2e3cf4a71addb7de21a8/mezcla-1.4.0.1.tar.gz
+[2024-06-01 20:42:28] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/90/3b/afd61d767975e136c863a0e51245be3643f8654509c65f810c9facb1c2c6/exllamav2-0.1.2-py3-none-any.whl
+[2024-06-01 20:42:28] INFO root fetch - processPackages [exllamav2]: executing diffoscope
+[2024-06-01 20:42:28] INFO root fetch - processPackages [exllamav2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exllamav2-0.1.1-py3-none-any.whl.zip tmp/exllamav2-0.1.2-py3-none-any.whl.zip --markdown 20240601/e/exllamav2/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 20:42:28] INFO root fetch - processPackages [mezcla]: Downloading https://files.pythonhosted.org/packages/1d/34/ea6dc7ac6ca59f2ce30dd2db1f4a35ea0b7c8a2c15f7f042905e9fe4bc7f/mezcla-1.4.0.2.tar.gz
+[2024-06-01 20:42:29] INFO root fetch - processPackages [mezcla]: executing diffoscope
+[2024-06-01 20:42:29] INFO root fetch - processPackages [mezcla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mezcla-1.4.0.1.tar.gz tmp/mezcla-1.4.0.2.tar.gz --markdown 20240601/m/mezcla/1.4.0.1-1.4.0.2/README.md --exclude *.pyd
+[2024-06-01 20:42:29] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.1.1-py3-none-any.whl.zip]
+[2024-06-01 20:42:29] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.1.2-py3-none-any.whl.zip]
+[2024-06-01 20:42:29] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
+[2024-06-01 20:42:31] INFO root fetch - processPackages [mezcla]: Remove: archive file [/home/abi/fetcher/tmp/mezcla-1.4.0.1.tar.gz]
+[2024-06-01 20:42:31] INFO root fetch - processPackages [mezcla]: Remove: archive file [/home/abi/fetcher/tmp/mezcla-1.4.0.2.tar.gz]
+[2024-06-01 20:42:31] INFO root fetch - main [MainThread]: End processing [mezcla]: success
+[2024-06-01 20:42:31] INFO root fetch - main [MainThread]: Store serial: [23482624]
