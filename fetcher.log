@@ -10355,3 +10355,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:33:49] INFO root fetch - processPackages [simplelogincmd]: Remove: archive file [/home/abi/fetcher/tmp/simplelogincmd-0.2.1.tar.gz]
 [2024-06-01 06:33:49] INFO root fetch - main [MainThread]: End processing [simplelogincmd]: success
 [2024-06-01 06:33:49] INFO root fetch - main [MainThread]: Store serial: [23477272]
+[2024-06-01 06:35:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477272]
+[2024-06-01 06:35:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 06:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Edge-Detection-Image
+[2024-06-01 06:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libresvip
+[2024-06-01 06:35:58] WARNING root fetch - processPackages [Edge-Detection-Image]: Skipping, unable to determine old version
+[2024-06-01 06:35:58] INFO root fetch - main [MainThread]: End processing [Edge-Detection-Image] error
+[2024-06-01 06:35:58] INFO root fetch - processPackages [libresvip]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-06-01 06:35:58] INFO root fetch - processPackages [libresvip]: Downloading https://files.pythonhosted.org/packages/50/b2/a4b5ea894b3e465695870f033135369250bf7329be343fc5c7cb2a7449ae/libresvip-1.1.3.tar.gz
+[2024-06-01 06:35:58] INFO root fetch - processPackages [libresvip]: Downloading https://files.pythonhosted.org/packages/9c/a3/f9139d4149746fc545ad2b93e9ab5d91cd276c7087b11a08256c4c7d8c06/libresvip-1.1.4.tar.gz
+[2024-06-01 06:35:59] INFO root fetch - processPackages [libresvip]: executing diffoscope
+[2024-06-01 06:35:59] INFO root fetch - processPackages [libresvip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libresvip-1.1.3.tar.gz tmp/libresvip-1.1.4.tar.gz --markdown 20240601/l/libresvip/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-06-01 06:36:01] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.3.tar.gz]
+[2024-06-01 06:36:01] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.4.tar.gz]
+[2024-06-01 06:36:01] INFO root fetch - main [MainThread]: End processing [libresvip]: success
+[2024-06-01 06:36:01] INFO root fetch - main [MainThread]: Store serial: [23477280]
