@@ -9858,3 +9858,20 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:45:47] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
 [2024-06-01 05:45:47] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
 [2024-06-01 05:45:47] INFO root fetch - main [MainThread]: Store serial: [23477099]
+[2024-06-01 05:47:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477099]
+[2024-06-01 05:47:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 05:49:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477099]
+[2024-06-01 05:50:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 05:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oh-my-zsh
+[2024-06-01 05:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ComfyUI-EasyNodes
+[2024-06-01 05:50:01] INFO root fetch - processPackages [ComfyUI-EasyNodes]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 05:50:01] WARNING root fetch - processPackages [oh-my-zsh]: Skipping, unable to determine old version
+[2024-06-01 05:50:01] INFO root fetch - main [MainThread]: End processing [oh-my-zsh] error
+[2024-06-01 05:50:01] INFO root fetch - processPackages [ComfyUI-EasyNodes]: Downloading https://files.pythonhosted.org/packages/eb/b4/33fe9c4b93ef92ad65d09b042929dbd04bb716a5fcfbc4dc08bcf91305f0/ComfyUI_EasyNodes-1.0.4-py3-none-any.whl
+[2024-06-01 05:50:01] INFO root fetch - processPackages [ComfyUI-EasyNodes]: Downloading https://files.pythonhosted.org/packages/f4/96/70c2668859fba2609d74a847791295d5412674950336ac9308e56a497bd5/comfyui_easynodes-1.0.5.tar.gz
+[2024-06-01 05:50:02] INFO root fetch - processPackages [ComfyUI-EasyNodes]: executing diffoscope
+[2024-06-01 05:50:02] INFO root fetch - processPackages [ComfyUI-EasyNodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ComfyUI_EasyNodes-1.0.4-py3-none-any.whl.zip tmp/comfyui_easynodes-1.0.5.tar.gz --markdown 20240601/C/ComfyUI-EasyNodes/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 05:50:02] INFO root fetch - processPackages [ComfyUI-EasyNodes]: Remove: archive file [/home/abi/fetcher/tmp/ComfyUI_EasyNodes-1.0.4-py3-none-any.whl.zip]
+[2024-06-01 05:50:02] INFO root fetch - processPackages [ComfyUI-EasyNodes]: Remove: archive file [/home/abi/fetcher/tmp/comfyui_easynodes-1.0.5.tar.gz]
+[2024-06-01 05:50:02] INFO root fetch - main [MainThread]: End processing [ComfyUI-EasyNodes]: success
+[2024-06-01 05:50:02] INFO root fetch - main [MainThread]: Store serial: [23477107]
