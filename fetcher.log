@@ -2655,3 +2655,24 @@
 [2024-06-01 02:22:36] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.99.tar.gz]
 [2024-06-01 02:22:36] INFO root fetch - main [MainThread]: End processing [nomad-media-pip]: success
 [2024-06-01 02:22:36] INFO root fetch - main [MainThread]: Store serial: [23474009]
+[2024-06-01 02:24:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474009]
+[2024-06-01 02:24:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 02:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: burr
+[2024-06-01 02:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hstspreload
+[2024-06-01 02:24:45] INFO root fetch - processPackages [burr]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-06-01 02:24:45] INFO root fetch - processPackages [burr]: Downloading https://files.pythonhosted.org/packages/87/83/f7356070de16e070dbc68373d02f5b3677c417c21359630b2007a8b027df/burr-0.8.1.tar.gz
+[2024-06-01 02:24:45] INFO root fetch - processPackages [hstspreload]: New version: [2024.6.1] Old Version: [2024.5.1]
+[2024-06-01 02:24:45] INFO root fetch - processPackages [hstspreload]: Downloading https://files.pythonhosted.org/packages/4c/80/41e1ff2e06e00c6c27ddc642c1db461fb7afd0ae2788071b0606124070f6/hstspreload-2024.5.1.tar.gz
+[2024-06-01 02:24:46] INFO root fetch - processPackages [burr]: Downloading https://files.pythonhosted.org/packages/65/38/00b44d54c37f35813232167f5745ca37eac9ad13574e81e1f4e685acf5d5/burr-0.9.0.tar.gz
+[2024-06-01 02:24:46] INFO root fetch - processPackages [hstspreload]: Downloading https://files.pythonhosted.org/packages/c7/c1/29d088e35ab5b40d0f52deb30ac1e0c925e9ca822b0e46bc89e6cdb110dc/hstspreload-2024.6.1.tar.gz
+[2024-06-01 02:24:46] INFO root fetch - processPackages [hstspreload]: executing diffoscope
+[2024-06-01 02:24:46] INFO root fetch - processPackages [hstspreload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstspreload-2024.5.1.tar.gz tmp/hstspreload-2024.6.1.tar.gz --markdown 20240601/h/hstspreload/2024.5.1-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 02:24:46] INFO root fetch - processPackages [burr]: executing diffoscope
+[2024-06-01 02:24:46] INFO root fetch - processPackages [burr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/burr-0.8.1.tar.gz tmp/burr-0.9.0.tar.gz --markdown 20240601/b/burr/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-06-01 02:24:48] INFO root fetch - processPackages [hstspreload]: Remove: archive file [/home/abi/fetcher/tmp/hstspreload-2024.5.1.tar.gz]
+[2024-06-01 02:24:48] INFO root fetch - processPackages [hstspreload]: Remove: archive file [/home/abi/fetcher/tmp/hstspreload-2024.6.1.tar.gz]
+[2024-06-01 02:24:48] INFO root fetch - main [MainThread]: End processing [hstspreload]: success
+[2024-06-01 02:25:22] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.8.1.tar.gz]
+[2024-06-01 02:25:22] INFO root fetch - processPackages [burr]: Remove: archive file [/home/abi/fetcher/tmp/burr-0.9.0.tar.gz]
+[2024-06-01 02:25:22] INFO root fetch - main [MainThread]: End processing [burr]: success
+[2024-06-01 02:25:22] INFO root fetch - main [MainThread]: Store serial: [23474017]
