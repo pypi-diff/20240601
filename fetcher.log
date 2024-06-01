@@ -21899,3 +21899,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:17:46] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.26.tar.gz]
 [2024-06-01 21:17:46] INFO root fetch - main [MainThread]: End processing [SkiBiDi-ORM]: success
 [2024-06-01 21:17:46] INFO root fetch - main [MainThread]: Store serial: [23482930]
+[2024-06-01 21:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482930]
+[2024-06-01 21:19:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 21:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rose-pine-jupyterlab
+[2024-06-01 21:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastblocks
+[2024-06-01 21:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codejudge-common-utils
+[2024-06-01 21:19:54] INFO root fetch - processPackages [rose-pine-jupyterlab]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-06-01 21:19:54] INFO root fetch - processPackages [fastblocks]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-06-01 21:19:54] WARNING root fetch - processPackages [codejudge-common-utils]: Skipping, unable to determine old version
+[2024-06-01 21:19:54] INFO root fetch - main [MainThread]: End processing [codejudge-common-utils] error
+[2024-06-01 21:19:55] INFO root fetch - processPackages [rose-pine-jupyterlab]: Downloading https://files.pythonhosted.org/packages/a6/e9/b2955918886bec5473d76b4a3b6e5b54afe2e568297d4cbcd330dbe237f7/rose_pine_jupyterlab-0.1.7.tar.gz
+[2024-06-01 21:19:55] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/09/29/d5e8340bfad1f1bb069e92a958daa890b315ecd501df56d4602fd8d11d28/fastblocks-0.4.5.tar.gz
+[2024-06-01 21:19:55] INFO root fetch - processPackages [fastblocks]: Downloading https://files.pythonhosted.org/packages/eb/0e/f04e3e0080186e651fcc19910dc2a8e165c99a4560c915ea2aad1188969e/fastblocks-0.4.6.tar.gz
+[2024-06-01 21:19:55] INFO root fetch - processPackages [rose-pine-jupyterlab]: Downloading https://files.pythonhosted.org/packages/c8/34/c02e08b5cd3752370eaf987995913b935d9ffe52cd762e09aba52211b3ff/rose_pine_jupyterlab-0.1.8.tar.gz
+[2024-06-01 21:19:55] INFO root fetch - processPackages [fastblocks]: executing diffoscope
+[2024-06-01 21:19:55] INFO root fetch - processPackages [fastblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastblocks-0.4.5.tar.gz tmp/fastblocks-0.4.6.tar.gz --markdown 20240601/f/fastblocks/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-06-01 21:19:55] INFO root fetch - processPackages [rose-pine-jupyterlab]: executing diffoscope
+[2024-06-01 21:19:55] INFO root fetch - processPackages [rose-pine-jupyterlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rose_pine_jupyterlab-0.1.7.tar.gz tmp/rose_pine_jupyterlab-0.1.8.tar.gz --markdown 20240601/r/rose-pine-jupyterlab/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-06-01 21:19:56] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.4.5.tar.gz]
+[2024-06-01 21:19:56] INFO root fetch - processPackages [fastblocks]: Remove: archive file [/home/abi/fetcher/tmp/fastblocks-0.4.6.tar.gz]
+[2024-06-01 21:19:56] INFO root fetch - main [MainThread]: End processing [fastblocks]: success
+[2024-06-01 21:19:56] INFO root fetch - processPackages [rose-pine-jupyterlab]: Remove: archive file [/home/abi/fetcher/tmp/rose_pine_jupyterlab-0.1.7.tar.gz]
+[2024-06-01 21:19:56] INFO root fetch - processPackages [rose-pine-jupyterlab]: Remove: archive file [/home/abi/fetcher/tmp/rose_pine_jupyterlab-0.1.8.tar.gz]
+[2024-06-01 21:19:56] INFO root fetch - main [MainThread]: End processing [rose-pine-jupyterlab]: success
+[2024-06-01 21:19:56] INFO root fetch - main [MainThread]: Store serial: [23482947]
