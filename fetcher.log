@@ -18364,3 +18364,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:22:26] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.3.tar.gz]
 [2024-06-01 17:22:26] INFO root fetch - main [MainThread]: End processing [uwrapper]: success
 [2024-06-01 17:22:26] INFO root fetch - main [MainThread]: Store serial: [23481251]
+[2024-06-01 17:24:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481251]
+[2024-06-01 17:24:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 17:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osrsreboxed
+[2024-06-01 17:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdss-lvmecp
+[2024-06-01 17:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: microtc
+[2024-06-01 17:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CTkKeyboard
+[2024-06-01 17:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alpaca-daily-losers
+[2024-06-01 17:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdps
+[2024-06-01 17:24:35] WARNING root fetch - processPackages [CTkKeyboard]: Skipping, unable to determine old version
+[2024-06-01 17:24:35] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 17:24:35] INFO root fetch - processPackages [cdps]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-06-01 17:24:35] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/05/27/7a75f4971a7f09fc0f4e12043bf3e547c765adca95a2a14faa3334ebeb21/cdps-1.0.3.tar.gz
+[2024-06-01 17:24:35] INFO root fetch - processPackages [osrsreboxed]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-06-01 17:24:35] INFO root fetch - processPackages [sdss-lvmecp]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-06-01 17:24:35] WARNING root fetch - processPackages [alpaca-daily-losers]: Skipping, unable to determine old version
+[2024-06-01 17:24:35] INFO root fetch - processPackages [microtc]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-06-01 17:24:35] INFO root fetch - main [MainThread]: End processing [alpaca-daily-losers] error
+[2024-06-01 17:24:35] INFO root fetch - processPackages [sdss-lvmecp]: Downloading https://files.pythonhosted.org/packages/62/9d/6a3429caaffe65fccf08beb57a65f2718d8b56e4194f2c2a09798f03facd/sdss_lvmecp-0.7.0.tar.gz
+[2024-06-01 17:24:35] INFO root fetch - processPackages [microtc]: Downloading https://files.pythonhosted.org/packages/55/6d/4576edfc61196e67081d09b8e0759ce1ed62a098de989568f4c9feeb133d/microtc-2.4.8.tar.gz
+[2024-06-01 17:24:35] INFO root fetch - processPackages [osrsreboxed]: Downloading https://files.pythonhosted.org/packages/91/1a/16ae9c074c1c99d6c4aa7ad991a23ad7ad5aab7b203cf59f1ac09e31cdc8/osrsreboxed-2.3.8.tar.gz
+[2024-06-01 17:24:35] WARNING root fetch - processPackages [osrsreboxed]: Skipping package: exceeds size limit 14949464>=10485760
+[2024-06-01 17:24:35] INFO root fetch - main [MainThread]: End processing [osrsreboxed] error
+[2024-06-01 17:24:35] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/b6/2b/c3035943bb2cf5f55c3cda187fe434131dde469df77fec78eca19bbae4a5/cdps-1.0.4.tar.gz
+[2024-06-01 17:24:35] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:24:35] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.3.tar.gz tmp/cdps-1.0.4.tar.gz --markdown 20240601/c/cdps/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-06-01 17:24:35] INFO root fetch - processPackages [sdss-lvmecp]: Downloading https://files.pythonhosted.org/packages/20/aa/d0f7a5997a93a2d378718d6e217c88d7b3065c52cff49e2962c6542c662f/sdss_lvmecp-0.8.0.tar.gz
+[2024-06-01 17:24:36] INFO root fetch - processPackages [microtc]: Downloading https://files.pythonhosted.org/packages/95/94/22aa3e0fb152282611548b49d03c1c06ffa0c521c7c2ee99de8c8469c012/microtc-2.4.9.tar.gz
+[2024-06-01 17:24:36] INFO root fetch - processPackages [sdss-lvmecp]: executing diffoscope
+[2024-06-01 17:24:36] INFO root fetch - processPackages [sdss-lvmecp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss_lvmecp-0.7.0.tar.gz tmp/sdss_lvmecp-0.8.0.tar.gz --markdown 20240601/s/sdss-lvmecp/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-06-01 17:24:36] INFO root fetch - processPackages [microtc]: executing diffoscope
+[2024-06-01 17:24:36] INFO root fetch - processPackages [microtc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microtc-2.4.8.tar.gz tmp/microtc-2.4.9.tar.gz --markdown 20240601/m/microtc/2.4.8-2.4.9/README.md --exclude *.pyd
+[2024-06-01 17:24:36] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.3.tar.gz]
+[2024-06-01 17:24:36] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.4.tar.gz]
+[2024-06-01 17:24:36] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:24:36] INFO root fetch - processPackages [sdss-lvmecp]: Remove: archive file [/home/abi/fetcher/tmp/sdss_lvmecp-0.7.0.tar.gz]
+[2024-06-01 17:24:36] INFO root fetch - processPackages [sdss-lvmecp]: Remove: archive file [/home/abi/fetcher/tmp/sdss_lvmecp-0.8.0.tar.gz]
+[2024-06-01 17:24:36] INFO root fetch - main [MainThread]: End processing [sdss-lvmecp]: success
+[2024-06-01 17:24:36] INFO root fetch - processPackages [microtc]: Remove: archive file [/home/abi/fetcher/tmp/microtc-2.4.8.tar.gz]
+[2024-06-01 17:24:36] INFO root fetch - processPackages [microtc]: Remove: archive file [/home/abi/fetcher/tmp/microtc-2.4.9.tar.gz]
+[2024-06-01 17:24:36] INFO root fetch - main [MainThread]: End processing [microtc]: success
+[2024-06-01 17:24:36] INFO root fetch - main [MainThread]: Store serial: [23481272]
