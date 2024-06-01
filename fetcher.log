@@ -15731,3 +15731,24 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:10:35] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.4.tar.gz]
 [2024-06-01 14:10:35] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 14:10:35] INFO root fetch - main [MainThread]: Store serial: [23479956]
+[2024-06-01 14:12:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479956]
+[2024-06-01 14:12:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twird
+[2024-06-01 14:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fl-studio-api-stubs
+[2024-06-01 14:12:44] INFO root fetch - processPackages [fl-studio-api-stubs]: New version: [36.0.1] Old Version: [36.0.0]
+[2024-06-01 14:12:44] INFO root fetch - processPackages [fl-studio-api-stubs]: Downloading https://files.pythonhosted.org/packages/ae/f1/0a46ebcd2432df89df843053c84a516f971163dba17b605d30f0f0e14d9f/fl_studio_api_stubs-36.0.0.tar.gz
+[2024-06-01 14:12:44] INFO root fetch - processPackages [twird]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 14:12:44] INFO root fetch - processPackages [twird]: Downloading https://files.pythonhosted.org/packages/fa/70/685ddc5d136376f4e78b2a2ed54add00cb73a1d7d0fb0387d4794146c4d0/twird-1.0.0.tar.gz
+[2024-06-01 14:12:44] INFO root fetch - processPackages [fl-studio-api-stubs]: Downloading https://files.pythonhosted.org/packages/7c/02/1c92b697d365b0dca6d7f309af0cc093725bea6e0b2d4536ea944f6b7709/fl_studio_api_stubs-36.0.1.tar.gz
+[2024-06-01 14:12:44] INFO root fetch - processPackages [fl-studio-api-stubs]: executing diffoscope
+[2024-06-01 14:12:44] INFO root fetch - processPackages [fl-studio-api-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fl_studio_api_stubs-36.0.0.tar.gz tmp/fl_studio_api_stubs-36.0.1.tar.gz --markdown 20240601/f/fl-studio-api-stubs/36.0.0-36.0.1/README.md --exclude *.pyd
+[2024-06-01 14:12:45] INFO root fetch - processPackages [twird]: Downloading https://files.pythonhosted.org/packages/1e/f1/c911a955499e5759ae7d57f387f8067a8142791536365f2d0e05302d07a6/twird-1.0.1-py3-none-any.whl
+[2024-06-01 14:12:45] INFO root fetch - processPackages [twird]: executing diffoscope
+[2024-06-01 14:12:45] INFO root fetch - processPackages [twird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twird-1.0.0.tar.gz tmp/twird-1.0.1-py3-none-any.whl.zip --markdown 20240601/t/twird/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 14:12:45] INFO root fetch - processPackages [fl-studio-api-stubs]: Remove: archive file [/home/abi/fetcher/tmp/fl_studio_api_stubs-36.0.0.tar.gz]
+[2024-06-01 14:12:45] INFO root fetch - processPackages [fl-studio-api-stubs]: Remove: archive file [/home/abi/fetcher/tmp/fl_studio_api_stubs-36.0.1.tar.gz]
+[2024-06-01 14:12:45] INFO root fetch - main [MainThread]: End processing [fl-studio-api-stubs]: success
+[2024-06-01 14:12:45] INFO root fetch - processPackages [twird]: Remove: archive file [/home/abi/fetcher/tmp/twird-1.0.0.tar.gz]
+[2024-06-01 14:12:45] INFO root fetch - processPackages [twird]: Remove: archive file [/home/abi/fetcher/tmp/twird-1.0.1-py3-none-any.whl.zip]
+[2024-06-01 14:12:45] INFO root fetch - main [MainThread]: End processing [twird]: success
+[2024-06-01 14:12:45] INFO root fetch - main [MainThread]: Store serial: [23479962]
