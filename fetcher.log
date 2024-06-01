@@ -11571,3 +11571,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:40:51] INFO root fetch - processPackages [sf-hamilton]: Remove: archive file [/home/abi/fetcher/tmp/sf-hamilton-1.9.0rc0.tar.gz]
 [2024-06-01 08:40:51] INFO root fetch - main [MainThread]: End processing [sf-hamilton]: success
 [2024-06-01 08:40:51] INFO root fetch - main [MainThread]: Store serial: [23477908]
+[2024-06-01 08:42:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477908]
+[2024-06-01 08:42:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 08:42:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: espy-contact
+[2024-06-01 08:42:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-sale-order-revision
+[2024-06-01 08:42:59] INFO root fetch - processPackages [espy-contact]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-06-01 08:42:59] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: New version: [14.0.1.1.2.dev6] Old Version: [14.0.1.1.2.dev5]
+[2024-06-01 08:42:59] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/44/26/00cdd114fc57f9755eb2a7404fdbac1b49b6ded9f2e3d6815f6319ffe03d/espy_contact-2.0.6.tar.gz
+[2024-06-01 08:43:00] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Downloading https://files.pythonhosted.org/packages/59/4e/163b70ff7eca73881cd1373e0abf6f0c3f733210f25a8bc6b086103e2d23/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl
+[2024-06-01 08:43:00] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/47/f3/1eb60a14e8d50f6755acf26fab6ac641e07a59774e6ba709f2668160ca2c/espy_contact-2.0.7.tar.gz
+[2024-06-01 08:43:00] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Downloading https://files.pythonhosted.org/packages/24/70/8f9455b402e5be7ddd6faa7bdfa87ac5f445d5ef6bfd9ad70d5465ce7c2e/odoo14_addon_sale_order_revision-14.0.1.1.2.dev6-py3-none-any.whl
+[2024-06-01 08:43:00] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-06-01 08:43:00] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-2.0.6.tar.gz tmp/espy_contact-2.0.7.tar.gz --markdown 20240601/e/espy-contact/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-06-01 08:43:00] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: executing diffoscope
+[2024-06-01 08:43:00] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl.zip tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev6-py3-none-any.whl.zip --markdown 20240601/o/odoo14-addon-sale-order-revision/14.0.1.1.2.dev5-14.0.1.1.2.dev6/README.md --exclude *.pyd
+[2024-06-01 08:43:00] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.6.tar.gz]
+[2024-06-01 08:43:00] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-2.0.7.tar.gz]
+[2024-06-01 08:43:00] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-06-01 08:43:01] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl.zip]
+[2024-06-01 08:43:01] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev6-py3-none-any.whl.zip]
+[2024-06-01 08:43:01] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-order-revision]: success
+[2024-06-01 08:43:01] INFO root fetch - main [MainThread]: Store serial: [23477913]
