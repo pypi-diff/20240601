@@ -8852,3 +8852,60 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:07:17] INFO root fetch - processPackages [icloudpd]: Remove: archive file [/home/abi/fetcher/tmp/icloudpd-1.9.0-py2.py3-none-any.whl.zip]
 [2024-06-01 05:07:17] INFO root fetch - main [MainThread]: End processing [icloudpd]: success
 [2024-06-01 05:07:17] INFO root fetch - main [MainThread]: Store serial: [23476689]
+[2024-06-01 05:09:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476689]
+[2024-06-01 05:09:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 05:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-mass-reconcile
+[2024-06-01 05:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-partner-reconcile
+[2024-06-01 05:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mechanism
+[2024-06-01 05:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protai
+[2024-06-01 05:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mouse-jiggler-macos
+[2024-06-01 05:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dash-discord
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mechanism]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-06-01 05:09:26] INFO root fetch - processPackages [dash-discord]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mechanism]: Downloading https://files.pythonhosted.org/packages/47/6b/1de53ac53a2ba3569be8ea56c5dba5a3052678d32d0a0c7b7bde8fa36caf/mechanism-1.1.7.tar.gz
+[2024-06-01 05:09:26] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: New version: [17.0.1.0.1] Old Version: [17.0.1.0.0.7]
+[2024-06-01 05:09:26] INFO root fetch - processPackages [protai]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-06-01 05:09:26] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: New version: [15.0.1.0.0.7] Old Version: [15.0.1.0.0.5]
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mouse-jiggler-macos]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-06-01 05:09:26] INFO root fetch - processPackages [dash-discord]: Downloading https://files.pythonhosted.org/packages/15/ab/6d7403758593185db013894e705157bc2d0248a0c6b1b82ba734e61f6f37/dash_discord-0.0.1.tar.gz
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mechanism]: Downloading https://files.pythonhosted.org/packages/57/b9/16bc82fd64baabb53566993b512ae297f770cefe5be35248d1467de1dae9/mechanism-1.1.8.tar.gz
+[2024-06-01 05:09:26] INFO root fetch - processPackages [protai]: Downloading https://files.pythonhosted.org/packages/98/40/1ad36d41a103a2b5c6a601b05703f3a5df5163e4f8d7f971fcc6acd72d6c/protai-0.7.1.tar.gz
+[2024-06-01 05:09:26] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Downloading https://files.pythonhosted.org/packages/21/6b/b5722b3bb00475493f2879dd9c82f52f75865136a0055eab8046468e2bf1/odoo_addon_account_mass_reconcile-17.0.1.0.0.7-py3-none-any.whl
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mouse-jiggler-macos]: Downloading https://files.pythonhosted.org/packages/25/f3/41804c50cde842873498ce16f37ec367f7d110b8e7c2d2e530956c283ec4/mouse_jiggler_macos-0.3.0.tar.gz
+[2024-06-01 05:09:26] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: Downloading https://files.pythonhosted.org/packages/40/dd/d0b5d8444d25d6ece79bf897f0b7b1489fa72df82dfced71ca94445c38d1/odoo_addon_account_partner_reconcile-15.0.1.0.0.5-py3-none-any.whl
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mechanism]: executing diffoscope
+[2024-06-01 05:09:26] INFO root fetch - processPackages [mechanism]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanism-1.1.7.tar.gz tmp/mechanism-1.1.8.tar.gz --markdown 20240601/m/mechanism/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-06-01 05:09:26] INFO root fetch - processPackages [dash-discord]: Downloading https://files.pythonhosted.org/packages/38/f5/bc0d300c1f1c31dd87052924fe84f15d33171e3c4a0d240e18a52613912e/dash_discord-0.0.2.tar.gz
+[2024-06-01 05:09:26] INFO root fetch - processPackages [protai]: Downloading https://files.pythonhosted.org/packages/38/04/a58d1538fc90ce74f08c8a1c7da9ec7814efd68b46f69d54a4be020d93c4/protai-0.7.2.tar.gz
+[2024-06-01 05:09:27] INFO root fetch - processPackages [dash-discord]: executing diffoscope
+[2024-06-01 05:09:27] INFO root fetch - processPackages [dash-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_discord-0.0.1.tar.gz tmp/dash_discord-0.0.2.tar.gz --markdown 20240601/d/dash-discord/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mouse-jiggler-macos]: Downloading https://files.pythonhosted.org/packages/19/90/d0a68c9ae863aae9273e7d2311c58da433ab5928a2c5b915b58b73e9bfa9/mouse_jiggler_macos-0.4.0.tar.gz
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: Downloading https://files.pythonhosted.org/packages/88/00/263a80dce575ec389b715885e051b5e5d126bc08ec7c0488d4677fe93388/odoo_addon_account_partner_reconcile-15.0.1.0.0.7-py3-none-any.whl
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Downloading https://files.pythonhosted.org/packages/dd/9d/d94fb61eec58dd3e00cab3f02d455a9a007aef9b72f2e18fb50e679dab31/odoo_addon_account_mass_reconcile-17.0.1.0.1-py3-none-any.whl
+[2024-06-01 05:09:27] INFO root fetch - processPackages [protai]: executing diffoscope
+[2024-06-01 05:09:27] INFO root fetch - processPackages [protai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protai-0.7.1.tar.gz tmp/protai-0.7.2.tar.gz --markdown 20240601/p/protai/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mouse-jiggler-macos]: executing diffoscope
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mouse-jiggler-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mouse_jiggler_macos-0.3.0.tar.gz tmp/mouse_jiggler_macos-0.4.0.tar.gz --markdown 20240601/m/mouse-jiggler-macos/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: executing diffoscope
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_partner_reconcile-15.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_partner_reconcile-15.0.1.0.0.7-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-account-partner-reconcile/15.0.1.0.0.5-15.0.1.0.0.7/README.md --exclude *.pyd
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: executing diffoscope
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_mass_reconcile-17.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_account_mass_reconcile-17.0.1.0.1-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-account-mass-reconcile/17.0.1.0.0.7-17.0.1.0.1/README.md --exclude *.pyd
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mechanism]: Remove: archive file [/home/abi/fetcher/tmp/mechanism-1.1.7.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mechanism]: Remove: archive file [/home/abi/fetcher/tmp/mechanism-1.1.8.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - main [MainThread]: End processing [mechanism]: success
+[2024-06-01 05:09:27] INFO root fetch - processPackages [protai]: Remove: archive file [/home/abi/fetcher/tmp/protai-0.7.1.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - processPackages [protai]: Remove: archive file [/home/abi/fetcher/tmp/protai-0.7.2.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - main [MainThread]: End processing [protai]: success
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_partner_reconcile-15.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-06-01 05:09:27] INFO root fetch - processPackages [odoo-addon-account-partner-reconcile]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_partner_reconcile-15.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-06-01 05:09:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-partner-reconcile]: success
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mouse-jiggler-macos]: Remove: archive file [/home/abi/fetcher/tmp/mouse_jiggler_macos-0.3.0.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - processPackages [mouse-jiggler-macos]: Remove: archive file [/home/abi/fetcher/tmp/mouse_jiggler_macos-0.4.0.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - main [MainThread]: End processing [mouse-jiggler-macos]: success
+[2024-06-01 05:09:27] INFO root fetch - processPackages [dash-discord]: Remove: archive file [/home/abi/fetcher/tmp/dash_discord-0.0.1.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - processPackages [dash-discord]: Remove: archive file [/home/abi/fetcher/tmp/dash_discord-0.0.2.tar.gz]
+[2024-06-01 05:09:27] INFO root fetch - main [MainThread]: End processing [dash-discord]: success
+[2024-06-01 05:09:28] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_mass_reconcile-17.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-06-01 05:09:28] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_mass_reconcile-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-06-01 05:09:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-mass-reconcile]: success
+[2024-06-01 05:09:28] INFO root fetch - main [MainThread]: Store serial: [23476704]
