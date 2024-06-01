@@ -8498,3 +8498,45 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:37:54] INFO root fetch - processPackages [odoo-addon-pos-analytic-by-config]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_analytic_by_config-16.0.1.0.0.9-py3-none-any.whl.zip]
 [2024-06-01 04:37:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-analytic-by-config]: success
 [2024-06-01 04:37:54] INFO root fetch - main [MainThread]: Store serial: [23476481]
+[2024-06-01 04:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476481]
+[2024-06-01 04:40:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 04:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tricots
+[2024-06-01 04:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baml-py
+[2024-06-01 04:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-assistant
+[2024-06-01 04:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snapctl
+[2024-06-01 04:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rockai-cli-app
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 04:40:03] INFO root fetch - processPackages [baml-py]: New version: [0.33.0] Old Version: [0.32.1]
+[2024-06-01 04:40:03] WARNING root fetch - processPackages [tricots]: Skipping, unable to determine old version
+[2024-06-01 04:40:03] INFO root fetch - processPackages [snapctl]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-06-01 04:40:03] INFO root fetch - main [MainThread]: End processing [tricots] error
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 04:40:03] INFO root fetch - processPackages [baml-py]: Downloading https://files.pythonhosted.org/packages/35/f7/6501c961296a3b74da998d4cd79566667a086e667c8f40a3a885f2669c4c/baml_py-0.32.1-cp38-abi3-win_amd64.whl
+[2024-06-01 04:40:03] INFO root fetch - processPackages [snapctl]: Downloading https://files.pythonhosted.org/packages/95/a7/111093ac9b8f3d6c044ba1f240a73212e4afe144ce560dc42f0937c32ef8/snapctl-0.4.4.tar.gz
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 04:40:03] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 04:40:03] INFO root fetch - processPackages [snapctl]: Downloading https://files.pythonhosted.org/packages/4b/30/8647a22be3c07272655190a91fe9912e80c7de09ccfe1e1ed7d4be8e4bb7/snapctl-0.4.5.tar.gz
+[2024-06-01 04:40:04] INFO root fetch - processPackages [baml-py]: Downloading https://files.pythonhosted.org/packages/a4/85/2fdfea2bbdac09ecc8080f2f3266e23a74903ec21887a5d6f8ea60d4f607/baml_py-0.33.0-cp38-abi3-win_amd64.whl
+[2024-06-01 04:40:04] INFO root fetch - processPackages [snapctl]: executing diffoscope
+[2024-06-01 04:40:04] INFO root fetch - processPackages [snapctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapctl-0.4.4.tar.gz tmp/snapctl-0.4.5.tar.gz --markdown 20240601/s/snapctl/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-06-01 04:40:04] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 04:40:04] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 04:40:04] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 04:40:04] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 04:40:04] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 04:40:04] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 04:40:04] INFO root fetch - processPackages [snapctl]: Remove: archive file [/home/abi/fetcher/tmp/snapctl-0.4.4.tar.gz]
+[2024-06-01 04:40:04] INFO root fetch - processPackages [snapctl]: Remove: archive file [/home/abi/fetcher/tmp/snapctl-0.4.5.tar.gz]
+[2024-06-01 04:40:04] INFO root fetch - main [MainThread]: End processing [snapctl]: success
+[2024-06-01 04:40:04] INFO root fetch - processPackages [baml-py]: executing diffoscope
+[2024-06-01 04:40:04] INFO root fetch - processPackages [baml-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baml_py-0.32.1-cp38-abi3-win_amd64.whl.zip tmp/baml_py-0.33.0-cp38-abi3-win_amd64.whl.zip --markdown 20240601/b/baml-py/0.32.1-0.33.0/README.md --exclude *.pyd
+[2024-06-01 04:40:05] INFO root fetch - processPackages [baml-py]: Remove: archive file [/home/abi/fetcher/tmp/baml_py-0.32.1-cp38-abi3-win_amd64.whl.zip]
+[2024-06-01 04:40:05] INFO root fetch - processPackages [baml-py]: Remove: archive file [/home/abi/fetcher/tmp/baml_py-0.33.0-cp38-abi3-win_amd64.whl.zip]
+[2024-06-01 04:40:05] INFO root fetch - main [MainThread]: End processing [baml-py]: success
+[2024-06-01 04:40:05] INFO root fetch - main [MainThread]: Store serial: [23476501]
