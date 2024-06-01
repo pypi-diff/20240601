@@ -11834,3 +11834,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:08:17] INFO root fetch - processPackages [dark-matter]: Remove: archive file [/home/abi/fetcher/tmp/dark-matter-4.0.9.tar.gz]
 [2024-06-01 09:08:17] INFO root fetch - main [MainThread]: End processing [dark-matter]: success
 [2024-06-01 09:08:17] INFO root fetch - main [MainThread]: Store serial: [23478003]
+[2024-06-01 09:10:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478003]
+[2024-06-01 09:10:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-hub-nightly
+[2024-06-01 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-stock-logistics-reporting
+[2024-06-01 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kwnn
+[2024-06-01 09:10:28] WARNING root fetch - processPackages [kwnn]: Skipping, unable to determine old version
+[2024-06-01 09:10:28] INFO root fetch - main [MainThread]: End processing [kwnn] error
+[2024-06-01 09:10:28] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: New version: [16.0.20240531.1] Old Version: [16.0.20240508.0]
+[2024-06-01 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-06-01 09:10:28] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: Downloading https://files.pythonhosted.org/packages/87/0a/78d6a75736a05c3485448df2f42b41d34badfcbb1977b0d029515ca28452/odoo_addons_oca_stock_logistics_reporting-16.0.20240508.0-py3-none-any.whl
+[2024-06-01 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-06-01 09:10:28] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: Downloading https://files.pythonhosted.org/packages/ad/84/b91ebb4ef815705af8ed39c952460cde522e12b147ae8acfbe0e48087e29/odoo_addons_oca_stock_logistics_reporting-16.0.20240531.1-py3-none-any.whl
+[2024-06-01 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-06-01 09:10:28] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: executing diffoscope
+[2024-06-01 09:10:28] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_reporting-16.0.20240508.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_reporting-16.0.20240531.1-py3-none-any.whl.zip --markdown 20240601/o/odoo-addons-oca-stock-logistics-reporting/16.0.20240508.0-16.0.20240531.1/README.md --exclude *.pyd
+[2024-06-01 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-06-01 09:10:28] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240601/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-06-01 09:10:29] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_reporting-16.0.20240508.0-py3-none-any.whl.zip]
+[2024-06-01 09:10:29] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-reporting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_reporting-16.0.20240531.1-py3-none-any.whl.zip]
+[2024-06-01 09:10:29] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-reporting]: success
+[2024-06-01 09:10:29] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-06-01 09:10:29] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-06-01 09:10:29] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-06-01 09:10:29] INFO root fetch - main [MainThread]: Store serial: [23478012]
