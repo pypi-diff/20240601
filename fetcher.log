@@ -11888,3 +11888,17 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 09:12:41] INFO root fetch - processPackages [aedat]: Remove: archive file [/home/abi/fetcher/tmp/aedat-2.1.0-cp311-cp311-macosx_10_12_x86_64.whl.zip]
 [2024-06-01 09:12:41] INFO root fetch - main [MainThread]: End processing [aedat]: success
 [2024-06-01 09:12:41] INFO root fetch - main [MainThread]: Store serial: [23478024]
+[2024-06-01 09:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478024]
+[2024-06-01 09:14:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 09:16:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478050]
+[2024-06-01 09:16:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 09:16:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: subspy
+[2024-06-01 09:16:55] INFO root fetch - processPackages [subspy]: New version: [2.2.2] Old Version: [1.1.1]
+[2024-06-01 09:16:55] INFO root fetch - processPackages [subspy]: Downloading https://files.pythonhosted.org/packages/5f/26/7bc3e6279becc42c0e3b774aaac19661301b5060d493198c0eb5d3811cb4/subspy-1.1.1.tar.gz
+[2024-06-01 09:16:56] INFO root fetch - processPackages [subspy]: Downloading https://files.pythonhosted.org/packages/02/e3/2ef34f50b198c0a335814642f60b94a49add135d8f484e62fb1b272e1b9a/subspy-2.2.2.tar.gz
+[2024-06-01 09:16:56] INFO root fetch - processPackages [subspy]: executing diffoscope
+[2024-06-01 09:16:56] INFO root fetch - processPackages [subspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subspy-1.1.1.tar.gz tmp/subspy-2.2.2.tar.gz --markdown 20240601/s/subspy/1.1.1-2.2.2/README.md --exclude *.pyd
+[2024-06-01 09:16:56] INFO root fetch - processPackages [subspy]: Remove: archive file [/home/abi/fetcher/tmp/subspy-1.1.1.tar.gz]
+[2024-06-01 09:16:56] INFO root fetch - processPackages [subspy]: Remove: archive file [/home/abi/fetcher/tmp/subspy-2.2.2.tar.gz]
+[2024-06-01 09:16:56] INFO root fetch - main [MainThread]: End processing [subspy]: success
+[2024-06-01 09:16:56] INFO root fetch - main [MainThread]: Store serial: [23478050]
