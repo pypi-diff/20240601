@@ -23280,3 +23280,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:07:03] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.9.9.tar.gz]
 [2024-06-01 23:07:03] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
 [2024-06-01 23:07:03] INFO root fetch - main [MainThread]: Store serial: [23483639]
+[2024-06-01 23:09:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483639]
+[2024-06-01 23:09:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 23:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Cut4Url
+[2024-06-01 23:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: legit-every-pip-library-i-own
+[2024-06-01 23:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SkiBiDi-ORM
+[2024-06-01 23:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: msoc
+[2024-06-01 23:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiootp
+[2024-06-01 23:09:12] WARNING root fetch - processPackages [legit-every-pip-library-i-own]: Skipping, unable to determine old version
+[2024-06-01 23:09:12] INFO root fetch - main [MainThread]: End processing [legit-every-pip-library-i-own] error
+[2024-06-01 23:09:12] INFO root fetch - processPackages [SkiBiDi-ORM]: New version: [0.1.31] Old Version: [0.1.26]
+[2024-06-01 23:09:12] WARNING root fetch - processPackages [msoc]: Skipping, unable to determine old version
+[2024-06-01 23:09:12] INFO root fetch - main [MainThread]: End processing [msoc] error
+[2024-06-01 23:09:12] WARNING root fetch - processPackages [Cut4Url]: Skipping, unable to determine old version
+[2024-06-01 23:09:12] INFO root fetch - main [MainThread]: End processing [Cut4Url] error
+[2024-06-01 23:09:12] INFO root fetch - processPackages [aiootp]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-01 23:09:12] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/fa/4c/914d13432246bfeee8d26accd3df66fe96da101f5c2dc7a12aa28dd0614e/skibidi_orm-0.1.26.tar.gz
+[2024-06-01 23:09:12] INFO root fetch - processPackages [aiootp]: Downloading https://files.pythonhosted.org/packages/39/88/09b65bcc36bc7108e51fe3e347037793986200e74436b2c8e358a2f32455/aiootp-0.9.2.tar.gz
+[2024-06-01 23:09:12] INFO root fetch - processPackages [SkiBiDi-ORM]: Downloading https://files.pythonhosted.org/packages/69/93/67e03f86de48d1b61404eca83b9057fe950508021fc18021faa42a1733e9/skibidi_orm-0.1.31.tar.gz
+[2024-06-01 23:09:13] INFO root fetch - processPackages [SkiBiDi-ORM]: executing diffoscope
+[2024-06-01 23:09:13] INFO root fetch - processPackages [SkiBiDi-ORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skibidi_orm-0.1.26.tar.gz tmp/skibidi_orm-0.1.31.tar.gz --markdown 20240601/S/SkiBiDi-ORM/0.1.26-0.1.31/README.md --exclude *.pyd
+[2024-06-01 23:09:13] INFO root fetch - processPackages [aiootp]: Downloading https://files.pythonhosted.org/packages/a7/4c/a8d536f8fd27ddbab4e8f7bdb846ac6b57905160b3275605ef1dec5f2c83/aiootp-0.9.3.tar.gz
+[2024-06-01 23:09:13] INFO root fetch - processPackages [aiootp]: executing diffoscope
+[2024-06-01 23:09:13] INFO root fetch - processPackages [aiootp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiootp-0.9.2.tar.gz tmp/aiootp-0.9.3.tar.gz --markdown 20240601/a/aiootp/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-06-01 23:09:13] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.26.tar.gz]
+[2024-06-01 23:09:13] INFO root fetch - processPackages [SkiBiDi-ORM]: Remove: archive file [/home/abi/fetcher/tmp/skibidi_orm-0.1.31.tar.gz]
+[2024-06-01 23:09:13] INFO root fetch - main [MainThread]: End processing [SkiBiDi-ORM]: success
+[2024-06-01 23:09:14] INFO root fetch - processPackages [aiootp]: Remove: archive file [/home/abi/fetcher/tmp/aiootp-0.9.2.tar.gz]
+[2024-06-01 23:09:14] INFO root fetch - processPackages [aiootp]: Remove: archive file [/home/abi/fetcher/tmp/aiootp-0.9.3.tar.gz]
+[2024-06-01 23:09:14] INFO root fetch - main [MainThread]: End processing [aiootp]: success
+[2024-06-01 23:09:14] INFO root fetch - main [MainThread]: Store serial: [23483656]
