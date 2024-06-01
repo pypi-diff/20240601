@@ -3485,3 +3485,48 @@
 [2024-06-01 03:08:09] INFO root fetch - processPackages [swarmauri]: Remove: archive file [/home/abi/fetcher/tmp/swarmauri-0.2.9.tar.gz]
 [2024-06-01 03:08:09] INFO root fetch - main [MainThread]: End processing [swarmauri]: success
 [2024-06-01 03:08:09] INFO root fetch - main [MainThread]: Store serial: [23474543]
+[2024-06-01 03:10:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474543]
+[2024-06-01 03:10:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 03:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altimate-datapilot-cli
+[2024-06-01 03:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ga-scheduler
+[2024-06-01 03:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tesla-fleet-api
+[2024-06-01 03:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: update-delate-firmware-for-esp32
+[2024-06-01 03:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: urdfenvs
+[2024-06-01 03:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chgnet
+[2024-06-01 03:10:18] INFO root fetch - processPackages [altimate-datapilot-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 03:10:18] WARNING root fetch - processPackages [ga-scheduler]: Skipping, unable to determine old version
+[2024-06-01 03:10:18] INFO root fetch - main [MainThread]: End processing [ga-scheduler] error
+[2024-06-01 03:10:18] INFO root fetch - processPackages [tesla-fleet-api]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-01 03:10:18] WARNING root fetch - processPackages [update-delate-firmware-for-esp32]: Skipping, unable to determine old version
+[2024-06-01 03:10:18] INFO root fetch - main [MainThread]: End processing [update-delate-firmware-for-esp32] error
+[2024-06-01 03:10:18] INFO root fetch - processPackages [urdfenvs]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 03:10:18] INFO root fetch - processPackages [chgnet]: New version: [0.3.7] Old Version: [0.3.5]
+[2024-06-01 03:10:19] INFO root fetch - processPackages [altimate-datapilot-cli]: Downloading https://files.pythonhosted.org/packages/ea/bb/48a59c7c829175eb3149c6adf5c2f503ca84ad79625a14efb4056185387c/altimate-datapilot-cli-0.0.8.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/a8/43/22557f5eee1dcbb990fc879c88f0eabf17ee6ceed249b0680f354698798e/tesla_fleet_api-0.5.8.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [urdfenvs]: Downloading https://files.pythonhosted.org/packages/07/45/60a97daf330cf4abff56bac39e636a6d7a219118bd58924e2840dfe468e5/urdfenvs-0.9.8.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [chgnet]: Downloading https://files.pythonhosted.org/packages/9e/0f/551b6319c65c0e88b63a7def28defffd49529c317c77caa831e765e2a10a/chgnet-0.3.5.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/05/b5/2095dab08ad055d1a9d7d6fb069e7e1febca6ec8343a72456b3ff6cce41e/tesla_fleet_api-0.5.9.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [altimate-datapilot-cli]: Downloading https://files.pythonhosted.org/packages/ed/cc/5c354145ec1a88da4b65f3eb99b322fed53860f9d6c58b57fef26dc08a34/altimate-datapilot-cli-0.0.9.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [tesla-fleet-api]: executing diffoscope
+[2024-06-01 03:10:19] INFO root fetch - processPackages [tesla-fleet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesla_fleet_api-0.5.8.tar.gz tmp/tesla_fleet_api-0.5.9.tar.gz --markdown 20240601/t/tesla-fleet-api/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-01 03:10:19] INFO root fetch - processPackages [urdfenvs]: Downloading https://files.pythonhosted.org/packages/bf/51/2a85339a65af3ef8e22187acae083d40be75913546db840939f9812834cb/urdfenvs-0.9.9.tar.gz
+[2024-06-01 03:10:19] INFO root fetch - processPackages [altimate-datapilot-cli]: executing diffoscope
+[2024-06-01 03:10:19] INFO root fetch - processPackages [altimate-datapilot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altimate-datapilot-cli-0.0.8.tar.gz tmp/altimate-datapilot-cli-0.0.9.tar.gz --markdown 20240601/a/altimate-datapilot-cli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 03:10:19] INFO root fetch - processPackages [urdfenvs]: executing diffoscope
+[2024-06-01 03:10:19] INFO root fetch - processPackages [urdfenvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urdfenvs-0.9.8.tar.gz tmp/urdfenvs-0.9.9.tar.gz --markdown 20240601/u/urdfenvs/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 03:10:20] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.8.tar.gz]
+[2024-06-01 03:10:20] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.9.tar.gz]
+[2024-06-01 03:10:20] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
+[2024-06-01 03:10:20] INFO root fetch - processPackages [chgnet]: Downloading https://files.pythonhosted.org/packages/19/74/758fd9e49237a7cf482c3dfa8994cd4fef9d2e965405d9df9781a9d60e68/chgnet-0.3.7.tar.gz
+[2024-06-01 03:10:20] INFO root fetch - processPackages [urdfenvs]: Remove: archive file [/home/abi/fetcher/tmp/urdfenvs-0.9.8.tar.gz]
+[2024-06-01 03:10:20] INFO root fetch - processPackages [urdfenvs]: Remove: archive file [/home/abi/fetcher/tmp/urdfenvs-0.9.9.tar.gz]
+[2024-06-01 03:10:20] INFO root fetch - main [MainThread]: End processing [urdfenvs]: success
+[2024-06-01 03:10:21] INFO root fetch - processPackages [altimate-datapilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/altimate-datapilot-cli-0.0.8.tar.gz]
+[2024-06-01 03:10:21] INFO root fetch - processPackages [altimate-datapilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/altimate-datapilot-cli-0.0.9.tar.gz]
+[2024-06-01 03:10:21] INFO root fetch - main [MainThread]: End processing [altimate-datapilot-cli]: success
+[2024-06-01 03:10:21] INFO root fetch - processPackages [chgnet]: executing diffoscope
+[2024-06-01 03:10:21] INFO root fetch - processPackages [chgnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chgnet-0.3.5.tar.gz tmp/chgnet-0.3.7.tar.gz --markdown 20240601/c/chgnet/0.3.5-0.3.7/README.md --exclude *.pyd
+[2024-06-01 03:10:22] INFO root fetch - processPackages [chgnet]: Remove: archive file [/home/abi/fetcher/tmp/chgnet-0.3.5.tar.gz]
+[2024-06-01 03:10:22] INFO root fetch - processPackages [chgnet]: Remove: archive file [/home/abi/fetcher/tmp/chgnet-0.3.7.tar.gz]
+[2024-06-01 03:10:22] INFO root fetch - main [MainThread]: End processing [chgnet]: success
+[2024-06-01 03:10:22] INFO root fetch - main [MainThread]: Store serial: [23474571]
