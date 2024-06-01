@@ -7660,3 +7660,105 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 03:42:50] INFO root fetch - processPackages [cdk-github]: Remove: archive file [/home/abi/fetcher/tmp/cdk-github-0.0.9.tar.gz]
 [2024-06-01 03:42:50] INFO root fetch - main [MainThread]: End processing [cdk-github]: success
 [2024-06-01 03:42:50] INFO root fetch - main [MainThread]: Store serial: [23475682]
+[2024-06-01 03:44:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23475682]
+[2024-06-01 03:44:58] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ape-frame
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fiftyone-pipeline-cloudrequestengine
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fiftyone-pipeline-core
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fiftyone-pipeline-engines-fiftyone
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fiftyone-pipeline-engines
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ultralytics-thop
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Geode-Viewables
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: homeassistant-stubs
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Geode-Conversion
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Geode-Numerics
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ultralytics-thop]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2024.6.0b3] Old Version: [2024.6.0b2]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ape-frame]: New version: [0.8.0a0] Old Version: [0.6.0a0]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [fiftyone-pipeline-engines]: New version: [4.4.9.0] Old Version: [4.4.8.0]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ultralytics-thop]: Downloading https://files.pythonhosted.org/packages/4a/3b/ec8d7a870a25e2ec74b445ff39a3a8c601a7d8dc694e0f0d0da653ffe90e/ultralytics_thop-0.2.3.tar.gz
+[2024-06-01 03:44:58] INFO root fetch - processPackages [Geode-Conversion]: New version: [5.4.1rc1] Old Version: [5.4.1]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: New version: [4.4.9.0] Old Version: [4.4.8.0]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [fiftyone-pipeline-core]: New version: [4.4.9.0] Old Version: [4.4.8.0]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: New version: [4.4.9.0] Old Version: [4.4.8.0]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [Geode-Viewables]: New version: [2.2.3rc1] Old Version: [2.2.3]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [Geode-Numerics]: New version: [4.4.0rc1] Old Version: [4.4.0]
+[2024-06-01 03:44:58] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/31/0d/966e599f6468975155c7fe15671b1e3605f4ecd26afaee106f6b8d90d3c6/homeassistant_stubs-2024.6.0b2-py3-none-any.whl
+[2024-06-01 03:44:58] INFO root fetch - processPackages [ape-frame]: Downloading https://files.pythonhosted.org/packages/6b/10/ba315e0a38fd7500d70056d39876b74ae0401a9242e018fe67d1507db5d8/ape-frame-0.6.0a0.tar.gz
+[2024-06-01 03:44:58] INFO root fetch - processPackages [fiftyone-pipeline-engines]: Downloading https://files.pythonhosted.org/packages/4e/a3/500d24c2165afbd2f3f48b2636467d8441bc9649a45121c4b1313d6721f2/fiftyone_pipeline_engines-4.4.8.0.tar.gz
+[2024-06-01 03:44:58] INFO root fetch - processPackages [Geode-Conversion]: Downloading https://files.pythonhosted.org/packages/47/67/b240e88ee3c74655a3394ac43486eadf0b7e7ff69286820f7e4c2549c9d0/Geode_Conversion-5.4.1-cp39-cp39-manylinux2014_x86_64.whl
+[2024-06-01 03:44:59] INFO root fetch - processPackages [Geode-Viewables]: Downloading https://files.pythonhosted.org/packages/40/23/8febc69de890fdb0d8580e2947be718567b0ffdefada426594362d727681/Geode_Viewables-2.2.3-cp39-cp39-manylinux2014_x86_64.whl
+[2024-06-01 03:44:59] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/f4/3c/c71de32146ab65f86dfc78473d9751eb6c8203f98f95668052d92c55000c/Geode_Numerics-4.4.0-cp39-cp39-manylinux2014_x86_64.whl
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: Downloading https://files.pythonhosted.org/packages/57/0b/5043a75732cdb4f3894eee095bccca4eca3f291f2e64ebee5fcb716b24f2/fiftyone_pipeline_cloudrequestengine-4.4.8.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: Downloading https://files.pythonhosted.org/packages/6b/95/db65322b6bc7c0e4e2cb94c839191565def3d46ed1ee559f0ca6d588e227/fiftyone_pipeline_engines_fiftyone-4.4.8.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-core]: Downloading https://files.pythonhosted.org/packages/76/d6/b34fc7d1d074a71df816c77ccb53905048f4ae560a2a70978ca29e3134f7/fiftyone_pipeline_core-4.4.8.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [ultralytics-thop]: Downloading https://files.pythonhosted.org/packages/dc/c0/49b2fb29e0276b3ca35f1e3c0145661e7e2fcc6fe8f282f71f7331acabc3/ultralytics_thop-0.2.4.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [ultralytics-thop]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [ultralytics-thop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics_thop-0.2.3.tar.gz tmp/ultralytics_thop-0.2.4.tar.gz --markdown 20240601/u/ultralytics-thop/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/29/07/e51cc04ec07193fa4253942027786e2d0761b32a7c74a2b91aa8d6f9c96b/homeassistant_stubs-2024.6.0b3.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [ape-frame]: Downloading https://files.pythonhosted.org/packages/1b/fb/3a11a0df97e29fe3164dad8a00e5b25db6af88597f1eb104374cd768bd55/ape-frame-0.8.0a0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines]: Downloading https://files.pythonhosted.org/packages/8f/08/ccc77f7100f8f3db59fa2f751fe41a249e04249113f00c5e1ff61774197e/fiftyone_pipeline_engines-4.4.9.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [ape-frame]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [ape-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-frame-0.6.0a0.tar.gz tmp/ape-frame-0.8.0a0.tar.gz --markdown 20240601/a/ape-frame/0.6.0a0-0.8.0a0/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: Downloading https://files.pythonhosted.org/packages/23/7a/370305d5cf4106a6fed8cfa73f299a087c38edf5aea1e577829f23d4a332/fiftyone_pipeline_cloudrequestengine-4.4.9.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-core]: Downloading https://files.pythonhosted.org/packages/01/0e/99e6212222e48ed13b12487df5c23221264e2d9ccf67adcb8902624547fc/fiftyone_pipeline_core-4.4.9.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [Geode-Viewables]: Downloading https://files.pythonhosted.org/packages/dc/bf/050eab6b6ed2c9c04dd6e03c1bfdbfecc8cd939baf57463fd1e4b1911204/Geode_Viewables-2.2.3rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: Downloading https://files.pythonhosted.org/packages/5c/0e/bb656280fc3dfa6b4b69e17ab2e2d2e256d4300cdb60e8cb5e81a4fcf331/fiftyone_pipeline_engines_fiftyone-4.4.9.0.tar.gz
+[2024-06-01 03:44:59] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2024.6.0b2-py3-none-any.whl.zip tmp/homeassistant_stubs-2024.6.0b3.tar.gz --markdown 20240601/h/homeassistant-stubs/2024.6.0b2-2024.6.0b3/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_pipeline_cloudrequestengine-4.4.8.0.tar.gz tmp/fiftyone_pipeline_cloudrequestengine-4.4.9.0.tar.gz --markdown 20240601/f/fiftyone-pipeline-cloudrequestengine/4.4.8.0-4.4.9.0/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-core]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_pipeline_core-4.4.8.0.tar.gz tmp/fiftyone_pipeline_core-4.4.9.0.tar.gz --markdown 20240601/f/fiftyone-pipeline-core/4.4.8.0-4.4.9.0/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_pipeline_engines-4.4.8.0.tar.gz tmp/fiftyone_pipeline_engines-4.4.9.0.tar.gz --markdown 20240601/f/fiftyone-pipeline-engines/4.4.8.0-4.4.9.0/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiftyone_pipeline_engines_fiftyone-4.4.8.0.tar.gz tmp/fiftyone_pipeline_engines_fiftyone-4.4.9.0.tar.gz --markdown 20240601/f/fiftyone-pipeline-engines-fiftyone/4.4.8.0-4.4.9.0/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [Geode-Viewables]: executing diffoscope
+[2024-06-01 03:44:59] INFO root fetch - processPackages [Geode-Viewables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Viewables-2.2.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Viewables-2.2.3rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Viewables/2.2.3-2.2.3rc1/README.md --exclude *.pyd
+[2024-06-01 03:44:59] INFO root fetch - processPackages [Geode-Conversion]: Downloading https://files.pythonhosted.org/packages/df/85/fc6eaad2057e6cbfbde13bfaeed72ad9533a88db0e311f5d9ff3165d9e70/Geode_Conversion-5.4.1rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Conversion]: executing diffoscope
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Conversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Conversion-5.4.1-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Conversion-5.4.1rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Conversion/5.4.1-5.4.1rc1/README.md --exclude *.pyd
+[2024-06-01 03:45:00] INFO root fetch - processPackages [ultralytics-thop]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics_thop-0.2.3.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [ultralytics-thop]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics_thop-0.2.4.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [ultralytics-thop]: Start processing: Geode-Background
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [ultralytics-thop]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Background]: New version: [7.9.9rc1] Old Version: [7.9.8rc1]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [ape-frame]: Remove: archive file [/home/abi/fetcher/tmp/ape-frame-0.6.0a0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [ape-frame]: Remove: archive file [/home/abi/fetcher/tmp/ape-frame-0.8.0a0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [ape-frame]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_cloudrequestengine-4.4.8.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-cloudrequestengine]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_cloudrequestengine-4.4.9.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [fiftyone-pipeline-cloudrequestengine]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Background]: Downloading https://files.pythonhosted.org/packages/5a/bf/e3b335021e2827df1ff360ae972cac70607b2685fe93041a505c3564eb03/Geode_Background-7.9.8rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Viewables]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Viewables-2.2.3-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Viewables]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Viewables-2.2.3rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [Geode-Viewables]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/53/4b/dd64d38054c24bd42da9b107ecef15fde0e0d892ab488d13a08088d25ca7/Geode_Numerics-4.4.0rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-core]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_core-4.4.8.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-core]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_core-4.4.9.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [fiftyone-pipeline-core]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-engines]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_engines-4.4.8.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-engines]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_engines-4.4.9.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [fiftyone-pipeline-engines]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_engines_fiftyone-4.4.8.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [fiftyone-pipeline-engines-fiftyone]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_pipeline_engines_fiftyone-4.4.9.0.tar.gz]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [fiftyone-pipeline-engines-fiftyone]: success
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Conversion]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Conversion-5.4.1-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-06-01 03:45:00] INFO root fetch - processPackages [Geode-Conversion]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Conversion-5.4.1rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:45:00] INFO root fetch - main [MainThread]: End processing [Geode-Conversion]: success
+[2024-06-01 03:45:01] INFO root fetch - processPackages [Geode-Background]: Downloading https://files.pythonhosted.org/packages/cf/5a/71fe8268103445cceb35cb6b1d4e80192437af076b7718587c869ebbd24a/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl
+[2024-06-01 03:45:01] INFO root fetch - processPackages [Geode-Background]: executing diffoscope
+[2024-06-01 03:45:01] INFO root fetch - processPackages [Geode-Background]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Background-7.9.8rc1-cp39-cp39-win_amd64.whl.zip tmp/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Background/7.9.8rc1-7.9.9rc1/README.md --exclude *.pyd
+[2024-06-01 03:45:01] INFO root fetch - processPackages [Geode-Numerics]: executing diffoscope
+[2024-06-01 03:45:01] INFO root fetch - processPackages [Geode-Numerics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Numerics-4.4.0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Numerics-4.4.0rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240601/G/Geode-Numerics/4.4.0-4.4.0rc1/README.md --exclude *.pyd
+[2024-06-01 03:45:02] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.6.0b2-py3-none-any.whl.zip]
+[2024-06-01 03:45:02] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.6.0b3.tar.gz]
+[2024-06-01 03:45:02] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2024-06-01 03:45:02] INFO root fetch - processPackages [Geode-Numerics]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Numerics-4.4.0-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-06-01 03:45:02] INFO root fetch - processPackages [Geode-Numerics]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Numerics-4.4.0rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:45:02] INFO root fetch - main [MainThread]: End processing [Geode-Numerics]: success
+[2024-06-01 03:45:36] INFO root fetch - processPackages [Geode-Background]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Background-7.9.8rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:45:36] INFO root fetch - processPackages [Geode-Background]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Background-7.9.9rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 03:45:36] INFO root fetch - main [MainThread]: End processing [Geode-Background]: success
+[2024-06-01 03:45:36] INFO root fetch - main [MainThread]: Store serial: [23475778]
