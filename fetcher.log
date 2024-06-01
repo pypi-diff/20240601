@@ -17706,3 +17706,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:28:52] INFO root fetch - processPackages [maialib]: Remove: archive file [/home/abi/fetcher/tmp/maialib-1.4.8-pp39-pypy39_pp73-win_amd64.whl.zip]
 [2024-06-01 16:28:52] INFO root fetch - main [MainThread]: End processing [maialib]: success
 [2024-06-01 16:28:52] INFO root fetch - main [MainThread]: Store serial: [23480912]
+[2024-06-01 16:31:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480912]
+[2024-06-01 16:31:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 16:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: event-outbox
+[2024-06-01 16:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyds-cli
+[2024-06-01 16:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: intellipandora
+[2024-06-01 16:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: event-outbox
+[2024-06-01 16:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaicodingcube
+[2024-06-01 16:31:07] WARNING root fetch - processPackages [event-outbox]: Skipping, unable to determine old version
+[2024-06-01 16:31:07] WARNING root fetch - processPackages [event-outbox]: Skipping, unable to determine old version
+[2024-06-01 16:31:07] INFO root fetch - main [MainThread]: End processing [event-outbox] error
+[2024-06-01 16:31:07] INFO root fetch - main [MainThread]: End processing [event-outbox] error
+[2024-06-01 16:31:07] INFO root fetch - processPackages [intellipandora]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyaicodingcube]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyds-cli]: New version: [0.5.0] Old Version: [0.4.4]
+[2024-06-01 16:31:07] INFO root fetch - processPackages [intellipandora]: Downloading https://files.pythonhosted.org/packages/aa/53/b645ba582cd1904c0d41b80052b34b329a38ff0eabb345cbaab67040b650/intellipandora-1.0.6-py3-none-any.whl
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/05/3d/a1f00e70225498a194ae76846421c7f4bb8f54451cf3019a33a248e6f8cb/pyaicodingcube-0.0.4.tar.gz
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/37/40/92d13d06c04cf6747dfca784438112f4a5aabded61c596268870f29083d1/pyds-cli-0.4.4.tar.gz
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyaicodingcube]: Downloading https://files.pythonhosted.org/packages/95/da/786ed7846cea80a28077755bec933e10c33b710550b8f315c66831c8ee84/pyaicodingcube-0.0.5.tar.gz
+[2024-06-01 16:31:07] INFO root fetch - processPackages [intellipandora]: Downloading https://files.pythonhosted.org/packages/ab/04/e78a5ad284d56531f16b386672be490781e61f94e2105c7771d1720509a0/intellipandora-1.0.7-py3-none-any.whl
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyaicodingcube]: executing diffoscope
+[2024-06-01 16:31:07] INFO root fetch - processPackages [pyaicodingcube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaicodingcube-0.0.4.tar.gz tmp/pyaicodingcube-0.0.5.tar.gz --markdown 20240601/p/pyaicodingcube/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 16:31:07] INFO root fetch - processPackages [intellipandora]: executing diffoscope
+[2024-06-01 16:31:07] INFO root fetch - processPackages [intellipandora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intellipandora-1.0.6-py3-none-any.whl.zip tmp/intellipandora-1.0.7-py3-none-any.whl.zip --markdown 20240601/i/intellipandora/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyds-cli]: Downloading https://files.pythonhosted.org/packages/85/cd/1c110608142118a016c6992de0d6b5f15df305d77992e892b4b80ce3e18c/pyds_cli-0.5.0.tar.gz
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyds-cli]: executing diffoscope
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyds-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyds-cli-0.4.4.tar.gz tmp/pyds_cli-0.5.0.tar.gz --markdown 20240601/p/pyds-cli/0.4.4-0.5.0/README.md --exclude *.pyd
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.4.tar.gz]
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyaicodingcube]: Remove: archive file [/home/abi/fetcher/tmp/pyaicodingcube-0.0.5.tar.gz]
+[2024-06-01 16:31:08] INFO root fetch - main [MainThread]: End processing [pyaicodingcube]: success
+[2024-06-01 16:31:08] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.6-py3-none-any.whl.zip]
+[2024-06-01 16:31:08] INFO root fetch - processPackages [intellipandora]: Remove: archive file [/home/abi/fetcher/tmp/intellipandora-1.0.7-py3-none-any.whl.zip]
+[2024-06-01 16:31:08] INFO root fetch - main [MainThread]: End processing [intellipandora]: success
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyds-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyds-cli-0.4.4.tar.gz]
+[2024-06-01 16:31:08] INFO root fetch - processPackages [pyds-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyds_cli-0.5.0.tar.gz]
+[2024-06-01 16:31:08] INFO root fetch - main [MainThread]: End processing [pyds-cli]: success
+[2024-06-01 16:31:08] INFO root fetch - main [MainThread]: Store serial: [23480928]
