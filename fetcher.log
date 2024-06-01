@@ -15656,3 +15656,27 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:04:04] INFO root fetch - processPackages [mbapy]: Remove: archive file [/home/abi/fetcher/tmp/mbapy-0.8.0.tar.gz]
 [2024-06-01 14:04:04] INFO root fetch - main [MainThread]: End processing [mbapy]: success
 [2024-06-01 14:04:04] INFO root fetch - main [MainThread]: Store serial: [23479904]
+[2024-06-01 14:06:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479904]
+[2024-06-01 14:06:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dalpha
+[2024-06-01 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IDswapper
+[2024-06-01 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Chem-Atom
+[2024-06-01 14:06:13] INFO root fetch - processPackages [IDswapper]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-06-01 14:06:13] WARNING root fetch - processPackages [Chem-Atom]: Skipping, unable to determine old version
+[2024-06-01 14:06:13] INFO root fetch - main [MainThread]: End processing [Chem-Atom] error
+[2024-06-01 14:06:13] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/a2/13/cf2349e91e5f03fb7ae875a28e84cd4182e8db27d45b5d3cfec232678ddb/idswapper-0.1.2.tar.gz
+[2024-06-01 14:06:13] INFO root fetch - processPackages [dalpha]: New version: [0.5.5rc0] Old Version: [0.5.5]
+[2024-06-01 14:06:13] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/f8/9c/13d3ff9eeba14223cb13f09ca0853650f479e3388605a39bbf44dba0c9e0/dalpha-0.5.5.tar.gz
+[2024-06-01 14:06:14] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/37/d8/b218c27a2e7591c77a9c6f3969c4b2c03240c8153fbe134b2e63f50a90b9/dalpha-0.5.5rc0.tar.gz
+[2024-06-01 14:06:14] INFO root fetch - processPackages [dalpha]: executing diffoscope
+[2024-06-01 14:06:14] INFO root fetch - processPackages [dalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalpha-0.5.5.tar.gz tmp/dalpha-0.5.5rc0.tar.gz --markdown 20240601/d/dalpha/0.5.5-0.5.5rc0/README.md --exclude *.pyd
+[2024-06-01 14:06:14] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/7c/c5/f8eb04b65670092186a6e710695a37251467192671811a2bf5b903b042d6/idswapper-0.1.3.tar.gz
+[2024-06-01 14:06:14] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 14:06:14] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.1.2.tar.gz tmp/idswapper-0.1.3.tar.gz --markdown 20240601/I/IDswapper/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-06-01 14:06:14] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.5.tar.gz]
+[2024-06-01 14:06:14] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.5rc0.tar.gz]
+[2024-06-01 14:06:14] INFO root fetch - main [MainThread]: End processing [dalpha]: success
+[2024-06-01 14:06:15] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.2.tar.gz]
+[2024-06-01 14:06:15] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.3.tar.gz]
+[2024-06-01 14:06:15] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 14:06:15] INFO root fetch - main [MainThread]: Store serial: [23479912]
