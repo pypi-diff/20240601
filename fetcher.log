@@ -15680,3 +15680,24 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:06:15] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.3.tar.gz]
 [2024-06-01 14:06:15] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 14:06:15] INFO root fetch - main [MainThread]: Store serial: [23479912]
+[2024-06-01 14:08:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479912]
+[2024-06-01 14:08:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 14:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-compute-module
+[2024-06-01 14:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bosing
+[2024-06-01 14:08:23] INFO root fetch - processPackages [python-compute-module]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-06-01 14:08:24] INFO root fetch - processPackages [bosing]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-06-01 14:08:24] INFO root fetch - processPackages [python-compute-module]: Downloading https://files.pythonhosted.org/packages/b0/b6/d0ca8da1852c4eb44ffc143cbcd39f2d7b0aa27519ca6294fc750aa0f4c4/python_compute_module-0.1.0.tar.gz
+[2024-06-01 14:08:24] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/6c/38/ab761695f3690e2d97e6b5579d8ad775775eda01561d1dc17908c1d14540/bosing-2.0.5.tar.gz
+[2024-06-01 14:08:24] INFO root fetch - processPackages [python-compute-module]: Downloading https://files.pythonhosted.org/packages/9f/14/6bc5bcbe29de1c8012deb06c5834174e4d78092cd5e996f016901718b983/python_compute_module-0.2.0.tar.gz
+[2024-06-01 14:08:24] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/d6/59/6d4b60ac308c48832b07a3e0aa647ef0c347c6a11f57c043a3b517f48154/bosing-2.0.6.tar.gz
+[2024-06-01 14:08:24] INFO root fetch - processPackages [python-compute-module]: executing diffoscope
+[2024-06-01 14:08:24] INFO root fetch - processPackages [python-compute-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_compute_module-0.1.0.tar.gz tmp/python_compute_module-0.2.0.tar.gz --markdown 20240601/p/python-compute-module/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-06-01 14:08:24] INFO root fetch - processPackages [bosing]: executing diffoscope
+[2024-06-01 14:08:24] INFO root fetch - processPackages [bosing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosing-2.0.5.tar.gz tmp/bosing-2.0.6.tar.gz --markdown 20240601/b/bosing/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-06-01 14:08:25] INFO root fetch - processPackages [python-compute-module]: Remove: archive file [/home/abi/fetcher/tmp/python_compute_module-0.1.0.tar.gz]
+[2024-06-01 14:08:25] INFO root fetch - processPackages [python-compute-module]: Remove: archive file [/home/abi/fetcher/tmp/python_compute_module-0.2.0.tar.gz]
+[2024-06-01 14:08:25] INFO root fetch - main [MainThread]: End processing [python-compute-module]: success
+[2024-06-01 14:08:25] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-2.0.5.tar.gz]
+[2024-06-01 14:08:25] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-2.0.6.tar.gz]
+[2024-06-01 14:08:25] INFO root fetch - main [MainThread]: End processing [bosing]: success
+[2024-06-01 14:08:25] INFO root fetch - main [MainThread]: Store serial: [23479943]
