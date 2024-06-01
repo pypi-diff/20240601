@@ -21644,3 +21644,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:57:47] INFO root fetch - processPackages [jinja2-async-environment]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_async_environment-0.7.6.tar.gz]
 [2024-06-01 20:57:47] INFO root fetch - main [MainThread]: End processing [jinja2-async-environment]: success
 [2024-06-01 20:57:47] INFO root fetch - main [MainThread]: Store serial: [23482766]
+[2024-06-01 20:59:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482766]
+[2024-06-01 20:59:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 20:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schemaorg-lite
+[2024-06-01 20:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai-tool-generator
+[2024-06-01 20:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webull-options
+[2024-06-01 20:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: n0struct
+[2024-06-01 20:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-models-package
+[2024-06-01 20:59:56] ERROR root fetch - processPackages [django-models-package]: Unable to get metadata: No such project 'django-models-package'
+[2024-06-01 20:59:56] INFO root fetch - main [MainThread]: End processing [django-models-package] error
+[2024-06-01 20:59:56] INFO root fetch - processPackages [webull-options]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-06-01 20:59:56] INFO root fetch - processPackages [schemaorg-lite]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 20:59:56] WARNING root fetch - processPackages [openai-tool-generator]: Skipping, unable to determine old version
+[2024-06-01 20:59:56] INFO root fetch - main [MainThread]: End processing [openai-tool-generator] error
+[2024-06-01 20:59:56] INFO root fetch - processPackages [n0struct]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-06-01 20:59:56] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/66/94/217ae3ac1c085b329ba594ea0ef7ed4b6de04e6bfba05d11226178e8d1a6/webull_options-0.6.6.tar.gz
+[2024-06-01 20:59:56] INFO root fetch - processPackages [schemaorg-lite]: Downloading https://files.pythonhosted.org/packages/76/ea/f8da322ad9c463fb3674baa7f3cede2984ff76804d617531f29706753fe2/schemaorg_lite-0.1.8.tar.gz
+[2024-06-01 20:59:56] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/3a/1d/81eb18aeb0c82af0370b69b157b03aba0efdeefebf6715db99ff775641db/n0struct-0.2.98.tar.gz
+[2024-06-01 20:59:57] INFO root fetch - processPackages [webull-options]: Downloading https://files.pythonhosted.org/packages/1e/e8/1b32b27c90fa16e2df4d8ea950d76bb9ffd89d171f7c95c57a0e5a7dae9e/webull_options-0.6.7.tar.gz
+[2024-06-01 20:59:57] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/93/08/d578b3c0abbb7bdf83eed0207432602a511a80eaded61c24f720c5bad99e/n0struct-0.2.99.tar.gz
+[2024-06-01 20:59:57] INFO root fetch - processPackages [webull-options]: executing diffoscope
+[2024-06-01 20:59:57] INFO root fetch - processPackages [webull-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull_options-0.6.6.tar.gz tmp/webull_options-0.6.7.tar.gz --markdown 20240601/w/webull-options/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-06-01 20:59:57] INFO root fetch - processPackages [n0struct]: executing diffoscope
+[2024-06-01 20:59:57] INFO root fetch - processPackages [n0struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n0struct-0.2.98.tar.gz tmp/n0struct-0.2.99.tar.gz --markdown 20240601/n/n0struct/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-06-01 20:59:57] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.6.tar.gz]
+[2024-06-01 20:59:57] INFO root fetch - processPackages [webull-options]: Remove: archive file [/home/abi/fetcher/tmp/webull_options-0.6.7.tar.gz]
+[2024-06-01 20:59:57] INFO root fetch - main [MainThread]: End processing [webull-options]: success
+[2024-06-01 20:59:57] INFO root fetch - processPackages [n0struct]: Remove: archive file [/home/abi/fetcher/tmp/n0struct-0.2.98.tar.gz]
+[2024-06-01 20:59:57] INFO root fetch - processPackages [n0struct]: Remove: archive file [/home/abi/fetcher/tmp/n0struct-0.2.99.tar.gz]
+[2024-06-01 20:59:57] INFO root fetch - main [MainThread]: End processing [n0struct]: success
+[2024-06-01 20:59:58] INFO root fetch - processPackages [schemaorg-lite]: Downloading https://files.pythonhosted.org/packages/26/94/c9402d0a4004df79d009c2847989dbac719d94a77abfe79f8e1798c3f40a/schemaorg_lite-0.1.9.tar.gz
+[2024-06-01 21:00:02] INFO root fetch - processPackages [schemaorg-lite]: executing diffoscope
+[2024-06-01 21:00:02] INFO root fetch - processPackages [schemaorg-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemaorg_lite-0.1.8.tar.gz tmp/schemaorg_lite-0.1.9.tar.gz --markdown 20240601/s/schemaorg-lite/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 21:00:10] INFO root fetch - processPackages [schemaorg-lite]: Remove: archive file [/home/abi/fetcher/tmp/schemaorg_lite-0.1.8.tar.gz]
+[2024-06-01 21:00:10] INFO root fetch - processPackages [schemaorg-lite]: Remove: archive file [/home/abi/fetcher/tmp/schemaorg_lite-0.1.9.tar.gz]
+[2024-06-01 21:00:10] INFO root fetch - main [MainThread]: End processing [schemaorg-lite]: success
+[2024-06-01 21:00:10] INFO root fetch - main [MainThread]: Store serial: [23482792]
