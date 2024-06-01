@@ -19077,3 +19077,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:06:09] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-06-01 18:06:09] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-06-01 18:06:09] INFO root fetch - main [MainThread]: Store serial: [23481569]
+[2024-06-01 18:08:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481569]
+[2024-06-01 18:08:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 18:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyJONDB
+[2024-06-01 18:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almax-common
+[2024-06-01 18:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: etextedit
+[2024-06-01 18:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CTkKeyboard
+[2024-06-01 18:08:19] INFO root fetch - processPackages [CTkKeyboard]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 18:08:19] INFO root fetch - processPackages [PyJONDB]: New version: [1.8] Old Version: [1.7]
+[2024-06-01 18:08:19] INFO root fetch - processPackages [etextedit]: New version: [0.6] Old Version: [0.5]
+[2024-06-01 18:08:19] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 18:08:19] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/9c/95/d9d83fdbfafc615cdc723a4d913f8e775eef7682bfc79d26f26b4c2efacd/pyjondb-1.7.tar.gz
+[2024-06-01 18:08:19] INFO root fetch - processPackages [CTkKeyboard]: Downloading https://files.pythonhosted.org/packages/61/3c/12d0770f8e0e5e3f183e56c7528e331919956e2fa2803a00f33a31acdbc1/CTkKeyboard-0.3.4.tar.gz
+[2024-06-01 18:08:19] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 18:08:19] INFO root fetch - processPackages [etextedit]: Downloading https://files.pythonhosted.org/packages/19/1e/6887b77745ec55df60fa056a2e0e68d085663c20dcc5391625300255c0be/etextedit-0.5.tar.gz
+[2024-06-01 18:08:20] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 18:08:20] INFO root fetch - processPackages [etextedit]: Downloading https://files.pythonhosted.org/packages/b4/e5/e5874edb76ae4c03ddfd8b97280ce95fb130ce12fb130adbb9ff20b2653e/etextedit-0.6.tar.gz
+[2024-06-01 18:08:20] INFO root fetch - processPackages [PyJONDB]: Downloading https://files.pythonhosted.org/packages/e9/6f/4cf30e51ec9922ca746e6470d6954d4baefdb96fffdd2e6ce2eaaa1a0920/pyjondb-1.8.tar.gz
+[2024-06-01 18:08:20] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 18:08:20] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 18:08:20] INFO root fetch - processPackages [etextedit]: executing diffoscope
+[2024-06-01 18:08:20] INFO root fetch - processPackages [etextedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etextedit-0.5.tar.gz tmp/etextedit-0.6.tar.gz --markdown 20240601/e/etextedit/0.5-0.6/README.md --exclude *.pyd
+[2024-06-01 18:08:20] INFO root fetch - processPackages [CTkKeyboard]: Downloading https://files.pythonhosted.org/packages/7c/e5/cc27f4a7a5b2d028dd29fa7650e0e2aab94f2abf1fc5d9f3097dd73930e5/CTkKeyboard-0.3.5.tar.gz
+[2024-06-01 18:08:20] INFO root fetch - processPackages [PyJONDB]: executing diffoscope
+[2024-06-01 18:08:20] INFO root fetch - processPackages [PyJONDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjondb-1.7.tar.gz tmp/pyjondb-1.8.tar.gz --markdown 20240601/P/PyJONDB/1.7-1.8/README.md --exclude *.pyd
+[2024-06-01 18:08:20] INFO root fetch - processPackages [CTkKeyboard]: executing diffoscope
+[2024-06-01 18:08:20] INFO root fetch - processPackages [CTkKeyboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTkKeyboard-0.3.4.tar.gz tmp/CTkKeyboard-0.3.5.tar.gz --markdown 20240601/C/CTkKeyboard/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 18:08:20] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 18:08:20] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 18:08:20] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 18:08:20] INFO root fetch - processPackages [etextedit]: Remove: archive file [/home/abi/fetcher/tmp/etextedit-0.5.tar.gz]
+[2024-06-01 18:08:20] INFO root fetch - processPackages [etextedit]: Remove: archive file [/home/abi/fetcher/tmp/etextedit-0.6.tar.gz]
+[2024-06-01 18:08:20] INFO root fetch - main [MainThread]: End processing [etextedit]: success
+[2024-06-01 18:08:21] INFO root fetch - processPackages [CTkKeyboard]: Remove: archive file [/home/abi/fetcher/tmp/CTkKeyboard-0.3.4.tar.gz]
+[2024-06-01 18:08:21] INFO root fetch - processPackages [CTkKeyboard]: Remove: archive file [/home/abi/fetcher/tmp/CTkKeyboard-0.3.5.tar.gz]
+[2024-06-01 18:08:21] INFO root fetch - main [MainThread]: End processing [CTkKeyboard]: success
+[2024-06-01 18:08:21] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.7.tar.gz]
+[2024-06-01 18:08:21] INFO root fetch - processPackages [PyJONDB]: Remove: archive file [/home/abi/fetcher/tmp/pyjondb-1.8.tar.gz]
+[2024-06-01 18:08:21] INFO root fetch - main [MainThread]: End processing [PyJONDB]: success
+[2024-06-01 18:08:21] INFO root fetch - main [MainThread]: Store serial: [23481587]
