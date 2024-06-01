@@ -20589,3 +20589,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:44:54] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.3.1.tar.gz]
 [2024-06-01 19:44:54] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
 [2024-06-01 19:44:54] INFO root fetch - main [MainThread]: Store serial: [23482224]
+[2024-06-01 19:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482224]
+[2024-06-01 19:47:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-06-01 19:49:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482224]
+[2024-06-01 19:49:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 19:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starred-astro
+[2024-06-01 19:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gmymaps
+[2024-06-01 19:49:09] WARNING root fetch - processPackages [gmymaps]: Skipping, unable to determine old version
+[2024-06-01 19:49:09] INFO root fetch - main [MainThread]: End processing [gmymaps] error
+[2024-06-01 19:49:09] INFO root fetch - processPackages [starred-astro]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-06-01 19:49:09] INFO root fetch - processPackages [starred-astro]: Downloading https://files.pythonhosted.org/packages/a3/34/4aca069b43d8c44677c2882f9d58218e46a802211d6a98f5a4fa76edb307/starred-astro-1.4.2.tar.gz
+[2024-06-01 19:49:09] INFO root fetch - processPackages [starred-astro]: Downloading https://files.pythonhosted.org/packages/f2/52/acce1361431e7b4b0f66e3b343712736d92370ec343cb1d93f0ca8699561/starred_astro-1.4.3.tar.gz
+[2024-06-01 19:49:10] INFO root fetch - processPackages [starred-astro]: executing diffoscope
+[2024-06-01 19:49:10] INFO root fetch - processPackages [starred-astro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starred-astro-1.4.2.tar.gz tmp/starred_astro-1.4.3.tar.gz --markdown 20240601/s/starred-astro/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-06-01 19:49:10] INFO root fetch - processPackages [starred-astro]: Remove: archive file [/home/abi/fetcher/tmp/starred-astro-1.4.2.tar.gz]
+[2024-06-01 19:49:10] INFO root fetch - processPackages [starred-astro]: Remove: archive file [/home/abi/fetcher/tmp/starred_astro-1.4.3.tar.gz]
+[2024-06-01 19:49:10] INFO root fetch - main [MainThread]: End processing [starred-astro]: success
+[2024-06-01 19:49:10] INFO root fetch - main [MainThread]: Store serial: [23482230]
