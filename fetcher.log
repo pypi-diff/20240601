@@ -17314,3 +17314,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:06:56] INFO root fetch - processPackages [monstr]: Remove: archive file [/home/abi/fetcher/tmp/monstr-0.1.6.tar.gz]
 [2024-06-01 16:06:56] INFO root fetch - main [MainThread]: End processing [monstr]: success
 [2024-06-01 16:06:56] INFO root fetch - main [MainThread]: Store serial: [23480631]
+[2024-06-01 16:09:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480631]
+[2024-06-01 16:09:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 16:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cherche
+[2024-06-01 16:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gridkit
+[2024-06-01 16:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: func-bk
+[2024-06-01 16:09:05] INFO root fetch - processPackages [func-bk]: New version: [1.5.3] Old Version: [1.5.1]
+[2024-06-01 16:09:05] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/c2/d5/9551f771a4c628e58cc93b984aafd8fb0b88f1f02195726c2fdf694b398a/func_bk-1.5.1.tar.gz
+[2024-06-01 16:09:05] INFO root fetch - processPackages [cherche]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-06-01 16:09:05] INFO root fetch - processPackages [gridkit]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-06-01 16:09:05] INFO root fetch - processPackages [cherche]: Downloading https://files.pythonhosted.org/packages/5d/a6/0584df84e6deedf33bf5cd732dbc6d2e1e8da3479384e804145ebf5b2f38/cherche-2.1.0.tar.gz
+[2024-06-01 16:09:05] INFO root fetch - processPackages [gridkit]: Downloading https://files.pythonhosted.org/packages/2f/00/1977a0d529f85548d99594ca94aaab507c722bce23a66cd43086e901a6eb/gridkit-0.9.1.tar.gz
+[2024-06-01 16:09:05] WARNING root fetch - processPackages [gridkit]: Skipping package: exceeds size limit 13801221>=10485760
+[2024-06-01 16:09:05] INFO root fetch - main [MainThread]: End processing [gridkit] error
+[2024-06-01 16:09:06] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/78/d7/e096dc92b34fd272aa91a00c6cad96a1c505bd956a662174fa21862f6948/func_bk-1.5.3.tar.gz
+[2024-06-01 16:09:06] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-06-01 16:09:06] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.5.1.tar.gz tmp/func_bk-1.5.3.tar.gz --markdown 20240601/f/func-bk/1.5.1-1.5.3/README.md --exclude *.pyd
+[2024-06-01 16:09:06] INFO root fetch - processPackages [cherche]: Downloading https://files.pythonhosted.org/packages/51/79/f932d06dcc2b13e0a665219d0926cf76673d8579797ce392351f5e3bf130/cherche-2.1.1.tar.gz
+[2024-06-01 16:09:06] INFO root fetch - processPackages [cherche]: executing diffoscope
+[2024-06-01 16:09:06] INFO root fetch - processPackages [cherche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cherche-2.1.0.tar.gz tmp/cherche-2.1.1.tar.gz --markdown 20240601/c/cherche/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-06-01 16:09:06] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.1.tar.gz]
+[2024-06-01 16:09:06] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.5.3.tar.gz]
+[2024-06-01 16:09:06] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-06-01 16:09:08] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.1.0.tar.gz]
+[2024-06-01 16:09:08] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.1.1.tar.gz]
+[2024-06-01 16:09:08] INFO root fetch - main [MainThread]: End processing [cherche]: success
+[2024-06-01 16:09:08] INFO root fetch - main [MainThread]: Store serial: [23480652]
