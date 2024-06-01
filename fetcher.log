@@ -19831,3 +19831,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:54:11] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.6.1.tar.gz]
 [2024-06-01 18:54:11] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
 [2024-06-01 18:54:11] INFO root fetch - main [MainThread]: Store serial: [23481923]
+[2024-06-01 18:56:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481923]
+[2024-06-01 18:56:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astra-lib
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: countrymapper
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cherche
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baidu-serp-api
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: css-colors-stats
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: doup
+[2024-06-01 18:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pynbody
+[2024-06-01 18:56:20] INFO root fetch - processPackages [doup]: New version: [4.0.0] Old Version: [3.1.0]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [cherche]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [astra-lib]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [cherche]: Downloading https://files.pythonhosted.org/packages/5d/a6/0584df84e6deedf33bf5cd732dbc6d2e1e8da3479384e804145ebf5b2f38/cherche-2.1.0.tar.gz
+[2024-06-01 18:56:20] INFO root fetch - processPackages [css-colors-stats]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [countrymapper]: New version: [0.5] Old Version: [0.1]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [baidu-serp-api]: New version: [0.7] Old Version: [0.6]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [doup]: Downloading https://files.pythonhosted.org/packages/a6/4f/a67c518b2f7c13c9e62d1e3a3448feda811956a8a801074b4a9e7171133f/doup-3.1.0.tar.gz
+[2024-06-01 18:56:20] INFO root fetch - processPackages [pynbody]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2024-06-01 18:56:20] INFO root fetch - processPackages [astra-lib]: Downloading https://files.pythonhosted.org/packages/b1/f5/e29c9e339b63446fff3a3361737e625e144036a9a39727a3880432d7e38a/astra-lib-0.0.5.tar.gz
+[2024-06-01 18:56:20] INFO root fetch - processPackages [countrymapper]: Downloading https://files.pythonhosted.org/packages/f5/02/3312a516339425d415612dea4ff6013e5bb6abf5e558280cddb370109d17/countrymapper-0.1.tar.gz
+[2024-06-01 18:56:20] INFO root fetch - processPackages [baidu-serp-api]: Downloading https://files.pythonhosted.org/packages/a2/92/524b5fdb9f1f195122a89efd066dd492efc8fe0c839c7d599c21259856fc/baidu_serp_api-0.6.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [css-colors-stats]: Downloading https://files.pythonhosted.org/packages/66/5e/2facf741fad623ba90c7791cc36d801da2983a9b523153aabcdc5aba7972/css_colors_stats-0.0.2.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [pynbody]: Downloading https://files.pythonhosted.org/packages/f2/43/8c7a092b1e598a8cf9bb8bd06f1b3775bcef65b1292e5a286b9285c4c07b/pynbody-2.0.0b8.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [cherche]: Downloading https://files.pythonhosted.org/packages/51/79/f932d06dcc2b13e0a665219d0926cf76673d8579797ce392351f5e3bf130/cherche-2.1.1.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [doup]: Downloading https://files.pythonhosted.org/packages/76/41/21acf3ae7393f2dcbc63f5ef77e05ba6c9f35f4aee19c8ef319e6dc1b3c9/doup-4.0.0.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [countrymapper]: Downloading https://files.pythonhosted.org/packages/ec/9a/f14c5a65564a0406d511796ddc2f1a5fbb5cf33fa8384eb1e9839521ea0e/countrymapper-0.5.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [baidu-serp-api]: Downloading https://files.pythonhosted.org/packages/61/b0/d7036e37b4be5d4e0f4bca56d69173c865bead1420b80ef6aa10eddc613c/baidu_serp_api-0.7.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [astra-lib]: Downloading https://files.pythonhosted.org/packages/8d/e5/cd5faa3952a3052a39804195c92391c36d12c24780bb8cdf3867ab9d827b/astra_lib-0.0.6.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [css-colors-stats]: Downloading https://files.pythonhosted.org/packages/fc/f6/3aa739e3eb09c2a8a7e4197fb65d83125465dfa492db3f98fb047ccf7322/css_colors_stats-0.0.3.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [cherche]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [cherche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cherche-2.1.0.tar.gz tmp/cherche-2.1.1.tar.gz --markdown 20240601/c/cherche/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-06-01 18:56:21] INFO root fetch - processPackages [doup]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [doup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doup-3.1.0.tar.gz tmp/doup-4.0.0.tar.gz --markdown 20240601/d/doup/3.1.0-4.0.0/README.md --exclude *.pyd
+[2024-06-01 18:56:21] INFO root fetch - processPackages [countrymapper]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [countrymapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/countrymapper-0.1.tar.gz tmp/countrymapper-0.5.tar.gz --markdown 20240601/c/countrymapper/0.1-0.5/README.md --exclude *.pyd
+[2024-06-01 18:56:21] INFO root fetch - processPackages [baidu-serp-api]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [baidu-serp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baidu_serp_api-0.6.tar.gz tmp/baidu_serp_api-0.7.tar.gz --markdown 20240601/b/baidu-serp-api/0.6-0.7/README.md --exclude *.pyd
+[2024-06-01 18:56:21] INFO root fetch - processPackages [css-colors-stats]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [css-colors-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/css_colors_stats-0.0.2.tar.gz tmp/css_colors_stats-0.0.3.tar.gz --markdown 20240601/c/css-colors-stats/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 18:56:21] INFO root fetch - processPackages [astra-lib]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [astra-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astra-lib-0.0.5.tar.gz tmp/astra_lib-0.0.6.tar.gz --markdown 20240601/a/astra-lib/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-06-01 18:56:21] INFO root fetch - processPackages [pynbody]: Downloading https://files.pythonhosted.org/packages/87/04/1ccc26ec1484dcc66ca7151dcd393c20120026a0f5e7c4785e74fbdcec97/pynbody-2.0.0b9.tar.gz
+[2024-06-01 18:56:21] INFO root fetch - processPackages [pynbody]: executing diffoscope
+[2024-06-01 18:56:21] INFO root fetch - processPackages [pynbody]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynbody-2.0.0b8.tar.gz tmp/pynbody-2.0.0b9.tar.gz --markdown 20240601/p/pynbody/2.0.0b8-2.0.0b9/README.md --exclude *.pyd
+[2024-06-01 18:56:22] INFO root fetch - processPackages [countrymapper]: Remove: archive file [/home/abi/fetcher/tmp/countrymapper-0.1.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - processPackages [countrymapper]: Remove: archive file [/home/abi/fetcher/tmp/countrymapper-0.5.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - main [MainThread]: End processing [countrymapper]: success
+[2024-06-01 18:56:22] INFO root fetch - processPackages [css-colors-stats]: Remove: archive file [/home/abi/fetcher/tmp/css_colors_stats-0.0.2.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - processPackages [css-colors-stats]: Remove: archive file [/home/abi/fetcher/tmp/css_colors_stats-0.0.3.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - main [MainThread]: End processing [css-colors-stats]: success
+[2024-06-01 18:56:22] INFO root fetch - processPackages [baidu-serp-api]: Remove: archive file [/home/abi/fetcher/tmp/baidu_serp_api-0.6.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - processPackages [baidu-serp-api]: Remove: archive file [/home/abi/fetcher/tmp/baidu_serp_api-0.7.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - main [MainThread]: End processing [baidu-serp-api]: success
+[2024-06-01 18:56:22] INFO root fetch - processPackages [doup]: Remove: archive file [/home/abi/fetcher/tmp/doup-3.1.0.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - processPackages [doup]: Remove: archive file [/home/abi/fetcher/tmp/doup-4.0.0.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - main [MainThread]: End processing [doup]: success
+[2024-06-01 18:56:22] INFO root fetch - processPackages [astra-lib]: Remove: archive file [/home/abi/fetcher/tmp/astra-lib-0.0.5.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - processPackages [astra-lib]: Remove: archive file [/home/abi/fetcher/tmp/astra_lib-0.0.6.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - main [MainThread]: End processing [astra-lib]: success
+[2024-06-01 18:56:22] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.1.0.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - processPackages [cherche]: Remove: archive file [/home/abi/fetcher/tmp/cherche-2.1.1.tar.gz]
+[2024-06-01 18:56:22] INFO root fetch - main [MainThread]: End processing [cherche]: success
+[2024-06-01 18:56:23] INFO root fetch - processPackages [pynbody]: Remove: archive file [/home/abi/fetcher/tmp/pynbody-2.0.0b8.tar.gz]
+[2024-06-01 18:56:23] INFO root fetch - processPackages [pynbody]: Remove: archive file [/home/abi/fetcher/tmp/pynbody-2.0.0b9.tar.gz]
+[2024-06-01 18:56:23] INFO root fetch - main [MainThread]: End processing [pynbody]: success
+[2024-06-01 18:56:23] INFO root fetch - main [MainThread]: Store serial: [23481946]
