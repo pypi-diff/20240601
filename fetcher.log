@@ -14641,3 +14641,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:46:06] INFO root fetch - processPackages [anemoi-inference]: Remove: archive file [/home/abi/fetcher/tmp/anemoi_inference-0.1.3.tar.gz]
 [2024-06-01 12:46:06] INFO root fetch - main [MainThread]: End processing [anemoi-inference]: success
 [2024-06-01 12:46:06] INFO root fetch - main [MainThread]: Store serial: [23479446]
+[2024-06-01 12:48:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479446]
+[2024-06-01 12:48:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 12:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: browserxt
+[2024-06-01 12:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphmemory
+[2024-06-01 12:48:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dektools
+[2024-06-01 12:48:15] WARNING root fetch - processPackages [graphmemory]: Skipping, unable to determine old version
+[2024-06-01 12:48:15] INFO root fetch - main [MainThread]: End processing [graphmemory] error
+[2024-06-01 12:48:15] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-06-01 12:48:15] INFO root fetch - processPackages [browserxt]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-06-01 12:48:15] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/9c/1d/83d57873e8afa710b5f9a89fe17e2f3ce903ea31d96b6736106245f141b9/browserxt-0.1.0.tar.gz
+[2024-06-01 12:48:16] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-06-01 12:48:16] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-06-01 12:48:16] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240601/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: Downloading https://files.pythonhosted.org/packages/75/9b/387f2601505bc2abc795218c90af0b147d9793bbdfac57cbfbbe03caa081/browserxt-0.1.2.tar.gz
+[2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: executing diffoscope
+[2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserxt-0.1.0.tar.gz tmp/browserxt-0.1.2.tar.gz --markdown 20240601/b/browserxt/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-06-01 12:48:16] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-06-01 12:48:16] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-06-01 12:48:16] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.0.tar.gz]
+[2024-06-01 12:48:16] INFO root fetch - processPackages [browserxt]: Remove: archive file [/home/abi/fetcher/tmp/browserxt-0.1.2.tar.gz]
+[2024-06-01 12:48:16] INFO root fetch - main [MainThread]: End processing [browserxt]: success
+[2024-06-01 12:48:16] INFO root fetch - main [MainThread]: Store serial: [23479455]
