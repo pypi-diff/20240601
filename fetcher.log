@@ -13165,3 +13165,27 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:46:08] INFO root fetch - processPackages [structuretoolkit]: Remove: archive file [/home/abi/fetcher/tmp/structuretoolkit-0.0.9.tar.gz]
 [2024-06-01 10:46:08] INFO root fetch - main [MainThread]: End processing [structuretoolkit]: success
 [2024-06-01 10:46:08] INFO root fetch - main [MainThread]: Store serial: [23478796]
+[2024-06-01 10:48:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478796]
+[2024-06-01 10:48:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 10:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhihu-crawler-pro
+[2024-06-01 10:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zhihu-python
+[2024-06-01 10:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfp-nightly
+[2024-06-01 10:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Zhihu-Spider
+[2024-06-01 10:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ZhihuSpiderPlus
+[2024-06-01 10:48:17] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-06-01 10:48:17] WARNING root fetch - processPackages [zhihu-python]: Skipping, unable to determine old version
+[2024-06-01 10:48:17] INFO root fetch - main [MainThread]: End processing [zhihu-python] error
+[2024-06-01 10:48:17] WARNING root fetch - processPackages [ZhihuSpiderPlus]: Skipping, unable to determine old version
+[2024-06-01 10:48:17] INFO root fetch - main [MainThread]: End processing [ZhihuSpiderPlus] error
+[2024-06-01 10:48:17] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-06-01 10:48:17] WARNING root fetch - processPackages [zhihu-crawler-pro]: Skipping, unable to determine old version
+[2024-06-01 10:48:17] INFO root fetch - main [MainThread]: End processing [zhihu-crawler-pro] error
+[2024-06-01 10:48:17] WARNING root fetch - processPackages [Zhihu-Spider]: Skipping, unable to determine old version
+[2024-06-01 10:48:17] INFO root fetch - main [MainThread]: End processing [Zhihu-Spider] error
+[2024-06-01 10:48:17] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-06-01 10:48:17] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-06-01 10:48:17] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240601/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-06-01 10:48:20] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-06-01 10:48:20] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-06-01 10:48:20] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-06-01 10:48:20] INFO root fetch - main [MainThread]: Store serial: [23478819]
