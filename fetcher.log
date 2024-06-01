@@ -14016,3 +14016,30 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:54:15] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
 [2024-06-01 11:54:15] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
 [2024-06-01 11:54:15] INFO root fetch - main [MainThread]: Store serial: [23479177]
+[2024-06-01 11:56:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479177]
+[2024-06-01 11:56:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 11:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gendit
+[2024-06-01 11:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: popoll-backend
+[2024-06-01 11:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtvr
+[2024-06-01 11:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qwantz-metadata
+[2024-06-01 11:56:24] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.67] Old Version: [0.0.66]
+[2024-06-01 11:56:24] WARNING root fetch - processPackages [dtvr]: Skipping, unable to determine old version
+[2024-06-01 11:56:24] INFO root fetch - main [MainThread]: End processing [dtvr] error
+[2024-06-01 11:56:24] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/74/01/17caf26cbd9e60624a7853321cdfe318c16d71a76aae9230d29f4243521b/popoll_backend-0.0.66.tar.gz
+[2024-06-01 11:56:24] WARNING root fetch - processPackages [gendit]: Skipping, unable to determine old version
+[2024-06-01 11:56:24] INFO root fetch - main [MainThread]: End processing [gendit] error
+[2024-06-01 11:56:25] INFO root fetch - processPackages [qwantz-metadata]: New version: [2024.6.1] Old Version: [2024.1.1]
+[2024-06-01 11:56:25] INFO root fetch - processPackages [qwantz-metadata]: Downloading https://files.pythonhosted.org/packages/33/38/7964e11ebe91f8b210bee5d7651de09bf58a7682d48154d0ad33ac2b5462/qwantz_metadata-2024.1.1.tar.gz
+[2024-06-01 11:56:25] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/c1/7a/e29bf0ca81198620360baacb77b541bea187fb08b80c0f93fe89ca8ccbe0/popoll_backend-0.0.67.tar.gz
+[2024-06-01 11:56:25] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 11:56:25] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.66.tar.gz tmp/popoll_backend-0.0.67.tar.gz --markdown 20240601/p/popoll-backend/0.0.66-0.0.67/README.md --exclude *.pyd
+[2024-06-01 11:56:25] INFO root fetch - processPackages [qwantz-metadata]: Downloading https://files.pythonhosted.org/packages/0e/6a/c04dafd8ef3bcbcfd1a5dddd058b8ae707b571a4d7caaa076a8629697004/qwantz_metadata-2024.6.1.tar.gz
+[2024-06-01 11:56:25] INFO root fetch - processPackages [qwantz-metadata]: executing diffoscope
+[2024-06-01 11:56:25] INFO root fetch - processPackages [qwantz-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwantz_metadata-2024.1.1.tar.gz tmp/qwantz_metadata-2024.6.1.tar.gz --markdown 20240601/q/qwantz-metadata/2024.1.1-2024.6.1/README.md --exclude *.pyd
+[2024-06-01 11:56:26] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.66.tar.gz]
+[2024-06-01 11:56:26] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.67.tar.gz]
+[2024-06-01 11:56:26] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 11:56:26] INFO root fetch - processPackages [qwantz-metadata]: Remove: archive file [/home/abi/fetcher/tmp/qwantz_metadata-2024.1.1.tar.gz]
+[2024-06-01 11:56:26] INFO root fetch - processPackages [qwantz-metadata]: Remove: archive file [/home/abi/fetcher/tmp/qwantz_metadata-2024.6.1.tar.gz]
+[2024-06-01 11:56:26] INFO root fetch - main [MainThread]: End processing [qwantz-metadata]: success
+[2024-06-01 11:56:26] INFO root fetch - main [MainThread]: Store serial: [23479191]
