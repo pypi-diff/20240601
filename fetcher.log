@@ -17742,3 +17742,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:31:08] INFO root fetch - processPackages [pyds-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyds_cli-0.5.0.tar.gz]
 [2024-06-01 16:31:08] INFO root fetch - main [MainThread]: End processing [pyds-cli]: success
 [2024-06-01 16:31:08] INFO root fetch - main [MainThread]: Store serial: [23480928]
+[2024-06-01 16:33:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480928]
+[2024-06-01 16:33:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 16:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gulagcleaner
+[2024-06-01 16:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anne
+[2024-06-01 16:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: upstox-wrapper
+[2024-06-01 16:33:17] WARNING root fetch - processPackages [upstox-wrapper]: Skipping, unable to determine old version
+[2024-06-01 16:33:17] INFO root fetch - main [MainThread]: End processing [upstox-wrapper] error
+[2024-06-01 16:33:17] WARNING root fetch - processPackages [anne]: Skipping, unable to determine old version
+[2024-06-01 16:33:17] INFO root fetch - main [MainThread]: End processing [anne] error
+[2024-06-01 16:33:17] INFO root fetch - processPackages [gulagcleaner]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-06-01 16:33:17] INFO root fetch - processPackages [gulagcleaner]: Downloading https://files.pythonhosted.org/packages/e9/9e/23c5f4d2fac3b8b0451a510edb73c2d7a7e400bb3318f79cca53b2e07ee8/gulagcleaner-0.8.1.tar.gz
+[2024-06-01 16:33:18] INFO root fetch - processPackages [gulagcleaner]: Downloading https://files.pythonhosted.org/packages/12/03/2de10bdfc77387d0392ac52fc5cce61de95f801c95990ce7108adc342d75/gulagcleaner-0.8.2.tar.gz
+[2024-06-01 16:33:18] INFO root fetch - processPackages [gulagcleaner]: executing diffoscope
+[2024-06-01 16:33:18] INFO root fetch - processPackages [gulagcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gulagcleaner-0.8.1.tar.gz tmp/gulagcleaner-0.8.2.tar.gz --markdown 20240601/g/gulagcleaner/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-06-01 16:33:18] INFO root fetch - processPackages [gulagcleaner]: Remove: archive file [/home/abi/fetcher/tmp/gulagcleaner-0.8.1.tar.gz]
+[2024-06-01 16:33:18] INFO root fetch - processPackages [gulagcleaner]: Remove: archive file [/home/abi/fetcher/tmp/gulagcleaner-0.8.2.tar.gz]
+[2024-06-01 16:33:18] INFO root fetch - main [MainThread]: End processing [gulagcleaner]: success
+[2024-06-01 16:33:18] INFO root fetch - main [MainThread]: Store serial: [23480964]
