@@ -13681,3 +13681,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:23:35] INFO root fetch - processPackages [sphinx-conestack-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-conestack-theme-1.0b3.tar.gz]
 [2024-06-01 11:23:35] INFO root fetch - main [MainThread]: End processing [sphinx-conestack-theme]: success
 [2024-06-01 11:23:35] INFO root fetch - main [MainThread]: Store serial: [23478997]
+[2024-06-01 11:25:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478997]
+[2024-06-01 11:25:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 11:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PostPie
+[2024-06-01 11:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mds-cashbook
+[2024-06-01 11:25:45] WARNING root fetch - processPackages [PostPie]: Skipping, unable to determine old version
+[2024-06-01 11:25:45] INFO root fetch - main [MainThread]: End processing [PostPie] error
+[2024-06-01 11:25:45] INFO root fetch - processPackages [mds-cashbook]: New version: [7.0.35] Old Version: [7.0.34]
+[2024-06-01 11:25:45] INFO root fetch - processPackages [mds-cashbook]: Downloading https://files.pythonhosted.org/packages/ff/3e/e5b34c535645f51daa9238cc2d499d380641d391a621df230374a9664460/mds_cashbook-7.0.34.tar.gz
+[2024-06-01 11:25:47] INFO root fetch - processPackages [mds-cashbook]: Downloading https://files.pythonhosted.org/packages/af/ef/df718b4af9913335d01ac89527ec9e4f13557c2f8a114294b5c9538f20e1/mds_cashbook-7.0.35.tar.gz
+[2024-06-01 11:25:47] INFO root fetch - processPackages [mds-cashbook]: executing diffoscope
+[2024-06-01 11:25:47] INFO root fetch - processPackages [mds-cashbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mds_cashbook-7.0.34.tar.gz tmp/mds_cashbook-7.0.35.tar.gz --markdown 20240601/m/mds-cashbook/7.0.34-7.0.35/README.md --exclude *.pyd
+[2024-06-01 11:25:48] INFO root fetch - processPackages [mds-cashbook]: Remove: archive file [/home/abi/fetcher/tmp/mds_cashbook-7.0.34.tar.gz]
+[2024-06-01 11:25:48] INFO root fetch - processPackages [mds-cashbook]: Remove: archive file [/home/abi/fetcher/tmp/mds_cashbook-7.0.35.tar.gz]
+[2024-06-01 11:25:48] INFO root fetch - main [MainThread]: End processing [mds-cashbook]: success
+[2024-06-01 11:25:48] INFO root fetch - main [MainThread]: Store serial: [23479006]
