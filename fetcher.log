@@ -23822,3 +23822,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:47:22] INFO root fetch - processPackages [monaco-qt]: Remove: archive file [/home/abi/fetcher/tmp/monaco_qt-0.1.8.tar.gz]
 [2024-06-01 23:47:22] INFO root fetch - main [MainThread]: End processing [monaco-qt]: success
 [2024-06-01 23:47:22] INFO root fetch - main [MainThread]: Store serial: [23483941]
+[2024-06-01 23:49:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483941]
+[2024-06-01 23:49:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 23:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nostr-dvm
+[2024-06-01 23:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-radiance
+[2024-06-01 23:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeybee-energy
+[2024-06-01 23:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-core
+[2024-06-01 23:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rxnSMILES4AtomEco
+[2024-06-01 23:49:31] INFO root fetch - processPackages [nostr-dvm]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-06-01 23:49:31] WARNING root fetch - processPackages [rxnSMILES4AtomEco]: Skipping, unable to determine old version
+[2024-06-01 23:49:31] INFO root fetch - main [MainThread]: End processing [rxnSMILES4AtomEco] error
+[2024-06-01 23:49:31] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2024-06-01 23:49:31] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/ad/9c/aa8af034f843fe099a787fae30e03fbb0b3e32e5e139a0da35bcec149422/nostr_dvm-0.5.4.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [honeybee-radiance]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-06-01 23:49:31] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/48/ae/cca3e8aac6a72593fde7860cbf91882050c1a465c316efc2e0472bfa36e1/honeybee-radiance-1.9.1.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-06-01 23:49:31] INFO root fetch - processPackages [nostr-dvm]: Downloading https://files.pythonhosted.org/packages/86/aa/b7e6c3a13138e3f52c1186059648fceb17f296d6c7ffc2aadf9fdc25cf84/nostr_dvm-0.5.5.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [nostr-dvm]: executing diffoscope
+[2024-06-01 23:49:31] INFO root fetch - processPackages [nostr-dvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nostr_dvm-0.5.4.tar.gz tmp/nostr_dvm-0.5.5.tar.gz --markdown 20240601/n/nostr-dvm/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-06-01 23:49:31] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/50/24/71a3a4863bb39caef68dcd79f1b380133b1f1968426af26bc9c4812376d1/honeybee-radiance-1.9.2.tar.gz
+[2024-06-01 23:49:31] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-06-01 23:49:32] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2024-06-01 23:49:32] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20240601/h/honeybee-energy/1.99.8-1.99.9/README.md --exclude *.pyd
+[2024-06-01 23:49:32] INFO root fetch - processPackages [honeybee-radiance]: executing diffoscope
+[2024-06-01 23:49:32] INFO root fetch - processPackages [honeybee-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-1.9.1.tar.gz tmp/honeybee-radiance-1.9.2.tar.gz --markdown 20240601/h/honeybee-radiance/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-06-01 23:49:32] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-06-01 23:49:32] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240601/d/dragonfly-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-06-01 23:49:32] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.4.tar.gz]
+[2024-06-01 23:49:32] INFO root fetch - processPackages [nostr-dvm]: Remove: archive file [/home/abi/fetcher/tmp/nostr_dvm-0.5.5.tar.gz]
+[2024-06-01 23:49:32] INFO root fetch - main [MainThread]: End processing [nostr-dvm]: success
+[2024-06-01 23:49:32] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-06-01 23:49:32] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-06-01 23:49:32] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-06-01 23:49:33] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.8.tar.gz]
+[2024-06-01 23:49:33] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.9.tar.gz]
+[2024-06-01 23:49:33] INFO root fetch - main [MainThread]: End processing [honeybee-energy]: success
+[2024-06-01 23:49:33] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.1.tar.gz]
+[2024-06-01 23:49:33] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
+[2024-06-01 23:49:33] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
+[2024-06-01 23:49:33] INFO root fetch - main [MainThread]: Store serial: [23483956]
