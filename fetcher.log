@@ -11053,3 +11053,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:50:44] INFO root fetch - processPackages [django-codenerix]: Remove: archive file [/home/abi/fetcher/tmp/django-codenerix-4.0.9.tar.gz]
 [2024-06-01 07:50:44] INFO root fetch - main [MainThread]: End processing [django-codenerix]: success
 [2024-06-01 07:50:44] INFO root fetch - main [MainThread]: Store serial: [23477679]
+[2024-06-01 07:52:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477679]
+[2024-06-01 07:52:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 07:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bot-on-anything
+[2024-06-01 07:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-gitlab
+[2024-06-01 07:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: afeng-py-tools
+[2024-06-01 07:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rockai-cli-app
+[2024-06-01 07:52:56] INFO root fetch - processPackages [rockai-cli-app]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-06-01 07:52:56] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 07:52:56] INFO root fetch - processPackages [pulumi-gitlab]: New version: [8.0.0] Old Version: [7.1.0a1716961064]
+[2024-06-01 07:52:56] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/7f/a9/cfbe194eb00b392f8c27dcca495de16dab129d6ee40ff4c7439c1cbb7d42/rockai_cli_app-0.2.7.tar.gz
+[2024-06-01 07:52:56] WARNING root fetch - processPackages [bot-on-anything]: Skipping, unable to determine old version
+[2024-06-01 07:52:56] INFO root fetch - main [MainThread]: End processing [bot-on-anything] error
+[2024-06-01 07:52:56] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/7b/a6/89111164ab4b8caf87b7f62c4aca384b85a11cbeba9aa2340d259ca28476/pulumi_gitlab-7.1.0a1716961064.tar.gz
+[2024-06-01 07:52:56] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-06-01 07:52:57] INFO root fetch - processPackages [rockai-cli-app]: Downloading https://files.pythonhosted.org/packages/4f/78/5efee53c62dd6c940dd8a56dfdda2217e352a5eac6dff0aab800c7c52c5b/rockai_cli_app-0.2.8.tar.gz
+[2024-06-01 07:52:57] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-06-01 07:52:57] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/c5/18/feb2123639c17b7593730f0aa69388e9470afcd027a1e90f823332a38c70/pulumi_gitlab-8.0.0.tar.gz
+[2024-06-01 07:52:57] INFO root fetch - processPackages [rockai-cli-app]: executing diffoscope
+[2024-06-01 07:52:57] INFO root fetch - processPackages [rockai-cli-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rockai_cli_app-0.2.7.tar.gz tmp/rockai_cli_app-0.2.8.tar.gz --markdown 20240601/r/rockai-cli-app/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-06-01 07:52:57] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-06-01 07:52:57] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240601/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 07:52:57] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2024-06-01 07:52:57] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-7.1.0a1716961064.tar.gz tmp/pulumi_gitlab-8.0.0.tar.gz --markdown 20240601/p/pulumi-gitlab/7.1.0a1716961064-8.0.0/README.md --exclude *.pyd
+[2024-06-01 07:52:57] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.7.tar.gz]
+[2024-06-01 07:52:57] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.8.tar.gz]
+[2024-06-01 07:52:57] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
+[2024-06-01 07:52:58] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-06-01 07:52:58] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-06-01 07:52:58] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-06-01 07:52:59] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-7.1.0a1716961064.tar.gz]
+[2024-06-01 07:52:59] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-8.0.0.tar.gz]
+[2024-06-01 07:52:59] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2024-06-01 07:52:59] INFO root fetch - main [MainThread]: Store serial: [23477693]
