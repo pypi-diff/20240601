@@ -15119,3 +15119,66 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:20:07] INFO root fetch - processPackages [cloudstructs]: Remove: archive file [/home/abi/fetcher/tmp/cloudstructs-0.9.8.tar.gz]
 [2024-06-01 13:20:07] INFO root fetch - main [MainThread]: End processing [cloudstructs]: success
 [2024-06-01 13:20:07] INFO root fetch - main [MainThread]: Store serial: [23479660]
+[2024-06-01 13:22:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479660]
+[2024-06-01 13:22:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quant-met
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MainServiceManager
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sidcli
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polars
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: freegenius
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: polars-lts-cpu
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: slurmtui
+[2024-06-01 13:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: polars-u64-idx
+[2024-06-01 13:22:16] INFO root fetch - processPackages [MainServiceManager]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-06-01 13:22:16] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 13:22:16] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.20.9] Old Version: [0.20.8]
+[2024-06-01 13:22:16] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 13:22:16] WARNING root fetch - processPackages [quant-met]: Skipping, unable to determine old version
+[2024-06-01 13:22:16] INFO root fetch - main [MainThread]: End processing [quant-met] error
+[2024-06-01 13:22:16] WARNING root fetch - processPackages [sidcli]: Skipping, unable to determine old version
+[2024-06-01 13:22:16] INFO root fetch - main [MainThread]: End processing [sidcli] error
+[2024-06-01 13:22:16] INFO root fetch - processPackages [slurmtui]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-06-01 13:22:16] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/cb/ab/e6bd4f9f40d79a49224e7d5e025dfc295ec8be31a6a87e39f189276942c8/mainservicemanager-0.0.2.tar.gz
+[2024-06-01 13:22:16] INFO root fetch - processPackages [polars-lts-cpu]: New version: [0.20.9] Old Version: [0.20.8]
+[2024-06-01 13:22:16] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-06-01 13:22:16] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/e7/87/d9b28ede138dfbfa298446f324fd99a8c9f1229deeabc69024c8613d68f8/polars-0.9.8.tar.gz
+[2024-06-01 13:22:16] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/5c/9e/da38f2488beaaddc2cb54403b8c016e3e1ba7a4c8fc870e9010ec1197aef/polars_u64_idx-0.20.8.tar.gz
+[2024-06-01 13:22:16] INFO root fetch - processPackages [slurmtui]: Downloading https://files.pythonhosted.org/packages/6a/c7/f1b5f8cd984e56f949bd91c825015313b68beef90bc720f8daafe60e5aff/slurmtui-0.1.5.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/22/c0/7c8fcfe8d4d7376848e02a8a3975268cbd0ec0f863fbf3338068ff73c90f/polars_lts_cpu-0.20.8.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [MainServiceManager]: Downloading https://files.pythonhosted.org/packages/41/15/d5a5d34a1f32415758b7162a09516fdf1ea12f5ae80e4f3cc068ea0ac2b7/mainservicemanager-0.0.3.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [MainServiceManager]: executing diffoscope
+[2024-06-01 13:22:17] INFO root fetch - processPackages [MainServiceManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainservicemanager-0.0.2.tar.gz tmp/mainservicemanager-0.0.3.tar.gz --markdown 20240601/M/MainServiceManager/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-06-01 13:22:17] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [slurmtui]: Downloading https://files.pythonhosted.org/packages/f9/72/3eae1cd444308d59f8683d703f1c0efb345cbecf82b4fca9d67e3096e1f1/slurmtui-0.1.6.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/96/26/63076bebabb9ecbc73cd58cf48f924a3f05b871166f576b56d9935158194/polars-0.9.9.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [slurmtui]: executing diffoscope
+[2024-06-01 13:22:17] INFO root fetch - processPackages [slurmtui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurmtui-0.1.5.tar.gz tmp/slurmtui-0.1.6.tar.gz --markdown 20240601/s/slurmtui/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/bf/d5/35ea31387b107a09be335c63708294033b3cc0d21fa1fe68eae967ae3855/polars_u64_idx-0.20.9.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars]: executing diffoscope
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20240601/p/polars/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/33/5e/df508475e1d147ef4c8bc6849d8274906574714b6f551b1e6674c7b94c3a/polars_lts_cpu-0.20.9.tar.gz
+[2024-06-01 13:22:17] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-06-01 13:22:17] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240601/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 13:22:17] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.2.tar.gz]
+[2024-06-01 13:22:17] INFO root fetch - processPackages [MainServiceManager]: Remove: archive file [/home/abi/fetcher/tmp/mainservicemanager-0.0.3.tar.gz]
+[2024-06-01 13:22:17] INFO root fetch - main [MainThread]: End processing [MainServiceManager]: success
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.20.8.tar.gz tmp/polars_u64_idx-0.20.9.tar.gz --markdown 20240601/p/polars-u64-idx/0.20.8-0.20.9/README.md --exclude *.pyd
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-lts-cpu]: executing diffoscope
+[2024-06-01 13:22:17] INFO root fetch - processPackages [polars-lts-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_lts_cpu-0.20.8.tar.gz tmp/polars_lts_cpu-0.20.9.tar.gz --markdown 20240601/p/polars-lts-cpu/0.20.8-0.20.9/README.md --exclude *.pyd
+[2024-06-01 13:22:18] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.5.tar.gz]
+[2024-06-01 13:22:18] INFO root fetch - processPackages [slurmtui]: Remove: archive file [/home/abi/fetcher/tmp/slurmtui-0.1.6.tar.gz]
+[2024-06-01 13:22:18] INFO root fetch - main [MainThread]: End processing [slurmtui]: success
+[2024-06-01 13:22:19] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-06-01 13:22:19] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-06-01 13:22:19] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-06-01 13:22:19] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.8.tar.gz]
+[2024-06-01 13:22:19] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.9.tar.gz]
+[2024-06-01 13:22:19] INFO root fetch - main [MainThread]: End processing [polars]: success
+[2024-06-01 13:22:31] INFO root fetch - processPackages [polars-u64-idx]: Remove: archive file [/home/abi/fetcher/tmp/polars_u64_idx-0.20.8.tar.gz]
+[2024-06-01 13:22:31] INFO root fetch - processPackages [polars-u64-idx]: Remove: archive file [/home/abi/fetcher/tmp/polars_u64_idx-0.20.9.tar.gz]
+[2024-06-01 13:22:31] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2024-06-01 13:22:31] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.8.tar.gz]
+[2024-06-01 13:22:31] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.9.tar.gz]
+[2024-06-01 13:22:31] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
+[2024-06-01 13:22:31] INFO root fetch - main [MainThread]: Store serial: [23479695]
