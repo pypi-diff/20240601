@@ -10798,3 +10798,84 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:34:21] INFO root fetch - processPackages [pdflib-extended]: Remove: archive file [/home/abi/fetcher/tmp/pdflib_extended-2024.5.31.2.tar.gz]
 [2024-06-01 07:34:21] INFO root fetch - main [MainThread]: End processing [pdflib-extended]: success
 [2024-06-01 07:34:21] INFO root fetch - main [MainThread]: Store serial: [23477530]
+[2024-06-01 07:36:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477530]
+[2024-06-01 07:36:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thoi
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ailment
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: angr
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: angr-management
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: archinfo
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: archr
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: claripy
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Abigale2
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cle
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyvex
+[2024-06-01 07:36:30] WARNING root fetch - processPackages [thoi]: Skipping, unable to determine old version
+[2024-06-01 07:36:30] INFO root fetch - main [MainThread]: End processing [thoi] error
+[2024-06-01 07:36:30] INFO root fetch - processPackages [angr]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] WARNING root fetch - processPackages [Abigale2]: Skipping, unable to determine old version
+[2024-06-01 07:36:30] INFO root fetch - main [MainThread]: End processing [Abigale2] error
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ailment]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [archinfo]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [cle]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [angr-management]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [claripy]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [archr]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [angr]: Downloading https://files.pythonhosted.org/packages/1d/65/e1d273bba0c7dc8682cd14bbb82af65fa65a560519b43dce51221a5c73bf/angr-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [pyvex]: New version: [9.2.99] Old Version: [9.2.98]
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ailment]: Downloading https://files.pythonhosted.org/packages/40/9a/6dbc1260922247d764823853be3b8cea71d91b27b92ea108bbdd5c642c22/ailment-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [archinfo]: Downloading https://files.pythonhosted.org/packages/6d/42/2dc2b6546e833d0d6cdf40e53f0fa3c7a5d07f59af30a41a7d624c080653/archinfo-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [archr]: Downloading https://files.pythonhosted.org/packages/e6/89/4e92dc147029c72b9f70e3c942592576281eeeffd33de33d3ebc9b5da160/archr-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [claripy]: Downloading https://files.pythonhosted.org/packages/b3/29/c984eac5f2c85f2264c793480cee6863799a32a5981ceb7e22a4a31180f8/claripy-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [cle]: Downloading https://files.pythonhosted.org/packages/e7/b9/c007f839499df51a191ad0294965527b74185e17fc9f4104783c91acb53b/cle-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [angr-management]: Downloading https://files.pythonhosted.org/packages/3e/d7/ab70f729c1e08728b506c099c168ca8016f0a35765a3182ed9b8e1420268/angr-management-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [pyvex]: Downloading https://files.pythonhosted.org/packages/11/57/eedb3a80cdf183158ce6eb86b08457299817e98db98c67831c5b2636e936/pyvex-9.2.98.tar.gz
+[2024-06-01 07:36:30] INFO root fetch - processPackages [ailment]: Downloading https://files.pythonhosted.org/packages/87/36/557acb5fca3bdd53a769e70f93c6ea539a2082fcff0705224439be72868d/ailment-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [ailment]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [ailment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ailment-9.2.98.tar.gz tmp/ailment-9.2.99.tar.gz --markdown 20240601/a/ailment/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [archinfo]: Downloading https://files.pythonhosted.org/packages/5c/4f/b615c8ed5d5fc2c4d724f2c3cbd6ad92e908017a6a0a898101dcaa132f59/archinfo-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [cle]: Downloading https://files.pythonhosted.org/packages/96/57/ba47bdf8f0f3eedc1876011e0e40e285ee654c58380688ab5f3135dd313d/cle-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [claripy]: Downloading https://files.pythonhosted.org/packages/1e/6e/056a846ff7d04c03cfe7f7cf2f30c50668e9c178883bcffc971e71673378/claripy-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [archr]: Downloading https://files.pythonhosted.org/packages/21/27/bde5260729db8639b115166137d8da022309879c282b2dc6ab800df6f484/archr-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [angr-management]: Downloading https://files.pythonhosted.org/packages/4b/46/08f5e92e7609fbb81a0d712884ad49b2d64295b256b9156569b3abd790d4/angr_management-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [archinfo]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [archinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archinfo-9.2.98.tar.gz tmp/archinfo-9.2.99.tar.gz --markdown 20240601/a/archinfo/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [angr]: Downloading https://files.pythonhosted.org/packages/f0/fb/222eb00ddd222072e1c2fab8595bcc5500d9e849c0c00d0b18cf44d00f54/angr-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [cle]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [cle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cle-9.2.98.tar.gz tmp/cle-9.2.99.tar.gz --markdown 20240601/c/cle/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [claripy]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [claripy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claripy-9.2.98.tar.gz tmp/claripy-9.2.99.tar.gz --markdown 20240601/c/claripy/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [archr]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [archr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archr-9.2.98.tar.gz tmp/archr-9.2.99.tar.gz --markdown 20240601/a/archr/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [pyvex]: Downloading https://files.pythonhosted.org/packages/04/a8/49d592e2f59308696ae9170412eabc42cebffcca8964268bd9b1efc96708/pyvex-9.2.99.tar.gz
+[2024-06-01 07:36:31] INFO root fetch - processPackages [angr-management]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [angr-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angr-management-9.2.98.tar.gz tmp/angr_management-9.2.99.tar.gz --markdown 20240601/a/angr-management/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [angr]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [angr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angr-9.2.98.tar.gz tmp/angr-9.2.99.tar.gz --markdown 20240601/a/angr/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:31] INFO root fetch - processPackages [ailment]: Remove: archive file [/home/abi/fetcher/tmp/ailment-9.2.98.tar.gz]
+[2024-06-01 07:36:31] INFO root fetch - processPackages [ailment]: Remove: archive file [/home/abi/fetcher/tmp/ailment-9.2.99.tar.gz]
+[2024-06-01 07:36:31] INFO root fetch - main [MainThread]: End processing [ailment]: success
+[2024-06-01 07:36:31] INFO root fetch - processPackages [pyvex]: executing diffoscope
+[2024-06-01 07:36:31] INFO root fetch - processPackages [pyvex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvex-9.2.98.tar.gz tmp/pyvex-9.2.99.tar.gz --markdown 20240601/p/pyvex/9.2.98-9.2.99/README.md --exclude *.pyd
+[2024-06-01 07:36:32] INFO root fetch - processPackages [archinfo]: Remove: archive file [/home/abi/fetcher/tmp/archinfo-9.2.98.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - processPackages [archinfo]: Remove: archive file [/home/abi/fetcher/tmp/archinfo-9.2.99.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - main [MainThread]: End processing [archinfo]: success
+[2024-06-01 07:36:32] INFO root fetch - processPackages [claripy]: Remove: archive file [/home/abi/fetcher/tmp/claripy-9.2.98.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - processPackages [claripy]: Remove: archive file [/home/abi/fetcher/tmp/claripy-9.2.99.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - main [MainThread]: End processing [claripy]: success
+[2024-06-01 07:36:32] INFO root fetch - processPackages [archr]: Remove: archive file [/home/abi/fetcher/tmp/archr-9.2.98.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - processPackages [archr]: Remove: archive file [/home/abi/fetcher/tmp/archr-9.2.99.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - main [MainThread]: End processing [archr]: success
+[2024-06-01 07:36:32] INFO root fetch - processPackages [cle]: Remove: archive file [/home/abi/fetcher/tmp/cle-9.2.98.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - processPackages [cle]: Remove: archive file [/home/abi/fetcher/tmp/cle-9.2.99.tar.gz]
+[2024-06-01 07:36:32] INFO root fetch - main [MainThread]: End processing [cle]: success
+[2024-06-01 07:36:33] INFO root fetch - processPackages [angr-management]: Remove: archive file [/home/abi/fetcher/tmp/angr-management-9.2.98.tar.gz]
+[2024-06-01 07:36:33] INFO root fetch - processPackages [angr-management]: Remove: archive file [/home/abi/fetcher/tmp/angr_management-9.2.99.tar.gz]
+[2024-06-01 07:36:33] INFO root fetch - main [MainThread]: End processing [angr-management]: success
+[2024-06-01 07:36:34] INFO root fetch - processPackages [pyvex]: Remove: archive file [/home/abi/fetcher/tmp/pyvex-9.2.98.tar.gz]
+[2024-06-01 07:36:34] INFO root fetch - processPackages [pyvex]: Remove: archive file [/home/abi/fetcher/tmp/pyvex-9.2.99.tar.gz]
+[2024-06-01 07:36:34] INFO root fetch - main [MainThread]: End processing [pyvex]: success
+[2024-06-01 07:36:37] INFO root fetch - processPackages [angr]: Remove: archive file [/home/abi/fetcher/tmp/angr-9.2.98.tar.gz]
+[2024-06-01 07:36:37] INFO root fetch - processPackages [angr]: Remove: archive file [/home/abi/fetcher/tmp/angr-9.2.99.tar.gz]
+[2024-06-01 07:36:37] INFO root fetch - main [MainThread]: End processing [angr]: success
+[2024-06-01 07:36:37] INFO root fetch - main [MainThread]: Store serial: [23477564]
