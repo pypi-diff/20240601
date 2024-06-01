@@ -20499,3 +20499,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 19:36:12] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2024-06-01 19:36:12] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2024-06-01 19:36:12] INFO root fetch - main [MainThread]: Store serial: [23482186]
+[2024-06-01 19:38:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482186]
+[2024-06-01 19:38:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 19:38:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfeyn2
+[2024-06-01 19:38:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blockchain-data-subnet-shared-libs
+[2024-06-01 19:38:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: msgpackr-python
+[2024-06-01 19:38:22] INFO root fetch - processPackages [msgpackr-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 19:38:22] INFO root fetch - processPackages [pyfeyn2]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-06-01 19:38:22] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/43/d2/f54e43f4d64179ad140b7bd4c44b7b906bc551ac68193c91c84dad3d8753/msgpackr_python-0.1.1.tar.gz
+[2024-06-01 19:38:22] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: New version: [1.0.0] Old Version: [0.0.5]
+[2024-06-01 19:38:22] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/01/60/9ede8c119f4c3be6921d61d2977d7836a913c2e28fa8922eefd86df46588/pyfeyn2-2.4.0.tar.gz
+[2024-06-01 19:38:22] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/e7/fa/499b0707a6250e5488d6a1b2432e8ae73d6b781ec865d5bac683d6a5541d/blockchain_data_subnet_shared_libs-0.0.5.tar.gz
+[2024-06-01 19:38:22] INFO root fetch - processPackages [msgpackr-python]: Downloading https://files.pythonhosted.org/packages/8f/c2/a92008d107ee7f4a3fd183c7f7475c0b883b1bb7196851e4f54a7b21d496/msgpackr_python-0.1.2.tar.gz
+[2024-06-01 19:38:22] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/49/b7/7b0f2130518325167200843b8a9aeb8e40f73bb2acd6b2eac4bf2824c187/pyfeyn2-2.4.1.tar.gz
+[2024-06-01 19:38:22] INFO root fetch - processPackages [msgpackr-python]: executing diffoscope
+[2024-06-01 19:38:22] INFO root fetch - processPackages [msgpackr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgpackr_python-0.1.1.tar.gz tmp/msgpackr_python-0.1.2.tar.gz --markdown 20240601/m/msgpackr-python/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-06-01 19:38:22] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Downloading https://files.pythonhosted.org/packages/03/c9/86bc6e13af1d5f56a5bfb1e36182ee3e6fd4a0caae01abf35f710817c2ff/blockchain_data_subnet_shared_libs-1.0.0.tar.gz
+[2024-06-01 19:38:22] INFO root fetch - processPackages [pyfeyn2]: executing diffoscope
+[2024-06-01 19:38:22] INFO root fetch - processPackages [pyfeyn2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfeyn2-2.4.0.tar.gz tmp/pyfeyn2-2.4.1.tar.gz --markdown 20240601/p/pyfeyn2/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-06-01 19:38:23] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: executing diffoscope
+[2024-06-01 19:38:23] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockchain_data_subnet_shared_libs-0.0.5.tar.gz tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz --markdown 20240601/b/blockchain-data-subnet-shared-libs/0.0.5-1.0.0/README.md --exclude *.pyd
+[2024-06-01 19:38:23] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.1.tar.gz]
+[2024-06-01 19:38:23] INFO root fetch - processPackages [msgpackr-python]: Remove: archive file [/home/abi/fetcher/tmp/msgpackr_python-0.1.2.tar.gz]
+[2024-06-01 19:38:23] INFO root fetch - main [MainThread]: End processing [msgpackr-python]: success
+[2024-06-01 19:38:23] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-0.0.5.tar.gz]
+[2024-06-01 19:38:23] INFO root fetch - processPackages [blockchain-data-subnet-shared-libs]: Remove: archive file [/home/abi/fetcher/tmp/blockchain_data_subnet_shared_libs-1.0.0.tar.gz]
+[2024-06-01 19:38:23] INFO root fetch - main [MainThread]: End processing [blockchain-data-subnet-shared-libs]: success
+[2024-06-01 19:38:23] INFO root fetch - processPackages [pyfeyn2]: Remove: archive file [/home/abi/fetcher/tmp/pyfeyn2-2.4.0.tar.gz]
+[2024-06-01 19:38:23] INFO root fetch - processPackages [pyfeyn2]: Remove: archive file [/home/abi/fetcher/tmp/pyfeyn2-2.4.1.tar.gz]
+[2024-06-01 19:38:23] INFO root fetch - main [MainThread]: End processing [pyfeyn2]: success
+[2024-06-01 19:38:23] INFO root fetch - main [MainThread]: Store serial: [23482203]
