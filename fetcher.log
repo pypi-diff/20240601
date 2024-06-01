@@ -13911,3 +13911,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:47:44] WARNING root fetch - processPackages [flask-interface]: Skipping, unable to determine old version
 [2024-06-01 11:47:44] INFO root fetch - main [MainThread]: End processing [flask-interface] error
 [2024-06-01 11:47:44] INFO root fetch - main [MainThread]: Store serial: [23479122]
+[2024-06-01 11:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479122]
+[2024-06-01 11:49:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 11:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscard
+[2024-06-01 11:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhtml2md
+[2024-06-01 11:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cpbox
+[2024-06-01 11:49:53] INFO root fetch - processPackages [pyscard]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-06-01 11:49:53] INFO root fetch - processPackages [cpbox]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-06-01 11:49:53] INFO root fetch - processPackages [pyhtml2md]: New version: [1.6.0] Old Version: [1.5.4]
+[2024-06-01 11:49:53] INFO root fetch - processPackages [pyscard]: Downloading https://files.pythonhosted.org/packages/27/f9/290e3af3b9cf367d8bc9ffe13f537d26ba37ba93b1eae90777125d22d822/pyscard-2.0.8.tar.gz
+[2024-06-01 11:49:53] INFO root fetch - processPackages [pyhtml2md]: Downloading https://files.pythonhosted.org/packages/68/e6/689a73bd4df193595761fd604aaaeec744f78f29c4afeeaee3bcf814bd01/pyhtml2md-1.5.4.tar.gz
+[2024-06-01 11:49:53] INFO root fetch - processPackages [cpbox]: Downloading https://files.pythonhosted.org/packages/75/45/6ef0840c825ee7eb4ee3c2a9dee66074c07fb51beb612a5fff2307522d68/cpbox-1.5.8.tar.gz
+[2024-06-01 11:49:54] INFO root fetch - processPackages [pyscard]: Downloading https://files.pythonhosted.org/packages/b4/42/1608722ca8fcf0311b6ca7ece39610c599b64a8d3988226c9d134ef6cbdb/pyscard-2.0.9.tar.gz
+[2024-06-01 11:49:54] INFO root fetch - processPackages [pyhtml2md]: Downloading https://files.pythonhosted.org/packages/9c/6d/16cd30465700df4797d778420154eb114c6df5138ae144c9946bed1a98cb/pyhtml2md-1.6.0.tar.gz
+[2024-06-01 11:49:54] INFO root fetch - processPackages [pyscard]: executing diffoscope
+[2024-06-01 11:49:54] INFO root fetch - processPackages [pyscard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscard-2.0.8.tar.gz tmp/pyscard-2.0.9.tar.gz --markdown 20240601/p/pyscard/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-06-01 11:49:54] INFO root fetch - processPackages [pyhtml2md]: executing diffoscope
+[2024-06-01 11:49:54] INFO root fetch - processPackages [pyhtml2md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtml2md-1.5.4.tar.gz tmp/pyhtml2md-1.6.0.tar.gz --markdown 20240601/p/pyhtml2md/1.5.4-1.6.0/README.md --exclude *.pyd
+[2024-06-01 11:49:54] INFO root fetch - processPackages [cpbox]: Downloading https://files.pythonhosted.org/packages/41/1f/22d862402c9d4ab0eb4bc5ae216b82bff08b3fecf249b4f1b564e7a92a4f/cpbox-1.5.9.tar.gz
+[2024-06-01 11:49:54] INFO root fetch - processPackages [cpbox]: executing diffoscope
+[2024-06-01 11:49:54] INFO root fetch - processPackages [cpbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpbox-1.5.8.tar.gz tmp/cpbox-1.5.9.tar.gz --markdown 20240601/c/cpbox/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-06-01 11:49:55] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.8.tar.gz]
+[2024-06-01 11:49:55] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.9.tar.gz]
+[2024-06-01 11:49:55] INFO root fetch - main [MainThread]: End processing [cpbox]: success
+[2024-06-01 11:49:55] INFO root fetch - processPackages [pyhtml2md]: Remove: archive file [/home/abi/fetcher/tmp/pyhtml2md-1.5.4.tar.gz]
+[2024-06-01 11:49:55] INFO root fetch - processPackages [pyhtml2md]: Remove: archive file [/home/abi/fetcher/tmp/pyhtml2md-1.6.0.tar.gz]
+[2024-06-01 11:49:55] INFO root fetch - main [MainThread]: End processing [pyhtml2md]: success
+[2024-06-01 11:49:55] INFO root fetch - processPackages [pyscard]: Remove: archive file [/home/abi/fetcher/tmp/pyscard-2.0.8.tar.gz]
+[2024-06-01 11:49:55] INFO root fetch - processPackages [pyscard]: Remove: archive file [/home/abi/fetcher/tmp/pyscard-2.0.9.tar.gz]
+[2024-06-01 11:49:55] INFO root fetch - main [MainThread]: End processing [pyscard]: success
+[2024-06-01 11:49:55] INFO root fetch - main [MainThread]: Store serial: [23479131]
