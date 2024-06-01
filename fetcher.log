@@ -19146,3 +19146,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 18:10:32] INFO root fetch - processPackages [NEMO-publications]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_publications-1.2.3-py3-none-any.whl.zip]
 [2024-06-01 18:10:32] INFO root fetch - main [MainThread]: End processing [NEMO-publications]: success
 [2024-06-01 18:10:32] INFO root fetch - main [MainThread]: Store serial: [23481596]
+[2024-06-01 18:12:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481596]
+[2024-06-01 18:12:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 18:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bd_to_avp
+[2024-06-01 18:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kbodata
+[2024-06-01 18:12:41] INFO root fetch - processPackages [bd_to_avp]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 18:12:41] INFO root fetch - processPackages [kbodata]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-06-01 18:12:41] INFO root fetch - processPackages [bd_to_avp]: Downloading https://files.pythonhosted.org/packages/00/db/7e18af63153f16cb6b9d0cd019ae969bcff7057bcdaa43a5b82e8224ed2d/bd_to_avp-0.1.8.tar.gz
+[2024-06-01 18:12:41] INFO root fetch - processPackages [kbodata]: Downloading https://files.pythonhosted.org/packages/1e/41/f8a8e67751b45d436a123d25a23036e8798b782004bd63a478c5be42b187/kbodata-0.1.7.tar.gz
+[2024-06-01 18:12:41] WARNING root fetch - processPackages [bd_to_avp]: Skipping package: exceeds size limit 16498870>=10485760
+[2024-06-01 18:12:41] INFO root fetch - main [MainThread]: End processing [bd_to_avp] error
+[2024-06-01 18:12:41] INFO root fetch - processPackages [kbodata]: Downloading https://files.pythonhosted.org/packages/fe/da/67488a79b745889c0afde9eecf701498cb59c7d03c46a5cefe2f31031412/kbodata-0.2.0.tar.gz
+[2024-06-01 18:12:41] INFO root fetch - processPackages [kbodata]: executing diffoscope
+[2024-06-01 18:12:41] INFO root fetch - processPackages [kbodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kbodata-0.1.7.tar.gz tmp/kbodata-0.2.0.tar.gz --markdown 20240601/k/kbodata/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-06-01 18:12:42] INFO root fetch - processPackages [kbodata]: Remove: archive file [/home/abi/fetcher/tmp/kbodata-0.1.7.tar.gz]
+[2024-06-01 18:12:42] INFO root fetch - processPackages [kbodata]: Remove: archive file [/home/abi/fetcher/tmp/kbodata-0.2.0.tar.gz]
+[2024-06-01 18:12:42] INFO root fetch - main [MainThread]: End processing [kbodata]: success
+[2024-06-01 18:12:42] INFO root fetch - main [MainThread]: Store serial: [23481602]
