@@ -14117,3 +14117,33 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:02:52] INFO root fetch - processPackages [tortoise-orm]: Remove: archive file [/home/abi/fetcher/tmp/tortoise-orm-0.9.4.tar.gz]
 [2024-06-01 12:02:52] INFO root fetch - main [MainThread]: End processing [tortoise-orm]: success
 [2024-06-01 12:02:52] INFO root fetch - main [MainThread]: Store serial: [23479221]
+[2024-06-01 12:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479221]
+[2024-06-01 12:05:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 12:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sc3dg
+[2024-06-01 12:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpbox
+[2024-06-01 12:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: came-domotic-unofficial
+[2024-06-01 12:05:01] INFO root fetch - processPackages [sc3dg]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 12:05:01] INFO root fetch - processPackages [came-domotic-unofficial]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2024-06-01 12:05:01] INFO root fetch - processPackages [cpbox]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-06-01 12:05:01] INFO root fetch - processPackages [cpbox]: Downloading https://files.pythonhosted.org/packages/75/45/6ef0840c825ee7eb4ee3c2a9dee66074c07fb51beb612a5fff2307522d68/cpbox-1.5.8.tar.gz
+[2024-06-01 12:05:01] INFO root fetch - processPackages [came-domotic-unofficial]: Downloading https://files.pythonhosted.org/packages/56/db/a922ffb6c60188e7d3784dd620aef483ad4c07acc9d385fa43d16dcadfdf/came_domotic_unofficial-1.0.0rc8.tar.gz
+[2024-06-01 12:05:01] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/cf/28/fcb9ae5b8bd59c676f0280df238a1f34bc4fd53a5214ef5fc11cdc96abfb/sc3dg-0.0.1.tar.gz
+[2024-06-01 12:05:01] INFO root fetch - processPackages [came-domotic-unofficial]: Downloading https://files.pythonhosted.org/packages/ae/ac/35cd80b06275e61fcac0172400a0f72d904ae61a3d5ef631cecdcfab7d52/came_domotic_unofficial-1.0.0rc9.tar.gz
+[2024-06-01 12:05:02] INFO root fetch - processPackages [cpbox]: Downloading https://files.pythonhosted.org/packages/41/1f/22d862402c9d4ab0eb4bc5ae216b82bff08b3fecf249b4f1b564e7a92a4f/cpbox-1.5.9.tar.gz
+[2024-06-01 12:05:02] INFO root fetch - processPackages [came-domotic-unofficial]: executing diffoscope
+[2024-06-01 12:05:02] INFO root fetch - processPackages [came-domotic-unofficial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/came_domotic_unofficial-1.0.0rc8.tar.gz tmp/came_domotic_unofficial-1.0.0rc9.tar.gz --markdown 20240601/c/came-domotic-unofficial/1.0.0rc8-1.0.0rc9/README.md --exclude *.pyd
+[2024-06-01 12:05:02] INFO root fetch - processPackages [cpbox]: executing diffoscope
+[2024-06-01 12:05:02] INFO root fetch - processPackages [cpbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpbox-1.5.8.tar.gz tmp/cpbox-1.5.9.tar.gz --markdown 20240601/c/cpbox/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-06-01 12:05:02] INFO root fetch - processPackages [sc3dg]: Downloading https://files.pythonhosted.org/packages/ee/ef/2ba85a8873593d87ec9a40da2034046ba07f2106b475cfa46c25f7550587/sc3dg-0.0.2.tar.gz
+[2024-06-01 12:05:02] INFO root fetch - processPackages [sc3dg]: executing diffoscope
+[2024-06-01 12:05:02] INFO root fetch - processPackages [sc3dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc3dg-0.0.1.tar.gz tmp/sc3dg-0.0.2.tar.gz --markdown 20240601/s/sc3dg/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 12:05:02] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.8.tar.gz]
+[2024-06-01 12:05:02] INFO root fetch - processPackages [cpbox]: Remove: archive file [/home/abi/fetcher/tmp/cpbox-1.5.9.tar.gz]
+[2024-06-01 12:05:02] INFO root fetch - main [MainThread]: End processing [cpbox]: success
+[2024-06-01 12:05:02] INFO root fetch - processPackages [came-domotic-unofficial]: Remove: archive file [/home/abi/fetcher/tmp/came_domotic_unofficial-1.0.0rc8.tar.gz]
+[2024-06-01 12:05:02] INFO root fetch - processPackages [came-domotic-unofficial]: Remove: archive file [/home/abi/fetcher/tmp/came_domotic_unofficial-1.0.0rc9.tar.gz]
+[2024-06-01 12:05:02] INFO root fetch - main [MainThread]: End processing [came-domotic-unofficial]: success
+[2024-06-01 12:05:02] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.1.tar.gz]
+[2024-06-01 12:05:02] INFO root fetch - processPackages [sc3dg]: Remove: archive file [/home/abi/fetcher/tmp/sc3dg-0.0.2.tar.gz]
+[2024-06-01 12:05:02] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
+[2024-06-01 12:05:02] INFO root fetch - main [MainThread]: Store serial: [23479233]
