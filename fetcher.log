@@ -10711,3 +10711,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 07:23:26] INFO root fetch - processPackages [graphene-django-query-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_query_optimizer-0.7.2.tar.gz]
 [2024-06-01 07:23:26] INFO root fetch - main [MainThread]: End processing [graphene-django-query-optimizer]: success
 [2024-06-01 07:23:26] INFO root fetch - main [MainThread]: Store serial: [23477485]
+[2024-06-01 07:25:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477485]
+[2024-06-01 07:25:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 07:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvispr
+[2024-06-01 07:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdgclassification-benchmark
+[2024-06-01 07:25:35] INFO root fetch - processPackages [pyvispr]: New version: [2024.9] Old Version: [2024.8]
+[2024-06-01 07:25:35] INFO root fetch - processPackages [sdgclassification-benchmark]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-06-01 07:25:35] INFO root fetch - processPackages [sdgclassification-benchmark]: Downloading https://files.pythonhosted.org/packages/5f/ce/43d7b9bd5c581996853212679243da2dce023604308ca8cc3e21448d0575/sdgclassification_benchmark-0.8.0.tar.gz
+[2024-06-01 07:25:35] INFO root fetch - processPackages [pyvispr]: Downloading https://files.pythonhosted.org/packages/34/1e/3a9b2faf80009bf72563532e3ec8ce21910773e97b728daaf8d62dacd707/pyvispr-2024.8.tar.gz
+[2024-06-01 07:25:36] INFO root fetch - processPackages [pyvispr]: Downloading https://files.pythonhosted.org/packages/c7/88/6f48e09503df3a4b4a74ddf7f68e7e73d487b28935d020a641320a6de3a2/pyvispr-2024.9.tar.gz
+[2024-06-01 07:25:36] INFO root fetch - processPackages [sdgclassification-benchmark]: Downloading https://files.pythonhosted.org/packages/99/03/6d8a4e3f981f3e874bee25c4a7fdc4b77b6a4773bdb54a094d440e6b99c9/sdgclassification_benchmark-0.9.0.tar.gz
+[2024-06-01 07:25:36] INFO root fetch - processPackages [pyvispr]: executing diffoscope
+[2024-06-01 07:25:36] INFO root fetch - processPackages [pyvispr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvispr-2024.8.tar.gz tmp/pyvispr-2024.9.tar.gz --markdown 20240601/p/pyvispr/2024.8-2024.9/README.md --exclude *.pyd
+[2024-06-01 07:25:36] INFO root fetch - processPackages [sdgclassification-benchmark]: executing diffoscope
+[2024-06-01 07:25:36] INFO root fetch - processPackages [sdgclassification-benchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdgclassification_benchmark-0.8.0.tar.gz tmp/sdgclassification_benchmark-0.9.0.tar.gz --markdown 20240601/s/sdgclassification-benchmark/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-06-01 07:25:37] INFO root fetch - processPackages [sdgclassification-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/sdgclassification_benchmark-0.8.0.tar.gz]
+[2024-06-01 07:25:37] INFO root fetch - processPackages [sdgclassification-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/sdgclassification_benchmark-0.9.0.tar.gz]
+[2024-06-01 07:25:37] INFO root fetch - main [MainThread]: End processing [sdgclassification-benchmark]: success
+[2024-06-01 07:25:37] INFO root fetch - processPackages [pyvispr]: Remove: archive file [/home/abi/fetcher/tmp/pyvispr-2024.8.tar.gz]
+[2024-06-01 07:25:37] INFO root fetch - processPackages [pyvispr]: Remove: archive file [/home/abi/fetcher/tmp/pyvispr-2024.9.tar.gz]
+[2024-06-01 07:25:37] INFO root fetch - main [MainThread]: End processing [pyvispr]: success
+[2024-06-01 07:25:37] INFO root fetch - main [MainThread]: Store serial: [23477492]
