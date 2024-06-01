@@ -17472,3 +17472,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:17:50] INFO root fetch - processPackages [heaserver-keychain]: Remove: archive file [/home/abi/fetcher/tmp/heaserver_keychain-1.3.1.tar.gz]
 [2024-06-01 16:17:50] INFO root fetch - main [MainThread]: End processing [heaserver-keychain]: success
 [2024-06-01 16:17:50] INFO root fetch - main [MainThread]: Store serial: [23480750]
+[2024-06-01 16:19:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480750]
+[2024-06-01 16:19:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-plugin-dynamic-override-sources
+[2024-06-01 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unthermal
+[2024-06-01 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plugin-jm-server
+[2024-06-01 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vht
+[2024-06-01 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anne
+[2024-06-01 16:19:58] INFO root fetch - processPackages [vht]: New version: [0.4] Old Version: [0.3.996]
+[2024-06-01 16:19:58] INFO root fetch - processPackages [anne]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-06-01 16:19:59] WARNING root fetch - processPackages [unthermal]: Skipping, unable to determine old version
+[2024-06-01 16:19:59] INFO root fetch - main [MainThread]: End processing [unthermal] error
+[2024-06-01 16:19:59] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/61/c9/049e9369c80ca636b00c4c14932ef0ccfba15531f76a6d060b7f30d9532b/vht-0.3.996.tar.gz
+[2024-06-01 16:19:59] INFO root fetch - processPackages [plugin-jm-server]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 16:19:59] WARNING root fetch - processPackages [poetry-plugin-dynamic-override-sources]: Skipping, unable to determine old version
+[2024-06-01 16:19:59] INFO root fetch - main [MainThread]: End processing [poetry-plugin-dynamic-override-sources] error
+[2024-06-01 16:19:59] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/6b/bf/e5711a47453b0825a38dce9474949fc6e9dc8fac9400dfb00787bb80a911/anne-1.1.1.tar.gz
+[2024-06-01 16:19:59] INFO root fetch - processPackages [plugin-jm-server]: Downloading https://files.pythonhosted.org/packages/04/9f/b59383373b3ccd8257040dbfbfcb13f1fac0ae7127238507810b677d5575/plugin_jm_server-0.1.8.tar.gz
+[2024-06-01 16:19:59] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/46/c8/4f5d39d09bccd8660f6cb74e022c60961782fe421bf859560c86af8b5af5/anne-1.1.2.tar.gz
+[2024-06-01 16:19:59] INFO root fetch - processPackages [vht]: Downloading https://files.pythonhosted.org/packages/38/71/ad9362bfaf6770adfacefefaeb0b5a99c17d4a8d3efe3a9b7c9847822fe0/vht-0.4.tar.gz
+[2024-06-01 16:19:59] INFO root fetch - processPackages [anne]: executing diffoscope
+[2024-06-01 16:19:59] INFO root fetch - processPackages [anne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anne-1.1.1.tar.gz tmp/anne-1.1.2.tar.gz --markdown 20240601/a/anne/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-06-01 16:19:59] INFO root fetch - processPackages [vht]: executing diffoscope
+[2024-06-01 16:19:59] INFO root fetch - processPackages [vht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vht-0.3.996.tar.gz tmp/vht-0.4.tar.gz --markdown 20240601/v/vht/0.3.996-0.4/README.md --exclude *.pyd
+[2024-06-01 16:19:59] INFO root fetch - processPackages [plugin-jm-server]: Downloading https://files.pythonhosted.org/packages/9c/b9/c9a974f8f51902d7b33984ab3d9af4cde4da2a59b3b1950e316be3fb3345/plugin_jm_server-0.1.9.tar.gz
+[2024-06-01 16:19:59] INFO root fetch - processPackages [plugin-jm-server]: executing diffoscope
+[2024-06-01 16:19:59] INFO root fetch - processPackages [plugin-jm-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugin_jm_server-0.1.8.tar.gz tmp/plugin_jm_server-0.1.9.tar.gz --markdown 20240601/p/plugin-jm-server/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 16:20:00] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.1.tar.gz]
+[2024-06-01 16:20:00] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.1.2.tar.gz]
+[2024-06-01 16:20:00] INFO root fetch - main [MainThread]: End processing [anne]: success
+[2024-06-01 16:20:00] INFO root fetch - processPackages [plugin-jm-server]: Remove: archive file [/home/abi/fetcher/tmp/plugin_jm_server-0.1.8.tar.gz]
+[2024-06-01 16:20:00] INFO root fetch - processPackages [plugin-jm-server]: Remove: archive file [/home/abi/fetcher/tmp/plugin_jm_server-0.1.9.tar.gz]
+[2024-06-01 16:20:00] INFO root fetch - main [MainThread]: End processing [plugin-jm-server]: success
+[2024-06-01 16:20:00] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.3.996.tar.gz]
+[2024-06-01 16:20:00] INFO root fetch - processPackages [vht]: Remove: archive file [/home/abi/fetcher/tmp/vht-0.4.tar.gz]
+[2024-06-01 16:20:00] INFO root fetch - main [MainThread]: End processing [vht]: success
+[2024-06-01 16:20:00] INFO root fetch - main [MainThread]: Store serial: [23480768]
