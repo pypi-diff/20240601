@@ -20872,3 +20872,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 20:07:24] INFO root fetch - main [MainThread]: End processing [mpy-cross]: success
 [2024-06-01 20:07:24] INFO root fetch - main [MainThread]: End processing [mpy-cross]: success
 [2024-06-01 20:07:24] INFO root fetch - main [MainThread]: Store serial: [23482382]
+[2024-06-01 20:09:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482382]
+[2024-06-01 20:09:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 20:09:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 20:09:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: an-website
+[2024-06-01 20:09:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: localstack-core
+[2024-06-01 20:09:34] INFO root fetch - processPackages [almax-common]: New version: [1.0.2.dev20240601170722] Old Version: [1.0.2.dev20240601170258]
+[2024-06-01 20:09:35] INFO root fetch - processPackages [localstack-core]: New version: [3.4.1.dev20240531232611] Old Version: [3.4.1.dev20240531201659]
+[2024-06-01 20:09:35] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/c8/11/5bb473bd02b5e8bb24e3c6f56720154a67097e5168449d414dd9f9794aac/almax_common-1.0.2.dev20240601170258.tar.gz
+[2024-06-01 20:09:35] INFO root fetch - processPackages [an-website]: New version: [24.6] Old Version: [24.5]
+[2024-06-01 20:09:35] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/50/1f/10ad70c25c47a3641c2b46c3429146151a6cf5b96e485c4b1d9c0356a314/localstack_core-3.4.1.dev20240531201659.tar.gz
+[2024-06-01 20:09:35] INFO root fetch - processPackages [an-website]: Downloading https://files.pythonhosted.org/packages/cf/9e/4e2d4f7218dcdb72730b0e369a8239dbb76bd54ab09311b1d0073788bed3/an-website-24.5.tar.gz
+[2024-06-01 20:09:35] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/fc/65/eb3ffcf3b062bf451803e7826705c11f64c6e975eb8cf516af826e32951f/almax_common-1.0.2.dev20240601170722.tar.gz
+[2024-06-01 20:09:35] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 20:09:35] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-1.0.2.dev20240601170258.tar.gz tmp/almax_common-1.0.2.dev20240601170722.tar.gz --markdown 20240601/a/almax-common/1.0.2.dev20240601170258-1.0.2.dev20240601170722/README.md --exclude *.pyd
+[2024-06-01 20:09:35] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/d8/89/947060d00e7b7360352eb695c98cea32f5a3059ba19305e81d0948d8a266/localstack_core-3.4.1.dev20240531232611.tar.gz
+[2024-06-01 20:09:35] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2024-06-01 20:09:35] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack_core-3.4.1.dev20240531201659.tar.gz tmp/localstack_core-3.4.1.dev20240531232611.tar.gz --markdown 20240601/l/localstack-core/3.4.1.dev20240531201659-3.4.1.dev20240531232611/README.md --exclude *.pyd
+[2024-06-01 20:09:36] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.2.dev20240601170258.tar.gz]
+[2024-06-01 20:09:36] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-1.0.2.dev20240601170722.tar.gz]
+[2024-06-01 20:09:36] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 20:09:36] INFO root fetch - processPackages [an-website]: Downloading https://files.pythonhosted.org/packages/70/de/fd5f62a2ccd778f07d2388a20c365b35a66a32ce0cbbebf5659350eda8ea/an_website-24.6.tar.gz
+[2024-06-01 20:09:37] INFO root fetch - processPackages [an-website]: executing diffoscope
+[2024-06-01 20:09:37] INFO root fetch - processPackages [an-website]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/an-website-24.5.tar.gz tmp/an_website-24.6.tar.gz --markdown 20240601/a/an-website/24.5-24.6/README.md --exclude *.pyd
+[2024-06-01 20:09:39] INFO root fetch - processPackages [an-website]: Remove: archive file [/home/abi/fetcher/tmp/an-website-24.5.tar.gz]
+[2024-06-01 20:09:39] INFO root fetch - processPackages [an-website]: Remove: archive file [/home/abi/fetcher/tmp/an_website-24.6.tar.gz]
+[2024-06-01 20:09:39] INFO root fetch - main [MainThread]: End processing [an-website]: success
+[2024-06-01 20:09:39] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240531201659.tar.gz]
+[2024-06-01 20:09:39] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.4.1.dev20240531232611.tar.gz]
+[2024-06-01 20:09:39] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2024-06-01 20:09:39] INFO root fetch - main [MainThread]: Store serial: [23482391]
