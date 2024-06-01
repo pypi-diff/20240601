@@ -18813,3 +18813,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:44:22] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.32.3.tar.gz]
 [2024-06-01 17:44:22] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
 [2024-06-01 17:44:22] INFO root fetch - main [MainThread]: Store serial: [23481483]
+[2024-06-01 17:46:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481483]
+[2024-06-01 17:46:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 17:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extrautilities
+[2024-06-01 17:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pykwl
+[2024-06-01 17:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: almax-common
+[2024-06-01 17:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sdss-lvmnps
+[2024-06-01 17:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aspose-barcode-for-python-via-java
+[2024-06-01 17:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdps
+[2024-06-01 17:46:31] INFO root fetch - processPackages [cdps]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 17:46:31] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:46:31] INFO root fetch - processPackages [extrautilities]: New version: [2.0] Old Version: [1.9]
+[2024-06-01 17:46:31] INFO root fetch - processPackages [pykwl]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 17:46:31] INFO root fetch - processPackages [aspose-barcode-for-python-via-java]: New version: [24.5.1] Old Version: [24.5.0]
+[2024-06-01 17:46:31] INFO root fetch - processPackages [sdss-lvmnps]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-06-01 17:46:31] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/22/73/8fd2176ba089f5ae55a93146109d271db9f9a6bdbd4b2fdf1eb3dccb5764/cdps-1.0.8.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/6f/1b/9c40487f80bc6cbd66b536805137f9443532085e1f6f149827991934d2e8/extrautilities-1.9.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/fe/0d/54df9b3f876d3c7bc02b8863a3d36c544df1258cfed5d2fe0e8fd27e38c5/pykwl-0.0.8.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [aspose-barcode-for-python-via-java]: Downloading https://files.pythonhosted.org/packages/83/2b/3e290216602f9affcd03bf48e2351bd67af6277824511cbc62ef475731fa/aspose-barcode-for-python-via-java-24.5.0.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [sdss-lvmnps]: Downloading https://files.pythonhosted.org/packages/ff/d7/0a4c6e9ab655106d6d4bed4afc983a6ce5a21a367cdd06ccd52900f33823/sdss_lvmnps-1.0.3.tar.gz
+[2024-06-01 17:46:31] WARNING root fetch - processPackages [aspose-barcode-for-python-via-java]: Skipping package: exceeds size limit 14299807>=10485760
+[2024-06-01 17:46:31] INFO root fetch - main [MainThread]: End processing [aspose-barcode-for-python-via-java] error
+[2024-06-01 17:46:31] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [cdps]: Downloading https://files.pythonhosted.org/packages/ca/0b/37cc4575f3f5f399fed1223fd57adb24c1f4d98d7b88c48aed9f872abc0c/cdps-1.0.9.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/c9/ba/12b3478bf1ce9a5e95e6a09dedbdac912f19a5b9b5477f3c261d1da05e1e/extrautilities-2.0.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:46:31] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:46:31] INFO root fetch - processPackages [extrautilities]: executing diffoscope
+[2024-06-01 17:46:31] INFO root fetch - processPackages [extrautilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extrautilities-1.9.tar.gz tmp/extrautilities-2.0.tar.gz --markdown 20240601/e/extrautilities/1.9-2.0/README.md --exclude *.pyd
+[2024-06-01 17:46:31] INFO root fetch - processPackages [cdps]: executing diffoscope
+[2024-06-01 17:46:31] INFO root fetch - processPackages [cdps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdps-1.0.8.tar.gz tmp/cdps-1.0.9.tar.gz --markdown 20240601/c/cdps/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 17:46:31] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/af/8c/4103b3c2c1d782a7b72db67a054d581ce765d3887de52331b6ed5b7e36cd/pykwl-0.0.9.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [sdss-lvmnps]: Downloading https://files.pythonhosted.org/packages/ad/e6/13b6774d7a864289b394ca65c1e35a24feea737cb98917f5815f1899a769/sdss_lvmnps-1.1.0.tar.gz
+[2024-06-01 17:46:31] INFO root fetch - processPackages [pykwl]: executing diffoscope
+[2024-06-01 17:46:31] INFO root fetch - processPackages [pykwl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykwl-0.0.8.tar.gz tmp/pykwl-0.0.9.tar.gz --markdown 20240601/p/pykwl/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 17:46:31] INFO root fetch - processPackages [sdss-lvmnps]: executing diffoscope
+[2024-06-01 17:46:31] INFO root fetch - processPackages [sdss-lvmnps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss_lvmnps-1.0.3.tar.gz tmp/sdss_lvmnps-1.1.0.tar.gz --markdown 20240601/s/sdss-lvmnps/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-06-01 17:46:32] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:46:32] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.8.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - processPackages [cdps]: Remove: archive file [/home/abi/fetcher/tmp/cdps-1.0.9.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - main [MainThread]: End processing [cdps]: success
+[2024-06-01 17:46:32] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.8.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.9.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - main [MainThread]: End processing [pykwl]: success
+[2024-06-01 17:46:32] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.9.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-2.0.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
+[2024-06-01 17:46:32] INFO root fetch - processPackages [sdss-lvmnps]: Remove: archive file [/home/abi/fetcher/tmp/sdss_lvmnps-1.0.3.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - processPackages [sdss-lvmnps]: Remove: archive file [/home/abi/fetcher/tmp/sdss_lvmnps-1.1.0.tar.gz]
+[2024-06-01 17:46:32] INFO root fetch - main [MainThread]: End processing [sdss-lvmnps]: success
+[2024-06-01 17:46:32] INFO root fetch - main [MainThread]: Store serial: [23481500]
