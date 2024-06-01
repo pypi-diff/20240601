@@ -15860,3 +15860,15 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 14:19:19] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.4.2.tar.gz]
 [2024-06-01 14:19:19] INFO root fetch - main [MainThread]: End processing [athina]: success
 [2024-06-01 14:19:19] INFO root fetch - main [MainThread]: Store serial: [23480011]
+[2024-06-01 14:21:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23480011]
+[2024-06-01 14:21:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 14:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Subdora
+[2024-06-01 14:21:27] INFO root fetch - processPackages [Subdora]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-06-01 14:21:27] INFO root fetch - processPackages [Subdora]: Downloading https://files.pythonhosted.org/packages/6d/12/cfe5f562d5addbb019535c78c17a7b52ac3eb4dc184a16ee42fb1c190462/Subdora-0.0.2.tar.gz
+[2024-06-01 14:21:28] INFO root fetch - processPackages [Subdora]: Downloading https://files.pythonhosted.org/packages/80/b9/875383d95b0c1673faac129e888bea36425747f377fb1ed4e6edf4ff6a0e/subdora-0.1.0.tar.gz
+[2024-06-01 14:21:28] INFO root fetch - processPackages [Subdora]: executing diffoscope
+[2024-06-01 14:21:28] INFO root fetch - processPackages [Subdora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Subdora-0.0.2.tar.gz tmp/subdora-0.1.0.tar.gz --markdown 20240601/S/Subdora/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-06-01 14:21:29] INFO root fetch - processPackages [Subdora]: Remove: archive file [/home/abi/fetcher/tmp/Subdora-0.0.2.tar.gz]
+[2024-06-01 14:21:29] INFO root fetch - processPackages [Subdora]: Remove: archive file [/home/abi/fetcher/tmp/subdora-0.1.0.tar.gz]
+[2024-06-01 14:21:29] INFO root fetch - main [MainThread]: End processing [Subdora]: success
+[2024-06-01 14:21:29] INFO root fetch - main [MainThread]: Store serial: [23480016]
