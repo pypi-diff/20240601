@@ -15457,3 +15457,15 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:42:27] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.9.0.tar.gz]
 [2024-06-01 13:42:27] INFO root fetch - main [MainThread]: End processing [manga-scrape]: success
 [2024-06-01 13:42:27] INFO root fetch - main [MainThread]: Store serial: [23479805]
+[2024-06-01 13:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479805]
+[2024-06-01 13:44:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 13:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: printmate
+[2024-06-01 13:44:36] INFO root fetch - processPackages [printmate]: New version: [1.3.5] Old Version: [1.3.3]
+[2024-06-01 13:44:36] INFO root fetch - processPackages [printmate]: Downloading https://files.pythonhosted.org/packages/e4/ba/aa290a2090d6da7518f4cefb6e40133ea2b094626cf85f062bff02aac234/printmate-1.3.3.tar.gz
+[2024-06-01 13:44:36] INFO root fetch - processPackages [printmate]: Downloading https://files.pythonhosted.org/packages/6f/d3/eee8608019e1d1cbf8991a9ba914d8c8eba2aa87f34ccce52e104805c632/printmate-1.3.5.tar.gz
+[2024-06-01 13:44:36] INFO root fetch - processPackages [printmate]: executing diffoscope
+[2024-06-01 13:44:36] INFO root fetch - processPackages [printmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printmate-1.3.3.tar.gz tmp/printmate-1.3.5.tar.gz --markdown 20240601/p/printmate/1.3.3-1.3.5/README.md --exclude *.pyd
+[2024-06-01 13:44:37] INFO root fetch - processPackages [printmate]: Remove: archive file [/home/abi/fetcher/tmp/printmate-1.3.3.tar.gz]
+[2024-06-01 13:44:37] INFO root fetch - processPackages [printmate]: Remove: archive file [/home/abi/fetcher/tmp/printmate-1.3.5.tar.gz]
+[2024-06-01 13:44:37] INFO root fetch - main [MainThread]: End processing [printmate]: success
+[2024-06-01 13:44:37] INFO root fetch - main [MainThread]: Store serial: [23479808]
