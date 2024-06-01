@@ -18219,3 +18219,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:11:34] INFO root fetch - processPackages [vscode-task-runner]: Remove: archive file [/home/abi/fetcher/tmp/vscode_task_runner-1.2.0.tar.gz]
 [2024-06-01 17:11:34] INFO root fetch - main [MainThread]: End processing [vscode-task-runner]: success
 [2024-06-01 17:11:34] INFO root fetch - main [MainThread]: Store serial: [23481182]
+[2024-06-01 17:13:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481182]
+[2024-06-01 17:13:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Simba-UW-tf-dev
+[2024-06-01 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CTkKeyboard
+[2024-06-01 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SJRS-detect
+[2024-06-01 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vectorvision
+[2024-06-01 17:13:42] INFO root fetch - processPackages [CTkKeyboard]: New version: [0.2] Old Version: [0.0.3]
+[2024-06-01 17:13:42] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.94.5] Old Version: [1.94.4]
+[2024-06-01 17:13:42] INFO root fetch - processPackages [vectorvision]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-06-01 17:13:42] WARNING root fetch - processPackages [SJRS-detect]: Skipping, unable to determine old version
+[2024-06-01 17:13:42] INFO root fetch - main [MainThread]: End processing [SJRS-detect] error
+[2024-06-01 17:13:42] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/05/bf/8bc673ea4673749a214e2b7986c18326c54f8dcdf79e1063bbae7ca6fcc2/Simba-UW-tf-dev-1.94.4.tar.gz
+[2024-06-01 17:13:42] ERROR root fetch - processPackages [CTkKeyboard]: Unable to fetch info: No such project/version 'CTkKeyboard' 0.0.3
+[2024-06-01 17:13:42] INFO root fetch - main [MainThread]: End processing [CTkKeyboard] error
+[2024-06-01 17:13:43] INFO root fetch - processPackages [vectorvision]: Downloading https://files.pythonhosted.org/packages/43/05/55724786568d889b0c19684063c22c2b81e0ff98fe5a537afa39e286eb2b/vectorvision-0.1.0.tar.gz
+[2024-06-01 17:13:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/ee/c2/c26f578d654e18fec7b038fccaf839c1f12a9faad24120fe8c4e972051f9/Simba-UW-tf-dev-1.94.5.tar.gz
+[2024-06-01 17:13:43] INFO root fetch - processPackages [vectorvision]: Downloading https://files.pythonhosted.org/packages/21/b9/2420172da64f95feeeb9161f560809bba6d393a43641636649d94bfe2cbe/vectorvision-0.1.1.tar.gz
+[2024-06-01 17:13:43] INFO root fetch - processPackages [vectorvision]: executing diffoscope
+[2024-06-01 17:13:43] INFO root fetch - processPackages [vectorvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectorvision-0.1.0.tar.gz tmp/vectorvision-0.1.1.tar.gz --markdown 20240601/v/vectorvision/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-06-01 17:13:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-06-01 17:13:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.94.4.tar.gz tmp/Simba-UW-tf-dev-1.94.5.tar.gz --markdown 20240601/S/Simba-UW-tf-dev/1.94.4-1.94.5/README.md --exclude *.pyd
+[2024-06-01 17:13:44] INFO root fetch - processPackages [vectorvision]: Remove: archive file [/home/abi/fetcher/tmp/vectorvision-0.1.0.tar.gz]
+[2024-06-01 17:13:44] INFO root fetch - processPackages [vectorvision]: Remove: archive file [/home/abi/fetcher/tmp/vectorvision-0.1.1.tar.gz]
+[2024-06-01 17:13:44] INFO root fetch - main [MainThread]: End processing [vectorvision]: success
+[2024-06-01 17:13:47] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.94.4.tar.gz]
+[2024-06-01 17:13:47] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.94.5.tar.gz]
+[2024-06-01 17:13:47] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-06-01 17:13:47] INFO root fetch - main [MainThread]: Store serial: [23481198]
