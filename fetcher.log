@@ -22446,3 +22446,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:05:44] WARNING root fetch - processPackages [churn-lib]: Skipping, unable to determine old version
 [2024-06-01 22:05:44] INFO root fetch - main [MainThread]: End processing [churn-lib] error
 [2024-06-01 22:05:44] INFO root fetch - main [MainThread]: Store serial: [23483194]
+[2024-06-01 22:07:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483194]
+[2024-06-01 22:07:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpy-cross-v6.3
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rfsed
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thronescli
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim-ui
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: supabase-auth
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: selfplay
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scrapy-playwright
+[2024-06-01 22:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SeqLbToolkit
+[2024-06-01 22:07:54] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-06-01 22:07:54] INFO root fetch - processPackages [rfsed]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 22:07:54] WARNING root fetch - processPackages [mpy-cross-v6.3]: Skipping, unable to determine old version
+[2024-06-01 22:07:54] INFO root fetch - main [MainThread]: End processing [mpy-cross-v6.3] error
+[2024-06-01 22:07:54] WARNING root fetch - processPackages [selfplay]: Skipping, unable to determine old version
+[2024-06-01 22:07:54] INFO root fetch - main [MainThread]: End processing [selfplay] error
+[2024-06-01 22:07:54] INFO root fetch - processPackages [supabase-auth]: New version: [2.4.3] Old Version: [2.4.2]
+[2024-06-01 22:07:54] INFO root fetch - processPackages [SeqLbToolkit]: New version: [0.5.0] Old Version: [0.4.6]
+[2024-06-01 22:07:54] INFO root fetch - processPackages [thronescli]: New version: [3.0.0] Old Version: [2.6.2]
+[2024-06-01 22:07:54] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-06-01 22:07:54] INFO root fetch - processPackages [scrapy-playwright]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 22:07:54] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-06-01 22:07:54] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-06-01 22:07:54] INFO root fetch - processPackages [supabase-auth]: Downloading https://files.pythonhosted.org/packages/0e/6f/1d29e48f842e374aecb397f5e78d5c5ad1aee11cf480e0c9a69bb9ca1942/supabase_auth-2.4.2.tar.gz
+[2024-06-01 22:07:54] INFO root fetch - processPackages [rfsed]: Downloading https://files.pythonhosted.org/packages/dc/e4/ce05fb5041bf7b842bbf61d35ae28b210aab4ec22d3483141c7044602a54/rfsed-0.1.8.tar.gz
+[2024-06-01 22:07:54] INFO root fetch - processPackages [scrapy-playwright]: Downloading https://files.pythonhosted.org/packages/6f/fe/000b0bc7685ca551795b0368bc9f53644f81bc7ca68158b4c818a5a57652/scrapy-playwright-0.0.8.tar.gz
+[2024-06-01 22:07:54] WARNING root fetch - processPackages [rfsed]: Skipping package: exceeds size limit 33891889>=10485760
+[2024-06-01 22:07:54] INFO root fetch - main [MainThread]: End processing [rfsed] error
+[2024-06-01 22:07:54] INFO root fetch - processPackages [thronescli]: Downloading https://files.pythonhosted.org/packages/00/27/478498f8dc5f17aed0a22a58d3bc5ee088d672f496abe9471a3a1ca89741/thronescli-2.6.2-py3-none-any.whl
+[2024-06-01 22:07:54] INFO root fetch - processPackages [SeqLbToolkit]: Downloading https://files.pythonhosted.org/packages/1b/df/ec95995c39c64b87f9b681b42ea16ea0599a5c665152b7014e7de8492b31/SeqLbToolkit-0.4.6.tar.gz
+[2024-06-01 22:07:54] INFO root fetch - processPackages [supabase-auth]: Downloading https://files.pythonhosted.org/packages/9a/c2/d64b745a3615acb87e3a63bee37876e5ad6f4b817d5f456abf7a34910381/supabase_auth-2.4.3.tar.gz
+[2024-06-01 22:07:54] INFO root fetch - processPackages [thronescli]: Downloading https://files.pythonhosted.org/packages/15/7a/171c0dea3515c2db9e7b97e799ca132ba7b0ae0255e5c21a7e85047bfc0b/thronescli-3.0.0.tar.gz
+[2024-06-01 22:07:54] INFO root fetch - processPackages [supabase-auth]: executing diffoscope
+[2024-06-01 22:07:54] INFO root fetch - processPackages [supabase-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supabase_auth-2.4.2.tar.gz tmp/supabase_auth-2.4.3.tar.gz --markdown 20240601/s/supabase-auth/2.4.2-2.4.3/README.md --exclude *.pyd
+[2024-06-01 22:07:54] INFO root fetch - processPackages [SeqLbToolkit]: Downloading https://files.pythonhosted.org/packages/e7/2f/ec77508575d7d8ec193ed4068653b7383e3f597737e827daf5d11819d2e0/SeqLbToolkit-0.5.0-py3-none-any.whl
+[2024-06-01 22:07:54] INFO root fetch - processPackages [thronescli]: executing diffoscope
+[2024-06-01 22:07:54] INFO root fetch - processPackages [thronescli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thronescli-2.6.2-py3-none-any.whl.zip tmp/thronescli-3.0.0.tar.gz --markdown 20240601/t/thronescli/2.6.2-3.0.0/README.md --exclude *.pyd
+[2024-06-01 22:07:54] INFO root fetch - processPackages [SeqLbToolkit]: executing diffoscope
+[2024-06-01 22:07:54] INFO root fetch - processPackages [SeqLbToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeqLbToolkit-0.4.6.tar.gz tmp/SeqLbToolkit-0.5.0-py3-none-any.whl.zip --markdown 20240601/S/SeqLbToolkit/0.4.6-0.5.0/README.md --exclude *.pyd
+[2024-06-01 22:07:55] INFO root fetch - processPackages [thronescli]: Remove: archive file [/home/abi/fetcher/tmp/thronescli-2.6.2-py3-none-any.whl.zip]
+[2024-06-01 22:07:55] INFO root fetch - processPackages [thronescli]: Remove: archive file [/home/abi/fetcher/tmp/thronescli-3.0.0.tar.gz]
+[2024-06-01 22:07:55] INFO root fetch - main [MainThread]: End processing [thronescli]: success
+[2024-06-01 22:07:55] INFO root fetch - processPackages [SeqLbToolkit]: Remove: archive file [/home/abi/fetcher/tmp/SeqLbToolkit-0.4.6.tar.gz]
+[2024-06-01 22:07:55] INFO root fetch - processPackages [SeqLbToolkit]: Remove: archive file [/home/abi/fetcher/tmp/SeqLbToolkit-0.5.0-py3-none-any.whl.zip]
+[2024-06-01 22:07:55] INFO root fetch - main [MainThread]: End processing [SeqLbToolkit]: success
+[2024-06-01 22:07:55] INFO root fetch - processPackages [supabase-auth]: Remove: archive file [/home/abi/fetcher/tmp/supabase_auth-2.4.2.tar.gz]
+[2024-06-01 22:07:55] INFO root fetch - processPackages [supabase-auth]: Remove: archive file [/home/abi/fetcher/tmp/supabase_auth-2.4.3.tar.gz]
+[2024-06-01 22:07:55] INFO root fetch - main [MainThread]: End processing [supabase-auth]: success
+[2024-06-01 22:07:56] INFO root fetch - processPackages [scrapy-playwright]: Downloading https://files.pythonhosted.org/packages/28/26/cee57cbf54ecf21dcaec9eb3665cddb8a79b21d2c312d01bcee06dfde713/scrapy-playwright-0.0.9.tar.gz
+[2024-06-01 22:07:56] INFO root fetch - processPackages [scrapy-playwright]: executing diffoscope
+[2024-06-01 22:07:56] INFO root fetch - processPackages [scrapy-playwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-playwright-0.0.8.tar.gz tmp/scrapy-playwright-0.0.9.tar.gz --markdown 20240601/s/scrapy-playwright/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 22:07:56] INFO root fetch - processPackages [scrapy-playwright]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-0.0.8.tar.gz]
+[2024-06-01 22:07:56] INFO root fetch - processPackages [scrapy-playwright]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-0.0.9.tar.gz]
+[2024-06-01 22:07:56] INFO root fetch - main [MainThread]: End processing [scrapy-playwright]: success
+[2024-06-01 22:07:56] INFO root fetch - main [MainThread]: Store serial: [23483225]
