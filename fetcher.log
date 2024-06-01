@@ -18639,3 +18639,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:35:30] INFO root fetch - processPackages [unic]: Remove: archive file [/home/abi/fetcher/tmp/unic-1.0.0.tar.gz]
 [2024-06-01 17:35:30] INFO root fetch - main [MainThread]: End processing [unic]: success
 [2024-06-01 17:35:30] INFO root fetch - main [MainThread]: Store serial: [23481365]
+[2024-06-01 17:37:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481365]
+[2024-06-01 17:37:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 17:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tui-dsmt
+[2024-06-01 17:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MethodicConfigurator
+[2024-06-01 17:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lvmguider
+[2024-06-01 17:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lenlp
+[2024-06-01 17:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uwrapper
+[2024-06-01 17:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mkdocs-include-markdown-plugin
+[2024-06-01 17:37:39] INFO root fetch - processPackages [tui-dsmt]: New version: [202406011310] Old Version: [202405251109]
+[2024-06-01 17:37:39] INFO root fetch - processPackages [uwrapper]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-06-01 17:37:39] INFO root fetch - processPackages [lenlp]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-06-01 17:37:40] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/47/db/c0958a99e84a3ce7b5734fa6ccd38e1b7e39932b5095fa2b4d216a2fe655/tui_dsmt-202405251109.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lvmguider]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-06-01 17:37:40] INFO root fetch - processPackages [MethodicConfigurator]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-06-01 17:37:40] INFO root fetch - processPackages [uwrapper]: Downloading https://files.pythonhosted.org/packages/fa/d4/5c3777eb58f09a2441b568d0fea56a13940854efabb491f5dc9ff0c753b9/uwrapper-0.0.4.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/cf/7e/e585a6e5932e4236d8e75f15e4c14a3e253c95118229a8b73ec5c082429b/lenlp-1.0.4.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: New version: [6.1.0] Old Version: [6.0.7]
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lvmguider]: Downloading https://files.pythonhosted.org/packages/46/04/6013bcefbbeb8d883c192283126ab1479e382f973b9c8c1dc1c648f6ece0/lvmguider-0.5.1.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [MethodicConfigurator]: Downloading https://files.pythonhosted.org/packages/ca/11/54154fc47d670b6dbcfa4bf29bdfac8558525dc52be4988f03d29ff64d1b/methodicconfigurator-0.6.4.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lenlp]: Downloading https://files.pythonhosted.org/packages/51/54/eebdd632966698028b29faf2309977e88e00d425a4841959e70f822c2407/lenlp-1.0.5.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Downloading https://files.pythonhosted.org/packages/8c/46/f19945942400c76f9328ca3ec379314a14c2c5d54440fd935fc7e33b1179/mkdocs_include_markdown_plugin-6.0.7.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [uwrapper]: Downloading https://files.pythonhosted.org/packages/ca/f1/4770ff2c75e8f70ae13a89185fab993b278b45bddf5d880e3bc4861039f9/uwrapper-0.0.5.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lenlp]: executing diffoscope
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lenlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenlp-1.0.4.tar.gz tmp/lenlp-1.0.5.tar.gz --markdown 20240601/l/lenlp/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-06-01 17:37:40] INFO root fetch - processPackages [uwrapper]: executing diffoscope
+[2024-06-01 17:37:40] INFO root fetch - processPackages [uwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwrapper-0.0.4.tar.gz tmp/uwrapper-0.0.5.tar.gz --markdown 20240601/u/uwrapper/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lvmguider]: Downloading https://files.pythonhosted.org/packages/42/59/7de433edd6f63234c59985b3a423945ad2520144dd6154baa7f5a96cb783/lvmguider-0.5.2.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/a1/d3/aaa46854b1728f29c8881f232ecee7d77a447c0588461a305476cd12d882/tui_dsmt-202406011310.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Downloading https://files.pythonhosted.org/packages/be/eb/65b7508cbddfd5e43dd243e26a6f327afde209fb7b96ff2ed1fb9280063e/mkdocs_include_markdown_plugin-6.1.0.tar.gz
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lvmguider]: executing diffoscope
+[2024-06-01 17:37:40] INFO root fetch - processPackages [lvmguider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lvmguider-0.5.1.tar.gz tmp/lvmguider-0.5.2.tar.gz --markdown 20240601/l/lvmguider/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-06-01 17:37:40] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: executing diffoscope
+[2024-06-01 17:37:40] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_include_markdown_plugin-6.0.7.tar.gz tmp/mkdocs_include_markdown_plugin-6.1.0.tar.gz --markdown 20240601/m/mkdocs-include-markdown-plugin/6.0.7-6.1.0/README.md --exclude *.pyd
+[2024-06-01 17:37:40] INFO root fetch - processPackages [MethodicConfigurator]: Downloading https://files.pythonhosted.org/packages/dc/b6/f43b830aad5901e57845f9baebccc823ee231ac7c6f05bb7618217f308f1/methodicconfigurator-0.6.5.tar.gz
+[2024-06-01 17:37:41] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.4.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - processPackages [lenlp]: Remove: archive file [/home/abi/fetcher/tmp/lenlp-1.0.5.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - main [MainThread]: End processing [lenlp]: success
+[2024-06-01 17:37:41] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-06-01 17:37:41] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202405251109.tar.gz tmp/tui_dsmt-202406011310.tar.gz --markdown 20240601/t/tui-dsmt/202405251109-202406011310/README.md --exclude *.pyd
+[2024-06-01 17:37:41] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.4.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - processPackages [uwrapper]: Remove: archive file [/home/abi/fetcher/tmp/uwrapper-0.0.5.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - main [MainThread]: End processing [uwrapper]: success
+[2024-06-01 17:37:41] INFO root fetch - processPackages [MethodicConfigurator]: executing diffoscope
+[2024-06-01 17:37:41] INFO root fetch - processPackages [MethodicConfigurator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/methodicconfigurator-0.6.4.tar.gz tmp/methodicconfigurator-0.6.5.tar.gz --markdown 20240601/M/MethodicConfigurator/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-06-01 17:37:41] INFO root fetch - processPackages [lvmguider]: Remove: archive file [/home/abi/fetcher/tmp/lvmguider-0.5.1.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - processPackages [lvmguider]: Remove: archive file [/home/abi/fetcher/tmp/lvmguider-0.5.2.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - main [MainThread]: End processing [lvmguider]: success
+[2024-06-01 17:37:41] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_include_markdown_plugin-6.0.7.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - processPackages [mkdocs-include-markdown-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_include_markdown_plugin-6.1.0.tar.gz]
+[2024-06-01 17:37:41] INFO root fetch - main [MainThread]: End processing [mkdocs-include-markdown-plugin]: success
+[2024-06-01 17:37:42] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202405251109.tar.gz]
+[2024-06-01 17:37:42] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202406011310.tar.gz]
+[2024-06-01 17:37:42] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-06-01 17:37:48] INFO root fetch - processPackages [MethodicConfigurator]: Remove: archive file [/home/abi/fetcher/tmp/methodicconfigurator-0.6.4.tar.gz]
+[2024-06-01 17:37:48] INFO root fetch - processPackages [MethodicConfigurator]: Remove: archive file [/home/abi/fetcher/tmp/methodicconfigurator-0.6.5.tar.gz]
+[2024-06-01 17:37:48] INFO root fetch - main [MainThread]: End processing [MethodicConfigurator]: success
+[2024-06-01 17:37:48] INFO root fetch - main [MainThread]: Store serial: [23481386]
