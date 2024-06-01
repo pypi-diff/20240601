@@ -8909,3 +8909,29 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 05:09:28] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_mass_reconcile-17.0.1.0.1-py3-none-any.whl.zip]
 [2024-06-01 05:09:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-mass-reconcile]: success
 [2024-06-01 05:09:28] INFO root fetch - main [MainThread]: Store serial: [23476704]
+[2024-06-01 05:11:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476704]
+[2024-06-01 05:11:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 05:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digiseller-api-python
+[2024-06-01 05:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codex
+[2024-06-01 05:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-assistant
+[2024-06-01 05:11:36] INFO root fetch - processPackages [rag-assistant]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 05:11:37] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/a4/19/7416b6eb15f6056bdbd4d0d826d8d9028b76f3e60cabea03af0792692d69/rag_assistant-0.1.8.tar.gz
+[2024-06-01 05:11:37] INFO root fetch - processPackages [digiseller-api-python]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-06-01 05:11:37] INFO root fetch - processPackages [codex]: New version: [1.6.0a7] Old Version: [1.6.0a6]
+[2024-06-01 05:11:37] INFO root fetch - processPackages [rag-assistant]: Downloading https://files.pythonhosted.org/packages/ab/f1/620c7fb54b4a7ccc6bfb8b3fef465d28ab6f59106745edd2d05206cead9f/rag_assistant-0.1.9.tar.gz
+[2024-06-01 05:11:37] INFO root fetch - processPackages [codex]: Downloading https://files.pythonhosted.org/packages/e9/16/7591cf5e59a7be252d732dc501e3760d83166924a0c04465f355bb7ab11d/codex-1.6.0a6.tar.gz
+[2024-06-01 05:11:37] INFO root fetch - processPackages [digiseller-api-python]: Downloading https://files.pythonhosted.org/packages/9a/c7/7ccd44740d2062ed0387920fde31fbb772225593a641b4d68774dd72f9c0/digiseller_api_python-1.4.1.tar.gz
+[2024-06-01 05:11:37] INFO root fetch - processPackages [rag-assistant]: executing diffoscope
+[2024-06-01 05:11:37] INFO root fetch - processPackages [rag-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_assistant-0.1.8.tar.gz tmp/rag_assistant-0.1.9.tar.gz --markdown 20240601/r/rag-assistant/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 05:11:37] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 18398407>=10485760
+[2024-06-01 05:11:37] INFO root fetch - main [MainThread]: End processing [codex] error
+[2024-06-01 05:11:37] INFO root fetch - processPackages [digiseller-api-python]: Downloading https://files.pythonhosted.org/packages/c0/73/382844d4d4cb9941c9e25f9494586c73c705bd8800648c3e5739a43f362c/digiseller_api_python-1.4.2.tar.gz
+[2024-06-01 05:11:37] INFO root fetch - processPackages [digiseller-api-python]: executing diffoscope
+[2024-06-01 05:11:37] INFO root fetch - processPackages [digiseller-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digiseller_api_python-1.4.1.tar.gz tmp/digiseller_api_python-1.4.2.tar.gz --markdown 20240601/d/digiseller-api-python/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-06-01 05:11:37] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.8.tar.gz]
+[2024-06-01 05:11:37] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
+[2024-06-01 05:11:37] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
+[2024-06-01 05:11:38] INFO root fetch - processPackages [digiseller-api-python]: Remove: archive file [/home/abi/fetcher/tmp/digiseller_api_python-1.4.1.tar.gz]
+[2024-06-01 05:11:38] INFO root fetch - processPackages [digiseller-api-python]: Remove: archive file [/home/abi/fetcher/tmp/digiseller_api_python-1.4.2.tar.gz]
+[2024-06-01 05:11:38] INFO root fetch - main [MainThread]: End processing [digiseller-api-python]: success
+[2024-06-01 05:11:38] INFO root fetch - main [MainThread]: Store serial: [23476714]
