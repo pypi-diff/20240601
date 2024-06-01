@@ -22101,3 +22101,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:33:08] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.27.0a0.tar.gz]
 [2024-06-01 21:33:08] INFO root fetch - main [MainThread]: End processing [anydi]: success
 [2024-06-01 21:33:08] INFO root fetch - main [MainThread]: Store serial: [23483024]
+[2024-06-01 21:35:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483024]
+[2024-06-01 21:35:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 21:35:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyEpidemiology
+[2024-06-01 21:35:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quantfreedom
+[2024-06-01 21:35:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stefutils
+[2024-06-01 21:35:18] WARNING root fetch - processPackages [PyEpidemiology]: Skipping, unable to determine old version
+[2024-06-01 21:35:18] INFO root fetch - main [MainThread]: End processing [PyEpidemiology] error
+[2024-06-01 21:35:18] INFO root fetch - processPackages [quantfreedom]: New version: [0.2.0.1] Old Version: [0.2.0.0]
+[2024-06-01 21:35:18] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-06-01 21:35:18] INFO root fetch - processPackages [quantfreedom]: Downloading https://files.pythonhosted.org/packages/ce/78/fa07529fafcd5110e196dea4da76688b7f621ce81ff8844168c245344267/quantfreedom-0.2.0.0.tar.gz
+[2024-06-01 21:35:18] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2024-06-01 21:35:18] INFO root fetch - processPackages [quantfreedom]: Downloading https://files.pythonhosted.org/packages/f2/ac/e02bf03d74082e741787a54cdc50669d5e29e44396ddbb2ca83b2517379f/quantfreedom-0.2.0.1.tar.gz
+[2024-06-01 21:35:18] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2024-06-01 21:35:18] INFO root fetch - processPackages [quantfreedom]: executing diffoscope
+[2024-06-01 21:35:18] INFO root fetch - processPackages [quantfreedom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantfreedom-0.2.0.0.tar.gz tmp/quantfreedom-0.2.0.1.tar.gz --markdown 20240601/q/quantfreedom/0.2.0.0-0.2.0.1/README.md --exclude *.pyd
+[2024-06-01 21:35:18] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2024-06-01 21:35:18] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20240601/s/stefutils/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-06-01 21:35:19] INFO root fetch - processPackages [quantfreedom]: Remove: archive file [/home/abi/fetcher/tmp/quantfreedom-0.2.0.0.tar.gz]
+[2024-06-01 21:35:19] INFO root fetch - processPackages [quantfreedom]: Remove: archive file [/home/abi/fetcher/tmp/quantfreedom-0.2.0.1.tar.gz]
+[2024-06-01 21:35:19] INFO root fetch - main [MainThread]: End processing [quantfreedom]: success
+[2024-06-01 21:35:19] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.8.2.tar.gz]
+[2024-06-01 21:35:19] INFO root fetch - processPackages [stefutils]: Remove: archive file [/home/abi/fetcher/tmp/stefutils-0.9.0.tar.gz]
+[2024-06-01 21:35:19] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2024-06-01 21:35:19] INFO root fetch - main [MainThread]: Store serial: [23483034]
