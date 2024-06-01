@@ -11257,3 +11257,29 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:06:02] INFO root fetch - processPackages [cdk-gradle-uploader]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gradle-uploader-0.0.9.tar.gz]
 [2024-06-01 08:06:02] INFO root fetch - main [MainThread]: End processing [cdk-gradle-uploader]: success
 [2024-06-01 08:06:02] INFO root fetch - main [MainThread]: Store serial: [23477764]
+[2024-06-01 08:08:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477764]
+[2024-06-01 08:08:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 08:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb
+[2024-06-01 08:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: souJpg-diffusers
+[2024-06-01 08:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twelvelabs
+[2024-06-01 08:08:10] INFO root fetch - processPackages [souJpg-diffusers]: New version: [0.29.0.dev0] Old Version: [0.28.0.dev1]
+[2024-06-01 08:08:10] INFO root fetch - processPackages [twelvelabs]: New version: [0.1.25] Old Version: [0.1.24]
+[2024-06-01 08:08:11] INFO root fetch - processPackages [souJpg-diffusers]: Downloading https://files.pythonhosted.org/packages/c3/d0/87c8f9f138a72266730e695a046085e5901e5322d23d36d913299ceeed9f/souJpg_diffusers-0.28.0.dev1-py3-none-any.whl
+[2024-06-01 08:08:11] INFO root fetch - processPackages [duckdb]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-06-01 08:08:11] INFO root fetch - processPackages [twelvelabs]: Downloading https://files.pythonhosted.org/packages/e7/2e/82e8dc4ae2ee9aa38dd9152116b4521a10b5221d7058f35245e94a163379/twelvelabs-0.1.24.tar.gz
+[2024-06-01 08:08:11] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/83/36/ea553454969fa7f356555da1ffcf31acc82172548be77278159002d34514/duckdb-0.9.1.tar.gz
+[2024-06-01 08:08:11] INFO root fetch - processPackages [souJpg-diffusers]: Downloading https://files.pythonhosted.org/packages/1d/dc/d52a575221d295b2bf743f8bea6e63ca9711211909af3ef419d264d5ea2c/souJpg_diffusers-0.29.0.dev0-py3-none-any.whl
+[2024-06-01 08:08:11] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 10640161>=10485760
+[2024-06-01 08:08:11] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2024-06-01 08:08:11] INFO root fetch - processPackages [twelvelabs]: Downloading https://files.pythonhosted.org/packages/8d/e9/2154037c4e5a4e88af3afe7e0c60a04087ddfacc43098757e413cf85dc97/twelvelabs-0.1.25.tar.gz
+[2024-06-01 08:08:11] INFO root fetch - processPackages [twelvelabs]: executing diffoscope
+[2024-06-01 08:08:11] INFO root fetch - processPackages [twelvelabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twelvelabs-0.1.24.tar.gz tmp/twelvelabs-0.1.25.tar.gz --markdown 20240601/t/twelvelabs/0.1.24-0.1.25/README.md --exclude *.pyd
+[2024-06-01 08:08:11] INFO root fetch - processPackages [souJpg-diffusers]: executing diffoscope
+[2024-06-01 08:08:11] INFO root fetch - processPackages [souJpg-diffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/souJpg_diffusers-0.28.0.dev1-py3-none-any.whl.zip tmp/souJpg_diffusers-0.29.0.dev0-py3-none-any.whl.zip --markdown 20240601/s/souJpg-diffusers/0.28.0.dev1-0.29.0.dev0/README.md --exclude *.pyd
+[2024-06-01 08:08:12] INFO root fetch - processPackages [twelvelabs]: Remove: archive file [/home/abi/fetcher/tmp/twelvelabs-0.1.24.tar.gz]
+[2024-06-01 08:08:12] INFO root fetch - processPackages [twelvelabs]: Remove: archive file [/home/abi/fetcher/tmp/twelvelabs-0.1.25.tar.gz]
+[2024-06-01 08:08:12] INFO root fetch - main [MainThread]: End processing [twelvelabs]: success
+[2024-06-01 08:08:16] INFO root fetch - processPackages [souJpg-diffusers]: Remove: archive file [/home/abi/fetcher/tmp/souJpg_diffusers-0.28.0.dev1-py3-none-any.whl.zip]
+[2024-06-01 08:08:16] INFO root fetch - processPackages [souJpg-diffusers]: Remove: archive file [/home/abi/fetcher/tmp/souJpg_diffusers-0.29.0.dev0-py3-none-any.whl.zip]
+[2024-06-01 08:08:16] INFO root fetch - main [MainThread]: End processing [souJpg-diffusers]: success
+[2024-06-01 08:08:16] INFO root fetch - main [MainThread]: Store serial: [23477802]
