@@ -11750,3 +11750,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 08:58:55] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.9.tar.gz]
 [2024-06-01 08:58:55] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
 [2024-06-01 08:58:55] INFO root fetch - main [MainThread]: Store serial: [23477962]
+[2024-06-01 09:00:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477962]
+[2024-06-01 09:01:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 09:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flameai
+[2024-06-01 09:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-06-01 09:01:03] INFO root fetch - processPackages [flameai]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-06-01 09:01:03] INFO root fetch - processPackages [flameai]: Downloading https://files.pythonhosted.org/packages/b0/53/78e6c188f08914f36bc5ff8c668846af901fcd62c42a21cf8e8e8bcbd069/flameai-1.0.6.tar.gz
+[2024-06-01 09:01:03] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-06-01 09:01:04] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-06-01 09:01:04] INFO root fetch - processPackages [flameai]: Downloading https://files.pythonhosted.org/packages/cc/0f/c0aa75c6b49c06654733139542447f99e64b02a8df478b931d18689be73e/flameai-1.0.7.tar.gz
+[2024-06-01 09:01:04] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-06-01 09:01:04] INFO root fetch - processPackages [flameai]: executing diffoscope
+[2024-06-01 09:01:04] INFO root fetch - processPackages [flameai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flameai-1.0.6.tar.gz tmp/flameai-1.0.7.tar.gz --markdown 20240601/f/flameai/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-06-01 09:01:04] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-06-01 09:01:04] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240601/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-06-01 09:01:04] INFO root fetch - processPackages [flameai]: Remove: archive file [/home/abi/fetcher/tmp/flameai-1.0.6.tar.gz]
+[2024-06-01 09:01:04] INFO root fetch - processPackages [flameai]: Remove: archive file [/home/abi/fetcher/tmp/flameai-1.0.7.tar.gz]
+[2024-06-01 09:01:04] INFO root fetch - main [MainThread]: End processing [flameai]: success
+[2024-06-01 09:01:05] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-06-01 09:01:05] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-06-01 09:01:05] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-06-01 09:01:05] INFO root fetch - main [MainThread]: Store serial: [23477970]
