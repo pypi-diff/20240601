@@ -23679,3 +23679,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:42:11] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.9.tar.gz]
 [2024-06-01 23:42:11] INFO root fetch - main [MainThread]: End processing [aixhello]: success
 [2024-06-01 23:42:11] INFO root fetch - main [MainThread]: Store serial: [23483853]
+[2024-06-01 23:44:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483853]
+[2024-06-01 23:44:21] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: panpipelines
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composabl-dev
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composabl-train-dev
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composabl-core-dev
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composabl-api-dev
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composabl-cli-dev
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: protoc-polyglot
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gitlab-projects-issues
+[2024-06-01 23:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: organizations-local
+[2024-06-01 23:44:21] INFO root fetch - processPackages [protoc-polyglot]: New version: [0.0.1.post9] Old Version: [0.0.1.post8]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-train-dev]: New version: [0.9.0.dev2] Old Version: [0.9.0.dev1]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-dev]: New version: [0.9.0.dev2] Old Version: [0.9.0.dev1]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-cli-dev]: New version: [0.9.0.dev2] Old Version: [0.9.0.dev1]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-core-dev]: New version: [0.9.0.dev2] Old Version: [0.9.0.dev1]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-api-dev]: New version: [0.9.0.dev2] Old Version: [0.9.0.dev1]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [panpipelines]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [gitlab-projects-issues]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [organizations-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 23:44:21] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/e9/7b/373a68a962cdfb85f4bd76f6f4ea13ad3f2cfaca73bf0a9f70d0e7d34380/protoc_polyglot-0.0.1.post8.tar.gz
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-train-dev]: Downloading https://files.pythonhosted.org/packages/dc/67/eff5f58c8b9c8fb35bdbb64c719c6135c6e9c15bb53e39e3cae9fb64c31d/composabl_train_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-dev]: Downloading https://files.pythonhosted.org/packages/51/0c/d7fba1a34e5f2b8993e80576e29c68ec0ccec722fd589be3e31e1efda66d/composabl_dev-0.9.0.dev1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-api-dev]: Downloading https://files.pythonhosted.org/packages/43/3d/137e1802bf90812ed86f7ed0d7441ddcbcd006e77255c61a0ce1f36eaf13/composabl_api_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-cli-dev]: Downloading https://files.pythonhosted.org/packages/fd/84/8fbc2a16e03163f198e9c4620aef3cb2b262c4d6780bbdbf3951fee390e7/composabl_cli_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:21] INFO root fetch - processPackages [composabl-core-dev]: Downloading https://files.pythonhosted.org/packages/7f/fe/c0cea7a79fc4ff1110cd0a9b1f1d4d507cc2036a12606b60c86a516984d3/composabl_core_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:21] INFO root fetch - processPackages [panpipelines]: Downloading https://files.pythonhosted.org/packages/9e/f1/e1bb5a1f9c64a19d0226cebe4adc2bcbd92b7a9df9d4b901d78125fa846d/panpipelines-1.0.1.tar.gz
+[2024-06-01 23:44:21] INFO root fetch - processPackages [gitlab-projects-issues]: Downloading https://files.pythonhosted.org/packages/49/f0/ef2e6967689132897305af83958275c7c89a9dfd9321b56866c61dad745e/gitlab_projects_issues-1.0.0.tar.gz
+[2024-06-01 23:44:21] INFO root fetch - processPackages [organizations-local]: Downloading https://files.pythonhosted.org/packages/5b/7e/09b4d410b99d4d4b3d10725e50ba481bd8741acca902b216e9368c50f4aa/organizations-local-0.0.8.tar.gz
+[2024-06-01 23:44:21] WARNING root fetch - processPackages [composabl-core-dev]: Skipping package: exceeds size limit 26508681>=10485760
+[2024-06-01 23:44:21] INFO root fetch - main [MainThread]: End processing [composabl-core-dev] error
+[2024-06-01 23:44:21] INFO root fetch - processPackages [protoc-polyglot]: Downloading https://files.pythonhosted.org/packages/01/80/bdadb218d1c3271c3a258316c3d5991f2676b54e6f358ac689f9495990f5/protoc_polyglot-0.0.1.post9.tar.gz
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-dev]: Downloading https://files.pythonhosted.org/packages/2c/6b/3be54a2f2b13fdd7e002c0ca5666feaaa07fd74ee1951827920b7d86e09c/composabl_dev-0.9.0.dev2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:22] INFO root fetch - processPackages [protoc-polyglot]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [protoc-polyglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_polyglot-0.0.1.post8.tar.gz tmp/protoc_polyglot-0.0.1.post9.tar.gz --markdown 20240601/p/protoc-polyglot/0.0.1.post8-0.0.1.post9/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-api-dev]: Downloading https://files.pythonhosted.org/packages/39/61/3d83a08f4f3108dcfd592150dd22440898e23733072a0457c2ecf1a4964d/composabl_api_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-dev]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_dev-0.9.0.dev1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_dev-0.9.0.dev2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/c/composabl-dev/0.9.0.dev1-0.9.0.dev2/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [gitlab-projects-issues]: Downloading https://files.pythonhosted.org/packages/2b/47/374c390f18e7e3c2e366f39329febb95a3dc699a067671e7aa5c049e3a38/gitlab_projects_issues-1.0.1.tar.gz
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-cli-dev]: Downloading https://files.pythonhosted.org/packages/b0/65/ed30da945ff8dcad3f5b89230f223a3b625f1444f4c36bb3883d7af71837/composabl_cli_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-train-dev]: Downloading https://files.pythonhosted.org/packages/7d/6f/49b3a130ce1031128740eb763cb011a61e19472c40338fa1c96aca506c17/composabl_train_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-06-01 23:44:22] INFO root fetch - processPackages [organizations-local]: Downloading https://files.pythonhosted.org/packages/fc/80/42cde22657fe954391a6e80fc840bcfd4599230f000e8eaaa14ac36177a7/organizations-local-0.0.9.tar.gz
+[2024-06-01 23:44:22] INFO root fetch - processPackages [gitlab-projects-issues]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [gitlab-projects-issues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_projects_issues-1.0.0.tar.gz tmp/gitlab_projects_issues-1.0.1.tar.gz --markdown 20240601/g/gitlab-projects-issues/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-api-dev]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-api-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_api_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_api_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/c/composabl-api-dev/0.9.0.dev1-0.9.0.dev2/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [panpipelines]: Downloading https://files.pythonhosted.org/packages/6b/86/e5eb7838176a09a5e0c6a5e838ec35e29a423c692860972a70bfbf4043a3/panpipelines-1.0.2.tar.gz
+[2024-06-01 23:44:22] INFO root fetch - processPackages [organizations-local]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [organizations-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/organizations-local-0.0.8.tar.gz tmp/organizations-local-0.0.9.tar.gz --markdown 20240601/o/organizations-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-cli-dev]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-cli-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_cli_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_cli_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/c/composabl-cli-dev/0.9.0.dev1-0.9.0.dev2/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [panpipelines]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [panpipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panpipelines-1.0.1.tar.gz tmp/panpipelines-1.0.2.tar.gz --markdown 20240601/p/panpipelines/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-train-dev]: executing diffoscope
+[2024-06-01 23:44:22] INFO root fetch - processPackages [composabl-train-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_train_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_train_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240601/c/composabl-train-dev/0.9.0.dev1-0.9.0.dev2/README.md --exclude *.pyd
+[2024-06-01 23:44:22] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post8.tar.gz]
+[2024-06-01 23:44:22] INFO root fetch - processPackages [protoc-polyglot]: Remove: archive file [/home/abi/fetcher/tmp/protoc_polyglot-0.0.1.post9.tar.gz]
+[2024-06-01 23:44:22] INFO root fetch - main [MainThread]: End processing [protoc-polyglot]: success
+[2024-06-01 23:44:23] INFO root fetch - processPackages [composabl-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_dev-0.9.0.dev1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:44:23] INFO root fetch - processPackages [composabl-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_dev-0.9.0.dev2-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:44:23] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
+[2024-06-01 23:44:23] INFO root fetch - processPackages [composabl-api-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_api_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:44:23] INFO root fetch - processPackages [composabl-api-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_api_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:44:23] INFO root fetch - main [MainThread]: End processing [composabl-api-dev]: success
+[2024-06-01 23:44:23] INFO root fetch - processPackages [gitlab-projects-issues]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_issues-1.0.0.tar.gz]
+[2024-06-01 23:44:23] INFO root fetch - processPackages [gitlab-projects-issues]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_issues-1.0.1.tar.gz]
+[2024-06-01 23:44:23] INFO root fetch - main [MainThread]: End processing [gitlab-projects-issues]: success
+[2024-06-01 23:44:23] INFO root fetch - processPackages [organizations-local]: Remove: archive file [/home/abi/fetcher/tmp/organizations-local-0.0.8.tar.gz]
+[2024-06-01 23:44:23] INFO root fetch - processPackages [organizations-local]: Remove: archive file [/home/abi/fetcher/tmp/organizations-local-0.0.9.tar.gz]
+[2024-06-01 23:44:23] INFO root fetch - main [MainThread]: End processing [organizations-local]: success
+[2024-06-01 23:44:23] INFO root fetch - processPackages [composabl-cli-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_cli_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:44:23] INFO root fetch - processPackages [composabl-cli-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_cli_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:44:23] INFO root fetch - main [MainThread]: End processing [composabl-cli-dev]: success
+[2024-06-01 23:44:24] INFO root fetch - processPackages [panpipelines]: Remove: archive file [/home/abi/fetcher/tmp/panpipelines-1.0.1.tar.gz]
+[2024-06-01 23:44:24] INFO root fetch - processPackages [panpipelines]: Remove: archive file [/home/abi/fetcher/tmp/panpipelines-1.0.2.tar.gz]
+[2024-06-01 23:44:24] INFO root fetch - main [MainThread]: End processing [panpipelines]: success
+[2024-06-01 23:45:01] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.9.0.dev1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:45:01] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.9.0.dev2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-06-01 23:45:01] INFO root fetch - main [MainThread]: End processing [composabl-train-dev]: success
+[2024-06-01 23:45:01] INFO root fetch - main [MainThread]: Store serial: [23483920]
