@@ -10283,3 +10283,51 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 06:29:25] INFO root fetch - processPackages [vstutils]: Remove: archive file [/home/abi/fetcher/tmp/vstutils-5.9.4.tar.gz]
 [2024-06-01 06:29:25] INFO root fetch - main [MainThread]: End processing [vstutils]: success
 [2024-06-01 06:29:25] INFO root fetch - main [MainThread]: Store serial: [23477244]
+[2024-06-01 06:31:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23477244]
+[2024-06-01 06:31:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 06:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-helpdesk
+[2024-06-01 06:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vllm
+[2024-06-01 06:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pucoti
+[2024-06-01 06:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ape-safe
+[2024-06-01 06:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Jvav
+[2024-06-01 06:31:34] INFO root fetch - processPackages [Jvav]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-06-01 06:31:34] INFO root fetch - processPackages [pucoti]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-06-01 06:31:34] INFO root fetch - processPackages [ape-safe]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-06-01 06:31:34] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: New version: [16.0.20240522.0] Old Version: [16.0.20240417.0]
+[2024-06-01 06:31:34] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/a6/50/bd004b6faf9f785850c0f5016eeb433b3b8abb82e33c042bbf77e21df266/pucoti-0.1.4.tar.gz
+[2024-06-01 06:31:34] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/5b/c2/c55620f6b9bc767ddaa43a384c8add414e24e5e577d8423efb0c61e0dd66/Jvav-1.9.3.tar.gz
+[2024-06-01 06:31:34] INFO root fetch - processPackages [vllm]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-06-01 06:31:34] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: Downloading https://files.pythonhosted.org/packages/ac/a6/7e6c6cbf7d826b3ba09ba309f8dd26bd173d0ac360636ed26241d2d28b1e/odoo_addons_oca_helpdesk-16.0.20240417.0-py3-none-any.whl
+[2024-06-01 06:31:35] INFO root fetch - processPackages [ape-safe]: Downloading https://files.pythonhosted.org/packages/38/87/ba74328dcc5a0691d6d039ebc407003046d993a7b87fd7fdf15ac6abfedd/ape_safe-0.7.1.tar.gz
+[2024-06-01 06:31:35] INFO root fetch - processPackages [vllm]: Downloading https://files.pythonhosted.org/packages/52/86/c493b975f36d48939cc575d22813000d2c60d519283d1c61ff744fb440e8/vllm-0.4.2.tar.gz
+[2024-06-01 06:31:35] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/0a/ba/5d94b350c94de6faf28a36cc8927678af7015d75ed4d5c763d3c89edb093/Jvav-1.9.4.tar.gz
+[2024-06-01 06:31:35] INFO root fetch - processPackages [pucoti]: Downloading https://files.pythonhosted.org/packages/0f/0a/4f3292fdcdbabdfa61f31a9dcbc6759e87285e17a2da47e14cea8a004bb3/pucoti-0.2.0.tar.gz
+[2024-06-01 06:31:35] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2024-06-01 06:31:35] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.9.3.tar.gz tmp/Jvav-1.9.4.tar.gz --markdown 20240601/J/Jvav/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-06-01 06:31:35] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: Downloading https://files.pythonhosted.org/packages/d9/c2/c85745de35c5d5a96cf96898b12c7ebd8d9cfd7763fbbb419123d8efecf5/odoo_addons_oca_helpdesk-16.0.20240522.0-py3-none-any.whl
+[2024-06-01 06:31:35] INFO root fetch - processPackages [pucoti]: executing diffoscope
+[2024-06-01 06:31:35] INFO root fetch - processPackages [pucoti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pucoti-0.1.4.tar.gz tmp/pucoti-0.2.0.tar.gz --markdown 20240601/p/pucoti/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-06-01 06:31:35] INFO root fetch - processPackages [ape-safe]: Downloading https://files.pythonhosted.org/packages/7f/f5/4f4b4902727564638b597dc2d07c9ee990969a928467340873b1424ffb1d/ape-safe-0.8.0.tar.gz
+[2024-06-01 06:31:35] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: executing diffoscope
+[2024-06-01 06:31:35] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_helpdesk-16.0.20240417.0-py3-none-any.whl.zip tmp/odoo_addons_oca_helpdesk-16.0.20240522.0-py3-none-any.whl.zip --markdown 20240601/o/odoo-addons-oca-helpdesk/16.0.20240417.0-16.0.20240522.0/README.md --exclude *.pyd
+[2024-06-01 06:31:35] INFO root fetch - processPackages [vllm]: Downloading https://files.pythonhosted.org/packages/3c/78/8e51721df8d4de22b240012608ed17cb51afe63352cf0a486660ade24a18/vllm-0.4.3.tar.gz
+[2024-06-01 06:31:35] INFO root fetch - processPackages [ape-safe]: executing diffoscope
+[2024-06-01 06:31:35] INFO root fetch - processPackages [ape-safe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape_safe-0.7.1.tar.gz tmp/ape-safe-0.8.0.tar.gz --markdown 20240601/a/ape-safe/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-06-01 06:31:35] INFO root fetch - processPackages [vllm]: executing diffoscope
+[2024-06-01 06:31:35] INFO root fetch - processPackages [vllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vllm-0.4.2.tar.gz tmp/vllm-0.4.3.tar.gz --markdown 20240601/v/vllm/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-06-01 06:31:35] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.9.3.tar.gz]
+[2024-06-01 06:31:35] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.9.4.tar.gz]
+[2024-06-01 06:31:35] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2024-06-01 06:31:35] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.1.4.tar.gz]
+[2024-06-01 06:31:35] INFO root fetch - processPackages [pucoti]: Remove: archive file [/home/abi/fetcher/tmp/pucoti-0.2.0.tar.gz]
+[2024-06-01 06:31:35] INFO root fetch - main [MainThread]: End processing [pucoti]: success
+[2024-06-01 06:31:35] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_helpdesk-16.0.20240417.0-py3-none-any.whl.zip]
+[2024-06-01 06:31:35] INFO root fetch - processPackages [odoo-addons-oca-helpdesk]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_helpdesk-16.0.20240522.0-py3-none-any.whl.zip]
+[2024-06-01 06:31:36] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-helpdesk]: success
+[2024-06-01 06:31:36] INFO root fetch - processPackages [ape-safe]: Remove: archive file [/home/abi/fetcher/tmp/ape_safe-0.7.1.tar.gz]
+[2024-06-01 06:31:36] INFO root fetch - processPackages [ape-safe]: Remove: archive file [/home/abi/fetcher/tmp/ape-safe-0.8.0.tar.gz]
+[2024-06-01 06:31:36] INFO root fetch - main [MainThread]: End processing [ape-safe]: success
+[2024-06-01 06:31:38] INFO root fetch - processPackages [vllm]: Remove: archive file [/home/abi/fetcher/tmp/vllm-0.4.2.tar.gz]
+[2024-06-01 06:31:38] INFO root fetch - processPackages [vllm]: Remove: archive file [/home/abi/fetcher/tmp/vllm-0.4.3.tar.gz]
+[2024-06-01 06:31:38] INFO root fetch - main [MainThread]: End processing [vllm]: success
+[2024-06-01 06:31:38] INFO root fetch - main [MainThread]: Store serial: [23477261]
