@@ -8264,3 +8264,18 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 04:21:45] INFO root fetch - processPackages [poetry-plugin-pypi-proxy]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_pypi_proxy-0.1.3.tar.gz]
 [2024-06-01 04:21:45] INFO root fetch - main [MainThread]: End processing [poetry-plugin-pypi-proxy]: success
 [2024-06-01 04:21:45] INFO root fetch - main [MainThread]: Store serial: [23476371]
+[2024-06-01 04:23:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23476371]
+[2024-06-01 04:23:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 04:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwab-python
+[2024-06-01 04:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: staging-cacao-accounting-desktop
+[2024-06-01 04:23:54] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: New version: [2024.5.7] Old Version: [2024.5.5]
+[2024-06-01 04:23:54] WARNING root fetch - processPackages [schwab-python]: Skipping, unable to determine old version
+[2024-06-01 04:23:54] INFO root fetch - main [MainThread]: End processing [schwab-python] error
+[2024-06-01 04:23:54] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Downloading https://files.pythonhosted.org/packages/70/6a/1bc4d285a22b1734ec98fb5fb8dba4eb63f426cd544039684a0abdc5a6bd/staging_cacao_accounting_desktop-2024.5.5.tar.gz
+[2024-06-01 04:23:54] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Downloading https://files.pythonhosted.org/packages/80/72/e3d007ceca3f5d64beaefee2f06ea97da2951de3e9317c074739317de06b/staging_cacao_accounting_desktop-2024.5.7.tar.gz
+[2024-06-01 04:23:55] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: executing diffoscope
+[2024-06-01 04:23:55] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staging_cacao_accounting_desktop-2024.5.5.tar.gz tmp/staging_cacao_accounting_desktop-2024.5.7.tar.gz --markdown 20240601/s/staging-cacao-accounting-desktop/2024.5.5-2024.5.7/README.md --exclude *.pyd
+[2024-06-01 04:23:55] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting_desktop-2024.5.5.tar.gz]
+[2024-06-01 04:23:55] INFO root fetch - processPackages [staging-cacao-accounting-desktop]: Remove: archive file [/home/abi/fetcher/tmp/staging_cacao_accounting_desktop-2024.5.7.tar.gz]
+[2024-06-01 04:23:55] INFO root fetch - main [MainThread]: End processing [staging-cacao-accounting-desktop]: success
+[2024-06-01 04:23:55] INFO root fetch - main [MainThread]: Store serial: [23476379]
