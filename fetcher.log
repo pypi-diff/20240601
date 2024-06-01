@@ -23464,3 +23464,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:20:32] INFO root fetch - processPackages [docassemble.webapp]: Remove: archive file [/home/abi/fetcher/tmp/docassemble.webapp-1.4.99.tar.gz]
 [2024-06-01 23:20:32] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
 [2024-06-01 23:20:32] INFO root fetch - main [MainThread]: Store serial: [23483773]
+[2024-06-01 23:22:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483773]
+[2024-06-01 23:22:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ladybug-core
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aixhello
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ladybug-core]: New version: [0.42.9] Old Version: [0.42.8]
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ladybug-core]: Downloading https://files.pythonhosted.org/packages/65/39/440bbf73af1908ee08006a7a71b91e3c7ceb3e340f2a0334b9e091511de9/ladybug-core-0.42.8.tar.gz
+[2024-06-01 23:22:41] INFO root fetch - processPackages [aixhello]: New version: [1.8] Old Version: [1.7]
+[2024-06-01 23:22:41] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/1d/ac/d34a604a2f60d8a6dc4a23d3e3e59d34f93ee01dc287e6c00948a612dd80/aixhello-1.7.tar.gz
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ladybug-core]: Downloading https://files.pythonhosted.org/packages/05/39/ad2de8ecb5085f93473c7a56fb92b7cbfad1ed03321c5209b36c5bf8bf3f/ladybug-core-0.42.9.tar.gz
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ladybug-core]: executing diffoscope
+[2024-06-01 23:22:41] INFO root fetch - processPackages [ladybug-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-core-0.42.8.tar.gz tmp/ladybug-core-0.42.9.tar.gz --markdown 20240601/l/ladybug-core/0.42.8-0.42.9/README.md --exclude *.pyd
+[2024-06-01 23:22:42] INFO root fetch - processPackages [aixhello]: Downloading https://files.pythonhosted.org/packages/45/2f/3925f66397dedfc8046d3a3c41dce7196f9c8afc311cb9029adecfa1ae15/aixhello-1.8.tar.gz
+[2024-06-01 23:22:42] INFO root fetch - processPackages [aixhello]: executing diffoscope
+[2024-06-01 23:22:42] INFO root fetch - processPackages [aixhello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixhello-1.7.tar.gz tmp/aixhello-1.8.tar.gz --markdown 20240601/a/aixhello/1.7-1.8/README.md --exclude *.pyd
+[2024-06-01 23:22:42] INFO root fetch - processPackages [ladybug-core]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-core-0.42.8.tar.gz]
+[2024-06-01 23:22:42] INFO root fetch - processPackages [ladybug-core]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-core-0.42.9.tar.gz]
+[2024-06-01 23:22:42] INFO root fetch - main [MainThread]: End processing [ladybug-core]: success
+[2024-06-01 23:22:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.7.tar.gz]
+[2024-06-01 23:22:42] INFO root fetch - processPackages [aixhello]: Remove: archive file [/home/abi/fetcher/tmp/aixhello-1.8.tar.gz]
+[2024-06-01 23:22:42] INFO root fetch - main [MainThread]: End processing [aixhello]: success
+[2024-06-01 23:22:42] INFO root fetch - main [MainThread]: Store serial: [23483781]
