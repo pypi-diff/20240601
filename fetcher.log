@@ -3461,3 +3461,27 @@
 [2024-06-01 03:06:00] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc2.tar.gz]
 [2024-06-01 03:06:00] INFO root fetch - main [MainThread]: End processing [chatmemoryc]: success
 [2024-06-01 03:06:00] INFO root fetch - main [MainThread]: Store serial: [23474526]
+[2024-06-01 03:08:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474526]
+[2024-06-01 03:08:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 03:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swarmauri
+[2024-06-01 03:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qbraid-core
+[2024-06-01 03:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simply-math
+[2024-06-01 03:08:08] INFO root fetch - processPackages [swarmauri]: New version: [0.2.9] Old Version: [0.2.8.dev2]
+[2024-06-01 03:08:08] INFO root fetch - processPackages [swarmauri]: Downloading https://files.pythonhosted.org/packages/88/d0/ad9c953cb2d9fa74ac9b379b86ea908cb2ddf6d9b6abb15f51e7fc196b80/swarmauri-0.2.8.dev2.tar.gz
+[2024-06-01 03:08:08] WARNING root fetch - processPackages [simply-math]: Skipping, unable to determine old version
+[2024-06-01 03:08:08] INFO root fetch - main [MainThread]: End processing [simply-math] error
+[2024-06-01 03:08:08] INFO root fetch - processPackages [qbraid-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 03:08:08] INFO root fetch - processPackages [qbraid-core]: Downloading https://files.pythonhosted.org/packages/88/eb/c4febfd30a9c0df8359953553b09a95fabc7b2b39da5afa7b738910e9a03/qbraid_core-0.1.8.tar.gz
+[2024-06-01 03:08:08] INFO root fetch - processPackages [swarmauri]: Downloading https://files.pythonhosted.org/packages/80/f3/5247432592ad2e68795cb926171ae7f1ec3d20bf08958e10bcab36e50e6b/swarmauri-0.2.9.tar.gz
+[2024-06-01 03:08:08] INFO root fetch - processPackages [swarmauri]: executing diffoscope
+[2024-06-01 03:08:08] INFO root fetch - processPackages [swarmauri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmauri-0.2.8.dev2.tar.gz tmp/swarmauri-0.2.9.tar.gz --markdown 20240601/s/swarmauri/0.2.8.dev2-0.2.9/README.md --exclude *.pyd
+[2024-06-01 03:08:08] INFO root fetch - processPackages [qbraid-core]: Downloading https://files.pythonhosted.org/packages/b1/39/0bea514bd6529319acc115ed165e4238b843acb4553b5eb4bc3704755a20/qbraid_core-0.1.9.tar.gz
+[2024-06-01 03:08:09] INFO root fetch - processPackages [qbraid-core]: executing diffoscope
+[2024-06-01 03:08:09] INFO root fetch - processPackages [qbraid-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbraid_core-0.1.8.tar.gz tmp/qbraid_core-0.1.9.tar.gz --markdown 20240601/q/qbraid-core/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 03:08:09] INFO root fetch - processPackages [qbraid-core]: Remove: archive file [/home/abi/fetcher/tmp/qbraid_core-0.1.8.tar.gz]
+[2024-06-01 03:08:09] INFO root fetch - processPackages [qbraid-core]: Remove: archive file [/home/abi/fetcher/tmp/qbraid_core-0.1.9.tar.gz]
+[2024-06-01 03:08:09] INFO root fetch - main [MainThread]: End processing [qbraid-core]: success
+[2024-06-01 03:08:09] INFO root fetch - processPackages [swarmauri]: Remove: archive file [/home/abi/fetcher/tmp/swarmauri-0.2.8.dev2.tar.gz]
+[2024-06-01 03:08:09] INFO root fetch - processPackages [swarmauri]: Remove: archive file [/home/abi/fetcher/tmp/swarmauri-0.2.9.tar.gz]
+[2024-06-01 03:08:09] INFO root fetch - main [MainThread]: End processing [swarmauri]: success
+[2024-06-01 03:08:09] INFO root fetch - main [MainThread]: Store serial: [23474543]
