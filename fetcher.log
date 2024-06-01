@@ -14961,3 +14961,42 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:08:09] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.9.tar.gz]
 [2024-06-01 13:08:09] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
 [2024-06-01 13:08:09] INFO root fetch - main [MainThread]: Store serial: [23479608]
+[2024-06-01 13:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479608]
+[2024-06-01 13:10:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 13:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wolframalpha
+[2024-06-01 13:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IDswapper
+[2024-06-01 13:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sigmacode
+[2024-06-01 13:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-stock-available-to-promise-release
+[2024-06-01 13:10:19] INFO root fetch - processPackages [wolframalpha]: New version: [5.0.1] Old Version: [5.0.0]
+[2024-06-01 13:10:19] INFO root fetch - processPackages [IDswapper]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-06-01 13:10:19] INFO root fetch - processPackages [sigmacode]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-06-01 13:10:19] INFO root fetch - processPackages [wolframalpha]: Downloading https://files.pythonhosted.org/packages/89/3d/a117423c85669131d74aa9d2b8df1c68bb23e0cf6c055aa0ffd0747c7d1d/wolframalpha-5.0.0.tar.gz
+[2024-06-01 13:10:19] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/18/2d/8f4ab910e8d7a0424bec480d1bbbdf4f0f9d8d2e111e7a0602d817faff77/idswapper-0.0.9.tar.gz
+[2024-06-01 13:10:19] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: New version: [16.0.3.1.1] Old Version: [16.0.3.1.0.6]
+[2024-06-01 13:10:19] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/43/a4/6d24771427364f5f590ee1baa25af023979b831623c4a08fbf8da6fa2945/sigmacode-0.0.1.tar.gz
+[2024-06-01 13:10:19] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Downloading https://files.pythonhosted.org/packages/e8/97/758eefa97b51b88c45e6b729b2f0e8b985655430ad39f98eb46b7b98b25d/odoo_addon_stock_available_to_promise_release-16.0.3.1.0.6-py3-none-any.whl
+[2024-06-01 13:10:19] INFO root fetch - processPackages [wolframalpha]: Downloading https://files.pythonhosted.org/packages/cd/2b/1c142808d1fa15818daeff047b70008458c36bdc12ec6880733766bdd5d4/wolframalpha-5.0.1.tar.gz
+[2024-06-01 13:10:19] INFO root fetch - processPackages [wolframalpha]: executing diffoscope
+[2024-06-01 13:10:19] INFO root fetch - processPackages [wolframalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolframalpha-5.0.0.tar.gz tmp/wolframalpha-5.0.1.tar.gz --markdown 20240601/w/wolframalpha/5.0.0-5.0.1/README.md --exclude *.pyd
+[2024-06-01 13:10:19] INFO root fetch - processPackages [sigmacode]: Downloading https://files.pythonhosted.org/packages/b1/5c/e416a0d06b23972b135dc832ac189dd99dd0a5e2d9517da912063e34c6f7/sigmacode-0.0.2.tar.gz
+[2024-06-01 13:10:19] INFO root fetch - processPackages [sigmacode]: executing diffoscope
+[2024-06-01 13:10:19] INFO root fetch - processPackages [sigmacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmacode-0.0.1.tar.gz tmp/sigmacode-0.0.2.tar.gz --markdown 20240601/s/sigmacode/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-06-01 13:10:19] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Downloading https://files.pythonhosted.org/packages/e3/f2/e71362af74ca4158b21c794bf6ceb27be46a6e49693bedfe57fb274628e8/odoo_addon_stock_available_to_promise_release-16.0.3.1.1-py3-none-any.whl
+[2024-06-01 13:10:19] INFO root fetch - processPackages [IDswapper]: Downloading https://files.pythonhosted.org/packages/5c/91/66ce08dbf73ecbfe34b47455f99641d5b874b4f75eaa64dacc57c32239cd/idswapper-0.1.0.tar.gz
+[2024-06-01 13:10:20] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: executing diffoscope
+[2024-06-01 13:10:20] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_available_to_promise_release-16.0.3.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_stock_available_to_promise_release-16.0.3.1.1-py3-none-any.whl.zip --markdown 20240601/o/odoo-addon-stock-available-to-promise-release/16.0.3.1.0.6-16.0.3.1.1/README.md --exclude *.pyd
+[2024-06-01 13:10:20] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.0.0.tar.gz]
+[2024-06-01 13:10:20] INFO root fetch - processPackages [wolframalpha]: Remove: archive file [/home/abi/fetcher/tmp/wolframalpha-5.0.1.tar.gz]
+[2024-06-01 13:10:20] INFO root fetch - main [MainThread]: End processing [wolframalpha]: success
+[2024-06-01 13:10:20] INFO root fetch - processPackages [IDswapper]: executing diffoscope
+[2024-06-01 13:10:20] INFO root fetch - processPackages [IDswapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idswapper-0.0.9.tar.gz tmp/idswapper-0.1.0.tar.gz --markdown 20240601/I/IDswapper/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-06-01 13:10:20] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.1.tar.gz]
+[2024-06-01 13:10:20] INFO root fetch - processPackages [sigmacode]: Remove: archive file [/home/abi/fetcher/tmp/sigmacode-0.0.2.tar.gz]
+[2024-06-01 13:10:20] INFO root fetch - main [MainThread]: End processing [sigmacode]: success
+[2024-06-01 13:10:20] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_available_to_promise_release-16.0.3.1.0.6-py3-none-any.whl.zip]
+[2024-06-01 13:10:20] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_available_to_promise_release-16.0.3.1.1-py3-none-any.whl.zip]
+[2024-06-01 13:10:20] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-available-to-promise-release]: success
+[2024-06-01 13:10:21] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.0.9.tar.gz]
+[2024-06-01 13:10:21] INFO root fetch - processPackages [IDswapper]: Remove: archive file [/home/abi/fetcher/tmp/idswapper-0.1.0.tar.gz]
+[2024-06-01 13:10:21] INFO root fetch - main [MainThread]: End processing [IDswapper]: success
+[2024-06-01 13:10:21] INFO root fetch - main [MainThread]: Store serial: [23479620]
