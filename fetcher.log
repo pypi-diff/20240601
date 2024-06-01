@@ -22846,3 +22846,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:34:11] INFO root fetch - processPackages [redbacktechpy]: Remove: archive file [/home/abi/fetcher/tmp/redbacktechpy-2024.5.1b3.tar.gz]
 [2024-06-01 22:34:11] INFO root fetch - main [MainThread]: End processing [redbacktechpy]: success
 [2024-06-01 22:34:11] INFO root fetch - main [MainThread]: Store serial: [23483371]
+[2024-06-01 22:36:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483371]
+[2024-06-01 22:36:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 22:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: librds
+[2024-06-01 22:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bleak
+[2024-06-01 22:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BayesBoom
+[2024-06-01 22:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: advanced-automapper
+[2024-06-01 22:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: freegenius
+[2024-06-01 22:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openai-batch-sdk
+[2024-06-01 22:36:21] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-06-01 22:36:21] INFO root fetch - processPackages [BayesBoom]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 22:36:21] WARNING root fetch - processPackages [openai-batch-sdk]: Skipping, unable to determine old version
+[2024-06-01 22:36:21] INFO root fetch - main [MainThread]: End processing [openai-batch-sdk] error
+[2024-06-01 22:36:21] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-06-01 22:36:21] INFO root fetch - processPackages [BayesBoom]: Downloading https://files.pythonhosted.org/packages/d7/43/f9488de886dd11f40125fbe9abcd2c156007521eda090587c88c3756d520/BayesBoom-0.1.8.tar.gz
+[2024-06-01 22:36:21] INFO root fetch - processPackages [librds]: New version: [1.6] Old Version: [1.5]
+[2024-06-01 22:36:21] WARNING root fetch - processPackages [advanced-automapper]: Skipping, unable to determine old version
+[2024-06-01 22:36:21] INFO root fetch - main [MainThread]: End processing [advanced-automapper] error
+[2024-06-01 22:36:21] INFO root fetch - processPackages [bleak]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-06-01 22:36:22] INFO root fetch - processPackages [librds]: Downloading https://files.pythonhosted.org/packages/78/93/241cd01274e2af7f7b215411760d32d4bf342f5a82aeefdab29a22a23715/librds-1.5.tar.gz
+[2024-06-01 22:36:22] INFO root fetch - processPackages [bleak]: Downloading https://files.pythonhosted.org/packages/e8/33/141a68b8770fc339dd0ddc0e1b5704bdd42bfe5755feaec56120954da614/bleak-0.9.0.tar.gz
+[2024-06-01 22:36:22] INFO root fetch - processPackages [BayesBoom]: Downloading https://files.pythonhosted.org/packages/75/c5/df2292137107ec3545524bcf8df92a13e22b03748fc4a2b3c524298a5841/BayesBoom-0.1.9.tar.gz
+[2024-06-01 22:36:22] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-06-01 22:36:22] INFO root fetch - processPackages [librds]: Downloading https://files.pythonhosted.org/packages/e6/11/48a0218885c0bd6812c88b4a4e2e3df2c2bcdf6f6d3520e8b4f5a2bf70f7/librds-1.6.tar.gz
+[2024-06-01 22:36:22] INFO root fetch - processPackages [bleak]: Downloading https://files.pythonhosted.org/packages/3e/43/6d88604149459a7e3fefe72c7cf03a95bafd33216c18d72ade40adeb427a/bleak-0.9.1.tar.gz
+[2024-06-01 22:36:22] INFO root fetch - processPackages [librds]: executing diffoscope
+[2024-06-01 22:36:22] INFO root fetch - processPackages [librds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librds-1.5.tar.gz tmp/librds-1.6.tar.gz --markdown 20240601/l/librds/1.5-1.6/README.md --exclude *.pyd
+[2024-06-01 22:36:22] INFO root fetch - processPackages [BayesBoom]: executing diffoscope
+[2024-06-01 22:36:22] INFO root fetch - processPackages [BayesBoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BayesBoom-0.1.8.tar.gz tmp/BayesBoom-0.1.9.tar.gz --markdown 20240601/B/BayesBoom/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 22:36:22] INFO root fetch - processPackages [bleak]: executing diffoscope
+[2024-06-01 22:36:22] INFO root fetch - processPackages [bleak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bleak-0.9.0.tar.gz tmp/bleak-0.9.1.tar.gz --markdown 20240601/b/bleak/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-06-01 22:36:22] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-06-01 22:36:22] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240601/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-06-01 22:36:23] INFO root fetch - processPackages [librds]: Remove: archive file [/home/abi/fetcher/tmp/librds-1.5.tar.gz]
+[2024-06-01 22:36:23] INFO root fetch - processPackages [librds]: Remove: archive file [/home/abi/fetcher/tmp/librds-1.6.tar.gz]
+[2024-06-01 22:36:23] INFO root fetch - main [MainThread]: End processing [librds]: success
+[2024-06-01 22:36:23] INFO root fetch - processPackages [bleak]: Remove: archive file [/home/abi/fetcher/tmp/bleak-0.9.0.tar.gz]
+[2024-06-01 22:36:23] INFO root fetch - processPackages [bleak]: Remove: archive file [/home/abi/fetcher/tmp/bleak-0.9.1.tar.gz]
+[2024-06-01 22:36:23] INFO root fetch - main [MainThread]: End processing [bleak]: success
+[2024-06-01 22:36:24] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-06-01 22:36:24] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-06-01 22:36:24] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-06-01 22:36:29] INFO root fetch - processPackages [BayesBoom]: Remove: archive file [/home/abi/fetcher/tmp/BayesBoom-0.1.8.tar.gz]
+[2024-06-01 22:36:29] INFO root fetch - processPackages [BayesBoom]: Remove: archive file [/home/abi/fetcher/tmp/BayesBoom-0.1.9.tar.gz]
+[2024-06-01 22:36:29] INFO root fetch - main [MainThread]: End processing [BayesBoom]: success
+[2024-06-01 22:36:29] INFO root fetch - main [MainThread]: Store serial: [23483393]
