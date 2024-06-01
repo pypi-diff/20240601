@@ -15308,3 +15308,24 @@ AssertionError: tmp/muko-2.6-py3-none-any.whl.zip does not exist
 [2024-06-01 13:31:34] INFO root fetch - processPackages [langroid]: Remove: archive file [/home/abi/fetcher/tmp/langroid-0.1.99.tar.gz]
 [2024-06-01 13:31:34] INFO root fetch - main [MainThread]: End processing [langroid]: success
 [2024-06-01 13:31:34] INFO root fetch - main [MainThread]: Store serial: [23479759]
+[2024-06-01 13:33:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479759]
+[2024-06-01 13:33:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 13:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiomql
+[2024-06-01 13:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python3-commons
+[2024-06-01 13:33:43] INFO root fetch - processPackages [aiomql]: New version: [3.22] Old Version: [3.21]
+[2024-06-01 13:33:43] INFO root fetch - processPackages [python3-commons]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-06-01 13:33:43] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/78/7a/a07b20c0edccdb172e4b62c76ef23fa909378796f5c9de0957b8ddfb80b3/python3_commons-0.5.8.tar.gz
+[2024-06-01 13:33:43] INFO root fetch - processPackages [aiomql]: Downloading https://files.pythonhosted.org/packages/73/67/7371c51f3c42fc0ca581ba581b8f45f34544b7fd5b77b16082692755f2ab/aiomql-3.21.tar.gz
+[2024-06-01 13:33:43] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/11/35/b353c6e9fb49ef089fcb645c3e1794bb907055a8b3de18a6b509abb9ecfc/python3_commons-0.5.9.tar.gz
+[2024-06-01 13:33:43] INFO root fetch - processPackages [python3-commons]: executing diffoscope
+[2024-06-01 13:33:43] INFO root fetch - processPackages [python3-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python3_commons-0.5.8.tar.gz tmp/python3_commons-0.5.9.tar.gz --markdown 20240601/p/python3-commons/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-06-01 13:33:43] INFO root fetch - processPackages [aiomql]: Downloading https://files.pythonhosted.org/packages/e5/76/95caf2a34a1bc9d6c87e82425ccda4681c0d1d6d4bb77f7cc8c196c6f722/aiomql-3.22.tar.gz
+[2024-06-01 13:33:43] INFO root fetch - processPackages [aiomql]: executing diffoscope
+[2024-06-01 13:33:43] INFO root fetch - processPackages [aiomql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomql-3.21.tar.gz tmp/aiomql-3.22.tar.gz --markdown 20240601/a/aiomql/3.21-3.22/README.md --exclude *.pyd
+[2024-06-01 13:33:44] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.8.tar.gz]
+[2024-06-01 13:33:44] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3_commons-0.5.9.tar.gz]
+[2024-06-01 13:33:44] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
+[2024-06-01 13:33:44] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.21.tar.gz]
+[2024-06-01 13:33:44] INFO root fetch - processPackages [aiomql]: Remove: archive file [/home/abi/fetcher/tmp/aiomql-3.22.tar.gz]
+[2024-06-01 13:33:44] INFO root fetch - main [MainThread]: End processing [aiomql]: success
+[2024-06-01 13:33:44] INFO root fetch - main [MainThread]: Store serial: [23479765]
