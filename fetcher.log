@@ -12704,3 +12704,24 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:09:10] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
 [2024-06-01 10:09:10] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
 [2024-06-01 10:09:10] INFO root fetch - main [MainThread]: Store serial: [23478439]
+[2024-06-01 10:11:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478439]
+[2024-06-01 10:11:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 10:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peregrine-pro
+[2024-06-01 10:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lckytools
+[2024-06-01 10:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: portia-pro
+[2024-06-01 10:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proxy-pool-pro
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: Downloading https://files.pythonhosted.org/packages/32/87/6919f602b2d930da1130e471770541db40ed561db6cf403688f591ee289c/lckytools-0.0.0a8.tar.gz
+[2024-06-01 10:11:19] WARNING root fetch - processPackages [peregrine-pro]: Skipping, unable to determine old version
+[2024-06-01 10:11:19] INFO root fetch - main [MainThread]: End processing [peregrine-pro] error
+[2024-06-01 10:11:19] WARNING root fetch - processPackages [portia-pro]: Skipping, unable to determine old version
+[2024-06-01 10:11:19] INFO root fetch - main [MainThread]: End processing [portia-pro] error
+[2024-06-01 10:11:19] WARNING root fetch - processPackages [proxy-pool-pro]: Skipping, unable to determine old version
+[2024-06-01 10:11:19] INFO root fetch - main [MainThread]: End processing [proxy-pool-pro] error
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: Downloading https://files.pythonhosted.org/packages/58/b4/76a808942400823f951edef5f1ed63b459873a985a8544794218b4f273ee/lckytools-0.0.0a9.tar.gz
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: executing diffoscope
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lckytools-0.0.0a8.tar.gz tmp/lckytools-0.0.0a9.tar.gz --markdown 20240601/l/lckytools/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a8.tar.gz]
+[2024-06-01 10:11:19] INFO root fetch - processPackages [lckytools]: Remove: archive file [/home/abi/fetcher/tmp/lckytools-0.0.0a9.tar.gz]
+[2024-06-01 10:11:19] INFO root fetch - main [MainThread]: End processing [lckytools]: success
+[2024-06-01 10:11:19] INFO root fetch - main [MainThread]: Store serial: [23478457]
