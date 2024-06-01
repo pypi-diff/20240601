@@ -14325,3 +14325,36 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 12:22:16] INFO root fetch - main [MainThread]: End processing [jinjyaml]: success
 [2024-06-01 12:22:16] INFO root fetch - main [MainThread]: End processing [sc3dg]: success
 [2024-06-01 12:22:16] INFO root fetch - main [MainThread]: Store serial: [23479320]
+[2024-06-01 12:24:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479320]
+[2024-06-01 12:24:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 12:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-interface
+[2024-06-01 12:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grassnechik
+[2024-06-01 12:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-bulk-tracker
+[2024-06-01 12:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anne
+[2024-06-01 12:24:25] INFO root fetch - processPackages [anne]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-06-01 12:24:25] INFO root fetch - processPackages [django-bulk-tracker]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-06-01 12:24:25] INFO root fetch - processPackages [grassnechik]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-06-01 12:24:25] WARNING root fetch - processPackages [flask-interface]: Skipping, unable to determine old version
+[2024-06-01 12:24:25] INFO root fetch - main [MainThread]: End processing [flask-interface] error
+[2024-06-01 12:24:25] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/52/84/df465187bd8d0bb550e366b18560b057ea956f42a57a697dc22f86cbae45/anne-1.0.8.tar.gz
+[2024-06-01 12:24:25] INFO root fetch - processPackages [django-bulk-tracker]: Downloading https://files.pythonhosted.org/packages/ed/2a/956a72d13d625ac57db6c7a2bd12bf99bdabed663ded1ed6a429b15a4dcc/django-bulk-tracker-0.0.7.tar.gz
+[2024-06-01 12:24:26] INFO root fetch - processPackages [grassnechik]: Downloading https://files.pythonhosted.org/packages/a7/bf/da164f79188087a9ac6ca0234b3513cad332da770799c93dbfde280344dd/grassnechik-0.2.0.tar.gz
+[2024-06-01 12:24:26] INFO root fetch - processPackages [anne]: Downloading https://files.pythonhosted.org/packages/00/84/111edc147df2b374dfa2af17c6599712f9c953d85c95fefe4949dc42dee8/anne-1.0.9.tar.gz
+[2024-06-01 12:24:26] INFO root fetch - processPackages [django-bulk-tracker]: Downloading https://files.pythonhosted.org/packages/f3/59/afad8a1c85010eec17c7544ba131bc74c881cef25662bebf91627aead73d/django_bulk_tracker-0.0.8.tar.gz
+[2024-06-01 12:24:26] INFO root fetch - processPackages [anne]: executing diffoscope
+[2024-06-01 12:24:26] INFO root fetch - processPackages [anne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anne-1.0.8.tar.gz tmp/anne-1.0.9.tar.gz --markdown 20240601/a/anne/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-06-01 12:24:26] INFO root fetch - processPackages [django-bulk-tracker]: executing diffoscope
+[2024-06-01 12:24:26] INFO root fetch - processPackages [django-bulk-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bulk-tracker-0.0.7.tar.gz tmp/django_bulk_tracker-0.0.8.tar.gz --markdown 20240601/d/django-bulk-tracker/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-06-01 12:24:26] INFO root fetch - processPackages [grassnechik]: Downloading https://files.pythonhosted.org/packages/d3/b4/826d95cb7c3e437978549d88ee2bb1f890c64ad47c1c70112394779765c4/grassnechik-0.3.0.tar.gz
+[2024-06-01 12:24:26] INFO root fetch - processPackages [grassnechik]: executing diffoscope
+[2024-06-01 12:24:26] INFO root fetch - processPackages [grassnechik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grassnechik-0.2.0.tar.gz tmp/grassnechik-0.3.0.tar.gz --markdown 20240601/g/grassnechik/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-06-01 12:24:26] INFO root fetch - processPackages [django-bulk-tracker]: Remove: archive file [/home/abi/fetcher/tmp/django-bulk-tracker-0.0.7.tar.gz]
+[2024-06-01 12:24:26] INFO root fetch - processPackages [django-bulk-tracker]: Remove: archive file [/home/abi/fetcher/tmp/django_bulk_tracker-0.0.8.tar.gz]
+[2024-06-01 12:24:26] INFO root fetch - main [MainThread]: End processing [django-bulk-tracker]: success
+[2024-06-01 12:24:26] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.0.8.tar.gz]
+[2024-06-01 12:24:26] INFO root fetch - processPackages [anne]: Remove: archive file [/home/abi/fetcher/tmp/anne-1.0.9.tar.gz]
+[2024-06-01 12:24:26] INFO root fetch - main [MainThread]: End processing [anne]: success
+[2024-06-01 12:24:26] INFO root fetch - processPackages [grassnechik]: Remove: archive file [/home/abi/fetcher/tmp/grassnechik-0.2.0.tar.gz]
+[2024-06-01 12:24:26] INFO root fetch - processPackages [grassnechik]: Remove: archive file [/home/abi/fetcher/tmp/grassnechik-0.3.0.tar.gz]
+[2024-06-01 12:24:26] INFO root fetch - main [MainThread]: End processing [grassnechik]: success
+[2024-06-01 12:24:26] INFO root fetch - main [MainThread]: Store serial: [23479333]
