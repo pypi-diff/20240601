@@ -23188,3 +23188,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 23:00:28] INFO root fetch - processPackages [flet-box-gui]: Remove: archive file [/home/abi/fetcher/tmp/flet-box-gui-0.1.2.2.tar.gz]
 [2024-06-01 23:00:28] INFO root fetch - main [MainThread]: End processing [flet-box-gui]: success
 [2024-06-01 23:00:28] INFO root fetch - main [MainThread]: Store serial: [23483557]
+[2024-06-01 23:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483557]
+[2024-06-01 23:02:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 23:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rencrypt
+[2024-06-01 23:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiocloudweather
+[2024-06-01 23:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmail
+[2024-06-01 23:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easymp3
+[2024-06-01 23:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vmstate
+[2024-06-01 23:02:37] INFO root fetch - processPackages [vmstate]: New version: [1.2] Old Version: [1.1]
+[2024-06-01 23:02:37] INFO root fetch - processPackages [aiocloudweather]: New version: [2024.6.0] Old Version: [2024.5.1]
+[2024-06-01 23:02:37] INFO root fetch - processPackages [vmstate]: Downloading https://files.pythonhosted.org/packages/c1/db/97cae45323ea1aaccc7d096d72c8836c8878e18c6718c0b610a1dab60fb5/vmstate-1.1.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [llmail]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-06-01 23:02:37] WARNING root fetch - processPackages [easymp3]: Skipping, unable to determine old version
+[2024-06-01 23:02:37] INFO root fetch - main [MainThread]: End processing [easymp3] error
+[2024-06-01 23:02:37] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/83/b7/b755e5e8082a294398c07ecac5545d1dd1fc53a5777e3215824332979566/aiocloudweather-2024.5.1.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [rencrypt]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-06-01 23:02:37] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/1f/56/8741375e13fe90a40a10498f17418ff4a38cede323860829a77b9f674fb7/llmail-0.2.4.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [aiocloudweather]: Downloading https://files.pythonhosted.org/packages/2d/e6/a38e878635f9c7f9e245b56514d3397ffb7fdb0078e06d12e55e9d1c2894/aiocloudweather-2024.6.0.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/a6/25/8242ff2eb1086921ce695d7e231562ff3852dfaf31c497aea971e084b365/REncrypt-0.1.8.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [vmstate]: Downloading https://files.pythonhosted.org/packages/88/1e/9c70d41af22be6536f97894189fedacc53a8cdf2988d5659d8e7b7cab9ad/vmstate-1.2.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [aiocloudweather]: executing diffoscope
+[2024-06-01 23:02:37] INFO root fetch - processPackages [aiocloudweather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocloudweather-2024.5.1.tar.gz tmp/aiocloudweather-2024.6.0.tar.gz --markdown 20240601/a/aiocloudweather/2024.5.1-2024.6.0/README.md --exclude *.pyd
+[2024-06-01 23:02:37] INFO root fetch - processPackages [vmstate]: executing diffoscope
+[2024-06-01 23:02:37] INFO root fetch - processPackages [vmstate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmstate-1.1.tar.gz tmp/vmstate-1.2.tar.gz --markdown 20240601/v/vmstate/1.1-1.2/README.md --exclude *.pyd
+[2024-06-01 23:02:37] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/ac/bc/439e0038632218b7136419748c4f182424e3a41d7ad8fe6c0ae6707bb26c/llmail-0.2.5.tar.gz
+[2024-06-01 23:02:37] INFO root fetch - processPackages [llmail]: executing diffoscope
+[2024-06-01 23:02:37] INFO root fetch - processPackages [llmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmail-0.2.4.tar.gz tmp/llmail-0.2.5.tar.gz --markdown 20240601/l/llmail/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-06-01 23:02:37] INFO root fetch - processPackages [rencrypt]: Downloading https://files.pythonhosted.org/packages/05/a0/d8093ea3b8c7cffd668f46310034f7690d20e23a1a2e2c643fe41a9d9e9c/REncrypt-0.1.9.tar.gz
+[2024-06-01 23:02:38] INFO root fetch - processPackages [vmstate]: Remove: archive file [/home/abi/fetcher/tmp/vmstate-1.1.tar.gz]
+[2024-06-01 23:02:38] INFO root fetch - processPackages [vmstate]: Remove: archive file [/home/abi/fetcher/tmp/vmstate-1.2.tar.gz]
+[2024-06-01 23:02:38] INFO root fetch - main [MainThread]: End processing [vmstate]: success
+[2024-06-01 23:02:38] INFO root fetch - processPackages [rencrypt]: executing diffoscope
+[2024-06-01 23:02:38] INFO root fetch - processPackages [rencrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REncrypt-0.1.8.tar.gz tmp/REncrypt-0.1.9.tar.gz --markdown 20240601/r/rencrypt/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-06-01 23:02:38] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.5.1.tar.gz]
+[2024-06-01 23:02:38] INFO root fetch - processPackages [aiocloudweather]: Remove: archive file [/home/abi/fetcher/tmp/aiocloudweather-2024.6.0.tar.gz]
+[2024-06-01 23:02:38] INFO root fetch - main [MainThread]: End processing [aiocloudweather]: success
+[2024-06-01 23:02:38] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.4.tar.gz]
+[2024-06-01 23:02:38] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.5.tar.gz]
+[2024-06-01 23:02:38] INFO root fetch - main [MainThread]: End processing [llmail]: success
+[2024-06-01 23:02:40] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.8.tar.gz]
+[2024-06-01 23:02:40] INFO root fetch - processPackages [rencrypt]: Remove: archive file [/home/abi/fetcher/tmp/REncrypt-0.1.9.tar.gz]
+[2024-06-01 23:02:40] INFO root fetch - main [MainThread]: End processing [rencrypt]: success
+[2024-06-01 23:02:40] INFO root fetch - main [MainThread]: Store serial: [23483620]
