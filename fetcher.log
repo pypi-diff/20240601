@@ -22155,3 +22155,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:37:33] INFO root fetch - processPackages [wagtail-cjkcms]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_cjkcms-24.6.1.tar.gz]
 [2024-06-01 21:37:33] INFO root fetch - main [MainThread]: End processing [wagtail-cjkcms]: success
 [2024-06-01 21:37:33] INFO root fetch - main [MainThread]: Store serial: [23483046]
+[2024-06-01 21:39:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483046]
+[2024-06-01 21:39:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-06-01 21:39:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyFileOps
+[2024-06-01 21:39:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postgrest
+[2024-06-01 21:39:43] INFO root fetch - processPackages [postgrest]: New version: [0.16.6] Old Version: [0.16.5]
+[2024-06-01 21:39:43] INFO root fetch - processPackages [postgrest]: Downloading https://files.pythonhosted.org/packages/2a/85/e6fa8eeaf7d14d591a05a833d31d2eced3ab3898f75e308f14b18568fa2d/postgrest-0.16.5.tar.gz
+[2024-06-01 21:39:43] WARNING root fetch - processPackages [EasyFileOps]: Skipping, unable to determine old version
+[2024-06-01 21:39:43] INFO root fetch - main [MainThread]: End processing [EasyFileOps] error
+[2024-06-01 21:39:44] INFO root fetch - processPackages [postgrest]: Downloading https://files.pythonhosted.org/packages/40/be/ef7d96260cecd7c214611fb7ee71b3b2b480271f56eac7908dacf7994351/postgrest-0.16.6.tar.gz
+[2024-06-01 21:39:44] INFO root fetch - processPackages [postgrest]: executing diffoscope
+[2024-06-01 21:39:44] INFO root fetch - processPackages [postgrest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postgrest-0.16.5.tar.gz tmp/postgrest-0.16.6.tar.gz --markdown 20240601/p/postgrest/0.16.5-0.16.6/README.md --exclude *.pyd
+[2024-06-01 21:39:44] INFO root fetch - processPackages [postgrest]: Remove: archive file [/home/abi/fetcher/tmp/postgrest-0.16.5.tar.gz]
+[2024-06-01 21:39:44] INFO root fetch - processPackages [postgrest]: Remove: archive file [/home/abi/fetcher/tmp/postgrest-0.16.6.tar.gz]
+[2024-06-01 21:39:44] INFO root fetch - main [MainThread]: End processing [postgrest]: success
+[2024-06-01 21:39:44] INFO root fetch - main [MainThread]: Store serial: [23483054]
