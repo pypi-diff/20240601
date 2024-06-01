@@ -3437,3 +3437,27 @@
 [2024-06-01 03:03:50] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.4.0.tar.gz]
 [2024-06-01 03:03:50] INFO root fetch - main [MainThread]: End processing [pr-pilot-cli]: success
 [2024-06-01 03:03:50] INFO root fetch - main [MainThread]: Store serial: [23474510]
+[2024-06-01 03:05:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474510]
+[2024-06-01 03:05:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 03:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pr-pilot-cli
+[2024-06-01 03:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teleddns
+[2024-06-01 03:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatmemoryc
+[2024-06-01 03:05:58] INFO root fetch - processPackages [pr-pilot-cli]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-06-01 03:05:58] INFO root fetch - processPackages [pr-pilot-cli]: Downloading https://files.pythonhosted.org/packages/cc/77/d834f1a05332e023390ea14a080c6d998b495ae86f3c5a4cd0a10c48c7ba/pr_pilot_cli-1.4.0.tar.gz
+[2024-06-01 03:05:58] WARNING root fetch - processPackages [teleddns]: Skipping, unable to determine old version
+[2024-06-01 03:05:58] INFO root fetch - main [MainThread]: End processing [teleddns] error
+[2024-06-01 03:05:58] INFO root fetch - processPackages [chatmemoryc]: New version: [0.1.4rc2] Old Version: [0.1.4rc1]
+[2024-06-01 03:05:58] INFO root fetch - processPackages [chatmemoryc]: Downloading https://files.pythonhosted.org/packages/6c/f3/e52e5af752b738447a016db7caa711c92094588a47b459fe1d3878387cef/chatmemoryc-0.1.4rc1.tar.gz
+[2024-06-01 03:05:58] INFO root fetch - processPackages [pr-pilot-cli]: Downloading https://files.pythonhosted.org/packages/62/a0/0f696d58b0b53c1a97610c9f21262bb6907159c1ae1ed7b470e02d43356c/pr_pilot_cli-1.4.1.tar.gz
+[2024-06-01 03:05:59] INFO root fetch - processPackages [pr-pilot-cli]: executing diffoscope
+[2024-06-01 03:05:59] INFO root fetch - processPackages [pr-pilot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pr_pilot_cli-1.4.0.tar.gz tmp/pr_pilot_cli-1.4.1.tar.gz --markdown 20240601/p/pr-pilot-cli/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-06-01 03:05:59] INFO root fetch - processPackages [chatmemoryc]: Downloading https://files.pythonhosted.org/packages/7a/29/f09e07adce9b010c7d1e3cfac2385322587d1a71c0ae3b0f4853838fb6af/chatmemoryc-0.1.4rc2.tar.gz
+[2024-06-01 03:05:59] INFO root fetch - processPackages [chatmemoryc]: executing diffoscope
+[2024-06-01 03:05:59] INFO root fetch - processPackages [chatmemoryc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatmemoryc-0.1.4rc1.tar.gz tmp/chatmemoryc-0.1.4rc2.tar.gz --markdown 20240601/c/chatmemoryc/0.1.4rc1-0.1.4rc2/README.md --exclude *.pyd
+[2024-06-01 03:05:59] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.4.0.tar.gz]
+[2024-06-01 03:05:59] INFO root fetch - processPackages [pr-pilot-cli]: Remove: archive file [/home/abi/fetcher/tmp/pr_pilot_cli-1.4.1.tar.gz]
+[2024-06-01 03:05:59] INFO root fetch - main [MainThread]: End processing [pr-pilot-cli]: success
+[2024-06-01 03:06:00] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc1.tar.gz]
+[2024-06-01 03:06:00] INFO root fetch - processPackages [chatmemoryc]: Remove: archive file [/home/abi/fetcher/tmp/chatmemoryc-0.1.4rc2.tar.gz]
+[2024-06-01 03:06:00] INFO root fetch - main [MainThread]: End processing [chatmemoryc]: success
+[2024-06-01 03:06:00] INFO root fetch - main [MainThread]: Store serial: [23474526]
