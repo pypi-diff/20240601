@@ -22003,3 +22003,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 21:26:33] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.99.tar.gz]
 [2024-06-01 21:26:33] INFO root fetch - main [MainThread]: End processing [rattail]: success
 [2024-06-01 21:26:33] INFO root fetch - main [MainThread]: Store serial: [23482978]
+[2024-06-01 21:28:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23482978]
+[2024-06-01 21:28:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-06-01 21:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unthermal
+[2024-06-01 21:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Tailbone
+[2024-06-01 21:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esentity
+[2024-06-01 21:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kozmo-ai
+[2024-06-01 21:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: saraApi
+[2024-06-01 21:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: codejudge-common-utils
+[2024-06-01 21:28:42] INFO root fetch - processPackages [unthermal]: New version: [0.1001] Old Version: [0.1.dev1]
+[2024-06-01 21:28:42] WARNING root fetch - processPackages [codejudge-common-utils]: Skipping, unable to determine old version
+[2024-06-01 21:28:42] INFO root fetch - main [MainThread]: End processing [codejudge-common-utils] error
+[2024-06-01 21:28:42] INFO root fetch - processPackages [kozmo-ai]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-06-01 21:28:42] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/f5/f8/d07227a2c3d141fb8d9790c5141cdcd1a3cef178b6d77f2c0185cba50086/unthermal-0.1.dev1.tar.gz
+[2024-06-01 21:28:42] INFO root fetch - processPackages [esentity]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-06-01 21:28:42] INFO root fetch - processPackages [Tailbone]: New version: [0.9.96] Old Version: [0.9.95]
+[2024-06-01 21:28:42] INFO root fetch - processPackages [saraApi]: New version: [0.0.1.3] Old Version: [0.0.1.2]
+[2024-06-01 21:28:42] INFO root fetch - processPackages [kozmo-ai]: Downloading https://files.pythonhosted.org/packages/3e/0d/664bd8e4c414b8c514390f0cb8e380e27625b380baa19478aa3b2093239b/kozmo_ai-0.1.1.tar.gz
+[2024-06-01 21:28:42] WARNING root fetch - processPackages [kozmo-ai]: Skipping package: exceeds size limit 19212087>=10485760
+[2024-06-01 21:28:42] INFO root fetch - main [MainThread]: End processing [kozmo-ai] error
+[2024-06-01 21:28:42] INFO root fetch - processPackages [unthermal]: Downloading https://files.pythonhosted.org/packages/d5/81/664671b86da1a5bcd349280ea890d75f32be93c4daadc3b562edf311352c/unthermal-0.1001.tar.gz
+[2024-06-01 21:28:42] INFO root fetch - processPackages [Tailbone]: Downloading https://files.pythonhosted.org/packages/d3/f5/6281835322a9736c1e981d64eaedbd9719a7822f9b959938a9e431dfae22/tailbone-0.9.95.tar.gz
+[2024-06-01 21:28:42] INFO root fetch - processPackages [saraApi]: Downloading https://files.pythonhosted.org/packages/d7/f0/43a1d4fbfb5f4ab4d6eedae2274883100330dd84a54c075b86f43a886e85/saraapi-0.0.1.2.tar.gz
+[2024-06-01 21:28:42] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/1e/9f/e0a6280d40e9cb6e3dfaa2e923b81a0d650931aa948d73ca9a8a3fbf219d/esentity-0.2.98.tar.gz
+[2024-06-01 21:28:42] INFO root fetch - processPackages [unthermal]: executing diffoscope
+[2024-06-01 21:28:42] INFO root fetch - processPackages [unthermal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unthermal-0.1.dev1.tar.gz tmp/unthermal-0.1001.tar.gz --markdown 20240601/u/unthermal/0.1.dev1-0.1001/README.md --exclude *.pyd
+[2024-06-01 21:28:43] INFO root fetch - processPackages [saraApi]: Downloading https://files.pythonhosted.org/packages/64/5c/07def62490de6d709cbe6fb905c1e3303e5a6a8da76a0f18f85ea95ba2c0/saraapi-0.0.1.3.tar.gz
+[2024-06-01 21:28:43] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/c8/5b/c12322aa6c71e3e0da12b137cf7fef6f67acbd686b0adeaffba5426fd63b/esentity-0.2.99.tar.gz
+[2024-06-01 21:28:43] INFO root fetch - processPackages [Tailbone]: Downloading https://files.pythonhosted.org/packages/40/48/d068d15e5c14b9048d5ffad6867d9353d33adf32a71b13b2a439ef5bdb17/tailbone-0.9.96.tar.gz
+[2024-06-01 21:28:43] INFO root fetch - processPackages [saraApi]: executing diffoscope
+[2024-06-01 21:28:43] INFO root fetch - processPackages [saraApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saraapi-0.0.1.2.tar.gz tmp/saraapi-0.0.1.3.tar.gz --markdown 20240601/s/saraApi/0.0.1.2-0.0.1.3/README.md --exclude *.pyd
+[2024-06-01 21:28:43] INFO root fetch - processPackages [esentity]: executing diffoscope
+[2024-06-01 21:28:43] INFO root fetch - processPackages [esentity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esentity-0.2.98.tar.gz tmp/esentity-0.2.99.tar.gz --markdown 20240601/e/esentity/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-06-01 21:28:43] INFO root fetch - processPackages [Tailbone]: executing diffoscope
+[2024-06-01 21:28:43] INFO root fetch - processPackages [Tailbone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailbone-0.9.95.tar.gz tmp/tailbone-0.9.96.tar.gz --markdown 20240601/T/Tailbone/0.9.95-0.9.96/README.md --exclude *.pyd
+[2024-06-01 21:28:43] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1.dev1.tar.gz]
+[2024-06-01 21:28:43] INFO root fetch - processPackages [unthermal]: Remove: archive file [/home/abi/fetcher/tmp/unthermal-0.1001.tar.gz]
+[2024-06-01 21:28:43] INFO root fetch - main [MainThread]: End processing [unthermal]: success
+[2024-06-01 21:28:43] INFO root fetch - processPackages [esentity]: Remove: archive file [/home/abi/fetcher/tmp/esentity-0.2.98.tar.gz]
+[2024-06-01 21:28:43] INFO root fetch - processPackages [esentity]: Remove: archive file [/home/abi/fetcher/tmp/esentity-0.2.99.tar.gz]
+[2024-06-01 21:28:43] INFO root fetch - main [MainThread]: End processing [esentity]: success
+[2024-06-01 21:28:44] INFO root fetch - processPackages [saraApi]: Remove: archive file [/home/abi/fetcher/tmp/saraapi-0.0.1.2.tar.gz]
+[2024-06-01 21:28:44] INFO root fetch - processPackages [saraApi]: Remove: archive file [/home/abi/fetcher/tmp/saraapi-0.0.1.3.tar.gz]
+[2024-06-01 21:28:44] INFO root fetch - main [MainThread]: End processing [saraApi]: success
+[2024-06-01 21:28:45] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.95.tar.gz]
+[2024-06-01 21:28:45] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.96.tar.gz]
+[2024-06-01 21:28:45] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
+[2024-06-01 21:28:45] INFO root fetch - main [MainThread]: Store serial: [23483003]
