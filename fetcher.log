@@ -22714,3 +22714,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:21:09] INFO root fetch - processPackages [nnetsauce]: Remove: archive file [/home/abi/fetcher/tmp/nnetsauce-0.9.6-cp38-cp38-macosx_10_15_x86_64.whl.zip]
 [2024-06-01 22:21:09] INFO root fetch - main [MainThread]: End processing [nnetsauce]: success
 [2024-06-01 22:21:09] INFO root fetch - main [MainThread]: Store serial: [23483317]
+[2024-06-01 22:23:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483317]
+[2024-06-01 22:23:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 22:23:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyFileOps
+[2024-06-01 22:23:18] INFO root fetch - processPackages [EasyFileOps]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-06-01 22:23:18] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/a0/df/ca03a2fab82c22d3e20f53a2329089f1629f047649c909a4e7018f160be1/easyfileops-0.1.3.tar.gz
+[2024-06-01 22:23:19] INFO root fetch - processPackages [EasyFileOps]: Downloading https://files.pythonhosted.org/packages/75/ec/0f47b110dfb6c36a3ca5b53d0866ef328d3807a31e54fc91355d5a038499/easyfileops-0.1.4.tar.gz
+[2024-06-01 22:23:19] INFO root fetch - processPackages [EasyFileOps]: executing diffoscope
+[2024-06-01 22:23:19] INFO root fetch - processPackages [EasyFileOps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyfileops-0.1.3.tar.gz tmp/easyfileops-0.1.4.tar.gz --markdown 20240601/E/EasyFileOps/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-06-01 22:23:19] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.3.tar.gz]
+[2024-06-01 22:23:19] INFO root fetch - processPackages [EasyFileOps]: Remove: archive file [/home/abi/fetcher/tmp/easyfileops-0.1.4.tar.gz]
+[2024-06-01 22:23:19] INFO root fetch - main [MainThread]: End processing [EasyFileOps]: success
+[2024-06-01 22:23:19] INFO root fetch - main [MainThread]: Store serial: [23483320]
