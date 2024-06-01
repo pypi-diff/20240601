@@ -12776,3 +12776,21 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 10:13:29] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240601.129.tar.gz]
 [2024-06-01 10:13:29] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
 [2024-06-01 10:13:29] INFO root fetch - main [MainThread]: Store serial: [23478489]
+[2024-06-01 10:15:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23478489]
+[2024-06-01 10:15:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 10:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Python-stock
+[2024-06-01 10:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: popoll-backend
+[2024-06-01 10:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tunan-ground
+[2024-06-01 10:15:38] INFO root fetch - processPackages [popoll-backend]: New version: [0.0.64] Old Version: [0.0.63]
+[2024-06-01 10:15:38] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/ba/c9/79912cba92a6168bbcd737846bfbe9b63014c15b381fe244e1a13773667a/popoll_backend-0.0.63.tar.gz
+[2024-06-01 10:15:38] WARNING root fetch - processPackages [Python-stock]: Skipping, unable to determine old version
+[2024-06-01 10:15:38] INFO root fetch - main [MainThread]: End processing [Python-stock] error
+[2024-06-01 10:15:38] WARNING root fetch - processPackages [tunan-ground]: Skipping, unable to determine old version
+[2024-06-01 10:15:38] INFO root fetch - main [MainThread]: End processing [tunan-ground] error
+[2024-06-01 10:15:38] INFO root fetch - processPackages [popoll-backend]: Downloading https://files.pythonhosted.org/packages/61/be/516f45a1baed868d686caa1822fc6ed33c3fdf66e135f0d37ce4eadcf2bf/popoll_backend-0.0.64.tar.gz
+[2024-06-01 10:15:38] INFO root fetch - processPackages [popoll-backend]: executing diffoscope
+[2024-06-01 10:15:38] INFO root fetch - processPackages [popoll-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popoll_backend-0.0.63.tar.gz tmp/popoll_backend-0.0.64.tar.gz --markdown 20240601/p/popoll-backend/0.0.63-0.0.64/README.md --exclude *.pyd
+[2024-06-01 10:15:39] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.63.tar.gz]
+[2024-06-01 10:15:39] INFO root fetch - processPackages [popoll-backend]: Remove: archive file [/home/abi/fetcher/tmp/popoll_backend-0.0.64.tar.gz]
+[2024-06-01 10:15:39] INFO root fetch - main [MainThread]: End processing [popoll-backend]: success
+[2024-06-01 10:15:39] INFO root fetch - main [MainThread]: Store serial: [23478502]
