@@ -22810,3 +22810,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:29:52] INFO root fetch - processPackages [playwright-html-renderer]: Remove: archive file [/home/abi/fetcher/tmp/playwright_html_renderer-0.2.tar.gz]
 [2024-06-01 22:29:52] INFO root fetch - main [MainThread]: End processing [playwright-html-renderer]: success
 [2024-06-01 22:29:52] INFO root fetch - main [MainThread]: Store serial: [23483349]
+[2024-06-01 22:31:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483349]
+[2024-06-01 22:32:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-06-01 22:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-fck-nat
+[2024-06-01 22:32:01] INFO root fetch - processPackages [cdk-fck-nat]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-06-01 22:32:01] INFO root fetch - processPackages [cdk-fck-nat]: Downloading https://files.pythonhosted.org/packages/c8/bd/a44f0a2da35d3b7e3f700724cfd9964c646499bf2562b6735d9a4a0d246b/cdk-fck-nat-1.4.6.tar.gz
+[2024-06-01 22:32:01] INFO root fetch - processPackages [cdk-fck-nat]: Downloading https://files.pythonhosted.org/packages/27/ff/928abd859ee502e576109f2dbce55ca36bd143cc6d7b55f29b6416043e7c/cdk-fck-nat-1.4.7.tar.gz
+[2024-06-01 22:32:01] INFO root fetch - processPackages [cdk-fck-nat]: executing diffoscope
+[2024-06-01 22:32:01] INFO root fetch - processPackages [cdk-fck-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-fck-nat-1.4.6.tar.gz tmp/cdk-fck-nat-1.4.7.tar.gz --markdown 20240601/c/cdk-fck-nat/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-06-01 22:32:02] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.6.tar.gz]
+[2024-06-01 22:32:02] INFO root fetch - processPackages [cdk-fck-nat]: Remove: archive file [/home/abi/fetcher/tmp/cdk-fck-nat-1.4.7.tar.gz]
+[2024-06-01 22:32:02] INFO root fetch - main [MainThread]: End processing [cdk-fck-nat]: success
+[2024-06-01 22:32:02] INFO root fetch - main [MainThread]: Store serial: [23483352]
