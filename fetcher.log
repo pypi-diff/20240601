@@ -13789,3 +13789,42 @@ AssertionError: tmp/airtable_scraper-0.0.2.tar.gz does not exist
 [2024-06-01 11:34:45] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a9.tar.gz]
 [2024-06-01 11:34:45] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
 [2024-06-01 11:34:45] INFO root fetch - main [MainThread]: Store serial: [23479073]
+[2024-06-01 11:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23479073]
+[2024-06-01 11:36:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 11:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opmcpg
+[2024-06-01 11:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vitaldb
+[2024-06-01 11:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: packaging-demo-avr
+[2024-06-01 11:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: correct-hours
+[2024-06-01 11:36:53] INFO root fetch - processPackages [correct-hours]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-06-01 11:36:53] INFO root fetch - processPackages [vitaldb]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-06-01 11:36:53] INFO root fetch - processPackages [opmcpg]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-06-01 11:36:53] INFO root fetch - processPackages [packaging-demo-avr]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 11:36:54] INFO root fetch - processPackages [correct-hours]: Downloading https://files.pythonhosted.org/packages/f5/3e/6a7461dbf5f59cb762abf7fa6820d0ab7901ecb51c9fd3d036aa941a9481/correct-hours-1.2.0.tar.gz
+[2024-06-01 11:36:54] INFO root fetch - processPackages [vitaldb]: Downloading https://files.pythonhosted.org/packages/10/b6/5e07b69b901d3d14ad89069a40ede21887ed8a0d7ce8d8b9001803735c5c/vitaldb-1.4.8-py3-none-any.whl
+[2024-06-01 11:36:54] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/19/c1/b6cad6fba70ab51f7b9943433abab22866f3a34942411d0bc0f3e530eff3/packaging_demo_avr-0.0.8.tar.gz
+[2024-06-01 11:36:54] INFO root fetch - processPackages [opmcpg]: Downloading https://files.pythonhosted.org/packages/85/4c/90e8b7a344cac4ed6e7445b6c28eec5c90096ff9ef06e550850017667204/opmcpg-0.0.3-cp39-cp39-win_amd64.whl
+[2024-06-01 11:36:54] INFO root fetch - processPackages [correct-hours]: Downloading https://files.pythonhosted.org/packages/0d/05/6a0899dd293794061b9f7ef29a47283b3de1966e2c74f9d29e06c35f7898/correct_hours-2.0.0.tar.gz
+[2024-06-01 11:36:54] INFO root fetch - processPackages [vitaldb]: Downloading https://files.pythonhosted.org/packages/64/89/a8e957d3d34dfa56b706ce8b8344e73b1c7a7abe7cb035aec2d0f57fc8d3/vitaldb-1.4.9-py3-none-any.whl
+[2024-06-01 11:36:54] INFO root fetch - processPackages [opmcpg]: Downloading https://files.pythonhosted.org/packages/98/53/fc4eef6039dc0d525befa91b1c87560711fd1c23fbb5d23318fbbbe4f5da/opmcpg-0.0.4-cp39-cp39-win_amd64.whl
+[2024-06-01 11:36:54] INFO root fetch - processPackages [correct-hours]: executing diffoscope
+[2024-06-01 11:36:54] INFO root fetch - processPackages [correct-hours]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/correct-hours-1.2.0.tar.gz tmp/correct_hours-2.0.0.tar.gz --markdown 20240601/c/correct-hours/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-06-01 11:36:54] INFO root fetch - processPackages [vitaldb]: executing diffoscope
+[2024-06-01 11:36:54] INFO root fetch - processPackages [vitaldb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vitaldb-1.4.8-py3-none-any.whl.zip tmp/vitaldb-1.4.9-py3-none-any.whl.zip --markdown 20240601/v/vitaldb/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-06-01 11:36:54] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/d9/b3/9fc4edb81e5bbb77b7a6a09bac3ffe90010c6c3c869503a83a4e0da474c1/packaging_demo_avr-0.0.9.tar.gz
+[2024-06-01 11:36:54] INFO root fetch - processPackages [opmcpg]: executing diffoscope
+[2024-06-01 11:36:54] INFO root fetch - processPackages [opmcpg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opmcpg-0.0.3-cp39-cp39-win_amd64.whl.zip tmp/opmcpg-0.0.4-cp39-cp39-win_amd64.whl.zip --markdown 20240601/o/opmcpg/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-06-01 11:36:54] INFO root fetch - processPackages [packaging-demo-avr]: executing diffoscope
+[2024-06-01 11:36:54] INFO root fetch - processPackages [packaging-demo-avr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaging_demo_avr-0.0.8.tar.gz tmp/packaging_demo_avr-0.0.9.tar.gz --markdown 20240601/p/packaging-demo-avr/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 11:36:55] INFO root fetch - processPackages [vitaldb]: Remove: archive file [/home/abi/fetcher/tmp/vitaldb-1.4.8-py3-none-any.whl.zip]
+[2024-06-01 11:36:55] INFO root fetch - processPackages [vitaldb]: Remove: archive file [/home/abi/fetcher/tmp/vitaldb-1.4.9-py3-none-any.whl.zip]
+[2024-06-01 11:36:55] INFO root fetch - main [MainThread]: End processing [vitaldb]: success
+[2024-06-01 11:36:55] INFO root fetch - processPackages [correct-hours]: Remove: archive file [/home/abi/fetcher/tmp/correct-hours-1.2.0.tar.gz]
+[2024-06-01 11:36:55] INFO root fetch - processPackages [correct-hours]: Remove: archive file [/home/abi/fetcher/tmp/correct_hours-2.0.0.tar.gz]
+[2024-06-01 11:36:55] INFO root fetch - main [MainThread]: End processing [correct-hours]: success
+[2024-06-01 11:36:55] INFO root fetch - processPackages [opmcpg]: Remove: archive file [/home/abi/fetcher/tmp/opmcpg-0.0.3-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 11:36:55] INFO root fetch - processPackages [opmcpg]: Remove: archive file [/home/abi/fetcher/tmp/opmcpg-0.0.4-cp39-cp39-win_amd64.whl.zip]
+[2024-06-01 11:36:55] INFO root fetch - main [MainThread]: End processing [opmcpg]: success
+[2024-06-01 11:36:55] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.8.tar.gz]
+[2024-06-01 11:36:55] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.9.tar.gz]
+[2024-06-01 11:36:55] INFO root fetch - main [MainThread]: End processing [packaging-demo-avr]: success
+[2024-06-01 11:36:55] INFO root fetch - main [MainThread]: Store serial: [23479092]
