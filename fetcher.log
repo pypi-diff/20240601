@@ -18920,3 +18920,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 17:53:03] INFO root fetch - processPackages [chaos-stratus]: Remove: archive file [/home/abi/fetcher/tmp/chaos_stratus-1.1.0.tar.gz]
 [2024-06-01 17:53:03] INFO root fetch - main [MainThread]: End processing [chaos-stratus]: success
 [2024-06-01 17:53:03] INFO root fetch - main [MainThread]: Store serial: [23481517]
+[2024-06-01 17:55:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481517]
+[2024-06-01 17:55:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-06-01 17:55:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almax-common
+[2024-06-01 17:55:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: julep
+[2024-06-01 17:55:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-htmlrender
+[2024-06-01 17:55:12] INFO root fetch - processPackages [almax-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-06-01 17:55:12] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/8e/35/2574717babd7c0719c70246d247db027e22c8edfba6949f2c3e69ab4798f/almax_common-0.9.5.tar.gz
+[2024-06-01 17:55:12] INFO root fetch - processPackages [julep]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-06-01 17:55:12] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-06-01 17:55:12] INFO root fetch - processPackages [almax-common]: Downloading https://files.pythonhosted.org/packages/23/64/0c7a1e5ba114e2a5341b14a3ddae562018bc73e3b2d09667a12eae8a4950/almax_common-0.9.6.tar.gz
+[2024-06-01 17:55:12] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/16/c5/f2a1a132f5f837c77d1e19669ebd975de7c353d144ecd34a49a9dfaf7c0c/julep-0.3.4.tar.gz
+[2024-06-01 17:55:12] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: Downloading https://files.pythonhosted.org/packages/8c/8e/a4d31d3e8341d441621d4f3a99c4bae7194794b8cc12ca48cda5bcdf3e01/nonebot_plugin_htmlrender-0.3.1.tar.gz
+[2024-06-01 17:55:12] INFO root fetch - processPackages [almax-common]: executing diffoscope
+[2024-06-01 17:55:12] INFO root fetch - processPackages [almax-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almax_common-0.9.5.tar.gz tmp/almax_common-0.9.6.tar.gz --markdown 20240601/a/almax-common/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-06-01 17:55:12] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/11/d3/170cafc6e0d6549af0b681cfab9f92ac5a3c5edc9b7e89ec53ceff16f27d/julep-0.3.5.tar.gz
+[2024-06-01 17:55:12] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: Downloading https://files.pythonhosted.org/packages/63/9b/eb7f44ab3c89bdf2b309bad6b089329050d3100bbb81e2a7f05d6aab81a0/nonebot_plugin_htmlrender-0.3.2.tar.gz
+[2024-06-01 17:55:12] INFO root fetch - processPackages [julep]: executing diffoscope
+[2024-06-01 17:55:12] INFO root fetch - processPackages [julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/julep-0.3.4.tar.gz tmp/julep-0.3.5.tar.gz --markdown 20240601/j/julep/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-06-01 17:55:13] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.5.tar.gz]
+[2024-06-01 17:55:13] INFO root fetch - processPackages [almax-common]: Remove: archive file [/home/abi/fetcher/tmp/almax_common-0.9.6.tar.gz]
+[2024-06-01 17:55:13] INFO root fetch - main [MainThread]: End processing [almax-common]: success
+[2024-06-01 17:55:13] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: executing diffoscope
+[2024-06-01 17:55:13] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_htmlrender-0.3.1.tar.gz tmp/nonebot_plugin_htmlrender-0.3.2.tar.gz --markdown 20240601/n/nonebot-plugin-htmlrender/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-06-01 17:55:13] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.4.tar.gz]
+[2024-06-01 17:55:13] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.5.tar.gz]
+[2024-06-01 17:55:13] INFO root fetch - main [MainThread]: End processing [julep]: success
+[2024-06-01 17:55:13] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_htmlrender-0.3.1.tar.gz]
+[2024-06-01 17:55:13] INFO root fetch - processPackages [nonebot-plugin-htmlrender]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_htmlrender-0.3.2.tar.gz]
+[2024-06-01 17:55:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-htmlrender]: success
+[2024-06-01 17:55:13] INFO root fetch - main [MainThread]: Store serial: [23481527]
