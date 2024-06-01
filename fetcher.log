@@ -2784,3 +2784,51 @@
 [2024-06-01 02:29:50] INFO root fetch - processPackages [rag-assistant]: Remove: archive file [/home/abi/fetcher/tmp/rag_assistant-0.1.9.tar.gz]
 [2024-06-01 02:29:50] INFO root fetch - main [MainThread]: End processing [rag-assistant]: success
 [2024-06-01 02:29:50] INFO root fetch - main [MainThread]: Store serial: [23474080]
+[2024-06-01 02:31:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23474080]
+[2024-06-01 02:31:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 02:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Unified-python-sdk
+[2024-06-01 02:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-certbot-dns-route53
+[2024-06-01 02:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ollama-chat
+[2024-06-01 02:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-gitlab-runner
+[2024-06-01 02:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-aurora-globaldatabase
+[2024-06-01 02:31:58] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-06-01 02:31:58] INFO root fetch - processPackages [ollama-chat]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-06-01 02:31:59] INFO root fetch - processPackages [Unified-python-sdk]: New version: [0.22.9] Old Version: [0.22.8]
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [ollama-chat]: Downloading https://files.pythonhosted.org/packages/85/e2/df912da659b363453ca827ac9d3a003fe90cacabd672c069fe452b63833e/ollama_chat-0.9.8.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/32/a6/f72a437f394e4be7013e909d461fac60a361f3138d10f790ffc410ed32a8/Unified-python-sdk-0.22.8.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [ollama-chat]: Downloading https://files.pythonhosted.org/packages/d5/6a/d7f1c3b798704a01d05f312014ff04275ffd6e11bdc8911a95fa4fa5ce98/ollama_chat-0.9.9.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240601/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-06-01 02:31:59] INFO root fetch - processPackages [ollama-chat]: executing diffoscope
+[2024-06-01 02:31:59] INFO root fetch - processPackages [ollama-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ollama_chat-0.9.8.tar.gz tmp/ollama_chat-0.9.9.tar.gz --markdown 20240601/o/ollama-chat/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240601/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-06-01 02:31:59] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240601/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-06-01 02:31:59] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/14/2d/284ba949d743c7643a8c6a5e23c978bb1508713992a2933c67c0e85a55ab/Unified-python-sdk-0.22.9.tar.gz
+[2024-06-01 02:31:59] INFO root fetch - processPackages [Unified-python-sdk]: executing diffoscope
+[2024-06-01 02:31:59] INFO root fetch - processPackages [Unified-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Unified-python-sdk-0.22.8.tar.gz tmp/Unified-python-sdk-0.22.9.tar.gz --markdown 20240601/U/Unified-python-sdk/0.22.8-0.22.9/README.md --exclude *.pyd
+[2024-06-01 02:32:00] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-06-01 02:32:00] INFO root fetch - processPackages [ollama-chat]: Remove: archive file [/home/abi/fetcher/tmp/ollama_chat-0.9.8.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - processPackages [ollama-chat]: Remove: archive file [/home/abi/fetcher/tmp/ollama_chat-0.9.9.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - main [MainThread]: End processing [ollama-chat]: success
+[2024-06-01 02:32:00] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-06-01 02:32:00] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-06-01 02:32:00] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-06-01 02:32:01] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.8.tar.gz]
+[2024-06-01 02:32:01] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.9.tar.gz]
+[2024-06-01 02:32:01] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
+[2024-06-01 02:32:01] INFO root fetch - main [MainThread]: Store serial: [23474097]
