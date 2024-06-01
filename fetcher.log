@@ -18048,3 +18048,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 16:57:55] INFO root fetch - processPackages [bipsea]: Remove: archive file [/home/abi/fetcher/tmp/bipsea-0.2.0.tar.gz]
 [2024-06-01 16:57:55] INFO root fetch - main [MainThread]: End processing [bipsea]: success
 [2024-06-01 16:57:55] INFO root fetch - main [MainThread]: Store serial: [23481080]
+[2024-06-01 16:59:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23481080]
+[2024-06-01 17:00:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-06-01 17:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: M2-TJ
+[2024-06-01 17:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pgn-clis
+[2024-06-01 17:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bgutils-hddly
+[2024-06-01 17:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: triton-copilot
+[2024-06-01 17:00:04] INFO root fetch - processPackages [M2-TJ]: New version: [1.1.0] Old Version: [0.2]
+[2024-06-01 17:00:04] INFO root fetch - processPackages [pgn-clis]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-06-01 17:00:04] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-06-01 17:00:04] WARNING root fetch - processPackages [triton-copilot]: Skipping, unable to determine old version
+[2024-06-01 17:00:04] INFO root fetch - main [MainThread]: End processing [triton-copilot] error
+[2024-06-01 17:00:04] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/44/3c/e19eb232037dd98c9146865a34e22ea5333d8ca0b0f7d7f1bd6b13566f18/pgn_clis-0.1.7.tar.gz
+[2024-06-01 17:00:04] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-06-01 17:00:04] INFO root fetch - processPackages [M2-TJ]: Downloading https://files.pythonhosted.org/packages/b1/2a/d42a41d3b9ae4b4875863dd7d3903a3a3668ea7615fdef655376c941514a/M2_TJ-0.2.tar.gz
+[2024-06-01 17:00:05] INFO root fetch - processPackages [pgn-clis]: Downloading https://files.pythonhosted.org/packages/89/d5/1ab48ea4e65547bf52f440d5509e10c877616541956047cb21790eb9ccd8/pgn_clis-0.1.9.tar.gz
+[2024-06-01 17:00:05] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-06-01 17:00:05] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-06-01 17:00:05] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240601/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-06-01 17:00:05] INFO root fetch - processPackages [pgn-clis]: executing diffoscope
+[2024-06-01 17:00:05] INFO root fetch - processPackages [pgn-clis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgn_clis-0.1.7.tar.gz tmp/pgn_clis-0.1.9.tar.gz --markdown 20240601/p/pgn-clis/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-06-01 17:00:06] INFO root fetch - processPackages [M2-TJ]: Downloading https://files.pythonhosted.org/packages/8c/a2/3cda2b828bde3485d005fc6a41c4998bdd7525afe59fa9637d84a7c28e28/m2_tj-1.1.0.tar.gz
+[2024-06-01 17:00:06] INFO root fetch - processPackages [M2-TJ]: executing diffoscope
+[2024-06-01 17:00:06] INFO root fetch - processPackages [M2-TJ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/M2_TJ-0.2.tar.gz tmp/m2_tj-1.1.0.tar.gz --markdown 20240601/M/M2-TJ/0.2-1.1.0/README.md --exclude *.pyd
+[2024-06-01 17:00:06] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-06-01 17:00:06] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-06-01 17:00:06] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-06-01 17:00:06] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.7.tar.gz]
+[2024-06-01 17:00:06] INFO root fetch - processPackages [pgn-clis]: Remove: archive file [/home/abi/fetcher/tmp/pgn_clis-0.1.9.tar.gz]
+[2024-06-01 17:00:06] INFO root fetch - main [MainThread]: End processing [pgn-clis]: success
+[2024-06-01 17:00:06] INFO root fetch - processPackages [M2-TJ]: Remove: archive file [/home/abi/fetcher/tmp/M2_TJ-0.2.tar.gz]
+[2024-06-01 17:00:06] INFO root fetch - processPackages [M2-TJ]: Remove: archive file [/home/abi/fetcher/tmp/m2_tj-1.1.0.tar.gz]
+[2024-06-01 17:00:06] INFO root fetch - main [MainThread]: End processing [M2-TJ]: success
+[2024-06-01 17:00:06] INFO root fetch - main [MainThread]: Store serial: [23481095]
