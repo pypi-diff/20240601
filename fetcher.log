@@ -23075,3 +23075,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-06-01 22:51:45] INFO root fetch - processPackages [prelude-parser]: Remove: archive file [/home/abi/fetcher/tmp/prelude_parser-0.5.0-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
 [2024-06-01 22:51:45] INFO root fetch - main [MainThread]: End processing [prelude-parser]: success
 [2024-06-01 22:51:45] INFO root fetch - main [MainThread]: Store serial: [23483478]
+[2024-06-01 22:53:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23483478]
+[2024-06-01 22:53:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-06-01 22:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytim
+[2024-06-01 22:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OpenTTDLab
+[2024-06-01 22:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dialog-workflow-local
+[2024-06-01 22:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neura-library
+[2024-06-01 22:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-oxmsg
+[2024-06-01 22:53:53] INFO root fetch - processPackages [OpenTTDLab]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-06-01 22:53:53] INFO root fetch - processPackages [pytim]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-06-01 22:53:53] INFO root fetch - processPackages [neura-library]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-06-01 22:53:53] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/1f/6e/f9d8e929738fb28f0cf285d806e9d1e0b273a3abd0c627b823c266f87274/openttdlab-0.0.8.tar.gz
+[2024-06-01 22:53:53] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-06-01 22:53:53] INFO root fetch - processPackages [python-oxmsg]: New version: [0.0.1a0] Old Version: [0.0.1]
+[2024-06-01 22:53:54] INFO root fetch - processPackages [pytim]: Downloading https://files.pythonhosted.org/packages/a5/33/216e38500682c8a61577efa3704f6c3ff533c6182fa36a6ab083c4818dfc/pytim-0.9.2.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [python-oxmsg]: Downloading https://files.pythonhosted.org/packages/4f/d4/4ec721fd433453fe05344f41f17458775d111e9f6c668ce1a0fccec0fecd/python_oxmsg-0.0.1.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [OpenTTDLab]: Downloading https://files.pythonhosted.org/packages/c9/28/0b49734d3f0e2b039817ac8dbe0930487e1d1764bc5c7cc16063210352e0/openttdlab-0.0.9.tar.gz
+[2024-06-01 22:53:54] WARNING root fetch - processPackages [pytim]: Skipping package: exceeds size limit 14543760>=10485760
+[2024-06-01 22:53:54] INFO root fetch - main [MainThread]: End processing [pytim] error
+[2024-06-01 22:53:54] INFO root fetch - processPackages [neura-library]: Downloading https://files.pythonhosted.org/packages/21/e1/d2f00309965484cf47af849d072e884047abbdde5b39341ed7067296decd/neura_library-0.0.6.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/d7/1b/685106e77cf65c8cf8b6d89352922054ce5d7b8980732c303e96ea9deb86/dialog_workflow_local-0.0.98.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [OpenTTDLab]: executing diffoscope
+[2024-06-01 22:53:54] INFO root fetch - processPackages [OpenTTDLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openttdlab-0.0.8.tar.gz tmp/openttdlab-0.0.9.tar.gz --markdown 20240601/O/OpenTTDLab/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-06-01 22:53:54] INFO root fetch - processPackages [neura-library]: Downloading https://files.pythonhosted.org/packages/19/30/dd4f1e6537318d61e6a5e3fbb17770847ba9bcd67768d5c24e7a5fda84f9/neura_library-0.0.7.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/05/c3/6c26db02b10e70c46d216b7b8ce442c6d7069761960f4589837162999b2a/dialog_workflow_local-0.0.99.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [python-oxmsg]: Downloading https://files.pythonhosted.org/packages/96/27/068e341b8e2bd7de75cc7c5e07d34beddf78df71c52d517a86b264e16804/python_oxmsg-0.0.1a0.tar.gz
+[2024-06-01 22:53:54] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-06-01 22:53:54] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_workflow_local-0.0.98.tar.gz tmp/dialog_workflow_local-0.0.99.tar.gz --markdown 20240601/d/dialog-workflow-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-06-01 22:53:54] INFO root fetch - processPackages [python-oxmsg]: executing diffoscope
+[2024-06-01 22:53:54] INFO root fetch - processPackages [python-oxmsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_oxmsg-0.0.1.tar.gz tmp/python_oxmsg-0.0.1a0.tar.gz --markdown 20240601/p/python-oxmsg/0.0.1-0.0.1a0/README.md --exclude *.pyd
+[2024-06-01 22:53:54] INFO root fetch - processPackages [neura-library]: executing diffoscope
+[2024-06-01 22:53:54] INFO root fetch - processPackages [neura-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240601:/home/abi/fetcher/20240601:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neura_library-0.0.6.tar.gz tmp/neura_library-0.0.7.tar.gz --markdown 20240601/n/neura-library/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-06-01 22:53:54] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.8.tar.gz]
+[2024-06-01 22:53:54] INFO root fetch - processPackages [OpenTTDLab]: Remove: archive file [/home/abi/fetcher/tmp/openttdlab-0.0.9.tar.gz]
+[2024-06-01 22:53:54] INFO root fetch - main [MainThread]: End processing [OpenTTDLab]: success
+[2024-06-01 22:53:55] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog_workflow_local-0.0.98.tar.gz]
+[2024-06-01 22:53:55] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog_workflow_local-0.0.99.tar.gz]
+[2024-06-01 22:53:55] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-06-01 22:53:55] INFO root fetch - processPackages [python-oxmsg]: Remove: archive file [/home/abi/fetcher/tmp/python_oxmsg-0.0.1.tar.gz]
+[2024-06-01 22:53:55] INFO root fetch - processPackages [python-oxmsg]: Remove: archive file [/home/abi/fetcher/tmp/python_oxmsg-0.0.1a0.tar.gz]
+[2024-06-01 22:53:55] INFO root fetch - main [MainThread]: End processing [python-oxmsg]: success
+[2024-06-01 22:53:55] INFO root fetch - processPackages [neura-library]: Remove: archive file [/home/abi/fetcher/tmp/neura_library-0.0.6.tar.gz]
+[2024-06-01 22:53:55] INFO root fetch - processPackages [neura-library]: Remove: archive file [/home/abi/fetcher/tmp/neura_library-0.0.7.tar.gz]
+[2024-06-01 22:53:55] INFO root fetch - main [MainThread]: End processing [neura-library]: success
+[2024-06-01 22:53:55] INFO root fetch - main [MainThread]: Store serial: [23483530]
